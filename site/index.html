@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free AI Radar — Live Models, Free Tiers & Quotas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-left">
+        <h1>🛰️ Free AI Radar</h1>
+        <p>Live AI Model Pricing, 100% Free Tiers & API Quotas</p>
+      </div>
+      <div class="header-right">
+        <span class="badge pulse" id="lastUpdated">Checking...</span>
+      </div>
+    </header>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-val" id="totalModels">-</div>
+        <div class="stat-lbl">Discovered Models</div>
+      </div>
+      <div class="stat-card highlight">
+        <div class="stat-val" id="totalFree">-</div>
+        <div class="stat-lbl">100% Free Models</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="totalOffers">-</div>
+        <div class="stat-lbl">Provider Free Quotas</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search models, providers (e.g. Llama 3.3, Groq, Gemini)...">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="free">🎁 100% Free</button>
+        <button class="tab-btn" data-tab="providers">⚡ Provider Quotas</button>
+        <button class="tab-btn" data-tab="all">🌐 All Models</button>
+        <button class="tab-btn" data-tab="history">⏱️ Live Feed</button>
+      </div>
+    </div>
+
+    <main id="contentArea">
+      <div class="grid" id="cardGrid"></div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

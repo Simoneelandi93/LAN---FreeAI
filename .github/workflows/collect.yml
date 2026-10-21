@@ -1,0 +1,50 @@
+name: Sync Models & Quotas
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-catalog
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Collector
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m scripts.collect
+
+      - name: Commit & push if catalog changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            # No "[skip ci]" here on purpose: that directive would also skip deploy.yml,
+            # so the dashboard would stop redeploying after scheduled syncs.
+            git commit -m "Auto-update model catalog"
+            # Pushes dynamically to whatever branch is checked out (main, master, etc.)
+            git push origin HEAD:${{ github.ref_name }}
+          else
+            echo "No changes detected."
+          fi

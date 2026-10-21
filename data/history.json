@@ -1,0 +1,1602 @@
+[
+  {
+    "event_id": "2324fae77c5fc2c4",
+    "type": "new_free_model",
+    "model_id": "big-pickle",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "68179353c0618de8",
+    "type": "new_free_model",
+    "model_id": "beam-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "fc46f191ac643540",
+    "type": "new_free_model",
+    "model_id": "mimo-v2.6-flash-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "97e96d8667aba73b",
+    "type": "new_free_model",
+    "model_id": "nemotron-3.5-super-vl-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "bf21976049209797",
+    "type": "new_free_model",
+    "model_id": "nemotron-3.5-lightning-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "cf791a3d3eabf7b0",
+    "type": "new_free_model",
+    "model_id": "jev-1.13-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "80421ce94bee9ff4",
+    "type": "new_free_model",
+    "model_id": "longcat-2.5-preview-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "a649957be4f359ce",
+    "type": "new_free_model",
+    "model_id": "deepseek-v4.1-flash-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "88dd380d1d0e444f",
+    "type": "new_free_model",
+    "model_id": "glm-5.3-flash-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "d9e5a52d4978db5e",
+    "type": "new_free_model",
+    "model_id": "minimax-m3.1-flash-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "4cede114ef76dcdc",
+    "type": "new_model",
+    "model_id": "claude-fable-5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $10.0/1M, output: $50.0/1M"
+  },
+  {
+    "event_id": "52c6e4a4f4ba50e2",
+    "type": "new_model",
+    "model_id": "claude-fable-5-1",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $10.0/1M, output: $50.0/1M"
+  },
+  {
+    "event_id": "72c78ea6c9774956",
+    "type": "new_model",
+    "model_id": "claude-haiku-4-5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.0/1M, output: $5.0/1M"
+  },
+  {
+    "event_id": "f47c6f8c6f006532",
+    "type": "new_model",
+    "model_id": "claude-haiku-5-5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.1/1M, output: $0.5/1M"
+  },
+  {
+    "event_id": "d620b8732ec5f28b",
+    "type": "new_model",
+    "model_id": "claude-opus-4-5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $5.0/1M, output: $25.0/1M"
+  },
+  {
+    "event_id": "15851bb4e0713217",
+    "type": "new_model",
+    "model_id": "claude-opus-4-6",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $5.0/1M, output: $25.0/1M"
+  },
+  {
+    "event_id": "dc99d1383417851d",
+    "type": "new_model",
+    "model_id": "claude-opus-4-7",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $5.0/1M, output: $25.0/1M"
+  },
+  {
+    "event_id": "afd55a509596e8c9",
+    "type": "new_model",
+    "model_id": "claude-opus-4-8",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $5.0/1M, output: $25.0/1M"
+  },
+  {
+    "event_id": "16f27b6dd63879a3",
+    "type": "new_model",
+    "model_id": "claude-opus-5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $5.0/1M, output: $25.0/1M"
+  },
+  {
+    "event_id": "fd0a714b5457b10e",
+    "type": "new_model",
+    "model_id": "claude-opus-5-5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $4.0/1M, output: $20.0/1M"
+  },
+  {
+    "event_id": "d0926b7824df5980",
+    "type": "new_model",
+    "model_id": "claude-sonnet-4-5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $3.0/1M, output: $15.0/1M"
+  },
+  {
+    "event_id": "c6429a75fcb5b4f8",
+    "type": "new_model",
+    "model_id": "claude-sonnet-4-6",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $3.0/1M, output: $15.0/1M"
+  },
+  {
+    "event_id": "2f49d2e7ba72d946",
+    "type": "new_model",
+    "model_id": "claude-sonnet-5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $2.0/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "21f328c008ae6556",
+    "type": "new_model",
+    "model_id": "claude-sonnet-5-5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $2.0/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "3af166f8f0791e27",
+    "type": "new_model",
+    "model_id": "deepseek-v4-flash",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.14/1M, output: $0.28/1M"
+  },
+  {
+    "event_id": "b275be8e58c705a3",
+    "type": "new_model",
+    "model_id": "deepseek-v4.1-flash",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.3/1M, output: $1.2/1M"
+  },
+  {
+    "event_id": "00afec8b990e8dcd",
+    "type": "new_model",
+    "model_id": "deepseek-v4-pro",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.74/1M, output: $3.84/1M"
+  },
+  {
+    "event_id": "36a2fb860e6dbd65",
+    "type": "new_model",
+    "model_id": "gemini-3-flash",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.5/1M, output: $3.0/1M"
+  },
+  {
+    "event_id": "8a6bfe33ab0db6d4",
+    "type": "new_model",
+    "model_id": "gemini-3.1-pro",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $2.0/1M, output: $12.0/1M"
+  },
+  {
+    "event_id": "1df05d93ce25371a",
+    "type": "new_model",
+    "model_id": "gemini-3.5-flash",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.5/1M, output: $9.0/1M"
+  },
+  {
+    "event_id": "378ce64bc1aa4bee",
+    "type": "new_model",
+    "model_id": "gemini-3.5-flash-lite",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.3/1M, output: $2.5/1M"
+  },
+  {
+    "event_id": "2548f17f05c7266d",
+    "type": "new_model",
+    "model_id": "gemini-3.6-flash",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.5/1M, output: $7.5/1M"
+  },
+  {
+    "event_id": "7cc33e4ad176d518",
+    "type": "new_model",
+    "model_id": "gemini-3.7-flash",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.5/1M, output: $7.5/1M"
+  },
+  {
+    "event_id": "301ccf5e000c093f",
+    "type": "new_model",
+    "model_id": "gemini-3.8-flash",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.5/1M, output: $7.5/1M"
+  },
+  {
+    "event_id": "95d168f8ea10d520",
+    "type": "new_model",
+    "model_id": "gemini-4-argon",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $2.0/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "28bc343d2285ad72",
+    "type": "new_model",
+    "model_id": "glm-5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.0/1M, output: $3.2/1M"
+  },
+  {
+    "event_id": "1b806ebf6315f1c0",
+    "type": "new_model",
+    "model_id": "glm-5.1",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.4/1M, output: $4.4/1M"
+  },
+  {
+    "event_id": "8ffe6481a0ff6593",
+    "type": "new_model",
+    "model_id": "glm-5.2",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.4/1M, output: $4.4/1M"
+  },
+  {
+    "event_id": "6c8871feea91611d",
+    "type": "new_model",
+    "model_id": "glm-5.3",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.4/1M, output: $4.4/1M"
+  },
+  {
+    "event_id": "72331d94ce4819ac",
+    "type": "new_model",
+    "model_id": "glm-5.3-flash",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.15/1M, output: $0.5/1M"
+  },
+  {
+    "event_id": "6a161b22198ca2cf",
+    "type": "new_model",
+    "model_id": "gpt-5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.07/1M, output: $8.5/1M"
+  },
+  {
+    "event_id": "446cbdb083996c6f",
+    "type": "new_model",
+    "model_id": "gpt-5-codex",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.07/1M, output: $8.5/1M"
+  },
+  {
+    "event_id": "962a97ffeaff27a4",
+    "type": "new_model",
+    "model_id": "gpt-5-nano",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.05/1M, output: $0.4/1M"
+  },
+  {
+    "event_id": "f67613dc18367390",
+    "type": "new_model",
+    "model_id": "gpt-5.1",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.07/1M, output: $8.5/1M"
+  },
+  {
+    "event_id": "389be123009b26cc",
+    "type": "new_model",
+    "model_id": "gpt-5.1-codex",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.07/1M, output: $8.5/1M"
+  },
+  {
+    "event_id": "3a2235b0bf74a783",
+    "type": "new_model",
+    "model_id": "gpt-5.1-codex-max",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.25/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "2239d1ab0ec3811e",
+    "type": "new_model",
+    "model_id": "gpt-5.1-codex-mini",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.25/1M, output: $2.0/1M"
+  },
+  {
+    "event_id": "9e4d2f7faea63c57",
+    "type": "new_model",
+    "model_id": "gpt-5.2",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.75/1M, output: $14.0/1M"
+  },
+  {
+    "event_id": "398f27cb0323ce3a",
+    "type": "new_model",
+    "model_id": "gpt-5.2-codex",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.75/1M, output: $14.0/1M"
+  },
+  {
+    "event_id": "b5efc28dd2824c2d",
+    "type": "new_model",
+    "model_id": "gpt-5.3-codex",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.75/1M, output: $14.0/1M"
+  },
+  {
+    "event_id": "13df186c49a3b5d8",
+    "type": "new_model",
+    "model_id": "gpt-5.3-codex-spark",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.75/1M, output: $14.0/1M"
+  },
+  {
+    "event_id": "e9b1a8ed181e8045",
+    "type": "new_model",
+    "model_id": "gpt-5.4",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $2.5/1M, output: $15.0/1M"
+  },
+  {
+    "event_id": "18be698326cb9a81",
+    "type": "new_model",
+    "model_id": "gpt-5.4-mini",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.75/1M, output: $4.5/1M"
+  },
+  {
+    "event_id": "76e0f9e013bf5a67",
+    "type": "new_model",
+    "model_id": "gpt-5.4-nano",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.2/1M, output: $1.25/1M"
+  },
+  {
+    "event_id": "e3bc6ff9520775f5",
+    "type": "new_model",
+    "model_id": "gpt-5.4-pro",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $30.0/1M, output: $180.0/1M"
+  },
+  {
+    "event_id": "525d9133157019f4",
+    "type": "new_model",
+    "model_id": "gpt-5.5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $5.0/1M, output: $30.0/1M"
+  },
+  {
+    "event_id": "1e3e8a685a9cf622",
+    "type": "new_model",
+    "model_id": "gpt-5.5-pro",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $30.0/1M, output: $180.0/1M"
+  },
+  {
+    "event_id": "c165999fce8d9186",
+    "type": "new_model",
+    "model_id": "gpt-5.6-luna",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.2/1M, output: $1.2/1M"
+  },
+  {
+    "event_id": "243a6ba5dd1d7cb0",
+    "type": "new_model",
+    "model_id": "gpt-5.6-sol",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $4.0/1M, output: $20.0/1M"
+  },
+  {
+    "event_id": "1d141b8f2756c3a4",
+    "type": "new_model",
+    "model_id": "gpt-6-astra",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $10.0/1M, output: $50.0/1M"
+  },
+  {
+    "event_id": "c7d42e1247ba548d",
+    "type": "new_model",
+    "model_id": "gpt-6-sol",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $2.0/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "61dbe26b8ed3e57a",
+    "type": "new_model",
+    "model_id": "gpt-6.1-sol",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $2.0/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "a7c19a393276abd5",
+    "type": "new_model",
+    "model_id": "gpt-6-luna",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.1/1M, output: $0.5/1M"
+  },
+  {
+    "event_id": "fa476837324e572e",
+    "type": "new_model",
+    "model_id": "gpt-5.6-terra",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $2.5/1M, output: $15.0/1M"
+  },
+  {
+    "event_id": "a2978d16d0d5d3fa",
+    "type": "new_model",
+    "model_id": "grok-4.5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $2.0/1M, output: $6.0/1M"
+  },
+  {
+    "event_id": "49ad7274b3d7573e",
+    "type": "new_model",
+    "model_id": "grok-4.6",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $2.0/1M, output: $6.0/1M"
+  },
+  {
+    "event_id": "85b1dcdf06aace4b",
+    "type": "new_model",
+    "model_id": "grok-4.7",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $2.0/1M, output: $6.0/1M"
+  },
+  {
+    "event_id": "98567046d53ea158",
+    "type": "new_model",
+    "model_id": "grok-build-0.1",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.0/1M, output: $2.0/1M"
+  },
+  {
+    "event_id": "f9abd33712dc3f1f",
+    "type": "new_model",
+    "model_id": "kimi-k2.5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.6/1M, output: $3.0/1M"
+  },
+  {
+    "event_id": "637f45068a677d95",
+    "type": "new_model",
+    "model_id": "kimi-k2.6",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.95/1M, output: $4.0/1M"
+  },
+  {
+    "event_id": "f733dd74b6abbffa",
+    "type": "new_model",
+    "model_id": "kimi-k2.7-code",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.95/1M, output: $4.0/1M"
+  },
+  {
+    "event_id": "abecbf84aec4694d",
+    "type": "new_model",
+    "model_id": "kimi-k3",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $3.0/1M, output: $15.0/1M"
+  },
+  {
+    "event_id": "d0526b035019d174",
+    "type": "new_model",
+    "model_id": "minimax-m2.5",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.3/1M, output: $1.2/1M"
+  },
+  {
+    "event_id": "6bbcd80213613df2",
+    "type": "new_model",
+    "model_id": "minimax-m2.7",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.3/1M, output: $1.2/1M"
+  },
+  {
+    "event_id": "d249eeade9e42ec6",
+    "type": "new_model",
+    "model_id": "minimax-m3",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.3/1M, output: $1.2/1M"
+  },
+  {
+    "event_id": "f58017d5ba8f49d5",
+    "type": "new_model",
+    "model_id": "muse-spark-1.2",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.25/1M, output: $4.25/1M"
+  },
+  {
+    "event_id": "99776514979beb48",
+    "type": "new_model",
+    "model_id": "muse-spark-1.3",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $1.25/1M, output: $4.25/1M"
+  },
+  {
+    "event_id": "37359c95334e0dc1",
+    "type": "new_model",
+    "model_id": "muse-wonder-1.0",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $4.0/1M, output: $20.0/1M"
+  },
+  {
+    "event_id": "891ff3198dba59c5",
+    "type": "new_model",
+    "model_id": "mistral-large-4",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.68/1M, output: $2.09/1M"
+  },
+  {
+    "event_id": "1d79702a4abe8075",
+    "type": "new_model",
+    "model_id": "qwen3.5-plus",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.2/1M, output: $1.2/1M"
+  },
+  {
+    "event_id": "33d3805fd0b37a1b",
+    "type": "new_model",
+    "model_id": "qwen3.6-plus",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.5/1M, output: $3.0/1M"
+  },
+  {
+    "event_id": "ba15b28b7339d618",
+    "type": "new_model",
+    "model_id": "qwen3.8-flash",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $0.15/1M, output: $0.47/1M"
+  },
+  {
+    "event_id": "a741b3dc010dc1d1",
+    "type": "new_model",
+    "model_id": "qwen3.8-max",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T09:36:59.981065+00:00",
+    "details": "Added with input: $2.0/1M, output: $6.0/1M"
+  },
+  {
+    "event_id": "6cbe2761846bfd79",
+    "type": "new_free_model",
+    "model_id": "minimax/minimax-m3.1-flash:free",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "4a8924c8c9b8f2f3",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.3/1M, output: $1.2/1M"
+  },
+  {
+    "event_id": "b56212014eb6a381",
+    "type": "new_model",
+    "model_id": "elorian/glimpse",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.6/1M, output: $3.0/1M"
+  },
+  {
+    "event_id": "c83c2318821faa0b",
+    "type": "new_free_model",
+    "model_id": "xingchen-agi/xing4.0-29b-a4b:free",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "2e30eb1573ca1da3",
+    "type": "new_model",
+    "model_id": "reflection/beam-1.0-501b-a23b",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.3/1M, output: $1.0/1M"
+  },
+  {
+    "event_id": "a7f220cc29bb84ae",
+    "type": "new_model",
+    "model_id": "inception/mercury-3",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.1/1M, output: $0.35/1M"
+  },
+  {
+    "event_id": "f595b0a2bc302861",
+    "type": "new_model",
+    "model_id": "moondream/moondream3-preview",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.3/1M, output: $2.5/1M"
+  },
+  {
+    "event_id": "43073ce433b91f56",
+    "type": "new_model",
+    "model_id": "moondream/moondream3.1-9b-a2b",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.3/1M, output: $2.5/1M"
+  },
+  {
+    "event_id": "72714b5e861306ce",
+    "type": "new_model",
+    "model_id": "meta/muse-spark-open",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $1.25/1M, output: $4.25/1M"
+  },
+  {
+    "event_id": "06a373dcdda3a1dc",
+    "type": "new_model",
+    "model_id": "nvidia/nemotron-3.5-super-vl",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.15/1M, output: $0.5/1M"
+  },
+  {
+    "event_id": "c78ae1fccd06eceb",
+    "type": "new_free_model",
+    "model_id": "nvidia/nemotron-3.5-super-vl:free",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "750645effc7482e4",
+    "type": "new_model",
+    "model_id": "unbiased/pareto-26.10",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.8/1M, output: $3.2/1M"
+  },
+  {
+    "event_id": "5e105f4830c9f66d",
+    "type": "new_model",
+    "model_id": "~unbiased/pareto-latest",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.8/1M, output: $3.2/1M"
+  },
+  {
+    "event_id": "7981e40ffa5dd975",
+    "type": "new_model",
+    "model_id": "unbiased/pareto-26.9",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.5/1M, output: $7.5/1M"
+  },
+  {
+    "event_id": "daf2a2ec2d0d218f",
+    "type": "new_model",
+    "model_id": "liquid/lfm-2.5-24b-a2b",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.05/1M, output: $0.7/1M"
+  },
+  {
+    "event_id": "50427d7f8c969192",
+    "type": "new_model",
+    "model_id": "google/gemini-4-argon",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "2d8b3ba463967b87",
+    "type": "new_model",
+    "model_id": "google/gemini-4-argon:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $1.0/1M, output: $5.0/1M"
+  },
+  {
+    "event_id": "fe358986c2c3ab18",
+    "type": "new_model",
+    "model_id": "scaledown/summarize",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.04/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "b7aba115e02ce004",
+    "type": "new_model",
+    "model_id": "scaledown/extract",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.04/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "ae5e877b10ab392a",
+    "type": "new_model",
+    "model_id": "meta/muse-wonder",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $4.0/1M, output: $20.0/1M"
+  },
+  {
+    "event_id": "1776483bee26fde6",
+    "type": "new_model",
+    "model_id": "stepfun/step-5-preview",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $1.0/1M, output: $2.7/1M"
+  },
+  {
+    "event_id": "2d0d0f35ac040a10",
+    "type": "new_model",
+    "model_id": "anthropic/claude-haiku-5.5",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.1/1M, output: $0.5/1M"
+  },
+  {
+    "event_id": "3df64037353d599c",
+    "type": "new_model",
+    "model_id": "anthropic/claude-haiku-5.5:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.05/1M, output: $0.25/1M"
+  },
+  {
+    "event_id": "8efa64a99082a276",
+    "type": "new_model",
+    "model_id": "google/gemini-nano-banana-2.1",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $1.5/1M, output: $7.5/1M"
+  },
+  {
+    "event_id": "52a8e684b2d285a9",
+    "type": "new_model",
+    "model_id": "mistralai/mistral-large-4-0",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $1.36/1M, output: $4.18/1M"
+  },
+  {
+    "event_id": "d7aca5f14bcd67a2",
+    "type": "new_model",
+    "model_id": "inclusionai/ling-3.1-flash",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.075/1M, output: $0.225/1M"
+  },
+  {
+    "event_id": "a8e0a67905a4007c",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.1-sol-pro",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "ca3cdc333c4ebc53",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.1-sol-pro:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $1.0/1M, output: $5.0/1M"
+  },
+  {
+    "event_id": "a617c499b0efcb6e",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.1-sol",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "d0601fad18c1dc7b",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.1-sol:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $1.0/1M, output: $5.0/1M"
+  },
+  {
+    "event_id": "cb798153b36057e0",
+    "type": "new_model",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "515fc72226185feb",
+    "type": "new_model",
+    "model_id": "anthropic/claude-sonnet-5.5:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $1.0/1M, output: $5.0/1M"
+  },
+  {
+    "event_id": "8a3fb30810bddfa4",
+    "type": "new_model",
+    "model_id": "typesafe/jev-router",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $-1000000.0/1M, output: $-1000000.0/1M"
+  },
+  {
+    "event_id": "34e1d20d53133819",
+    "type": "new_model",
+    "model_id": "perceptron/perceptron-mk1.5",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.15/1M, output: $1.5/1M"
+  },
+  {
+    "event_id": "62749f9abb31ee1f",
+    "type": "new_model",
+    "model_id": "fireworks/ember-1",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $3.0/1M, output: $15.0/1M"
+  },
+  {
+    "event_id": "8371e2aee676828d",
+    "type": "new_model",
+    "model_id": "z-ai/glm-5.3-prime",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.8/1M, output: $8.8/1M"
+  },
+  {
+    "event_id": "b6f1c23fc3cc8e87",
+    "type": "new_model",
+    "model_id": "qwen/qwen3.8-max-prime",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $4.0/1M, output: $12.0/1M"
+  },
+  {
+    "event_id": "a678c4b0afa9ed84",
+    "type": "new_model",
+    "model_id": "aion-labs/aion-3.5-mini",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.7/1M, output: $1.4/1M"
+  },
+  {
+    "event_id": "132b021a41048c5a",
+    "type": "new_model",
+    "model_id": "aion-labs/aion-3.5",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $3.0/1M, output: $6.0/1M"
+  },
+  {
+    "event_id": "2f8286c0928a79fe",
+    "type": "new_model",
+    "model_id": "upstage/solar-mini4",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.05/1M, output: $0.2/1M"
+  },
+  {
+    "event_id": "ca04d7fd8baf7913",
+    "type": "new_model",
+    "model_id": "cohere/command-a-plus",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.3/1M, output: $1.5/1M"
+  },
+  {
+    "event_id": "7bf683c7ffebd55b",
+    "type": "new_model",
+    "model_id": "openai/gpt-6-luna-pro",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.1/1M, output: $0.5/1M"
+  },
+  {
+    "event_id": "eba057313c7b296b",
+    "type": "new_model",
+    "model_id": "openai/gpt-6-luna-pro:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.05/1M, output: $0.25/1M"
+  },
+  {
+    "event_id": "ad4fab300b979920",
+    "type": "new_model",
+    "model_id": "openai/gpt-6-luna",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.1/1M, output: $0.5/1M"
+  },
+  {
+    "event_id": "8aa1d25e3c051f29",
+    "type": "new_model",
+    "model_id": "openai/gpt-6-luna:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.05/1M, output: $0.25/1M"
+  },
+  {
+    "event_id": "945ac9e36de368f2",
+    "type": "new_model",
+    "model_id": "openai/gpt-6-sol-pro",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "eacd3b86f0af825c",
+    "type": "new_model",
+    "model_id": "openai/gpt-6-sol-pro:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $1.0/1M, output: $5.0/1M"
+  },
+  {
+    "event_id": "a008ca83127af4bc",
+    "type": "new_model",
+    "model_id": "openai/gpt-6-sol",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "7b0607d1017873b6",
+    "type": "new_model",
+    "model_id": "openai/gpt-6-sol:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $1.0/1M, output: $5.0/1M"
+  },
+  {
+    "event_id": "445ef33e01f09b5c",
+    "type": "new_model",
+    "model_id": "anthropic/claude-opus-5.5",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $4.0/1M, output: $20.0/1M"
+  },
+  {
+    "event_id": "81cf33ff7d62a994",
+    "type": "new_model",
+    "model_id": "anthropic/claude-opus-5.5:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "24c63e0e8233e435",
+    "type": "new_model",
+    "model_id": "nvidia/switchyard",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $-1000000.0/1M, output: $-1000000.0/1M"
+  },
+  {
+    "event_id": "73cebb1ad918939a",
+    "type": "new_model",
+    "model_id": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $4.35/1M, output: $8.7/1M"
+  },
+  {
+    "event_id": "9c85a200bdecd24a",
+    "type": "new_model",
+    "model_id": "xiaomi/mimo-v2.6-flash",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.14/1M, output: $0.28/1M"
+  },
+  {
+    "event_id": "9b5845930e2925e4",
+    "type": "new_model",
+    "model_id": "xiaomi/mimo-v2.6-pro",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.435/1M, output: $0.87/1M"
+  },
+  {
+    "event_id": "bdeaad05aaef574e",
+    "type": "new_model",
+    "model_id": "x-ai/grok-4.7",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $6.0/1M"
+  },
+  {
+    "event_id": "a412428dc8794495",
+    "type": "new_model",
+    "model_id": "qwen/qwen3.8-omni-flash",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.15/1M, output: $0.47/1M"
+  },
+  {
+    "event_id": "25d5cde90b5e9d5f",
+    "type": "new_model",
+    "model_id": "prism-ml/ternary-bonsai-2-27b",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.075/1M, output: $0.5/1M"
+  },
+  {
+    "event_id": "56ffe5c179fe9218",
+    "type": "new_model",
+    "model_id": "z-ai/glm-5.3-flashx",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.37/1M, output: $1.25/1M"
+  },
+  {
+    "event_id": "99201c1f7842109c",
+    "type": "new_model",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.225/1M, output: $8.0/1M"
+  },
+  {
+    "event_id": "82862f2ad66492f6",
+    "type": "new_model",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.049/1M, output: $0.375/1M"
+  },
+  {
+    "event_id": "11456145d74ee375",
+    "type": "new_model",
+    "model_id": "inference-net/schematron-v2-turbo",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.03/1M, output: $0.15/1M"
+  },
+  {
+    "event_id": "72423f9cdb97625a",
+    "type": "new_model",
+    "model_id": "inference-net/schematron-v2-small",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.05/1M, output: $0.23/1M"
+  },
+  {
+    "event_id": "e5945150ead02ec8",
+    "type": "new_model",
+    "model_id": "~openai/gpt-astra-latest",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $10.0/1M, output: $50.0/1M"
+  },
+  {
+    "event_id": "cae6eafb9ef293aa",
+    "type": "new_model",
+    "model_id": "~openai/gpt-sol-latest",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $10.0/1M"
+  },
+  {
+    "event_id": "387062aca5282ed4",
+    "type": "new_model",
+    "model_id": "~openai/gpt-terra-latest",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $12.0/1M"
+  },
+  {
+    "event_id": "d465e19014f8af7c",
+    "type": "new_model",
+    "model_id": "~openai/gpt-luna-latest",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.1/1M, output: $0.5/1M"
+  },
+  {
+    "event_id": "0a98469811ce95fa",
+    "type": "new_model",
+    "model_id": "sakana/fugu-ultra-v2",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $5.0/1M, output: $30.0/1M"
+  },
+  {
+    "event_id": "0ec6f5aaec44bd6a",
+    "type": "new_model",
+    "model_id": "sakana/fugu-max",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $6.0/1M"
+  },
+  {
+    "event_id": "b61c76e0ff7eb3d3",
+    "type": "new_model",
+    "model_id": "inclusionai/ling-3.0-flash-vl",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.06/1M, output: $0.18/1M"
+  },
+  {
+    "event_id": "acf15d548e0e5cfa",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.049/1M, output: $0.375/1M"
+  },
+  {
+    "event_id": "7a33e3109c91dee6",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.05/1M, output: $0.15/1M"
+  },
+  {
+    "event_id": "9c5e7135ec37938f",
+    "type": "new_model",
+    "model_id": "inception/mercury-2.5",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.04/1M, output: $0.15/1M"
+  },
+  {
+    "event_id": "27bfbf1003c73eba",
+    "type": "new_model",
+    "model_id": "nex-agi/nex-n2.5-mini",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.025/1M, output: $0.1/1M"
+  },
+  {
+    "event_id": "298faf945bb74f74",
+    "type": "new_model",
+    "model_id": "nex-agi/nex-n2.5-pro",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.075/1M, output: $0.25/1M"
+  },
+  {
+    "event_id": "0f98fe4a73d06c0e",
+    "type": "new_model",
+    "model_id": "openai/gpt-6-astra",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $10.0/1M, output: $50.0/1M"
+  },
+  {
+    "event_id": "a9783882e6fc6261",
+    "type": "new_model",
+    "model_id": "openai/gpt-6-astra:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $5.0/1M, output: $25.0/1M"
+  },
+  {
+    "event_id": "d06c0f4097ddb1b6",
+    "type": "new_model",
+    "model_id": "openai/gpt-6-astra-pro",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $10.0/1M, output: $50.0/1M"
+  },
+  {
+    "event_id": "c9b2426a1a3172a6",
+    "type": "new_model",
+    "model_id": "openai/gpt-6-astra-pro:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $5.0/1M, output: $25.0/1M"
+  },
+  {
+    "event_id": "ef19958b4ed3b978",
+    "type": "new_model",
+    "model_id": "qwen/qwen3.8-max-0902",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $6.0/1M"
+  },
+  {
+    "event_id": "3623b6c5b1fca093",
+    "type": "new_model",
+    "model_id": "meta/muse-spark-1.3-contributor",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.1/1M, output: $0.2/1M"
+  },
+  {
+    "event_id": "152846cba62b8984",
+    "type": "new_model",
+    "model_id": "meta/muse-spark-1.3",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $1.25/1M, output: $4.25/1M"
+  },
+  {
+    "event_id": "002d45612335bf18",
+    "type": "new_model",
+    "model_id": "google/gemini-3.8-flash",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.825/1M, output: $4.125/1M"
+  },
+  {
+    "event_id": "e95934b73618343a",
+    "type": "new_model",
+    "model_id": "google/gemini-3.8-flash:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.375/1M, output: $1.875/1M"
+  },
+  {
+    "event_id": "f5e7aaa9ba98f7e1",
+    "type": "new_model",
+    "model_id": "anthropic/claude-fable-5.1",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $10.0/1M, output: $50.0/1M"
+  },
+  {
+    "event_id": "420ea2efbe8db012",
+    "type": "new_model",
+    "model_id": "anthropic/claude-fable-5.1:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $5.0/1M, output: $25.0/1M"
+  },
+  {
+    "event_id": "737431c19839633c",
+    "type": "new_model",
+    "model_id": "ibm-granite/granite-4.2-8b",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.06/1M, output: $0.25/1M"
+  },
+  {
+    "event_id": "ff6214767420d5e9",
+    "type": "new_model",
+    "model_id": "tencent/hy4-preview",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.834/1M, output: $2.501/1M"
+  },
+  {
+    "event_id": "c4700775695e16f1",
+    "type": "new_model",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.0412/1M, output: $0.12/1M"
+  },
+  {
+    "event_id": "b35a43795d1ec509",
+    "type": "new_model",
+    "model_id": "qwen/qwen3.8-flash",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.15/1M, output: $0.47/1M"
+  },
+  {
+    "event_id": "2853960ae6a079ab",
+    "type": "new_model",
+    "model_id": "z-ai/glm-5.3-flash",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.0412/1M, output: $0.12/1M"
+  },
+  {
+    "event_id": "7a4ad0b0e3355f0b",
+    "type": "new_model",
+    "model_id": "z-ai/glm-5.3-flash:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.05/1M, output: $0.18/1M"
+  },
+  {
+    "event_id": "94d62d270f9b312b",
+    "type": "new_model",
+    "model_id": "meta/muse-spark-1.2-contributor",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.1/1M, output: $0.2/1M"
+  },
+  {
+    "event_id": "f526598f8a83bed7",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4-flash-vision-exp",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.2156/1M, output: $0.6468/1M"
+  },
+  {
+    "event_id": "359689d03cdbd744",
+    "type": "new_model",
+    "model_id": "tencent/hy-mt2-1.8b",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.044/1M, output: $0.177/1M"
+  },
+  {
+    "event_id": "dd0ea9a002447faf",
+    "type": "new_model",
+    "model_id": "tencent/hy-mt2-30b-a3b",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.074/1M, output: $0.295/1M"
+  },
+  {
+    "event_id": "d97a39bdf272c02a",
+    "type": "new_model",
+    "model_id": "~z-ai/glm-latest",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.079/1M, output: $1.4/1M"
+  },
+  {
+    "event_id": "4de20ef359e5e9fd",
+    "type": "new_model",
+    "model_id": "tencent/hy-mt2-7b",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.074/1M, output: $0.295/1M"
+  },
+  {
+    "event_id": "6cb527c299b8f7e3",
+    "type": "new_model",
+    "model_id": "z-ai/glm-5.3",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.079/1M, output: $1.4/1M"
+  },
+  {
+    "event_id": "cb5b4e85a0a09343",
+    "type": "new_model",
+    "model_id": "z-ai/glm-5.3:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.45/1M, output: $2.0/1M"
+  },
+  {
+    "event_id": "21da7117ea75313c",
+    "type": "new_model",
+    "model_id": "qwen/qwen3.8-27b",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.04/1M, output: $1.35/1M"
+  },
+  {
+    "event_id": "a68829be076e0866",
+    "type": "new_free_model",
+    "model_id": "dots-studio/dots-3-note-preview:free",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "5fe6ecfe38b452ba",
+    "type": "new_model",
+    "model_id": "google/gemini-3.7-flash",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.75/1M, output: $3.75/1M"
+  },
+  {
+    "event_id": "d1e9bfd4927d2248",
+    "type": "new_model",
+    "model_id": "google/gemini-3.7-flash:batch",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.375/1M, output: $1.875/1M"
+  },
+  {
+    "event_id": "c0d39876a4e7ecb5",
+    "type": "new_model",
+    "model_id": "bytedance-seed/seed-2-1-turbo",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.5/1M, output: $2.5/1M"
+  },
+  {
+    "event_id": "fefc8dd012c3af4e",
+    "type": "new_model",
+    "model_id": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $6.0/1M"
+  },
+  {
+    "event_id": "afb077ef503eafc9",
+    "type": "new_model",
+    "model_id": "bytedance-seed/seed-2.0-code",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.5/1M, output: $3.0/1M"
+  },
+  {
+    "event_id": "1db409c3e73d1427",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4-pro-0813",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.66/1M, output: $1.98/1M"
+  },
+  {
+    "event_id": "d3f7bbac20079f41",
+    "type": "new_model",
+    "model_id": "x-ai/grok-4.6",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $2.0/1M, output: $6.0/1M"
+  },
+  {
+    "event_id": "73ef6619d1b7880a",
+    "type": "new_free_model",
+    "model_id": "liquid/lfm-2.5-2.6b:free",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "8db409f65ff28af4",
+    "type": "new_model",
+    "model_id": "nvidia/nemotron-3.5-lightning",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.07/1M, output: $0.2/1M"
+  },
+  {
+    "event_id": "6603cc78a8def92d",
+    "type": "new_free_model",
+    "model_id": "nvidia/nemotron-3.5-lightning:free",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.0/1M, output: $0.0/1M"
+  },
+  {
+    "event_id": "6741147dec0d95b0",
+    "type": "new_model",
+    "model_id": "sakana/sakana-namazu",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.95/1M, output: $4.0/1M"
+  },
+  {
+    "event_id": "506e8cd63a29799f",
+    "type": "new_model",
+    "model_id": "upstage/solar-pro4",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.15/1M, output: $0.6/1M"
+  },
+  {
+    "event_id": "76b7cf7a7e1b307a",
+    "type": "new_model",
+    "model_id": "meta/muse-glimmer-30b",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.3/1M, output: $1.2/1M"
+  },
+  {
+    "event_id": "ea8fb5b167dbb79d",
+    "type": "new_model",
+    "model_id": "meta/muse-spark-1.2",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $1.25/1M, output: $4.25/1M"
+  },
+  {
+    "event_id": "e43009b762229f16",
+    "type": "new_model",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T09:33:36.326440+00:00",
+    "details": "Added with input: $0.0475/1M, output: $0.1568/1M"
+  }
+]
