@@ -190,6 +190,7 @@ a:hover { color: var(--text); }
   padding: 72px 0 48px;
   max-width: 860px;
   position: relative;
+  z-index: 2;
 }
 
 .intro-note {
@@ -261,6 +262,8 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
   margin-bottom: 56px;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 860px) {
@@ -355,6 +358,8 @@ h1 {
   gap: 12px;
   align-items: stretch;
   margin: 24px 0 16px;
+  position: relative;
+  z-index: 1;
 }
 
 .search-wrap { width: 100%; position: relative; }
@@ -438,6 +443,8 @@ h1 {
   border: 1px solid var(--border);
   background: var(--surface);
   backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 1;
 }
 
 .model-table {
@@ -678,12 +685,12 @@ body.no-stats .score-cell { display: none; }
 }
 
 .chg-btn {
-  padding: 7px 14px;
+  padding: 5px 12px;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--surface);
   color: var(--text-muted);
-  font: 500 13px var(--font-sans);
+  font: 500 12px var(--font-sans);
   cursor: pointer;
   white-space: nowrap;
   transition: all .18s;
