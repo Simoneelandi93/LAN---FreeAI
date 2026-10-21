@@ -352,7 +352,7 @@
     "id": "claude-sonnet-4-6",
     "name": "Claude Sonnet 4.6",
     "organization": "Anthropic",
-    "rank": 92,
+    "rank": 91,
     "score": 36.7,
     "benchmarks": {
       "GPQA": 89.9,
@@ -718,7 +718,7 @@
     "id": "deepseek-v4-flash-0731",
     "name": "DeepSeek-V4-Flash-0731",
     "organization": "DeepSeek",
-    "rank": 56,
+    "rank": 55,
     "score": 42.95,
     "benchmarks": {
       "Toolathlon": 70.3
@@ -1902,7 +1902,7 @@
     "id": "gpt-5.1-thinking-2025-11-12",
     "name": "GPT-5.1 Thinking",
     "organization": "OpenAI",
-    "rank": 91,
+    "rank": 92,
     "score": 36.7,
     "benchmarks": {
       "GPQA": 88.1,
@@ -2085,7 +2085,7 @@
     "id": "gpt-5.5-pro",
     "name": "GPT-5.5 Pro",
     "organization": "OpenAI",
-    "rank": 38,
+    "rank": 39,
     "score": 45.81,
     "benchmarks": {
       "HLE": 57.2,
@@ -2256,7 +2256,7 @@
     "id": "gpt-6-luna",
     "name": "GPT-6 Luna",
     "organization": "OpenAI",
-    "rank": 55,
+    "rank": 56,
     "score": 42.95,
     "benchmarks": {},
     "benchmark_count": 0,
@@ -2290,7 +2290,7 @@
     "id": "gpt-oss-120b-high",
     "name": "GPT OSS 120B High",
     "organization": "OpenAI",
-    "rank": 181,
+    "rank": 182,
     "score": 25.15,
     "benchmarks": {
       "GPQA": 80.9,
@@ -3816,7 +3816,7 @@
     "id": "mistral-large-latest",
     "name": "Mistral Large 3 (675B Instruct 2512)",
     "organization": "Mistral AI",
-    "rank": 295,
+    "rank": 294,
     "score": 8.71,
     "benchmarks": {
       "GPQA": 43.9,
@@ -4227,7 +4227,7 @@
     "id": "nova-2-lite",
     "name": "Nova 2 Lite",
     "organization": "Amazon",
-    "rank": 182,
+    "rank": 181,
     "score": 25.15,
     "benchmarks": {
       "GPQA": 79.6,
@@ -4273,7 +4273,7 @@
     "id": "nova-2-sonic",
     "name": "Nova 2 Sonic",
     "organization": "Amazon",
-    "rank": 294,
+    "rank": 295,
     "score": 8.71,
     "benchmarks": {},
     "benchmark_count": 0,
@@ -5539,7 +5539,7 @@
     "id": "seed-2.1-pro",
     "name": "Seed 2.1 Pro",
     "organization": "ByteDance",
-    "rank": 39,
+    "rank": 38,
     "score": 45.81,
     "benchmarks": {
       "HLE": 55.7,
