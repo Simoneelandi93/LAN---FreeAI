@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "166b667fce0a34a6",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T10:05:58.601452+00:00",
+    "details": "Input: $0.3 -> $0.15"
+  },
+  {
+    "event_id": "127c02e4f0595cb5",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.5-122b-a10b",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T10:05:58.601452+00:00",
+    "details": "Input: $0.4 -> $0.26"
+  },
+  {
+    "event_id": "309e187ea49e9d82",
+    "type": "price_change",
+    "model_id": "moonshotai/kimi-k2.7-code",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T10:04:47.917147+00:00",
+    "details": "Input: $0.6712 -> $0.6725"
+  },
+  {
     "event_id": "2324fae77c5fc2c4",
     "type": "new_free_model",
     "model_id": "big-pickle",
@@ -1574,29 +1598,5 @@
     "provider": "OpenRouter",
     "detected_at": "2026-10-21T09:33:36.326440+00:00",
     "details": "Added with input: $0.15/1M, output: $0.6/1M"
-  },
-  {
-    "event_id": "76b7cf7a7e1b307a",
-    "type": "new_model",
-    "model_id": "meta/muse-glimmer-30b",
-    "provider": "OpenRouter",
-    "detected_at": "2026-10-21T09:33:36.326440+00:00",
-    "details": "Added with input: $0.3/1M, output: $1.2/1M"
-  },
-  {
-    "event_id": "ea8fb5b167dbb79d",
-    "type": "new_model",
-    "model_id": "meta/muse-spark-1.2",
-    "provider": "OpenRouter",
-    "detected_at": "2026-10-21T09:33:36.326440+00:00",
-    "details": "Added with input: $1.25/1M, output: $4.25/1M"
-  },
-  {
-    "event_id": "e43009b762229f16",
-    "type": "new_model",
-    "model_id": "~deepseek/deepseek-v4-flash-latest",
-    "provider": "OpenRouter",
-    "detected_at": "2026-10-21T09:33:36.326440+00:00",
-    "details": "Added with input: $0.0475/1M, output: $0.1568/1M"
   }
 ]
