@@ -97,7 +97,84 @@ def _words(value: Any) -> set:
     return {w for w in re.findall(r"[a-z0-9]+", str(value or "").lower()) if len(w) >= 3}
 
 
-def _variants(name: Any, model_id: Any) -> List[str]:
+# Tokens that describe how a model is served, not which model it is.
+QUALIFIER_TOKENS = {
+    "thinking", "fast", "free", "preview", "latest", "beta", "experimental",
+    "instruct", "chat", "it", "online", "reasoning", "high", "low", "medium",
+}
+
+# Organization names that are used as a prefix on catalog rows.
+ORG_TOKENS = {
+    "openai", "anthropic", "google", "meta", "mistral", "cohere", "amazon", "aws",
+    "azure", "microsoft", "nvidia", "alibaba", "qwen", "deepseek", "moonshot",
+    "moonshotai", "zhipu", "zai", "minimax", "baidu", "bytedance", "tencent", "xai",
+    "ai21", "ibm", "databricks", "vercel", "openrouter", "upstage", "sao10k",
+    "nousresearch", "thedrummer", "cognitivecomputations",
+}
+
+
+def _strip_parens(value: str) -> str:
+    return re.sub(r"\([^()]*\)", " ", value)
+
+
+def _strip_colon(value: str) -> str:
+    if ":" in value:
+        head, tail = value.split(":", 1)
+        if len(head.split()) <= 3:
+            return tail
+    return value
+
+
+def _strip_trailing_qualifiers(value: str) -> str:
+    words = value.split()
+    while words and re.sub(r"[^a-z0-9]", "", words[-1].lower()) in QUALIFIER_TOKENS:
+        words.pop()
+    return " ".join(words)
+
+
+def _strip_leading_org(value: str) -> str:
+    words = value.split()
+    while len(words) > 2 and re.sub(r"[^a-z0-9]", "", words[0].lower()) in ORG_TOKENS:
+        words.pop(0)
+    return " ".join(words)
+
+
+def _derived_raw_strings(name: Any) -> List[str]:
+    # Raw (un-normalized) catalog-side candidate names after stripping region tags,
+    # provider prefixes, routing wrappers and serving qualifiers.
+    raw = str(name or "")
+    base = _strip_parens(raw)
+    stripped = _strip_trailing_qualifiers(_strip_colon(base))
+    candidates = [
+        _strip_leading_org(stripped),
+        stripped,
+        _strip_colon(base),
+        base,
+    ]
+    for group in re.findall(r"\(([^()]{3,80})\)", raw):
+        tokens = [t for t in re.split(r"[^A-Za-z0-9\.]+", group) if t]
+        real = [t for t in tokens if t.lower() not in QUALIFIER_TOKENS]
+        if (any(ch.isdigit() for ch in group) and len(tokens) >= 2) or len(real) >= 3:
+            candidates.insert(0, group)
+    return list(dict.fromkeys(candidates))
+
+
+def _derived_variants(name: Any) -> List[str]:
+    # Normalized derived candidates, plus word-sorted keys for multi-word cores.
+    out = []
+    for candidate in _derived_raw_strings(name):
+        norm = _normalize(candidate)
+        if norm:
+            out.append(norm)
+        word_count = len(re.findall(r"[A-Za-z0-9\.]+", candidate))
+        if word_count >= 3:
+            tk = _word_key(candidate)
+            if tk:
+                out.append(tk)
+    return list(dict.fromkeys(out))
+
+
+def _variants(name: Any, model_id: Any, derived: bool = False) -> List[str]:
     ids = [model_id]
     if isinstance(model_id, str) and "/" in model_id:
         ids.append(model_id.split("/")[-1])
@@ -109,6 +186,8 @@ def _variants(name: Any, model_id: Any) -> List[str]:
         token_key = _word_key(raw)
         if token_key:
             out.append(token_key)
+    if derived:
+        out.extend(_derived_variants(name))
     return list(dict.fromkeys(out))
 
 
@@ -150,11 +229,20 @@ def fetch_llm_stats() -> List[Dict[str, Any]]:
     index: Dict[str, Dict[str, Any]] = {}
     try:
         compact = _get(INDEXES_ENDPOINT)
-        general = (compact or {}).get("general") or {}
-        for row in general.get("models", []):
-            model_id = row.get("model_id")
-            if model_id:
-                index[str(model_id)] = row
+        # The compact index holds one leaderboard per category. We pull the overall
+        # score plus the reasoning/coding/agent breakdowns so the dashboard can show
+        # a single composite plus a detailed tooltip.
+        for category in ("general", "reasoning", "coding", "agents"):
+            g = (compact or {}).get(category) or {}
+            for row in g.get("models", []):
+                model_id = row.get("model_id")
+                if not model_id:
+                    continue
+                entry = index.setdefault(str(model_id), {})
+                entry[f"{category}_rank"] = row.get("rank")
+                entry[f"{category}_score"] = row.get("conservative")
+                entry[f"{category}_mu"] = row.get("mu")
+                entry[f"{category}_games"] = row.get("games_played")
     except Exception as e:
         print(f"[LLM Stats] Index fetch failed (continuing without ranks): {e}")
 
@@ -166,17 +254,21 @@ def fetch_llm_stats() -> List[Dict[str, Any]]:
         if not model_id:
             continue
         ranked = index.get(model_id, {})
-        score = ranked.get("conservative")
-        if score is None:
-            score = ranked.get("mu")
         records.append(
             {
                 "id": model_id,
                 "name": model.get("name") or model_id,
                 "organization": model.get("organization"),
-                "rank": ranked.get("rank"),
-                "score": score,
-                "games_played": ranked.get("games_played"),
+                "rank": ranked.get("general_rank"),
+                "score": ranked.get("general_score"),
+                "mu": ranked.get("general_mu"),
+                "games_played": ranked.get("general_games"),
+                "reasoning_rank": ranked.get("reasoning_rank"),
+                "reasoning_score": ranked.get("reasoning_score"),
+                "coding_rank": ranked.get("coding_rank"),
+                "coding_score": ranked.get("coding_score"),
+                "agent_rank": ranked.get("agents_rank"),
+                "agent_score": ranked.get("agents_score"),
                 "benchmarks": _benchmarks(model),
                 "url": f"{LLM_STATS_SITE}/models/{model_id}",
             }
@@ -194,6 +286,14 @@ def _payload(record: Dict[str, Any]) -> Dict[str, Any]:
         "organization": record.get("organization"),
         "rank": record.get("rank"),
         "score": record.get("score"),
+        "mu": record.get("mu"),
+        "games_played": record.get("games_played"),
+        "reasoning_rank": record.get("reasoning_rank"),
+        "reasoning_score": record.get("reasoning_score"),
+        "coding_rank": record.get("coding_rank"),
+        "coding_score": record.get("coding_score"),
+        "agent_rank": record.get("agent_rank"),
+        "agent_score": record.get("agent_score"),
         "benchmarks": benchmarks,
         "benchmark_count": len(benchmarks),
         "url": record.get("url") or f"{LLM_STATS_SITE}/models/{record.get('id')}",
@@ -234,7 +334,7 @@ def attach_llm_stats(models: List[Dict[str, Any]], stats: List[Dict[str, Any]]) 
     matched_names = set()
     for model in models:
         payload = None
-        for variant in _variants(model.get("name"), model.get("model_id")):
+        for variant in _variants(model.get("name"), model.get("model_id"), derived=True):
             payload = exact_index.get(variant)
             if payload:
                 exact += 1

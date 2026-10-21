@@ -75,13 +75,13 @@
           <table class="model-table" id="modelTable">
             <thead>
               <tr>
-                <th class="col-name">Model</th>
-                <th class="col-provider">Provider</th>
+                <th class="col-name sortable" data-sort="name">Model <span class="sort-ind"></span></th>
+                <th class="col-provider sortable" data-sort="provider">Provider <span class="sort-ind"></span></th>
                 <th class="col-cap">Capabilities</th>
-                <th class="col-score">LLM Stats</th>
-                <th class="col-price">Input / 1M</th>
-                <th class="col-price">Output / 1M</th>
-                <th class="col-context">Context</th>
+                <th class="col-score sortable" data-sort="score">LLM Stats <span class="sort-ind"></span></th>
+                <th class="col-price sortable" data-sort="input">Input / 1M <span class="sort-ind"></span></th>
+                <th class="col-price sortable" data-sort="output">Output / 1M <span class="sort-ind"></span></th>
+                <th class="col-context sortable" data-sort="context">Context <span class="sort-ind"></span></th>
               </tr>
             </thead>
             <tbody id="modelBody"></tbody>

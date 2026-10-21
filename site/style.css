@@ -321,9 +321,9 @@ h1 {
 /* ---------- Tabs ---------- */
 .tabs-primary {
   display: flex;
-  gap: 4px;
-  margin-bottom: 24px;
-  padding: 4px;
+  gap: 2px;
+  margin-bottom: 16px;
+  padding: 3px;
   border-radius: var(--radius-md);
   background: var(--surface);
   border: 1px solid var(--border);
@@ -331,12 +331,12 @@ h1 {
 }
 
 .tab-pri {
-  padding: 8px 18px;
+  padding: 6px 14px;
   border: 0;
   border-radius: var(--radius-sm);
   background: transparent;
   color: var(--text-muted);
-  font: 500 14px var(--font-sans);
+  font: 500 13px var(--font-sans);
   cursor: pointer;
   transition: all .18s;
 }
@@ -396,18 +396,18 @@ h1 {
 .filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  padding: 0 0 16px;
+  gap: 6px;
+  padding: 0 0 12px;
   border-bottom: 1px solid var(--border);
 }
 
 .filter {
-  padding: 7px 14px;
+  padding: 5px 12px;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--surface);
   color: var(--text-muted);
-  font: 500 13px var(--font-sans);
+  font: 500 12px var(--font-sans);
   cursor: pointer;
   white-space: nowrap;
   transition: all .18s;

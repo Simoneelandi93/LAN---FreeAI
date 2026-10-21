@@ -3528,7 +3528,8 @@
     "input_price_per_m": 0.22,
     "output_price_per_m": 0.88,
     "is_free": false,
-    "source_url": "https://models.dev/providers/google-vertex/"
+    "source_url": "https://models.dev/providers/google-vertex/",
+    "llm_stats_id": "qwen3-235b-a22b"
   },
   {
     "id": "google-vertex/openai/gpt-oss-120b-maas",
@@ -4892,7 +4893,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-opus-4-8"
   },
   {
     "id": "digitalocean/openai-gpt-5",
@@ -4954,7 +4956,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-6-sol"
   },
   {
     "id": "digitalocean/openai-gpt-5.1-codex-max",
@@ -5141,7 +5144,8 @@
     "input_price_per_m": 21,
     "output_price_per_m": 168,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-5.2-pro-2025-12-11"
   },
   {
     "id": "digitalocean/openai-gpt-5.4",
@@ -5235,7 +5239,8 @@
     "input_price_per_m": 1.75,
     "output_price_per_m": 14,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-5.3-codex"
   },
   {
     "id": "digitalocean/anthropic-claude-opus-5.5",
@@ -5266,7 +5271,8 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-opus-5-5"
   },
   {
     "id": "digitalocean/openai-gpt-image-1",
@@ -5328,7 +5334,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-opus-4-5-20251101"
   },
   {
     "id": "digitalocean/openai-gpt-5.4-nano",
@@ -5359,7 +5366,8 @@
     "input_price_per_m": 0.2,
     "output_price_per_m": 1.25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-5.4-nano"
   },
   {
     "id": "digitalocean/openai-gpt-6-luna",
@@ -5390,7 +5398,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-6-luna"
   },
   {
     "id": "digitalocean/mistral-nemo-instruct-2407",
@@ -5578,7 +5587,8 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-fable-5"
   },
   {
     "id": "digitalocean/anthropic-claude-5.5-haiku",
@@ -5609,7 +5619,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-haiku-5-5"
   },
   {
     "id": "digitalocean/openai-gpt-5.6-terra",
@@ -5640,7 +5651,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 12,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-5.6-terra"
   },
   {
     "id": "digitalocean/nemotron-3-ultra-550b",
@@ -5733,7 +5745,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-opus-5"
   },
   {
     "id": "digitalocean/anthropic-claude-4.1-opus",
@@ -5764,7 +5777,8 @@
     "input_price_per_m": 15,
     "output_price_per_m": 75,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-opus-4-1-20250805"
   },
   {
     "id": "digitalocean/anthropic-claude-opus-4",
@@ -5951,7 +5965,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-sonnet-5-5"
   },
   {
     "id": "digitalocean/qwen3.8-max",
@@ -6166,7 +6181,8 @@
     "input_price_per_m": 0.05,
     "output_price_per_m": 0.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-5-nano-2025-08-07"
   },
   {
     "id": "digitalocean/mimo-v2.5-pro",
@@ -6355,7 +6371,8 @@
     "input_price_per_m": 1,
     "output_price_per_m": 5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-haiku-4-5-20251001"
   },
   {
     "id": "digitalocean/openai-gpt-6-astra",
@@ -6386,7 +6403,8 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-6-astra"
   },
   {
     "id": "digitalocean/deepseek-v3",
@@ -6509,7 +6527,8 @@
     "input_price_per_m": 1.1,
     "output_price_per_m": 4.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "o3-mini"
   },
   {
     "id": "digitalocean/llama3.3-70b-instruct",
@@ -6571,7 +6590,8 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-5.6-sol"
   },
   {
     "id": "digitalocean/anthropic-claude-3.5-sonnet",
@@ -6727,7 +6747,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-6.1-sol"
   },
   {
     "id": "digitalocean/openai-gpt-5.4-mini",
@@ -6758,7 +6779,8 @@
     "input_price_per_m": 0.75,
     "output_price_per_m": 4.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-5.4-mini"
   },
   {
     "id": "digitalocean/glm-5.1",
@@ -6820,7 +6842,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-opus-4-7"
   },
   {
     "id": "digitalocean/openai-gpt-5-mini",
@@ -6851,7 +6874,8 @@
     "input_price_per_m": 0.25,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-5-mini-2025-08-07"
   },
   {
     "id": "digitalocean/glm-5.3-flash",
@@ -7130,7 +7154,8 @@
     "input_price_per_m": 0.2,
     "output_price_per_m": 1.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-5.6-luna"
   },
   {
     "id": "digitalocean/mistral-3-14B",
@@ -7437,7 +7462,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-sonnet-5"
   },
   {
     "id": "digitalocean/anthropic-claude-fable-5.1",
@@ -7468,7 +7494,8 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-fable-5-1"
   },
   {
     "id": "digitalocean/anthropic-claude-4.5-sonnet",
@@ -7499,7 +7526,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-sonnet-4-5-20250929"
   },
   {
     "id": "digitalocean/llama-4-maverick",
@@ -7776,7 +7804,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-sonnet-4-6"
   },
   {
     "id": "digitalocean/openai-gpt-4o-mini",
@@ -7807,7 +7836,8 @@
     "input_price_per_m": 0.15,
     "output_price_per_m": 0.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "gpt-4o-mini-2024-07-18"
   },
   {
     "id": "digitalocean/openai-gpt-5.4-pro",
@@ -7869,7 +7899,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/digitalocean/"
+    "source_url": "https://models.dev/providers/digitalocean/",
+    "llm_stats_id": "claude-opus-4-6"
   },
   {
     "id": "digitalocean/bge-m3",
@@ -10526,7 +10557,8 @@
     "input_price_per_m": 1.655,
     "output_price_per_m": 8.778,
     "is_free": false,
-    "source_url": "https://models.dev/providers/greenpt/"
+    "source_url": "https://models.dev/providers/greenpt/",
+    "llm_stats_id": "kimi-k2.6"
   },
   {
     "id": "greenpt/kimi-k2.6",
@@ -11372,7 +11404,8 @@
     "input_price_per_m": 1.25,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/zenmux/"
+    "source_url": "https://models.dev/providers/zenmux/",
+    "llm_stats_id": "gpt-5.1-2025-11-13"
   },
   {
     "id": "zenmux/openai/gpt-5.5-instant",
@@ -12232,7 +12265,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/zenmux/"
+    "source_url": "https://models.dev/providers/zenmux/",
+    "llm_stats_id": "step-3.7-flash"
   },
   {
     "id": "zenmux/stepfun/step-3.7-flash",
@@ -12420,7 +12454,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/zenmux/"
+    "source_url": "https://models.dev/providers/zenmux/",
+    "llm_stats_id": "kimi-k3"
   },
   {
     "id": "zenmux/moonshotai/kimi-k2-0905",
@@ -12483,7 +12518,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/zenmux/"
+    "source_url": "https://models.dev/providers/zenmux/",
+    "llm_stats_id": "kimi-k2.7-code"
   },
   {
     "id": "zenmux/moonshotai/kimi-k3",
@@ -13303,7 +13339,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/zenmux/"
+    "source_url": "https://models.dev/providers/zenmux/",
+    "llm_stats_id": "glm-4.7-flash"
   },
   {
     "id": "zenmux/z-ai/glm-5-turbo",
@@ -14299,7 +14336,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/zenmux/"
+    "source_url": "https://models.dev/providers/zenmux/",
+    "llm_stats_id": "claude-sonnet-5"
   },
   {
     "id": "zenmux/google/gemini-2.5-pro",
@@ -14605,7 +14643,8 @@
     "input_price_per_m": 0.172,
     "output_price_per_m": 0.572,
     "is_free": false,
-    "source_url": "https://models.dev/providers/zenmux/"
+    "source_url": "https://models.dev/providers/zenmux/",
+    "llm_stats_id": "hy3"
   },
   {
     "id": "zenmux/kuaishou/kat-coder-pro-v2",
@@ -16149,7 +16188,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "muse-spark-1.3"
   },
   {
     "id": "opencode/gemini-3.1-pro",
@@ -16372,7 +16412,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "glm-4.7"
   },
   {
     "id": "opencode/grok-code",
@@ -16817,7 +16858,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "kimi-k2.5"
   },
   {
     "id": "opencode/muse-spark-1.2",
@@ -17435,7 +17477,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "minimax-m2.1"
   },
   {
     "id": "opencode/claude-opus-4-1",
@@ -17561,7 +17604,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "laguna-s-2.1"
   },
   {
     "id": "opencode/gemini-3.5-flash-lite",
@@ -17657,7 +17701,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "ling-3.0-flash"
   },
   {
     "id": "opencode/gpt-5.2",
@@ -17851,7 +17896,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "minimax-m2.5"
   },
   {
     "id": "opencode/nemotron-3-super-free",
@@ -18072,7 +18118,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "minimax-m3.1-flash"
   },
   {
     "id": "opencode/glm-5.1",
@@ -18234,7 +18281,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "mimo-v2-omni"
   },
   {
     "id": "opencode/claude-haiku-5-5",
@@ -18463,7 +18511,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "mimo-v2.5"
   },
   {
     "id": "opencode/ling-3.0-tiny-free",
@@ -18689,7 +18738,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "qwen3.6-plus"
   },
   {
     "id": "opencode/ling-3.1-flash-free",
@@ -18817,7 +18867,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "hy3"
   },
   {
     "id": "opencode/grok-4.7",
@@ -18880,7 +18931,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "mimo-v2-pro"
   },
   {
     "id": "opencode/ling-2.6-flash-free",
@@ -19005,7 +19057,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "glm-5"
   },
   {
     "id": "opencode/glm-5.3",
@@ -19070,7 +19123,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "muse-spark-1.2"
   },
   {
     "id": "opencode/claude-fable-5-1",
@@ -19294,7 +19348,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "glm-5.3-flash"
   },
   {
     "id": "opencode/hy3-free",
@@ -19324,7 +19379,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "hy3"
   },
   {
     "id": "opencode/claude-opus-4-5",
@@ -19541,7 +19597,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "ling-3.0-flash-fin"
   },
   {
     "id": "opencode/minimax-m2.7",
@@ -19703,7 +19760,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "mimo-v2.6-flash"
   },
   {
     "id": "opencode/claude-opus-5",
@@ -19766,7 +19824,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "mimo-v2-flash"
   },
   {
     "id": "opencode/deepseek-v4-flash-vision-exp",
@@ -20053,7 +20112,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "minimax-m3"
   },
   {
     "id": "opencode/claude-opus-4-6",
@@ -20150,7 +20210,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "deepseek-v4.1-flash"
   },
   {
     "id": "umans-ai-coding-plan/umans-glm-5.3-flash",
@@ -20966,7 +21027,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/bothub/"
+    "source_url": "https://models.dev/providers/bothub/",
+    "llm_stats_id": "gemma-4-31b-it"
   },
   {
     "id": "bothub/gpt-5.6-luna",
@@ -28375,7 +28437,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "gpt-3.5-turbo-0125"
   },
   {
     "id": "openrouter/openai/gpt-5.1-codex-mini",
@@ -28538,7 +28601,8 @@
     "input_price_per_m": 1.1,
     "output_price_per_m": 4.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "o4-mini"
   },
   {
     "id": "openrouter/openai/gpt-5.6-luna-pro",
@@ -29086,7 +29150,8 @@
     "input_price_per_m": 1.75,
     "output_price_per_m": 14,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "gpt-5.2-2025-12-11"
   },
   {
     "id": "openrouter/openai/gpt-5.2",
@@ -29444,7 +29509,8 @@
     "input_price_per_m": 1.1,
     "output_price_per_m": 4.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "o3-mini"
   },
   {
     "id": "openrouter/openai/gpt-5",
@@ -29704,7 +29770,8 @@
     "input_price_per_m": 1,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "gpt-3.5-turbo-0125"
   },
   {
     "id": "openrouter/openai/o1",
@@ -29769,7 +29836,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "gpt-4o-2024-05-13"
   },
   {
     "id": "openrouter/openai/gpt-3.5-turbo-16k",
@@ -31316,7 +31384,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "nemotron-content-safety-3.5"
   },
   {
     "id": "openrouter/nvidia/nemotron-3-super-120b-a12b:free",
@@ -32205,7 +32274,8 @@
     "input_price_per_m": 0.7,
     "output_price_per_m": 0.7,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "hermes-3-70b"
   },
   {
     "id": "openrouter/nousresearch/hermes-3-llama-3.1-405b",
@@ -32235,7 +32305,8 @@
     "input_price_per_m": 1,
     "output_price_per_m": 1,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "hermes-3-405b"
   },
   {
     "id": "openrouter/nousresearch/hermes-4-405b",
@@ -32545,7 +32616,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "minimax-m3.1-flash"
   },
   {
     "id": "openrouter/inception/mercury-3",
@@ -33585,7 +33657,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "lfm-2.5-2.6b"
   },
   {
     "id": "openrouter/meituan/longcat-2.0",
@@ -34296,7 +34369,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "inkling"
   },
   {
     "id": "openrouter/thinkingmachines/inkling-small:free",
@@ -34328,7 +34402,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "inkling-small"
   },
   {
     "id": "openrouter/thinkingmachines/inkling-small",
@@ -35485,7 +35560,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "gemma-4-26b-a4b-it"
   },
   {
     "id": "openrouter/google/gemini-3.1-flash-image-preview",
@@ -35819,7 +35895,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "gemma-4-31b-it"
   },
   {
     "id": "openrouter/google/gemini-3.5-flash-lite",
@@ -36650,7 +36727,8 @@
     "input_price_per_m": 0.18,
     "output_price_per_m": 0.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "hy3"
   },
   {
     "id": "openrouter/tencent/hy-mt2-7b",
@@ -37172,7 +37250,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "laguna-xs-2.1"
   },
   {
     "id": "openrouter/poolside/laguna-s-2.1:free",
@@ -37202,7 +37281,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "laguna-s-2.1"
   },
   {
     "id": "openrouter/poolside/laguna-xs-2.1",
@@ -42440,7 +42520,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-sonnet-5"
   },
   {
     "id": "requesty/gemini-3-pro-image",
@@ -42536,7 +42617,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 8.8,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-4.1-2025-04-14"
   },
   {
     "id": "requesty/gpt-5.6-terra",
@@ -42633,7 +42715,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-opus-4-8"
   },
   {
     "id": "requesty/gpt-6-sol",
@@ -42764,7 +42847,8 @@
     "input_price_per_m": 2.4,
     "output_price_per_m": 12,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-6-sol"
   },
   {
     "id": "requesty/gemini-3.1-flash-lite@eu",
@@ -42798,7 +42882,8 @@
     "input_price_per_m": 0.275,
     "output_price_per_m": 1.65,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gemini-3.1-flash-lite-preview"
   },
   {
     "id": "requesty/deepseek-v4.1-flash",
@@ -42895,7 +42980,8 @@
     "input_price_per_m": 4.4,
     "output_price_per_m": 22,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-opus-5-5"
   },
   {
     "id": "requesty/gpt-5-mini@eu",
@@ -42926,7 +43012,8 @@
     "input_price_per_m": 0.275,
     "output_price_per_m": 2.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-5-mini-2025-08-07"
   },
   {
     "id": "requesty/claude-fable-5.1",
@@ -42991,7 +43078,8 @@
     "input_price_per_m": 3.3,
     "output_price_per_m": 16.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-sonnet-4-6"
   },
   {
     "id": "requesty/glm-5.3@eu",
@@ -43021,7 +43109,8 @@
     "input_price_per_m": 1.2,
     "output_price_per_m": 4.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "glm-5.3"
   },
   {
     "id": "requesty/laguna-xs.2",
@@ -43113,7 +43202,8 @@
     "input_price_per_m": 0.12,
     "output_price_per_m": 0.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-6-luna"
   },
   {
     "id": "requesty/mistral-small-2603",
@@ -43176,7 +43266,8 @@
     "input_price_per_m": 0.68,
     "output_price_per_m": 2.09,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "mistral-large-4"
   },
   {
     "id": "requesty/kimi-k2.6@eu",
@@ -43208,7 +43299,8 @@
     "input_price_per_m": 0.95,
     "output_price_per_m": 4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "kimi-k2.6"
   },
   {
     "id": "requesty/step-5-preview",
@@ -43303,7 +43395,8 @@
     "input_price_per_m": 1.4,
     "output_price_per_m": 4.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "glm-5.1"
   },
   {
     "id": "requesty/qwen3.5-35b-a3b",
@@ -43402,7 +43495,8 @@
     "input_price_per_m": 2.75,
     "output_price_per_m": 16.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-5.4"
   },
   {
     "id": "requesty/qwen3.8-flash-next",
@@ -43468,7 +43562,8 @@
     "input_price_per_m": 0.2,
     "output_price_per_m": 0.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "glm-5.3-flash"
   },
   {
     "id": "requesty/minimax-m3.1-flash",
@@ -43565,7 +43660,8 @@
     "input_price_per_m": 0.11,
     "output_price_per_m": 0.44,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-4.1-nano-2025-04-14"
   },
   {
     "id": "requesty/glm-5.2@eu",
@@ -43595,7 +43691,8 @@
     "input_price_per_m": 1.2,
     "output_price_per_m": 4.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "glm-5.2"
   },
   {
     "id": "requesty/deepseek-v4-flash-0731",
@@ -43784,7 +43881,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "qwen3.8-2.4t-a95b"
   },
   {
     "id": "requesty/deepseek-v4-flash",
@@ -43974,7 +44072,8 @@
     "input_price_per_m": 0.72,
     "output_price_per_m": 3.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "kimi-k2.5"
   },
   {
     "id": "requesty/gemini-3.7-flash@eu",
@@ -44008,7 +44107,8 @@
     "input_price_per_m": 0.825,
     "output_price_per_m": 4.125,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gemini-3.7-flash"
   },
   {
     "id": "requesty/laguna-m.1",
@@ -44266,7 +44366,8 @@
     "input_price_per_m": 0.28,
     "output_price_per_m": 0.56,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "deepseek-v4-flash-0731"
   },
   {
     "id": "requesty/claude-fable-5",
@@ -44330,7 +44431,8 @@
     "input_price_per_m": 1.21,
     "output_price_per_m": 4.84,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "o4-mini"
   },
   {
     "id": "requesty/step-3.7-flash",
@@ -44395,7 +44497,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-sonnet-5-5"
   },
   {
     "id": "requesty/qwen3.8-max",
@@ -44557,7 +44660,8 @@
     "input_price_per_m": 0.22,
     "output_price_per_m": 1.32,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-5.6-luna"
   },
   {
     "id": "requesty/gemini-3.1-flash-lite",
@@ -44624,7 +44728,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-opus-5"
   },
   {
     "id": "requesty/claude-fable-5@eu",
@@ -44656,7 +44761,8 @@
     "input_price_per_m": 11,
     "output_price_per_m": 55,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-fable-5"
   },
   {
     "id": "requesty/claude-opus-4-6@eu",
@@ -44688,7 +44794,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-opus-4-6"
   },
   {
     "id": "requesty/gpt-6-luna",
@@ -44751,7 +44858,8 @@
     "input_price_per_m": 1.75,
     "output_price_per_m": 3.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "deepseek-v4-pro-0813"
   },
   {
     "id": "requesty/mimo-v2.5-pro",
@@ -45070,7 +45178,8 @@
     "input_price_per_m": 0.2,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "qwen3.8-flash-next"
   },
   {
     "id": "requesty/gpt-6.1-sol@eu",
@@ -45102,7 +45211,8 @@
     "input_price_per_m": 2.4,
     "output_price_per_m": 12,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-6.1-sol"
   },
   {
     "id": "requesty/claude-opus-5-5",
@@ -45202,7 +45312,8 @@
     "input_price_per_m": 1.25,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gemini-2.5-pro"
   },
   {
     "id": "requesty/inkling-256k",
@@ -45395,7 +45506,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gemini-4-argon"
   },
   {
     "id": "requesty/mimo-v2.6-pro",
@@ -45557,7 +45669,8 @@
     "input_price_per_m": 0.825,
     "output_price_per_m": 4.125,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gemini-3.8-flash"
   },
   {
     "id": "requesty/nemotron-3-nano-omni-30b-a3b-reasoning",
@@ -45622,7 +45735,8 @@
     "input_price_per_m": 0.44,
     "output_price_per_m": 1.76,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-4.1-mini-2025-04-14"
   },
   {
     "id": "requesty/glm-5.1",
@@ -45751,7 +45865,8 @@
     "input_price_per_m": 0.11,
     "output_price_per_m": 0.55,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-haiku-5-5"
   },
   {
     "id": "requesty/gpt-5.4-mini",
@@ -45849,7 +45964,8 @@
     "input_price_per_m": 1.65,
     "output_price_per_m": 8.25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "mistral-medium-3-5"
   },
   {
     "id": "requesty/mistral-small-2603@eu",
@@ -45880,7 +45996,8 @@
     "input_price_per_m": 0.165,
     "output_price_per_m": 0.66,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "mistral-small-latest"
   },
   {
     "id": "requesty/ling-2.6-1t",
@@ -45977,7 +46094,8 @@
     "input_price_per_m": 1.25,
     "output_price_per_m": 4.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "kimi-k2.7-code"
   },
   {
     "id": "requesty/deepseek-v4-pro",
@@ -46038,7 +46156,8 @@
     "input_price_per_m": 1.375,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-5.1-2025-11-13"
   },
   {
     "id": "requesty/seed-1.8",
@@ -46299,7 +46418,8 @@
     "input_price_per_m": 1.1,
     "output_price_per_m": 5.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-haiku-4-5-20251001"
   },
   {
     "id": "requesty/kimi-k2.6",
@@ -46364,7 +46484,8 @@
     "input_price_per_m": 0.4,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "minimax-m3"
   },
   {
     "id": "requesty/gpt-5.5@eu",
@@ -46396,7 +46517,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 33,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-5.5"
   },
   {
     "id": "requesty/kimi-k3@eu",
@@ -46428,7 +46550,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "kimi-k3"
   },
   {
     "id": "requesty/grok-4.7",
@@ -46526,7 +46649,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gemini-2.5-flash-lite"
   },
   {
     "id": "requesty/mimo-v2.5",
@@ -46622,7 +46746,8 @@
     "input_price_per_m": 3.3,
     "output_price_per_m": 16.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-sonnet-4-5-20250929"
   },
   {
     "id": "requesty/deepseek-v4.1-flash-1017@eu",
@@ -46653,7 +46778,8 @@
     "input_price_per_m": 0.5,
     "output_price_per_m": 1.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "deepseek-v4.1-flash-1017"
   },
   {
     "id": "requesty/deepseek-v4.1-flash@eu",
@@ -46684,7 +46810,8 @@
     "input_price_per_m": 0.5,
     "output_price_per_m": 1.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "deepseek-v4.1-flash"
   },
   {
     "id": "requesty/claude-sonnet-5",
@@ -46779,7 +46906,8 @@
     "input_price_per_m": 0.055,
     "output_price_per_m": 0.44,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-5-nano-2025-08-07"
   },
   {
     "id": "requesty/leanstral-1-5@eu",
@@ -46841,7 +46969,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-sonnet-4-20250514"
   },
   {
     "id": "requesty/muse-glimmer-30b",
@@ -47127,7 +47256,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-opus-4-7"
   },
   {
     "id": "requesty/devstral-latest@eu",
@@ -47287,7 +47417,8 @@
     "input_price_per_m": 0.165,
     "output_price_per_m": 0.66,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-4o-mini-2024-07-18"
   },
   {
     "id": "requesty/minimax-m2.7",
@@ -47518,7 +47649,8 @@
     "input_price_per_m": 0.3,
     "output_price_per_m": 2.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gemini-2.5-flash"
   },
   {
     "id": "requesty/gpt-5@eu",
@@ -47549,7 +47681,8 @@
     "input_price_per_m": 1.375,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-5-2025-08-07"
   },
   {
     "id": "requesty/grok-4.6",
@@ -47645,7 +47778,8 @@
     "input_price_per_m": 0.33,
     "output_price_per_m": 2.75,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gemini-3.5-flash-lite"
   },
   {
     "id": "requesty/gemini-3.1-flash-image",
@@ -47808,7 +47942,8 @@
     "input_price_per_m": 11,
     "output_price_per_m": 55,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-fable-5-1"
   },
   {
     "id": "requesty/claude-opus-4-6",
@@ -47873,7 +48008,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "claude-opus-4-5-20251101"
   },
   {
     "id": "requesty/gpt-5.6-terra@eu",
@@ -47905,7 +48041,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 13.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-5.6-terra"
   },
   {
     "id": "requesty/qwen3.5-27b",
@@ -47972,7 +48109,8 @@
     "input_price_per_m": 1.65,
     "output_price_per_m": 9.9,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gemini-3.5-flash"
   },
   {
     "id": "requesty/gpt-5.6-sol@eu",
@@ -48004,7 +48142,8 @@
     "input_price_per_m": 4.4,
     "output_price_per_m": 22,
     "is_free": false,
-    "source_url": "https://models.dev/providers/requesty/"
+    "source_url": "https://models.dev/providers/requesty/",
+    "llm_stats_id": "gpt-5.6-sol"
   },
   {
     "id": "requesty/qwen3.7-max",
@@ -49332,7 +49471,8 @@
     "input_price_per_m": 0.6,
     "output_price_per_m": 2.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/baseten/"
+    "source_url": "https://models.dev/providers/baseten/",
+    "llm_stats_id": "deepseek-v4.1-flash"
   },
   {
     "id": "baseten/deepseek-ai/DeepSeek-V4-Pro-0813",
@@ -49518,7 +49658,8 @@
     "input_price_per_m": 0.6,
     "output_price_per_m": 2.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/baseten/"
+    "source_url": "https://models.dev/providers/baseten/",
+    "llm_stats_id": "deepseek-v4.1-flash-1017"
   },
   {
     "id": "baseten/deepseek-ai/DeepSeek-V4.1-Flash-1017",
@@ -49895,7 +50036,8 @@
     "input_price_per_m": 2.1,
     "output_price_per_m": 6.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/baseten/"
+    "source_url": "https://models.dev/providers/baseten/",
+    "llm_stats_id": "glm-5.2"
   },
   {
     "id": "baseten/zai-org/GLM-5.3",
@@ -49958,7 +50100,8 @@
     "input_price_per_m": 2.1,
     "output_price_per_m": 6.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/baseten/"
+    "source_url": "https://models.dev/providers/baseten/",
+    "llm_stats_id": "glm-5.3"
   },
   {
     "id": "baseten/zai-org/GLM-5",
@@ -52083,7 +52226,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/alibaba-token-plan/"
+    "source_url": "https://models.dev/providers/alibaba-token-plan/",
+    "llm_stats_id": "qwen3.8-max"
   },
   {
     "id": "alibaba-token-plan/deepseek-v4-flash-0731",
@@ -54436,7 +54580,8 @@
     "input_price_per_m": null,
     "output_price_per_m": null,
     "is_free": false,
-    "source_url": "https://models.dev/providers/qiniu-ai/"
+    "source_url": "https://models.dev/providers/qiniu-ai/",
+    "llm_stats_id": "qwen3-max"
   },
   {
     "id": "qiniu-ai/qwen3-235b-a22b-thinking-2507",
@@ -56425,7 +56570,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "claude-sonnet-5"
   },
   {
     "id": "gitlab/duo-chat-gpt-5-2",
@@ -56456,7 +56602,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-5.2-2025-12-11"
   },
   {
     "id": "gitlab/duo-chat-gpt-5-6-luna",
@@ -56488,7 +56635,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-5.6-luna"
   },
   {
     "id": "gitlab/duo-chat-opus-4-7",
@@ -56520,7 +56668,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "claude-opus-4-7"
   },
   {
     "id": "gitlab/duo-chat-gpt-6-1-sol",
@@ -56552,7 +56701,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-6.1-sol"
   },
   {
     "id": "gitlab/duo-chat-gpt-6-astra",
@@ -56584,7 +56734,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-6-astra"
   },
   {
     "id": "gitlab/duo-chat-gpt-5-4-mini",
@@ -56615,7 +56766,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-5.4-mini"
   },
   {
     "id": "gitlab/duo-chat-gpt-5-4",
@@ -56647,7 +56799,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-5.4"
   },
   {
     "id": "gitlab/duo-chat-opus-4-8",
@@ -56679,7 +56832,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "claude-opus-4-8"
   },
   {
     "id": "gitlab/duo-chat-opus-4-5",
@@ -56711,7 +56865,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "claude-opus-4-5-20251101"
   },
   {
     "id": "gitlab/duo-chat-sonnet-5-5",
@@ -56743,7 +56898,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "claude-sonnet-5-5"
   },
   {
     "id": "gitlab/duo-chat-gpt-5-codex",
@@ -56774,7 +56930,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-5-codex-2025-09-15"
   },
   {
     "id": "gitlab/duo-chat-opus-4-6",
@@ -56806,7 +56963,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "claude-opus-4-6"
   },
   {
     "id": "gitlab/duo-chat-haiku-4-5",
@@ -56838,7 +56996,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "claude-haiku-4-5-20251001"
   },
   {
     "id": "gitlab/duo-chat-sonnet-4-5",
@@ -56870,7 +57029,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "claude-sonnet-4-5-20250929"
   },
   {
     "id": "gitlab/duo-chat-opus-5",
@@ -56902,7 +57062,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "claude-opus-5"
   },
   {
     "id": "gitlab/duo-chat-fable-5-1",
@@ -56934,7 +57095,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "claude-fable-5-1"
   },
   {
     "id": "gitlab/duo-chat-gpt-5-1",
@@ -56965,7 +57127,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-5.1-2025-11-13"
   },
   {
     "id": "gitlab/duo-chat-gpt-5-5",
@@ -56997,7 +57160,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-5.5"
   },
   {
     "id": "gitlab/duo-chat-fable-5",
@@ -57029,7 +57193,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "claude-fable-5"
   },
   {
     "id": "gitlab/duo-chat-gpt-5-3-codex",
@@ -57061,7 +57226,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-5.3-codex"
   },
   {
     "id": "gitlab/duo-chat-gpt-5-6-sol",
@@ -57093,7 +57259,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-5.6-sol"
   },
   {
     "id": "gitlab/duo-chat-gpt-6-luna",
@@ -57125,7 +57292,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-6-luna"
   },
   {
     "id": "gitlab/duo-chat-gpt-5-4-nano",
@@ -57156,7 +57324,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-5.4-nano"
   },
   {
     "id": "gitlab/duo-chat-gpt-5-6-terra",
@@ -57188,7 +57357,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-5.6-terra"
   },
   {
     "id": "gitlab/duo-chat-gpt-6-sol",
@@ -57220,7 +57390,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-6-sol"
   },
   {
     "id": "gitlab/duo-chat-opus-5-5",
@@ -57252,7 +57423,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "claude-opus-5-5"
   },
   {
     "id": "gitlab/duo-chat-gpt-5-mini",
@@ -57283,7 +57455,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-5-mini-2025-08-07"
   },
   {
     "id": "gitlab/duo-chat-sonnet-4-6",
@@ -57315,7 +57488,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "claude-sonnet-4-6"
   },
   {
     "id": "gitlab/duo-chat-gpt-5-2-codex",
@@ -57347,7 +57521,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/gitlab/"
+    "source_url": "https://models.dev/providers/gitlab/",
+    "llm_stats_id": "gpt-5.2-codex"
   },
   {
     "id": "wandb/deepseek-ai/DeepSeek-V4-Pro-0813",
@@ -59950,7 +60125,8 @@
     "input_price_per_m": 0.6,
     "output_price_per_m": 2.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/inco/"
+    "source_url": "https://models.dev/providers/inco/",
+    "llm_stats_id": "minimax-m3"
   },
   {
     "id": "inco/glm-5.3:fast",
@@ -59980,7 +60156,8 @@
     "input_price_per_m": 2.8,
     "output_price_per_m": 8.8,
     "is_free": false,
-    "source_url": "https://models.dev/providers/inco/"
+    "source_url": "https://models.dev/providers/inco/",
+    "llm_stats_id": "glm-5.3"
   },
   {
     "id": "inco/glm-5.3-flash:fast",
@@ -60104,7 +60281,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/cohere/"
+    "source_url": "https://models.dev/providers/cohere/",
+    "llm_stats_id": "command-a-plus-05-2026"
   },
   {
     "id": "cohere/c4ai-aya-vision-32b",
@@ -60786,7 +60964,8 @@
     "input_price_per_m": 0.3,
     "output_price_per_m": 2.9000000000000004,
     "is_free": false,
-    "source_url": "https://models.dev/providers/helicone/"
+    "source_url": "https://models.dev/providers/helicone/",
+    "llm_stats_id": "qwen3-235b-a22b"
   },
   {
     "id": "helicone/grok-3",
@@ -61318,7 +61497,8 @@
     "input_price_per_m": 0.21,
     "output_price_per_m": 0.21,
     "is_free": false,
-    "source_url": "https://models.dev/providers/helicone/"
+    "source_url": "https://models.dev/providers/helicone/",
+    "llm_stats_id": "llama-guard-4-12b"
   },
   {
     "id": "helicone/qwen3-coder",
@@ -65208,7 +65388,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/tencent-tokenhub/"
+    "source_url": "https://models.dev/providers/tencent-tokenhub/",
+    "llm_stats_id": "hy3"
   },
   {
     "id": "tencent-tokenhub/hy3",
@@ -65301,7 +65482,8 @@
     "input_price_per_m": 0.95,
     "output_price_per_m": 4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/neuralwatt/"
+    "source_url": "https://models.dev/providers/neuralwatt/",
+    "llm_stats_id": "kimi-k2.7-code"
   },
   {
     "id": "neuralwatt/glm-5.2-short-flex",
@@ -65607,7 +65789,8 @@
     "input_price_per_m": 1.45,
     "output_price_per_m": 4.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/neuralwatt/"
+    "source_url": "https://models.dev/providers/neuralwatt/",
+    "llm_stats_id": "glm-5.2"
   },
   {
     "id": "neuralwatt/kimi-k2.7-code-flex",
@@ -66198,7 +66381,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/neuralwatt/"
+    "source_url": "https://models.dev/providers/neuralwatt/",
+    "llm_stats_id": "kimi-k3"
   },
   {
     "id": "neuralwatt/qwen-3.8-27b-flex",
@@ -67847,7 +68031,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openai/"
+    "source_url": "https://models.dev/providers/openai/",
+    "llm_stats_id": "gpt-4o-2024-05-13"
   },
   {
     "id": "openai/gpt-image-1.5",
@@ -69747,7 +69932,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/mistral/"
+    "source_url": "https://models.dev/providers/mistral/",
+    "llm_stats_id": "pixtral-large"
   },
   {
     "id": "mistral/magistral-medium-latest",
@@ -69778,7 +69964,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/mistral/"
+    "source_url": "https://models.dev/providers/mistral/",
+    "llm_stats_id": "magistral-medium"
   },
   {
     "id": "mistral/mistral-medium-latest",
@@ -73513,7 +73700,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 7.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/impossibl/"
+    "source_url": "https://models.dev/providers/impossibl/",
+    "llm_stats_id": "qwen3.8-max"
   },
   {
     "id": "impossibl/qwen/qwen3.7-plus",
@@ -76942,7 +77130,8 @@
     "input_price_per_m": 1.75,
     "output_price_per_m": 14,
     "is_free": false,
-    "source_url": "https://models.dev/providers/orcarouter/"
+    "source_url": "https://models.dev/providers/orcarouter/",
+    "llm_stats_id": "gpt-5.2-2025-12-11"
   },
   {
     "id": "orcarouter/openai/gpt-4.1-nano",
@@ -77233,7 +77422,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/orcarouter/"
+    "source_url": "https://models.dev/providers/orcarouter/",
+    "llm_stats_id": "gpt-4o-2024-05-13"
   },
   {
     "id": "orcarouter/openai/gpt-4.1",
@@ -77555,7 +77745,8 @@
     "input_price_per_m": 1.25,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/orcarouter/"
+    "source_url": "https://models.dev/providers/orcarouter/",
+    "llm_stats_id": "gpt-5.1-2025-11-13"
   },
   {
     "id": "orcarouter/openai/gpt-4o-2024-08-06",
@@ -77650,7 +77841,8 @@
     "input_price_per_m": 1.25,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/orcarouter/"
+    "source_url": "https://models.dev/providers/orcarouter/",
+    "llm_stats_id": "gpt-5-2025-08-07"
   },
   {
     "id": "orcarouter/openai/gpt-5.2-pro",
@@ -78723,7 +78915,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/orcarouter/"
+    "source_url": "https://models.dev/providers/orcarouter/",
+    "llm_stats_id": "glm-5.3-flash"
   },
   {
     "id": "orcarouter/z-ai/glm-5.2",
@@ -79694,7 +79887,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/orcarouter/"
+    "source_url": "https://models.dev/providers/orcarouter/",
+    "llm_stats_id": "hy3"
   },
   {
     "id": "alibaba-cn/qwen3.6-plus",
@@ -82929,7 +83123,8 @@
     "input_price_per_m": 0.20631,
     "output_price_per_m": 0.82524,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aimlapi/"
+    "source_url": "https://models.dev/providers/aimlapi/",
+    "llm_stats_id": "command-r-plus-04-2024"
   },
   {
     "id": "aimlapi/cohere/command-r7b-12-2024",
@@ -82989,7 +83184,8 @@
     "input_price_per_m": 3.4385,
     "output_price_per_m": 13.754,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aimlapi/"
+    "source_url": "https://models.dev/providers/aimlapi/",
+    "llm_stats_id": "command-r-plus-04-2024"
   },
   {
     "id": "aimlapi/openai/gpt-5.1-codex-max",
@@ -85031,7 +85227,8 @@
     "input_price_per_m": 0.96278,
     "output_price_per_m": 0.96278,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aimlapi/"
+    "source_url": "https://models.dev/providers/aimlapi/",
+    "llm_stats_id": "hermes-3-70b"
   },
   {
     "id": "aimlapi/nousresearch/hermes-3-llama-3.1-405b",
@@ -85061,7 +85258,8 @@
     "input_price_per_m": 1.3754,
     "output_price_per_m": 1.3754,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aimlapi/"
+    "source_url": "https://models.dev/providers/aimlapi/",
+    "llm_stats_id": "hermes-3-405b"
   },
   {
     "id": "aimlapi/inception/mercury-2",
@@ -88307,7 +88505,8 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/venice/"
+    "source_url": "https://models.dev/providers/venice/",
+    "llm_stats_id": "claude-opus-4-8"
   },
   {
     "id": "venice/grok-4-5",
@@ -88530,7 +88729,8 @@
     "input_price_per_m": 0.12,
     "output_price_per_m": 0.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/venice/"
+    "source_url": "https://models.dev/providers/venice/",
+    "llm_stats_id": "gemma-3-27b-it"
   },
   {
     "id": "venice/llama-3.3-70b",
@@ -88973,7 +89173,8 @@
     "input_price_per_m": 0.35,
     "output_price_per_m": 0.7,
     "is_free": false,
-    "source_url": "https://models.dev/providers/venice/"
+    "source_url": "https://models.dev/providers/venice/",
+    "llm_stats_id": "deepseek-v4-flash-0731"
   },
   {
     "id": "venice/openai-gpt-4o-mini-2024-07-18",
@@ -89799,7 +90000,8 @@
     "input_price_per_m": 8,
     "output_price_per_m": 40,
     "is_free": false,
-    "source_url": "https://models.dev/providers/venice/"
+    "source_url": "https://models.dev/providers/venice/",
+    "llm_stats_id": "claude-opus-5-5"
   },
   {
     "id": "venice/qwen3-5-35b-a3b",
@@ -89894,7 +90096,8 @@
     "input_price_per_m": 0.12,
     "output_price_per_m": 0.36,
     "is_free": false,
-    "source_url": "https://models.dev/providers/venice/"
+    "source_url": "https://models.dev/providers/venice/",
+    "llm_stats_id": "gemma-4-31b-it"
   },
   {
     "id": "venice/mercury-2",
@@ -90278,7 +90481,8 @@
     "input_price_per_m": 0.07,
     "output_price_per_m": 0.3,
     "is_free": false,
-    "source_url": "https://models.dev/providers/venice/"
+    "source_url": "https://models.dev/providers/venice/",
+    "llm_stats_id": "gpt-oss-120b"
   },
   {
     "id": "venice/z-ai-glm-5v-turbo",
@@ -90373,7 +90577,8 @@
     "input_price_per_m": 0.3,
     "output_price_per_m": 1.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/venice/"
+    "source_url": "https://models.dev/providers/venice/",
+    "llm_stats_id": "minimax-m3"
   },
   {
     "id": "venice/claude-haiku-5-5",
@@ -90436,7 +90641,8 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/venice/"
+    "source_url": "https://models.dev/providers/venice/",
+    "llm_stats_id": "claude-opus-5"
   },
   {
     "id": "venice/hermes-3-llama-3.1-405b",
@@ -91193,7 +91399,8 @@
     "input_price_per_m": 4.5,
     "output_price_per_m": 22.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/venice/"
+    "source_url": "https://models.dev/providers/venice/",
+    "llm_stats_id": "kimi-k3"
   },
   {
     "id": "venice/kimi-k2-7-code",
@@ -91702,7 +91909,8 @@
     "input_price_per_m": 0.13,
     "output_price_per_m": 0.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/venice/"
+    "source_url": "https://models.dev/providers/venice/",
+    "llm_stats_id": "gemma-4-26b-a4b-it"
   },
   {
     "id": "venice/grok-4-3",
@@ -94655,7 +94863,8 @@
     "input_price_per_m": 0.15,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/fireworks-ai/"
+    "source_url": "https://models.dev/providers/fireworks-ai/",
+    "llm_stats_id": "glm-5.3-flash"
   },
   {
     "id": "fireworks-ai/accounts/fireworks/routers/qwen-max-latest",
@@ -94686,7 +94895,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/fireworks-ai/"
+    "source_url": "https://models.dev/providers/fireworks-ai/",
+    "llm_stats_id": "qwen3.8-max"
   },
   {
     "id": "fireworks-ai/accounts/fireworks/routers/kimi-fast-latest",
@@ -94807,7 +95017,8 @@
     "input_price_per_m": 2.1,
     "output_price_per_m": 6.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/fireworks-ai/"
+    "source_url": "https://models.dev/providers/fireworks-ai/",
+    "llm_stats_id": "glm-5.3"
   },
   {
     "id": "fireworks-ai/accounts/fireworks/routers/kimi-latest",
@@ -94900,7 +95111,8 @@
     "input_price_per_m": 4.5,
     "output_price_per_m": 22.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/fireworks-ai/"
+    "source_url": "https://models.dev/providers/fireworks-ai/",
+    "llm_stats_id": "kimi-k3"
   },
   {
     "id": "fireworks-ai/accounts/fireworks/routers/glm-5p3-fast",
@@ -94930,7 +95142,8 @@
     "input_price_per_m": 2.1,
     "output_price_per_m": 6.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/fireworks-ai/"
+    "source_url": "https://models.dev/providers/fireworks-ai/",
+    "llm_stats_id": "glm-5.3"
   },
   {
     "id": "fireworks-ai/accounts/fireworks/models/glm-5p3-flash",
@@ -95697,7 +95910,8 @@
     "input_price_per_m": 0.11,
     "output_price_per_m": 0.55,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-haiku-5-5"
   },
   {
     "id": "amazon-bedrock/in.openai.gpt-5.6-terra",
@@ -95729,7 +95943,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 13.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-5.6-terra"
   },
   {
     "id": "amazon-bedrock/mistral.mistral-large-3-675b-instruct",
@@ -95891,7 +96106,8 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-5-5"
   },
   {
     "id": "amazon-bedrock/qwen.qwen3-235b-a22b-2507-v1:0",
@@ -96015,7 +96231,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 13.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-5.6-terra"
   },
   {
     "id": "amazon-bedrock/openai.gpt-5.5",
@@ -96110,7 +96327,8 @@
     "input_price_per_m": 0.2,
     "output_price_per_m": 1.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-5.6-luna"
   },
   {
     "id": "amazon-bedrock/jp.anthropic.claude-sonnet-4-5-20250929-v1:0",
@@ -96142,7 +96360,8 @@
     "input_price_per_m": 3.3,
     "output_price_per_m": 16.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-4-5-20250929"
   },
   {
     "id": "amazon-bedrock/us.anthropic.claude-opus-5",
@@ -96174,7 +96393,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-5"
   },
   {
     "id": "amazon-bedrock/us.openai.gpt-6-luna",
@@ -96205,7 +96425,8 @@
     "input_price_per_m": 0.11,
     "output_price_per_m": 0.55,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-6-luna"
   },
   {
     "id": "amazon-bedrock/mistral.ministral-3-14b-instruct",
@@ -96267,7 +96488,8 @@
     "input_price_per_m": 3.3,
     "output_price_per_m": 16.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "kimi-k3"
   },
   {
     "id": "amazon-bedrock/amazon.nova-pro-v1:0",
@@ -96333,7 +96555,8 @@
     "input_price_per_m": 3.3,
     "output_price_per_m": 16.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-4-6"
   },
   {
     "id": "amazon-bedrock/meta.llama4-maverick-17b-instruct-v1:0",
@@ -96396,7 +96619,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-5"
   },
   {
     "id": "amazon-bedrock/anthropic.claude-opus-4-1-20250805-v1:0",
@@ -96461,7 +96685,8 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-fable-5-1"
   },
   {
     "id": "amazon-bedrock/us.anthropic.claude-opus-4-5-20251101-v1:0",
@@ -96493,7 +96718,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-5-20251101"
   },
   {
     "id": "amazon-bedrock/anthropic.claude-haiku-4-5-20251001-v1:0",
@@ -96590,7 +96816,8 @@
     "input_price_per_m": 4.4,
     "output_price_per_m": 22,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-5-5"
   },
   {
     "id": "amazon-bedrock/google.gemma-3-12b-it",
@@ -96684,7 +96911,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-6"
   },
   {
     "id": "amazon-bedrock/au.anthropic.claude-sonnet-5",
@@ -96716,7 +96944,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-5"
   },
   {
     "id": "amazon-bedrock/global.openai.gpt-6-luna",
@@ -96747,7 +96976,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-6-luna"
   },
   {
     "id": "amazon-bedrock/us.amazon.nova-lite-v1:0",
@@ -96780,7 +97010,8 @@
     "input_price_per_m": 0.06,
     "output_price_per_m": 0.24,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-lite"
   },
   {
     "id": "amazon-bedrock/openai.gpt-oss-20b",
@@ -96938,7 +97169,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-5"
   },
   {
     "id": "amazon-bedrock/amazon.nova-lite-v1:0",
@@ -97035,7 +97267,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-5-5"
   },
   {
     "id": "amazon-bedrock/in.anthropic.claude-haiku-4-5-20251001-v1:0",
@@ -97067,7 +97300,8 @@
     "input_price_per_m": 1.1,
     "output_price_per_m": 5.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-haiku-4-5-20251001"
   },
   {
     "id": "amazon-bedrock/global.openai.gpt-6-sol",
@@ -97098,7 +97332,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-6-sol"
   },
   {
     "id": "amazon-bedrock/anthropic.claude-opus-4-5-20251101-v1:0",
@@ -97163,7 +97398,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-haiku-5-5"
   },
   {
     "id": "amazon-bedrock/jp.amazon.nova-2-lite-v1:0",
@@ -97196,7 +97432,8 @@
     "input_price_per_m": 0.396,
     "output_price_per_m": 3.311,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-2-lite"
   },
   {
     "id": "amazon-bedrock/openai.gpt-5.4",
@@ -97261,7 +97498,8 @@
     "input_price_per_m": 3.3,
     "output_price_per_m": 16.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-4-5-20250929"
   },
   {
     "id": "amazon-bedrock/us.meta.llama3-3-70b-instruct-v1:0",
@@ -97291,7 +97529,8 @@
     "input_price_per_m": 0.72,
     "output_price_per_m": 0.72,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "llama-3.3-70b-instruct"
   },
   {
     "id": "amazon-bedrock/in.anthropic.claude-sonnet-5",
@@ -97323,7 +97562,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-5"
   },
   {
     "id": "amazon-bedrock/mistral.voxtral-small-24b-2507",
@@ -97415,7 +97655,8 @@
     "input_price_per_m": 0.035,
     "output_price_per_m": 0.14,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-micro"
   },
   {
     "id": "amazon-bedrock/mistral.ministral-3-8b-instruct",
@@ -97478,7 +97719,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-4-20250514"
   },
   {
     "id": "amazon-bedrock/openai.gpt-6-luna",
@@ -97543,7 +97785,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-5-20251101"
   },
   {
     "id": "amazon-bedrock/eu.amazon.nova-micro-v1:0",
@@ -97573,7 +97816,8 @@
     "input_price_per_m": 0.04,
     "output_price_per_m": 0.16,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-micro"
   },
   {
     "id": "amazon-bedrock/openai.gpt-6-astra",
@@ -97671,7 +97915,8 @@
     "input_price_per_m": 15,
     "output_price_per_m": 75,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-1-20250805"
   },
   {
     "id": "amazon-bedrock/mistral.voxtral-mini-3b-2507",
@@ -97733,7 +97978,8 @@
     "input_price_per_m": 11,
     "output_price_per_m": 55,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-6-astra"
   },
   {
     "id": "amazon-bedrock/openai.gpt-5.6-terra",
@@ -97797,7 +98043,8 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-5.6-sol"
   },
   {
     "id": "amazon-bedrock/eu.anthropic.claude-haiku-5-5",
@@ -97829,7 +98076,8 @@
     "input_price_per_m": 0.11,
     "output_price_per_m": 0.55,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-haiku-5-5"
   },
   {
     "id": "amazon-bedrock/mistral.devstral-2-123b",
@@ -97923,7 +98171,8 @@
     "input_price_per_m": 3.3,
     "output_price_per_m": 16.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-4-6"
   },
   {
     "id": "amazon-bedrock/qwen.qwen3-coder-480b-a35b-v1:0",
@@ -97986,7 +98235,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-5"
   },
   {
     "id": "amazon-bedrock/eu.amazon.nova-2-lite-v1:0",
@@ -98019,7 +98269,8 @@
     "input_price_per_m": 0.374,
     "output_price_per_m": 3.157,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-2-lite"
   },
   {
     "id": "amazon-bedrock/global.anthropic.claude-opus-4-6-v1",
@@ -98051,7 +98302,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-6"
   },
   {
     "id": "amazon-bedrock/us.amazon.nova-2-lite-v1:0",
@@ -98084,7 +98336,8 @@
     "input_price_per_m": 0.33,
     "output_price_per_m": 2.75,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-2-lite"
   },
   {
     "id": "amazon-bedrock/global.anthropic.claude-sonnet-4-20250514-v1:0",
@@ -98116,7 +98369,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-4-20250514"
   },
   {
     "id": "amazon-bedrock/nvidia.nemotron-nano-3-30b",
@@ -98176,7 +98430,8 @@
     "input_price_per_m": 1.35,
     "output_price_per_m": 5.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "deepseek-r1"
   },
   {
     "id": "amazon-bedrock/us.anthropic.claude-sonnet-4-6",
@@ -98208,7 +98463,8 @@
     "input_price_per_m": 3.3,
     "output_price_per_m": 16.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-4-6"
   },
   {
     "id": "amazon-bedrock/us.amazon.nova-pro-v1:0",
@@ -98241,7 +98497,8 @@
     "input_price_per_m": 0.8,
     "output_price_per_m": 3.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-pro"
   },
   {
     "id": "amazon-bedrock/xai.grok-4.3",
@@ -98337,7 +98594,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-6"
   },
   {
     "id": "amazon-bedrock/us.mistral.pixtral-large-2502-v1:0",
@@ -98368,7 +98626,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "pixtral-large"
   },
   {
     "id": "amazon-bedrock/meta.llama3-1-8b-instruct-v1:0",
@@ -98432,7 +98691,8 @@
     "input_price_per_m": 0.069,
     "output_price_per_m": 0.276,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-lite"
   },
   {
     "id": "amazon-bedrock/us.xai.grok-4.7",
@@ -98464,7 +98724,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 6.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "grok-4.7"
   },
   {
     "id": "amazon-bedrock/meta.llama4-scout-17b-instruct-v1:0",
@@ -98527,7 +98788,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-5"
   },
   {
     "id": "amazon-bedrock/apac.amazon.nova-pro-v1:0",
@@ -98560,7 +98822,8 @@
     "input_price_per_m": 0.84,
     "output_price_per_m": 3.36,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-pro"
   },
   {
     "id": "amazon-bedrock/writer.palmyra-x5-v1:0",
@@ -98654,7 +98917,8 @@
     "input_price_per_m": 0.064,
     "output_price_per_m": 0.256,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-lite"
   },
   {
     "id": "amazon-bedrock/us.meta.llama3-1-70b-instruct-v1:0",
@@ -98684,7 +98948,8 @@
     "input_price_per_m": 0.72,
     "output_price_per_m": 0.72,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "llama-3.1-70b-instruct"
   },
   {
     "id": "amazon-bedrock/us.meta.llama4-scout-17b-instruct-v1:0",
@@ -98747,7 +99012,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-4-20250514"
   },
   {
     "id": "amazon-bedrock/us.anthropic.claude-fable-5",
@@ -98779,7 +99045,8 @@
     "input_price_per_m": 11,
     "output_price_per_m": 55,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-fable-5"
   },
   {
     "id": "amazon-bedrock/qwen.qwen3-next-80b-a3b",
@@ -98873,7 +99140,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "kimi-k3"
   },
   {
     "id": "amazon-bedrock/us.anthropic.claude-fable-5-1",
@@ -98905,7 +99173,8 @@
     "input_price_per_m": 11,
     "output_price_per_m": 55,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-fable-5-1"
   },
   {
     "id": "amazon-bedrock/amazon.nova-micro-v1:0",
@@ -98968,7 +99237,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "grok-4.7"
   },
   {
     "id": "amazon-bedrock/deepseek.r1-v1:0",
@@ -99030,7 +99300,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 6.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "grok-4.6"
   },
   {
     "id": "amazon-bedrock/zai.glm-4.7",
@@ -99158,7 +99429,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "pixtral-large"
   },
   {
     "id": "amazon-bedrock/us-gov.openai.gpt-oss-20b-1:0",
@@ -99188,7 +99460,8 @@
     "input_price_per_m": 0.084,
     "output_price_per_m": 0.36,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-oss-20b"
   },
   {
     "id": "amazon-bedrock/anthropic.claude-opus-5-5",
@@ -99252,7 +99525,8 @@
     "input_price_per_m": 4.4,
     "output_price_per_m": 22,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-5.6-sol"
   },
   {
     "id": "amazon-bedrock/openai.gpt-oss-safeguard-20b",
@@ -99314,7 +99588,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-5"
   },
   {
     "id": "amazon-bedrock/global.anthropic.claude-sonnet-4-5-20250929-v1:0",
@@ -99346,7 +99621,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-4-5-20250929"
   },
   {
     "id": "amazon-bedrock/jp.anthropic.claude-opus-5-5",
@@ -99378,7 +99654,8 @@
     "input_price_per_m": 4.4,
     "output_price_per_m": 22,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-5-5"
   },
   {
     "id": "amazon-bedrock/minimax.minimax-m2.1",
@@ -99472,7 +99749,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-5"
   },
   {
     "id": "amazon-bedrock/eu.anthropic.claude-sonnet-5-5",
@@ -99504,7 +99782,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-5-5"
   },
   {
     "id": "amazon-bedrock/eu.anthropic.claude-opus-4-5-20251101-v1:0",
@@ -99536,7 +99815,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-5-20251101"
   },
   {
     "id": "amazon-bedrock/meta.llama3-3-70b-instruct-v1:0",
@@ -99693,7 +99973,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-6.1-sol"
   },
   {
     "id": "amazon-bedrock/eu.anthropic.claude-opus-5-5",
@@ -99725,7 +100006,8 @@
     "input_price_per_m": 4.4,
     "output_price_per_m": 22,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-5-5"
   },
   {
     "id": "amazon-bedrock/eu.anthropic.claude-haiku-4-5-20251001-v1:0",
@@ -99757,7 +100039,8 @@
     "input_price_per_m": 1.1,
     "output_price_per_m": 5.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-haiku-4-5-20251001"
   },
   {
     "id": "amazon-bedrock/us.anthropic.claude-opus-4-8",
@@ -99789,7 +100072,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-8"
   },
   {
     "id": "amazon-bedrock/anthropic.claude-sonnet-5",
@@ -99854,7 +100138,8 @@
     "input_price_per_m": 1.1,
     "output_price_per_m": 5.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-haiku-4-5-20251001"
   },
   {
     "id": "amazon-bedrock/au.anthropic.claude-sonnet-4-6",
@@ -99918,7 +100203,8 @@
     "input_price_per_m": 1.1,
     "output_price_per_m": 5.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-haiku-4-5-20251001"
   },
   {
     "id": "amazon-bedrock/global.openai.gpt-6.1-sol",
@@ -99949,7 +100235,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-6.1-sol"
   },
   {
     "id": "amazon-bedrock/meta.llama3-1-70b-instruct-v1:0",
@@ -100012,7 +100299,8 @@
     "input_price_per_m": 1.1,
     "output_price_per_m": 5.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-haiku-4-5-20251001"
   },
   {
     "id": "amazon-bedrock/us-gov.openai.gpt-oss-120b-1:0",
@@ -100042,7 +100330,8 @@
     "input_price_per_m": 0.18,
     "output_price_per_m": 0.72,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-oss-120b"
   },
   {
     "id": "amazon-bedrock/global.amazon.nova-2-lite-v1:0",
@@ -100075,7 +100364,8 @@
     "input_price_per_m": 0.3,
     "output_price_per_m": 2.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-2-lite"
   },
   {
     "id": "amazon-bedrock/jp.anthropic.claude-haiku-5-5",
@@ -100107,7 +100397,8 @@
     "input_price_per_m": 0.11,
     "output_price_per_m": 0.55,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-haiku-5-5"
   },
   {
     "id": "amazon-bedrock/anthropic.claude-opus-5",
@@ -100230,7 +100521,8 @@
     "input_price_per_m": 0.15,
     "output_price_per_m": 0.65,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nemotron-3-super-120b-a12b"
   },
   {
     "id": "amazon-bedrock/global.anthropic.claude-opus-4-7",
@@ -100262,7 +100554,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-7"
   },
   {
     "id": "amazon-bedrock/jp.anthropic.claude-opus-5",
@@ -100294,7 +100587,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-5"
   },
   {
     "id": "amazon-bedrock/us.anthropic.claude-opus-5-5",
@@ -100326,7 +100620,8 @@
     "input_price_per_m": 4.4,
     "output_price_per_m": 22,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-5-5"
   },
   {
     "id": "amazon-bedrock/global.anthropic.claude-sonnet-4-6",
@@ -100358,7 +100653,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-4-6"
   },
   {
     "id": "amazon-bedrock/anthropic.claude-fable-5-1",
@@ -100423,7 +100719,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-7"
   },
   {
     "id": "amazon-bedrock/eu.amazon.nova-pro-v1:0",
@@ -100456,7 +100753,8 @@
     "input_price_per_m": 0.92,
     "output_price_per_m": 3.68,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-pro"
   },
   {
     "id": "amazon-bedrock/us.zai.glm-5.3",
@@ -100486,7 +100784,8 @@
     "input_price_per_m": 1.848,
     "output_price_per_m": 5.808,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "glm-5.3"
   },
   {
     "id": "amazon-bedrock/anthropic.claude-sonnet-4-5-20250929-v1:0",
@@ -100550,7 +100849,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "pixtral-large"
   },
   {
     "id": "amazon-bedrock/amazon.nova-2-lite-v1:0",
@@ -100616,7 +100916,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-7"
   },
   {
     "id": "amazon-bedrock/google.gemma-3-27b-it",
@@ -100680,7 +100981,8 @@
     "input_price_per_m": 1,
     "output_price_per_m": 5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-haiku-4-5-20251001"
   },
   {
     "id": "amazon-bedrock/jp.anthropic.claude-sonnet-5",
@@ -100712,7 +101014,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-5"
   },
   {
     "id": "amazon-bedrock/au.anthropic.claude-sonnet-4-5-20250929-v1:0",
@@ -100744,7 +101047,8 @@
     "input_price_per_m": 3.3,
     "output_price_per_m": 16.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-4-5-20250929"
   },
   {
     "id": "amazon-bedrock/openai.gpt-5.6-sol",
@@ -100874,7 +101178,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 12,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-5.6-terra"
   },
   {
     "id": "amazon-bedrock/qwen.qwen3-32b-v1:0",
@@ -100968,7 +101273,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-8"
   },
   {
     "id": "amazon-bedrock/au.anthropic.claude-opus-4-7",
@@ -101000,7 +101306,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-7"
   },
   {
     "id": "amazon-bedrock/us.openai.gpt-5.6-luna",
@@ -101031,7 +101338,8 @@
     "input_price_per_m": 0.22,
     "output_price_per_m": 1.32,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-5.6-luna"
   },
   {
     "id": "amazon-bedrock/eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
@@ -101063,7 +101371,8 @@
     "input_price_per_m": 3.3,
     "output_price_per_m": 16.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-4-5-20250929"
   },
   {
     "id": "amazon-bedrock/global.anthropic.claude-sonnet-5-5",
@@ -101095,7 +101404,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-5-5"
   },
   {
     "id": "amazon-bedrock/global.xai.grok-4.6",
@@ -101126,7 +101436,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "grok-4.6"
   },
   {
     "id": "amazon-bedrock/au.anthropic.claude-haiku-5-5",
@@ -101158,7 +101469,8 @@
     "input_price_per_m": 0.11,
     "output_price_per_m": 0.55,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-haiku-5-5"
   },
   {
     "id": "amazon-bedrock/qwen.qwen3-coder-30b-a3b-v1:0",
@@ -101220,7 +101532,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-8"
   },
   {
     "id": "amazon-bedrock/apac.amazon.nova-micro-v1:0",
@@ -101250,7 +101563,8 @@
     "input_price_per_m": 0.037,
     "output_price_per_m": 0.148,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-micro"
   },
   {
     "id": "amazon-bedrock/eu.anthropic.claude-fable-5",
@@ -101282,7 +101596,8 @@
     "input_price_per_m": 11,
     "output_price_per_m": 55,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-fable-5"
   },
   {
     "id": "amazon-bedrock/jp.anthropic.claude-opus-4-8",
@@ -101314,7 +101629,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-8"
   },
   {
     "id": "amazon-bedrock/writer.palmyra-x4-v1:0",
@@ -101375,7 +101691,8 @@
     "input_price_per_m": 2.2,
     "output_price_per_m": 11,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-6-sol"
   },
   {
     "id": "amazon-bedrock/au.anthropic.claude-opus-4-8",
@@ -101407,7 +101724,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-8"
   },
   {
     "id": "amazon-bedrock/apac.anthropic.claude-sonnet-4-20250514-v1:0",
@@ -101439,7 +101757,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-sonnet-4-20250514"
   },
   {
     "id": "amazon-bedrock/nvidia.nemotron-nano-9b-v2",
@@ -101501,7 +101820,8 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-6-astra"
   },
   {
     "id": "amazon-bedrock/anthropic.claude-opus-4-8",
@@ -101566,7 +101886,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-5"
   },
   {
     "id": "amazon-bedrock/openai.gpt-oss-safeguard-120b",
@@ -101626,7 +101947,8 @@
     "input_price_per_m": 1.68,
     "output_price_per_m": 5.28,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "glm-5.3"
   },
   {
     "id": "amazon-bedrock/eu.anthropic.claude-opus-4-7",
@@ -101658,7 +101980,8 @@
     "input_price_per_m": 5.5,
     "output_price_per_m": 27.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-opus-4-7"
   },
   {
     "id": "amazon-bedrock/openai.gpt-6.1-sol",
@@ -101818,7 +102141,8 @@
     "input_price_per_m": 0.22,
     "output_price_per_m": 0.22,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "llama-3.1-8b-instruct"
   },
   {
     "id": "amazon-bedrock/in.openai.gpt-5.6-luna",
@@ -101850,7 +102174,8 @@
     "input_price_per_m": 0.22,
     "output_price_per_m": 1.32,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "gpt-5.6-luna"
   },
   {
     "id": "amazon-bedrock/zai.glm-4.7-flash",
@@ -101914,7 +102239,8 @@
     "input_price_per_m": 0.063,
     "output_price_per_m": 0.252,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "nova-lite"
   },
   {
     "id": "amazon-bedrock/us.amazon.nova-premier-v1:0",
@@ -101979,7 +102305,8 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/amazon-bedrock/"
+    "source_url": "https://models.dev/providers/amazon-bedrock/",
+    "llm_stats_id": "claude-fable-5"
   },
   {
     "id": "stepfun/step-3.5-flash-2603",
@@ -105488,7 +105815,8 @@
     "input_price_per_m": 0.15,
     "output_price_per_m": 0.15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/pioneer/"
+    "source_url": "https://models.dev/providers/pioneer/",
+    "llm_stats_id": "gemma-3-4b-it"
   },
   {
     "id": "pioneer/fastino/gliner2-privacy-filter-PII-multi",
@@ -120356,7 +120684,8 @@
     "input_price_per_m": 2.31,
     "output_price_per_m": 7.26,
     "is_free": false,
-    "source_url": "https://models.dev/providers/above/"
+    "source_url": "https://models.dev/providers/above/",
+    "llm_stats_id": "glm-5.2"
   },
   {
     "id": "above/qwen3.8-max",
@@ -121376,7 +121705,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/atomic-chat/"
+    "source_url": "https://models.dev/providers/atomic-chat/",
+    "llm_stats_id": "gemma-4-e4b-it"
   },
   {
     "id": "atomic-chat/Qwen3_5-9B-MLX-4bit",
@@ -121407,7 +121737,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/atomic-chat/"
+    "source_url": "https://models.dev/providers/atomic-chat/",
+    "llm_stats_id": "qwen3.5-9b"
   },
   {
     "id": "atomic-chat/Qwen3_5-9B-Q4_K_M",
@@ -121438,7 +121769,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/atomic-chat/"
+    "source_url": "https://models.dev/providers/atomic-chat/",
+    "llm_stats_id": "qwen3.5-9b"
   },
   {
     "id": "atomic-chat/Meta-Llama-3_1-8B-Instruct-GGUF",
@@ -121498,7 +121830,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/atomic-chat/"
+    "source_url": "https://models.dev/providers/atomic-chat/",
+    "llm_stats_id": "gemma-4-e4b-it"
   },
   {
     "id": "inceptron/deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -122599,7 +122932,8 @@
     "input_price_per_m": 1.993,
     "output_price_per_m": 5.978,
     "is_free": false,
-    "source_url": "https://models.dev/providers/cortecs/"
+    "source_url": "https://models.dev/providers/cortecs/",
+    "llm_stats_id": "pixtral-large"
   },
   {
     "id": "cortecs/gpt-5-mini",
@@ -126148,7 +126482,8 @@
     "input_price_per_m": 1,
     "output_price_per_m": 5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/databricks/"
+    "source_url": "https://models.dev/providers/databricks/",
+    "llm_stats_id": "claude-haiku-4-5-20251001"
   },
   {
     "id": "databricks/databricks-gpt-5-1",
@@ -126277,7 +126612,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/databricks/"
+    "source_url": "https://models.dev/providers/databricks/",
+    "llm_stats_id": "claude-opus-4-5-20251101"
   },
   {
     "id": "databricks/databricks-gpt-5-4-mini",
@@ -126739,7 +127075,8 @@
     "input_price_per_m": 15,
     "output_price_per_m": 75,
     "is_free": false,
-    "source_url": "https://models.dev/providers/databricks/"
+    "source_url": "https://models.dev/providers/databricks/",
+    "llm_stats_id": "claude-opus-4-1-20250805"
   },
   {
     "id": "databricks/databricks-claude-opus-4-6",
@@ -127002,7 +127339,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/databricks/"
+    "source_url": "https://models.dev/providers/databricks/",
+    "llm_stats_id": "claude-sonnet-4-5-20250929"
   },
   {
     "id": "databricks/databricks-gpt-5-mini",
@@ -128325,7 +128663,8 @@
     "input_price_per_m": 1.75,
     "output_price_per_m": 14,
     "is_free": false,
-    "source_url": "https://models.dev/providers/abacus/"
+    "source_url": "https://models.dev/providers/abacus/",
+    "llm_stats_id": "gpt-5.2-2025-12-11"
   },
   {
     "id": "abacus/gemini-2.5-flash-image",
@@ -128937,7 +129276,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/abacus/"
+    "source_url": "https://models.dev/providers/abacus/",
+    "llm_stats_id": "gpt-4o-2024-05-13"
   },
   {
     "id": "abacus/gpt-4.1",
@@ -129350,7 +129690,8 @@
     "input_price_per_m": 1.25,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/abacus/"
+    "source_url": "https://models.dev/providers/abacus/",
+    "llm_stats_id": "gpt-5.1-2025-11-13"
   },
   {
     "id": "abacus/grok-4-fast-non-reasoning",
@@ -136454,7 +136795,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "nemotron-3-super-120b-a12b"
   },
   {
     "id": "aihubmix/gpt-5.1-codex-mini",
@@ -136965,7 +137307,8 @@
     "input_price_per_m": 0.338,
     "output_price_per_m": 1.014,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "qwen3.8-max"
   },
   {
     "id": "aihubmix/deep-deepseek-v4-flash",
@@ -137087,7 +137430,8 @@
     "input_price_per_m": 0.845,
     "output_price_per_m": 3.38,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "glm-5.1"
   },
   {
     "id": "aihubmix/qwen3.5-35b-a3b",
@@ -137243,7 +137587,8 @@
     "input_price_per_m": 0.28,
     "output_price_per_m": 1.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "deepseek-v4-flash-0731"
   },
   {
     "id": "aihubmix/claude-opus-4-7-think",
@@ -137275,7 +137620,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "claude-opus-4-7"
   },
   {
     "id": "aihubmix/muse-spark-1.2",
@@ -137504,7 +137850,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "claude-opus-4-5-20251101"
   },
   {
     "id": "aihubmix/gemini-3.7-flash",
@@ -137696,7 +138043,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "nemotron-content-safety-3.5"
   },
   {
     "id": "aihubmix/gemini-3.5-flash",
@@ -137793,7 +138141,8 @@
     "input_price_per_m": 0.17,
     "output_price_per_m": 0.566661,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "hy3"
   },
   {
     "id": "aihubmix/gemini-4-argon",
@@ -137860,7 +138209,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "claude-sonnet-4-6"
   },
   {
     "id": "aihubmix/claude-fable-5",
@@ -138017,7 +138367,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "glm-5.2"
   },
   {
     "id": "aihubmix/qwen3.6-flash",
@@ -138110,7 +138461,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "nemotron-3-ultra-550b-a55b"
   },
   {
     "id": "aihubmix/gemini-3.1-flash-lite",
@@ -138434,7 +138786,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "ling-3.0-flash"
   },
   {
     "id": "aihubmix/gpt-5.2",
@@ -138630,7 +138983,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "qwen3.8-flash"
   },
   {
     "id": "aihubmix/gpt-image-2",
@@ -138756,7 +139110,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "nemotron-3.5-lightning-30b-a3b"
   },
   {
     "id": "aihubmix/gpt-5.3-codex",
@@ -138988,7 +139343,8 @@
     "input_price_per_m": 3.3,
     "output_price_per_m": 16.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "claude-sonnet-4-5-20250929"
   },
   {
     "id": "aihubmix/muse-spark-1.1",
@@ -139053,7 +139409,8 @@
     "input_price_per_m": 0.84,
     "output_price_per_m": 3.38,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "glm-5.1"
   },
   {
     "id": "aihubmix/coding-minimax-m2.7-highspeed",
@@ -139512,7 +139869,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "claude-opus-4-6"
   },
   {
     "id": "aihubmix/deepseek-v4-pro-0813",
@@ -139605,7 +139963,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "glm-4.7-flash"
   },
   {
     "id": "aihubmix/kimi-k2.6",
@@ -140346,7 +140705,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "qwen3.8-max"
   },
   {
     "id": "aihubmix/gpt-image-2.5-flare",
@@ -140505,7 +140865,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "glm-5.3-flash"
   },
   {
     "id": "aihubmix/qwen3-vl-plus",
@@ -140920,7 +141281,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "llm_stats_id": "glm-5.3"
   },
   {
     "id": "aihubmix/gemini-3.1-flash-image",
@@ -141870,7 +142232,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/azure/"
+    "source_url": "https://models.dev/providers/azure/",
+    "llm_stats_id": "gpt-3.5-turbo-0125"
   },
   {
     "id": "azure/llama-3.3-70b-instruct",
@@ -145820,7 +146183,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway-providers/"
+    "source_url": "https://models.dev/providers/llmgateway-providers/",
+    "llm_stats_id": "seed-2.0-mini"
   },
   {
     "id": "llmgateway-providers/bytedance/gpt-oss-120b",
@@ -145882,7 +146246,8 @@
     "input_price_per_m": 0.5,
     "output_price_per_m": 3,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway-providers/"
+    "source_url": "https://models.dev/providers/llmgateway-providers/",
+    "llm_stats_id": "seed-2.0-pro"
   },
   {
     "id": "llmgateway-providers/bytedance/deepseek-v4-flash",
@@ -146067,7 +146432,8 @@
     "input_price_per_m": 0.25,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway-providers/"
+    "source_url": "https://models.dev/providers/llmgateway-providers/",
+    "llm_stats_id": "seed-2.0-lite"
   },
   {
     "id": "llmgateway-providers/bytedance/deepseek-v4-pro",
@@ -146190,7 +146556,8 @@
     "input_price_per_m": 0.25,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway-providers/"
+    "source_url": "https://models.dev/providers/llmgateway-providers/",
+    "llm_stats_id": "seed-1.8"
   },
   {
     "id": "llmgateway-providers/bytedance/seed-2-0-code-preview-260328",
@@ -146221,7 +146588,8 @@
     "input_price_per_m": 0.5,
     "output_price_per_m": 3,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway-providers/"
+    "source_url": "https://models.dev/providers/llmgateway-providers/",
+    "llm_stats_id": "seed-2.0-code"
   },
   {
     "id": "llmgateway-providers/consensusprotocol/deepseek-v4.1-flash",
@@ -148654,7 +149022,8 @@
     "input_price_per_m": 2.8,
     "output_price_per_m": 8.8,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway-providers/"
+    "source_url": "https://models.dev/providers/llmgateway-providers/",
+    "llm_stats_id": "glm-5.3"
   },
   {
     "id": "llmgateway-providers/scx-ai-gp/kimi-k3",
@@ -151590,7 +151959,8 @@
     "input_price_per_m": 0.15,
     "output_price_per_m": 0.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway-providers/"
+    "source_url": "https://models.dev/providers/llmgateway-providers/",
+    "llm_stats_id": "mistral-small-latest"
   },
   {
     "id": "llmgateway-providers/mistral/ministral-8b-2512",
@@ -151713,7 +152083,8 @@
     "input_price_per_m": 0.5,
     "output_price_per_m": 1.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway-providers/"
+    "source_url": "https://models.dev/providers/llmgateway-providers/",
+    "llm_stats_id": "mistral-large-3-2509"
   },
   {
     "id": "llmgateway-providers/mistral/codestral-2508",
@@ -158889,7 +159260,8 @@
     "input_price_per_m": 4.5,
     "output_price_per_m": 22.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway-providers/"
+    "source_url": "https://models.dev/providers/llmgateway-providers/",
+    "llm_stats_id": "kimi-k3"
   },
   {
     "id": "llmgateway-providers/xiaomi/mimo-v2.6-pro",
@@ -161143,7 +161515,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmtr/"
+    "source_url": "https://models.dev/providers/llmtr/",
+    "llm_stats_id": "muse-glimmer-30b"
   },
   {
     "id": "llmtr/gemma-4",
@@ -162578,7 +162951,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/kenari/"
+    "source_url": "https://models.dev/providers/kenari/",
+    "llm_stats_id": "mimo-v2.5"
   },
   {
     "id": "kenari/gpt-5-6-sol",
@@ -162868,7 +163242,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/kenari/"
+    "source_url": "https://models.dev/providers/kenari/",
+    "llm_stats_id": "kimi-k2.7-code"
   },
   {
     "id": "kenari/gpt-oss-120b",
@@ -162929,7 +163304,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/kenari/"
+    "source_url": "https://models.dev/providers/kenari/",
+    "llm_stats_id": "hy3"
   },
   {
     "id": "kenari/glm-4-7-flash:free",
@@ -162959,7 +163335,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/kenari/"
+    "source_url": "https://models.dev/providers/kenari/",
+    "llm_stats_id": "glm-4.7-flash"
   },
   {
     "id": "kenari/deepseek-v4-flash:free",
@@ -163021,7 +163398,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/kenari/"
+    "source_url": "https://models.dev/providers/kenari/",
+    "llm_stats_id": "step-3.7-flash"
   },
   {
     "id": "kenari/minimax-m3",
@@ -163085,7 +163463,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/kenari/"
+    "source_url": "https://models.dev/providers/kenari/",
+    "llm_stats_id": "mistral-medium-3-5"
   },
   {
     "id": "kenari/qwen3-7-plus",
@@ -163601,7 +163980,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/kenari/"
+    "source_url": "https://models.dev/providers/kenari/",
+    "llm_stats_id": "kimi-k2.6"
   },
   {
     "id": "kenari/mimo-v2-5",
@@ -164443,7 +164823,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/kenari/"
+    "source_url": "https://models.dev/providers/kenari/",
+    "llm_stats_id": "nemotron-3-super-120b-a12b"
   },
   {
     "id": "kenari/claude-sonnet-4-6",
@@ -169187,7 +169568,8 @@
     "input_price_per_m": 0.3,
     "output_price_per_m": 2.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "nova-2-lite"
   },
   {
     "id": "kilo/amazon/nova-pro-v1",
@@ -169789,7 +170171,8 @@
     "input_price_per_m": 0.09,
     "output_price_per_m": 0.55,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "qwen3-235b-a22b-instruct-2507"
   },
   {
     "id": "kilo/qwen/qwen3-30b-a3b-instruct-2507",
@@ -170864,7 +171247,8 @@
     "input_price_per_m": 0.3,
     "output_price_per_m": 1.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "command-a-plus-05-2026"
   },
   {
     "id": "kilo/cohere/command-r-plus-08-2024",
@@ -170990,7 +171374,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "gpt-3.5-turbo-0125"
   },
   {
     "id": "kilo/openai/gpt-5.1-codex-mini",
@@ -171154,7 +171539,8 @@
     "input_price_per_m": 1.1,
     "output_price_per_m": 4.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "o4-mini"
   },
   {
     "id": "kilo/openai/gpt-5.6-luna-pro",
@@ -171705,7 +172091,8 @@
     "input_price_per_m": 1.75,
     "output_price_per_m": 14,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "gpt-5.2-2025-12-11"
   },
   {
     "id": "kilo/openai/gpt-5.2",
@@ -172065,7 +172452,8 @@
     "input_price_per_m": 1.1,
     "output_price_per_m": 4.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "o3-mini"
   },
   {
     "id": "kilo/openai/gpt-5",
@@ -172327,7 +172715,8 @@
     "input_price_per_m": 1,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "gpt-3.5-turbo-0125"
   },
   {
     "id": "kilo/openai/o1",
@@ -172392,7 +172781,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "gpt-4o-2024-05-13"
   },
   {
     "id": "kilo/openai/gpt-3.5-turbo-16k",
@@ -173944,7 +174334,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "nemotron-content-safety-3.5"
   },
   {
     "id": "kilo/nvidia/nemotron-3-super-120b-a12b:free",
@@ -174834,7 +175225,8 @@
     "input_price_per_m": 0.7,
     "output_price_per_m": 0.7,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "hermes-3-70b"
   },
   {
     "id": "kilo/nousresearch/hermes-3-llama-3.1-405b",
@@ -174864,7 +175256,8 @@
     "input_price_per_m": 1,
     "output_price_per_m": 1,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "hermes-3-405b"
   },
   {
     "id": "kilo/nousresearch/hermes-4-405b",
@@ -175174,7 +175567,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "minimax-m3.1-flash"
   },
   {
     "id": "kilo/inception/mercury-3",
@@ -176214,7 +176608,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "lfm-2.5-2.6b"
   },
   {
     "id": "kilo/meituan/longcat-2.0",
@@ -177598,7 +177993,8 @@
     "input_price_per_m": 1.36,
     "output_price_per_m": 4.18,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "mistral-large-4"
   },
   {
     "id": "kilo/mistralai/mistral-nemo",
@@ -179381,7 +179777,8 @@
     "input_price_per_m": 0.18,
     "output_price_per_m": 0.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "hy3"
   },
   {
     "id": "kilo/tencent/hy-mt2-7b",
@@ -180058,7 +180455,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "laguna-xs-2.1"
   },
   {
     "id": "kilo/poolside/laguna-s-2.1:free",
@@ -180088,7 +180486,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "laguna-s-2.1"
   },
   {
     "id": "kilo/poolside/laguna-xs-2.1",
@@ -181737,7 +182136,8 @@
     "input_price_per_m": 0.7,
     "output_price_per_m": 2.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/novita-ai/"
+    "source_url": "https://models.dev/providers/novita-ai/",
+    "llm_stats_id": "deepseek-r1"
   },
   {
     "id": "novita-ai/deepseek/deepseek-v4-pro",
@@ -184161,7 +184561,8 @@
     "input_price_per_m": 1.08,
     "output_price_per_m": 4.8,
     "is_free": false,
-    "source_url": "https://models.dev/providers/merge-gateway/"
+    "source_url": "https://models.dev/providers/merge-gateway/",
+    "llm_stats_id": "qwen3-max"
   },
   {
     "id": "merge-gateway/qwen/qwen3-vl-30b-a3b-instruct",
@@ -185413,7 +185814,8 @@
     "input_price_per_m": 1.75,
     "output_price_per_m": 14,
     "is_free": false,
-    "source_url": "https://models.dev/providers/merge-gateway/"
+    "source_url": "https://models.dev/providers/merge-gateway/",
+    "llm_stats_id": "gpt-5.2-2025-12-11"
   },
   {
     "id": "merge-gateway/openai/gpt-live-1",
@@ -185804,7 +186206,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/merge-gateway/"
+    "source_url": "https://models.dev/providers/merge-gateway/",
+    "llm_stats_id": "gpt-4o-2024-05-13"
   },
   {
     "id": "merge-gateway/openai/gpt-4.1",
@@ -186161,7 +186564,8 @@
     "input_price_per_m": 1.25,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/merge-gateway/"
+    "source_url": "https://models.dev/providers/merge-gateway/",
+    "llm_stats_id": "gpt-5.1-2025-11-13"
   },
   {
     "id": "merge-gateway/openai/o3",
@@ -186289,7 +186693,8 @@
     "input_price_per_m": 1.25,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/merge-gateway/"
+    "source_url": "https://models.dev/providers/merge-gateway/",
+    "llm_stats_id": "gpt-5-2025-08-07"
   },
   {
     "id": "merge-gateway/mistral/mistral-large-latest",
@@ -186538,7 +186943,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/merge-gateway/"
+    "source_url": "https://models.dev/providers/merge-gateway/",
+    "llm_stats_id": "pixtral-large"
   },
   {
     "id": "merge-gateway/mistral/magistral-medium-latest",
@@ -186568,7 +186974,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/merge-gateway/"
+    "source_url": "https://models.dev/providers/merge-gateway/",
+    "llm_stats_id": "magistral-medium"
   },
   {
     "id": "merge-gateway/mistral/mistral-medium-latest",
@@ -192026,7 +192433,8 @@
     "input_price_per_m": 1.87,
     "output_price_per_m": 4.68,
     "is_free": false,
-    "source_url": "https://models.dev/providers/thinkingmachines/"
+    "source_url": "https://models.dev/providers/thinkingmachines/",
+    "llm_stats_id": "inkling"
   },
   {
     "id": "thinkingmachines/thinkingmachines/Inkling:peft:262144:sampling-nvfp4",
@@ -194097,7 +194505,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 12.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/infer/"
+    "source_url": "https://models.dev/providers/infer/",
+    "llm_stats_id": "gpt-5.6-sol"
   },
   {
     "id": "infer/infer/gpt-6-astra:official",
@@ -194129,7 +194538,8 @@
     "input_price_per_m": 12.5,
     "output_price_per_m": 62.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/infer/"
+    "source_url": "https://models.dev/providers/infer/",
+    "llm_stats_id": "gpt-6-astra"
   },
   {
     "id": "scx-ai/gpt-oss-120b",
@@ -196465,7 +196875,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway/"
+    "source_url": "https://models.dev/providers/llmgateway/",
+    "llm_stats_id": "seed-2.0-mini"
   },
   {
     "id": "llmgateway/claude-opus-4-7",
@@ -196968,7 +197379,8 @@
     "input_price_per_m": 0.5,
     "output_price_per_m": 3,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway/"
+    "source_url": "https://models.dev/providers/llmgateway/",
+    "llm_stats_id": "seed-2.0-pro"
   },
   {
     "id": "llmgateway/mistral-small-2603",
@@ -199583,7 +199995,8 @@
     "input_price_per_m": 0.25,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway/"
+    "source_url": "https://models.dev/providers/llmgateway/",
+    "llm_stats_id": "seed-2.0-lite"
   },
   {
     "id": "llmgateway/gemini-3-flash-preview",
@@ -202360,7 +202773,8 @@
     "input_price_per_m": 0.25,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway/"
+    "source_url": "https://models.dev/providers/llmgateway/",
+    "llm_stats_id": "seed-1.8"
   },
   {
     "id": "llmgateway/grok-4-20-beta-0309-reasoning",
@@ -202521,7 +202935,8 @@
     "input_price_per_m": 0.5,
     "output_price_per_m": 3,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway/"
+    "source_url": "https://models.dev/providers/llmgateway/",
+    "llm_stats_id": "seed-2.0-code"
   },
   {
     "id": "llmgateway/qwen3.5-27b",
@@ -205929,7 +206344,8 @@
     "input_price_per_m": 0.7,
     "output_price_per_m": 2.8,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-4.1-mini-2025-04-14"
   },
   {
     "id": "vercel/openai/tts-1",
@@ -206021,7 +206437,8 @@
     "input_price_per_m": 0.2,
     "output_price_per_m": 1,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-6-luna"
   },
   {
     "id": "vercel/openai/gpt-image-1-mini",
@@ -206181,7 +206598,8 @@
     "input_price_per_m": 3.5,
     "output_price_per_m": 14,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "o3-2025-04-16"
   },
   {
     "id": "vercel/openai/gpt-6-sol",
@@ -206309,7 +206727,8 @@
     "input_price_per_m": 8,
     "output_price_per_m": 40,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-5.6-sol"
   },
   {
     "id": "vercel/openai/gpt-5.3-codex-fast",
@@ -206341,7 +206760,8 @@
     "input_price_per_m": 3.5,
     "output_price_per_m": 28,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-5.3-codex"
   },
   {
     "id": "vercel/openai/gpt-5.5-fast",
@@ -206373,7 +206793,8 @@
     "input_price_per_m": 12.5,
     "output_price_per_m": 75,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-5.5"
   },
   {
     "id": "vercel/openai/gpt-oss-120b",
@@ -206468,7 +206889,8 @@
     "input_price_per_m": 4.25,
     "output_price_per_m": 17,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-4o-2024-05-13"
   },
   {
     "id": "vercel/openai/gpt-image-1",
@@ -206563,7 +206985,8 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-6.1-sol"
   },
   {
     "id": "vercel/openai/gpt-6-sol-fast",
@@ -206595,7 +207018,8 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-6-sol"
   },
   {
     "id": "vercel/openai/text-embedding-ada-002",
@@ -206719,7 +207143,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-5.1-2025-11-13"
   },
   {
     "id": "vercel/openai/gpt-image-2.5-sunburst",
@@ -206781,7 +207206,8 @@
     "input_price_per_m": 0.45,
     "output_price_per_m": 3.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-5-mini-2025-08-07"
   },
   {
     "id": "vercel/openai/gpt-6-luna",
@@ -206846,7 +207272,8 @@
     "input_price_per_m": 20,
     "output_price_per_m": 100,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-6-astra"
   },
   {
     "id": "vercel/openai/gpt-5-pro",
@@ -207135,7 +207562,8 @@
     "input_price_per_m": 0.25,
     "output_price_per_m": 1,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-4o-mini-2024-07-18"
   },
   {
     "id": "vercel/openai/o4-mini-fast",
@@ -207167,7 +207595,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 8,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "o4-mini"
   },
   {
     "id": "vercel/openai/gpt-5.3-codex",
@@ -207232,7 +207661,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 9,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-5.4-mini"
   },
   {
     "id": "vercel/openai/gpt-5-fast",
@@ -207264,7 +207694,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-5-2025-08-07"
   },
   {
     "id": "vercel/openai/gpt-5.4-mini",
@@ -207581,7 +208012,8 @@
     "input_price_per_m": 3.5,
     "output_price_per_m": 14,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-4.1-2025-04-14"
   },
   {
     "id": "vercel/openai/gpt-5.2-fast",
@@ -207613,7 +208045,8 @@
     "input_price_per_m": 3.5,
     "output_price_per_m": 28,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-5.2-2025-12-11"
   },
   {
     "id": "vercel/openai/gpt-image-1.5",
@@ -207707,7 +208140,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 30,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-5.4"
   },
   {
     "id": "vercel/openai/gpt-5.2-codex",
@@ -207803,7 +208237,8 @@
     "input_price_per_m": 0.4,
     "output_price_per_m": 2.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-5.6-luna"
   },
   {
     "id": "vercel/openai/gpt-image-2.5-flare",
@@ -207865,7 +208300,8 @@
     "input_price_per_m": 0.2,
     "output_price_per_m": 0.8,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-4.1-nano-2025-04-14"
   },
   {
     "id": "vercel/openai/gpt-5.6-sol",
@@ -208088,7 +208524,8 @@
     "input_price_per_m": 4,
     "output_price_per_m": 24,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-5.6-terra"
   },
   {
     "id": "vercel/openai/gpt-5.2-pro",
@@ -209259,7 +209696,8 @@
     "input_price_per_m": 0.6,
     "output_price_per_m": 2.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "deepseek-v4.1-flash-1017"
   },
   {
     "id": "vercel/deepseek/deepseek-v4-pro",
@@ -209414,7 +209852,8 @@
     "input_price_per_m": 0.6,
     "output_price_per_m": 2.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "deepseek-v4.1-flash"
   },
   {
     "id": "vercel/deepseek/deepseek-r1",
@@ -209941,7 +210380,8 @@
     "input_price_per_m": 2.1,
     "output_price_per_m": 6.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "glm-5.3"
   },
   {
     "id": "vercel/zai/glm-5v-turbo",
@@ -210035,7 +210475,8 @@
     "input_price_per_m": 2.8,
     "output_price_per_m": 8.8,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "glm-5.2"
   },
   {
     "id": "vercel/zai/glm-4.7-flash",
@@ -210955,7 +211396,8 @@
     "input_price_per_m": 4.5,
     "output_price_per_m": 22.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "kimi-k3"
   },
   {
     "id": "vercel/moonshotai/kimi-k2.5",
@@ -212710,7 +213152,8 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "claude-opus-4-8"
   },
   {
     "id": "vercel/anthropic/claude-opus-5.5",
@@ -212808,7 +213251,8 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "claude-opus-5"
   },
   {
     "id": "vercel/anthropic/claude-sonnet-5",
@@ -212972,7 +213416,8 @@
     "input_price_per_m": 8,
     "output_price_per_m": 40,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "claude-opus-5-5"
   },
   {
     "id": "vercel/anthropic/claude-sonnet-4.5",
@@ -216785,7 +217230,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "laguna-s-2.1"
   },
   {
     "id": "vercel/fireworks/ember-1",
@@ -223061,7 +223507,8 @@
     "input_price_per_m": 0.2,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/ofox/"
+    "source_url": "https://models.dev/providers/ofox/",
+    "llm_stats_id": "grok-4.1-2025-11-17"
   },
   {
     "id": "ofox/x-ai/grok-4.6",
@@ -227404,7 +227851,8 @@
     "input_price_per_m": 0.119,
     "output_price_per_m": 0.238,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "deepseek-v4-flash-0731"
   },
   {
     "id": "edenai/flexai/DeepSeek-V4-Flash-0731",
@@ -227846,7 +228294,8 @@
     "input_price_per_m": 0.06,
     "output_price_per_m": 0.24,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "nova-lite"
   },
   {
     "id": "edenai/amazon/moonshot.kimi-k2-thinking",
@@ -227937,7 +228386,8 @@
     "input_price_per_m": 0.04,
     "output_price_per_m": 0.08,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemma-3-4b-it"
   },
   {
     "id": "edenai/amazon/amazon.nova-pro-v1:0",
@@ -228002,7 +228452,8 @@
     "input_price_per_m": 0.23,
     "output_price_per_m": 0.38,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemma-3-27b-it"
   },
   {
     "id": "edenai/amazon/moonshotai.kimi-k2.5",
@@ -228033,7 +228484,8 @@
     "input_price_per_m": 0.6,
     "output_price_per_m": 3,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "kimi-k2.5"
   },
   {
     "id": "edenai/amazon/google.gemma-3-12b-it",
@@ -228064,7 +228516,8 @@
     "input_price_per_m": 0.09,
     "output_price_per_m": 0.29,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemma-3-12b-it"
   },
   {
     "id": "edenai/amazon/amazon.nova-lite-v1:0",
@@ -228193,7 +228646,8 @@
     "input_price_per_m": 0.8,
     "output_price_per_m": 3.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "nova-pro"
   },
   {
     "id": "edenai/amazon/amazon.nova-micro-v1:0",
@@ -228254,7 +228708,8 @@
     "input_price_per_m": 0.035,
     "output_price_per_m": 0.14,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "nova-micro"
   },
   {
     "id": "edenai/amazon/openai.gpt-oss-safeguard-20b",
@@ -228315,7 +228770,8 @@
     "input_price_per_m": 0.04,
     "output_price_per_m": 0.08,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemma-3-4b-it"
   },
   {
     "id": "edenai/amazon/mistral.voxtral-small-24b-2507@us",
@@ -228407,7 +228863,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "pixtral-large"
   },
   {
     "id": "edenai/amazon/google.gemma-3-12b-it@us",
@@ -228438,7 +228895,8 @@
     "input_price_per_m": 0.09,
     "output_price_per_m": 0.29,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemma-3-12b-it"
   },
   {
     "id": "edenai/amazon/google.gemma-3-27b-it",
@@ -228469,7 +228927,8 @@
     "input_price_per_m": 0.23,
     "output_price_per_m": 0.38,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemma-3-27b-it"
   },
   {
     "id": "edenai/amazon/mistral.voxtral-mini-3b-2507@us",
@@ -228531,7 +228990,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "pixtral-large"
   },
   {
     "id": "edenai/amazon/zai.glm-4.7-flash",
@@ -228561,7 +229021,8 @@
     "input_price_per_m": 0.07,
     "output_price_per_m": 0.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "glm-4.7-flash"
   },
   {
     "id": "edenai/amazon/zai.glm-4.7-flash@us",
@@ -228591,7 +229052,8 @@
     "input_price_per_m": 0.07,
     "output_price_per_m": 0.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "glm-4.7-flash"
   },
   {
     "id": "edenai/perplexityai/sonar-deep-research",
@@ -229569,7 +230031,8 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gpt-6-astra"
   },
   {
     "id": "edenai/openai/gpt-6-luna",
@@ -230160,7 +230623,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gpt-4o-2024-05-13"
   },
   {
     "id": "edenai/openai/gpt-4.1",
@@ -230290,7 +230754,8 @@
     "input_price_per_m": 0.2,
     "output_price_per_m": 1.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gpt-5.6-luna"
   },
   {
     "id": "edenai/openai/gpt-5.1",
@@ -230550,7 +231015,8 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gpt-5.6-sol"
   },
   {
     "id": "edenai/openai/o3",
@@ -231185,7 +231651,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 7.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "magistral-medium"
   },
   {
     "id": "edenai/mistral/mistral-medium-latest",
@@ -231963,7 +232430,8 @@
     "input_price_per_m": 0.7,
     "output_price_per_m": 0.7,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "hermes-3-70b"
   },
   {
     "id": "edenai/deepinfra/NousResearch/Hermes-3-Llama-3.1-405B",
@@ -231993,7 +232461,8 @@
     "input_price_per_m": 1,
     "output_price_per_m": 1,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "hermes-3-405b"
   },
   {
     "id": "edenai/deepinfra/openai/gpt-oss-120b",
@@ -232943,7 +233412,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 9,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-3.5-flash"
   },
   {
     "id": "edenai/vertex/gemini-3-pro-image",
@@ -233009,7 +233479,8 @@
     "input_price_per_m": 0.75,
     "output_price_per_m": 3.75,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-3.6-flash"
   },
   {
     "id": "edenai/vertex/gemini-3.1-flash-lite@us",
@@ -233043,7 +233514,8 @@
     "input_price_per_m": 0.25,
     "output_price_per_m": 1.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-3.1-flash-lite-preview"
   },
   {
     "id": "edenai/vertex/gemini-3.1-flash-lite@eu",
@@ -233077,7 +233549,8 @@
     "input_price_per_m": 0.25,
     "output_price_per_m": 1.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-3.1-flash-lite-preview"
   },
   {
     "id": "edenai/vertex/gemini-4-argon@us",
@@ -233111,7 +233584,8 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-4-argon"
   },
   {
     "id": "edenai/vertex/gemini-pro-latest",
@@ -233214,7 +233688,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 7.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-3.8-flash"
   },
   {
     "id": "edenai/vertex/gemini-3.7-flash@eu",
@@ -233248,7 +233723,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 7.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-3.7-flash"
   },
   {
     "id": "edenai/vertex/gemini-3.5-flash",
@@ -233488,7 +233964,8 @@
     "input_price_per_m": 0.3,
     "output_price_per_m": 2.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-3.5-flash-lite"
   },
   {
     "id": "edenai/vertex/gemini-2.5-flash-image",
@@ -233554,7 +234031,8 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-4-argon"
   },
   {
     "id": "edenai/vertex/gemini-3.8-flash@eu",
@@ -233588,7 +234066,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 7.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-3.8-flash"
   },
   {
     "id": "edenai/vertex/gemini-3-flash-preview",
@@ -233657,7 +234136,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 7.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-3.7-flash"
   },
   {
     "id": "edenai/vertex/gemini-3.8-flash",
@@ -233761,7 +234241,8 @@
     "input_price_per_m": 0.75,
     "output_price_per_m": 3.75,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-3.6-flash"
   },
   {
     "id": "edenai/vertex/gemini-3.5-flash-lite@eu",
@@ -233795,7 +234276,8 @@
     "input_price_per_m": 0.3,
     "output_price_per_m": 2.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-3.5-flash-lite"
   },
   {
     "id": "edenai/vertex/gemini-3.1-flash-image",
@@ -233891,7 +234373,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 9,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-3.5-flash"
   },
   {
     "id": "edenai/zai/glm-5v-turbo",
@@ -234588,7 +235071,8 @@
     "input_price_per_m": 1.32,
     "output_price_per_m": 3.959999,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "deepseek-v4-pro-0813"
   },
   {
     "id": "edenai/databricks/databricks-deepseek-v4-flash-0731",
@@ -234618,7 +235102,8 @@
     "input_price_per_m": 0.14,
     "output_price_per_m": 0.28,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "deepseek-v4-flash-0731"
   },
   {
     "id": "edenai/databricks/databricks-gpt-oss-20b@eu",
@@ -234648,7 +235133,8 @@
     "input_price_per_m": 0.07,
     "output_price_per_m": 0.30002,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gpt-oss-20b"
   },
   {
     "id": "edenai/databricks/databricks-qwen3-next-80b-a3b-instruct@eu",
@@ -234678,7 +235164,8 @@
     "input_price_per_m": 0.15001,
     "output_price_per_m": 1.20001,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "qwen3-next-80b-a3b-instruct"
   },
   {
     "id": "edenai/databricks/databricks-gpt-oss-120b",
@@ -234708,7 +235195,8 @@
     "input_price_per_m": 0.15001,
     "output_price_per_m": 0.59997,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gpt-oss-120b"
   },
   {
     "id": "edenai/databricks/databricks-qwen3-next-80b-a3b-instruct",
@@ -234738,7 +235226,8 @@
     "input_price_per_m": 0.15001,
     "output_price_per_m": 1.20001,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "qwen3-next-80b-a3b-instruct"
   },
   {
     "id": "edenai/databricks/databricks-gpt-oss-120b@eu",
@@ -234768,7 +235257,8 @@
     "input_price_per_m": 0.15001,
     "output_price_per_m": 0.59997,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gpt-oss-120b"
   },
   {
     "id": "edenai/databricks/databricks-gpt-oss-20b",
@@ -234798,7 +235288,8 @@
     "input_price_per_m": 0.07,
     "output_price_per_m": 0.30002,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gpt-oss-20b"
   },
   {
     "id": "edenai/databricks/databricks-inkling",
@@ -234829,7 +235320,8 @@
     "input_price_per_m": 1,
     "output_price_per_m": 4.05,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "inkling"
   },
   {
     "id": "edenai/minimax/MiniMax-M3.1-Flash",
@@ -235556,7 +236048,8 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "claude-fable-5-1"
   },
   {
     "id": "edenai/anthropic/claude-opus-4-5-20251101",
@@ -235621,7 +236114,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "claude-haiku-5-5"
   },
   {
     "id": "edenai/anthropic/claude-fable-5",
@@ -235719,7 +236213,8 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "claude-opus-5-5"
   },
   {
     "id": "edenai/anthropic/claude-haiku-5-5",
@@ -235916,7 +236411,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "claude-sonnet-5-5"
   },
   {
     "id": "edenai/anthropic/claude-opus-5",
@@ -236217,7 +236713,8 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-4-argon"
   },
   {
     "id": "edenai/google/gemini-3.7-flash",
@@ -236491,7 +236988,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 7.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-3.8-flash"
   },
   {
     "id": "edenai/google/gemini-3.1-flash-lite-image",
@@ -237448,7 +237946,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "grok-4.7"
   },
   {
     "id": "edenai/xai/grok-4.20-0309-non-reasoning",
@@ -244733,7 +245232,8 @@
     "input_price_per_m": 0.16,
     "output_price_per_m": 0.58,
     "is_free": false,
-    "source_url": "https://models.dev/providers/commandcode/"
+    "source_url": "https://models.dev/providers/commandcode/",
+    "llm_stats_id": "deepseek-v4.1-flash"
   },
   {
     "id": "commandcode/stepfun/Step-3.5-Flash",
@@ -244998,7 +245498,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/commandcode/"
+    "source_url": "https://models.dev/providers/commandcode/",
+    "llm_stats_id": "muse-spark-1.2"
   },
   {
     "id": "commandcode/meta/muse-spark-1.3-contributor",
@@ -245032,7 +245533,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/commandcode/"
+    "source_url": "https://models.dev/providers/commandcode/",
+    "llm_stats_id": "muse-spark-1.3"
   },
   {
     "id": "commandcode/meta/muse-spark-1.3",
@@ -248975,7 +249477,8 @@
     "input_price_per_m": 1,
     "output_price_per_m": 3.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "ernie-5.0"
   },
   {
     "id": "nano-gpt/gemma-4-26b-a4b-it-luminous",
@@ -249069,7 +249572,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "command-a-plus-05-2026"
   },
   {
     "id": "nano-gpt/gemini-2.5-flash-lite-preview-06-17",
@@ -249101,7 +249605,8 @@
     "input_price_per_m": 0.15,
     "output_price_per_m": 0.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gemini-2.5-flash-lite"
   },
   {
     "id": "nano-gpt/gemini-2.5-pro-exp-03-25",
@@ -249318,7 +249823,8 @@
     "input_price_per_m": 0.15,
     "output_price_per_m": 3.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gemini-2.5-flash"
   },
   {
     "id": "nano-gpt/venice-uncensored",
@@ -249844,7 +250350,8 @@
     "input_price_per_m": 0.15,
     "output_price_per_m": 0.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gemini-2.5-flash"
   },
   {
     "id": "nano-gpt/hermes-medium",
@@ -249907,7 +250414,8 @@
     "input_price_per_m": 0.3,
     "output_price_per_m": 2.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gemini-2.5-flash"
   },
   {
     "id": "nano-gpt/longcat-2.5-preview",
@@ -250003,7 +250511,8 @@
     "input_price_per_m": 0.3,
     "output_price_per_m": 2.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gemini-2.5-flash"
   },
   {
     "id": "nano-gpt/glm-4-long",
@@ -250066,7 +250575,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gemini-2.5-flash-lite"
   },
   {
     "id": "nano-gpt/gemini-2.5-flash",
@@ -251820,7 +252330,7 @@
     "output_price_per_m": 0.7,
     "is_free": false,
     "source_url": "https://models.dev/providers/nano-gpt/",
-    "llm_stats_id": "deepseek-reasoner"
+    "llm_stats_id": "deepseek-v3.1"
   },
   {
     "id": "nano-gpt/deepseek-ai/deepseek-v3.2-exp",
@@ -251881,7 +252391,8 @@
     "input_price_per_m": 0.28,
     "output_price_per_m": 0.42,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "deepseek-v3.2-exp"
   },
   {
     "id": "nano-gpt/deepseek-ai/DeepSeek-R1-0528",
@@ -253317,7 +253828,8 @@
     "input_price_per_m": 0.51,
     "output_price_per_m": 4.25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "nova-2-lite"
   },
   {
     "id": "nano-gpt/amazon/nova-pro-v1",
@@ -253654,7 +254166,8 @@
     "input_price_per_m": 0.26,
     "output_price_per_m": 2.08,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "qwen3.5-122b-a10b"
   },
   {
     "id": "nano-gpt/qwen/qwen3-vl-235b-a22b-thinking",
@@ -253778,7 +254291,8 @@
     "input_price_per_m": 1.475,
     "output_price_per_m": 4.425,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "qwen3.7-max"
   },
   {
     "id": "nano-gpt/qwen/qwen3.8-27b-kiwen",
@@ -253997,7 +254511,8 @@
     "input_price_per_m": 0.15,
     "output_price_per_m": 0.7,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "qwen3.8-27b"
   },
   {
     "id": "nano-gpt/qwen/qwen3.6-27b",
@@ -254093,7 +254608,8 @@
     "input_price_per_m": 0.203,
     "output_price_per_m": 2.24,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "qwen3.6-27b"
   },
   {
     "id": "nano-gpt/qwen/qwen3.8-27b-cybersecurity",
@@ -254312,7 +254828,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "qwen3.8-max"
   },
   {
     "id": "nano-gpt/qwen/qwen3.8-max",
@@ -254597,7 +255114,8 @@
     "input_price_per_m": 0.4,
     "output_price_per_m": 1.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "qwen3.7-plus"
   },
   {
     "id": "nano-gpt/qwen/qwen3.5-flash:thinking",
@@ -254949,7 +255467,8 @@
     "input_price_per_m": 0.112,
     "output_price_per_m": 0.8,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "qwen3.6-35b-a3b"
   },
   {
     "id": "nano-gpt/qwen/qwen3.5-397b-a17b",
@@ -255075,7 +255594,8 @@
     "input_price_per_m": 0.39,
     "output_price_per_m": 2.34,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "qwen3.5-397b-a17b"
   },
   {
     "id": "nano-gpt/qwen/qwen3.8-max-prime",
@@ -255170,7 +255690,8 @@
     "input_price_per_m": 0.14,
     "output_price_per_m": 1,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "qwen3.5-35b-a3b"
   },
   {
     "id": "nano-gpt/qwen/qwen3-vl-235b-a22b-instruct",
@@ -255678,7 +256199,8 @@
     "input_price_per_m": 0.25,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "qwen3.5-27b"
   },
   {
     "id": "nano-gpt/qwen/qwen3.5-27b",
@@ -255866,7 +256388,8 @@
     "input_price_per_m": 2.856,
     "output_price_per_m": 14.246,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "command-r-plus-04-2024"
   },
   {
     "id": "nano-gpt/elorian/glimpse",
@@ -257211,7 +257734,8 @@
     "input_price_per_m": 2.5,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gpt-4o-2024-05-13"
   },
   {
     "id": "nano-gpt/openai/gpt-4.1",
@@ -258871,7 +259395,8 @@
     "input_price_per_m": 0.66,
     "output_price_per_m": 1.98,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "deepseek-v4-pro-0813"
   },
   {
     "id": "nano-gpt/deepseek/deepseek-v4.1-flash-1017",
@@ -258933,7 +259458,8 @@
     "input_price_per_m": 0.14,
     "output_price_per_m": 0.28,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "deepseek-v4-flash-0423"
   },
   {
     "id": "nano-gpt/deepseek/deepseek-v4.1-flash",
@@ -259210,7 +259736,8 @@
     "input_price_per_m": 0.05,
     "output_price_per_m": 0.16,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "deepseek-v4-flash-0731"
   },
   {
     "id": "nano-gpt/deepseek/deepseek-v4-pro-0813",
@@ -259272,7 +259799,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "deepseek-v4.1-flash-1017"
   },
   {
     "id": "nano-gpt/deepseek/deepseek-v3.2:thinking",
@@ -259397,7 +259925,8 @@
     "input_price_per_m": 0.14,
     "output_price_per_m": 0.42,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "deepseek-v4.1-flash"
   },
   {
     "id": "nano-gpt/deepseek/deepseek-v4-pro:thinking",
@@ -259491,7 +260020,8 @@
     "input_price_per_m": 0.2,
     "output_price_per_m": 1.15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "step-3.7-flash"
   },
   {
     "id": "nano-gpt/nvidia/Llama-3.3-Nemotron-Super-49B-v1",
@@ -260675,7 +261205,8 @@
     "input_price_per_m": 0.375,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "kimi-k2.5"
   },
   {
     "id": "nano-gpt/moonshotai/Kimi-K2-Instruct-0905",
@@ -260737,7 +261268,8 @@
     "input_price_per_m": 0.45,
     "output_price_per_m": 1.95,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "kimi-k2.6"
   },
   {
     "id": "nano-gpt/moonshotai/kimi-k2.7-code",
@@ -261236,7 +261768,8 @@
     "input_price_per_m": 0.23,
     "output_price_per_m": 0.96,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "minimax-m3"
   },
   {
     "id": "nano-gpt/minimax/minimax-latest",
@@ -261691,7 +262224,8 @@
     "input_price_per_m": 0.42,
     "output_price_per_m": 1.32,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "glm-5.2"
   },
   {
     "id": "nano-gpt/z-ai/glm-5.3-uncensored",
@@ -261812,7 +262346,8 @@
     "input_price_per_m": 0.5,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "glm-4.6"
   },
   {
     "id": "nano-gpt/z-ai/glm-5v-turbo",
@@ -261937,7 +262472,8 @@
     "input_price_per_m": 0.7,
     "output_price_per_m": 2.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "glm-5.1"
   },
   {
     "id": "nano-gpt/z-ai/glm-4.7-flash",
@@ -262091,7 +262627,8 @@
     "input_price_per_m": 0.6,
     "output_price_per_m": 1.9,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "glm-5"
   },
   {
     "id": "nano-gpt/z-ai/glm-5",
@@ -262154,7 +262691,8 @@
     "input_price_per_m": 1.2,
     "output_price_per_m": 4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "glm-5v-turbo"
   },
   {
     "id": "nano-gpt/z-ai/GLM-4.5-Air",
@@ -262277,7 +262815,8 @@
     "input_price_per_m": 0.6,
     "output_price_per_m": 1.8,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "glm-4.5v"
   },
   {
     "id": "nano-gpt/z-ai/glm-5.1",
@@ -262432,7 +262971,8 @@
     "input_price_per_m": 0.07,
     "output_price_per_m": 0.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "glm-4.7-flash"
   },
   {
     "id": "nano-gpt/z-ai/glm-4.6v-original",
@@ -262553,7 +263093,8 @@
     "input_price_per_m": 0.6,
     "output_price_per_m": 1.1,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "glm-5.3"
   },
   {
     "id": "nano-gpt/z-ai/glm-5.3",
@@ -262614,7 +263155,8 @@
     "input_price_per_m": 0.12,
     "output_price_per_m": 0.8,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "glm-4.5-air"
   },
   {
     "id": "nano-gpt/z-ai/glm-5.2",
@@ -262705,7 +263247,8 @@
     "input_price_per_m": 0.4004,
     "output_price_per_m": 1.9292,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "glm-4.7"
   },
   {
     "id": "nano-gpt/z-ai/glm-4.7-original",
@@ -262765,7 +263308,8 @@
     "input_price_per_m": 0.3,
     "output_price_per_m": 1.3,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "glm-4.5"
   },
   {
     "id": "nano-gpt/failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5",
@@ -263477,7 +264021,8 @@
     "input_price_per_m": 15,
     "output_price_per_m": 75,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-opus-4-1-20250805"
   },
   {
     "id": "nano-gpt/anthropic/claude-fable-5.1",
@@ -263542,7 +264087,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-opus-4-6"
   },
   {
     "id": "nano-gpt/anthropic/claude-opus-4.8",
@@ -263672,7 +264218,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-sonnet-5-5"
   },
   {
     "id": "nano-gpt/anthropic/claude-sonnet-5.5",
@@ -263737,7 +264284,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-sonnet-4-6"
   },
   {
     "id": "nano-gpt/anthropic/claude-opus-4.6:thinking:max",
@@ -263899,7 +264447,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-opus-4-8"
   },
   {
     "id": "nano-gpt/anthropic/claude-opus-4.6:thinking",
@@ -263931,7 +264480,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-opus-4-6"
   },
   {
     "id": "nano-gpt/anthropic/claude-haiku-4.5:thinking",
@@ -263963,7 +264513,8 @@
     "input_price_per_m": 1,
     "output_price_per_m": 5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-haiku-4-5-20251001"
   },
   {
     "id": "nano-gpt/anthropic/claude-sonnet-5:thinking",
@@ -263995,7 +264546,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-sonnet-5"
   },
   {
     "id": "nano-gpt/anthropic/claude-opus-latest",
@@ -264059,7 +264611,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-opus-4-5-20251101"
   },
   {
     "id": "nano-gpt/anthropic/claude-opus-5.5",
@@ -264157,7 +264710,8 @@
     "input_price_per_m": 15,
     "output_price_per_m": 75,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-opus-4-1-20250805"
   },
   {
     "id": "nano-gpt/anthropic/claude-opus-4.6:thinking:medium",
@@ -264189,7 +264743,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-opus-4-6"
   },
   {
     "id": "nano-gpt/anthropic/claude-opus-4.7:thinking",
@@ -264221,7 +264776,8 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-opus-4-7"
   },
   {
     "id": "nano-gpt/anthropic/claude-sonnet-4.5:thinking",
@@ -264253,7 +264809,8 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-sonnet-4-5-20250929"
   },
   {
     "id": "nano-gpt/anthropic/claude-sonnet-5",
@@ -264449,7 +265006,8 @@
     "input_price_per_m": 15,
     "output_price_per_m": 75,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-opus-4-1-20250805"
   },
   {
     "id": "nano-gpt/anthropic/claude-opus-4.1:thinking:1024",
@@ -264481,7 +265039,8 @@
     "input_price_per_m": 15,
     "output_price_per_m": 75,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "claude-opus-4-1-20250805"
   },
   {
     "id": "nano-gpt/anthropic/claude-sonnet-4.5",
@@ -264579,7 +265138,8 @@
     "input_price_per_m": 0.45,
     "output_price_per_m": 1.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "inkling-small"
   },
   {
     "id": "nano-gpt/thinkingmachines/Inkling-Small",
@@ -264644,7 +265204,8 @@
     "input_price_per_m": 0.95,
     "output_price_per_m": 4.05,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "inkling"
   },
   {
     "id": "nano-gpt/anthracite-org/magnum-v2-72b",
@@ -265110,7 +265671,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 7.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "mistral-medium-3-5"
   },
   {
     "id": "nano-gpt/mistralai/codestral-2508",
@@ -265547,7 +266109,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 12,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gemini-3.1-pro-preview"
   },
   {
     "id": "nano-gpt/google/diffusiongemma",
@@ -265610,7 +266173,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 9,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gemini-3.5-flash"
   },
   {
     "id": "nano-gpt/google/gemma-4-26b-a4b-it",
@@ -265778,7 +266342,8 @@
     "input_price_per_m": 0.5,
     "output_price_per_m": 3,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gemini-3-flash-preview"
   },
   {
     "id": "nano-gpt/google/gemma-4-26b-a4b-it:thinking",
@@ -265810,7 +266375,8 @@
     "input_price_per_m": 0.0765,
     "output_price_per_m": 0.255,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gemma-4-26b-a4b-it"
   },
   {
     "id": "nano-gpt/google/gemini-3.5-flash",
@@ -266015,7 +266581,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 12,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gemini-3.1-pro-preview"
   },
   {
     "id": "nano-gpt/google/gemma-4-31b-it:thinking",
@@ -266047,7 +266614,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.34,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gemma-4-31b-it"
   },
   {
     "id": "nano-gpt/google/gemini-flash-latest",
@@ -266277,7 +266845,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 12,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "gemini-3.1-pro-preview"
   },
   {
     "id": "nano-gpt/ReadyArt/MS3.2-The-Omega-Directive-24B-Unslop-v2.0",
@@ -266701,7 +267270,8 @@
     "input_price_per_m": 0.05,
     "output_price_per_m": 0.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "solar-mini4"
   },
   {
     "id": "nano-gpt/upstage/solar-pro-3",
@@ -266792,7 +267362,8 @@
     "input_price_per_m": 0.03,
     "output_price_per_m": 0.12,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "solar-pro4"
   },
   {
     "id": "nano-gpt/upstage/solar-mini4",
@@ -266977,7 +267548,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "laguna-s-2.1"
   },
   {
     "id": "nano-gpt/fireworks/ember-1",
@@ -267101,7 +267673,8 @@
     "input_price_per_m": 0.075,
     "output_price_per_m": 0.22,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "ling-3.0-flash"
   },
   {
     "id": "nano-gpt/inclusionai/ling-3.0-flash",
@@ -267325,7 +267898,8 @@
     "input_price_per_m": 0.14,
     "output_price_per_m": 0.28,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "mimo-v2.5"
   },
   {
     "id": "nano-gpt/xiaomi/mimo-v2.5",
@@ -267389,7 +267963,8 @@
     "input_price_per_m": 0.435,
     "output_price_per_m": 0.87,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "mimo-v2.5-pro"
   },
   {
     "id": "nano-gpt/xiaomi/mimo-v2.6-flash",
@@ -267670,7 +268245,8 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/runinfra/"
+    "source_url": "https://models.dev/providers/runinfra/",
+    "llm_stats_id": "qwen3.8-2.4t-a95b"
   },
   {
     "id": "runinfra/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
@@ -275045,7 +275621,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode-go/"
+    "source_url": "https://models.dev/providers/opencode-go/",
+    "llm_stats_id": "minimax-m3.1-flash"
   },
   {
     "id": "opencode-go/muse-spark-1.2-contributor",
@@ -278670,7 +279247,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/azure-cognitive-services/"
+    "source_url": "https://models.dev/providers/azure-cognitive-services/",
+    "llm_stats_id": "gpt-3.5-turbo-0125"
   },
   {
     "id": "azure-cognitive-services/llama-3.3-70b-instruct",
@@ -281738,7 +282316,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/tokenrouter/"
+    "source_url": "https://models.dev/providers/tokenrouter/",
+    "llm_stats_id": "glm-5.3"
   },
   {
     "id": "kimi-code-plan-cn/k3-256k",
@@ -290395,7 +290974,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/alibaba-token-plan-cn/"
+    "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
+    "llm_stats_id": "qwen3.8-max"
   },
   {
     "id": "alibaba-token-plan-cn/deepseek-v4-flash-0731",

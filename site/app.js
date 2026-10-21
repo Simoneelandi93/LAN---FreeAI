@@ -5,6 +5,8 @@ let activeView = "models";
 let activeFilter = "all";
 let activeChangesRange = "daily";
 let visibleCount = 100;
+let sortKey = "name";
+let sortDir = "asc";
 
 const FILTERS = {
   all: () => true,
@@ -36,6 +38,35 @@ function price(v) {
 function priceFmt(v) {
   if (v === null) return "—";
   return v === 0 ? "$0" : `$${v.toLocaleString(undefined, { maximumFractionDigits: 4 })}`;
+}
+
+function sortValue(m, key) {
+  switch (key) {
+    case "name": return (m.name || "").toLowerCase();
+    case "provider": return (m.provider || "").toLowerCase();
+    case "score": {
+      const s = m.llm_stats_id ? statsById[m.llm_stats_id] : null;
+      return s && Number.isFinite(Number(s.score)) ? Number(s.score) : null;
+    }
+    case "input": return price(m.input_price_per_m);
+    case "output": return price(m.output_price_per_m);
+    case "context": return Number(m.context_window) || null;
+    default: return null;
+  }
+}
+
+function cmpModels(a, b) {
+  const va = sortValue(a, sortKey);
+  const vb = sortValue(b, sortKey);
+  const aNull = va === null;
+  const bNull = vb === null;
+  if (aNull && bNull) return 0;
+  if (aNull) return 1;
+  if (bNull) return -1;
+  let r = 0;
+  if (typeof va === "string") r = va.localeCompare(vb);
+  else r = va - vb;
+  return sortDir === "asc" ? r : -r;
 }
 
 function ctxFmt(v) {
@@ -91,7 +122,12 @@ function scoreCell(m) {
   if (s.score !== null && s.score !== undefined && Number.isFinite(Number(s.score))) {
     bits.push(Number(s.score).toFixed(1));
   }
-  const tip = [s.organization, s.benchmark_count ? `${s.benchmark_count} benchmark${s.benchmark_count === 1 ? "" : "s"}` : null]
+  const breakdown = [
+    s.reasoning_score !== null && s.reasoning_score !== undefined ? `R ${Number(s.reasoning_score).toFixed(1)}` : null,
+    s.coding_score !== null && s.coding_score !== undefined ? `C ${Number(s.coding_score).toFixed(1)}` : null,
+    s.agent_score !== null && s.agent_score !== undefined ? `A ${Number(s.agent_score).toFixed(1)}` : null,
+  ].filter(Boolean).join(" · ");
+  const tip = [s.organization, breakdown || null, s.benchmark_count ? `${s.benchmark_count} benchmark${s.benchmark_count === 1 ? "" : "s"}` : null]
     .filter(Boolean).join(" · ");
   if (!bits.length) {
     return s.benchmark_count
@@ -102,7 +138,8 @@ function scoreCell(m) {
 }
 
 function renderModels(filtered) {
-  const list = filtered.slice(0, visibleCount);
+  const sorted = [...filtered].sort(cmpModels);
+  const list = sorted.slice(0, visibleCount);
   const body = document.getElementById("modelBody");
   body.innerHTML = list.map(m => {
     const inp = price(m.input_price_per_m);
@@ -251,6 +288,7 @@ function render() {
   const filtered = models.filter(m => fn(m) && (!query ||
     `${m.name} ${m.model_id} ${m.provider} ${m.description}`.toLowerCase().includes(query)));
   document.getElementById("resultCount").textContent = `${filtered.length.toLocaleString()} ${filtered.length === 1 ? "model" : "models"}`;
+  updateSortIndicators();
   renderModels(filtered);
 }
 
@@ -291,6 +329,30 @@ document.querySelectorAll(".chg-btn").forEach(btn => {
   });
 });
 
+function updateSortIndicators() {
+  document.querySelectorAll("th.sortable").forEach(th => {
+    const ind = th.querySelector(".sort-ind");
+    if (!ind) return;
+    if (th.dataset.sort === sortKey) {
+      ind.textContent = sortDir === "asc" ? "▲" : "▼";
+      th.classList.add("sorted");
+    } else {
+      ind.textContent = "";
+      th.classList.remove("sorted");
+    }
+  });
+}
+
 document.getElementById("loadMore").addEventListener("click", () => { visibleCount += 100; render(); });
+
+document.querySelectorAll("th.sortable").forEach(th => {
+  th.addEventListener("click", () => {
+    const key = th.dataset.sort;
+    if (sortKey === key) sortDir = sortDir === "asc" ? "desc" : "asc";
+    else { sortKey = key; sortDir = "asc"; }
+    visibleCount = 100;
+    render();
+  });
+});
 
 loadData();
