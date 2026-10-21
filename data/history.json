@@ -1,5 +1,13 @@
 [
   {
+    "event_id": "644e7b88706944c0",
+    "type": "new_model",
+    "model_id": "reka-ai/glm-5.3-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-21T21:36:52.737301+00:00",
+    "details": "$0.15 in / $0.5 out per 1M"
+  },
+  {
     "event_id": "25b57ce282e932ef",
     "type": "price_change",
     "model_id": "google/gemma-4-26B-A4B-it",
@@ -1590,13 +1598,5 @@
     "provider": "Kilo Gateway",
     "detected_at": "2026-10-21T12:49:11.602327+00:00",
     "details": "Input: $0.238 -> $0.238; output: $24 -> $16"
-  },
-  {
-    "event_id": "3aaf7e84b49bb952",
-    "type": "new_model",
-    "model_id": "speakleash/Bielik-11B-v3.0-Instruct",
-    "provider": "CloudFerro Sherlock",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "CloudFerro Sherlock: $0.67/$0.67 per 1M"
   }
 ]
