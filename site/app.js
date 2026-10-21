@@ -289,9 +289,9 @@ function render() {
   const isProviders = activeView === "providers";
   const isChanges = activeView === "changes";
 
-  document.getElementById("modelFilters")?.classList.toggle("hidden", isProviders || isChanges);
-  document.getElementById("tableView")?.classList.toggle("hidden", isProviders || isChanges);
-  document.getElementById("capLegend")?.classList.toggle("hidden", isProviders || isChanges);
+  document.getElementById("modelFilters")?.toggleAttribute("hidden", isProviders || isChanges);
+  document.getElementById("tableView")?.toggleAttribute("hidden", isProviders || isChanges);
+  document.getElementById("capLegend")?.toggleAttribute("hidden", isProviders || isChanges);
   document.getElementById("providerGrid")?.classList.toggle("active", isProviders);
   document.getElementById("changesView")?.classList.toggle("active", isChanges);
 

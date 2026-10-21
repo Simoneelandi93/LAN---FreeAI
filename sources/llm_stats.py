@@ -254,6 +254,9 @@ def fetch_llm_stats() -> List[Dict[str, Any]]:
         if not model_id:
             continue
         ranked = index.get(model_id, {})
+        # Coding metric: use the llm-stats compact "coding" arena index, so the
+        # column matches llm-stats.com exactly (no SWE-bench override).
+        coding_score = ranked.get("coding_score")
         records.append(
             {
                 "id": model_id,
@@ -266,9 +269,11 @@ def fetch_llm_stats() -> List[Dict[str, Any]]:
                 "reasoning_rank": ranked.get("reasoning_rank"),
                 "reasoning_score": ranked.get("reasoning_score"),
                 "coding_rank": ranked.get("coding_rank"),
-                "coding_score": ranked.get("coding_score"),
+                "coding_score": coding_score,
                 "agent_rank": ranked.get("agents_rank"),
                 "agent_score": ranked.get("agents_score"),
+                "license": model.get("license"),
+                "speed": model.get("throughput"),
                 "benchmarks": _benchmarks(model),
                 "url": f"{LLM_STATS_SITE}/models/{model_id}",
             }
@@ -294,6 +299,8 @@ def _payload(record: Dict[str, Any]) -> Dict[str, Any]:
         "coding_score": record.get("coding_score"),
         "agent_rank": record.get("agent_rank"),
         "agent_score": record.get("agent_score"),
+        "license": record.get("license"),
+        "speed": record.get("speed"),
         "benchmarks": benchmarks,
         "benchmark_count": len(benchmarks),
         "url": record.get("url") or f"{LLM_STATS_SITE}/models/{record.get('id')}",
