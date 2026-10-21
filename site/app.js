@@ -12,7 +12,6 @@ const FILTERS = {
   all: () => true,
   free: m => Boolean(m.is_free),
   openrouter: m => m.provider_id === "openrouter",
-  openweights: m => Boolean(m.open_weights),
 };
 
 const MILLIS_DAY = 86400000;
