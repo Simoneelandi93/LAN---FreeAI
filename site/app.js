@@ -537,13 +537,20 @@ function renderChanges(query) {
       const time = isNaN(t.getTime()) ? "—" : t.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" });
       const tagCls = ev.type === "new_model" ? "new" : (ev.type === "price_change" ? "drop" : "free");
       const lbl = typeLabels[ev.type] || "Update";
-      const providerLabel = ev.provider && !isInvalidText(ev.provider) ? `<span class="chg-providers">via ${esc(ev.provider)}</span>` : "";
-      return `<div class="chg-row">
-        <span class="chg-time">${esc(time)}</span>
-        <span class="chg-tag ${tagCls}">${esc(lbl)}</span>
-        <span class="chg-model">${esc(ev.model_id || "model")}</span>
-        ${providerLabel}
-      </div>`;
+      const providerLabel = ev.provider && !isInvalidText(ev.provider) ? `<span class="chg-providers">${esc(ev.provider)}</span>` : "";
+      const pricingMatch = ev.type === "price_change" && typeof ev.details === "string"
+        ? [...ev.details.matchAll(/(Input|output):\s*\$([\d.]+)\s*->\s*\$([\d.]+)/gi)]
+        : [];
+      const pricing = pricingMatch.length ? `<div class="chg-pricing">${pricingMatch.map(([, kind, oldValue, newValue]) => {
+        const oldPrice = Number(oldValue);
+        const newPrice = Number(newValue);
+        const direction = newPrice < oldPrice ? "lower" : newPrice > oldPrice ? "higher" : "same";
+        return `<div class="chg-price-line"><span class="chg-price-kind">${esc(kind)}</span><span class="chg-price-old">$${oldPrice.toLocaleString(undefined, { maximumFractionDigits: 6 })}</span><span class="chg-price-arrow" aria-hidden="true">→</span><strong class="chg-price-new ${direction}">$${newPrice.toLocaleString(undefined, { maximumFractionDigits: 6 })}</strong><span class="chg-price-unit">per 1M tokens</span></div>`;
+      }).join("")}</div>` : "";
+      return `<article class="chg-row">
+        <div class="chg-row-meta"><span class="chg-time">${esc(time)}</span><span class="chg-tag ${tagCls}">${esc(lbl)}</span></div>
+        <div class="chg-row-content"><span class="chg-model">${esc(ev.model_id || "model")}</span>${providerLabel}${pricing}</div>
+      </article>`;
     }).join("");
     return `<div class="chg-day">
       <div class="chg-day-header"><span>${esc(day.label)}</span><span class="badge-counter">${day.events.length} event${day.events.length === 1 ? '' : 's'}</span></div>
@@ -605,6 +612,7 @@ function updateSortIndicators() {
 }
 
 window.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeModal();
   if (e.key === "/" && document.activeElement !== document.getElementById("searchInput")) {
     e.preventDefault();
     document.getElementById("searchInput").focus();
