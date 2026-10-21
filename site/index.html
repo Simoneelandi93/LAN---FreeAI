@@ -3,51 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free AI Radar — Live Models, Free Tiers & Quotas</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#0e1510">
+  <meta name="description" content="A live index of AI inference providers, models, pricing, and capabilities.">
+  <title>Free AI Radar — Provider and Model Catalog</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="header-left">
-        <h1>🛰️ Free AI Radar</h1>
-        <p>Live AI Model Pricing, 100% Free Tiers & API Quotas</p>
-      </div>
-      <div class="header-right">
-        <span class="badge pulse" id="lastUpdated">Checking...</span>
-      </div>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="#catalog" aria-label="Free AI Radar home">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span class="brand-text">Free AI Radar</span>
+      </a>
+      <span class="updated" id="lastUpdated">Loading catalog</span>
     </header>
 
-    <div class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-val" id="totalModels">-</div>
-        <div class="stat-lbl">Discovered Models</div>
-      </div>
-      <div class="stat-card highlight">
-        <div class="stat-val" id="totalFree">-</div>
-        <div class="stat-lbl">100% Free Models</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-val" id="totalOffers">-</div>
-        <div class="stat-lbl">Provider Free Quotas</div>
-      </div>
-    </div>
+    <main>
+      <section class="intro">
+        <p class="intro-note">Live provider index</p>
+        <h1>Find the model.<br><span>Compare where it runs.</span></h1>
+        <p class="intro-copy">One searchable catalog of AI inference providers, the models they serve, and what each listing costs. Prices are per million tokens.</p>
+      </section>
 
-    <div class="controls">
-      <input type="text" id="searchInput" placeholder="Search models, providers (e.g. Llama 3.3, Groq, Gemini)...">
-      <div class="tabs">
-        <button class="tab-btn active" data-tab="free">🎁 100% Free</button>
-        <button class="tab-btn" data-tab="providers">⚡ Provider Quotas</button>
-        <button class="tab-btn" data-tab="all">🌐 All Models</button>
-        <button class="tab-btn" data-tab="history">⏱️ Live Feed</button>
-      </div>
-    </div>
+      <section class="stats" aria-label="Catalog summary">
+        <div class="stat">
+          <strong class="stat-value" id="totalModels">—</strong>
+          <span class="stat-label">Models listed</span>
+        </div>
+        <div class="stat">
+          <strong class="stat-value" id="totalProviders">—</strong>
+          <span class="stat-label">Providers indexed</span>
+        </div>
+        <div class="stat">
+          <strong class="stat-value" id="totalFree">—</strong>
+          <span class="stat-label">Zero-priced listings</span>
+        </div>
+      </section>
 
-    <main id="contentArea">
-      <div class="grid" id="cardGrid"></div>
+      <section class="catalog" id="catalog" aria-label="Model catalog">
+        <div class="catalog-head">
+          <div class="catalog-title">
+            <h2>Catalog</h2>
+            <p>OpenRouter listings are watched for price changes and reported on Telegram.</p>
+          </div>
+          <label class="search-wrap">
+            <span class="sr-only">Search models or providers</span>
+            <input type="search" id="searchInput" placeholder="Search models or providers" autocomplete="off">
+          </label>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Catalog filters">
+          <button class="filter active" data-filter="all" role="tab" aria-selected="true">All models</button>
+          <button class="filter" data-filter="free" role="tab" aria-selected="false">Zero-priced</button>
+          <button class="filter" data-filter="reasoning" role="tab" aria-selected="false">Reasoning</button>
+          <button class="filter" data-filter="tool" role="tab" aria-selected="false">Tool use</button>
+          <button class="filter" data-filter="openrouter" role="tab" aria-selected="false">OpenRouter</button>
+        </div>
+
+        <div class="result-count" id="resultCount" role="status"></div>
+        <div class="model-list" id="modelList" aria-live="polite"></div>
+        <button class="load-more" id="loadMore" hidden>Show more models</button>
+      </section>
     </main>
+
+    <footer>Catalog data by <a href="https://models.dev/" target="_blank" rel="noopener noreferrer">models.dev</a>. Prices and capabilities reflect its latest published data.</footer>
   </div>
   <script src="app.js"></script>
 </body>

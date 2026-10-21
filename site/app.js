@@ -1,140 +1,192 @@
 let models = [];
-let offers = [];
-let history = [];
-let activeTab = "free";
+let activeFilter = "all";
+let visibleCount = 80;
+
+const FILTERS = {
+  all: () => true,
+  free: model => model.is_free,
+  reasoning: model => model.reasoning,
+  tool: model => model.tool_call,
+  openrouter: model => model.provider_id === "openrouter",
+};
 
 async function fetchJson(name) {
-  // GitHub Pages serves data/ next to index.html; a local repo-root server keeps it one level up.
   for (const path of [`data/${name}`, `../data/${name}`]) {
     try {
-      const res = await fetch(path);
-      if (res.ok) return await res.json();
-    } catch (err) {
-      // try the next candidate path
-    }
+      const response = await fetch(path);
+      if (response.ok) return await response.json();
+    } catch {}
   }
   throw new Error(`Could not load ${name}`);
 }
 
 async function loadData() {
   try {
-    const [modelsData, offersData, historyData] = await Promise.all([
+    const [catalog, history] = await Promise.all([
       fetchJson("models.json"),
-      fetchJson("offers.json"),
-      fetchJson("history.json")
+      fetchJson("history.json").catch(() => []),
     ]);
-    models = modelsData;
-    offers = offersData;
-    history = historyData;
+    models = catalog;
+    const providers = new Set(models.map(model => model.provider_id).filter(Boolean));
+    document.getElementById("totalModels").textContent = models.length.toLocaleString();
+    document.getElementById("totalProviders").textContent = providers.size.toLocaleString();
+    document.getElementById("totalFree").textContent = models.filter(model => model.is_free).length.toLocaleString();
 
-    document.getElementById("totalModels").textContent = models.length;
-    document.getElementById("totalFree").textContent = models.filter(m => m.is_free).length;
-    document.getElementById("totalOffers").textContent = offers.length;
-    document.getElementById("lastUpdated").textContent = "Live Updated";
-
+    const latest = history[0]?.detected_at;
+    document.getElementById("lastUpdated").textContent = latest
+      ? `Last sync ${new Date(latest).toLocaleDateString()}`
+      : "Catalog synced";
     render();
-  } catch (err) {
-    console.error("Error loading JSON data:", err);
-    document.getElementById("lastUpdated").textContent = "Data offline";
+  } catch (error) {
+    console.error("Could not load the catalog", error);
+    document.getElementById("lastUpdated").textContent = "Catalog unavailable";
+    document.getElementById("modelList").innerHTML = `
+      <div class="empty">
+        <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/>
+        </svg>
+        <h3>Catalog unavailable</h3>
+        <p>Data could not be loaded. Check that the sync workflow has run, then reload the page.</p>
+      </div>`;
+    document.getElementById("resultCount").textContent = "";
   }
+}
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, char => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  })[char]);
+}
+
+function formatPrice(value) {
+  if (value === null || value === undefined || value === "") return "Not listed";
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "Not listed";
+  if (number === 0) return "$0";
+  return `$${number.toLocaleString(undefined, { maximumFractionDigits: 4 })}`;
+}
+
+function formatContext(value) {
+  if (!value) return "Not listed";
+  if (value >= 1000) {
+    return `${(value / 1000).toLocaleString(undefined, { maximumFractionDigits: 1 })}k`;
+  }
+  return value.toLocaleString();
+}
+
+function buildTags(model) {
+  const tags = [];
+  if (model.reasoning) tags.push('<span class="tag tag-reasoning">Reasoning</span>');
+  if (model.tool_call) tags.push('<span class="tag tag-tool">Tool use</span>');
+  if (model.open_weights) tags.push('<span class="tag tag-open">Open weights</span>');
+
+  const modalities = [...(model.modalities_input || [])];
+  const outputs = [...(model.modalities_output || [])];
+  if (modalities.length || outputs.length) {
+    const unique = [...new Set([...modalities, ...outputs])];
+    tags.push(`<span class="tag tag-modalities">${escapeHtml(unique.join(" · "))}</span>`);
+  }
+
+  return tags.join("");
+}
+
+function renderModel(model) {
+  const inputPrice = formatPrice(model.input_price_per_m);
+  const outputPrice = formatPrice(model.output_price_per_m);
+  const context = formatContext(model.context_window);
+  const isTracked = model.provider_id === "openrouter";
+  const providerUrl = model.provider_url || model.source_url;
+
+  const inputClass = model.is_free ? "free" : (model.input_price_per_m === null ? "n-a" : "");
+  const outputClass = model.is_free ? "free" : (model.output_price_per_m === null ? "n-a" : "");
+  const contextClass = model.context_window ? "context-value" : "context-value n-a";
+
+  return `<article class="model-row">
+    <div class="model-main">
+      <div class="model-heading">
+        <h3 class="model-name"><a href="${escapeHtml(providerUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(model.name)}</a></h3>
+        ${model.is_free ? '<span class="free-badge">Free</span>' : ""}
+      </div>
+      <div class="provider-row">
+        <a class="provider-link" href="${escapeHtml(providerUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(model.provider)}</a>
+        <code class="model-id">${escapeHtml(model.model_id)}</code>
+      </div>
+      ${model.description ? `<p class="model-description">${escapeHtml(model.description)}</p>` : ""}
+      <div class="tags">${buildTags(model)}</div>
+    </div>
+    <div class="model-data">
+      <div class="price-box${isTracked ? " tracked" : ""}">
+        <span class="price-label">${isTracked ? "OpenRouter input / 1M" : "Input / 1M"}</span>
+        <strong class="price-value ${inputClass}">${inputPrice}</strong>
+      </div>
+      <div class="price-box${isTracked ? " tracked" : ""}">
+        <span class="price-label">${isTracked ? "OpenRouter output / 1M" : "Output / 1M"}</span>
+        <strong class="price-value ${outputClass}">${outputPrice}</strong>
+      </div>
+      <div class="price-box">
+        <span class="price-label">Context window</span>
+        <strong class="${contextClass}">${context}</strong>
+      </div>
+    </div>
+  </article>`;
 }
 
 function render() {
-  const container = document.getElementById("cardGrid");
-  const query = document.getElementById("searchInput").value.toLowerCase();
-  container.innerHTML = "";
+  const query = document.getElementById("searchInput").value.trim().toLowerCase();
+  const matchesFilter = FILTERS[activeFilter] || FILTERS.all;
 
-  if (activeTab === "history") {
-    container.innerHTML = history.map(ev => `
-      <div class="card">
-        <div class="card-header">
-          <span class="card-title">${ev.model_id}</span>
-          <span class="tag ${ev.type.includes('free') ? 'free' : ''}">${ev.type}</span>
-        </div>
-        <p style="font-size: 0.85rem; color: #8b949e;">${ev.details || ''}</p>
-        <div style="font-size: 0.75rem; color: #57606a;">Detected: ${new Date(ev.detected_at).toLocaleString()}</div>
-      </div>
-    `).join("");
+  const filtered = models.filter(model => {
+    if (!matchesFilter(model)) return false;
+    if (!query) return true;
+    const searchable = `${model.name} ${model.model_id} ${model.provider} ${model.description}`.toLowerCase();
+    return searchable.includes(query);
+  });
+
+  const list = document.getElementById("modelList");
+  const resultCount = document.getElementById("resultCount");
+
+  resultCount.textContent = `${filtered.length.toLocaleString()} ${filtered.length === 1 ? "model" : "models"}`;
+
+  if (!filtered.length) {
+    list.innerHTML = `
+      <div class="empty">
+        <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+        </svg>
+        <h3>No matches</h3>
+        <p>Try a different search term or clear the active filter.</p>
+      </div>`;
+    document.getElementById("loadMore").hidden = true;
     return;
   }
 
-  if (activeTab === "providers") {
-    const filteredOffers = offers.filter(o =>
-      o.provider.toLowerCase().includes(query) || o.title.toLowerCase().includes(query)
-    );
-    container.innerHTML = filteredOffers.map(o => `
-      <div class="card free-card">
-        <div class="card-header">
-          <div>
-            <div class="card-title">${o.title}</div>
-            <span class="tag">${o.provider}</span>
-          </div>
-          <span class="tag free">${o.requires_card ? "Card Req." : "No Card"}</span>
-        </div>
-        <div class="pricing-row">
-          <div class="pricing-item">
-            <span>Rate Limit</span>
-            <b>${o.rolling_window
-              ? `${o.rolling_window.requests.toLocaleString()} req / ${o.rolling_window.window_hours}h`
-              : (o.quota_requests_day ? o.quota_requests_day.toLocaleString() + ' req/day' : 'N/A')}</b>
-          </div>
-          <div class="pricing-item">
-            <span>Throughput</span>
-            <b>${o.quota_tokens_minute ? o.quota_tokens_minute.toLocaleString() + ' tok/min' : 'Standard'}</b>
-          </div>
-        </div>
-        <a href="${o.source_url}" target="_blank" class="btn-link">Official Setup Docs →</a>
-      </div>
-    `).join("");
-    return;
-  }
-
-  let list = models;
-  if (activeTab === "free") list = models.filter(m => m.is_free);
-  if (query) {
-    list = list.filter(m =>
-      m.model_id.toLowerCase().includes(query) ||
-      m.name.toLowerCase().includes(query) ||
-      (m.provider || "").toLowerCase().includes(query)
-    );
-  }
-
-  container.innerHTML = list.slice(0, 100).map(m => `
-    <div class="card ${m.is_free ? 'free-card' : ''}">
-      <div class="card-header">
-        <div>
-          <div class="card-title">${m.name}</div>
-          <span class="tag">${m.model_id}</span>
-        </div>
-        ${m.is_free ? '<span class="tag free">FREE</span>' : ''}
-      </div>
-      <div class="pricing-row">
-        <div class="pricing-item">
-          <span>Input / 1M</span>
-          <b>${m.is_free ? '$0' : '$' + m.input_price_per_m}</b>
-        </div>
-        <div class="pricing-item">
-          <span>Output / 1M</span>
-          <b>${m.is_free ? '$0' : '$' + m.output_price_per_m}</b>
-        </div>
-        <div class="pricing-item">
-          <span>Context</span>
-          <b>${m.context_window ? (m.context_window / 1024).toFixed(0) + 'k' : 'N/A'}</b>
-        </div>
-      </div>
-      <a href="${m.source_url}" target="_blank" class="btn-link">${m.provider === 'OpenCode' ? 'Open in OpenCode Zen →' : 'Test via OpenRouter →'}</a>
-    </div>
-  `).join("");
+  const visible = filtered.slice(0, visibleCount);
+  list.innerHTML = visible.map(renderModel).join("");
+  document.getElementById("loadMore").hidden = filtered.length <= visibleCount;
 }
 
-document.querySelectorAll(".tab-btn").forEach(btn => {
-  btn.addEventListener("click", (e) => {
-    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
-    e.target.classList.add("active");
-    activeTab = e.target.getAttribute("data-tab");
+document.getElementById("searchInput").addEventListener("input", () => {
+  visibleCount = 80;
+  render();
+});
+
+document.querySelectorAll(".filter").forEach(button => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".filter").forEach(item => {
+      item.classList.remove("active");
+      item.setAttribute("aria-selected", "false");
+    });
+    button.classList.add("active");
+    button.setAttribute("aria-selected", "true");
+    activeFilter = button.dataset.filter;
+    visibleCount = 80;
     render();
   });
 });
 
-document.getElementById("searchInput").addEventListener("input", render);
+document.getElementById("loadMore").addEventListener("click", () => {
+  visibleCount += 80;
+  render();
+});
+
 loadData();

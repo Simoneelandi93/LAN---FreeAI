@@ -1,83 +1,94 @@
 import hashlib
+import html
+import re
 from datetime import datetime, timezone
 from typing import List, Dict, Any, Tuple
+
 
 def generate_event_id(prefix: str, identifier: str, details: str) -> str:
     seed = f"{prefix}:{identifier}:{details}"
     return hashlib.sha256(seed.encode()).hexdigest()[:16]
 
+
+def model_key(model: Dict[str, Any]) -> str:
+    name = model.get("name") or model.get("model_id", "")
+    return re.sub(r"[^a-z0-9]", "", name.casefold())
+
+
 def detect_model_changes(
     old_models: List[Dict[str, Any]],
     new_models: List[Dict[str, Any]]
 ) -> Tuple[List[Dict[str, Any]], List[str]]:
-    """
-    Diffs old models vs new models. Returns:
-      1. List of event records for history.json
-      2. List of human-readable notification strings for Telegram
-    """
     old_map = {m["id"]: m for m in old_models}
+    old_model_keys = {model_key(m) for m in old_models if model_key(m)}
+    legacy_snapshot = bool(old_models) and any("provider_id" not in m for m in old_models)
     events = []
     alerts = []
     now = datetime.now(timezone.utc).isoformat()
 
-    for m in new_models:
-        mid = m["id"]
-        if mid not in old_map:
-            # Brand new model discovered
-            is_free = m.get("is_free", False)
+    grouped_new = {}
+    for model in new_models:
+        key = model_key(model)
+        if key and key not in old_model_keys:
+            grouped_new.setdefault(key, []).append(model)
+
+    for key, group in grouped_new.items():
+        representative = next((m for m in group if m.get("provider_id") == "openrouter"), group[0])
+        providers = sorted({m["provider"] for m in group})
+        provider_text = ", ".join(html.escape(provider) for provider in providers)
+        prices = []
+        for model in group:
+            if model.get("input_price_per_m") is not None and model.get("output_price_per_m") is not None:
+                prices.append(f"{model['provider']}: ${model['input_price_per_m']}/$"
+                              f"{model['output_price_per_m']} per 1M")
+        events.append({
+            "event_id": generate_event_id("new_model", key, now),
+            "type": "new_model",
+            "model_id": representative["model_id"],
+            "provider": ", ".join(providers),
+            "detected_at": now,
+            "details": "; ".join(prices),
+        })
+        if old_models and not legacy_snapshot:
+            price_lines = "\n".join(prices[:8]) or "Pricing unavailable"
+            alerts.append(
+                f"<b>New model listed</b>\n"
+                f"<b>Model:</b> {html.escape(representative['name'])}\n"
+                f"<b>Available at:</b> {provider_text}\n"
+                f"{price_lines}\n"
+                f"<a href='{html.escape(representative['source_url'], quote=True)}'>Provider catalog</a>"
+            )
+
+    for model in new_models:
+        if model.get("provider_id") != "openrouter":
+            continue
+        old_model = old_map.get(model["id"])
+        if not old_model or "input_price_per_m" not in old_model:
+            continue
+        old_input = old_model.get("input_price_per_m")
+        new_input = model.get("input_price_per_m")
+        old_output = old_model.get("output_price_per_m")
+        new_output = model.get("output_price_per_m")
+        if old_input is None or new_input is None or old_output is None or new_output is None:
+            continue
+        if new_input < old_input or new_output < old_output:
             events.append({
-                "event_id": generate_event_id("new_model", mid, now),
-                "type": "new_free_model" if is_free else "new_model",
-                "model_id": m["model_id"],
-                "provider": m["provider"],
+                "event_id": generate_event_id(
+                    "openrouter_price_drop", model["id"],
+                    f"{old_input}/{old_output}->{new_input}/{new_output}"
+                ),
+                "type": "price_change",
+                "model_id": model["model_id"],
+                "provider": model["provider"],
                 "detected_at": now,
-                "details": f"Added with input: ${m['input_price_per_m']}/1M, output: ${m['output_price_per_m']}/1M"
+                "details": f"Input: ${old_input} -> ${new_input}; output: ${old_output} -> ${new_output}",
             })
-            if is_free:
-                alerts.append(
-                    f"🎁 <b>NEW 100% FREE MODEL</b>\n"
-                    f"<b>Model:</b> <code>{m['model_id']}</code>\n"
-                    f"<b>Provider:</b> {m['provider']}\n"
-                    f"<b>Context:</b> {m['context_window']:,} tokens\n"
-                    f"<a href='{m['source_url']}'>View Model on OpenRouter</a>"
-                )
-        else:
-            old_m = old_map[mid]
-            # Detect Price Drop to Zero
-            if not old_m.get("is_free") and m.get("is_free"):
-                events.append({
-                    "event_id": generate_event_id("became_free", mid, now),
-                    "type": "model_became_free",
-                    "model_id": m["model_id"],
-                    "provider": m["provider"],
-                    "detected_at": now
-                })
-                alerts.append(
-                    f"🚨 <b>PRICE DROPPED TO $0 (NOW FREE)</b>\n"
-                    f"<b>Model:</b> <code>{m['model_id']}</code>\n"
-                    f"<b>Previous In/Out:</b> ${old_m['input_price_per_m']} / ${old_m['output_price_per_m']}\n"
-                    f"<b>Current:</b> <b>FREE</b>\n"
-                    f"<a href='{m['source_url']}'>Claim / Test Endpoint</a>"
-                )
-            # Detect general price change (> 10% change)
-            elif old_m["input_price_per_m"] != m["input_price_per_m"]:
-                old_p = old_m["input_price_per_m"]
-                new_p = m["input_price_per_m"]
-                direction = "📉 Price Decreased" if new_p < old_p else "📈 Price Increased"
-                events.append({
-                    "event_id": generate_event_id("price_change", mid, f"{old_p}->{new_p}"),
-                    "type": "price_change",
-                    "model_id": m["model_id"],
-                    "provider": m["provider"],
-                    "detected_at": now,
-                    "details": f"Input: ${old_p} -> ${new_p}"
-                })
-                if new_p < old_p:  # Only ping Telegram on drops to reduce noise
-                    alerts.append(
-                        f"{direction}\n"
-                        f"<b>Model:</b> <code>{m['model_id']}</code>\n"
-                        f"<b>Input Price:</b> ${old_p}/1M ➔ <b>${new_p}/1M</b>\n"
-                        f"<a href='{m['source_url']}'>View Model</a>"
-                    )
+            alerts.append(
+                f"<b>OpenRouter price dropped</b>\n"
+                f"<b>Model:</b> {model['name']}\n"
+                f"<b>Input:</b> ${old_input}/1M → <b>${new_input}/1M</b>\n"
+                f"<b>Output:</b> ${old_output}/1M → <b>${new_output}/1M</b>\n"
+                f"<a href='{model['source_url']}'>View in provider catalog</a>"
+            )
 
     return events, alerts
