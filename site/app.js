@@ -24,6 +24,7 @@ let nineRouterNormMap = new Map();
 let omniRouterModels = [];
 let omniRouterNormMap = new Map();
 let routerStatus = { "9router": { ok: false, count: 0 }, "OmniRouter": { ok: false, count: 0 } };
+let currentModelIdx = null;
 
 function normalizeSlug(value) {
   return String(value ?? "").toLowerCase().replace(/^openrouter\//, "").replace(/[^a-z0-9]/g, "");
@@ -360,13 +361,8 @@ function renderModels(filtered) {
         <div class="model-cell">
           <div class="model-line">
             <a class="model-title" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(displayName)}</a>
-            <button class="copy-router-btn ${nrClass}" data-copy="${esc(nrMatch.id)}" title="${esc(nrMatch.tooltip)}" type="button">
-              <svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="1" width="10" height="11" rx="1" ry="1"></rect><rect x="5" y="3" width="6" height="2" rx="0.5" ry="0.5"></rect><rect x="5" y="7" width="6" height="2" rx="0.5" ry="0.5"></rect></svg>
-              <span>9r</span>
-            </button>
-            <button class="copy-router-btn ${omniClass}" data-copy="${esc(omniMatch.id)}" title="${esc(omniMatch.tooltip)}" type="button">
-              <svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="1" width="10" height="11" rx="1" ry="1"></rect><rect x="5" y="3" width="6" height="2" rx="0.5" ry="0.5"></rect><rect x="5" y="7" width="6" height="2" rx="0.5" ry="0.5"></rect></svg>
-              <span>Omni</span>
+            <button class="cfg-btn" data-model-idx="${models.indexOf(m)}" title="Configure model routing" type="button">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="1.6"></circle><circle cx="8" cy="16" r="1.6"></circle><circle cx="16" cy="16" r="1.6"></circle></svg>
             </button>
             ${capPills(m)}
           </div>
@@ -384,22 +380,78 @@ function renderModels(filtered) {
     </tr>`;
   }).join("");
 
-  body.querySelectorAll(".copy-router-btn").forEach(button => {
+function showConfigModal(idx) {
+  currentModelIdx = idx;
+  const m = models[idx];
+  if (!m) return;
+  const s = m.llm_stats_id ? statsById[m.llm_stats_id] : null;
+  const displayName = getModelName(m);
+  const displayProvider = getProviderName(m, s);
+  const nrMatch = resolveRouterId(m, nineRouterModels, "9router");
+  const omniMatch = resolveRouterId(m, omniRouterModels, "OmniRouter");
+  const modelId = m.model_id || m.name || m.id || "model";
+  const fullId = modelId.startsWith(`${m.provider_id}/`) ? modelId : `${m.provider_id}/${modelId}`;
+  const nrUrl = nrMatch.status !== "not_configured" ? `http://localhost:20128/v1/models/${esc(nrMatch.id)}` : "";
+  const omniUrl = omniMatch.status !== "not_configured" ? `http://localhost:10129/v1/models/${esc(omniMatch.id)}` : "";
+  const url = m.provider_url || m.source_url || "#";
+
+  const nrClass = nrMatch.status === "verified" ? "matched" : nrMatch.status === "wrong_provider" ? "warn" : "";
+  const omniClass = omniMatch.status === "verified" ? "matched" : omniMatch.status === "wrong_provider" ? "warn" : "";
+
+  document.getElementById("modalModelName").textContent = displayName;
+  document.getElementById("modalModelProvider").textContent = displayProvider;
+  document.getElementById("modalModelId").textContent = modelId;
+  document.getElementById("modalFullId").textContent = fullId;
+  document.getElementById("modalSourceUrl").textContent = url;
+  document.getElementById("modalSourceUrl").href = url;
+
+  // 9router section
+  document.getElementById("modalNrStatus").className = `router-badge ${nrClass}`;
+  document.getElementById("modalNrStatus").textContent = nrMatch.status === "verified" ? "Verified" : nrMatch.status === "wrong_provider" ? "Wrong Provider" : "Not Configured";
+  document.getElementById("modalNrTooltip").textContent = nrMatch.tooltip;
+  document.getElementById("modalNrId").textContent = nrMatch.id;
+  document.getElementById("modalNrId").dataset.copy = nrMatch.id;
+  document.getElementById("modalNrUrl").textContent = nrUrl || "—";
+  if (nrUrl) document.getElementById("modalNrUrl").dataset.copy = nrUrl;
+  document.getElementById("modalNrUrlCopy").style.display = nrUrl ? "" : "none";
+
+  // OmniRouter section
+  document.getElementById("modalOmniStatus").className = `router-badge ${omniClass}`;
+  document.getElementById("modalOmniStatus").textContent = omniMatch.status === "verified" ? "Verified" : omniMatch.status === "wrong_provider" ? "Wrong Provider" : "Not Configured";
+  document.getElementById("modalOmniTooltip").textContent = omniMatch.tooltip;
+  document.getElementById("modalOmniId").textContent = omniMatch.id;
+  document.getElementById("modalOmniId").dataset.copy = omniMatch.id;
+  document.getElementById("modalOmniUrl").textContent = omniUrl || "—";
+  if (omniUrl) document.getElementById("modalOmniUrl").dataset.copy = omniUrl;
+  document.getElementById("modalOmniUrlCopy").style.display = omniUrl ? "" : "none";
+
+  document.getElementById("configOverlay").classList.add("show");
+  document.getElementById("configModal").classList.add("show");
+}
+
+function closeModal() {
+  document.getElementById("configOverlay").classList.remove("show");
+  document.getElementById("configModal").classList.remove("show");
+  currentModelIdx = null;
+}
+
+async function modalCopy(id) {
+  const el = document.getElementById(id);
+  // If el has dataset.copy use it, otherwise use textContent (for cm-value spans)
+  const text = el.dataset.copy !== undefined ? el.dataset.copy : el.textContent;
+  if (!text || text === "—") return;
+  try {
+    await copyText(text);
+    el.classList.add("copied");
+    setTimeout(() => el.classList.remove("copied"), 1200);
+  } catch {}
+}
+
+  body.querySelectorAll(".cfg-btn").forEach(button => {
     button.addEventListener("click", async event => {
       event.preventDefault();
-      try {
-        await copyText(button.dataset.copy);
-        const label = button.querySelector("span");
-        const originalText = label.textContent;
-        label.textContent = "Copiato!";
-        button.classList.add("copied");
-        setTimeout(() => {
-          label.textContent = originalText;
-          button.classList.remove("copied");
-        }, 1500);
-      } catch (error) {
-        console.error("Clipboard copy failed:", error);
-      }
+      const idx = parseInt(button.dataset.modelIdx, 10);
+      showConfigModal(idx);
     });
   });
 

@@ -152,6 +152,31 @@
       </div>
     </footer>
   </div>
+  <div class="modal-overlay" id="configOverlay" onclick="closeModal()"></div>
+  <div class="config-modal" id="configModal">
+    <div class="cm-header">
+      <h2 id="modalModelName"></h2>
+      <button class="cm-close" onclick="closeModal()" type="button">&times;</button>
+    </div>
+    <div class="cm-section">
+      <div class="cm-row"><span class="cm-label">Provider</span><span class="cm-value" id="modalModelProvider"></span></div>
+      <div class="cm-row"><span class="cm-label">Model ID</span><span class="cm-value" id="modalModelId"></span><button class="cm-copy-btn" onclick="modalCopy('modalModelId')" type="button">Copy</button></div>
+      <div class="cm-row"><span class="cm-label">Full ID</span><span class="cm-value" id="modalFullId"></span><button class="cm-copy-btn" onclick="modalCopy('modalFullId')" type="button">Copy</button></div>
+      <div class="cm-row"><span class="cm-label">Source</span><a class="cm-value" id="modalSourceUrl" target="_blank" rel="noopener noreferrer"></a></div>
+    </div>
+    <div class="cm-section">
+      <h3><span style="color:#10b981">&#9679;</span> 9router (port 10128)</h3>
+      <div class="cm-row"><span class="cm-label">Status</span><span class="router-badge" id="modalNrStatus"></span><span class="cm-value" id="modalNrTooltip" style="font-size:11px;color:var(--text-dim);flex:1"></span></div>
+      <div class="cm-row"><span class="cm-label">Model</span><span class="cm-value" id="modalNrId"></span><button class="cm-copy-btn" id="modalNrIdCopy" onclick="modalCopy('modalNrId')" type="button">Copy</button></div>
+      <div class="cm-row"><span class="cm-label">URL</span><span class="cm-value" id="modalNrUrl"></span><button class="cm-copy-btn" id="modalNrUrlCopy" onclick="modalCopy('modalNrUrl')" type="button">Copy</button></div>
+    </div>
+    <div class="cm-section">
+      <h3><span style="color:#10b981">&#9679;</span> OmniRouter (port 10129)</h3>
+      <div class="cm-row"><span class="cm-label">Status</span><span class="router-badge" id="modalOmniStatus"></span><span class="cm-value" id="modalOmniTooltip" style="font-size:11px;color:var(--text-dim);flex:1"></span></div>
+      <div class="cm-row"><span class="cm-label">Model</span><span class="cm-value" id="modalOmniId"></span><button class="cm-copy-btn" id="modalOmniIdCopy" onclick="modalCopy('modalOmniId')" type="button">Copy</button></div>
+      <div class="cm-row"><span class="cm-label">URL</span><span class="cm-value" id="modalOmniUrl"></span><button class="cm-copy-btn" id="modalOmniUrlCopy" onclick="modalCopy('modalOmniUrl')" type="button">Copy</button></div>
+    </div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
