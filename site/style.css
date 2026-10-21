@@ -67,6 +67,10 @@ a:hover {
   color: var(--accent-light);
 }
 
+.text-center {
+  text-align: center !important;
+}
+
 .text-right {
   text-align: right !important;
 }
@@ -461,6 +465,26 @@ a:hover {
 }
 
 /* Numeric Table Cells */
+.license-tag {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: var(--radius-xs);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.license-tag.open {
+  background: var(--emerald-soft);
+  color: var(--emerald);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.license-tag.proprietary {
+  background: var(--bg-subtle);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+}
+
 .price-cell, .context-cell, .score-cell {
   font-family: var(--font-mono);
   font-size: 12.5px;
@@ -708,10 +732,68 @@ a:hover {
 .footer a:hover { color: var(--text); }
 .footer-sub { color: var(--text-faint); }
 
-/* Hide Benchmark Column when no data */
-body.no-stats .col-score,
-body.no-stats .score-cell {
-  display: none;
+/* ---------- Model Cell ---------- */
+.model-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.model-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: nowrap;
+}
+
+.model-provider-sub {
+  display: block;
+  font: 400 11px var(--font-mono);
+  color: var(--text-dim);
+  margin-top: 1px;
+}
+
+.cell-na {
+  color: var(--text-faint);
+}
+
+.rank-badge {
+  font: 600 11px var(--font-mono);
+  color: var(--text-muted);
+}
+
+.pc-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.pc-badge {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-dim);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  padding: 1px 7px;
+  border-radius: var(--radius-xs);
+}
+
+.badge-counter {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-dim);
+}
+
+.chg-day-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--bg-subtle);
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
 }
 
 /* Column widths */
@@ -736,9 +818,9 @@ body.no-stats .col-bench {
 .prov-dropdown-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 5px 12px;
-  background: var(--bg-subtle);
+  gap: 6px;
+  padding: 5px 10px;
+  background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   color: var(--text-muted);
@@ -749,9 +831,18 @@ body.no-stats .col-bench {
 
 .prov-dropdown-btn:hover,
 .prov-dropdown-btn[aria-expanded="true"] {
-  background: var(--panel);
+  background: var(--panel-hover);
   color: var(--text);
   border-color: var(--border-focus);
+}
+
+.prov-dropdown-btn svg {
+  color: var(--text-dim);
+  transition: transform 0.2s ease;
+}
+
+.prov-dropdown-btn[aria-expanded="true"] svg {
+  transform: rotate(180deg);
 }
 
 .prov-dropdown-menu {
@@ -760,13 +851,13 @@ body.no-stats .col-bench {
   top: calc(100% + 4px);
   left: 0;
   z-index: 100;
-  min-width: 240px;
-  max-width: min(320px, calc(100vw - 32px));
-  padding: 8px;
+  min-width: 220px;
+  max-width: min(280px, calc(100vw - 32px));
+  padding: 10px;
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-panel);
+  box-shadow: 0 8px 32px -4px rgba(0, 0, 0, 0.6);
 }
 
 .prov-dropdown-menu.show { display: block; }
@@ -780,17 +871,22 @@ body.no-stats .col-bench {
 }
 
 .prov-actions button {
-  padding: 2px 6px;
-  background: transparent;
-  border: 0;
+  padding: 3px 8px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
   border-radius: var(--radius-xs);
-  color: var(--accent-light);
+  color: var(--text-muted);
   font-size: 11px;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.12s ease;
 }
 
-.prov-actions button:hover { background: var(--accent-soft); }
+.prov-actions button:hover {
+  background: var(--accent-soft);
+  border-color: var(--border-focus);
+  color: var(--accent-light);
+}
 
 .prov-checkbox-list {
   display: flex;
@@ -803,17 +899,24 @@ body.no-stats .col-bench {
 .prov-item {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 4px 6px;
+  gap: 6px;
+  padding: 4px 8px;
   border-radius: var(--radius-xs);
   color: var(--text-muted);
   font-size: 12px;
   cursor: pointer;
   user-select: none;
+  transition: background 0.1s ease;
 }
 
 .prov-item:hover { background: var(--bg-subtle); color: var(--text); }
-.prov-item input[type="checkbox"] { accent-color: var(--accent-light); cursor: pointer; }
+.prov-item input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--accent-light);
+  cursor: pointer;
+  flex-shrink: 0;
+}
 
 .copy-9router-btn {
   display: inline-flex;

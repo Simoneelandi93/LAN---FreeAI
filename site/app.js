@@ -318,7 +318,7 @@ function renderModels(filtered) {
           <div class="model-line">
             <a class="model-title" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(displayName)}</a>
             <button class="copy-9router-btn ${matchClass}" data-copy="${esc(routerMatch.id)}" title="${esc(tooltip)}" type="button">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="1" width="10" height="11" rx="1" ry="1"></rect><rect x="5" y="3" width="6" height="2" rx="0.5" ry="0.5"></rect><rect x="5" y="7" width="6" height="2" rx="0.5" ry="0.5"></rect></svg>
               <span>9router</span>
             </button>
             ${capPills(m)}
