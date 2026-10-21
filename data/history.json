@@ -1,5 +1,21 @@
 [
   {
+    "event_id": "f73aef961a221378",
+    "type": "price_change",
+    "model_id": "nvidia/nemotron-3-super-120b-a12b",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T12:47:09.960204+00:00",
+    "details": "Input: $0.3 -> $0.08; output: $2.4 -> $0.45"
+  },
+  {
+    "event_id": "4cf0e267941573d3",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T12:47:09.960204+00:00",
+    "details": "Input: $0.238 -> $0.238; output: $24 -> $16"
+  },
+  {
     "event_id": "3aaf7e84b49bb952",
     "type": "new_model",
     "model_id": "speakleash/Bielik-11B-v3.0-Instruct",
@@ -1582,21 +1598,5 @@
     "provider": "Vercel AI Gateway",
     "detected_at": "2026-10-21T11:52:14.084489+00:00",
     "details": "Vercel AI Gateway: $4/$20 per 1M"
-  },
-  {
-    "event_id": "fd906c2979ecd8e3",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.5-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $12.5/$75 per 1M"
-  },
-  {
-    "event_id": "373779f45f134a5c",
-    "type": "new_model",
-    "model_id": "openai/o3-pro",
-    "provider": "AI/ML API, Abacus, Eden AI, Kilo Gateway, OpenAI, OpenRouter, Poe, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $20/$80 per 1M; OpenAI: $20/$80 per 1M; Kilo Gateway: $20/$80 per 1M; OpenRouter: $20/$80 per 1M; Abacus: $20/$40 per 1M; Eden AI: $20/$80 per 1M; AI/ML API: $27.508/$110.032 per 1M; Poe: $18/$72 per 1M"
   }
 ]
