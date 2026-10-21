@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "10a197efb7ee16c1",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T11:05:29.526506+00:00",
+    "details": "Input: $0.0412 -> $0.0517"
+  },
+  {
+    "event_id": "a4d8588420e8ffbb",
+    "type": "price_change",
+    "model_id": "z-ai/glm-5.3-flash",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T11:05:29.526506+00:00",
+    "details": "Input: $0.0412 -> $0.15"
+  },
+  {
+    "event_id": "6afaf91682aad0f5",
+    "type": "price_change",
+    "model_id": "moonshotai/kimi-k2.7-code",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T10:38:18.417040+00:00",
+    "details": "Input: $0.6725 -> $0.6712"
+  },
+  {
     "event_id": "166b667fce0a34a6",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4.1-flash-1017",
@@ -1574,29 +1598,5 @@
     "provider": "OpenRouter",
     "detected_at": "2026-10-21T09:33:36.326440+00:00",
     "details": "Added with input: $0.07/1M, output: $0.2/1M"
-  },
-  {
-    "event_id": "6603cc78a8def92d",
-    "type": "new_free_model",
-    "model_id": "nvidia/nemotron-3.5-lightning:free",
-    "provider": "OpenRouter",
-    "detected_at": "2026-10-21T09:33:36.326440+00:00",
-    "details": "Added with input: $0.0/1M, output: $0.0/1M"
-  },
-  {
-    "event_id": "6741147dec0d95b0",
-    "type": "new_model",
-    "model_id": "sakana/sakana-namazu",
-    "provider": "OpenRouter",
-    "detected_at": "2026-10-21T09:33:36.326440+00:00",
-    "details": "Added with input: $0.95/1M, output: $4.0/1M"
-  },
-  {
-    "event_id": "506e8cd63a29799f",
-    "type": "new_model",
-    "model_id": "upstage/solar-pro4",
-    "provider": "OpenRouter",
-    "detected_at": "2026-10-21T09:33:36.326440+00:00",
-    "details": "Added with input: $0.15/1M, output: $0.6/1M"
   }
 ]
