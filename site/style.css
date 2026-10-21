@@ -843,6 +843,11 @@ body.no-stats .col-bench {
   color: var(--emerald);
 }
 
+.copy-9router-btn.warn {
+  border-color: rgba(245, 158, 11, 0.4);
+  color: var(--amber);
+}
+
 .copy-9router-btn.copied {
   background: var(--emerald-soft);
   color: var(--emerald);

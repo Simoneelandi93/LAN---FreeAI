@@ -31,12 +31,12 @@ async function fetchNineRouterModels() {
     if (!response.ok) return;
     const body = await response.json();
     const list = Array.isArray(body?.data) ? body.data : Array.isArray(body) ? body : [];
-    nineRouterModels = list.map(model => model.id || model.name || "").filter(Boolean);
+    nineRouterModels = list.map(m => ({ id: m.id || "", owned_by: m.owned_by || "" })).filter(m => m.id);
     nineRouterNormMap.clear();
-    for (const id of nineRouterModels) {
-      nineRouterNormMap.set(normalizeSlug(id), id);
-      const slash = id.indexOf("/");
-      if (slash >= 0) nineRouterNormMap.set(normalizeSlug(id.slice(slash + 1)), id);
+    for (const nr of nineRouterModels) {
+      nineRouterNormMap.set(normalizeSlug(nr.id), nr.id);
+      const slash = nr.id.indexOf("/");
+      if (slash >= 0) nineRouterNormMap.set(normalizeSlug(nr.id.slice(slash + 1)), nr.id);
     }
   } catch {
     nineRouterModels = [];
@@ -44,18 +44,40 @@ async function fetchNineRouterModels() {
   }
 }
 
+function clean(str) {
+  return String(str || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
 function resolveNineRouterId(model) {
-  const candidates = [model.model_id, model.id, model.name,
-    model.provider_id && model.model_id ? `${model.provider_id}/${model.model_id}` : null
-  ].filter(Boolean);
-  for (const candidate of candidates) {
-    if (nineRouterModels.includes(candidate)) return { id: candidate, matched: true };
+  const catProv = clean(model.provider_id);
+  const catModel = clean(model.model_id || model.name);
+
+  // 1. MATCH PERFETTO: stesso provider AND stesso modello
+  for (const nr of nineRouterModels) {
+    const nrOwner = clean(nr.owned_by);
+    const nrCleanId = clean(nr.id);
+    const providerMatches = (nrOwner && (nrOwner === catProv || catProv.includes(nrOwner) || nrOwner.includes(catProv)))
+      || nrCleanId.startsWith(catProv);
+    if (providerMatches) {
+      const modelPart = nr.id.includes("/") ? nr.id.split("/").slice(1).join("/") : nr.id;
+      if (clean(modelPart) === catModel || nrCleanId.includes(catModel) || catModel.includes(clean(modelPart))) {
+        return { id: nr.id, status: "verified", tooltip: `Verified in 9router (${model.provider_id}): ${nr.id}` };
+      }
+    }
   }
-  for (const candidate of candidates) {
-    const match = nineRouterNormMap.get(normalizeSlug(candidate));
-    if (match) return { id: match, matched: true };
+
+  // 2. Modello esiste in 9router ma sotto ALTRO provider
+  for (const nr of nineRouterModels) {
+    const modelPart = nr.id.includes("/") ? nr.id.split("/").slice(1).join("/") : nr.id;
+    if (clean(modelPart) === catModel && clean(modelPart).length > 3) {
+      const formatted = model.model_id && model.model_id.startsWith(`${model.provider_id}/`) ? model.model_id : `${model.provider_id}/${model.model_id || model.name || "model"}`;
+      return { id: formatted, status: "wrong_provider", tooltip: `In 9router via '${nr.owned_by || "altro"}', not '${model.provider_id}'` };
+    }
   }
-  return { id: model.model_id || model.name || model.id || "unnamed-model", matched: false };
+
+  // 3. Non trovato in 9router
+  const formatted = model.model_id && model.model_id.startsWith(`${model.provider_id}/`) ? model.model_id : `${model.provider_id}/${model.model_id || model.name || "model"}`;
+  return { id: formatted, status: "not_configured", tooltip: `Not in 9router. Copy: ${formatted}` };
 }
 
 async function copyText(text) {
@@ -287,8 +309,8 @@ function renderModels(filtered) {
     const displayName = getModelName(m);
     const displayProvider = getProviderName(m, s);
     const routerMatch = resolveNineRouterId(m);
-    const matchClass = routerMatch.matched ? "matched" : "";
-    const tooltip = routerMatch.matched ? `Match found in 9router (${routerMatch.id})` : "Copy to search in 9router";
+    const matchClass = routerMatch.status === "verified" ? "matched" : routerMatch.status === "wrong_provider" ? "warn" : "";
+    const tooltip = routerMatch.tooltip;
     return `<tr>
       <td class="text-center font-mono">${rank}</td>
       <td>
