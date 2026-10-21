@@ -86,8 +86,8 @@ async function loadData() {
     history = histData;
     statsById = statsData && !Array.isArray(statsData) ? statsData : {};
 
-    // Hide the LLM Stats column entirely when no benchmark data was enriched
-    document.body.classList.toggle("no-stats", !models.some(m => m.llm_stats_id && statsById[m.llm_stats_id]));
+    const hasStats = models.some(m => m.llm_stats_id && statsById[m.llm_stats_id]);
+    document.body.classList.toggle("no-stats", !hasStats);
 
     const provSet = new Set(models.map(m => m.provider_id).filter(Boolean));
     document.getElementById("totalModels").textContent = models.length.toLocaleString();
@@ -95,23 +95,22 @@ async function loadData() {
     document.getElementById("totalFree").textContent = models.filter(m => m.is_free).length.toLocaleString();
     document.getElementById("totalReasoning").textContent = models.filter(m => m.reasoning).length.toLocaleString();
     const latest = history[0]?.detected_at;
-    document.getElementById("lastUpdated").textContent = latest ? `Synced ${new Date(latest).toLocaleDateString()}` : "Catalog synced";
+    document.getElementById("lastUpdated").textContent = latest ? `Synced ${new Date(latest).toLocaleDateString()}` : "Catalog active";
   } catch (e) {
-    document.getElementById("lastUpdated").textContent = "Catalog unavailable";
-    document.getElementById("modelBody").innerHTML = `<tr><td colspan="7"><div class="empty"><h3>Catalog unavailable</h3><p>Could not load model data. Run the sync workflow and reload.</p></div></td></tr>`;
+    document.getElementById("lastUpdated").textContent = "Offline";
+    document.getElementById("modelBody").innerHTML = `<tr><td colspan="7"><div class="empty"><h3>Catalog unreachable</h3><p>Could not load model datasets.</p></div></td></tr>`;
     return;
   }
   render();
 }
 
-function capDots(m) {
-  let html = '<span class="cap-dots">';
-  html += `<span class="cap-dot ${m.reasoning ? 'on rag' : ''}"${m.reasoning ? ' title="Reasoning"' : ''}></span>`;
-  html += `<span class="cap-dot ${m.tool_call ? 'on tool' : ''}"${m.tool_call ? ' title="Tool use"' : ''}></span>`;
-  html += `<span class="cap-dot ${m.structured_output ? 'on str' : ''}"${m.structured_output ? ' title="Structured output"' : ''}></span>`;
-  html += `<span class="cap-dot ${m.open_weights ? 'on open' : ''}"${m.open_weights ? ' title="Open weights"' : ''}></span>`;
-  html += "</span>";
-  return html;
+function capPills(m) {
+  return `<span class="cap-pills">
+    <span class="cap-pill pill-reasoning ${m.reasoning ? 'pill-active' : ''}" title="Reasoning Engine">R</span>
+    <span class="cap-pill pill-tool ${m.tool_call ? 'pill-active' : ''}" title="Function / Tool Calling">T</span>
+    <span class="cap-pill pill-json ${m.structured_output ? 'pill-active' : ''}" title="Structured JSON Output">{}</span>
+    <span class="cap-pill pill-open ${m.open_weights ? 'pill-active' : ''}" title="Open Weights">W</span>
+  </span>`;
 }
 
 function scoreCell(m) {
@@ -129,18 +128,20 @@ function scoreCell(m) {
   ].filter(Boolean).join(" · ");
   const tip = [s.organization, breakdown || null, s.benchmark_count ? `${s.benchmark_count} benchmark${s.benchmark_count === 1 ? "" : "s"}` : null]
     .filter(Boolean).join(" · ");
+
   if (!bits.length) {
     return s.benchmark_count
-      ? `<span class="score-na" title="${esc(tip)}">${s.benchmark_count} scores</span>`
+      ? `<span class="score-na" title="${esc(tip)}">${s.benchmark_count} tests</span>`
       : '<span class="score-na">—</span>';
   }
-  return `<a class="score-link" href="${esc(s.url || 'https://llm-stats.com/')}" target="_blank" rel="noopener noreferrer" title="${esc(tip)}">${bits.join(" · ")}</a>`;
+  return `<a class="score-badge" href="${esc(s.url || 'https://llm-stats.com/')}" target="_blank" rel="noopener noreferrer" title="${esc(tip)}">${bits.join(" · ")}</a>`;
 }
 
 function renderModels(filtered) {
   const sorted = [...filtered].sort(cmpModels);
   const list = sorted.slice(0, visibleCount);
   const body = document.getElementById("modelBody");
+
   body.innerHTML = list.map(m => {
     const inp = price(m.input_price_per_m);
     const out = price(m.output_price_per_m);
@@ -150,26 +151,34 @@ function renderModels(filtered) {
     const inpCls = m.is_free ? "free" : (inp === null ? "na" : "");
     const outCls = m.is_free ? "free" : (out === null ? "na" : "");
     const ctxCls = ctx === "—" ? "na" : "";
-    const orBadge = m.provider_id === "openrouter" ? `<span class="badge-or">· OpenRouter</span>` : "";
+    const orBadge = m.provider_id === "openrouter" ? `<span class="badge-or">OpenRouter</span>` : "";
     const url = m.provider_url || m.source_url || "#";
+
     return `<tr>
-      <td><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(m.name)}</a><span class="model-id">${esc(m.model_id)}</span></td>
+      <td>
+        <a class="model-title" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(m.name)}</a>
+        <span class="model-id">${esc(m.model_id)}</span>
+      </td>
       <td><span class="provider-cell">${esc(m.provider)}</span></td>
-      <td>${capDots(m)}</td>
-      <td class="score-cell">${scoreCell(m)}</td>
-      <td class="price-cell ${inpCls}">${inpFmt}</td>
-      <td class="price-cell ${outCls}">${outFmt}${orBadge}</td>
-      <td class="context-cell ${ctxCls}">${ctx}</td>
+      <td>${capPills(m)}</td>
+      <td class="score-cell text-right">${scoreCell(m)}</td>
+      <td class="price-cell text-right ${inpCls}">${inpFmt}</td>
+      <td class="price-cell text-right ${outCls}">${outFmt}${orBadge}</td>
+      <td class="context-cell text-right ${ctxCls}">${ctx}</td>
     </tr>`;
   }).join("");
-  if (!list.length) body.innerHTML = `<tr><td colspan="7"><div class="empty"><h3>No matches</h3><p>Try a different search term or clear the active filter.</p></div></td></tr>`;
+
+  if (!list.length) {
+    body.innerHTML = `<tr><td colspan="7"><div class="empty"><h3>No models found</h3><p>Try refining your search query or reset filters.</p></div></td></tr>`;
+  }
   document.getElementById("loadMore").hidden = filtered.length <= visibleCount;
 }
 
-function renderProviders(filtered) {
+function renderProviders(query) {
   const grid = document.getElementById("providerGrid");
   const list = document.getElementById("providerList");
   grid.classList.add("active");
+
   const provMap = {};
   for (const m of models) {
     const pid = m.provider_id;
@@ -180,23 +189,25 @@ function renderProviders(filtered) {
     if (m.reasoning) provMap[pid].reasoning++;
     if (m.tool_call) provMap[pid].tool++;
   }
+
   let arr = Object.values(provMap);
-  if (filtered) {
-    const q = filtered.toLowerCase();
-    arr = arr.filter(p => p.name.toLowerCase().includes(q) || p.id.toLowerCase().includes(q));
+  if (query) {
+    arr = arr.filter(p => p.name.toLowerCase().includes(query) || p.id.toLowerCase().includes(query));
   }
   arr.sort((a, b) => b.total - a.total);
+
   list.innerHTML = arr.map(p => `<article class="provider-card">
     <h3 class="pc-name"><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.name)}</a></h3>
     <p class="pc-meta">${esc(p.id)}</p>
     <div class="pc-stats">
-      <div class="pc-stat"><strong>${p.total.toLocaleString()}</strong><span>Models</span></div>
-      <div class="pc-stat"><strong>${p.free.toLocaleString()}</strong><span>Free</span></div>
-      <div class="pc-stat"><strong>${p.reasoning.toLocaleString()}</strong><span>Reasoning</span></div>
-      <div class="pc-stat"><strong>${p.tool.toLocaleString()}</strong><span>Tool use</span></div>
+      <div class="pc-stat"><strong>${p.total}</strong><span>Models</span></div>
+      <div class="pc-stat"><strong class="${p.free ? 'text-emerald' : ''}">${p.free}</strong><span>Free</span></div>
+      <div class="pc-stat"><strong>${p.reasoning}</strong><span>Reasoning</span></div>
+      <div class="pc-stat"><strong>${p.tool}</strong><span>Tools</span></div>
     </div>
   </article>`).join("");
-  if (!arr.length) list.innerHTML = `<div class="empty"><h3>No providers match</h3><p>Try a different search term.</p></div>`;
+
+  if (!arr.length) list.innerHTML = `<div class="empty"><h3>No providers matched</h3><p>Try searching for an alternate identifier.</p></div>`;
   document.getElementById("loadMore").hidden = true;
 }
 
@@ -212,11 +223,10 @@ function renderChanges() {
   if (cutoff) items = items.filter(ev => new Date(ev.detected_at) >= cutoff);
 
   if (!items.length) {
-    feed.innerHTML = `<div class="chg-empty">No changes detected in this period.</div>`;
+    feed.innerHTML = `<div class="empty"><h3>No recent delta events</h3><p>No price modifications or catalog updates in this timeframe.</p></div>`;
     return;
   }
 
-  // Group by date
   const groups = {};
   for (const ev of items) {
     const d = new Date(ev.detected_at);
@@ -227,35 +237,25 @@ function renderChanges() {
 
   const sortedDays = Object.values(groups).sort((a, b) => b.date.getTime() - a.date.getTime());
   const typeLabels = { new_model: "New", price_change: "Drop", model_became_free: "Free" };
-  const typeTags = { new_model: "new", price_change: "drop", model_became_free: "free" };
 
   feed.innerHTML = sortedDays.map(day => {
-    // Count types per day
-    const tally = {};
-    for (const ev of day.events) tally[ev.type] = (tally[ev.type] || 0) + 1;
-    const summary = Object.entries(tally)
-      .filter(([t]) => typeLabels[t])
-      .map(([t, c]) => `${c} ${typeLabels[t]}`)
-      .join(", ");
-
     const rows = day.events.map(ev => {
       const t = new Date(ev.detected_at);
       const time = t.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" });
-      const tag = typeTags[ev.type] || "new";
-      const lbl = typeLabels[ev.type] || ev.type;
+      const tagCls = ev.type === "new_model" ? "new" : (ev.type === "price_change" ? "drop" : "free");
+      const lbl = typeLabels[ev.type] || "Update";
       const providers = ev.provider ? `<span class="chg-providers">via ${esc(ev.provider)}</span>` : "";
-      const details = ev.details ? `<span class="chg-price">${esc(ev.details)}</span>` : "";
+
       return `<div class="chg-row">
         <span class="chg-time">${esc(time)}</span>
-        <div class="chg-body">
-          <span class="chg-tag ${tag}">${esc(lbl)}</span><span class="chg-model">${esc(ev.model_id)}</span>
-          ${providers}${details}
-        </div>
+        <span class="chg-tag ${tagCls}">${esc(lbl)}</span>
+        <span class="chg-model">${esc(ev.model_id)}</span>
+        ${providers}
       </div>`;
     }).join("");
 
     return `<div class="chg-day">
-      <h3>${esc(day.label)} <span style="color:var(--muted);font-size:12px;font-weight:400;">· ${esc(summary)}</span></h3>
+      <h3><span>${esc(day.label)}</span> <span>${day.events.length} events</span></h3>
       ${rows}
     </div>`;
   }).join("");
@@ -270,11 +270,13 @@ function render() {
 
   document.getElementById("modelFilters")?.classList.toggle("hidden", isProviders || isChanges);
   document.getElementById("tableView")?.classList.toggle("hidden", isProviders || isChanges);
+  document.getElementById("capLegend")?.classList.toggle("hidden", isProviders || isChanges);
   document.getElementById("providerGrid")?.classList.toggle("active", isProviders);
   document.getElementById("changesView")?.classList.toggle("active", isChanges);
 
   if (isChanges) {
     renderChanges();
+    document.getElementById("resultCount").textContent = "";
     return;
   }
 
@@ -286,34 +288,63 @@ function render() {
 
   const fn = FILTERS[activeFilter] || FILTERS.all;
   const filtered = models.filter(m => fn(m) && (!query ||
-    `${m.name} ${m.model_id} ${m.provider} ${m.description}`.toLowerCase().includes(query)));
-  document.getElementById("resultCount").textContent = `${filtered.length.toLocaleString()} ${filtered.length === 1 ? "model" : "models"}`;
+    `${m.name} ${m.model_id} ${m.provider} ${m.description || ""}`.toLowerCase().includes(query)));
+
+  document.getElementById("resultCount").textContent = `Showing ${filtered.length.toLocaleString()} matching models`;
   updateSortIndicators();
   renderModels(filtered);
 }
 
-document.getElementById("searchInput").addEventListener("input", () => { visibleCount = 100; render(); });
+function updateSortIndicators() {
+  const upIcon = `<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>`;
+  const downIcon = `<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>`;
+
+  document.querySelectorAll("th.sortable").forEach(th => {
+    const ind = th.querySelector(".sort-ind");
+    if (!ind) return;
+    if (th.dataset.sort === sortKey) {
+      ind.innerHTML = sortDir === "asc" ? upIcon : downIcon;
+    } else {
+      ind.innerHTML = "";
+    }
+  });
+}
+
+// Global hotkey: press "/" to focus search
+window.addEventListener("keydown", (e) => {
+  if (e.key === "/" && document.activeElement !== document.getElementById("searchInput")) {
+    e.preventDefault();
+    document.getElementById("searchInput").focus();
+  }
+});
+
+document.getElementById("searchInput").addEventListener("input", () => {
+  visibleCount = 100;
+  render();
+});
 
 document.querySelectorAll(".tab-pri").forEach(btn => {
   btn.addEventListener("click", () => {
-    document.querySelectorAll(".tab-pri").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
-    btn.classList.add("active"); btn.setAttribute("aria-selected", "true");
+    document.querySelectorAll(".tab-pri").forEach(b => {
+      b.classList.remove("active");
+      b.setAttribute("aria-selected", "false");
+    });
+    btn.classList.add("active");
+    btn.setAttribute("aria-selected", "true");
     activeView = btn.dataset.view;
     visibleCount = 100;
-    if (activeView === "providers") {
-      document.getElementById("searchInput").value = "";
-      document.querySelectorAll("#modelFilters .filter").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
-      document.querySelector("#modelFilters .filter[data-filter='all']")?.classList.add("active");
-    }
-    document.getElementById("searchInput").value = "";
     render();
   });
 });
 
 document.querySelectorAll(".filter").forEach(btn => {
   btn.addEventListener("click", () => {
-    document.querySelectorAll(".filter").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
-    btn.classList.add("active"); btn.setAttribute("aria-selected", "true");
+    document.querySelectorAll(".filter").forEach(b => {
+      b.classList.remove("active");
+      b.setAttribute("aria-selected", "false");
+    });
+    btn.classList.add("active");
+    btn.setAttribute("aria-selected", "true");
     activeFilter = btn.dataset.filter;
     visibleCount = 100;
     render();
@@ -322,28 +353,21 @@ document.querySelectorAll(".filter").forEach(btn => {
 
 document.querySelectorAll(".chg-btn").forEach(btn => {
   btn.addEventListener("click", () => {
-    document.querySelectorAll(".chg-btn").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
-    btn.classList.add("active"); btn.setAttribute("aria-selected", "true");
+    document.querySelectorAll(".chg-btn").forEach(b => {
+      b.classList.remove("active");
+      b.setAttribute("aria-selected", "false");
+    });
+    btn.classList.add("active");
+    btn.setAttribute("aria-selected", "true");
     activeChangesRange = btn.dataset.range;
     render();
   });
 });
 
-function updateSortIndicators() {
-  document.querySelectorAll("th.sortable").forEach(th => {
-    const ind = th.querySelector(".sort-ind");
-    if (!ind) return;
-    if (th.dataset.sort === sortKey) {
-      ind.textContent = sortDir === "asc" ? "▲" : "▼";
-      th.classList.add("sorted");
-    } else {
-      ind.textContent = "";
-      th.classList.remove("sorted");
-    }
-  });
-}
-
-document.getElementById("loadMore").addEventListener("click", () => { visibleCount += 100; render(); });
+document.getElementById("loadMore").addEventListener("click", () => {
+  visibleCount += 100;
+  render();
+});
 
 document.querySelectorAll("th.sortable").forEach(th => {
   th.addEventListener("click", () => {
