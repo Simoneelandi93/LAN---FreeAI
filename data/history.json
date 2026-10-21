@@ -1,5 +1,21 @@
 [
   {
+    "event_id": "821b98d6d6ebf91b",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T18:41:33.467172+00:00",
+    "details": "Input: $0.238 -> $0.238; output: $24 -> $16"
+  },
+  {
+    "event_id": "4e89ef51bf14af32",
+    "type": "new_model",
+    "model_id": "lightonocr-3-0.8b",
+    "provider": "Scaleway",
+    "detected_at": "2026-10-21T18:41:33.467172+00:00",
+    "details": "$2.464 in / $0 out per 1M"
+  },
+  {
     "event_id": "7898ac2d30d976b8",
     "type": "price_change",
     "model_id": "google/gemma-4-26B-A4B-it",
@@ -1582,21 +1598,5 @@
     "provider": "Abacus, Alibaba, Alibaba (China), Amazon Bedrock, Cortecs, Deep Infra, DevPass (LLM Gateway), DigitalOcean, Helicone, Hugging Face, Jiekou.AI, Kilo Gateway, Merge Gateway, NanoGPT, OpenRouter, Pioneer, Qiniu, Vercel AI Gateway, iFlow",
     "detected_at": "2026-10-21T11:52:14.084489+00:00",
     "details": "Deep Infra: $0.08/$0.28 per 1M; Pioneer: $0.9/$0.9 per 1M; Vercel AI Gateway: $0.15/$0.6 per 1M; Helicone: $0.29/$0.59 per 1M; Hugging Face: $0.29/$0.59 per 1M; Merge Gateway: $0.15/$0.6 per 1M; Amazon Bedrock: $0.15/$0.6 per 1M; Kilo Gateway: $0.08/$0.28 per 1M; OpenRouter: $0.08/$0.28 per 1M; DigitalOcean: $0.25/$0.55 per 1M; Cortecs: $0.179/$0.697 per 1M; iFlow: $0/$0 per 1M; Alibaba (China): $0.287/$1.147 per 1M; DevPass (LLM Gateway): $0.36/$0.87 per 1M; Abacus: $0.09/$0.29 per 1M; Alibaba: $0.7/$2.8 per 1M; Jiekou.AI: $0.1/$0.45 per 1M; NanoGPT: $0.1/$0.3 per 1M"
-  },
-  {
-    "event_id": "020ab4d149468517",
-    "type": "new_model",
-    "model_id": "qwen/qwen3-vl-235b-a22b-instruct",
-    "provider": "Amazon Bedrock, Deep Infra, DevPass (LLM Gateway), Helicone, Hugging Face, Jalapeno Cloud, Kilo Gateway, Merge Gateway, NanoGPT, OpenRouter, OrcaRouter, Prime Inference",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Deep Infra: $0.2/$0.88 per 1M; Helicone: $0.3/$1.5 per 1M; Hugging Face: $0.3/$1.5 per 1M; Merge Gateway: $0.21/$1.9 per 1M; Amazon Bedrock: $0.53/$2.66 per 1M; Kilo Gateway: $0.21/$1.9 per 1M; OpenRouter: $0.21/$1.9 per 1M; Prime Inference: $0.3/$1.5 per 1M; DevPass (LLM Gateway): $0.2/$0.88 per 1M; OrcaRouter: $0.4/$1.6 per 1M; NanoGPT: $0.3/$1.9 per 1M; Jalapeno Cloud: $0.3/$1.5 per 1M"
-  },
-  {
-    "event_id": "d91b4d5acc33a162",
-    "type": "new_model",
-    "model_id": "Qwen/Qwen3-Max",
-    "provider": "AIHubMix, Abacus, Alibaba, Alibaba (China), Alibaba Coding Plan, Alibaba Coding Plan (China), Cloudflare AI Gateway, Deep Infra, DevPass (LLM Gateway), LLMTR, Merge Gateway, NanoGPT, Ofox, OrcaRouter, Qiniu, iFlow",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Deep Infra: $1.2/$6 per 1M; Merge Gateway: $0.359/$1.434 per 1M; Cloudflare AI Gateway: $1.2/$6 per 1M; Ofox: $0.36/$1.43 per 1M; Ofox: $0.36/$1.43 per 1M; Alibaba Coding Plan: $0/$0 per 1M; iFlow: $0/$0 per 1M; Alibaba (China): $0.359/$1.434 per 1M; DevPass (LLM Gateway): $0.845/$3.38 per 1M; Abacus: $1.2/$6 per 1M; Alibaba: $1.2/$6 per 1M; AIHubMix: $0.4508/$2.7048 per 1M; OrcaRouter: $0.359/$1.434 per 1M; LLMTR: $1.2/$6 per 1M; NanoGPT: $1.2002/$6.001 per 1M; Alibaba Coding Plan (China): $0/$0 per 1M"
   }
 ]
