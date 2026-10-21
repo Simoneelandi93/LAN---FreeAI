@@ -1,5 +1,477 @@
 [
   {
+    "event_id": "ecddc56217acaf82",
+    "type": "price_change",
+    "model_id": "anthropic/claude-opus-4.6",
+    "provider": "AIHubMix, Abacus, Amazon Bedrock, Anthropic, AnyAPI, Auriko, Azure, Azure Cognitive Services, Cloudflare AI Gateway, Cortecs, Databricks, DevPass (LLM Gateway), Eden AI, FreeModel, FrogBot, GMI Cloud, Impossibl, Jiekou.AI, Kilo Gateway, Merge Gateway, NEAR AI Cloud, Neon, Ofox, OpenCode, OpenRouter, Opper, OrcaRouter, Perplexity Agent, Pioneer, Poe, Prime Inference, Requesty, Snowflake Cortex, Tempr Gateway, Venice AI, Vercel AI Gateway, Vertex, Vertex (Anthropic), ZenMux",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $4.3 -> $4.2929; output: $21 -> $21.4646"
+  },
+  {
+    "event_id": "c8cb9b4593806448",
+    "type": "price_change",
+    "model_id": "openai/gpt-5.3-codex",
+    "provider": "AI/ML API, AIHubMix, Abacus, Azure, Azure Cognitive Services, CommandCode, DevPass (LLM Gateway), Eden AI, FastRouter, FreeModel, FrogBot, GitHub Copilot, Impossibl, Kilo Gateway, NanoGPT, Neon, Ofox, OpenAI, OpenCode, OpenRouter, Opper, OrcaRouter, Pioneer, Poe, Prime Inference, Requesty, Venice AI, Vercel AI Gateway, Vivgrid, ZenMux",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.6 -> $1.5909; output: $8 -> $8"
+  },
+  {
+    "event_id": "bc9cdd684673bdd7",
+    "type": "price_change",
+    "model_id": "openai/gpt-5.4-pro",
+    "provider": "AI/ML API, Azure, Azure Cognitive Services, Cloudflare AI Gateway, DevPass (LLM Gateway), Eden AI, Impossibl, Kilo Gateway, Ofox, OpenAI, OpenCode, OpenRouter, Opper, OrcaRouter, Poe, Prime Inference, Requesty, Venice AI, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $27 -> $27.2727; output: $160 -> $163.6364"
+  },
+  {
+    "event_id": "bddb05a6a04cb48a",
+    "type": "new_model",
+    "model_id": "reflection-beam",
+    "provider": "DigitalOcean",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "$0.4 in / $1.2 out per 1M"
+  },
+  {
+    "event_id": "7b653879f84782d8",
+    "type": "price_change",
+    "model_id": "openai/gpt-5.4-nano",
+    "provider": "302.AI, AI/ML API, AIHubMix, Abacus, Azure, Azure Cognitive Services, Cloudflare AI Gateway, CrossModel, Databricks, DevPass (LLM Gateway), Eden AI, FastRouter, FrogBot, GitHub Copilot, Impossibl, Kilo Gateway, Merge Gateway, Model Oracle AI, NEAR AI Cloud, NanoGPT, Neon, Ofox, OpenAI, OpenCode, OpenRouter, Opper, OrcaRouter, Pioneer, Poe, Prime Inference, Requesty, Vercel AI Gateway, Vivgrid, ZenMux",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.18 -> $0.1818; output: $1.1 -> $1.1364"
+  },
+  {
+    "event_id": "be29d8169cbec241",
+    "type": "price_change",
+    "model_id": "openai/gpt-4.1",
+    "provider": "302.AI, AI/ML API, Abacus, AnyAPI, Azure, Azure Cognitive Services, Cloudflare AI Gateway, Cortecs, DevPass (LLM Gateway), Eden AI, FastRouter, Impossibl, Kilo Gateway, LowRouter, Merge Gateway, Model Oracle AI, NEAR AI Cloud, NanoGPT, Ofox, OpenAI, OpenRouter, OrcaRouter, Pioneer, Poe, Prime Inference, SAP AI Core, Snowflake Cortex, Vercel AI Gateway",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.8 -> $1.8182; output: $7.2 -> $7.2727"
+  },
+  {
+    "event_id": "dba3bb6b3f1aa93b",
+    "type": "price_change",
+    "model_id": "openai/gpt-4.1-mini",
+    "provider": "302.AI, AI/ML API, Abacus, AnyAPI, Azure, Azure Cognitive Services, Cloudflare AI Gateway, Cortecs, DevPass (LLM Gateway), Eden AI, Impossibl, Kilo Gateway, LowRouter, Merge Gateway, Model Oracle AI, NEAR AI Cloud, NanoGPT, Ofox, OpenAI, OpenRouter, OrcaRouter, Pioneer, Poe, Prime Inference, SAP AI Core, Vercel AI Gateway",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.36 -> $0.3636; output: $1.4 -> $1.4545"
+  },
+  {
+    "event_id": "088d75d20cb6f0d4",
+    "type": "price_change",
+    "model_id": "openai/gpt-4.1-nano",
+    "provider": "302.AI, AI/ML API, Abacus, Azure, Azure Cognitive Services, Cloudflare AI Gateway, Cortecs, DevPass (LLM Gateway), Eden AI, Impossibl, Kilo Gateway, Merge Gateway, NEAR AI Cloud, NanoGPT, OpenAI, OpenRouter, OrcaRouter, Pioneer, Poe, Prime Inference, SAP AI Core, Vercel AI Gateway",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.08 -> $0.09; output: $0.26 -> $0.36"
+  },
+  {
+    "event_id": "213d337d7d1cc137",
+    "type": "price_change",
+    "model_id": "openai/o3",
+    "provider": "302.AI, AIHubMix, Abacus, AnyAPI, Azure, Azure Cognitive Services, Cloudflare AI Gateway, DevPass (LLM Gateway), Eden AI, Impossibl, Jiekou.AI, Kilo Gateway, LowRouter, Merge Gateway, NEAR AI Cloud, OpenAI, OpenRouter, Poe, Vercel AI Gateway",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.8 -> $1.8182; output: $7.2 -> $7.2727"
+  },
+  {
+    "event_id": "98e3f9b138e70000",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.0475 -> $0.0422; output: $0.1568 -> $0.1729"
+  },
+  {
+    "event_id": "5f1b88d74d4c877f",
+    "type": "price_change",
+    "model_id": "openai/o3-pro",
+    "provider": "AI/ML API, Abacus, Eden AI, Kilo Gateway, OpenAI, OpenRouter, Poe, Vercel AI Gateway",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $18 -> $18.1818; output: $40 -> $40"
+  },
+  {
+    "event_id": "57cfc97f12b32d96",
+    "type": "price_change",
+    "model_id": "openai/text-embedding-3-large",
+    "provider": "Azure, Azure Cognitive Services, OpenAI, SAP AI Core, Vercel AI Gateway",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.09 -> $0.13; output: $0 -> $0"
+  },
+  {
+    "event_id": "73319d6bee034168",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-r1-0528",
+    "provider": "Alibaba (China), Deep Infra, Hugging Face, Jiekou.AI, Kilo Gateway, Meganova, Merge Gateway, NanoGPT, Novita AI, OpenRouter, Qiniu, TensorX, submodel",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.5 -> $0.2; output: $2.15 -> $0.8"
+  },
+  {
+    "event_id": "199cade2fdbfbd57",
+    "type": "price_change",
+    "model_id": "scaleway/qwen3-235b-a22b-instruct-2507",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.841125 -> $0.84255; output: $2.523375 -> $2.52765"
+  },
+  {
+    "event_id": "cd791e0ab253b789",
+    "type": "price_change",
+    "model_id": "scaleway/gpt-oss-120b",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.168225 -> $0.16851; output: $0.6729 -> $0.67404"
+  },
+  {
+    "event_id": "2af2737a6177876b",
+    "type": "price_change",
+    "model_id": "scaleway/deepseek-v4-flash-0731",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.4486 -> $0.44936; output: $0.8972 -> $0.89872"
+  },
+  {
+    "event_id": "0b4dc4a6a1535b59",
+    "type": "price_change",
+    "model_id": "scaleway/deepseek-v4.1-flash",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.6729 -> $0.67404; output: $2.0187 -> $2.02212"
+  },
+  {
+    "event_id": "06d3dbb38ab1b7b6",
+    "type": "price_change",
+    "model_id": "scaleway/llama-3.3-70b-instruct",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.00935 -> $1.01106; output: $1.00935 -> $1.01106"
+  },
+  {
+    "event_id": "d0924af5dd20e0ac",
+    "type": "price_change",
+    "model_id": "ionos/openai/gpt-oss-120b",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.168225 -> $0.16851; output: $0.728975 -> $0.73021"
+  },
+  {
+    "event_id": "0ab60e72c23771bf",
+    "type": "price_change",
+    "model_id": "ionos/Qwen/Qwen3-Coder-Next",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.168225 -> $0.16851; output: $0.8972 -> $0.89872"
+  },
+  {
+    "event_id": "4e33a3a141cc07ea",
+    "type": "price_change",
+    "model_id": "ionos/meta-llama/Llama-3.3-70B-Instruct",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.728975 -> $0.73021; output: $0.728975 -> $0.73021"
+  },
+  {
+    "event_id": "9783d6038d7a262b",
+    "type": "price_change",
+    "model_id": "infomaniak/mistralai/Ministral-3-14B-Instruct-2512",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.33645 -> $0.33702; output: $0.4486 -> $0.44936"
+  },
+  {
+    "event_id": "5e0462746ec893af",
+    "type": "price_change",
+    "model_id": "openai/gpt-5.2-pro",
+    "provider": "AI/ML API, DevPass (LLM Gateway), Eden AI, Jiekou.AI, Kilo Gateway, OpenAI, OpenRouter, OrcaRouter, Poe, ZenMux",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $18.9 -> $18.9; output: $150 -> $151.2"
+  },
+  {
+    "event_id": "469bd03c2585d5ef",
+    "type": "price_change",
+    "model_id": "greenpt/qwen3-235b-a22b-instruct-2507",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.00935 -> $1.01106; output: $3.02805 -> $3.03318"
+  },
+  {
+    "event_id": "a4dbc7c65d344aaf",
+    "type": "price_change",
+    "model_id": "greenpt/gpt-oss-120b",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.2243 -> $0.22468; output: $0.78505 -> $0.78638"
+  },
+  {
+    "event_id": "1ffea05e47576401",
+    "type": "price_change",
+    "model_id": "greenpt/deepseek-v4-flash-0731",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.15701 -> $0.157276; output: $0.392525 -> $0.39319"
+  },
+  {
+    "event_id": "ede0bb4dc7f66595",
+    "type": "price_change",
+    "model_id": "greenpt/deepseek-v4.1-flash",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.24673 -> $0.247148; output: $1.23365 -> $1.23574"
+  },
+  {
+    "event_id": "90e91b41942f686e",
+    "type": "price_change",
+    "model_id": "greenpt/llama-3.3-70b-instruct",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.23365 -> $1.23574; output: $1.23365 -> $1.23574"
+  },
+  {
+    "event_id": "bfa6e19d6ceef0b5",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.0475 -> $0.0422; output: $0.1568 -> $0.1729"
+  },
+  {
+    "event_id": "f2dc250162db410b",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.20196 -> $0.1307; output: $0.60588 -> $8"
+  },
+  {
+    "event_id": "40bc805321c224fb",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.238 -> $0.238; output: $16 -> $24"
+  },
+  {
+    "event_id": "0f2c1b899528c6b4",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.0413 -> $0.041191; output: $0.12 -> $0.12"
+  },
+  {
+    "event_id": "916cb57af2cfa8ff",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "OpenRouter, The Grid AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.20196 -> $0.1307; output: $0.60588 -> $8"
+  },
+  {
+    "event_id": "361e2c493cf8c92f",
+    "type": "price_change",
+    "model_id": "doubao-seed-2-0-lite-260428",
+    "provider": "AIHubMix",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.08 -> $0.09041; output: $0.51 -> $0.54246"
+  },
+  {
+    "event_id": "afcc0c49d1bd6a22",
+    "type": "price_change",
+    "model_id": "doubao-seed-2-0-code-preview",
+    "provider": "AIHubMix, NanoGPT",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.48 -> $0.4822; output: $2.41 -> $2.411"
+  },
+  {
+    "event_id": "ac33a218bd6a2611",
+    "type": "price_change",
+    "model_id": "coding-xiaomi-mimo-v2.5-pro",
+    "provider": "AIHubMix",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.2 -> $0.2; output: $0.6 -> $0.4"
+  },
+  {
+    "event_id": "a47886722ec037c5",
+    "type": "price_change",
+    "model_id": "doubao-seed-2-0-mini-260428",
+    "provider": "AIHubMix",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.03 -> $0.030136; output: $0.28 -> $0.30136"
+  },
+  {
+    "event_id": "fbf1fac289e27bc6",
+    "type": "price_change",
+    "model_id": "coding-xiaomi-mimo-v2.5",
+    "provider": "AIHubMix",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.08 -> $0.08; output: $0.4 -> $0.16"
+  },
+  {
+    "event_id": "fa124e8f1fc0f3b9",
+    "type": "price_change",
+    "model_id": "amazon--titan-embed-text",
+    "provider": "SAP AI Core",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.14 -> $0.02; output: $0 -> $0"
+  },
+  {
+    "event_id": "235fab834cfffc4b",
+    "type": "price_change",
+    "model_id": "mistralai--mistral-small",
+    "provider": "SAP AI Core",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.07 -> $0.15; output: $0.28 -> $0.6"
+  },
+  {
+    "event_id": "d3c3156f7983cf14",
+    "type": "price_change",
+    "model_id": "amazon--nova-micro",
+    "provider": "SAP AI Core",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.03 -> $0.035; output: $0.1 -> $0.14"
+  },
+  {
+    "event_id": "b23731ee894a377c",
+    "type": "price_change",
+    "model_id": "mistralai--mistral-medium-instruct",
+    "provider": "SAP AI Core",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.36 -> $0.4; output: $1.22 -> $2"
+  },
+  {
+    "event_id": "ba49bc2d7f57c32b",
+    "type": "price_change",
+    "model_id": "amazon--nova-lite",
+    "provider": "SAP AI Core",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.3 -> $0.3; output: $2.37 -> $2.5"
+  },
+  {
+    "event_id": "1eacd10a127bab77",
+    "type": "price_change",
+    "model_id": "amazon--nova-pro",
+    "provider": "SAP AI Core",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.56 -> $0.8; output: $2.13 -> $3.2"
+  },
+  {
+    "event_id": "8a008a3fa17053aa",
+    "type": "price_change",
+    "model_id": "cohere--command-a-reasoning",
+    "provider": "SAP AI Core",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.63 -> $2.5; output: $5.05 -> $10"
+  },
+  {
+    "event_id": "e684958b88e217f5",
+    "type": "price_change",
+    "model_id": "glm-5.2-caveman-lite",
+    "provider": "GreenPT",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.254 -> $1.738325; output: $5.016 -> $5.1589"
+  },
+  {
+    "event_id": "9719426d4039641b",
+    "type": "price_change",
+    "model_id": "glm-5.2-ponytail-ultra",
+    "provider": "GreenPT",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.254 -> $1.738325; output: $5.016 -> $5.1589"
+  },
+  {
+    "event_id": "fffe0ecc78953a1f",
+    "type": "price_change",
+    "model_id": "glm-5.2-honey-ultra",
+    "provider": "GreenPT",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.254 -> $1.738325; output: $5.016 -> $5.1589"
+  },
+  {
+    "event_id": "31b97014e838f6fa",
+    "type": "price_change",
+    "model_id": "glm-5.2-caveman",
+    "provider": "GreenPT",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.254 -> $1.738325; output: $5.016 -> $5.1589"
+  },
+  {
+    "event_id": "dc90c0369608fec7",
+    "type": "price_change",
+    "model_id": "glm-5.2-ponytail",
+    "provider": "GreenPT",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.254 -> $1.738325; output: $5.016 -> $5.1589"
+  },
+  {
+    "event_id": "1fd61ba3664feabc",
+    "type": "price_change",
+    "model_id": "glm-5.2-caveman-ultra",
+    "provider": "GreenPT",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.254 -> $1.738325; output: $5.016 -> $5.1589"
+  },
+  {
+    "event_id": "874794b4f7412cda",
+    "type": "price_change",
+    "model_id": "glm-5.2-honey",
+    "provider": "GreenPT",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.254 -> $1.738325; output: $5.016 -> $5.1589"
+  },
+  {
+    "event_id": "408b47fc68eeaf2d",
+    "type": "price_change",
+    "model_id": "glm-5.2-ponytail-lite",
+    "provider": "GreenPT",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.254 -> $1.738325; output: $5.016 -> $5.1589"
+  },
+  {
+    "event_id": "2ba9d72c86ba50ae",
+    "type": "price_change",
+    "model_id": "glm-5.2-honey-lite",
+    "provider": "GreenPT",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $1.254 -> $1.738325; output: $5.016 -> $5.1589"
+  },
+  {
+    "event_id": "30c7ac9001e507d4",
+    "type": "price_change",
+    "model_id": "cerebras/gpt-oss-120b-cs",
+    "provider": "Poe",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.35 -> $0.3535; output: $0.75 -> $0.7576"
+  },
+  {
+    "event_id": "fa56f65cbf4a4833",
+    "type": "price_change",
+    "model_id": "openai/gpt-4o-aug",
+    "provider": "Poe",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $2.2 -> $2.2727; output: $9 -> $9.0909"
+  },
+  {
+    "event_id": "97fa25de8cdadf31",
+    "type": "price_change",
+    "model_id": "openai/gpt-4o-search",
+    "provider": "Poe",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $2.2 -> $2.2727; output: $9 -> $9.0909"
+  },
+  {
+    "event_id": "ab0b3a9abac6ac8d",
+    "type": "price_change",
+    "model_id": "kimi-k2-0905-preview",
+    "provider": "302.AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.632 -> $0.62854; output: $2.53 -> $2.5146"
+  },
+  {
+    "event_id": "b062fa8d34ce4d87",
+    "type": "price_change",
+    "model_id": "doubao-seed-1-8-251215",
+    "provider": "302.AI",
+    "detected_at": "2026-10-21T15:39:06.993319+00:00",
+    "details": "Input: $0.114 -> $0.1143; output: $0.286 -> $0.286"
+  },
+  {
     "event_id": "b649d0dfada97958",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-pro-latest",
@@ -1126,477 +1598,5 @@
     "provider": "Pioneer, SiliconFlow",
     "detected_at": "2026-10-21T11:52:14.084489+00:00",
     "details": "Pioneer: $0.25/$0.25 per 1M; SiliconFlow: $0.1/$0.3 per 1M"
-  },
-  {
-    "event_id": "4e7612a8799c566c",
-    "type": "new_model",
-    "model_id": "google/gemma-4-E2B-it",
-    "provider": "Amazon Bedrock, Pioneer",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Pioneer: $0.1/$0.1 per 1M; Amazon Bedrock: $0.04/$0.08 per 1M"
-  },
-  {
-    "event_id": "22833bb6fde45dfb",
-    "type": "new_model",
-    "model_id": "google/gemma-3-4b-pt",
-    "provider": "Pioneer",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Pioneer: $0.15/$0.15 per 1M"
-  },
-  {
-    "event_id": "e991304e20eec140",
-    "type": "new_model",
-    "model_id": "google/diffusiongemma-26B-A4B-it",
-    "provider": "Nvidia, Pioneer",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Pioneer: $0.5/$0.5 per 1M; Nvidia: $0/$0 per 1M"
-  },
-  {
-    "event_id": "ff42d53a561bbca6",
-    "type": "new_model",
-    "model_id": "HuggingFaceTB/SmolLM3-3B-Base",
-    "provider": "Pioneer",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Pioneer: $0.15/$0.15 per 1M"
-  },
-  {
-    "event_id": "70289d070d05c5af",
-    "type": "new_model",
-    "model_id": "nvidia/nemotron-3.5-lightning",
-    "provider": "Fireworks AI, Kilo Gateway, Merge Gateway, Nebius Token Factory, Nvidia, OpenRouter, Pioneer, Requesty, RunInfra, Thinking Machines",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Pioneer: $0.07/$0.2 per 1M; Merge Gateway: $0/$0 per 1M; RunInfra: $0.05/$0.15 per 1M; Nebius Token Factory: $0.06/$0.24 per 1M; Kilo Gateway: $0.025/$0.12 per 1M; OpenRouter: $0.07/$0.2 per 1M; Requesty: $0/$0 per 1M; Nvidia: $0/$0 per 1M; Fireworks AI: $0.05/$0.2 per 1M; Thinking Machines: $0.184/$0.495 per 1M; Thinking Machines: $0.184/$0.495 per 1M"
-  },
-  {
-    "event_id": "cb415120d10ce7dd",
-    "type": "new_model",
-    "model_id": "nvidia/nemotron-3-super-120b-a12b",
-    "provider": "Boundless, Crusoe, Kenari, Kilo Gateway, Nebius Token Factory, OpenRouter, Pioneer, Requesty, Synthetic, Thinking Machines",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Pioneer: $0.09/$0.45 per 1M; Synthetic: $0.3/$1 per 1M; Crusoe: $0.3/$2.4 per 1M; Boundless: $0.12/$0.52 per 1M; Nebius Token Factory: $0.3/$0.9 per 1M; Kilo Gateway: $0.08/$0.45 per 1M; OpenRouter: $0.3/$2.4 per 1M; Requesty: $0.1/$0.5 per 1M; Requesty: $0/$0 per 1M; Kenari: $0/$0 per 1M; Thinking Machines: $0.57/$1.44 per 1M; Thinking Machines: $0.57/$1.44 per 1M"
-  },
-  {
-    "event_id": "d42006095fbcf042",
-    "type": "new_model",
-    "model_id": "poolside/laguna-s-2.1",
-    "provider": "NanoGPT, OpenRouter, Pioneer, Poolside, Vercel AI Gateway, Vultr",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Pioneer: $0.1/$0.2 per 1M; Vercel AI Gateway: $0.09/$0.18 per 1M; OpenRouter: $0.09/$0.18 per 1M; Vultr: $0.09/$0.18 per 1M; Poolside: $0/$0 per 1M; NanoGPT: $0.1/$0.2 per 1M"
-  },
-  {
-    "event_id": "9a0a897d7e9de23e",
-    "type": "new_model",
-    "model_id": "meta-llama/llama-3.2-3b-instruct",
-    "provider": "Cloudflare Workers AI, DevPass (LLM Gateway), Inference, NanoGPT, Nvidia, OpenRouter, Pioneer",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Pioneer: $0.1/$0.335 per 1M; Cloudflare Workers AI: $0.0509/$0.335 per 1M; OpenRouter: $0.0509/$0.335 per 1M; Inference: $0.02/$0.02 per 1M; DevPass (LLM Gateway): $0.03/$0.05 per 1M; Nvidia: $0/$0 per 1M; NanoGPT: $0.0306/$0.0493 per 1M"
-  },
-  {
-    "event_id": "8b28195c228642d7",
-    "type": "new_model",
-    "model_id": "meta-llama/llama-3.2-1b-instruct",
-    "provider": "Cloudflare Workers AI, Inference, Kilo Gateway, Novita AI, Nvidia, OpenRouter, Pioneer",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Pioneer: $0.1/$0.201 per 1M; Cloudflare Workers AI: $0.027/$0.201 per 1M; Kilo Gateway: $0.027/$0.201 per 1M; Novita AI: $0.02/$0.02 per 1M; OpenRouter: $0.027/$0.201 per 1M; Inference: $0.01/$0.01 per 1M; Nvidia: $0/$0 per 1M"
-  },
-  {
-    "event_id": "45bc531ee1f7634e",
-    "type": "new_model",
-    "model_id": "meta-llama/Llama-3.2-1B",
-    "provider": "Pioneer",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Pioneer: $0.1/$0.1 per 1M"
-  },
-  {
-    "event_id": "6d0d760ebb12b339",
-    "type": "new_model",
-    "model_id": "meta-llama/llama-3.1-8b-instruct",
-    "provider": "Abacus, Amazon Bedrock, Hugging Face, Inference, Kilo Gateway, NanoGPT, Neon, Novita AI, Nvidia, OpenRouter, Pioneer, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Pioneer: $0.2/$0.2 per 1M; Vercel AI Gateway: $0.22/$0.22 per 1M; Hugging Face: $0.06/$0.06 per 1M; Amazon Bedrock: $0.22/$0.22 per 1M; Kilo Gateway: $0.02/$0.04 per 1M; Novita AI: $0.02/$0.05 per 1M; OpenRouter: $0.05/$0.08 per 1M; Inference: $0.025/$0.025 per 1M; Abacus: $0.02/$0.05 per 1M; Nvidia: $0/$0 per 1M; Neon: $0.15/$0.45 per 1M; NanoGPT: $0.02/$0.04 per 1M"
-  },
-  {
-    "event_id": "d754d40d6682e1f9",
-    "type": "new_model",
-    "model_id": "meta-llama/Llama-3.2-3B",
-    "provider": "Pioneer, Venice AI",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Pioneer: $0.1/$0.1 per 1M; Venice AI: $0.15/$0.6 per 1M"
-  },
-  {
-    "event_id": "dac8f5033e7a9f5b",
-    "type": "new_model",
-    "model_id": "qwen3guard-gen-0.6b",
-    "provider": "Cortecs, OVHcloud AI Endpoints",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "OVHcloud AI Endpoints: $0/$0 per 1M; Cortecs: $0/$0 per 1M"
-  },
-  {
-    "event_id": "83416a51af7f5b99",
-    "type": "new_model",
-    "model_id": "qwen/qwen2.5-vl-72b-instruct",
-    "provider": "Alibaba, Alibaba (China), Cortecs, OVHcloud AI Endpoints, OpenRouter, Qiniu",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "OVHcloud AI Endpoints: $1.01/$1.01 per 1M; OpenRouter: $0.8/$1 per 1M; Cortecs: $1.014/$1.014 per 1M; Alibaba (China): $2.294/$6.881 per 1M; Alibaba: $2.8/$8.4 per 1M"
-  },
-  {
-    "event_id": "929fa8e41bb35f5b",
-    "type": "new_model",
-    "model_id": "qwen3guard-gen-8b",
-    "provider": "Cortecs, OVHcloud AI Endpoints",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "OVHcloud AI Endpoints: $0/$0 per 1M; Cortecs: $0/$0 per 1M"
-  },
-  {
-    "event_id": "2efb13964cd40ff4",
-    "type": "new_model",
-    "model_id": "mistral-nemo-instruct-2407",
-    "provider": "Cortecs, IO.NET, Meganova, OVHcloud AI Endpoints",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "OVHcloud AI Endpoints: $0.14/$0.14 per 1M; IO.NET: $0.02/$0.04 per 1M; Cortecs: $0.145/$0.145 per 1M; Meganova: $0.02/$0.04 per 1M"
-  },
-  {
-    "event_id": "f61fe2e2df45060c",
-    "type": "new_model",
-    "model_id": "mistral-small-3.2-24b-instruct-2506",
-    "provider": "Berget.AI, Cortecs, OVHcloud AI Endpoints, Scaleway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "OVHcloud AI Endpoints: $0.1/$0.31 per 1M; Berget.AI: $0.33/$0.33 per 1M; Cortecs: $0.1/$0.312 per 1M; Scaleway: $0.15/$0.35 per 1M"
-  },
-  {
-    "event_id": "526ecb26b44b58aa",
-    "type": "new_model",
-    "model_id": "meta-llama/llama-3.1-70b-instruct",
-    "provider": "Amazon Bedrock, DevPass (LLM Gateway), Kilo Gateway, Nvidia, OpenRouter, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0.72/$0.72 per 1M; Amazon Bedrock: $0.72/$0.72 per 1M; Kilo Gateway: $0.4/$0.4 per 1M; OpenRouter: $0.4/$0.4 per 1M; DevPass (LLM Gateway): $0.72/$0.72 per 1M; Nvidia: $0/$0 per 1M"
-  },
-  {
-    "event_id": "fe02405bd6993415",
-    "type": "new_model",
-    "model_id": "meta/muse-glimmer-30b",
-    "provider": "AI/ML API, DevPass (LLM Gateway), EmpirioLabs AI, Kilo Gateway, NanoGPT, Nvidia, OpenRouter, Requesty, Vercel AI Gateway, Vultr",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0.35/$1.5 per 1M; EmpirioLabs AI: $0.2/$0.8 per 1M; Kilo Gateway: $0.3/$1.2 per 1M; OpenRouter: $0.3/$1.2 per 1M; DevPass (LLM Gateway): $0.3/$1.2 per 1M; AI/ML API: $0.48139/$2.0631 per 1M; Requesty: $0/$0 per 1M; Nvidia: $0/$0 per 1M; Vultr: $0.25/$1 per 1M; NanoGPT: $0.35/$1.5 per 1M"
-  },
-  {
-    "event_id": "cbbe6fb3f69c7f50",
-    "type": "new_model",
-    "model_id": "meta/muse-image-1.0",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": ""
-  },
-  {
-    "event_id": "02396f5a81983943",
-    "type": "new_model",
-    "model_id": "meta/llama-4-maverick",
-    "provider": "Azure, Azure Cognitive Services, Llama, Vercel AI Gateway, watsonx.ai",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0/$0 per 1M; Azure Cognitive Services: $0.25/$1 per 1M; Llama: $0/$0 per 1M; watsonx.ai: $0.371/$1.484 per 1M; Azure: $0.25/$1 per 1M"
-  },
-  {
-    "event_id": "c3f2a32543771e89",
-    "type": "new_model",
-    "model_id": "meta/llama-4-scout",
-    "provider": "Llama, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0/$0 per 1M; Llama: $0/$0 per 1M"
-  },
-  {
-    "event_id": "bcb2e5941eb260ac",
-    "type": "new_model",
-    "model_id": "stealth/glyph-cluster",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0/$0 per 1M"
-  },
-  {
-    "event_id": "e3c1da2d34fe5558",
-    "type": "new_model",
-    "model_id": "anthropic/claude-opus-4.8-fast",
-    "provider": "Venice AI, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $10/$50 per 1M; Venice AI: $10/$50 per 1M"
-  },
-  {
-    "event_id": "dc6f7ec49ca31153",
-    "type": "new_model",
-    "model_id": "anthropic/claude-opus-5-fast",
-    "provider": "Venice AI, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $10/$50 per 1M; Venice AI: $10/$50 per 1M"
-  },
-  {
-    "event_id": "6ec2f794f3dbb2f1",
-    "type": "new_model",
-    "model_id": "anthropic/claude-opus-5.5-fast",
-    "provider": "Venice AI, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $8/$40 per 1M; Venice AI: $8/$40 per 1M"
-  },
-  {
-    "event_id": "d1c2a1d1c4a41dcf",
-    "type": "new_model",
-    "model_id": "heygen/heygen-video-1",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": ""
-  },
-  {
-    "event_id": "7c5b10a9d63bad07",
-    "type": "new_model",
-    "model_id": "openai/gpt-live-1",
-    "provider": "Merge Gateway, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": ""
-  },
-  {
-    "event_id": "427b3bf5f4b92568",
-    "type": "new_model",
-    "model_id": "openai/gpt-realtime-2.1",
-    "provider": "OpenAI, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $4/$24 per 1M; OpenAI: $4/$24 per 1M"
-  },
-  {
-    "event_id": "15bc7d7af2325602",
-    "type": "new_model",
-    "model_id": "openai/gpt-oss-safeguard-20b",
-    "provider": "AI/ML API, Amazon Bedrock, Kilo Gateway, LowRouter, Merge Gateway, NanoGPT, OpenRouter, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0.07/$0.2 per 1M; Merge Gateway: $0.07/$0.2 per 1M; Amazon Bedrock: $0.07/$0.2 per 1M; LowRouter: $0.08/$0.24 per 1M; Kilo Gateway: $0.075/$0.3 per 1M; OpenRouter: $0.075/$0.3 per 1M; AI/ML API: $0.103155/$0.41262 per 1M; NanoGPT: $0.075/$0.3 per 1M"
-  },
-  {
-    "event_id": "905f632c35469146",
-    "type": "new_model",
-    "model_id": "openai/text-embedding-ada-002",
-    "provider": "Azure, Azure Cognitive Services, OpenAI, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "OpenAI: $0.1/$0 per 1M; Azure Cognitive Services: $0.1/$0 per 1M; Azure: $0.1/$0 per 1M"
-  },
-  {
-    "event_id": "883e7c83594a81aa",
-    "type": "new_model",
-    "model_id": "openai/gpt-image-2",
-    "provider": "AIHubMix, Azure, Azure Cognitive Services, FastRouter, Kenari, OpenAI, Poe, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $5/$30 per 1M; OpenAI: $5/$30 per 1M; Azure Cognitive Services: $5/$30 per 1M; AIHubMix: $5/$30 per 1M; Kenari: $0/$0 per 1M; Poe: $5.0505/$32.3232 per 1M; Azure: $5/$30 per 1M"
-  },
-  {
-    "event_id": "3ca9ae49676d5521",
-    "type": "new_model",
-    "model_id": "openai/o4-mini-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $2/$8 per 1M"
-  },
-  {
-    "event_id": "14cc4f77e92aa9bb",
-    "type": "new_model",
-    "model_id": "openai/gpt-4.1-nano-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0.2/$0.8 per 1M"
-  },
-  {
-    "event_id": "13913cf84ce86fba",
-    "type": "new_model",
-    "model_id": "openai/gpt-4o-transcribe",
-    "provider": "DevPass (LLM Gateway), Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $2.5/$10 per 1M; DevPass (LLM Gateway): $2.5/$10 per 1M"
-  },
-  {
-    "event_id": "27af2282e2ff0491",
-    "type": "new_model",
-    "model_id": "openai/tts-1-hd",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": ""
-  },
-  {
-    "event_id": "cff83bc22d34e627",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.6-luna-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0.4/$2.4 per 1M"
-  },
-  {
-    "event_id": "d48fa6c52a68c2f4",
-    "type": "new_model",
-    "model_id": "openai/gpt-realtime-1.5",
-    "provider": "FastRouter, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $4/$16 per 1M; FastRouter: $4/$16 per 1M"
-  },
-  {
-    "event_id": "eecd3c4ca8b21073",
-    "type": "new_model",
-    "model_id": "openai/text-embedding-3-small",
-    "provider": "Azure, Azure Cognitive Services, OpenAI, SAP AI Core, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "OpenAI: $0.02/$0 per 1M; Azure Cognitive Services: $0.02/$0 per 1M; SAP AI Core: $0.02/$0 per 1M; Azure: $0.02/$0 per 1M"
-  },
-  {
-    "event_id": "8927b4967534deb9",
-    "type": "new_model",
-    "model_id": "openai/gpt-3.5-turbo",
-    "provider": "AI/ML API, DevPass (LLM Gateway), Eden AI, Impossibl, Kilo Gateway, Merge Gateway, NanoGPT, OpenAI, OpenRouter, OrcaRouter, Poe, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0.5/$1.5 per 1M; OpenAI: $0.5/$1.5 per 1M; Merge Gateway: $0.5/$1.5 per 1M; Kilo Gateway: $0.5/$1.5 per 1M; OpenRouter: $0.5/$1.5 per 1M; DevPass (LLM Gateway): $0.5/$1.5 per 1M; Impossibl: $0.5/$1.5 per 1M; Eden AI: $0.5/$1.5 per 1M; AI/ML API: $0.65/$1.95 per 1M; Poe: $0.45/$1.4 per 1M; OrcaRouter: $0.5/$1.5 per 1M; NanoGPT: $0.5/$1.5 per 1M"
-  },
-  {
-    "event_id": "0aaa5159705939ea",
-    "type": "new_model",
-    "model_id": "openai/gpt-image-1.5",
-    "provider": "AIHubMix, Azure, Azure Cognitive Services, OpenAI, Poe, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $5/$32 per 1M; Azure Cognitive Services: $5/$32 per 1M; AIHubMix: $5/$32 per 1M; Azure: $5/$32 per 1M"
-  },
-  {
-    "event_id": "e39d3349520b7026",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.4-mini-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $1.5/$9 per 1M"
-  },
-  {
-    "event_id": "05f810c9edcfe7ee",
-    "type": "new_model",
-    "model_id": "openai/gpt-image-2.5-sunburst",
-    "provider": "AIHubMix, Azure, Azure Cognitive Services, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $5/$30 per 1M; Azure Cognitive Services: $5/$30 per 1M; AIHubMix: $5/$30 per 1M; Azure: $5/$30 per 1M"
-  },
-  {
-    "event_id": "52335a49e9892ff1",
-    "type": "new_model",
-    "model_id": "openai/gpt-5-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $2.5/$20 per 1M"
-  },
-  {
-    "event_id": "9212d9c81b741f17",
-    "type": "new_model",
-    "model_id": "openai/o3-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $3.5/$14 per 1M"
-  },
-  {
-    "event_id": "cdcd41ed6ed9f2c8",
-    "type": "new_model",
-    "model_id": "openai/gpt-image-1-mini",
-    "provider": "OpenAI, Poe, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $2/$8 per 1M"
-  },
-  {
-    "event_id": "8e2fb20d11f2d468",
-    "type": "new_model",
-    "model_id": "openai/gpt-4.1-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $3.5/$14 per 1M"
-  },
-  {
-    "event_id": "b61a9b632a46857b",
-    "type": "new_model",
-    "model_id": "openai/gpt-5-mini-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0.45/$3.6 per 1M"
-  },
-  {
-    "event_id": "f2826c42109fc16d",
-    "type": "new_model",
-    "model_id": "openai/gpt-realtime-2",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $4/$24 per 1M"
-  },
-  {
-    "event_id": "5ff0d7905979757c",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.3-codex-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $3.5/$28 per 1M"
-  },
-  {
-    "event_id": "cce1cf2022f0bd21",
-    "type": "new_model",
-    "model_id": "openai/gpt-image-2.5-flare",
-    "provider": "AIHubMix, Azure, Azure Cognitive Services, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $5/$30 per 1M; Azure Cognitive Services: $5/$30 per 1M; AIHubMix: $5/$30 per 1M; Azure: $5/$30 per 1M"
-  },
-  {
-    "event_id": "18335ab3f7f3c761",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.4-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $5/$30 per 1M"
-  },
-  {
-    "event_id": "bdb3957e7fd8833e",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.1-thinking",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $1.25/$10 per 1M"
-  },
-  {
-    "event_id": "7bac105679496f75",
-    "type": "new_model",
-    "model_id": "openai/whisper-1",
-    "provider": "Groq, Merge Gateway, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": ""
-  },
-  {
-    "event_id": "4235d866b1b04caf",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.1-thinking-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $2.5/$20 per 1M"
-  },
-  {
-    "event_id": "3a4ba04c29fe3f28",
-    "type": "new_model",
-    "model_id": "openai/gpt-oss-safeguard-120b",
-    "provider": "Amazon Bedrock, Cortecs, LowRouter, Merge Gateway, Tinfoil, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0.15/$0.6 per 1M; Merge Gateway: $0.15/$0.6 per 1M; Amazon Bedrock: $0.15/$0.6 per 1M; LowRouter: $0.18/$0.73 per 1M; Cortecs: $0.179/$0.697 per 1M; Tinfoil: $0.15/$0.6 per 1M"
-  },
-  {
-    "event_id": "d434d6284fa7f9fc",
-    "type": "new_model",
-    "model_id": "openai/gpt-4.1-mini-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0.7/$2.8 per 1M"
-  },
-  {
-    "event_id": "eb5527cd274da3db",
-    "type": "new_model",
-    "model_id": "openai/gpt-realtime-whisper",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": ""
-  },
-  {
-    "event_id": "d8b719dafe099ca4",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.6-sol-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $8/$40 per 1M"
   }
 ]
