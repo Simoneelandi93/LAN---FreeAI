@@ -7,14 +7,12 @@
     "score": 24.66,
     "mu": 35.95,
     "games_played": 1,
-    "reasoning_rank": 183,
+    "reasoning_rank": 182,
     "reasoning_score": 23.86,
     "coding_rank": null,
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 84.0
     },
@@ -32,11 +30,9 @@
     "reasoning_rank": 318,
     "reasoning_score": 5.02,
     "coding_rank": null,
-    "coding_score": 40.6,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 41.6,
       "SWE-bench Verified": 40.6,
@@ -59,8 +55,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 59.4
     },
@@ -78,11 +72,9 @@
     "reasoning_rank": 215,
     "reasoning_score": 19.76,
     "coding_rank": null,
-    "coding_score": 49.0,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 67.2,
       "SWE-bench Verified": 49.0,
@@ -103,11 +95,9 @@
     "reasoning_rank": 188,
     "reasoning_score": 22.83,
     "coding_rank": null,
-    "coding_score": 70.3,
-    "agent_rank": 171,
+    "coding_score": null,
+    "agent_rank": 172,
     "agent_score": 4.79,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 84.8,
       "AIME 2025": 54.8,
@@ -133,8 +123,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 33.3
     },
@@ -155,8 +143,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 50.4
     },
@@ -177,8 +163,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 40.4
     },
@@ -196,11 +180,9 @@
     "reasoning_rank": 10,
     "reasoning_score": 51.12,
     "coding_rank": null,
-    "coding_score": 95.0,
+    "coding_score": null,
     "agent_rank": 8,
     "agent_score": 38.66,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "HLE": 64.5,
       "SWE-bench Verified": 95.0,
@@ -223,8 +205,6 @@
     "coding_score": null,
     "agent_rank": 11,
     "agent_score": 38.21,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "HLE": 65.0
     },
@@ -242,11 +222,9 @@
     "reasoning_rank": 175,
     "reasoning_score": 25.13,
     "coding_rank": null,
-    "coding_score": 73.3,
+    "coding_score": null,
     "agent_rank": 114,
     "agent_score": 13.34,
-    "license": "proprietary",
-    "speed": 100.0,
     "benchmarks": {
       "GPQA": 73.0,
       "AIME 2025": 80.7,
@@ -269,11 +247,9 @@
     "reasoning_rank": 25,
     "reasoning_score": 47.22,
     "coding_rank": null,
-    "coding_score": 64.8,
+    "coding_score": null,
     "agent_rank": 29,
     "agent_score": 33.88,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Pro": 64.8
     },
@@ -294,8 +270,6 @@
     "coding_score": null,
     "agent_rank": 28,
     "agent_score": 34.08,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/claude-mythos-5-1"
@@ -311,11 +285,9 @@
     "reasoning_rank": 4,
     "reasoning_score": 55.44,
     "coding_rank": null,
-    "coding_score": 93.9,
+    "coding_score": null,
     "agent_rank": 19,
     "agent_score": 36.64,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 94.6,
       "HLE": 64.7,
@@ -338,11 +310,9 @@
     "reasoning_rank": 141,
     "reasoning_score": 29.75,
     "coding_rank": null,
-    "coding_score": 74.5,
+    "coding_score": null,
     "agent_rank": 119,
     "agent_score": 12.8,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 80.9,
       "AIME 2025": 78.0,
@@ -365,11 +335,9 @@
     "reasoning_rank": 156,
     "reasoning_score": 27.61,
     "coding_rank": null,
-    "coding_score": 72.5,
+    "coding_score": null,
     "agent_rank": 155,
     "agent_score": 8.14,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 79.6,
       "AIME 2025": 75.5,
@@ -392,11 +360,9 @@
     "reasoning_rank": 69,
     "reasoning_score": 39.87,
     "coding_rank": null,
-    "coding_score": 80.9,
+    "coding_score": null,
     "agent_rank": 93,
     "agent_score": 17.6,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 87.0,
       "SWE-bench Verified": 80.9,
@@ -419,11 +385,9 @@
     "reasoning_rank": 38,
     "reasoning_score": 45.25,
     "coding_rank": null,
-    "coding_score": 80.8,
+    "coding_score": null,
     "agent_rank": 59,
     "agent_score": 27.37,
-    "license": "proprietary",
-    "speed": 42.0,
     "benchmarks": {
       "GPQA": 91.3,
       "AIME 2025": 99.8,
@@ -446,11 +410,9 @@
     "reasoning_rank": 36,
     "reasoning_score": 45.43,
     "coding_rank": null,
-    "coding_score": 87.6,
+    "coding_score": null,
     "agent_rank": 45,
     "agent_score": 30.29,
-    "license": "proprietary",
-    "speed": 42.0,
     "benchmarks": {
       "GPQA": 94.2,
       "HLE": 54.7,
@@ -473,11 +435,9 @@
     "reasoning_rank": 15,
     "reasoning_score": 49.82,
     "coding_rank": null,
-    "coding_score": 88.6,
+    "coding_score": null,
     "agent_rank": 32,
     "agent_score": 33.79,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 93.6,
       "HLE": 57.9,
@@ -503,8 +463,6 @@
     "coding_score": null,
     "agent_rank": 10,
     "agent_score": 38.33,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "HLE": 64.7,
       "BrowseComp": 90.8
@@ -523,11 +481,9 @@
     "reasoning_rank": 1,
     "reasoning_score": 59.33,
     "coding_rank": null,
-    "coding_score": 89.9,
+    "coding_score": null,
     "agent_rank": 1,
     "agent_score": 45.42,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Pro": 89.9
     },
@@ -545,11 +501,9 @@
     "reasoning_rank": 180,
     "reasoning_score": 24.13,
     "coding_rank": null,
-    "coding_score": 72.7,
+    "coding_score": null,
     "agent_rank": 166,
     "agent_score": 5.59,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 75.4,
       "AIME 2025": 70.5,
@@ -575,8 +529,6 @@
     "coding_score": null,
     "agent_rank": 95,
     "agent_score": 17.11,
-    "license": "proprietary",
-    "speed": 42.0,
     "benchmarks": {
       "GPQA": 83.4,
       "AIME 2025": 87.0,
@@ -592,18 +544,16 @@
     "id": "claude-sonnet-4-6",
     "name": "Claude Sonnet 4.6",
     "organization": "Anthropic",
-    "rank": 92,
+    "rank": 91,
     "score": 36.7,
     "mu": 39.58,
     "games_played": 22,
     "reasoning_rank": 80,
     "reasoning_score": 37.97,
     "coding_rank": null,
-    "coding_score": 79.6,
-    "agent_rank": 72,
+    "coding_score": null,
+    "agent_rank": 71,
     "agent_score": 23.73,
-    "license": "proprietary",
-    "speed": 42.0,
     "benchmarks": {
       "GPQA": 89.9,
       "HLE": 49.0,
@@ -626,11 +576,9 @@
     "reasoning_rank": 28,
     "reasoning_score": 46.93,
     "coding_rank": null,
-    "coding_score": 85.2,
+    "coding_score": null,
     "agent_rank": 47,
     "agent_score": 29.96,
-    "license": "proprietary",
-    "speed": 42.0,
     "benchmarks": {
       "HLE": 57.4,
       "SWE-bench Verified": 85.2,
@@ -653,11 +601,9 @@
     "reasoning_rank": 3,
     "reasoning_score": 57.07,
     "coding_rank": null,
-    "coding_score": 81.3,
+    "coding_score": null,
     "agent_rank": 3,
     "agent_score": 43.21,
-    "license": "proprietary",
-    "speed": 42.0,
     "benchmarks": {
       "SWE-bench Pro": 81.3
     },
@@ -678,8 +624,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mnpl_0_1",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/codestral-22b"
@@ -698,8 +642,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 90.0,
       "MMMU": 75.1,
@@ -724,8 +666,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "cc_by_nc",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/command-r-plus-04-2024"
@@ -744,8 +684,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": 100.0,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/deepseek-chat"
@@ -764,8 +702,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/deepseek-r1"
@@ -781,11 +717,9 @@
     "reasoning_rank": 186,
     "reasoning_score": 23.41,
     "coding_rank": null,
-    "coding_score": 44.6,
+    "coding_score": null,
     "agent_rank": 209,
     "agent_score": -12.07,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 81.0,
       "AIME 2025": 87.5,
@@ -811,8 +745,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 65.2
     },
@@ -833,8 +765,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 49.0
     },
@@ -849,14 +779,12 @@
     "score": 10.6,
     "mu": 16.8,
     "games_played": 4,
-    "reasoning_rank": 281,
+    "reasoning_rank": 280,
     "reasoning_score": 10.92,
     "coding_rank": null,
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 59.1
     },
@@ -877,8 +805,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 33.8
     },
@@ -899,8 +825,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 62.1
     },
@@ -921,8 +845,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 49.1
     },
@@ -943,8 +865,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 73.3
     },
@@ -962,11 +882,9 @@
     "reasoning_rank": 121,
     "reasoning_score": 32.45,
     "coding_rank": null,
-    "coding_score": 73.1,
+    "coding_score": null,
     "agent_rank": 133,
     "agent_score": 11.05,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 82.4,
       "AIME 2025": 93.1,
@@ -986,14 +904,12 @@
     "score": 7.75,
     "mu": 11.96,
     "games_played": 11,
-    "reasoning_rank": 301,
+    "reasoning_rank": 302,
     "reasoning_score": 7.85,
     "coding_rank": null,
-    "coding_score": 16.8,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "deepseek",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 16.8
     },
@@ -1011,11 +927,9 @@
     "reasoning_rank": 251,
     "reasoning_score": 14.44,
     "coding_rank": null,
-    "coding_score": 42.0,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit_+_model_license_(commercial_use_allowed)",
-    "speed": null,
     "benchmarks": {
       "GPQA": 59.1,
       "SWE-bench Verified": 42.0,
@@ -1038,8 +952,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit_+_model_license_(commercial_use_allowed)",
-    "speed": null,
     "benchmarks": {
       "GPQA": 68.4
     },
@@ -1057,11 +969,9 @@
     "reasoning_rank": 194,
     "reasoning_score": 22.04,
     "coding_rank": null,
-    "coding_score": 66.0,
+    "coding_score": null,
     "agent_rank": 196,
     "agent_score": 0.15,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 74.9,
       "AIME 2025": 49.8,
@@ -1084,11 +994,9 @@
     "reasoning_rank": 115,
     "reasoning_score": 33.08,
     "coding_rank": null,
-    "coding_score": 73.1,
+    "coding_score": null,
     "agent_rank": 126,
     "agent_score": 12.02,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 82.4,
       "AIME 2025": 93.1,
@@ -1111,11 +1019,9 @@
     "reasoning_rank": 154,
     "reasoning_score": 27.81,
     "coding_rank": null,
-    "coding_score": 67.8,
+    "coding_score": null,
     "agent_rank": 165,
     "agent_score": 5.72,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 79.9,
       "AIME 2025": 89.3,
@@ -1138,11 +1044,9 @@
     "reasoning_rank": 122,
     "reasoning_score": 32.37,
     "coding_rank": null,
-    "coding_score": 73.1,
+    "coding_score": null,
     "agent_rank": 134,
     "agent_score": 10.95,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 96.0,
       "HLE": 30.6,
@@ -1166,8 +1070,6 @@
     "coding_score": null,
     "agent_rank": 12,
     "agent_score": 38.16,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 90.9,
       "HLE": 36.8
@@ -1189,8 +1091,6 @@
     "coding_score": null,
     "agent_rank": 9,
     "agent_score": 38.56,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "HLE": 42.6
     },
@@ -1208,11 +1108,9 @@
     "reasoning_rank": 88,
     "reasoning_score": 36.94,
     "coding_rank": null,
-    "coding_score": 78.6,
+    "coding_score": null,
     "agent_rank": 101,
     "agent_score": 15.81,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 87.4,
       "HLE": 40.3,
@@ -1238,8 +1136,6 @@
     "coding_score": null,
     "agent_rank": 51,
     "agent_score": 28.86,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "Toolathlon": 70.3
     },
@@ -1257,11 +1153,9 @@
     "reasoning_rank": 71,
     "reasoning_score": 39.7,
     "coding_rank": null,
-    "coding_score": 79.0,
+    "coding_score": null,
     "agent_rank": 88,
     "agent_score": 18.33,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 88.1,
       "HLE": 45.1,
@@ -1287,8 +1181,6 @@
     "coding_score": null,
     "agent_rank": 46,
     "agent_score": 30.27,
-    "license": "unknown",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/deepseek-v4-flash-vision-exp"
@@ -1307,8 +1199,6 @@
     "coding_score": null,
     "agent_rank": 24,
     "agent_score": 35.25,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "HLE": 60.0,
       "Toolathlon": 74.1
@@ -1327,11 +1217,9 @@
     "reasoning_rank": 53,
     "reasoning_score": 43.14,
     "coding_rank": null,
-    "coding_score": 80.6,
+    "coding_score": null,
     "agent_rank": 73,
     "agent_score": 23.63,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 90.1,
       "HLE": 48.2,
@@ -1357,8 +1245,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "deepseek",
-    "speed": null,
     "benchmarks": {
       "MMMU": 51.1
     },
@@ -1379,8 +1265,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "deepseek",
-    "speed": null,
     "benchmarks": {
       "MMMU": 48.0
     },
@@ -1401,8 +1285,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "deepseek",
-    "speed": null,
     "benchmarks": {
       "MMMU": 40.7
     },
@@ -1420,11 +1302,9 @@
     "reasoning_rank": 258,
     "reasoning_score": 13.36,
     "coding_rank": null,
-    "coding_score": 61.6,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 61.6
     },
@@ -1442,11 +1322,9 @@
     "reasoning_rank": 291,
     "reasoning_score": 8.77,
     "coding_rank": null,
-    "coding_score": 53.6,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 53.6
     },
@@ -1467,8 +1345,6 @@
     "coding_score": null,
     "agent_rank": 195,
     "agent_score": 0.49,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 73.2,
       "HLE": 11.9,
@@ -1489,11 +1365,9 @@
     "reasoning_rank": 76,
     "reasoning_score": 38.66,
     "coding_rank": null,
-    "coding_score": 92.2,
+    "coding_score": null,
     "agent_rank": 57,
     "agent_score": 28.38,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 92.2
     },
@@ -1514,8 +1388,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 74.0,
       "SimpleQA": 1.8
@@ -1537,8 +1409,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 85.0,
       "AIME 2025": 87.0,
@@ -1562,8 +1432,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 80.5,
       "AIME 2025": 92.9,
@@ -1587,8 +1455,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 27.9,
       "MMMU": 47.9
@@ -1610,8 +1476,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 51.0,
       "MMMU": 62.3
@@ -1633,8 +1497,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 38.4,
       "MMMU": 53.7
@@ -1646,7 +1508,7 @@
     "id": "gemini-1.5-pro",
     "name": "Gemini 1.5 Pro",
     "organization": "Google",
-    "rank": 278,
+    "rank": 279,
     "score": 11.7,
     "mu": 14.87,
     "games_played": 21,
@@ -1656,8 +1518,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 59.1,
       "MMMU": 65.9
@@ -1679,8 +1539,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 62.1,
       "MMMU": 70.7
@@ -1702,8 +1560,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 51.5,
       "MMMU": 68.0,
@@ -1726,8 +1582,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 74.2,
       "MMMU": 75.4
@@ -1746,11 +1600,9 @@
     "reasoning_rank": 203,
     "reasoning_score": 21.19,
     "coding_rank": null,
-    "coding_score": 60.4,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 82.8,
       "AIME 2025": 72.0,
@@ -1773,11 +1625,9 @@
     "reasoning_rank": 282,
     "reasoning_score": 10.6,
     "coding_rank": null,
-    "coding_score": 31.6,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "creative_commons_attribution_4_0_license",
-    "speed": null,
     "benchmarks": {
       "GPQA": 64.6,
       "AIME 2025": 49.8,
@@ -1800,11 +1650,9 @@
     "reasoning_rank": 161,
     "reasoning_score": 27.02,
     "coding_rank": null,
-    "coding_score": 63.2,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 83.0,
       "AIME 2025": 83.0,
@@ -1827,11 +1675,9 @@
     "reasoning_rank": 152,
     "reasoning_score": 28.1,
     "coding_rank": null,
-    "coding_score": 67.2,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 86.4,
       "AIME 2025": 88.0,
@@ -1857,8 +1703,6 @@
     "coding_score": null,
     "agent_rank": 135,
     "agent_score": 10.53,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 86.9,
       "HLE": 16.0,
@@ -1881,11 +1725,9 @@
     "reasoning_rank": 41,
     "reasoning_score": 44.92,
     "coding_rank": null,
-    "coding_score": 80.6,
+    "coding_score": null,
     "agent_rank": 67,
     "agent_score": 24.08,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 94.3,
       "HLE": 51.4,
@@ -1908,11 +1750,9 @@
     "reasoning_rank": 52,
     "reasoning_score": 43.2,
     "coding_rank": null,
-    "coding_score": 55.1,
+    "coding_score": null,
     "agent_rank": 56,
     "agent_score": 28.4,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "HLE": 40.2,
       "SWE-bench Pro": 55.1,
@@ -1928,7 +1768,7 @@
     "id": "gemini-3.5-flash-cyber",
     "name": "Gemini 3.5 Flash Cyber",
     "organization": "Google",
-    "rank": 87,
+    "rank": 88,
     "score": 36.97,
     "mu": 48.59,
     "games_played": 1,
@@ -1938,8 +1778,6 @@
     "coding_score": null,
     "agent_rank": 65,
     "agent_score": 25.97,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/gemini-3.5-flash-cyber"
@@ -1952,14 +1790,12 @@
     "score": 29.63,
     "mu": 35.34,
     "games_played": 5,
-    "reasoning_rank": 171,
+    "reasoning_rank": 172,
     "reasoning_score": 25.88,
     "coding_rank": null,
-    "coding_score": 54.2,
+    "coding_score": null,
     "agent_rank": 104,
     "agent_score": 15.62,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Pro": 54.2,
       "CharXiv-R": 76.5,
@@ -1979,11 +1815,9 @@
     "reasoning_rank": 70,
     "reasoning_score": 39.77,
     "coding_rank": null,
-    "coding_score": 58.7,
+    "coding_score": null,
     "agent_rank": 62,
     "agent_score": 26.34,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Pro": 58.7,
       "CharXiv-R": 89.4,
@@ -2006,8 +1840,6 @@
     "coding_score": null,
     "agent_rank": 39,
     "agent_score": 31.52,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "CharXiv-R": 88.7,
       "MRCR v2": 97.0
@@ -2029,8 +1861,6 @@
     "coding_score": null,
     "agent_rank": 31,
     "agent_score": 33.8,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "CharXiv-R": 86.2
     },
@@ -2051,8 +1881,6 @@
     "coding_score": null,
     "agent_rank": 54,
     "agent_score": 28.48,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/gemini-3.8-flash-cyber"
@@ -2068,11 +1896,9 @@
     "reasoning_rank": 83,
     "reasoning_score": 37.56,
     "coding_rank": null,
-    "coding_score": 78.0,
+    "coding_score": null,
     "agent_rank": 92,
     "agent_score": 17.64,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 90.4,
       "AIME 2025": 99.7,
@@ -2095,11 +1921,9 @@
     "reasoning_rank": 78,
     "reasoning_score": 38.47,
     "coding_rank": null,
-    "coding_score": 76.2,
+    "coding_score": null,
     "agent_rank": 107,
     "agent_score": 15.34,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 91.9,
       "AIME 2025": 100.0,
@@ -2125,8 +1949,6 @@
     "coding_score": null,
     "agent_rank": 4,
     "agent_score": 41.06,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/gemini-4-argon"
@@ -2142,11 +1964,9 @@
     "reasoning_rank": 339,
     "reasoning_score": 0.56,
     "coding_rank": null,
-    "coding_score": 22.9,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 40.4,
       "AIME 2025": 23.3,
@@ -2169,8 +1989,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "gemma",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/gemma-2-27b-it"
@@ -2189,8 +2007,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "gemma",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/gemma-2-9b-it"
@@ -2209,8 +2025,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "gemma",
-    "speed": null,
     "benchmarks": {
       "GPQA": 40.9,
       "SimpleQA": 6.3
@@ -2232,8 +2046,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "gemma",
-    "speed": null,
     "benchmarks": {
       "GPQA": 19.2,
       "SimpleQA": 2.2
@@ -2255,8 +2067,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "gemma",
-    "speed": null,
     "benchmarks": {
       "GPQA": 42.4,
       "SimpleQA": 10.0,
@@ -2279,8 +2089,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "gemma",
-    "speed": null,
     "benchmarks": {
       "GPQA": 30.8,
       "SimpleQA": 4.0
@@ -2302,8 +2110,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/gemma-3n-e2b"
@@ -2322,8 +2128,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 24.8,
       "AIME 2025": 6.7
@@ -2345,8 +2149,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "gemma",
-    "speed": null,
     "benchmarks": {
       "GPQA": 24.8,
       "AIME 2025": 6.7
@@ -2368,8 +2170,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/gemma-3n-e4b"
@@ -2388,8 +2188,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 23.7,
       "AIME 2025": 11.6
@@ -2411,8 +2209,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "gemma",
-    "speed": null,
     "benchmarks": {
       "GPQA": 23.7,
       "AIME 2025": 11.6
@@ -2434,8 +2230,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 78.8,
       "HLE": 5.2,
@@ -2460,8 +2254,6 @@
     "coding_score": null,
     "agent_rank": 120,
     "agent_score": 12.7,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 82.3,
       "HLE": 17.2,
@@ -2486,8 +2278,6 @@
     "coding_score": null,
     "agent_rank": 112,
     "agent_score": 13.66,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 84.3,
       "HLE": 26.5,
@@ -2512,8 +2302,6 @@
     "coding_score": null,
     "agent_rank": 204,
     "agent_score": -3.58,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 43.4,
       "MMMU-Pro": 44.2,
@@ -2537,8 +2325,6 @@
     "coding_score": null,
     "agent_rank": 190,
     "agent_score": 1.87,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 58.6,
       "MMMU-Pro": 52.6,
@@ -2559,11 +2345,9 @@
     "reasoning_rank": 163,
     "reasoning_score": 26.95,
     "coding_rank": null,
-    "coding_score": 64.2,
+    "coding_score": null,
     "agent_rank": 142,
     "agent_score": 9.74,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 79.1,
       "HLE": 14.4,
@@ -2586,11 +2370,9 @@
     "reasoning_rank": 185,
     "reasoning_score": 23.48,
     "coding_rank": null,
-    "coding_score": 57.6,
+    "coding_score": null,
     "agent_rank": 164,
     "agent_score": 5.82,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 75.0,
       "HLE": 10.6,
@@ -2616,8 +2398,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/glm-4.5v"
@@ -2633,11 +2413,9 @@
     "reasoning_rank": 147,
     "reasoning_score": 28.69,
     "coding_rank": null,
-    "coding_score": 68.0,
+    "coding_score": null,
     "agent_rank": 148,
     "agent_score": 9.05,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 81.0,
       "AIME 2025": 93.9,
@@ -2660,11 +2438,9 @@
     "reasoning_rank": 108,
     "reasoning_score": 34.06,
     "coding_rank": null,
-    "coding_score": 73.8,
+    "coding_score": null,
     "agent_rank": 145,
     "agent_score": 9.37,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 85.7,
       "AIME 2025": 95.7,
@@ -2687,11 +2463,9 @@
     "reasoning_rank": 187,
     "reasoning_score": 23.18,
     "coding_rank": null,
-    "coding_score": 59.2,
+    "coding_score": null,
     "agent_rank": 177,
     "agent_score": 4.28,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 75.2,
       "AIME 2025": 91.6,
@@ -2706,18 +2480,16 @@
     "id": "glm-5",
     "name": "GLM-5",
     "organization": "Zhipu AI",
-    "rank": 88,
+    "rank": 87,
     "score": 36.97,
     "mu": 42.62,
     "games_played": 5,
     "reasoning_rank": 85,
     "reasoning_score": 37.29,
     "coding_rank": null,
-    "coding_score": 77.8,
+    "coding_score": null,
     "agent_rank": 83,
     "agent_score": 19.61,
-    "license": "mit",
-    "speed": 30.0,
     "benchmarks": {
       "SWE-bench Verified": 77.8,
       "BrowseComp": 75.9,
@@ -2737,11 +2509,9 @@
     "reasoning_rank": 75,
     "reasoning_score": 38.8,
     "coding_rank": null,
-    "coding_score": 58.4,
+    "coding_score": null,
     "agent_rank": 70,
     "agent_score": 23.81,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 86.2,
       "HLE": 52.3,
@@ -2764,11 +2534,9 @@
     "reasoning_rank": 43,
     "reasoning_score": 44.45,
     "coding_rank": null,
-    "coding_score": 62.1,
+    "coding_score": null,
     "agent_rank": 52,
     "agent_score": 28.78,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 91.2,
       "HLE": 54.7,
@@ -2793,8 +2561,6 @@
     "coding_score": null,
     "agent_rank": 18,
     "agent_score": 36.88,
-    "license": "glm_5_3",
-    "speed": null,
     "benchmarks": {
       "HLE": 62.5,
       "Toolathlon": 73.0
@@ -2816,8 +2582,6 @@
     "coding_score": null,
     "agent_rank": 27,
     "agent_score": 34.66,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "HLE": 55.3,
       "CharXiv-R": 89.4,
@@ -2834,14 +2598,12 @@
     "score": 30.16,
     "mu": 35.27,
     "games_played": 9,
-    "reasoning_rank": 302,
+    "reasoning_rank": 301,
     "reasoning_score": 7.85,
     "coding_rank": null,
     "coding_score": null,
     "agent_rank": 87,
     "agent_score": 18.73,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "OSWorld": 62.3
     },
@@ -2862,8 +2624,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 100.0,
     "benchmarks": {
       "GPQA": 30.8,
       "MMMU": 0.0
@@ -2885,8 +2645,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 35.7
     },
@@ -2904,11 +2662,9 @@
     "reasoning_rank": 231,
     "reasoning_score": 18.07,
     "coding_rank": null,
-    "coding_score": 54.6,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 100.0,
     "benchmarks": {
       "GPQA": 66.3,
       "AIME 2025": 46.4,
@@ -2931,11 +2687,9 @@
     "reasoning_rank": 256,
     "reasoning_score": 13.64,
     "coding_rank": null,
-    "coding_score": 23.6,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 150.0,
     "benchmarks": {
       "GPQA": 65.0,
       "AIME 2025": 40.2,
@@ -2961,8 +2715,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 200.0,
     "benchmarks": {
       "GPQA": 50.3,
       "MMMU": 55.4,
@@ -2984,11 +2736,9 @@
     "reasoning_rank": 211,
     "reasoning_score": 20.11,
     "coding_rank": null,
-    "coding_score": 38.0,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 69.5,
       "SWE-bench Verified": 38.0,
@@ -3014,8 +2764,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 100.0,
     "benchmarks": {
       "GPQA": 53.6
     },
@@ -3033,11 +2781,9 @@
     "reasoning_rank": 243,
     "reasoning_score": 15.56,
     "coding_rank": null,
-    "coding_score": 33.2,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 132.0,
     "benchmarks": {
       "GPQA": 70.1,
       "HLE": 5.3,
@@ -3060,11 +2806,9 @@
     "reasoning_rank": 321,
     "reasoning_score": 3.74,
     "coding_rank": null,
-    "coding_score": 8.7,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 40.2,
       "SWE-bench Verified": 8.7,
@@ -3087,8 +2831,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 100.0,
     "benchmarks": {
       "GPQA": 48.0
     },
@@ -3106,11 +2848,9 @@
     "reasoning_rank": 93,
     "reasoning_score": 36.2,
     "coding_rank": null,
-    "coding_score": 76.3,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 100.0,
     "benchmarks": {
       "GPQA": 88.1,
       "AIME 2025": 94.0,
@@ -3132,11 +2872,9 @@
     "reasoning_rank": 142,
     "reasoning_score": 29.69,
     "coding_rank": null,
-    "coding_score": 73.7,
+    "coding_score": null,
     "agent_rank": 136,
     "agent_score": 10.5,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 73.7
     },
@@ -3157,8 +2895,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 96.7
     },
@@ -3179,8 +2915,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 42.1
     },
@@ -3201,8 +2935,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 88.1,
       "AIME 2025": 99.6
@@ -3221,11 +2953,9 @@
     "reasoning_rank": 92,
     "reasoning_score": 36.34,
     "coding_rank": null,
-    "coding_score": 76.3,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 100.0,
     "benchmarks": {
       "GPQA": 88.1,
       "AIME 2025": 94.0,
@@ -3240,7 +2970,7 @@
     "id": "gpt-5.1-medium-2025-11-12",
     "name": "GPT-5.1 Medium",
     "organization": "OpenAI",
-    "rank": 133,
+    "rank": 134,
     "score": 31.1,
     "mu": 42.44,
     "games_played": 1,
@@ -3250,8 +2980,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 90.0,
     "benchmarks": {
       "AIME 2025": 98.4
     },
@@ -3262,18 +2990,16 @@
     "id": "gpt-5.1-thinking-2025-11-12",
     "name": "GPT-5.1 Thinking",
     "organization": "OpenAI",
-    "rank": 91,
+    "rank": 92,
     "score": 36.7,
     "mu": 41.07,
     "games_played": 9,
     "reasoning_rank": 91,
     "reasoning_score": 36.43,
     "coding_rank": null,
-    "coding_score": 76.3,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 88.1,
       "AIME 2025": 94.0,
@@ -3295,11 +3021,9 @@
     "reasoning_rank": 109,
     "reasoning_score": 33.98,
     "coding_rank": null,
-    "coding_score": 74.9,
+    "coding_score": null,
     "agent_rank": 150,
     "agent_score": 8.89,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 85.7,
       "AIME 2025": 94.6,
@@ -3322,11 +3046,9 @@
     "reasoning_rank": 65,
     "reasoning_score": 40.53,
     "coding_rank": null,
-    "coding_score": 80.0,
+    "coding_score": null,
     "agent_rank": 111,
     "agent_score": 14.62,
-    "license": "proprietary",
-    "speed": 100.0,
     "benchmarks": {
       "GPQA": 92.4,
       "AIME 2025": 100.0,
@@ -3349,11 +3071,9 @@
     "reasoning_rank": 105,
     "reasoning_score": 34.58,
     "coding_rank": null,
-    "coding_score": 56.4,
+    "coding_score": null,
     "agent_rank": 84,
     "agent_score": 19.24,
-    "license": "proprietary",
-    "speed": 50.0,
     "benchmarks": {
       "SWE-bench Pro": 56.4
     },
@@ -3374,8 +3094,6 @@
     "coding_score": null,
     "agent_rank": 90,
     "agent_score": 18.03,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 93.2,
       "AIME 2025": 100.0,
@@ -3400,8 +3118,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 100.0,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/gpt-5.3-chat-latest"
@@ -3417,11 +3133,9 @@
     "reasoning_rank": 86,
     "reasoning_score": 37.04,
     "coding_rank": null,
-    "coding_score": 56.8,
+    "coding_score": null,
     "agent_rank": 75,
     "agent_score": 22.87,
-    "license": "proprietary",
-    "speed": 50.0,
     "benchmarks": {
       "SWE-bench Pro": 56.8
     },
@@ -3439,11 +3153,9 @@
     "reasoning_rank": 58,
     "reasoning_score": 42.22,
     "coding_rank": null,
-    "coding_score": 57.7,
+    "coding_score": null,
     "agent_rank": 63,
     "agent_score": 26.17,
-    "license": "proprietary",
-    "speed": 50.0,
     "benchmarks": {
       "GPQA": 92.8,
       "HLE": 39.8,
@@ -3466,11 +3178,9 @@
     "reasoning_rank": 126,
     "reasoning_score": 31.75,
     "coding_rank": null,
-    "coding_score": 54.4,
+    "coding_score": null,
     "agent_rank": 86,
     "agent_score": 19.17,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 88.0,
       "HLE": 28.2,
@@ -3493,11 +3203,9 @@
     "reasoning_rank": 158,
     "reasoning_score": 27.41,
     "coding_rank": null,
-    "coding_score": 52.4,
+    "coding_score": null,
     "agent_rank": 131,
     "agent_score": 11.37,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 82.8,
       "HLE": 24.3,
@@ -3520,11 +3228,9 @@
     "reasoning_rank": 27,
     "reasoning_score": 47.14,
     "coding_rank": null,
-    "coding_score": 58.6,
+    "coding_score": null,
     "agent_rank": 40,
     "agent_score": 31.36,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 93.6,
       "HLE": 52.2,
@@ -3550,8 +3256,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 100.0,
     "benchmarks": {
       "GPQA": 85.6,
       "AIME 2025": 81.2,
@@ -3565,7 +3269,7 @@
     "id": "gpt-5.5-pro",
     "name": "GPT-5.5 Pro",
     "organization": "OpenAI",
-    "rank": 38,
+    "rank": 39,
     "score": 45.81,
     "mu": 52.32,
     "games_played": 5,
@@ -3575,8 +3279,6 @@
     "coding_score": null,
     "agent_rank": 42,
     "agent_score": 30.96,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "HLE": 57.2,
       "BrowseComp": 90.1,
@@ -3599,8 +3301,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/gpt-5.6-cyber"
@@ -3616,11 +3316,9 @@
     "reasoning_rank": 51,
     "reasoning_score": 43.24,
     "coding_rank": null,
-    "coding_score": 62.7,
+    "coding_score": null,
     "agent_rank": 48,
     "agent_score": 29.95,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 92.3,
       "SWE-bench Pro": 62.7,
@@ -3643,11 +3341,9 @@
     "reasoning_rank": 7,
     "reasoning_score": 52.61,
     "coding_rank": null,
-    "coding_score": 64.6,
+    "coding_score": null,
     "agent_rank": 7,
     "agent_score": 39.12,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 94.6,
       "SWE-bench Pro": 64.6,
@@ -3670,11 +3366,9 @@
     "reasoning_rank": 23,
     "reasoning_score": 47.77,
     "coding_rank": null,
-    "coding_score": 63.4,
+    "coding_score": null,
     "agent_rank": 21,
     "agent_score": 35.76,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 92.9,
       "SWE-bench Pro": 63.4,
@@ -3697,11 +3391,9 @@
     "reasoning_rank": 167,
     "reasoning_score": 26.63,
     "coding_rank": null,
-    "coding_score": 74.5,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 74.5
     },
@@ -3722,8 +3414,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 87.3,
       "AIME 2025": 94.6
@@ -3745,8 +3435,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 88.1,
       "AIME 2025": 88.9
@@ -3768,8 +3456,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 200.0,
     "benchmarks": {
       "GPQA": 82.3,
       "AIME 2025": 91.1,
@@ -3793,8 +3479,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 71.2,
       "AIME 2025": 85.2,
@@ -3818,8 +3502,6 @@
     "coding_score": null,
     "agent_rank": 13,
     "agent_score": 37.87,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "MMMU-Pro": 86.0,
       "Apex Agents": 60.0
@@ -3841,8 +3523,6 @@
     "coding_score": null,
     "agent_rank": 2,
     "agent_score": 44.93,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 96.0,
       "BrowseComp": 91.5,
@@ -3866,8 +3546,6 @@
     "coding_score": null,
     "agent_rank": 49,
     "agent_score": 29.94,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/gpt-6-luna"
@@ -3886,8 +3564,6 @@
     "coding_score": null,
     "agent_rank": 25,
     "agent_score": 34.85,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/gpt-6-sol"
@@ -3906,8 +3582,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 80.1,
       "HLE": 14.9,
@@ -3920,7 +3594,7 @@
     "id": "gpt-oss-120b-high",
     "name": "GPT OSS 120B High",
     "organization": "OpenAI",
-    "rank": 181,
+    "rank": 182,
     "score": 25.15,
     "mu": 29.96,
     "games_played": 7,
@@ -3930,8 +3604,6 @@
     "coding_score": null,
     "agent_rank": 183,
     "agent_score": 3.05,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 80.9,
       "AIME 2025": 92.5,
@@ -3954,8 +3626,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 71.5,
       "HLE": 10.9,
@@ -3978,8 +3648,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 74.2,
       "AIME 2025": 98.7
@@ -3991,7 +3659,7 @@
     "id": "gpt-rosalind-research",
     "name": "GPT-Rosalind",
     "organization": "OpenAI",
-    "rank": 131,
+    "rank": 130,
     "score": 31.51,
     "mu": 42.2,
     "games_played": 3,
@@ -4001,8 +3669,6 @@
     "coding_score": null,
     "agent_rank": 77,
     "agent_score": 21.52,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/gpt-rosalind-research"
@@ -4021,8 +3687,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/granite-3.3-8b-base"
@@ -4041,8 +3705,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/granite-3.3-8b-instruct"
@@ -4061,8 +3723,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/granite-4.0-tiny-preview"
@@ -4078,11 +3738,9 @@
     "reasoning_rank": 202,
     "reasoning_score": 21.2,
     "coding_rank": null,
-    "coding_score": 57.0,
+    "coding_score": null,
     "agent_rank": 157,
     "agent_score": 7.43,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 66.4,
       "AIME 2025": 89.2,
@@ -4107,8 +3765,6 @@
     "coding_score": null,
     "agent_rank": 191,
     "agent_score": 1.5,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 54.8,
       "AIME 2025": 78.3,
@@ -4128,11 +3784,9 @@
     "reasoning_rank": 233,
     "reasoning_score": 17.28,
     "coding_rank": null,
-    "coding_score": 47.7,
+    "coding_score": null,
     "agent_rank": 187,
     "agent_score": 2.65,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 64.1,
       "AIME 2025": 86.7,
@@ -4157,8 +3811,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 35.9,
       "MMMU": 53.6
@@ -4180,8 +3832,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "MMMU": 53.6
     },
@@ -4202,8 +3852,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 56.0,
       "MMMU": 66.1
@@ -4225,8 +3873,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/grok-2-image-1212"
@@ -4245,8 +3891,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 51.0,
       "MMMU": 63.2
@@ -4268,8 +3912,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 100.0,
     "benchmarks": {
       "GPQA": 84.6,
       "AIME 2025": 93.3,
@@ -4282,7 +3924,7 @@
     "id": "grok-3-mini",
     "name": "Grok-3 Mini",
     "organization": "xAI",
-    "rank": 134,
+    "rank": 133,
     "score": 31.1,
     "mu": 37.61,
     "games_played": 4,
@@ -4292,8 +3934,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 84.0,
       "AIME 2025": 90.8
@@ -4315,8 +3955,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 87.5,
       "AIME 2025": 91.7,
@@ -4340,8 +3978,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/grok-4.1-2025-11-17"
@@ -4360,8 +3996,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 90,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/grok-4-1-fast-non-reasoning"
@@ -4380,8 +4014,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 90,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/grok-4-1-fast-reasoning"
@@ -4400,8 +4032,6 @@
     "coding_score": null,
     "agent_rank": 192,
     "agent_score": 1.34,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/grok-4.1-thinking-2025-11-17"
@@ -4420,8 +4050,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/grok-4.20-beta-0309-non-reasoning"
@@ -4440,8 +4068,6 @@
     "coding_score": null,
     "agent_rank": 184,
     "agent_score": 2.94,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/grok-4.20-beta-0309-reasoning"
@@ -4460,8 +4086,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/grok-4.20-multi-agent-beta-0309"
@@ -4480,8 +4104,6 @@
     "coding_score": null,
     "agent_rank": 138,
     "agent_score": 10.27,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/grok-4.3"
@@ -4497,11 +4119,9 @@
     "reasoning_rank": 42,
     "reasoning_score": 44.46,
     "coding_rank": null,
-    "coding_score": 64.7,
+    "coding_score": null,
     "agent_rank": 44,
     "agent_score": 30.29,
-    "license": "proprietary",
-    "speed": 80.0,
     "benchmarks": {
       "GPQA": 93.0,
       "SWE-bench Pro": 64.7
@@ -4523,8 +4143,6 @@
     "coding_score": null,
     "agent_rank": 30,
     "agent_score": 33.85,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "Apex Agents": 57.5
     },
@@ -4539,14 +4157,12 @@
     "score": 46.57,
     "mu": 51.57,
     "games_played": 9,
-    "reasoning_rank": 55,
+    "reasoning_rank": 54,
     "reasoning_score": 42.93,
     "coding_rank": null,
     "coding_score": null,
     "agent_rank": 33,
     "agent_score": 33.79,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/grok-4.7"
@@ -4565,8 +4181,6 @@
     "coding_score": null,
     "agent_rank": 185,
     "agent_score": 2.87,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 85.7,
       "AIME 2025": 92.0,
@@ -4591,8 +4205,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/grok-4-fast-non-reasoning"
@@ -4611,8 +4223,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 90,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/grok-4-fast-reasoning"
@@ -4631,8 +4241,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 88.4,
       "AIME 2025": 100.0,
@@ -4652,11 +4260,9 @@
     "reasoning_rank": 206,
     "reasoning_score": 20.45,
     "coding_rank": null,
-    "coding_score": 70.8,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 76.41,
     "benchmarks": {
       "SWE-bench Verified": 70.8
     },
@@ -4677,8 +4283,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/hermes-3-405b"
@@ -4697,8 +4301,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 66.1
     },
@@ -4716,11 +4318,9 @@
     "reasoning_rank": 56,
     "reasoning_score": 42.73,
     "coding_rank": 4,
-    "coding_score": 78.0,
+    "coding_score": 7.73,
     "agent_rank": 61,
     "agent_score": 26.5,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 90.4,
       "SWE-bench Verified": 78.0,
@@ -4743,11 +4343,9 @@
     "reasoning_rank": 16,
     "reasoning_score": 49.69,
     "coding_rank": null,
-    "coding_score": 65.7,
+    "coding_score": null,
     "agent_rank": 26,
     "agent_score": 34.8,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 92.3,
       "SWE-bench Pro": 65.7,
@@ -4769,11 +4367,9 @@
     "reasoning_rank": 90,
     "reasoning_score": 36.89,
     "coding_rank": null,
-    "coding_score": 77.6,
+    "coding_score": null,
     "agent_rank": 81,
     "agent_score": 20.04,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 77.6,
       "MMMU-Pro": 73.5,
@@ -4794,11 +4390,9 @@
     "reasoning_rank": 82,
     "reasoning_score": 37.7,
     "coding_rank": null,
-    "coding_score": 80.2,
+    "coding_score": null,
     "agent_rank": 76,
     "agent_score": 22.6,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 89.5,
       "HLE": 31.6,
@@ -4824,8 +4418,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "jamba_open_model_license",
-    "speed": null,
     "benchmarks": {
       "GPQA": 36.9
     },
@@ -4846,8 +4438,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "jamba_open_model_license",
-    "speed": null,
     "benchmarks": {
       "GPQA": 32.3
     },
@@ -4868,8 +4458,6 @@
     "coding_score": null,
     "agent_rank": 179,
     "agent_score": 4.11,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 92.8,
       "MMMLU": 85.7
@@ -4891,8 +4479,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "MMMU": 70.0
     },
@@ -4913,8 +4499,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 75.8
     },
@@ -4932,11 +4516,9 @@
     "reasoning_rank": 77,
     "reasoning_score": 38.48,
     "coding_rank": null,
-    "coding_score": 76.8,
+    "coding_score": null,
     "agent_rank": 89,
     "agent_score": 18.04,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 87.6,
       "AIME 2025": 96.1,
@@ -4959,11 +4541,9 @@
     "reasoning_rank": 48,
     "reasoning_score": 43.72,
     "coding_rank": null,
-    "coding_score": 80.2,
+    "coding_score": null,
     "agent_rank": 60,
     "agent_score": 26.54,
-    "license": "modified_mit_license",
-    "speed": null,
     "benchmarks": {
       "GPQA": 90.5,
       "HLE": 36.4,
@@ -4989,8 +4569,6 @@
     "coding_score": null,
     "agent_rank": 64,
     "agent_score": 26.11,
-    "license": "modified_mit_license",
-    "speed": null,
     "benchmarks": {
       "MCP Atlas": 76.0
     },
@@ -5011,8 +4589,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/kimi-k2.8"
@@ -5031,8 +4607,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 48.1,
       "SimpleQA": 35.3
@@ -5054,8 +4628,6 @@
     "coding_score": null,
     "agent_rank": 200,
     "agent_score": -1.08,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 75.1,
       "AIME 2025": 49.5,
@@ -5077,11 +4649,9 @@
     "reasoning_rank": 199,
     "reasoning_score": 21.56,
     "coding_rank": null,
-    "coding_score": 65.8,
+    "coding_score": null,
     "agent_rank": 205,
     "agent_score": -4.24,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 75.1,
       "AIME 2025": 49.5,
@@ -5104,11 +4674,9 @@
     "reasoning_rank": 96,
     "reasoning_score": 35.98,
     "coding_rank": null,
-    "coding_score": 71.3,
+    "coding_score": null,
     "agent_rank": 102,
     "agent_score": 15.77,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 84.5,
       "AIME 2025": 100.0,
@@ -5134,8 +4702,6 @@
     "coding_score": null,
     "agent_rank": 16,
     "agent_score": 37.25,
-    "license": "kimi_k3",
-    "speed": null,
     "benchmarks": {
       "GPQA": 93.5,
       "HLE": 56.0,
@@ -5161,8 +4727,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "unknown",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/l3.1-70b-euryale-v2.2"
@@ -5181,8 +4745,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "unknown",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/l3-8b-lunaris-v1"
@@ -5198,11 +4760,9 @@
     "reasoning_rank": 68,
     "reasoning_score": 39.9,
     "coding_rank": null,
-    "coding_score": 59.4,
+    "coding_score": null,
     "agent_rank": 74,
     "agent_score": 22.93,
-    "license": "openmdw",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Pro": 59.4,
       "Toolathlon": 49.7
@@ -5221,11 +4781,9 @@
     "reasoning_rank": 179,
     "reasoning_score": 24.14,
     "coding_rank": null,
-    "coding_score": 70.9,
+    "coding_score": null,
     "agent_rank": 186,
     "agent_score": 2.79,
-    "license": "openmdw",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 70.9,
       "SWE-bench Pro": 47.6
@@ -5247,8 +4805,6 @@
     "coding_score": null,
     "agent_rank": 160,
     "agent_score": 7.05,
-    "license": "lfm1_0",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 51.9
     },
@@ -5269,8 +4825,6 @@
     "coding_score": null,
     "agent_rank": 206,
     "agent_score": -5.11,
-    "license": "lfm1_0",
-    "speed": null,
     "benchmarks": {
       "MMMU-Pro": 30.5
     },
@@ -5288,11 +4842,9 @@
     "reasoning_rank": 98,
     "reasoning_score": 35.36,
     "coding_rank": null,
-    "coding_score": 56.6,
+    "coding_score": null,
     "agent_rank": 85,
     "agent_score": 19.21,
-    "license": "unknown",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Pro": 56.6,
       "BrowseComp": 72.2,
@@ -5315,8 +4867,6 @@
     "coding_score": null,
     "agent_rank": 58,
     "agent_score": 28.17,
-    "license": "unknown",
-    "speed": null,
     "benchmarks": {
       "Apex Agents": 29.2
     },
@@ -5337,8 +4887,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama_3_1_community_license",
-    "speed": null,
     "benchmarks": {
       "GPQA": 50.7
     },
@@ -5359,8 +4907,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama_3_1_community_license",
-    "speed": null,
     "benchmarks": {
       "GPQA": 41.7
     },
@@ -5381,8 +4927,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama_3_1_community_license",
-    "speed": null,
     "benchmarks": {
       "GPQA": 30.4
     },
@@ -5403,8 +4947,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama_3_1_community_license",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/llama-3.1-nemotron-70b-instruct"
@@ -5423,8 +4965,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama_3_1_community_license",
-    "speed": null,
     "benchmarks": {
       "GPQA": 54.1,
       "AIME 2025": 47.1
@@ -5446,8 +4986,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama_3_1_community_license",
-    "speed": null,
     "benchmarks": {
       "GPQA": 76.0,
       "AIME 2025": 72.5
@@ -5469,8 +5007,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama_3_2_community_license",
-    "speed": null,
     "benchmarks": {
       "GPQA": 32.8,
       "MMMU": 50.7,
@@ -5493,8 +5029,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama_3_2_community_license",
-    "speed": null,
     "benchmarks": {
       "GPQA": 32.8
     },
@@ -5515,8 +5049,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama3_2",
-    "speed": null,
     "benchmarks": {
       "GPQA": 46.7,
       "MMMU": 60.3,
@@ -5539,8 +5071,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama_3_3_community_license_agreement",
-    "speed": null,
     "benchmarks": {
       "GPQA": 50.5
     },
@@ -5561,8 +5091,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama_3_1_community_license",
-    "speed": null,
     "benchmarks": {
       "GPQA": 66.7,
       "AIME 2025": 58.4
@@ -5584,8 +5112,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama_4_community_license_agreement",
-    "speed": null,
     "benchmarks": {
       "GPQA": 69.8,
       "MMMU": 73.4,
@@ -5608,8 +5134,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama_4_community_license_agreement",
-    "speed": null,
     "benchmarks": {
       "GPQA": 57.2,
       "MMMU": 69.4
@@ -5631,8 +5155,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "llama_4_community_license_agreement",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/llama-guard-4-12b"
@@ -5648,11 +5170,9 @@
     "reasoning_rank": 218,
     "reasoning_score": 19.51,
     "coding_rank": null,
-    "coding_score": 60.4,
+    "coding_score": null,
     "agent_rank": 149,
     "agent_score": 9.03,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 73.2,
       "AIME 2025": 61.3,
@@ -5673,11 +5193,9 @@
     "reasoning_rank": 227,
     "reasoning_score": 18.56,
     "coding_rank": null,
-    "coding_score": 54.4,
+    "coding_score": null,
     "agent_rank": 180,
     "agent_score": 3.94,
-    "license": "mit",
-    "speed": 500.0,
     "benchmarks": {
       "GPQA": 66.8,
       "AIME 2025": 63.2,
@@ -5698,11 +5216,9 @@
     "reasoning_rank": 148,
     "reasoning_score": 28.64,
     "coding_rank": null,
-    "coding_score": 59.4,
+    "coding_score": null,
     "agent_rank": 116,
     "agent_score": 12.95,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 81.5,
       "AIME 2025": 90.6,
@@ -5722,11 +5238,9 @@
     "reasoning_rank": 99,
     "reasoning_score": 35.34,
     "coding_rank": null,
-    "coding_score": 70.0,
+    "coding_score": null,
     "agent_rank": 144,
     "agent_score": 9.4,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 80.5,
       "AIME 2025": 99.6,
@@ -5751,8 +5265,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 70.8,
       "AIME 2025": 64.9,
@@ -5775,8 +5287,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 68.2,
       "AIME 2025": 62.8
@@ -5795,11 +5305,9 @@
     "reasoning_rank": 157,
     "reasoning_score": 27.54,
     "coding_rank": null,
-    "coding_score": 72.6,
+    "coding_score": null,
     "agent_rank": 137,
     "agent_score": 10.45,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 72.6
     },
@@ -5817,11 +5325,9 @@
     "reasoning_rank": 150,
     "reasoning_score": 28.38,
     "coding_rank": null,
-    "coding_score": 71.6,
+    "coding_score": null,
     "agent_rank": 132,
     "agent_score": 11.21,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 84.6,
       "HLE": 18.0,
@@ -5843,11 +5349,9 @@
     "reasoning_rank": 112,
     "reasoning_score": 33.64,
     "coding_rank": null,
-    "coding_score": 73.5,
+    "coding_score": null,
     "agent_rank": 117,
     "agent_score": 12.9,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 84.2,
       "AIME 2025": 97.0,
@@ -5871,8 +5375,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "health_ai_developer_foundations_terms_of_use",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/medgemma-4b-it"
@@ -5891,8 +5393,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": 1009.0,
     "benchmarks": {
       "GPQA": 74.0,
       "AIME 2025": 91.1,
@@ -5912,11 +5412,9 @@
     "reasoning_rank": 97,
     "reasoning_score": 35.51,
     "coding_rank": null,
-    "coding_score": 56.1,
+    "coding_score": null,
     "agent_rank": 79,
     "agent_score": 21.1,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Pro": 56.1,
       "MMMU-Pro": 77.9,
@@ -5933,14 +5431,12 @@
     "score": 25.45,
     "mu": 28.42,
     "games_played": 28,
-    "reasoning_rank": 182,
+    "reasoning_rank": 183,
     "reasoning_score": 23.86,
     "coding_rank": 8,
-    "coding_score": 78.9,
+    "coding_score": -2.94,
     "agent_rank": 69,
     "agent_score": 23.82,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 66.7,
       "HLE": 34.0,
@@ -5964,8 +5460,6 @@
     "coding_score": null,
     "agent_rank": 38,
     "agent_score": 31.85,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/mimo-v2.6-flash"
@@ -5984,8 +5478,6 @@
     "coding_score": null,
     "agent_rank": 20,
     "agent_score": 36.26,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/mimo-v2.6-pro"
@@ -6001,11 +5493,9 @@
     "reasoning_rank": 135,
     "reasoning_score": 30.65,
     "coding_rank": null,
-    "coding_score": 73.4,
+    "coding_score": null,
     "agent_rank": 156,
     "agent_score": 8.03,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 83.7,
       "AIME 2025": 94.1,
@@ -6028,11 +5518,9 @@
     "reasoning_rank": 164,
     "reasoning_score": 26.81,
     "coding_rank": null,
-    "coding_score": 74.8,
+    "coding_score": null,
     "agent_rank": 153,
     "agent_score": 8.46,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 74.8
     },
@@ -6050,11 +5538,9 @@
     "reasoning_rank": 84,
     "reasoning_score": 37.47,
     "coding_rank": null,
-    "coding_score": 78.0,
+    "coding_score": null,
     "agent_rank": 97,
     "agent_score": 16.77,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 78.0
     },
@@ -6075,8 +5561,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 78.3
     },
@@ -6094,11 +5578,9 @@
     "reasoning_rank": 208,
     "reasoning_score": 20.38,
     "coding_rank": null,
-    "coding_score": 55.6,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 69.2,
       "AIME 2025": 74.6,
@@ -6121,11 +5603,9 @@
     "reasoning_rank": 200,
     "reasoning_score": 21.3,
     "coding_rank": null,
-    "coding_score": 56.0,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 70.0,
       "AIME 2025": 76.9,
@@ -6148,11 +5628,9 @@
     "reasoning_rank": 169,
     "reasoning_score": 26.31,
     "coding_rank": null,
-    "coding_score": 69.4,
+    "coding_score": null,
     "agent_rank": 146,
     "agent_score": 9.22,
-    "license": "mit",
-    "speed": 70.0,
     "benchmarks": {
       "GPQA": 78.0,
       "AIME 2025": 78.0,
@@ -6168,18 +5646,16 @@
     "id": "minimax-m2.1",
     "name": "MiniMax M2.1",
     "organization": "MiniMax",
-    "rank": 130,
+    "rank": 131,
     "score": 31.51,
     "mu": 34.89,
     "games_played": 15,
     "reasoning_rank": 124,
     "reasoning_score": 31.9,
     "coding_rank": null,
-    "coding_score": 67.0,
+    "coding_score": null,
     "agent_rank": 91,
     "agent_score": 17.79,
-    "license": "mit",
-    "speed": 100.0,
     "benchmarks": {
       "GPQA": 81.0,
       "AIME 2025": 81.0,
@@ -6202,11 +5678,9 @@
     "reasoning_rank": 89,
     "reasoning_score": 36.9,
     "coding_rank": null,
-    "coding_score": 80.2,
+    "coding_score": null,
     "agent_rank": 94,
     "agent_score": 17.38,
-    "license": "mit",
-    "speed": 100.0,
     "benchmarks": {
       "SWE-bench Verified": 80.2,
       "SWE-bench Pro": 55.4,
@@ -6223,14 +5697,12 @@
     "score": 35.59,
     "mu": 40.37,
     "games_played": 8,
-    "reasoning_rank": 102,
+    "reasoning_rank": 103,
     "reasoning_score": 34.68,
     "coding_rank": null,
-    "coding_score": 56.2,
+    "coding_score": null,
     "agent_rank": 103,
     "agent_score": 15.74,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Pro": 56.2,
       "Toolathlon": 46.3
@@ -6249,11 +5721,9 @@
     "reasoning_rank": 63,
     "reasoning_score": 40.86,
     "coding_rank": null,
-    "coding_score": 80.5,
+    "coding_score": null,
     "agent_rank": 66,
     "agent_score": 25.45,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 80.5,
       "SWE-bench Pro": 59.0,
@@ -6279,8 +5749,6 @@
     "coding_score": null,
     "agent_rank": 23,
     "agent_score": 35.57,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "CharXiv-R": 82.5
     },
@@ -6301,8 +5769,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 71.2,
       "AIME 2025": 85.0
@@ -6324,8 +5790,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/ministral-3-14b-base-2512"
@@ -6344,8 +5808,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/ministral-3-14b-instruct-2512"
@@ -6364,8 +5826,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/ministral-3-3b-base-2512"
@@ -6384,8 +5844,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/ministral-3-3b-instruct-2512"
@@ -6404,8 +5862,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/ministral-3-8b-base-2512"
@@ -6424,8 +5880,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/ministral-3-8b-instruct-2512"
@@ -6444,8 +5898,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 53.4,
       "AIME 2025": 72.1
@@ -6467,8 +5919,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mistral_research_license",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/ministral-8b-instruct-2410"
@@ -6487,8 +5937,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 66.8,
       "AIME 2025": 78.7
@@ -6510,8 +5958,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mistral_research_license",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/mistral-large-2-2407"
@@ -6530,8 +5976,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "MMMLU": 74.2
     },
@@ -6552,8 +5996,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 43.9,
       "SimpleQA": 23.8,
@@ -6576,8 +6018,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 43.9,
       "SimpleQA": 23.8,
@@ -6600,8 +6040,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 43.9,
       "SimpleQA": 23.8,
@@ -6624,8 +6062,6 @@
     "coding_score": null,
     "agent_rank": 34,
     "agent_score": 33.6,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "SciCode": 91.8
     },
@@ -6636,7 +6072,7 @@
     "id": "mistral-large-latest",
     "name": "Mistral Large 3 (675B Instruct 2512)",
     "organization": "Mistral AI",
-    "rank": 295,
+    "rank": 294,
     "score": 8.71,
     "mu": 14.43,
     "games_played": 5,
@@ -6646,8 +6082,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": 45.89,
     "benchmarks": {
       "GPQA": 43.9,
       "SimpleQA": 23.8,
@@ -6667,11 +6101,9 @@
     "reasoning_rank": 160,
     "reasoning_score": 27.08,
     "coding_rank": null,
-    "coding_score": 77.6,
+    "coding_score": null,
     "agent_rank": 151,
     "agent_score": 8.62,
-    "license": "modified_mit_license",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 86.3,
       "SWE-bench Verified": 77.6,
@@ -6694,8 +6126,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/mistral-nemo-instruct-2407"
@@ -6714,8 +6144,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mistral_research_license",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/mistral-small-2409"
@@ -6734,8 +6162,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 34.4
     },
@@ -6756,8 +6182,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 45.3
     },
@@ -6778,8 +6202,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 37.5,
       "MMMU": 59.3
@@ -6801,8 +6223,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 46.0,
       "MMMU": 59.3,
@@ -6825,8 +6245,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 46.1,
       "MMMU": 62.5,
@@ -6849,8 +6267,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 71.2,
       "AIME 2025": 83.8,
@@ -6870,11 +6286,9 @@
     "reasoning_rank": 107,
     "reasoning_score": 34.09,
     "coding_rank": 6,
-    "coding_score": 76.0,
+    "coding_score": 3.77,
     "agent_rank": 98,
     "agent_score": 16.64,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 83.5,
       "HLE": 22.0,
@@ -6897,11 +6311,9 @@
     "reasoning_rank": 66,
     "reasoning_score": 40.51,
     "coding_rank": null,
-    "coding_score": 77.4,
+    "coding_score": null,
     "agent_rank": 110,
     "agent_score": 14.66,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 89.5,
       "HLE": 58.4,
@@ -6924,11 +6336,9 @@
     "reasoning_rank": 17,
     "reasoning_score": 49.1,
     "coding_rank": null,
-    "coding_score": 61.5,
+    "coding_score": null,
     "agent_rank": 37,
     "agent_score": 32.56,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "HLE": 62.1,
       "SWE-bench Pro": 61.5,
@@ -6951,10 +6361,8 @@
     "reasoning_score": 32.7,
     "coding_rank": null,
     "coding_score": null,
-    "agent_rank": 71,
+    "agent_rank": 72,
     "agent_score": 23.73,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/muse-spark-1.2"
@@ -6973,8 +6381,6 @@
     "coding_score": null,
     "agent_rank": 15,
     "agent_score": 37.29,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "MRCR v2": 98.5
     },
@@ -6995,8 +6401,6 @@
     "coding_score": null,
     "agent_rank": 43,
     "agent_score": 30.56,
-    "license": "muse_model_license",
-    "speed": null,
     "benchmarks": {
       "GPQA": 89.0,
       "SciCode": 58.5,
@@ -7019,8 +6423,6 @@
     "coding_score": null,
     "agent_rank": 17,
     "agent_score": 37.16,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/muse-wonder"
@@ -7039,8 +6441,6 @@
     "coding_score": null,
     "agent_rank": 14,
     "agent_score": 37.59,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/muse-wonder-1.0"
@@ -7059,8 +6459,6 @@
     "coding_score": null,
     "agent_rank": 6,
     "agent_score": 40.56,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/muse-wonder-full"
@@ -7079,8 +6477,6 @@
     "coding_score": null,
     "agent_rank": 5,
     "agent_score": 40.91,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/muse-wonder-full-1.0"
@@ -7099,8 +6495,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "unknown",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/mythomax-l2-13b"
@@ -7119,8 +6513,6 @@
     "coding_score": null,
     "agent_rank": 124,
     "agent_score": 12.36,
-    "license": "openmdw",
-    "speed": null,
     "benchmarks": {
       "GPQA": 86.4,
       "HLE": 25.3,
@@ -7142,11 +6534,9 @@
     "reasoning_rank": 212,
     "reasoning_score": 19.98,
     "coding_rank": null,
-    "coding_score": 51.6,
+    "coding_score": null,
     "agent_rank": 163,
     "agent_score": 5.88,
-    "license": "openmdw",
-    "speed": null,
     "benchmarks": {
       "GPQA": 75.4,
       "HLE": 11.7,
@@ -7168,11 +6558,9 @@
     "reasoning_rank": 94,
     "reasoning_score": 36.19,
     "coding_rank": null,
-    "coding_score": 71.1,
+    "coding_score": null,
     "agent_rank": 99,
     "agent_score": 16.54,
-    "license": "openmdw",
-    "speed": null,
     "benchmarks": {
       "GPQA": 89.5,
       "HLE": 31.8,
@@ -7192,14 +6580,12 @@
     "score": 20.67,
     "mu": 24.11,
     "games_played": 15,
-    "reasoning_rank": 220,
+    "reasoning_rank": 221,
     "reasoning_score": 19.31,
     "coding_rank": null,
-    "coding_score": 38.8,
+    "coding_score": null,
     "agent_rank": 207,
     "agent_score": -6.81,
-    "license": "nvidia_open_model_license_agreement",
-    "speed": null,
     "benchmarks": {
       "GPQA": 75.0,
       "AIME 2025": 99.2,
@@ -7222,11 +6608,9 @@
     "reasoning_rank": 176,
     "reasoning_score": 24.73,
     "coding_rank": null,
-    "coding_score": 53.7,
+    "coding_score": null,
     "agent_rank": 197,
     "agent_score": -0.64,
-    "license": "nvidia_open_model_license_agreement",
-    "speed": null,
     "benchmarks": {
       "GPQA": 82.7,
       "AIME 2025": 90.2,
@@ -7249,11 +6633,9 @@
     "reasoning_rank": 101,
     "reasoning_score": 35.21,
     "coding_rank": null,
-    "coding_score": 70.7,
+    "coding_score": null,
     "agent_rank": 123,
     "agent_score": 12.46,
-    "license": "openmdw",
-    "speed": null,
     "benchmarks": {
       "GPQA": 87.0,
       "HLE": 37.4,
@@ -7278,8 +6660,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "nvidia_open_model_license_agreement",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/nemotron-content-safety-3.5"
@@ -7295,11 +6675,9 @@
     "reasoning_rank": 213,
     "reasoning_score": 19.84,
     "coding_rank": null,
-    "coding_score": 59.5,
+    "coding_score": null,
     "agent_rank": 198,
     "agent_score": -0.68,
-    "license": "openmdw",
-    "speed": null,
     "benchmarks": {
       "GPQA": 72.4,
       "HLE": 10.9,
@@ -7323,8 +6701,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/north-micro-vision-instruct"
@@ -7337,14 +6713,12 @@
     "score": 21.68,
     "mu": 27.44,
     "games_played": 5,
-    "reasoning_rank": 197,
+    "reasoning_rank": 198,
     "reasoning_score": 21.69,
     "coding_rank": null,
-    "coding_score": 67.6,
+    "coding_score": null,
     "agent_rank": 194,
     "agent_score": 0.97,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 67.6,
       "SWE-bench Pro": 40.2,
@@ -7357,18 +6731,16 @@
     "id": "nova-2-lite",
     "name": "Nova 2 Lite",
     "organization": "Amazon",
-    "rank": 182,
+    "rank": 181,
     "score": 25.15,
     "mu": 28.42,
     "games_played": 18,
     "reasoning_rank": 165,
     "reasoning_score": 26.74,
     "coding_rank": null,
-    "coding_score": 64.5,
+    "coding_score": null,
     "agent_rank": 173,
     "agent_score": 4.72,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 79.6,
       "AIME 2025": 91.0,
@@ -7392,10 +6764,8 @@
     "reasoning_score": 27.92,
     "coding_rank": null,
     "coding_score": null,
-    "agent_rank": 172,
+    "agent_rank": 171,
     "agent_score": 4.79,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 92.1,
       "MMMU-Pro": 61.4
@@ -7414,11 +6784,9 @@
     "reasoning_rank": 136,
     "reasoning_score": 30.54,
     "coding_rank": null,
-    "coding_score": 70.0,
+    "coding_score": null,
     "agent_rank": 127,
     "agent_score": 11.97,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 81.4,
       "AIME 2025": 92.3,
@@ -7433,7 +6801,7 @@
     "id": "nova-2-sonic",
     "name": "Nova 2 Sonic",
     "organization": "Amazon",
-    "rank": 294,
+    "rank": 295,
     "score": 8.71,
     "mu": 16.69,
     "games_played": 3,
@@ -7443,8 +6811,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/nova-2-sonic"
@@ -7463,8 +6829,6 @@
     "coding_score": null,
     "agent_rank": 170,
     "agent_score": 4.89,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 42.0,
       "MMMU": 56.2
@@ -7486,8 +6850,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 40.0
     },
@@ -7508,8 +6870,6 @@
     "coding_score": null,
     "agent_rank": 139,
     "agent_score": 10.19,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 46.9,
       "MMMU": 61.7
@@ -7531,8 +6891,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "nvidia_open_model_license_agreement",
-    "speed": null,
     "benchmarks": {
       "GPQA": 64.0,
       "AIME 2025": 72.1
@@ -7551,11 +6909,9 @@
     "reasoning_rank": 204,
     "reasoning_score": 21.03,
     "coding_rank": null,
-    "coding_score": 41.0,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 78.0,
       "SWE-bench Verified": 41.0,
@@ -7581,8 +6937,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 60.0
     },
@@ -7600,11 +6954,9 @@
     "reasoning_rank": 237,
     "reasoning_score": 16.5,
     "coding_rank": null,
-    "coding_score": 41.3,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 73.3,
       "SWE-bench Verified": 41.3,
@@ -7627,8 +6979,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 79.0
     },
@@ -7646,11 +6996,9 @@
     "reasoning_rank": 137,
     "reasoning_score": 30.49,
     "coding_rank": null,
-    "coding_score": 69.1,
+    "coding_score": null,
     "agent_rank": 181,
     "agent_score": 3.8,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 83.3,
       "AIME 2025": 86.4,
@@ -7673,11 +7021,9 @@
     "reasoning_rank": 210,
     "reasoning_score": 20.3,
     "coding_rank": null,
-    "coding_score": 49.3,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 77.2,
       "SWE-bench Verified": 49.3,
@@ -7702,8 +7048,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/o3-pro-2025-06-10"
@@ -7719,11 +7063,9 @@
     "reasoning_rank": 159,
     "reasoning_score": 27.22,
     "coding_rank": null,
-    "coding_score": 68.1,
+    "coding_score": null,
     "agent_rank": 161,
     "agent_score": 6.81,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 81.4,
       "AIME 2025": 92.7,
@@ -7749,8 +7091,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/parse-v5.0"
@@ -7769,8 +7109,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 30.4,
       "MMMLU": 55.4
@@ -7792,8 +7130,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 36.8,
       "MMMLU": 69.9
@@ -7815,8 +7151,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "MMMU": 43.0
     },
@@ -7837,8 +7171,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 56.1,
       "SimpleQA": 3.0
@@ -7860,8 +7192,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 25.2
     },
@@ -7882,8 +7212,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 52.0
     },
@@ -7904,8 +7232,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "MMMU": 55.1,
       "MMMU-Pro": 38.5
@@ -7917,7 +7243,7 @@
     "id": "phi-4-reasoning",
     "name": "Phi 4 Reasoning",
     "organization": "Microsoft",
-    "rank": 279,
+    "rank": 278,
     "score": 11.7,
     "mu": 16.2,
     "games_played": 9,
@@ -7927,8 +7253,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 65.8,
       "AIME 2025": 62.9
@@ -7950,8 +7274,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mit",
-    "speed": null,
     "benchmarks": {
       "GPQA": 68.9,
       "AIME 2025": 78.0
@@ -7973,8 +7295,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "MMMU": 52.5
     },
@@ -7995,8 +7315,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "mistral_research_license_(mrl)_for_research;_mistral_commercial_license_for_commercial_use",
-    "speed": null,
     "benchmarks": {
       "MMMU": 64.0
     },
@@ -8017,8 +7335,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "qwen",
-    "speed": null,
     "benchmarks": {
       "MMMU": 70.3
     },
@@ -8039,8 +7355,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 45.5
     },
@@ -8061,8 +7375,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 49.5
     },
@@ -8083,8 +7395,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "qwen",
-    "speed": null,
     "benchmarks": {
       "GPQA": 49.0
     },
@@ -8105,8 +7415,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 36.4
     },
@@ -8127,8 +7435,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/qwen-2.5-coder-32b-instruct"
@@ -8147,8 +7453,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/qwen-2.5-coder-7b-instruct"
@@ -8167,8 +7471,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 30.8,
       "MMMU": 59.2,
@@ -8191,8 +7493,6 @@
     "coding_score": null,
     "agent_rank": 202,
     "agent_score": -3.18,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 46.0,
       "MMMU": 70.0,
@@ -8217,8 +7517,6 @@
     "coding_score": null,
     "agent_rank": 175,
     "agent_score": 4.58,
-    "license": "tongyi_qianwen",
-    "speed": null,
     "benchmarks": {
       "MMMU": 70.2,
       "MMMU-Pro": 51.1,
@@ -8242,8 +7540,6 @@
     "coding_score": null,
     "agent_rank": 203,
     "agent_score": -3.2,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "MMMU": 58.6,
       "MMMU-Pro": 38.3,
@@ -8266,8 +7562,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "tongyi_qianwen",
-    "speed": null,
     "benchmarks": {
       "GPQA": 42.4
     },
@@ -8288,8 +7582,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 25.3
     },
@@ -8310,8 +7602,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "tongyi_qianwen",
-    "speed": null,
     "benchmarks": {
       "MMMU-Pro": 46.2
     },
@@ -8332,8 +7622,6 @@
     "coding_score": null,
     "agent_rank": 147,
     "agent_score": 9.06,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 70.4
     },
@@ -8354,8 +7642,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 47.5,
       "AIME 2025": 81.5,
@@ -8378,8 +7664,6 @@
     "coding_score": null,
     "agent_rank": 141,
     "agent_score": 9.87,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 77.5,
       "AIME 2025": 70.3,
@@ -8402,8 +7686,6 @@
     "coding_score": null,
     "agent_rank": 130,
     "agent_score": 11.41,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 81.1,
       "AIME 2025": 92.3,
@@ -8427,8 +7709,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": 88.84,
     "benchmarks": {
       "GPQA": 65.8,
       "AIME 2025": 70.9
@@ -8450,8 +7730,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 72.9
     },
@@ -8472,8 +7750,6 @@
     "coding_score": null,
     "agent_rank": 208,
     "agent_score": -9.59,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 11.9,
       "MMMLU": 44.3
@@ -8492,11 +7768,9 @@
     "reasoning_rank": 100,
     "reasoning_score": 35.27,
     "coding_rank": null,
-    "coding_score": 72.0,
+    "coding_score": null,
     "agent_rank": 105,
     "agent_score": 15.6,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 86.6,
       "HLE": 47.5,
@@ -8519,11 +7793,9 @@
     "reasoning_rank": 106,
     "reasoning_score": 34.43,
     "coding_rank": null,
-    "coding_score": 72.4,
+    "coding_score": null,
     "agent_rank": 109,
     "agent_score": 14.71,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 85.5,
       "HLE": 48.5,
@@ -8549,8 +7821,6 @@
     "coding_score": null,
     "agent_rank": 199,
     "agent_score": -0.77,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 51.6,
       "MMMLU": 63.1
@@ -8569,11 +7839,9 @@
     "reasoning_rank": 127,
     "reasoning_score": 31.67,
     "coding_rank": null,
-    "coding_score": 69.2,
+    "coding_score": null,
     "agent_rank": 121,
     "agent_score": 12.69,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 84.2,
       "HLE": 47.4,
@@ -8596,11 +7864,9 @@
     "reasoning_rank": 79,
     "reasoning_score": 38.38,
     "coding_rank": null,
-    "coding_score": 76.4,
+    "coding_score": null,
     "agent_rank": 82,
     "agent_score": 19.96,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 88.4,
       "HLE": 28.7,
@@ -8620,14 +7886,12 @@
     "score": 19.21,
     "mu": 22.17,
     "games_played": 25,
-    "reasoning_rank": 221,
+    "reasoning_rank": 220,
     "reasoning_score": 19.31,
     "coding_rank": null,
     "coding_score": null,
     "agent_rank": 182,
     "agent_score": 3.74,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 76.2,
       "MMMLU": 76.1
@@ -8649,8 +7913,6 @@
     "coding_score": null,
     "agent_rank": 152,
     "agent_score": 8.49,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 81.7,
       "MMMLU": 81.2
@@ -8669,11 +7931,9 @@
     "reasoning_rank": 95,
     "reasoning_score": 36.06,
     "coding_rank": null,
-    "coding_score": 77.2,
+    "coding_score": null,
     "agent_rank": 100,
     "agent_score": 16.12,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 87.8,
       "HLE": 24.0,
@@ -8696,11 +7956,9 @@
     "reasoning_rank": 119,
     "reasoning_score": 32.8,
     "coding_rank": null,
-    "coding_score": 73.4,
+    "coding_score": null,
     "agent_rank": 129,
     "agent_score": 11.85,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 86.0,
       "HLE": 21.4,
@@ -8723,11 +7981,9 @@
     "reasoning_rank": 67,
     "reasoning_score": 40.25,
     "coding_rank": null,
-    "coding_score": 78.8,
+    "coding_score": null,
     "agent_rank": 80,
     "agent_score": 20.52,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 90.4,
       "HLE": 28.8,
@@ -8750,11 +8006,9 @@
     "reasoning_rank": 32,
     "reasoning_score": 45.95,
     "coding_rank": null,
-    "coding_score": 80.4,
+    "coding_score": null,
     "agent_rank": 53,
     "agent_score": 28.59,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 92.4,
       "HLE": 41.4,
@@ -8774,14 +8028,12 @@
     "score": 42.35,
     "mu": 44.56,
     "games_played": 59,
-    "reasoning_rank": 54,
+    "reasoning_rank": 55,
     "reasoning_score": 42.93,
     "coding_rank": null,
-    "coding_score": 77.7,
+    "coding_score": null,
     "agent_rank": 68,
     "agent_score": 24.0,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 90.3,
       "HLE": 34.7,
@@ -8807,8 +8059,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "qwen3_8_max",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/qwen3.8-2.4t-a95b"
@@ -8824,11 +8074,9 @@
     "reasoning_rank": 46,
     "reasoning_score": 44.18,
     "coding_rank": null,
-    "coding_score": 61.7,
+    "coding_score": null,
     "agent_rank": 50,
     "agent_score": 29.53,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 89.2,
       "HLE": 30.8,
@@ -8849,11 +8097,9 @@
     "reasoning_rank": 21,
     "reasoning_score": 48.42,
     "coding_rank": null,
-    "coding_score": 62.5,
+    "coding_score": null,
     "agent_rank": 36,
     "agent_score": 32.79,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 91.7,
       "HLE": 35.9,
@@ -8875,11 +8121,9 @@
     "reasoning_rank": 20,
     "reasoning_score": 48.5,
     "coding_rank": null,
-    "coding_score": 62.5,
+    "coding_score": null,
     "agent_rank": 35,
     "agent_score": 32.83,
-    "license": "qwen_community_1_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 91.7,
       "HLE": 35.9,
@@ -8901,11 +8145,9 @@
     "reasoning_rank": 14,
     "reasoning_score": 49.85,
     "coding_rank": null,
-    "coding_score": 67.7,
+    "coding_score": null,
     "agent_rank": 22,
     "agent_score": 35.69,
-    "license": "qwen3_8_max",
-    "speed": null,
     "benchmarks": {
       "GPQA": 92.6,
       "HLE": 43.6,
@@ -8931,8 +8173,6 @@
     "coding_score": 16.8,
     "agent_rank": 78,
     "agent_score": 21.24,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/qwen3.8-omni-flash"
@@ -8951,8 +8191,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/qwen3-coder"
@@ -8968,11 +8206,9 @@
     "reasoning_rank": 205,
     "reasoning_score": 20.86,
     "coding_rank": null,
-    "coding_score": 69.6,
+    "coding_score": null,
     "agent_rank": 167,
     "agent_score": 5.29,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Verified": 69.6,
       "Tau-bench Retail": 77.5
@@ -8988,14 +8224,12 @@
     "score": 21.47,
     "mu": 26.63,
     "games_played": 6,
-    "reasoning_rank": 198,
+    "reasoning_rank": 197,
     "reasoning_score": 21.69,
     "coding_rank": null,
-    "coding_score": 69.6,
+    "coding_score": null,
     "agent_rank": 169,
     "agent_score": 5.09,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 62.0,
       "AIME 2025": 81.6,
@@ -9015,11 +8249,9 @@
     "reasoning_rank": 110,
     "reasoning_score": 33.86,
     "coding_rank": null,
-    "coding_score": 75.3,
+    "coding_score": null,
     "agent_rank": 140,
     "agent_score": 10.11,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 87.4,
       "SWE-bench Verified": 75.3,
@@ -9044,8 +8276,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/qwen3-next-80b-a3b-base"
@@ -9064,8 +8294,6 @@
     "coding_score": null,
     "agent_rank": 154,
     "agent_score": 8.23,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 72.9,
       "AIME 2025": 69.5,
@@ -9088,8 +8316,6 @@
     "coding_score": null,
     "agent_rank": 125,
     "agent_score": 12.19,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 77.2,
       "AIME 2025": 87.8,
@@ -9112,8 +8338,6 @@
     "coding_score": null,
     "agent_rank": 122,
     "agent_score": 12.56,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 74.7,
       "MMMU-Pro": 68.1,
@@ -9139,8 +8363,6 @@
     "coding_score": null,
     "agent_rank": 115,
     "agent_score": 13.05,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 89.7,
       "HLE": 13.6,
@@ -9166,8 +8388,6 @@
     "coding_score": null,
     "agent_rank": 176,
     "agent_score": 4.33,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 70.4,
       "AIME 2025": 69.3,
@@ -9193,8 +8413,6 @@
     "coding_score": null,
     "agent_rank": 158,
     "agent_score": 7.11,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 74.4,
       "AIME 2025": 83.1,
@@ -9220,8 +8438,6 @@
     "coding_score": null,
     "agent_rank": 143,
     "agent_score": 9.47,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 68.9,
       "AIME 2025": 66.2,
@@ -9247,8 +8463,6 @@
     "coding_score": null,
     "agent_rank": 118,
     "agent_score": 12.88,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 73.1,
       "AIME 2025": 83.7,
@@ -9274,8 +8488,6 @@
     "coding_score": null,
     "agent_rank": 189,
     "agent_score": 2.11,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 46.6,
       "MMMU-Pro": 53.2,
@@ -9301,8 +8513,6 @@
     "coding_score": null,
     "agent_rank": 162,
     "agent_score": 6.58,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 64.1,
       "AIME 2025": 74.5,
@@ -9322,14 +8532,12 @@
     "score": 13.58,
     "mu": 15.81,
     "games_played": 46,
-    "reasoning_rank": 280,
+    "reasoning_rank": 281,
     "reasoning_score": 10.92,
     "coding_rank": null,
     "coding_score": null,
     "agent_rank": 159,
     "agent_score": 7.07,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 45.9,
       "MMMU-Pro": 55.9,
@@ -9354,8 +8562,6 @@
     "coding_score": null,
     "agent_rank": 178,
     "agent_score": 4.24,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 69.9,
       "AIME 2025": 80.3,
@@ -9381,8 +8587,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 65.2
     },
@@ -9403,8 +8607,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 65.2
     },
@@ -9425,8 +8627,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/sakana-namazu"
@@ -9439,14 +8639,12 @@
     "score": 25.41,
     "mu": 28.91,
     "games_played": 14,
-    "reasoning_rank": 172,
+    "reasoning_rank": 171,
     "reasoning_score": 25.88,
     "coding_rank": null,
-    "coding_score": 45.0,
+    "coding_score": null,
     "agent_rank": 168,
     "agent_score": 5.26,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 78.7,
       "AIME 2025": 96.7,
@@ -9468,11 +8666,9 @@
     "reasoning_rank": 224,
     "reasoning_score": 19.02,
     "coding_rank": null,
-    "coding_score": 34.0,
+    "coding_score": null,
     "agent_rank": 201,
     "agent_score": -1.56,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "GPQA": 66.5,
       "AIME 2025": 96.7,
@@ -9493,11 +8689,9 @@
     "reasoning_rank": 114,
     "reasoning_score": 33.34,
     "coding_rank": 5,
-    "coding_score": 72.9,
+    "coding_score": 6.27,
     "agent_rank": 108,
     "agent_score": 14.73,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 94.3,
       "SWE-bench Verified": 72.9,
@@ -9523,8 +8717,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/seed-2.0-code"
@@ -9540,11 +8732,9 @@
     "reasoning_rank": 128,
     "reasoning_score": 31.35,
     "coding_rank": null,
-    "coding_score": 73.5,
+    "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 85.1,
       "AIME 2025": 93.0,
@@ -9567,8 +8757,6 @@
     "coding_score": -1.58,
     "agent_rank": 193,
     "agent_score": 1.12,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 79.0,
       "AIME 2025": 87.0,
@@ -9591,11 +8779,9 @@
     "reasoning_rank": 74,
     "reasoning_score": 38.85,
     "coding_rank": null,
-    "coding_score": 76.5,
+    "coding_score": null,
     "agent_rank": 96,
     "agent_score": 17.04,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 88.9,
       "AIME 2025": 98.3,
@@ -9609,18 +8795,16 @@
     "id": "seed-2.1-pro",
     "name": "Seed 2.1 Pro",
     "organization": "ByteDance",
-    "rank": 39,
+    "rank": 38,
     "score": 45.81,
     "mu": 48.13,
     "games_played": 69,
     "reasoning_rank": 26,
     "reasoning_score": 47.17,
     "coding_rank": 3,
-    "coding_score": 57.5,
+    "coding_score": 14.66,
     "agent_rank": 41,
     "agent_score": 31.13,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "HLE": 55.7,
       "SWE-bench Pro": 57.5,
@@ -9643,11 +8827,9 @@
     "reasoning_rank": 45,
     "reasoning_score": 44.19,
     "coding_rank": 1,
-    "coding_score": 57.0,
+    "coding_score": 19.21,
     "agent_rank": 55,
     "agent_score": 28.46,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "HLE": 54.6,
       "SWE-bench Pro": 57.0,
@@ -9673,8 +8855,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/shieldstral-1.0-3b"
@@ -9693,8 +8873,6 @@
     "coding_score": null,
     "agent_rank": 188,
     "agent_score": 2.55,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "SciCode": 47.6
     },
@@ -9709,14 +8887,12 @@
     "score": 35.01,
     "mu": 39.32,
     "games_played": 9,
-    "reasoning_rank": 103,
+    "reasoning_rank": 102,
     "reasoning_score": 34.68,
     "coding_rank": null,
-    "coding_score": 70.6,
+    "coding_score": null,
     "agent_rank": 128,
     "agent_score": 11.96,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {
       "GPQA": 89.0,
       "SWE-bench Verified": 70.6,
@@ -9736,11 +8912,9 @@
     "reasoning_rank": 87,
     "reasoning_score": 37.04,
     "coding_rank": null,
-    "coding_score": 74.4,
+    "coding_score": null,
     "agent_rank": 106,
     "agent_score": 15.45,
-    "license": "apache_2_0",
-    "speed": 150.0,
     "benchmarks": {
       "AIME 2025": 97.3,
       "SWE-bench Verified": 74.4,
@@ -9760,11 +8934,9 @@
     "reasoning_rank": 139,
     "reasoning_score": 29.97,
     "coding_rank": null,
-    "coding_score": 56.3,
+    "coding_score": null,
     "agent_rank": 113,
     "agent_score": 13.37,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "SWE-bench Pro": 56.3
     },
@@ -9785,8 +8957,6 @@
     "coding_score": null,
     "agent_rank": null,
     "agent_score": null,
-    "license": "apache_2_0",
-    "speed": null,
     "benchmarks": {
       "AIME 2025": 87.7,
       "MMMU": 78.1
@@ -9808,8 +8978,6 @@
     "coding_score": null,
     "agent_rank": 174,
     "agent_score": 4.65,
-    "license": "proprietary",
-    "speed": null,
     "benchmarks": {},
     "benchmark_count": 0,
     "url": "https://llm-stats.com/models/u2"
