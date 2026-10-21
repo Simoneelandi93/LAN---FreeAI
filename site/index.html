@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- deploy -->
   <div class="shell">
     <header class="topbar">
       <div class="brand-group">
@@ -38,7 +37,6 @@
     </header>
 
     <main>
-      <!-- Metric Bar -->
       <section class="stats" aria-label="Catalog summary">
         <div class="stat">
           <span class="stat-label">Indexed Models</span>
@@ -54,11 +52,10 @@
         </div>
         <div class="stat">
           <span class="stat-label">Reasoning Engines</span>
-          <strong class="stat-value" id="totalReasoning">—</strong>
+          <strong class="stat-value text-purple" id="totalReasoning">—</strong>
         </div>
       </section>
 
-      <!-- Toolbar: Views & Search -->
       <section class="catalog-toolbar">
         <div class="toolbar-left">
           <nav class="view-tabs" role="tablist" aria-label="View selection">
@@ -71,8 +68,7 @@
             <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
             <button class="filter" data-filter="free" role="tab" aria-selected="false">Free Tier</button>
             <button class="filter" data-filter="openrouter" role="tab" aria-selected="false">OpenRouter</button>
-            <button class="filter" data-filter="reasoning" role="tab" aria-selected="false">Reasoning</button>
-            <button class="filter" data-filter="tool" role="tab" aria-selected="false">Function Calling</button>
+            <button class="filter" data-filter="openweights" role="tab" aria-selected="false">Open Weights</button>
           </div>
         </div>
 
@@ -81,12 +77,12 @@
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
-          <input type="search" id="searchInput" placeholder="Search by name, provider, architecture..." autocomplete="off">
+          <input type="search" id="searchInput" placeholder="Search models, providers, architectures..." autocomplete="off">
           <kbd class="shortcut-hint">/</kbd>
         </div>
       </section>
 
-      <div class="catalog-meta">
+      <div class="catalog-meta" id="catalogMeta">
         <div class="result-count" id="resultCount" role="status"></div>
         <div class="cap-legend" id="capLegend">
           <span class="legend-item"><span class="cap-pill pill-reasoning pill-active">R</span> Reasoning</span>
@@ -96,7 +92,6 @@
         </div>
       </div>
 
-      <!-- Models Table -->
       <section class="table-container" id="tableView">
         <table class="model-table" id="modelTable">
           <thead>
@@ -117,20 +112,18 @@
         </table>
       </section>
 
-      <!-- Provider Grid View -->
-      <div class="provider-grid" id="providerGrid">
+      <section class="provider-grid" id="providerGrid">
         <div class="provider-list" id="providerList"></div>
-      </div>
+      </section>
 
-      <!-- Changes View -->
-      <div class="changes-view" id="changesView">
+      <section class="changes-view" id="changesView">
         <div class="changes-controls">
-          <button class="chg-btn active" data-range="daily" role="tab" aria-selected="true">Last 24 Hours</button>
+          <button class="chg-btn active" data-range="all" role="tab" aria-selected="true">All Recorded</button>
           <button class="chg-btn" data-range="weekly" role="tab" aria-selected="false">Last 7 Days</button>
-          <button class="chg-btn" data-range="all" role="tab" aria-selected="false">All Recorded</button>
+          <button class="chg-btn" data-range="daily" role="tab" aria-selected="false">Last 24 Hours</button>
         </div>
         <div class="changes-feed" id="changesFeed"></div>
-      </div>
+      </section>
 
       <button class="load-more" id="loadMore" hidden>Load Remaining Entries</button>
     </main>
