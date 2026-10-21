@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "79cb95730890614a",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T17:36:10.983865+00:00",
+    "details": "Input: $0.041191 -> $0.051691; output: $0.12 -> $0.12"
+  },
+  {
+    "event_id": "fa3427003b81b5ef",
+    "type": "new_free_model",
+    "model_id": "flint-40b-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-10-21T17:36:10.983865+00:00",
+    "details": "$0 in / $0 out per 1M"
+  },
+  {
+    "event_id": "55b49fab193a2b8f",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-21T17:36:10.983865+00:00",
+    "details": "Input: $0.041191 -> $0.051691; output: $0.12 -> $0.12"
+  },
+  {
     "event_id": "bf2e603d60c479bb",
     "type": "price_change",
     "model_id": "openai/gpt-5.6-sol",
@@ -1574,29 +1598,5 @@
     "provider": "AMD, Abacus, Amazon Bedrock, Cortecs, Crusoe, Deep Infra, DevPass (LLM Gateway), FastRouter, Friendli, Google, Hugging Face, Infomaniak, Kenari, Kilo Gateway, Lilac, Merge Gateway, Novita AI, Nvidia, OpenRouter, Opper, OrcaRouter, Pioneer, QVAC, Regolo AI, Requesty, SambaNova, SiliconFlow, Tempr Gateway, Tinfoil, UnoRouter, Vercel AI Gateway, ai&",
     "detected_at": "2026-10-21T11:52:14.084489+00:00",
     "details": "Deep Infra: $0.2/$0.4 per 1M; Lilac: $0.11/$0.35 per 1M; Pioneer: $0.5/$0.5 per 1M; Vercel AI Gateway: $0.14/$0.4 per 1M; Hugging Face: $0.14/$0.4 per 1M; Merge Gateway: $0.14/$0.4 per 1M; Crusoe: $0.14/$0.4 per 1M; Amazon Bedrock: $0.14/$0.4 per 1M; Regolo AI: $0.46/$2.42 per 1M; Kilo Gateway: $0.1/$0.34 per 1M; Novita AI: $0.14/$0.4 per 1M; OpenRouter: $0.2/$0.4 per 1M; ai&: $0.2/$0.5 per 1M; Cortecs: $0.223/$0.39 per 1M; SambaNova: $0.38/$1.15 per 1M; SiliconFlow: $0.13/$0.4 per 1M; Opper: $0.46488/$2.44062 per 1M; Friendli: $0.14/$0.4 per 1M; Tinfoil: $0.4/$1 per 1M; DevPass (LLM Gateway): $0.1/$0.25 per 1M; Abacus: $0.14/$0.4 per 1M; AMD: $0/$0 per 1M; QVAC: $0/$0 per 1M; Requesty: $0/$0 per 1M; Nvidia: $0/$0 per 1M; FastRouter: $0.13/$0.38 per 1M; Kenari: $0/$0 per 1M; UnoRouter: $0/$0 per 1M; Infomaniak: $0.25/$0.5 per 1M; OrcaRouter: $0.13/$0.38 per 1M"
-  },
-  {
-    "event_id": "8e5a3d3aa41cd8f1",
-    "type": "new_model",
-    "model_id": "google/gemma-3-27b-it",
-    "provider": "Amazon Bedrock, Cortecs, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OpenRouter",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Deep Infra: $0.08/$0.16 per 1M; Hugging Face: $0.08/$0.16 per 1M; Merge Gateway: $0.08/$0.45 per 1M; Amazon Bedrock: $0.23/$0.38 per 1M; Nebius Token Factory: $0.1/$0.3 per 1M; Kilo Gateway: $0.08/$0.16 per 1M; Novita AI: $0.119/$0.2 per 1M; OpenRouter: $0.08/$0.35 per 1M; Cortecs: $0.099/$0.299 per 1M; NanoGPT: $0.2992/$0.2992 per 1M"
-  },
-  {
-    "event_id": "21a3120cd001900c",
-    "type": "new_model",
-    "model_id": "google/gemma-3-12b-it",
-    "provider": "Amazon Bedrock, Deep Infra, Hugging Face, Kilo Gateway, NanoGPT, Novita AI, Nvidia, OpenRouter",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Deep Infra: $0.05/$0.15 per 1M; Hugging Face: $0.05/$0.15 per 1M; Amazon Bedrock: $0.09/$0.29 per 1M; Kilo Gateway: $0.04/$0.12 per 1M; Novita AI: $0.05/$0.1 per 1M; OpenRouter: $0.05/$0.15 per 1M; Nvidia: $0/$0 per 1M; NanoGPT: $0.272/$0.272 per 1M"
-  },
-  {
-    "event_id": "2222e94575d07037",
-    "type": "new_model",
-    "model_id": "google/gemma-4-26b-a4b-it",
-    "provider": "AI/ML API, AKI.IO, Amazon Bedrock, Charm Hyper, Cloudflare Workers AI, Cortecs, Deep Infra, DevPass (LLM Gateway), Google, Hugging Face, Kilo Gateway, NaN, Novita AI, OpenRouter, OrcaRouter, Requesty, Scaleway, SiliconFlow, Tempr Gateway, Vercel AI Gateway, Vertex, evroc",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Deep Infra: $0.07/$0.34 per 1M; Vercel AI Gateway: $0.15/$0.6 per 1M; Charm Hyper: $0.098/$0.334 per 1M; Hugging Face: $0.13/$0.4 per 1M; Vertex: $0.15/$0.6 per 1M; Cloudflare Workers AI: $0.1/$0.3 per 1M; Amazon Bedrock: $0.13/$0.4 per 1M; Kilo Gateway: $0.042/$0.22 per 1M; Novita AI: $0.13/$0.4 per 1M; OpenRouter: $0.09/$0.3 per 1M; Cortecs: $0.111/$0.557 per 1M; SiliconFlow: $0.12/$0.4 per 1M; Scaleway: $0.25/$0.5 per 1M; DevPass (LLM Gateway): $0.07/$0.34 per 1M; AI/ML API: $0.20631/$0.82524 per 1M; Requesty: $0.07/$0.34 per 1M; AKI.IO: $0.1/$0.5 per 1M; NaN: $0/$0 per 1M; OrcaRouter: $0.06/$0.33 per 1M; evroc: $0.144/$0.575 per 1M"
   }
 ]
