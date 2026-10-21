@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "b649d0dfada97958",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "OpenRouter, The Grid AI",
+    "detected_at": "2026-10-21T13:36:50.199874+00:00",
+    "details": "Input: $0.225 -> $0.20196; output: $8 -> $0.60588"
+  },
+  {
+    "event_id": "a586e64c76f068c1",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T13:36:50.199874+00:00",
+    "details": "Input: $0.051691 -> $0.0413; output: $0.12 -> $0.12"
+  },
+  {
+    "event_id": "4c2f6b936bd42592",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T13:36:50.199874+00:00",
+    "details": "Input: $0.225 -> $0.20196; output: $8 -> $0.60588"
+  },
+  {
     "event_id": "821b98d6d6ebf91b",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -1574,29 +1598,5 @@
     "provider": "Vercel AI Gateway",
     "detected_at": "2026-10-21T11:52:14.084489+00:00",
     "details": "Vercel AI Gateway: $8/$40 per 1M"
-  },
-  {
-    "event_id": "cb9e55c51519aa2e",
-    "type": "new_model",
-    "model_id": "openai/gpt-realtime-mini",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0.6/$2.4 per 1M"
-  },
-  {
-    "event_id": "663a7efe38385177",
-    "type": "new_model",
-    "model_id": "openai/gpt-6-sol-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $4/$20 per 1M"
-  },
-  {
-    "event_id": "fd906c2979ecd8e3",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.5-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $12.5/$75 per 1M"
   }
 ]
