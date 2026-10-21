@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "031b88768eb66224",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "OpenRouter, The Grid AI",
+    "detected_at": "2026-10-21T15:06:00.831214+00:00",
+    "details": "Input: $0.20196 -> $0.1461; output: $0.60588 -> $8"
+  },
+  {
+    "event_id": "cf37098ed20d522e",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T15:06:00.831214+00:00",
+    "details": "Input: $0.0475 -> $0.0422; output: $0.1568 -> $0.1637"
+  },
+  {
+    "event_id": "9b7844e0fb20a4ed",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T15:06:00.831214+00:00",
+    "details": "Input: $0.20196 -> $0.1461; output: $0.60588 -> $8"
+  },
+  {
+    "event_id": "0f2c1b899528c6b4",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T15:06:00.831214+00:00",
+    "details": "Input: $0.0413 -> $0.041191; output: $0.12 -> $0.12"
+  },
+  {
+    "event_id": "a8af3a1f24749474",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-21T15:06:00.831214+00:00",
+    "details": "Input: $0.0475 -> $0.0422; output: $0.1568 -> $0.1637"
+  },
+  {
+    "event_id": "a6b75d6dee970d1b",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-21T15:06:00.831214+00:00",
+    "details": "Input: $0.051691 -> $0.041191; output: $0.12 -> $0.12"
+  },
+  {
     "event_id": "b649d0dfada97958",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-pro-latest",
@@ -1550,53 +1598,5 @@
     "provider": "Vercel AI Gateway",
     "detected_at": "2026-10-21T11:52:14.084489+00:00",
     "details": "Vercel AI Gateway: $1.25/$10 per 1M"
-  },
-  {
-    "event_id": "7bac105679496f75",
-    "type": "new_model",
-    "model_id": "openai/whisper-1",
-    "provider": "Groq, Merge Gateway, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": ""
-  },
-  {
-    "event_id": "4235d866b1b04caf",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.1-thinking-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $2.5/$20 per 1M"
-  },
-  {
-    "event_id": "3a4ba04c29fe3f28",
-    "type": "new_model",
-    "model_id": "openai/gpt-oss-safeguard-120b",
-    "provider": "Amazon Bedrock, Cortecs, LowRouter, Merge Gateway, Tinfoil, Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0.15/$0.6 per 1M; Merge Gateway: $0.15/$0.6 per 1M; Amazon Bedrock: $0.15/$0.6 per 1M; LowRouter: $0.18/$0.73 per 1M; Cortecs: $0.179/$0.697 per 1M; Tinfoil: $0.15/$0.6 per 1M"
-  },
-  {
-    "event_id": "d434d6284fa7f9fc",
-    "type": "new_model",
-    "model_id": "openai/gpt-4.1-mini-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $0.7/$2.8 per 1M"
-  },
-  {
-    "event_id": "eb5527cd274da3db",
-    "type": "new_model",
-    "model_id": "openai/gpt-realtime-whisper",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": ""
-  },
-  {
-    "event_id": "d8b719dafe099ca4",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.6-sol-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Vercel AI Gateway: $8/$40 per 1M"
   }
 ]
