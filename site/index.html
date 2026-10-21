@@ -50,6 +50,7 @@
       <nav class="tabs-primary" role="tablist" aria-label="View">
         <button class="tab-pri active" data-view="models" role="tab" aria-selected="true">Models</button>
         <button class="tab-pri" data-view="providers" role="tab" aria-selected="false">Providers</button>
+        <button class="tab-pri" data-view="changes" role="tab" aria-selected="false">Changes</button>
       </nav>
 
       <section class="catalog" id="catalog" aria-label="Catalog">
@@ -88,6 +89,15 @@
 
         <div class="provider-grid" id="providerGrid">
           <div class="provider-list" id="providerList"></div>
+        </div>
+
+        <div class="changes-view" id="changesView">
+          <div class="changes-controls">
+            <button class="chg-btn active" data-range="daily" role="tab" aria-selected="true">24 hours</button>
+            <button class="chg-btn" data-range="weekly" role="tab" aria-selected="false">7 days</button>
+            <button class="chg-btn" data-range="all" role="tab" aria-selected="false">All time</button>
+          </div>
+          <div class="changes-feed" id="changesFeed"></div>
         </div>
 
         <button class="load-more" id="loadMore" hidden>Show more models</button>

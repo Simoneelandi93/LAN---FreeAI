@@ -1,6 +1,8 @@
 let models = [];
+let history = [];
 let activeView = "models";
 let activeFilter = "all";
+let activeChangesRange = "daily";
 let visibleCount = 100;
 
 const FILTERS = {
@@ -10,6 +12,8 @@ const FILTERS = {
   reasoning: m => m.reasoning,
   tool: m => m.tool_call,
 };
+
+const MILLIS_DAY = 86400000;
 
 async function fetchJson(name) {
   for (const path of [`data/${name}`, `../data/${name}`]) {
@@ -41,11 +45,13 @@ function ctxFmt(v) {
 
 async function loadData() {
   try {
-    const [catalog, history] = await Promise.all([
+    const [catalog, histData] = await Promise.all([
       fetchJson("models.json"),
       fetchJson("history.json").catch(() => []),
     ]);
     models = catalog;
+    history = histData;
+
     const provSet = new Set(models.map(m => m.provider_id).filter(Boolean));
     document.getElementById("totalModels").textContent = models.length.toLocaleString();
     document.getElementById("totalProviders").textContent = provSet.size.toLocaleString();
@@ -69,15 +75,6 @@ function capDots(m) {
   html += `<span class="cap-dot ${m.open_weights ? 'on open' : ''}"${m.open_weights ? ' title="Open weights"' : ''}></span>`;
   html += "</span>";
   return html;
-}
-
-function capLegend() {
-  return `<div class="cap-dots" style="gap: 10px; margin-top: 4px;">
-    <span class="cap-dot on rag" style="width: 10px; height: 10px;"></span><span style="font-size: 10px; color: var(--muted);">Reasoning</span>
-    <span class="cap-dot on tool" style="width: 10px; height: 10px;"></span><span style="font-size: 10px; color: var(--muted);">Tool use</span>
-    <span class="cap-dot on str" style="width: 10px; height: 10px;"></span><span style="font-size: 10px; color: var(--muted);">Structured</span>
-    <span class="cap-dot on open" style="width: 10px; height: 10px;"></span><span style="font-size: 10px; color: var(--muted);">Open</span>
-  </div>`;
 }
 
 function renderModels(filtered) {
@@ -141,29 +138,94 @@ function renderProviders(filtered) {
   document.getElementById("loadMore").hidden = true;
 }
 
+function renderChanges() {
+  const feed = document.getElementById("changesFeed");
+  const now = new Date();
+  let cutoff;
+  if (activeChangesRange === "daily") cutoff = new Date(now.getTime() - MILLIS_DAY);
+  else if (activeChangesRange === "weekly") cutoff = new Date(now.getTime() - 7 * MILLIS_DAY);
+  else cutoff = null;
+
+  let items = history;
+  if (cutoff) items = items.filter(ev => new Date(ev.detected_at) >= cutoff);
+
+  if (!items.length) {
+    feed.innerHTML = `<div class="chg-empty">No changes detected in this period.</div>`;
+    return;
+  }
+
+  // Group by date
+  const groups = {};
+  for (const ev of items) {
+    const d = new Date(ev.detected_at);
+    const key = d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+    if (!groups[key]) groups[key] = { label: key, date: d, events: [] };
+    groups[key].events.push(ev);
+  }
+
+  const sortedDays = Object.values(groups).sort((a, b) => b.date.getTime() - a.date.getTime());
+  const typeLabels = { new_model: "New", price_change: "Drop", model_became_free: "Free" };
+  const typeTags = { new_model: "new", price_change: "drop", model_became_free: "free" };
+
+  feed.innerHTML = sortedDays.map(day => {
+    // Count types per day
+    const tally = {};
+    for (const ev of day.events) tally[ev.type] = (tally[ev.type] || 0) + 1;
+    const summary = Object.entries(tally)
+      .filter(([t]) => typeLabels[t])
+      .map(([t, c]) => `${c} ${typeLabels[t]}`)
+      .join(", ");
+
+    const rows = day.events.map(ev => {
+      const t = new Date(ev.detected_at);
+      const time = t.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" });
+      const tag = typeTags[ev.type] || "new";
+      const lbl = typeLabels[ev.type] || ev.type;
+      const providers = ev.provider ? `<span class="chg-providers">via ${esc(ev.provider)}</span>` : "";
+      const details = ev.details ? `<span class="chg-price">${esc(ev.details)}</span>` : "";
+      return `<div class="chg-row">
+        <span class="chg-time">${esc(time)}</span>
+        <div class="chg-body">
+          <span class="chg-tag ${tag}">${esc(lbl)}</span><span class="chg-model">${esc(ev.model_id)}</span>
+          ${providers}${details}
+        </div>
+      </div>`;
+    }).join("");
+
+    return `<div class="chg-day">
+      <h3>${esc(day.label)} <span style="color:var(--muted);font-size:12px;font-weight:400;">· ${esc(summary)}</span></h3>
+      ${rows}
+    </div>`;
+  }).join("");
+
+  document.getElementById("loadMore").hidden = true;
+}
+
 function render() {
   const query = document.getElementById("searchInput").value.trim().toLowerCase();
   const isProviders = activeView === "providers";
+  const isChanges = activeView === "changes";
 
-  document.getElementById("modelFilters")?.classList.toggle("hidden", isProviders);
-  document.getElementById("tableView")?.classList.toggle("hidden", isProviders);
-
-  document.getElementById("modelFilters")?.classList.toggle("hidden", isProviders);
-  document.getElementById("tableView")?.classList.toggle("hidden", isProviders);
+  document.getElementById("modelFilters")?.classList.toggle("hidden", isProviders || isChanges);
+  document.getElementById("tableView")?.classList.toggle("hidden", isProviders || isChanges);
   document.getElementById("providerGrid")?.classList.toggle("active", isProviders);
+  document.getElementById("changesView")?.classList.toggle("active", isChanges);
 
-  const resultCount = document.getElementById("resultCount");
+  if (isChanges) {
+    renderChanges();
+    return;
+  }
 
   if (isProviders) {
     renderProviders(query);
-    resultCount.textContent = "";
+    document.getElementById("resultCount").textContent = "";
     return;
   }
 
   const fn = FILTERS[activeFilter] || FILTERS.all;
   const filtered = models.filter(m => fn(m) && (!query ||
     `${m.name} ${m.model_id} ${m.provider} ${m.description}`.toLowerCase().includes(query)));
-  resultCount.textContent = `${filtered.length.toLocaleString()} ${filtered.length === 1 ? "model" : "models"}`;
+  document.getElementById("resultCount").textContent = `${filtered.length.toLocaleString()} ${filtered.length === 1 ? "model" : "models"}`;
   renderModels(filtered);
 }
 
@@ -180,6 +242,7 @@ document.querySelectorAll(".tab-pri").forEach(btn => {
       document.querySelectorAll("#modelFilters .filter").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
       document.querySelector("#modelFilters .filter[data-filter='all']")?.classList.add("active");
     }
+    document.getElementById("searchInput").value = "";
     render();
   });
 });
@@ -190,6 +253,15 @@ document.querySelectorAll(".filter").forEach(btn => {
     btn.classList.add("active"); btn.setAttribute("aria-selected", "true");
     activeFilter = btn.dataset.filter;
     visibleCount = 100;
+    render();
+  });
+});
+
+document.querySelectorAll(".chg-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".chg-btn").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+    btn.classList.add("active"); btn.setAttribute("aria-selected", "true");
+    activeChangesRange = btn.dataset.range;
     render();
   });
 });
