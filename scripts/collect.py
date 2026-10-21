@@ -3,13 +3,15 @@ import os
 from datetime import datetime, timezone
 from typing import Any
 from sources.models_dev import fetch_models_dev_catalog
+from sources.llm_stats import fetch_llm_stats, attach_llm_stats, stats_index
 from scripts.detect_changes import detect_model_changes
-from scripts.notify_telegram import send_telegram
+from scripts.notify_telegram import send_telegram, send_alerts
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 MODELS_FILE = os.path.join(DATA_DIR, "models.json")
 OFFERS_FILE = os.path.join(DATA_DIR, "offers.json")
 HISTORY_FILE = os.path.join(DATA_DIR, "history.json")
+STATS_FILE = os.path.join(DATA_DIR, "llm_stats.json")
 def load_json(filepath: str, default: Any = None):
     if os.path.exists(filepath):
         try:
@@ -27,6 +29,15 @@ def save_json(filepath: str, data: Any):
 def main():
     print(f"[{datetime.now(timezone.utc).isoformat()}] Starting AI Catalog Sync...")
 
+    # Manual verification path: Actions -> Run workflow -> test_alert
+    if os.getenv("TEST_ALERT", "").lower() in ("1", "true", "yes"):
+        ok = send_telegram(
+            "🛰️ <b>Free AI Radar test alert</b>\n"
+            "If you can read this, the GitHub Actions secrets are wired correctly."
+        )
+        print(f"[Test] Telegram test alert {'SENT' if ok else 'FAILED — check secrets above'}.")
+        return
+
     old_models = load_json(MODELS_FILE, [])
     old_history = load_json(HISTORY_FILE, [])
 
@@ -37,13 +48,20 @@ def main():
     if not new_models:
         print("[Warn] No models fetched from providers. Keeping old snapshot.")
         new_models = old_models
-    # 2. Diff and detect changes (dispatches alerts for new OpenCode free drops too!)
-    events, alerts = detect_model_changes(old_models, new_models)
-    print(f"[Diff] Detected {len(events)} new events and {len(alerts)} priority alerts.")
 
-    # 3. Send Telegram alerts
-    for alert in alerts:
-        send_telegram(alert)
+    # 1b. Optional benchmark enrichment from llm-stats.com, joined by model name
+    llm_stats = fetch_llm_stats()
+    if llm_stats:
+        attach_llm_stats(new_models, llm_stats)
+        # Store the score table once; models.json only carries a short pointer id.
+        save_json(STATS_FILE, stats_index(llm_stats))
+
+    # 2. Diff and detect changes (free transitions first, batched, capped)
+    events, alerts = detect_model_changes(old_models, new_models)
+    print(f"[Diff] Detected {len(events)} new events and {len(alerts)} alert message(s).")
+
+    # 3. Send Telegram alerts as one capped, rate-limit-safe batch
+    send_alerts(alerts)
 
     # 4. Save snapshots
     updated_history = (events + old_history)[:200]

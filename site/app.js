@@ -1,5 +1,6 @@
 let models = [];
 let history = [];
+let statsById = {};
 let activeView = "models";
 let activeFilter = "all";
 let activeChangesRange = "daily";
@@ -45,12 +46,17 @@ function ctxFmt(v) {
 
 async function loadData() {
   try {
-    const [catalog, histData] = await Promise.all([
+    const [catalog, histData, statsData] = await Promise.all([
       fetchJson("models.json"),
       fetchJson("history.json").catch(() => []),
+      fetchJson("llm_stats.json").catch(() => ({})),
     ]);
     models = catalog;
     history = histData;
+    statsById = statsData && !Array.isArray(statsData) ? statsData : {};
+
+    // Hide the LLM Stats column entirely when no benchmark data was enriched
+    document.body.classList.toggle("no-stats", !models.some(m => m.llm_stats_id && statsById[m.llm_stats_id]));
 
     const provSet = new Set(models.map(m => m.provider_id).filter(Boolean));
     document.getElementById("totalModels").textContent = models.length.toLocaleString();
@@ -61,7 +67,7 @@ async function loadData() {
     document.getElementById("lastUpdated").textContent = latest ? `Synced ${new Date(latest).toLocaleDateString()}` : "Catalog synced";
   } catch (e) {
     document.getElementById("lastUpdated").textContent = "Catalog unavailable";
-    document.getElementById("modelBody").innerHTML = `<tr><td colspan="6"><div class="empty"><h3>Catalog unavailable</h3><p>Could not load model data. Run the sync workflow and reload.</p></div></td></tr>`;
+    document.getElementById("modelBody").innerHTML = `<tr><td colspan="7"><div class="empty"><h3>Catalog unavailable</h3><p>Could not load model data. Run the sync workflow and reload.</p></div></td></tr>`;
     return;
   }
   render();
@@ -75,6 +81,24 @@ function capDots(m) {
   html += `<span class="cap-dot ${m.open_weights ? 'on open' : ''}"${m.open_weights ? ' title="Open weights"' : ''}></span>`;
   html += "</span>";
   return html;
+}
+
+function scoreCell(m) {
+  const s = m.llm_stats_id ? statsById[m.llm_stats_id] : null;
+  if (!s) return '<span class="score-na">—</span>';
+  const bits = [];
+  if (s.rank) bits.push(`#${s.rank}`);
+  if (s.score !== null && s.score !== undefined && Number.isFinite(Number(s.score))) {
+    bits.push(Number(s.score).toFixed(1));
+  }
+  const tip = [s.organization, s.benchmark_count ? `${s.benchmark_count} benchmark${s.benchmark_count === 1 ? "" : "s"}` : null]
+    .filter(Boolean).join(" · ");
+  if (!bits.length) {
+    return s.benchmark_count
+      ? `<span class="score-na" title="${esc(tip)}">${s.benchmark_count} scores</span>`
+      : '<span class="score-na">—</span>';
+  }
+  return `<a class="score-link" href="${esc(s.url || 'https://llm-stats.com/')}" target="_blank" rel="noopener noreferrer" title="${esc(tip)}">${bits.join(" · ")}</a>`;
 }
 
 function renderModels(filtered) {
@@ -95,12 +119,13 @@ function renderModels(filtered) {
       <td><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(m.name)}</a><span class="model-id">${esc(m.model_id)}</span></td>
       <td><span class="provider-cell">${esc(m.provider)}</span></td>
       <td>${capDots(m)}</td>
+      <td class="score-cell">${scoreCell(m)}</td>
       <td class="price-cell ${inpCls}">${inpFmt}</td>
       <td class="price-cell ${outCls}">${outFmt}${orBadge}</td>
       <td class="context-cell ${ctxCls}">${ctx}</td>
     </tr>`;
   }).join("");
-  if (!list.length) body.innerHTML = `<tr><td colspan="6"><div class="empty"><h3>No matches</h3><p>Try a different search term or clear the active filter.</p></div></td></tr>`;
+  if (!list.length) body.innerHTML = `<tr><td colspan="7"><div class="empty"><h3>No matches</h3><p>Try a different search term or clear the active filter.</p></div></td></tr>`;
   document.getElementById("loadMore").hidden = filtered.length <= visibleCount;
 }
 

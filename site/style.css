@@ -162,3 +162,12 @@ footer a { color: var(--green); font-weight: 500; }
 }
 @media (prefers-reduced-motion: reduce) { *,::after,::before { animation: none !important; transition: none !important; } }
 @media print { .topbar,.search-wrap,.filters,.load-more,footer { display: none; } body { background: white; color: black; } }
+/* LLM Stats benchmark column */
+.model-table .col-score { width: 92px; }
+.score-cell { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.score-link { font: 600 13px/1 "Space Grotesk",sans-serif; color: var(--blue); text-decoration: none; }
+.score-link:hover { text-decoration: underline; }
+.score-na { font: 500 12px/1 "Space Grotesk",sans-serif; color: var(--muted-strong); }
+
+/* Hide the benchmark column when LLM Stats data is absent */
+body.no-stats .col-score, body.no-stats .score-cell { display: none; }

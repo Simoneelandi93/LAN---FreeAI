@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "*/30 * * * *"
   workflow_dispatch:
+    inputs:
+      test_alert:
+        description: "Send a Telegram test alert and exit (verifies secrets)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -32,6 +37,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TEST_ALERT: ${{ inputs.test_alert }}
         run: python -m scripts.collect
 
       - name: Commit & push if catalog changed

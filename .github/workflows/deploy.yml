@@ -33,8 +33,6 @@ jobs:
           cp -r site/* _site/
           mkdir -p _site/data
           cp -r data/* _site/data/
-          # Price cache is an internal artifact, not part of the public dashboard
-          rm -f _site/data/opencode_meta.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v6

@@ -1,0 +1,5657 @@
+{
+  "chatgpt-4o-latest": {
+    "id": "chatgpt-4o-latest",
+    "name": "ChatGPT-4o Latest",
+    "organization": "OpenAI",
+    "rank": 183,
+    "score": 24.66,
+    "benchmarks": {
+      "GPQA": 84.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/chatgpt-4o-latest"
+  },
+  "claude-3-5-haiku-20241022": {
+    "id": "claude-3-5-haiku-20241022",
+    "name": "Claude 3.5 Haiku",
+    "organization": "Anthropic",
+    "rank": 323,
+    "score": 4.82,
+    "benchmarks": {
+      "GPQA": 41.6,
+      "SWE-bench Verified": 40.6,
+      "Tau-bench Retail": 51.0
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/claude-3-5-haiku-20241022"
+  },
+  "claude-3-5-sonnet-20240620": {
+    "id": "claude-3-5-sonnet-20240620",
+    "name": "Claude 3.5 Sonnet",
+    "organization": "Anthropic",
+    "rank": 251,
+    "score": 15.54,
+    "benchmarks": {
+      "GPQA": 59.4
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/claude-3-5-sonnet-20240620"
+  },
+  "claude-3-5-sonnet-20241022": {
+    "id": "claude-3-5-sonnet-20241022",
+    "name": "Claude 3.5 Sonnet",
+    "organization": "Anthropic",
+    "rank": 231,
+    "score": 18.73,
+    "benchmarks": {
+      "GPQA": 67.2,
+      "SWE-bench Verified": 49.0,
+      "MMMU": 68.3,
+      "Tau-bench Retail": 69.2
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/claude-3-5-sonnet-20241022"
+  },
+  "claude-3-7-sonnet-20250219": {
+    "id": "claude-3-7-sonnet-20250219",
+    "name": "Claude 3.7 Sonnet",
+    "organization": "Anthropic",
+    "rank": 192,
+    "score": 23.7,
+    "benchmarks": {
+      "GPQA": 84.8,
+      "AIME 2025": 54.8,
+      "SWE-bench Verified": 70.3,
+      "MMMU": 75.0,
+      "Terminal-Bench": 35.2,
+      "MMMLU": 86.1
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/claude-3-7-sonnet-20250219"
+  },
+  "claude-3-haiku-20240307": {
+    "id": "claude-3-haiku-20240307",
+    "name": "Claude 3 Haiku",
+    "organization": "Anthropic",
+    "rank": 359,
+    "score": -1.78,
+    "benchmarks": {
+      "GPQA": 33.3
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/claude-3-haiku-20240307"
+  },
+  "claude-3-opus-20240229": {
+    "id": "claude-3-opus-20240229",
+    "name": "Claude 3 Opus",
+    "organization": "Anthropic",
+    "rank": 291,
+    "score": 9.54,
+    "benchmarks": {
+      "GPQA": 50.4
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/claude-3-opus-20240229"
+  },
+  "claude-3-sonnet-20240229": {
+    "id": "claude-3-sonnet-20240229",
+    "name": "Claude 3 Sonnet",
+    "organization": "Anthropic",
+    "rank": 343,
+    "score": 1.4,
+    "benchmarks": {
+      "GPQA": 40.4
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/claude-3-sonnet-20240229"
+  },
+  "claude-fable-5": {
+    "id": "claude-fable-5",
+    "name": "Claude Fable 5",
+    "organization": "Anthropic",
+    "rank": 10,
+    "score": 53.08,
+    "benchmarks": {
+      "HLE": 64.5,
+      "SWE-bench Verified": 95.0,
+      "SWE-bench Pro": 80.0
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/claude-fable-5"
+  },
+  "claude-fable-5-1": {
+    "id": "claude-fable-5-1",
+    "name": "Claude Fable 5.1",
+    "organization": "Anthropic",
+    "rank": 8,
+    "score": 53.22,
+    "benchmarks": {
+      "HLE": 65.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/claude-fable-5-1"
+  },
+  "claude-haiku-4-5-20251001": {
+    "id": "claude-haiku-4-5-20251001",
+    "name": "Claude Haiku 4.5",
+    "organization": "Anthropic",
+    "rank": 177,
+    "score": 25.51,
+    "benchmarks": {
+      "GPQA": 73.0,
+      "AIME 2025": 80.7,
+      "SWE-bench Verified": 73.3,
+      "Terminal-Bench": 41.0,
+      "MMMLU": 83.0,
+      "OSWorld": 50.7
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/claude-haiku-4-5-20251001"
+  },
+  "claude-haiku-5-5": {
+    "id": "claude-haiku-5-5",
+    "name": "Claude Haiku 5.5",
+    "organization": "Anthropic",
+    "rank": 19,
+    "score": 49.8,
+    "benchmarks": {
+      "SWE-bench Pro": 64.8
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/claude-haiku-5-5"
+  },
+  "claude-mythos-5-1": {
+    "id": "claude-mythos-5-1",
+    "name": "Claude Mythos 5.1",
+    "organization": "Anthropic",
+    "rank": 49,
+    "score": 44.2,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/claude-mythos-5-1"
+  },
+  "claude-mythos-preview": {
+    "id": "claude-mythos-preview",
+    "name": "Claude Mythos Preview",
+    "organization": "Anthropic",
+    "rank": 5,
+    "score": 54.41,
+    "benchmarks": {
+      "GPQA": 94.6,
+      "HLE": 64.7,
+      "SWE-bench Verified": 93.9,
+      "SWE-bench Pro": 77.8,
+      "BrowseComp": 86.9,
+      "MMMLU": 92.7
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/claude-mythos-preview"
+  },
+  "claude-opus-4-1-20250805": {
+    "id": "claude-opus-4-1-20250805",
+    "name": "Claude Opus 4.1",
+    "organization": "Anthropic",
+    "rank": 145,
+    "score": 29.71,
+    "benchmarks": {
+      "GPQA": 80.9,
+      "AIME 2025": 78.0,
+      "SWE-bench Verified": 74.5,
+      "Terminal-Bench": 43.3,
+      "MMMLU": 89.5,
+      "Tau-bench Retail": 82.4
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/claude-opus-4-1-20250805"
+  },
+  "claude-opus-4-20250514": {
+    "id": "claude-opus-4-20250514",
+    "name": "Claude Opus 4",
+    "organization": "Anthropic",
+    "rank": 161,
+    "score": 27.56,
+    "benchmarks": {
+      "GPQA": 79.6,
+      "AIME 2025": 75.5,
+      "SWE-bench Verified": 72.5,
+      "Terminal-Bench": 39.2,
+      "ARC-AGI v2": 8.6,
+      "MMMLU": 88.8
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/claude-opus-4-20250514"
+  },
+  "claude-opus-4-5-20251101": {
+    "id": "claude-opus-4-5-20251101",
+    "name": "Claude Opus 4.5",
+    "organization": "Anthropic",
+    "rank": 83,
+    "score": 38.03,
+    "benchmarks": {
+      "GPQA": 87.0,
+      "SWE-bench Verified": 80.9,
+      "ARC-AGI v2": 37.6,
+      "MMMLU": 90.8,
+      "OSWorld": 66.3,
+      "MCP Atlas": 62.3
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/claude-opus-4-5-20251101"
+  },
+  "claude-opus-4-6": {
+    "id": "claude-opus-4-6",
+    "name": "Claude Opus 4.6",
+    "organization": "Anthropic",
+    "rank": 46,
+    "score": 44.47,
+    "benchmarks": {
+      "GPQA": 91.3,
+      "AIME 2025": 99.8,
+      "HLE": 53.1,
+      "SWE-bench Verified": 80.8,
+      "MMMU-Pro": 77.3,
+      "BrowseComp": 84.0
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/claude-opus-4-6"
+  },
+  "claude-opus-4-7": {
+    "id": "claude-opus-4-7",
+    "name": "Claude Opus 4.7",
+    "organization": "Anthropic",
+    "rank": 52,
+    "score": 43.6,
+    "benchmarks": {
+      "GPQA": 94.2,
+      "HLE": 54.7,
+      "SWE-bench Verified": 87.6,
+      "SWE-bench Pro": 64.3,
+      "BrowseComp": 79.3,
+      "MMMLU": 91.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/claude-opus-4-7"
+  },
+  "claude-opus-4-8": {
+    "id": "claude-opus-4-8",
+    "name": "Claude Opus 4.8",
+    "organization": "Anthropic",
+    "rank": 21,
+    "score": 49.75,
+    "benchmarks": {
+      "GPQA": 93.6,
+      "HLE": 57.9,
+      "SWE-bench Verified": 88.6,
+      "SWE-bench Pro": 69.2,
+      "BrowseComp": 84.3,
+      "CharXiv-R": 89.9
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/claude-opus-4-8"
+  },
+  "claude-opus-5": {
+    "id": "claude-opus-5",
+    "name": "Claude Opus 5",
+    "organization": "Anthropic",
+    "rank": 6,
+    "score": 53.74,
+    "benchmarks": {
+      "HLE": 64.7,
+      "BrowseComp": 90.8
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/claude-opus-5"
+  },
+  "claude-opus-5-5": {
+    "id": "claude-opus-5-5",
+    "name": "Claude Opus 5.5",
+    "organization": "Anthropic",
+    "rank": 1,
+    "score": 60.33,
+    "benchmarks": {
+      "SWE-bench Pro": 89.9
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/claude-opus-5-5"
+  },
+  "claude-sonnet-4-20250514": {
+    "id": "claude-sonnet-4-20250514",
+    "name": "Claude Sonnet 4",
+    "organization": "Anthropic",
+    "rank": 188,
+    "score": 24.04,
+    "benchmarks": {
+      "GPQA": 75.4,
+      "AIME 2025": 70.5,
+      "SWE-bench Verified": 72.7,
+      "MMMU": 74.4,
+      "Terminal-Bench": 35.5,
+      "MMMLU": 86.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/claude-sonnet-4-20250514"
+  },
+  "claude-sonnet-4-5-20250929": {
+    "id": "claude-sonnet-4-5-20250929",
+    "name": "Claude Sonnet 4.5",
+    "organization": "Anthropic",
+    "rank": 128,
+    "score": 31.88,
+    "benchmarks": {
+      "GPQA": 83.4,
+      "AIME 2025": 87.0,
+      "Terminal-Bench": 50.0,
+      "MMMLU": 89.1,
+      "Tau-bench Retail": 86.2,
+      "OSWorld": 61.4
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/claude-sonnet-4-5-20250929"
+  },
+  "claude-sonnet-4-6": {
+    "id": "claude-sonnet-4-6",
+    "name": "Claude Sonnet 4.6",
+    "organization": "Anthropic",
+    "rank": 91,
+    "score": 36.7,
+    "benchmarks": {
+      "GPQA": 89.9,
+      "HLE": 49.0,
+      "SWE-bench Verified": 79.6,
+      "MMMU-Pro": 75.6,
+      "BrowseComp": 74.7,
+      "ARC-AGI v2": 58.3
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/claude-sonnet-4-6"
+  },
+  "claude-sonnet-5": {
+    "id": "claude-sonnet-5",
+    "name": "Claude Sonnet 5",
+    "organization": "Anthropic",
+    "rank": 36,
+    "score": 47.16,
+    "benchmarks": {
+      "HLE": 57.4,
+      "SWE-bench Verified": 85.2,
+      "SWE-bench Pro": 63.2,
+      "BrowseComp": 84.7,
+      "CharXiv-R": 88.3,
+      "Toolathlon": 54.3
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/claude-sonnet-5"
+  },
+  "claude-sonnet-5-5": {
+    "id": "claude-sonnet-5-5",
+    "name": "Claude Sonnet 5.5",
+    "organization": "Anthropic",
+    "rank": 2,
+    "score": 58.3,
+    "benchmarks": {
+      "SWE-bench Pro": 81.3
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/claude-sonnet-5-5"
+  },
+  "codestral-22b": {
+    "id": "codestral-22b",
+    "name": "Codestral-22B",
+    "organization": "Mistral AI",
+    "rank": 350,
+    "score": -0.27,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/codestral-22b"
+  },
+  "command-a-plus-05-2026": {
+    "id": "command-a-plus-05-2026",
+    "name": "Command A+",
+    "organization": "Cohere",
+    "rank": 191,
+    "score": 23.75,
+    "benchmarks": {
+      "AIME 2025": 90.0,
+      "MMMU": 75.1,
+      "MMMU-Pro": 63.0,
+      "SciCode": 38.0,
+      "CharXiv-R": 52.7
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/command-a-plus-05-2026"
+  },
+  "command-r-plus-04-2024": {
+    "id": "command-r-plus-04-2024",
+    "name": "Command R+",
+    "organization": "Cohere",
+    "rank": 352,
+    "score": -0.8,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/command-r-plus-04-2024"
+  },
+  "deepseek-chat": {
+    "id": "deepseek-chat",
+    "name": "DeepSeek-V3.2 (Non-thinking)",
+    "organization": "DeepSeek",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/deepseek-chat"
+  },
+  "deepseek-r1": {
+    "id": "deepseek-r1",
+    "name": "DeepSeek-R1",
+    "organization": "DeepSeek",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/deepseek-r1"
+  },
+  "deepseek-r1-0528": {
+    "id": "deepseek-r1-0528",
+    "name": "DeepSeek-R1-0528",
+    "organization": "DeepSeek",
+    "rank": 190,
+    "score": 23.82,
+    "benchmarks": {
+      "GPQA": 81.0,
+      "AIME 2025": 87.5,
+      "HLE": 17.7,
+      "SWE-bench Verified": 44.6,
+      "SimpleQA": 92.3,
+      "BrowseComp": 8.9
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/deepseek-r1-0528"
+  },
+  "deepseek-r1-distill-llama-70b": {
+    "id": "deepseek-r1-distill-llama-70b",
+    "name": "DeepSeek R1 Distill Llama 70B",
+    "organization": "DeepSeek",
+    "rank": 259,
+    "score": 14.14,
+    "benchmarks": {
+      "GPQA": 65.2
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-r1-distill-llama-70b"
+  },
+  "deepseek-r1-distill-llama-8b": {
+    "id": "deepseek-r1-distill-llama-8b",
+    "name": "DeepSeek R1 Distill Llama 8B",
+    "organization": "DeepSeek",
+    "rank": 314,
+    "score": 6.67,
+    "benchmarks": {
+      "GPQA": 49.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-r1-distill-llama-8b"
+  },
+  "deepseek-r1-distill-qwen-14b": {
+    "id": "deepseek-r1-distill-qwen-14b",
+    "name": "DeepSeek R1 Distill Qwen 14B",
+    "organization": "DeepSeek",
+    "rank": 284,
+    "score": 10.6,
+    "benchmarks": {
+      "GPQA": 59.1
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-r1-distill-qwen-14b"
+  },
+  "deepseek-r1-distill-qwen-1.5b": {
+    "id": "deepseek-r1-distill-qwen-1.5b",
+    "name": "DeepSeek R1 Distill Qwen 1.5B",
+    "organization": "DeepSeek",
+    "rank": 366,
+    "score": -3.3,
+    "benchmarks": {
+      "GPQA": 33.8
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-r1-distill-qwen-1.5b"
+  },
+  "deepseek-r1-distill-qwen-32b": {
+    "id": "deepseek-r1-distill-qwen-32b",
+    "name": "DeepSeek R1 Distill Qwen 32B",
+    "organization": "DeepSeek",
+    "rank": 271,
+    "score": 12.71,
+    "benchmarks": {
+      "GPQA": 62.1
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-r1-distill-qwen-32b"
+  },
+  "deepseek-r1-distill-qwen-7b": {
+    "id": "deepseek-r1-distill-qwen-7b",
+    "name": "DeepSeek R1 Distill Qwen 7B",
+    "organization": "DeepSeek",
+    "rank": 303,
+    "score": 8.09,
+    "benchmarks": {
+      "GPQA": 49.1
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-r1-distill-qwen-7b"
+  },
+  "deepseek-r1-zero": {
+    "id": "deepseek-r1-zero",
+    "name": "DeepSeek R1 Zero",
+    "organization": "DeepSeek",
+    "rank": 250,
+    "score": 15.75,
+    "benchmarks": {
+      "GPQA": 73.3
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-r1-zero"
+  },
+  "deepseek-reasoner": {
+    "id": "deepseek-reasoner",
+    "name": "DeepSeek-V3.2 (Thinking)",
+    "organization": "DeepSeek",
+    "rank": 124,
+    "score": 32.42,
+    "benchmarks": {
+      "GPQA": 82.4,
+      "AIME 2025": 93.1,
+      "HLE": 25.1,
+      "SWE-bench Verified": 73.1,
+      "BrowseComp": 51.4,
+      "Toolathlon": 35.2
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/deepseek-reasoner"
+  },
+  "deepseek-v2.5": {
+    "id": "deepseek-v2.5",
+    "name": "DeepSeek-V2.5",
+    "organization": "DeepSeek",
+    "rank": 305,
+    "score": 7.75,
+    "benchmarks": {
+      "SWE-bench Verified": 16.8
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-v2.5"
+  },
+  "deepseek-v3": {
+    "id": "deepseek-v3",
+    "name": "DeepSeek-V3",
+    "organization": "DeepSeek",
+    "rank": 252,
+    "score": 15.33,
+    "benchmarks": {
+      "GPQA": 59.1,
+      "SWE-bench Verified": 42.0,
+      "SimpleQA": 24.9
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/deepseek-v3"
+  },
+  "deepseek-v3-0324": {
+    "id": "deepseek-v3-0324",
+    "name": "DeepSeek-V3 0324",
+    "organization": "DeepSeek",
+    "rank": 269,
+    "score": 13.05,
+    "benchmarks": {
+      "GPQA": 68.4
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-v3-0324"
+  },
+  "deepseek-v3.1": {
+    "id": "deepseek-v3.1",
+    "name": "DeepSeek-V3.1",
+    "organization": "DeepSeek",
+    "rank": 204,
+    "score": 21.79,
+    "benchmarks": {
+      "GPQA": 74.9,
+      "AIME 2025": 49.8,
+      "HLE": 15.9,
+      "SWE-bench Verified": 66.0,
+      "SimpleQA": 93.4,
+      "BrowseComp": 30.0
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/deepseek-v3.1"
+  },
+  "deepseek-v3.2": {
+    "id": "deepseek-v3.2",
+    "name": "DeepSeek-V3.2",
+    "organization": "DeepSeek",
+    "rank": 120,
+    "score": 33.1,
+    "benchmarks": {
+      "GPQA": 82.4,
+      "AIME 2025": 93.1,
+      "HLE": 40.8,
+      "SWE-bench Verified": 73.1,
+      "BrowseComp": 51.4,
+      "Toolathlon": 35.2
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/deepseek-v3.2"
+  },
+  "deepseek-v3.2-exp": {
+    "id": "deepseek-v3.2-exp",
+    "name": "DeepSeek-V3.2-Exp",
+    "organization": "DeepSeek",
+    "rank": 158,
+    "score": 27.91,
+    "benchmarks": {
+      "GPQA": 79.9,
+      "AIME 2025": 89.3,
+      "HLE": 19.8,
+      "SWE-bench Verified": 67.8,
+      "SimpleQA": 97.1,
+      "BrowseComp": 40.1
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/deepseek-v3.2-exp"
+  },
+  "deepseek-v3.2-speciale": {
+    "id": "deepseek-v3.2-speciale",
+    "name": "DeepSeek-V3.2-Speciale",
+    "organization": "DeepSeek",
+    "rank": 115,
+    "score": 33.76,
+    "benchmarks": {
+      "AIME 2025": 96.0,
+      "HLE": 30.6,
+      "SWE-bench Verified": 73.1,
+      "Toolathlon": 35.2
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/deepseek-v3.2-speciale"
+  },
+  "deepseek-v4.1-flash": {
+    "id": "deepseek-v4.1-flash",
+    "name": "DeepSeek-V4.1-Flash",
+    "organization": "DeepSeek",
+    "rank": 20,
+    "score": 49.77,
+    "benchmarks": {
+      "GPQA": 90.9,
+      "HLE": 36.8
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/deepseek-v4.1-flash"
+  },
+  "deepseek-v4.1-flash-1017": {
+    "id": "deepseek-v4.1-flash-1017",
+    "name": "DeepSeek-V4.1-Flash-1017",
+    "organization": "DeepSeek",
+    "rank": 15,
+    "score": 51.04,
+    "benchmarks": {
+      "HLE": 42.6
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-v4.1-flash-1017"
+  },
+  "deepseek-v4-flash-0423": {
+    "id": "deepseek-v4-flash-0423",
+    "name": "DeepSeek-V4-Flash-0423",
+    "organization": "DeepSeek",
+    "rank": 99,
+    "score": 35.95,
+    "benchmarks": {
+      "GPQA": 87.4,
+      "HLE": 40.3,
+      "SWE-bench Verified": 78.6,
+      "SWE-bench Pro": 52.3,
+      "SimpleQA": 28.9,
+      "BrowseComp": 53.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/deepseek-v4-flash-0423"
+  },
+  "deepseek-v4-flash-0731": {
+    "id": "deepseek-v4-flash-0731",
+    "name": "DeepSeek-V4-Flash-0731",
+    "organization": "DeepSeek",
+    "rank": 55,
+    "score": 42.95,
+    "benchmarks": {
+      "Toolathlon": 70.3
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-v4-flash-0731"
+  },
+  "deepseek-v4-flash-max": {
+    "id": "deepseek-v4-flash-max",
+    "name": "DeepSeek-V4-Flash-Max",
+    "organization": "DeepSeek",
+    "rank": 76,
+    "score": 38.96,
+    "benchmarks": {
+      "GPQA": 88.1,
+      "HLE": 45.1,
+      "SWE-bench Verified": 79.0,
+      "SWE-bench Pro": 52.6,
+      "SimpleQA": 34.1,
+      "BrowseComp": 73.2
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/deepseek-v4-flash-max"
+  },
+  "deepseek-v4-flash-vision-exp": {
+    "id": "deepseek-v4-flash-vision-exp",
+    "name": "DeepSeek-V4-Flash-Vision-Exp",
+    "organization": "DeepSeek",
+    "rank": 51,
+    "score": 44.03,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/deepseek-v4-flash-vision-exp"
+  },
+  "deepseek-v4-pro-0813": {
+    "id": "deepseek-v4-pro-0813",
+    "name": "DeepSeek-V4-Pro-0813",
+    "organization": "DeepSeek",
+    "rank": 18,
+    "score": 50.26,
+    "benchmarks": {
+      "HLE": 60.0,
+      "Toolathlon": 74.1
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/deepseek-v4-pro-0813"
+  },
+  "deepseek-v4-pro-max": {
+    "id": "deepseek-v4-pro-max",
+    "name": "DeepSeek-V4-Pro-Max",
+    "organization": "DeepSeek",
+    "rank": 57,
+    "score": 42.86,
+    "benchmarks": {
+      "GPQA": 90.1,
+      "HLE": 48.2,
+      "SWE-bench Verified": 80.6,
+      "SWE-bench Pro": 55.4,
+      "SimpleQA": 57.9,
+      "BrowseComp": 83.4
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/deepseek-v4-pro-max"
+  },
+  "deepseek-vl2": {
+    "id": "deepseek-vl2",
+    "name": "DeepSeek VL2",
+    "organization": "DeepSeek",
+    "rank": 335,
+    "score": 2.62,
+    "benchmarks": {
+      "MMMU": 51.1
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-vl2"
+  },
+  "deepseek-vl2-small": {
+    "id": "deepseek-vl2-small",
+    "name": "DeepSeek VL2 Small",
+    "organization": "DeepSeek",
+    "rank": 345,
+    "score": 0.94,
+    "benchmarks": {
+      "MMMU": 48.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-vl2-small"
+  },
+  "deepseek-vl2-tiny": {
+    "id": "deepseek-vl2-tiny",
+    "name": "DeepSeek VL2 Tiny",
+    "organization": "DeepSeek",
+    "rank": 375,
+    "score": -4.98,
+    "benchmarks": {
+      "MMMU": 40.7
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/deepseek-vl2-tiny"
+  },
+  "devstral-medium-2507": {
+    "id": "devstral-medium-2507",
+    "name": "Devstral Medium",
+    "organization": "Mistral AI",
+    "rank": 267,
+    "score": 13.44,
+    "benchmarks": {
+      "SWE-bench Verified": 61.6
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/devstral-medium-2507"
+  },
+  "devstral-small-2507": {
+    "id": "devstral-small-2507",
+    "name": "Devstral Small 1.1",
+    "organization": "Mistral AI",
+    "rank": 293,
+    "score": 8.82,
+    "benchmarks": {
+      "SWE-bench Verified": 53.6
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/devstral-small-2507"
+  },
+  "diffusiongemma-26b-a4b-it": {
+    "id": "diffusiongemma-26b-a4b-it",
+    "name": "DiffusionGemma 26B-A4B",
+    "organization": "Google",
+    "rank": 228,
+    "score": 19.19,
+    "benchmarks": {
+      "GPQA": 73.2,
+      "HLE": 11.9,
+      "MMMU-Pro": 54.3,
+      "MMMLU": 81.5
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/diffusiongemma-26b-a4b-it"
+  },
+  "ember-1": {
+    "id": "ember-1",
+    "name": "Ember-1",
+    "organization": "Fireworks AI",
+    "rank": 64,
+    "score": 42.19,
+    "benchmarks": {
+      "SWE-bench Verified": 92.2
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/ember-1"
+  },
+  "ernie-4.5": {
+    "id": "ernie-4.5",
+    "name": "ERNIE 4.5",
+    "organization": "Baidu",
+    "rank": 393,
+    "score": -13.7,
+    "benchmarks": {
+      "GPQA": 74.0,
+      "SimpleQA": 1.8
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/ernie-4.5"
+  },
+  "ernie-5.0": {
+    "id": "ernie-5.0",
+    "name": "ERNIE 5.0",
+    "organization": "Baidu",
+    "rank": 119,
+    "score": 33.29,
+    "benchmarks": {
+      "GPQA": 85.0,
+      "AIME 2025": 87.0,
+      "HLE": 39.0,
+      "SimpleQA": 75.0
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/ernie-5.0"
+  },
+  "exaone-4.5-33b": {
+    "id": "exaone-4.5-33b",
+    "name": "EXAONE 4.5 33B",
+    "organization": "LG AI Research",
+    "rank": 175,
+    "score": 25.72,
+    "benchmarks": {
+      "GPQA": 80.5,
+      "AIME 2025": 92.9,
+      "MMMU": 78.7,
+      "MMMU-Pro": 68.6
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/exaone-4.5-33b"
+  },
+  "gemini-1.0-pro": {
+    "id": "gemini-1.0-pro",
+    "name": "Gemini 1.0 Pro",
+    "organization": "Google",
+    "rank": 381,
+    "score": -5.73,
+    "benchmarks": {
+      "GPQA": 27.9,
+      "MMMU": 47.9
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemini-1.0-pro"
+  },
+  "gemini-1.5-flash": {
+    "id": "gemini-1.5-flash",
+    "name": "Gemini 1.5 Flash",
+    "organization": "Google",
+    "rank": 317,
+    "score": 5.68,
+    "benchmarks": {
+      "GPQA": 51.0,
+      "MMMU": 62.3
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemini-1.5-flash"
+  },
+  "gemini-1.5-flash-8b": {
+    "id": "gemini-1.5-flash-8b",
+    "name": "Gemini 1.5 Flash 8B",
+    "organization": "Google",
+    "rank": 355,
+    "score": -1.07,
+    "benchmarks": {
+      "GPQA": 38.4,
+      "MMMU": 53.7
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemini-1.5-flash-8b"
+  },
+  "gemini-1.5-pro": {
+    "id": "gemini-1.5-pro",
+    "name": "Gemini 1.5 Pro",
+    "organization": "Google",
+    "rank": 279,
+    "score": 11.7,
+    "benchmarks": {
+      "GPQA": 59.1,
+      "MMMU": 65.9
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemini-1.5-pro"
+  },
+  "gemini-2.0-flash": {
+    "id": "gemini-2.0-flash",
+    "name": "Gemini 2.0 Flash",
+    "organization": "Google",
+    "rank": 245,
+    "score": 16.19,
+    "benchmarks": {
+      "GPQA": 62.1,
+      "MMMU": 70.7
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemini-2.0-flash"
+  },
+  "gemini-2.0-flash-lite": {
+    "id": "gemini-2.0-flash-lite",
+    "name": "Gemini 2.0 Flash-Lite",
+    "organization": "Google",
+    "rank": 275,
+    "score": 12.06,
+    "benchmarks": {
+      "GPQA": 51.5,
+      "MMMU": 68.0,
+      "SimpleQA": 21.7
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/gemini-2.0-flash-lite"
+  },
+  "gemini-2.0-flash-thinking": {
+    "id": "gemini-2.0-flash-thinking",
+    "name": "Gemini 2.0 Flash Thinking",
+    "organization": "Google",
+    "rank": 243,
+    "score": 16.5,
+    "benchmarks": {
+      "GPQA": 74.2,
+      "MMMU": 75.4
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemini-2.0-flash-thinking"
+  },
+  "gemini-2.5-flash": {
+    "id": "gemini-2.5-flash",
+    "name": "Gemini 2.5 Flash",
+    "organization": "Google",
+    "rank": 207,
+    "score": 21.52,
+    "benchmarks": {
+      "GPQA": 82.8,
+      "AIME 2025": 72.0,
+      "HLE": 11.0,
+      "SWE-bench Verified": 60.4,
+      "MMMU": 79.7,
+      "SimpleQA": 26.9
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gemini-2.5-flash"
+  },
+  "gemini-2.5-flash-lite": {
+    "id": "gemini-2.5-flash-lite",
+    "name": "Gemini 2.5 Flash-Lite",
+    "organization": "Google",
+    "rank": 288,
+    "score": 10.07,
+    "benchmarks": {
+      "GPQA": 64.6,
+      "AIME 2025": 49.8,
+      "HLE": 5.1,
+      "SWE-bench Verified": 31.6,
+      "MMMU": 72.9,
+      "SimpleQA": 10.7
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gemini-2.5-flash-lite"
+  },
+  "gemini-2.5-pro": {
+    "id": "gemini-2.5-pro",
+    "name": "Gemini 2.5 Pro",
+    "organization": "Google",
+    "rank": 162,
+    "score": 27.55,
+    "benchmarks": {
+      "GPQA": 83.0,
+      "AIME 2025": 83.0,
+      "HLE": 17.8,
+      "SWE-bench Verified": 63.2,
+      "MMMU": 79.6,
+      "SimpleQA": 50.8
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gemini-2.5-pro"
+  },
+  "gemini-2.5-pro-preview-06-05": {
+    "id": "gemini-2.5-pro-preview-06-05",
+    "name": "Gemini 2.5 Pro Preview 06-05",
+    "organization": "Google",
+    "rank": 146,
+    "score": 29.66,
+    "benchmarks": {
+      "GPQA": 86.4,
+      "AIME 2025": 88.0,
+      "HLE": 21.6,
+      "SWE-bench Verified": 67.2,
+      "MMMU": 82.0,
+      "SimpleQA": 54.0
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gemini-2.5-pro-preview-06-05"
+  },
+  "gemini-3.1-flash-lite-preview": {
+    "id": "gemini-3.1-flash-lite-preview",
+    "name": "Gemini 3.1 Flash-Lite",
+    "organization": "Google",
+    "rank": 136,
+    "score": 30.67,
+    "benchmarks": {
+      "GPQA": 86.9,
+      "HLE": 16.0,
+      "MMMU-Pro": 76.8,
+      "SimpleQA": 43.3,
+      "MMMLU": 88.9,
+      "CharXiv-R": 73.2
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gemini-3.1-flash-lite-preview"
+  },
+  "gemini-3.1-pro-preview": {
+    "id": "gemini-3.1-pro-preview",
+    "name": "Gemini 3.1 Pro",
+    "organization": "Google",
+    "rank": 54,
+    "score": 43.07,
+    "benchmarks": {
+      "GPQA": 94.3,
+      "HLE": 51.4,
+      "SWE-bench Verified": 80.6,
+      "SWE-bench Pro": 54.2,
+      "MMMU-Pro": 80.5,
+      "BrowseComp": 85.9
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gemini-3.1-pro-preview"
+  },
+  "gemini-3.5-flash": {
+    "id": "gemini-3.5-flash",
+    "name": "Gemini 3.5 Flash",
+    "organization": "Google",
+    "rank": 65,
+    "score": 42.07,
+    "benchmarks": {
+      "HLE": 40.2,
+      "SWE-bench Pro": 55.1,
+      "MMMU-Pro": 83.6,
+      "ARC-AGI v2": 72.1,
+      "CharXiv-R": 84.2,
+      "MCP Atlas": 83.6
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gemini-3.5-flash"
+  },
+  "gemini-3.5-flash-cyber": {
+    "id": "gemini-3.5-flash-cyber",
+    "name": "Gemini 3.5 Flash Cyber",
+    "organization": "Google",
+    "rank": 88,
+    "score": 36.97,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/gemini-3.5-flash-cyber"
+  },
+  "gemini-3.5-flash-lite": {
+    "id": "gemini-3.5-flash-lite",
+    "name": "Gemini 3.5 Flash-Lite",
+    "organization": "Google",
+    "rank": 147,
+    "score": 29.63,
+    "benchmarks": {
+      "SWE-bench Pro": 54.2,
+      "CharXiv-R": 76.5,
+      "MRCR v2": 21.3
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/gemini-3.5-flash-lite"
+  },
+  "gemini-3.6-flash": {
+    "id": "gemini-3.6-flash",
+    "name": "Gemini 3.6 Flash",
+    "organization": "Google",
+    "rank": 62,
+    "score": 42.42,
+    "benchmarks": {
+      "SWE-bench Pro": 58.7,
+      "CharXiv-R": 89.4,
+      "MRCR v2": 54.0
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/gemini-3.6-flash"
+  },
+  "gemini-3.7-flash": {
+    "id": "gemini-3.7-flash",
+    "name": "Gemini 3.7 Flash",
+    "organization": "Google",
+    "rank": 34,
+    "score": 47.5,
+    "benchmarks": {
+      "CharXiv-R": 88.7,
+      "MRCR v2": 97.0
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemini-3.7-flash"
+  },
+  "gemini-3.8-flash": {
+    "id": "gemini-3.8-flash",
+    "name": "Gemini 3.8 Flash",
+    "organization": "Google",
+    "rank": 26,
+    "score": 48.84,
+    "benchmarks": {
+      "CharXiv-R": 86.2
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/gemini-3.8-flash"
+  },
+  "gemini-3.8-flash-cyber": {
+    "id": "gemini-3.8-flash-cyber",
+    "name": "Gemini 3.8 Flash Cyber",
+    "organization": "Google",
+    "rank": 74,
+    "score": 39.2,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/gemini-3.8-flash-cyber"
+  },
+  "gemini-3-flash-preview": {
+    "id": "gemini-3-flash-preview",
+    "name": "Gemini 3 Flash",
+    "organization": "Google",
+    "rank": 93,
+    "score": 36.67,
+    "benchmarks": {
+      "GPQA": 90.4,
+      "AIME 2025": 99.7,
+      "HLE": 43.5,
+      "SWE-bench Verified": 78.0,
+      "MMMU-Pro": 81.2,
+      "SimpleQA": 68.7
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gemini-3-flash-preview"
+  },
+  "gemini-3-pro-preview": {
+    "id": "gemini-3-pro-preview",
+    "name": "Gemini 3 Pro",
+    "organization": "Google",
+    "rank": 81,
+    "score": 38.42,
+    "benchmarks": {
+      "GPQA": 91.9,
+      "AIME 2025": 100.0,
+      "HLE": 45.8,
+      "SWE-bench Verified": 76.2,
+      "MMMU-Pro": 81.0,
+      "SimpleQA": 72.1
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gemini-3-pro-preview"
+  },
+  "gemini-4-argon": {
+    "id": "gemini-4-argon",
+    "name": "Gemini 4 Argon",
+    "organization": "Google",
+    "rank": 4,
+    "score": 54.98,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/gemini-4-argon"
+  },
+  "gemini-diffusion": {
+    "id": "gemini-diffusion",
+    "name": "Gemini Diffusion",
+    "organization": "Google",
+    "rank": 347,
+    "score": 0.55,
+    "benchmarks": {
+      "GPQA": 40.4,
+      "AIME 2025": 23.3,
+      "SWE-bench Verified": 22.9
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/gemini-diffusion"
+  },
+  "gemma-2-27b-it": {
+    "id": "gemma-2-27b-it",
+    "name": "Gemma 2 27B",
+    "organization": "Google",
+    "rank": 354,
+    "score": -1.01,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/gemma-2-27b-it"
+  },
+  "gemma-2-9b-it": {
+    "id": "gemma-2-9b-it",
+    "name": "Gemma 2 9B",
+    "organization": "Google",
+    "rank": 378,
+    "score": -5.16,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/gemma-2-9b-it"
+  },
+  "gemma-3-12b-it": {
+    "id": "gemma-3-12b-it",
+    "name": "Gemma 3 12B",
+    "organization": "Google",
+    "rank": 319,
+    "score": 5.26,
+    "benchmarks": {
+      "GPQA": 40.9,
+      "SimpleQA": 6.3
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemma-3-12b-it"
+  },
+  "gemma-3-1b-it": {
+    "id": "gemma-3-1b-it",
+    "name": "Gemma 3 1B",
+    "organization": "Google",
+    "rank": 391,
+    "score": -10.82,
+    "benchmarks": {
+      "GPQA": 19.2,
+      "SimpleQA": 2.2
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemma-3-1b-it"
+  },
+  "gemma-3-27b-it": {
+    "id": "gemma-3-27b-it",
+    "name": "Gemma 3 27B",
+    "organization": "Google",
+    "rank": 304,
+    "score": 7.96,
+    "benchmarks": {
+      "GPQA": 42.4,
+      "SimpleQA": 10.0,
+      "MRCR v2": 13.5
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/gemma-3-27b-it"
+  },
+  "gemma-3-4b-it": {
+    "id": "gemma-3-4b-it",
+    "name": "Gemma 3 4B",
+    "organization": "Google",
+    "rank": 361,
+    "score": -2.17,
+    "benchmarks": {
+      "GPQA": 30.8,
+      "SimpleQA": 4.0
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemma-3-4b-it"
+  },
+  "gemma-3n-e2b": {
+    "id": "gemma-3n-e2b",
+    "name": "Gemma 3n E2B",
+    "organization": "Google",
+    "rank": 390,
+    "score": -10.51,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/gemma-3n-e2b"
+  },
+  "gemma-3n-e2b-it": {
+    "id": "gemma-3n-e2b-it",
+    "name": "Gemma 3n E2B Instructed",
+    "organization": "Google",
+    "rank": 392,
+    "score": -10.88,
+    "benchmarks": {
+      "GPQA": 24.8,
+      "AIME 2025": 6.7
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemma-3n-e2b-it"
+  },
+  "gemma-3n-e2b-it-litert-preview": {
+    "id": "gemma-3n-e2b-it-litert-preview",
+    "name": "Gemma 3n E2B Instructed LiteRT (Preview)",
+    "organization": "Google",
+    "rank": 389,
+    "score": -9.89,
+    "benchmarks": {
+      "GPQA": 24.8,
+      "AIME 2025": 6.7
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemma-3n-e2b-it-litert-preview"
+  },
+  "gemma-3n-e4b": {
+    "id": "gemma-3n-e4b",
+    "name": "Gemma 3n E4B",
+    "organization": "Google",
+    "rank": 385,
+    "score": -6.44,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/gemma-3n-e4b"
+  },
+  "gemma-3n-e4b-it": {
+    "id": "gemma-3n-e4b-it",
+    "name": "Gemma 3n E4B Instructed",
+    "organization": "Google",
+    "rank": 374,
+    "score": -4.96,
+    "benchmarks": {
+      "GPQA": 23.7,
+      "AIME 2025": 11.6
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemma-3n-e4b-it"
+  },
+  "gemma-3n-e4b-it-litert-preview": {
+    "id": "gemma-3n-e4b-it-litert-preview",
+    "name": "Gemma 3n E4B Instructed LiteRT Preview",
+    "organization": "Google",
+    "rank": 380,
+    "score": -5.48,
+    "benchmarks": {
+      "GPQA": 23.7,
+      "AIME 2025": 11.6
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gemma-3n-e4b-it-litert-preview"
+  },
+  "gemma-4-12b-it": {
+    "id": "gemma-4-12b-it",
+    "name": "Gemma 4 12B",
+    "organization": "Google",
+    "rank": 203,
+    "score": 21.82,
+    "benchmarks": {
+      "GPQA": 78.8,
+      "HLE": 5.2,
+      "MMMU-Pro": 69.1,
+      "MMMLU": 83.4,
+      "MRCR v2": 43.4
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/gemma-4-12b-it"
+  },
+  "gemma-4-26b-a4b-it": {
+    "id": "gemma-4-26b-a4b-it",
+    "name": "Gemma 4 26B-A4B",
+    "organization": "Google",
+    "rank": 150,
+    "score": 29.41,
+    "benchmarks": {
+      "GPQA": 82.3,
+      "HLE": 17.2,
+      "MMMU-Pro": 73.8,
+      "MMMLU": 86.3,
+      "MRCR v2": 44.1
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/gemma-4-26b-a4b-it"
+  },
+  "gemma-4-31b-it": {
+    "id": "gemma-4-31b-it",
+    "name": "Gemma 4 31B",
+    "organization": "Google",
+    "rank": 121,
+    "score": 32.95,
+    "benchmarks": {
+      "GPQA": 84.3,
+      "HLE": 26.5,
+      "MMMU-Pro": 76.9,
+      "MMMLU": 88.4,
+      "MRCR v2": 66.4
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/gemma-4-31b-it"
+  },
+  "gemma-4-e2b-it": {
+    "id": "gemma-4-e2b-it",
+    "name": "Gemma 4 E2B",
+    "organization": "Google",
+    "rank": 315,
+    "score": 6.42,
+    "benchmarks": {
+      "GPQA": 43.4,
+      "MMMU-Pro": 44.2,
+      "MMMLU": 67.4,
+      "MRCR v2": 19.1
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/gemma-4-e2b-it"
+  },
+  "gemma-4-e4b-it": {
+    "id": "gemma-4-e4b-it",
+    "name": "Gemma 4 E4B",
+    "organization": "Google",
+    "rank": 265,
+    "score": 13.5,
+    "benchmarks": {
+      "GPQA": 58.6,
+      "MMMU-Pro": 52.6,
+      "MMMLU": 76.6,
+      "MRCR v2": 25.4
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/gemma-4-e4b-it"
+  },
+  "glm-4.5": {
+    "id": "glm-4.5",
+    "name": "GLM-4.5",
+    "organization": "Zhipu AI",
+    "rank": 164,
+    "score": 27.46,
+    "benchmarks": {
+      "GPQA": 79.1,
+      "HLE": 14.4,
+      "SWE-bench Verified": 64.2,
+      "BrowseComp": 26.4,
+      "Terminal-Bench": 37.5,
+      "SciCode": 41.7
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/glm-4.5"
+  },
+  "glm-4.5-air": {
+    "id": "glm-4.5-air",
+    "name": "GLM-4.5-Air",
+    "organization": "Zhipu AI",
+    "rank": 187,
+    "score": 24.04,
+    "benchmarks": {
+      "GPQA": 75.0,
+      "HLE": 10.6,
+      "SWE-bench Verified": 57.6,
+      "BrowseComp": 21.3,
+      "Terminal-Bench": 30.0,
+      "SciCode": 37.3
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/glm-4.5-air"
+  },
+  "glm-4.5v": {
+    "id": "glm-4.5v",
+    "name": "GLM-4.5V",
+    "organization": "Zhipu AI",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/glm-4.5v"
+  },
+  "glm-4.6": {
+    "id": "glm-4.6",
+    "name": "GLM-4.6",
+    "organization": "Zhipu AI",
+    "rank": 154,
+    "score": 28.72,
+    "benchmarks": {
+      "GPQA": 81.0,
+      "AIME 2025": 93.9,
+      "HLE": 17.2,
+      "SWE-bench Verified": 68.0,
+      "BrowseComp": 45.1,
+      "Terminal-Bench": 40.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/glm-4.6"
+  },
+  "glm-4.7": {
+    "id": "glm-4.7",
+    "name": "GLM-4.7",
+    "organization": "Zhipu AI",
+    "rank": 112,
+    "score": 34.12,
+    "benchmarks": {
+      "GPQA": 85.7,
+      "AIME 2025": 95.7,
+      "HLE": 42.8,
+      "SWE-bench Verified": 73.8,
+      "BrowseComp": 52.0,
+      "Terminal-Bench": 33.3
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/glm-4.7"
+  },
+  "glm-4.7-flash": {
+    "id": "glm-4.7-flash",
+    "name": "GLM-4.7-Flash",
+    "organization": "Zhipu AI",
+    "rank": 199,
+    "score": 23.17,
+    "benchmarks": {
+      "GPQA": 75.2,
+      "AIME 2025": 91.6,
+      "HLE": 14.4,
+      "SWE-bench Verified": 59.2,
+      "BrowseComp": 42.8
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/glm-4.7-flash"
+  },
+  "glm-5": {
+    "id": "glm-5",
+    "name": "GLM-5",
+    "organization": "Zhipu AI",
+    "rank": 87,
+    "score": 36.97,
+    "benchmarks": {
+      "SWE-bench Verified": 77.8,
+      "BrowseComp": 75.9,
+      "MCP Atlas": 67.8
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/glm-5"
+  },
+  "glm-5.1": {
+    "id": "glm-5.1",
+    "name": "GLM-5.1",
+    "organization": "Zhipu AI",
+    "rank": 77,
+    "score": 38.92,
+    "benchmarks": {
+      "GPQA": 86.2,
+      "HLE": 52.3,
+      "SWE-bench Pro": 58.4,
+      "BrowseComp": 79.3,
+      "MCP Atlas": 71.8,
+      "Toolathlon": 40.7
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/glm-5.1"
+  },
+  "glm-5.2": {
+    "id": "glm-5.2",
+    "name": "GLM-5.2",
+    "organization": "Zhipu AI",
+    "rank": 44,
+    "score": 44.79,
+    "benchmarks": {
+      "GPQA": 91.2,
+      "HLE": 54.7,
+      "SWE-bench Pro": 62.1,
+      "MCP Atlas": 76.8,
+      "Toolathlon": 48.2
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/glm-5.2"
+  },
+  "glm-5.3": {
+    "id": "glm-5.3",
+    "name": "GLM-5.3",
+    "organization": "Zhipu AI",
+    "rank": 16,
+    "score": 50.77,
+    "benchmarks": {
+      "HLE": 62.5,
+      "Toolathlon": 73.0
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/glm-5.3"
+  },
+  "glm-5.3-flash": {
+    "id": "glm-5.3-flash",
+    "name": "GLM-5.3-Flash",
+    "organization": "Zhipu AI",
+    "rank": 28,
+    "score": 48.64,
+    "benchmarks": {
+      "HLE": 55.3,
+      "CharXiv-R": 89.4,
+      "Toolathlon": 78.4
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/glm-5.3-flash"
+  },
+  "glm-5v-turbo": {
+    "id": "glm-5v-turbo",
+    "name": "GLM-5V-Turbo",
+    "organization": "Zhipu AI",
+    "rank": 140,
+    "score": 30.16,
+    "benchmarks": {
+      "OSWorld": 62.3
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/glm-5v-turbo"
+  },
+  "gpt-3.5-turbo-0125": {
+    "id": "gpt-3.5-turbo-0125",
+    "name": "GPT-3.5 Turbo",
+    "organization": "OpenAI",
+    "rank": 388,
+    "score": -9.72,
+    "benchmarks": {
+      "GPQA": 30.8,
+      "MMMU": 0.0
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gpt-3.5-turbo-0125"
+  },
+  "gpt-4-0613": {
+    "id": "gpt-4-0613",
+    "name": "GPT-4",
+    "organization": "OpenAI",
+    "rank": 334,
+    "score": 2.64,
+    "benchmarks": {
+      "GPQA": 35.7
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/gpt-4-0613"
+  },
+  "gpt-4.1-2025-04-14": {
+    "id": "gpt-4.1-2025-04-14",
+    "name": "GPT-4.1",
+    "organization": "OpenAI",
+    "rank": 240,
+    "score": 17.68,
+    "benchmarks": {
+      "GPQA": 66.3,
+      "AIME 2025": 46.4,
+      "HLE": 5.4,
+      "SWE-bench Verified": 54.6,
+      "MMMU": 74.8,
+      "MMMLU": 87.3
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gpt-4.1-2025-04-14"
+  },
+  "gpt-4.1-mini-2025-04-14": {
+    "id": "gpt-4.1-mini-2025-04-14",
+    "name": "GPT-4.1 mini",
+    "organization": "OpenAI",
+    "rank": 263,
+    "score": 13.69,
+    "benchmarks": {
+      "GPQA": 65.0,
+      "AIME 2025": 40.2,
+      "HLE": 3.7,
+      "SWE-bench Verified": 23.6,
+      "MMMU": 72.7,
+      "MMMLU": 78.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gpt-4.1-mini-2025-04-14"
+  },
+  "gpt-4.1-nano-2025-04-14": {
+    "id": "gpt-4.1-nano-2025-04-14",
+    "name": "GPT-4.1 nano",
+    "organization": "OpenAI",
+    "rank": 344,
+    "score": 1.33,
+    "benchmarks": {
+      "GPQA": 50.3,
+      "MMMU": 55.4,
+      "MMMLU": 66.9,
+      "Tau-bench Retail": 22.6,
+      "CharXiv-R": 40.5
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/gpt-4.1-nano-2025-04-14"
+  },
+  "gpt-4.5": {
+    "id": "gpt-4.5",
+    "name": "GPT-4.5",
+    "organization": "OpenAI",
+    "rank": 221,
+    "score": 19.86,
+    "benchmarks": {
+      "GPQA": 69.5,
+      "SWE-bench Verified": 38.0,
+      "MMMU": 75.2,
+      "SimpleQA": 62.5,
+      "MMMLU": 85.1,
+      "Tau-bench Retail": 68.4
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gpt-4.5"
+  },
+  "gpt-4o-2024-05-13": {
+    "id": "gpt-4o-2024-05-13",
+    "name": "GPT-4o",
+    "organization": "OpenAI",
+    "rank": 281,
+    "score": 11.16,
+    "benchmarks": {
+      "GPQA": 53.6
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/gpt-4o-2024-05-13"
+  },
+  "gpt-4o-2024-08-06": {
+    "id": "gpt-4o-2024-08-06",
+    "name": "GPT-4o",
+    "organization": "OpenAI",
+    "rank": 262,
+    "score": 13.82,
+    "benchmarks": {
+      "GPQA": 70.1,
+      "HLE": 5.3,
+      "SWE-bench Verified": 33.2,
+      "MMMU": 72.2,
+      "MMMU-Pro": 59.9,
+      "SimpleQA": 38.2
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gpt-4o-2024-08-06"
+  },
+  "gpt-4o-mini-2024-07-18": {
+    "id": "gpt-4o-mini-2024-07-18",
+    "name": "GPT-4o mini",
+    "organization": "OpenAI",
+    "rank": 332,
+    "score": 3.29,
+    "benchmarks": {
+      "GPQA": 40.2,
+      "SWE-bench Verified": 8.7,
+      "MMMU": 59.4
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/gpt-4o-mini-2024-07-18"
+  },
+  "gpt-4-turbo-2024-04-09": {
+    "id": "gpt-4-turbo-2024-04-09",
+    "name": "GPT-4 Turbo",
+    "organization": "OpenAI",
+    "rank": 296,
+    "score": 8.68,
+    "benchmarks": {
+      "GPQA": 48.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/gpt-4-turbo-2024-04-09"
+  },
+  "gpt-5.1-2025-11-13": {
+    "id": "gpt-5.1-2025-11-13",
+    "name": "GPT-5.1",
+    "organization": "OpenAI",
+    "rank": 95,
+    "score": 36.47,
+    "benchmarks": {
+      "GPQA": 88.1,
+      "AIME 2025": 94.0,
+      "SWE-bench Verified": 76.3,
+      "MMMU": 85.4,
+      "FrontierMath": 26.7
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/gpt-5.1-2025-11-13"
+  },
+  "gpt-5.1-codex": {
+    "id": "gpt-5.1-codex",
+    "name": "GPT-5.1 Codex",
+    "organization": "OpenAI",
+    "rank": 148,
+    "score": 29.54,
+    "benchmarks": {
+      "SWE-bench Verified": 73.7
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/gpt-5.1-codex"
+  },
+  "gpt-5.1-codex-high": {
+    "id": "gpt-5.1-codex-high",
+    "name": "GPT-5.1 Codex High",
+    "organization": "OpenAI",
+    "rank": 152,
+    "score": 29.29,
+    "benchmarks": {
+      "AIME 2025": 96.7
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/gpt-5.1-codex-high"
+  },
+  "gpt-5.1-codex-mini": {
+    "id": "gpt-5.1-codex-mini",
+    "name": "GPT-5.1 Codex Mini",
+    "organization": "OpenAI",
+    "rank": 365,
+    "score": -2.98,
+    "benchmarks": {
+      "AIME 2025": 42.1
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/gpt-5.1-codex-mini"
+  },
+  "gpt-5.1-high-2025-11-12": {
+    "id": "gpt-5.1-high-2025-11-12",
+    "name": "GPT-5.1 High",
+    "organization": "OpenAI",
+    "rank": 106,
+    "score": 35.14,
+    "benchmarks": {
+      "GPQA": 88.1,
+      "AIME 2025": 99.6
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gpt-5.1-high-2025-11-12"
+  },
+  "gpt-5.1-instant-2025-11-12": {
+    "id": "gpt-5.1-instant-2025-11-12",
+    "name": "GPT-5.1 Instant",
+    "organization": "OpenAI",
+    "rank": 94,
+    "score": 36.6,
+    "benchmarks": {
+      "GPQA": 88.1,
+      "AIME 2025": 94.0,
+      "SWE-bench Verified": 76.3,
+      "MMMU": 85.4,
+      "FrontierMath": 26.7
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/gpt-5.1-instant-2025-11-12"
+  },
+  "gpt-5.1-medium-2025-11-12": {
+    "id": "gpt-5.1-medium-2025-11-12",
+    "name": "GPT-5.1 Medium",
+    "organization": "OpenAI",
+    "rank": 134,
+    "score": 31.1,
+    "benchmarks": {
+      "AIME 2025": 98.4
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/gpt-5.1-medium-2025-11-12"
+  },
+  "gpt-5.1-thinking-2025-11-12": {
+    "id": "gpt-5.1-thinking-2025-11-12",
+    "name": "GPT-5.1 Thinking",
+    "organization": "OpenAI",
+    "rank": 92,
+    "score": 36.7,
+    "benchmarks": {
+      "GPQA": 88.1,
+      "AIME 2025": 94.0,
+      "SWE-bench Verified": 76.3,
+      "MMMU": 85.4,
+      "FrontierMath": 26.7
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/gpt-5.1-thinking-2025-11-12"
+  },
+  "gpt-5-2025-08-07": {
+    "id": "gpt-5-2025-08-07",
+    "name": "GPT-5",
+    "organization": "OpenAI",
+    "rank": 118,
+    "score": 33.58,
+    "benchmarks": {
+      "GPQA": 85.7,
+      "AIME 2025": 94.6,
+      "HLE": 24.8,
+      "SWE-bench Verified": 74.9,
+      "MMMU": 84.2,
+      "MMMU-Pro": 78.4
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gpt-5-2025-08-07"
+  },
+  "gpt-5.2-2025-12-11": {
+    "id": "gpt-5.2-2025-12-11",
+    "name": "GPT-5.2",
+    "organization": "OpenAI",
+    "rank": 69,
+    "score": 41.12,
+    "benchmarks": {
+      "GPQA": 92.4,
+      "AIME 2025": 100.0,
+      "HLE": 34.5,
+      "SWE-bench Verified": 80.0,
+      "MMMU-Pro": 79.5,
+      "BrowseComp": 65.8
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gpt-5.2-2025-12-11"
+  },
+  "gpt-5.2-codex": {
+    "id": "gpt-5.2-codex",
+    "name": "GPT-5.2 Codex",
+    "organization": "OpenAI",
+    "rank": 111,
+    "score": 34.21,
+    "benchmarks": {
+      "SWE-bench Pro": 56.4
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/gpt-5.2-codex"
+  },
+  "gpt-5.2-pro-2025-12-11": {
+    "id": "gpt-5.2-pro-2025-12-11",
+    "name": "GPT-5.2 Pro",
+    "organization": "OpenAI",
+    "rank": 58,
+    "score": 42.83,
+    "benchmarks": {
+      "GPQA": 93.2,
+      "AIME 2025": 100.0,
+      "HLE": 36.6,
+      "BrowseComp": 77.9,
+      "ARC-AGI v2": 54.2
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/gpt-5.2-pro-2025-12-11"
+  },
+  "gpt-5.3-chat-latest": {
+    "id": "gpt-5.3-chat-latest",
+    "name": "GPT-5.3 Chat",
+    "organization": "OpenAI",
+    "rank": 151,
+    "score": 29.31,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/gpt-5.3-chat-latest"
+  },
+  "gpt-5.3-codex": {
+    "id": "gpt-5.3-codex",
+    "name": "GPT-5.3 Codex",
+    "organization": "OpenAI",
+    "rank": 96,
+    "score": 36.4,
+    "benchmarks": {
+      "SWE-bench Pro": 56.8
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/gpt-5.3-codex"
+  },
+  "gpt-5.4": {
+    "id": "gpt-5.4",
+    "name": "GPT-5.4",
+    "organization": "OpenAI",
+    "rank": 67,
+    "score": 41.64,
+    "benchmarks": {
+      "GPQA": 92.8,
+      "HLE": 39.8,
+      "SWE-bench Pro": 57.7,
+      "MMMU-Pro": 81.2,
+      "BrowseComp": 82.7,
+      "FrontierMath": 47.6
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gpt-5.4"
+  },
+  "gpt-5.4-mini": {
+    "id": "gpt-5.4-mini",
+    "name": "GPT-5.4 mini",
+    "organization": "OpenAI",
+    "rank": 143,
+    "score": 29.91,
+    "benchmarks": {
+      "GPQA": 88.0,
+      "HLE": 28.2,
+      "SWE-bench Pro": 54.4,
+      "MMMU-Pro": 76.6,
+      "MCP Atlas": 57.7,
+      "Toolathlon": 42.9
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gpt-5.4-mini"
+  },
+  "gpt-5.4-nano": {
+    "id": "gpt-5.4-nano",
+    "name": "GPT-5.4 nano",
+    "organization": "OpenAI",
+    "rank": 171,
+    "score": 26.49,
+    "benchmarks": {
+      "GPQA": 82.8,
+      "HLE": 24.3,
+      "SWE-bench Pro": 52.4,
+      "MMMU-Pro": 66.1,
+      "MCP Atlas": 56.1,
+      "Toolathlon": 35.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gpt-5.4-nano"
+  },
+  "gpt-5.5": {
+    "id": "gpt-5.5",
+    "name": "GPT-5.5",
+    "organization": "OpenAI",
+    "rank": 35,
+    "score": 47.22,
+    "benchmarks": {
+      "GPQA": 93.6,
+      "HLE": 52.2,
+      "SWE-bench Pro": 58.6,
+      "MMMU-Pro": 83.2,
+      "BrowseComp": 84.4,
+      "FrontierMath": 35.4
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gpt-5.5"
+  },
+  "gpt-5.5-instant": {
+    "id": "gpt-5.5-instant",
+    "name": "GPT-5.5 Instant",
+    "organization": "OpenAI",
+    "rank": 126,
+    "score": 32.01,
+    "benchmarks": {
+      "GPQA": 85.6,
+      "AIME 2025": 81.2,
+      "MMMU-Pro": 76.0,
+      "CharXiv-R": 81.6
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/gpt-5.5-instant"
+  },
+  "gpt-5.5-pro": {
+    "id": "gpt-5.5-pro",
+    "name": "GPT-5.5 Pro",
+    "organization": "OpenAI",
+    "rank": 39,
+    "score": 45.81,
+    "benchmarks": {
+      "HLE": 57.2,
+      "BrowseComp": 90.1,
+      "FrontierMath": 39.6
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/gpt-5.5-pro"
+  },
+  "gpt-5.6-cyber": {
+    "id": "gpt-5.6-cyber",
+    "name": "GPT-5.6 Cyber",
+    "organization": "OpenAI",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/gpt-5.6-cyber"
+  },
+  "gpt-5.6-luna": {
+    "id": "gpt-5.6-luna",
+    "name": "GPT-5.6 Luna",
+    "organization": "OpenAI",
+    "rank": 50,
+    "score": 44.12,
+    "benchmarks": {
+      "GPQA": 92.3,
+      "SWE-bench Pro": 62.7,
+      "MMMU-Pro": 78.4,
+      "BrowseComp": 83.3,
+      "FrontierMath": 78.6,
+      "Toolathlon": 53.4
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gpt-5.6-luna"
+  },
+  "gpt-5.6-sol": {
+    "id": "gpt-5.6-sol",
+    "name": "GPT-5.6 Sol",
+    "organization": "OpenAI",
+    "rank": 9,
+    "score": 53.2,
+    "benchmarks": {
+      "GPQA": 94.6,
+      "SWE-bench Pro": 64.6,
+      "MMMU-Pro": 83.0,
+      "BrowseComp": 90.4,
+      "FrontierMath": 89.0,
+      "Toolathlon": 58.0
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gpt-5.6-sol"
+  },
+  "gpt-5.6-terra": {
+    "id": "gpt-5.6-terra",
+    "name": "GPT-5.6 Terra",
+    "organization": "OpenAI",
+    "rank": 24,
+    "score": 49.23,
+    "benchmarks": {
+      "GPQA": 92.9,
+      "SWE-bench Pro": 63.4,
+      "MMMU-Pro": 80.7,
+      "BrowseComp": 87.5,
+      "FrontierMath": 84.9,
+      "Toolathlon": 53.1
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/gpt-5.6-terra"
+  },
+  "gpt-5-codex-2025-09-15": {
+    "id": "gpt-5-codex-2025-09-15",
+    "name": "GPT-5 Codex",
+    "organization": "OpenAI",
+    "rank": 168,
+    "score": 26.74,
+    "benchmarks": {
+      "SWE-bench Verified": 74.5
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/gpt-5-codex-2025-09-15"
+  },
+  "gpt-5-high-2025-08-07": {
+    "id": "gpt-5-high-2025-08-07",
+    "name": "GPT-5 High",
+    "organization": "OpenAI",
+    "rank": 114,
+    "score": 33.96,
+    "benchmarks": {
+      "GPQA": 87.3,
+      "AIME 2025": 94.6
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gpt-5-high-2025-08-07"
+  },
+  "gpt-5-medium-2025-08-07": {
+    "id": "gpt-5-medium-2025-08-07",
+    "name": "GPT-5 Medium",
+    "organization": "OpenAI",
+    "rank": 149,
+    "score": 29.53,
+    "benchmarks": {
+      "GPQA": 88.1,
+      "AIME 2025": 88.9
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gpt-5-medium-2025-08-07"
+  },
+  "gpt-5-mini-2025-08-07": {
+    "id": "gpt-5-mini-2025-08-07",
+    "name": "GPT-5 mini",
+    "organization": "OpenAI",
+    "rank": 167,
+    "score": 27.07,
+    "benchmarks": {
+      "GPQA": 82.3,
+      "AIME 2025": 91.1,
+      "HLE": 16.7,
+      "FrontierMath": 22.1
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/gpt-5-mini-2025-08-07"
+  },
+  "gpt-5-nano-2025-08-07": {
+    "id": "gpt-5-nano-2025-08-07",
+    "name": "GPT-5 nano",
+    "organization": "OpenAI",
+    "rank": 229,
+    "score": 19.1,
+    "benchmarks": {
+      "GPQA": 71.2,
+      "AIME 2025": 85.2,
+      "HLE": 8.7,
+      "FrontierMath": 9.6
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/gpt-5-nano-2025-08-07"
+  },
+  "gpt-6.1-sol": {
+    "id": "gpt-6.1-sol",
+    "name": "GPT-6.1 Sol",
+    "organization": "OpenAI",
+    "rank": 7,
+    "score": 53.51,
+    "benchmarks": {
+      "MMMU-Pro": 86.0,
+      "Apex Agents": 60.0
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gpt-6.1-sol"
+  },
+  "gpt-6-astra": {
+    "id": "gpt-6-astra",
+    "name": "GPT-6 Astra",
+    "organization": "OpenAI",
+    "rank": 3,
+    "score": 58.07,
+    "benchmarks": {
+      "GPQA": 96.0,
+      "BrowseComp": 91.5,
+      "ARC-AGI v2": 95.0,
+      "ScreenSpot-Pro": 92.7
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/gpt-6-astra"
+  },
+  "gpt-6-luna": {
+    "id": "gpt-6-luna",
+    "name": "GPT-6 Luna",
+    "organization": "OpenAI",
+    "rank": 56,
+    "score": 42.95,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/gpt-6-luna"
+  },
+  "gpt-6-sol": {
+    "id": "gpt-6-sol",
+    "name": "GPT-6 Sol",
+    "organization": "OpenAI",
+    "rank": 33,
+    "score": 47.66,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/gpt-6-sol"
+  },
+  "gpt-oss-120b": {
+    "id": "gpt-oss-120b",
+    "name": "GPT OSS 120B",
+    "organization": "OpenAI",
+    "rank": 156,
+    "score": 28.32,
+    "benchmarks": {
+      "GPQA": 80.1,
+      "HLE": 14.9,
+      "Tau-bench Retail": 67.8
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/gpt-oss-120b"
+  },
+  "gpt-oss-120b-high": {
+    "id": "gpt-oss-120b-high",
+    "name": "GPT OSS 120B High",
+    "organization": "OpenAI",
+    "rank": 182,
+    "score": 25.15,
+    "benchmarks": {
+      "GPQA": 80.9,
+      "AIME 2025": 92.5,
+      "MMMLU": 83.8
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/gpt-oss-120b-high"
+  },
+  "gpt-oss-20b": {
+    "id": "gpt-oss-20b",
+    "name": "GPT OSS 20B",
+    "organization": "OpenAI",
+    "rank": 239,
+    "score": 17.74,
+    "benchmarks": {
+      "GPQA": 71.5,
+      "HLE": 10.9,
+      "Tau-bench Retail": 54.8
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/gpt-oss-20b"
+  },
+  "gpt-oss-20b-high": {
+    "id": "gpt-oss-20b-high",
+    "name": "GPT OSS 20B High",
+    "organization": "OpenAI",
+    "rank": 163,
+    "score": 27.49,
+    "benchmarks": {
+      "GPQA": 74.2,
+      "AIME 2025": 98.7
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/gpt-oss-20b-high"
+  },
+  "gpt-rosalind-research": {
+    "id": "gpt-rosalind-research",
+    "name": "GPT-Rosalind",
+    "organization": "OpenAI",
+    "rank": 130,
+    "score": 31.51,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/gpt-rosalind-research"
+  },
+  "granite-3.3-8b-base": {
+    "id": "granite-3.3-8b-base",
+    "name": "Granite 3.3 8B Base",
+    "organization": "IBM",
+    "rank": 353,
+    "score": -0.84,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/granite-3.3-8b-base"
+  },
+  "granite-3.3-8b-instruct": {
+    "id": "granite-3.3-8b-instruct",
+    "name": "Granite 3.3 8B Instruct",
+    "organization": "IBM",
+    "rank": 339,
+    "score": 2.09,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/granite-3.3-8b-instruct"
+  },
+  "granite-4.0-tiny-preview": {
+    "id": "granite-4.0-tiny-preview",
+    "name": "IBM Granite 4.0 Tiny Preview",
+    "organization": "IBM",
+    "rank": 382,
+    "score": -5.79,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/granite-4.0-tiny-preview"
+  },
+  "granite-4.2-30b": {
+    "id": "granite-4.2-30b",
+    "name": "IBM Granite 4.2 30B",
+    "organization": "IBM",
+    "rank": 195,
+    "score": 23.43,
+    "benchmarks": {
+      "GPQA": 66.4,
+      "AIME 2025": 89.2,
+      "SWE-bench Verified": 57.0,
+      "SWE-bench Pro": 33.3,
+      "SciCode": 38.8
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/granite-4.2-30b"
+  },
+  "granite-4.2-3b": {
+    "id": "granite-4.2-3b",
+    "name": "IBM Granite 4.2 3B",
+    "organization": "IBM",
+    "rank": 254,
+    "score": 15.15,
+    "benchmarks": {
+      "GPQA": 54.8,
+      "AIME 2025": 78.3,
+      "SciCode": 24.1
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/granite-4.2-3b"
+  },
+  "granite-4.2-8b": {
+    "id": "granite-4.2-8b",
+    "name": "IBM Granite 4.2 8B",
+    "organization": "IBM",
+    "rank": 223,
+    "score": 19.48,
+    "benchmarks": {
+      "GPQA": 64.1,
+      "AIME 2025": 86.7,
+      "SWE-bench Verified": 47.7,
+      "SWE-bench Pro": 19.1,
+      "SciCode": 36.1
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/granite-4.2-8b"
+  },
+  "grok-1.5": {
+    "id": "grok-1.5",
+    "name": "Grok-1.5",
+    "organization": "xAI",
+    "rank": 364,
+    "score": -2.97,
+    "benchmarks": {
+      "GPQA": 35.9,
+      "MMMU": 53.6
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/grok-1.5"
+  },
+  "grok-1.5v": {
+    "id": "grok-1.5v",
+    "name": "Grok-1.5V",
+    "organization": "xAI",
+    "rank": 356,
+    "score": -1.08,
+    "benchmarks": {
+      "MMMU": 53.6
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/grok-1.5v"
+  },
+  "grok-2": {
+    "id": "grok-2",
+    "name": "Grok-2",
+    "organization": "xAI",
+    "rank": 282,
+    "score": 11.11,
+    "benchmarks": {
+      "GPQA": 56.0,
+      "MMMU": 66.1
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/grok-2"
+  },
+  "grok-2-image-1212": {
+    "id": "grok-2-image-1212",
+    "name": "Grok-2 Image 1212",
+    "organization": "xAI",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/grok-2-image-1212"
+  },
+  "grok-2-mini": {
+    "id": "grok-2-mini",
+    "name": "Grok-2 mini",
+    "organization": "xAI",
+    "rank": 301,
+    "score": 8.25,
+    "benchmarks": {
+      "GPQA": 51.0,
+      "MMMU": 63.2
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/grok-2-mini"
+  },
+  "grok-3": {
+    "id": "grok-3",
+    "name": "Grok-3",
+    "organization": "xAI",
+    "rank": 141,
+    "score": 30.15,
+    "benchmarks": {
+      "GPQA": 84.6,
+      "AIME 2025": 93.3,
+      "MMMU": 78.0
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/grok-3"
+  },
+  "grok-3-mini": {
+    "id": "grok-3-mini",
+    "name": "Grok-3 Mini",
+    "organization": "xAI",
+    "rank": 133,
+    "score": 31.1,
+    "benchmarks": {
+      "GPQA": 84.0,
+      "AIME 2025": 90.8
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/grok-3-mini"
+  },
+  "grok-4": {
+    "id": "grok-4",
+    "name": "Grok-4",
+    "organization": "xAI",
+    "rank": 117,
+    "score": 33.62,
+    "benchmarks": {
+      "GPQA": 87.5,
+      "AIME 2025": 91.7,
+      "HLE": 40.0,
+      "ARC-AGI v2": 15.9
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/grok-4"
+  },
+  "grok-4.1-2025-11-17": {
+    "id": "grok-4.1-2025-11-17",
+    "name": "Grok-4.1",
+    "organization": "xAI",
+    "rank": 225,
+    "score": 19.41,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/grok-4.1-2025-11-17"
+  },
+  "grok-4-1-fast-non-reasoning": {
+    "id": "grok-4-1-fast-non-reasoning",
+    "name": "Grok-4.1 Fast Non-Reasoning",
+    "organization": "xAI",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/grok-4-1-fast-non-reasoning"
+  },
+  "grok-4-1-fast-reasoning": {
+    "id": "grok-4-1-fast-reasoning",
+    "name": "Grok-4.1 Fast Reasoning",
+    "organization": "xAI",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/grok-4-1-fast-reasoning"
+  },
+  "grok-4.1-thinking-2025-11-17": {
+    "id": "grok-4.1-thinking-2025-11-17",
+    "name": "Grok-4.1 Thinking",
+    "organization": "xAI",
+    "rank": 249,
+    "score": 15.85,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/grok-4.1-thinking-2025-11-17"
+  },
+  "grok-4.20-beta-0309-non-reasoning": {
+    "id": "grok-4.20-beta-0309-non-reasoning",
+    "name": "Grok-4.20 Beta Non-Reasoning",
+    "organization": "xAI",
+    "rank": 368,
+    "score": -3.59,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/grok-4.20-beta-0309-non-reasoning"
+  },
+  "grok-4.20-beta-0309-reasoning": {
+    "id": "grok-4.20-beta-0309-reasoning",
+    "name": "Grok-4.20 Beta Reasoning",
+    "organization": "xAI",
+    "rank": 194,
+    "score": 23.51,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/grok-4.20-beta-0309-reasoning"
+  },
+  "grok-4.20-multi-agent-beta-0309": {
+    "id": "grok-4.20-multi-agent-beta-0309",
+    "name": "Grok-4.20 Multi-Agent Beta",
+    "organization": "xAI",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/grok-4.20-multi-agent-beta-0309"
+  },
+  "grok-4.3": {
+    "id": "grok-4.3",
+    "name": "Grok 4.3",
+    "organization": "xAI",
+    "rank": 201,
+    "score": 22.08,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/grok-4.3"
+  },
+  "grok-4.5": {
+    "id": "grok-4.5",
+    "name": "Grok 4.5",
+    "organization": "xAI",
+    "rank": 41,
+    "score": 45.31,
+    "benchmarks": {
+      "GPQA": 93.0,
+      "SWE-bench Pro": 64.7
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/grok-4.5"
+  },
+  "grok-4.6": {
+    "id": "grok-4.6",
+    "name": "Grok 4.6",
+    "organization": "xAI",
+    "rank": 48,
+    "score": 44.38,
+    "benchmarks": {
+      "Apex Agents": 57.5
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/grok-4.6"
+  },
+  "grok-4.7": {
+    "id": "grok-4.7",
+    "name": "Grok 4.7",
+    "organization": "xAI",
+    "rank": 37,
+    "score": 46.57,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/grok-4.7"
+  },
+  "grok-4-fast": {
+    "id": "grok-4-fast",
+    "name": "Grok 4 Fast",
+    "organization": "xAI",
+    "rank": 132,
+    "score": 31.39,
+    "benchmarks": {
+      "GPQA": 85.7,
+      "AIME 2025": 92.0,
+      "HLE": 20.0,
+      "SimpleQA": 95.0,
+      "BrowseComp": 44.9
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/grok-4-fast"
+  },
+  "grok-4-fast-non-reasoning": {
+    "id": "grok-4-fast-non-reasoning",
+    "name": "Grok-4 Fast Non-Reasoning",
+    "organization": "xAI",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/grok-4-fast-non-reasoning"
+  },
+  "grok-4-fast-reasoning": {
+    "id": "grok-4-fast-reasoning",
+    "name": "Grok-4 Fast Reasoning",
+    "organization": "xAI",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/grok-4-fast-reasoning"
+  },
+  "grok-4-heavy": {
+    "id": "grok-4-heavy",
+    "name": "Grok-4 Heavy",
+    "organization": "xAI",
+    "rank": 71,
+    "score": 40.71,
+    "benchmarks": {
+      "GPQA": 88.4,
+      "AIME 2025": 100.0,
+      "HLE": 50.7
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/grok-4-heavy"
+  },
+  "grok-code-fast-1": {
+    "id": "grok-code-fast-1",
+    "name": "Grok Code Fast 1",
+    "organization": "xAI",
+    "rank": 216,
+    "score": 20.56,
+    "benchmarks": {
+      "SWE-bench Verified": 70.8
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/grok-code-fast-1"
+  },
+  "hermes-3-405b": {
+    "id": "hermes-3-405b",
+    "name": "Hermes 3 405B",
+    "organization": "Nous Research",
+    "rank": 325,
+    "score": 4.0,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/hermes-3-405b"
+  },
+  "hermes-3-70b": {
+    "id": "hermes-3-70b",
+    "name": "Hermes 3 70B",
+    "organization": "Nous Research",
+    "rank": 328,
+    "score": 3.73,
+    "benchmarks": {
+      "GPQA": 66.1
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/hermes-3-70b"
+  },
+  "hy3": {
+    "id": "hy3",
+    "name": "Hy3",
+    "organization": "Tencent",
+    "rank": 60,
+    "score": 42.57,
+    "benchmarks": {
+      "GPQA": 90.4,
+      "SWE-bench Verified": 78.0,
+      "SWE-bench Pro": 57.9,
+      "BrowseComp": 84.2,
+      "MCP Atlas": 79.1,
+      "Toolathlon": 48.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/hy3"
+  },
+  "hy4-preview": {
+    "id": "hy4-preview",
+    "name": "Hy4 preview",
+    "organization": "Tencent",
+    "rank": 23,
+    "score": 49.57,
+    "benchmarks": {
+      "GPQA": 92.3,
+      "SWE-bench Pro": 65.7,
+      "MCP Atlas": 83.7,
+      "Toolathlon": 74.1,
+      "Apex Agents": 37.1
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/hy4-preview"
+  },
+  "inkling": {
+    "id": "inkling",
+    "name": "Inkling",
+    "organization": "Thinking Machines Lab",
+    "rank": 85,
+    "score": 37.14,
+    "benchmarks": {
+      "SWE-bench Verified": 77.6,
+      "MMMU-Pro": 73.5,
+      "CharXiv-R": 78.1,
+      "MCP Atlas": 76.0
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/inkling"
+  },
+  "inkling-small": {
+    "id": "inkling-small",
+    "name": "Inkling-Small",
+    "organization": "Thinking Machines Lab",
+    "rank": 82,
+    "score": 38.21,
+    "benchmarks": {
+      "GPQA": 89.5,
+      "HLE": 31.6,
+      "SWE-bench Verified": 80.2,
+      "SWE-bench Pro": 55.9,
+      "MMMU-Pro": 74.0,
+      "BrowseComp": 77.4
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/inkling-small"
+  },
+  "jamba-1.5-large": {
+    "id": "jamba-1.5-large",
+    "name": "Jamba 1.5 Large",
+    "organization": "AI21 Labs",
+    "rank": 346,
+    "score": 0.59,
+    "benchmarks": {
+      "GPQA": 36.9
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/jamba-1.5-large"
+  },
+  "jamba-1.5-mini": {
+    "id": "jamba-1.5-mini",
+    "name": "Jamba 1.5 Mini",
+    "organization": "AI21 Labs",
+    "rank": 383,
+    "score": -5.99,
+    "benchmarks": {
+      "GPQA": 32.3
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/jamba-1.5-mini"
+  },
+  "k-exaone-236b-a23b": {
+    "id": "k-exaone-236b-a23b",
+    "name": "K-EXAONE-236B-A23B",
+    "organization": "LG AI Research",
+    "rank": 174,
+    "score": 25.94,
+    "benchmarks": {
+      "AIME 2025": 92.8,
+      "MMMLU": 85.7
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/k-exaone-236b-a23b"
+  },
+  "kimi-k1.5": {
+    "id": "kimi-k1.5",
+    "name": "Kimi-k1.5",
+    "organization": "Moonshot AI",
+    "rank": 242,
+    "score": 16.87,
+    "benchmarks": {
+      "MMMU": 70.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/kimi-k1.5"
+  },
+  "kimi-k2-0905": {
+    "id": "kimi-k2-0905",
+    "name": "Kimi K2 0905",
+    "organization": "Moonshot AI",
+    "rank": 209,
+    "score": 21.39,
+    "benchmarks": {
+      "GPQA": 75.8
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/kimi-k2-0905"
+  },
+  "kimi-k2.5": {
+    "id": "kimi-k2.5",
+    "name": "Kimi K2.5",
+    "organization": "Moonshot AI",
+    "rank": 79,
+    "score": 38.58,
+    "benchmarks": {
+      "GPQA": 87.6,
+      "AIME 2025": 96.1,
+      "HLE": 50.2,
+      "SWE-bench Verified": 76.8,
+      "SWE-bench Pro": 50.7,
+      "MMMU-Pro": 78.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/kimi-k2.5"
+  },
+  "kimi-k2.6": {
+    "id": "kimi-k2.6",
+    "name": "Kimi K2.6",
+    "organization": "Moonshot AI",
+    "rank": 53,
+    "score": 43.42,
+    "benchmarks": {
+      "GPQA": 90.5,
+      "HLE": 36.4,
+      "SWE-bench Verified": 80.2,
+      "SWE-bench Pro": 58.6,
+      "MMMU-Pro": 80.1,
+      "BrowseComp": 86.3
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/kimi-k2.6"
+  },
+  "kimi-k2.7-code": {
+    "id": "kimi-k2.7-code",
+    "name": "Kimi K2.7 Code",
+    "organization": "Moonshot AI",
+    "rank": 78,
+    "score": 38.78,
+    "benchmarks": {
+      "MCP Atlas": 76.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/kimi-k2.7-code"
+  },
+  "kimi-k2.8": {
+    "id": "kimi-k2.8",
+    "name": "Kimi K2.8 Preview",
+    "organization": "Moonshot AI",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/kimi-k2.8"
+  },
+  "kimi-k2-base": {
+    "id": "kimi-k2-base",
+    "name": "Kimi K2 Base",
+    "organization": "Moonshot AI",
+    "rank": 268,
+    "score": 13.16,
+    "benchmarks": {
+      "GPQA": 48.1,
+      "SimpleQA": 35.3
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/kimi-k2-base"
+  },
+  "kimi-k2-instruct": {
+    "id": "kimi-k2-instruct",
+    "name": "Kimi K2 Instruct",
+    "organization": "Moonshot AI",
+    "rank": 206,
+    "score": 21.58,
+    "benchmarks": {
+      "GPQA": 75.1,
+      "AIME 2025": 49.5,
+      "HLE": 4.7,
+      "SimpleQA": 31.0,
+      "Terminal-Bench": 30.0
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/kimi-k2-instruct"
+  },
+  "kimi-k2-instruct-0905": {
+    "id": "kimi-k2-instruct-0905",
+    "name": "Kimi K2-Instruct-0905",
+    "organization": "Moonshot AI",
+    "rank": 210,
+    "score": 21.28,
+    "benchmarks": {
+      "GPQA": 75.1,
+      "AIME 2025": 49.5,
+      "HLE": 4.7,
+      "SWE-bench Verified": 65.8,
+      "SimpleQA": 31.0,
+      "Terminal-Bench": 25.0
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/kimi-k2-instruct-0905"
+  },
+  "kimi-k2-thinking-0905": {
+    "id": "kimi-k2-thinking-0905",
+    "name": "Kimi K2-Thinking-0905",
+    "organization": "Moonshot AI",
+    "rank": 101,
+    "score": 35.61,
+    "benchmarks": {
+      "GPQA": 84.5,
+      "AIME 2025": 100.0,
+      "HLE": 51.0,
+      "SWE-bench Verified": 71.3,
+      "BrowseComp": 60.2,
+      "Terminal-Bench": 47.1
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/kimi-k2-thinking-0905"
+  },
+  "kimi-k3": {
+    "id": "kimi-k3",
+    "name": "Kimi K3",
+    "organization": "Moonshot AI",
+    "rank": 14,
+    "score": 51.83,
+    "benchmarks": {
+      "GPQA": 93.5,
+      "HLE": 56.0,
+      "MMMU-Pro": 81.6,
+      "BrowseComp": 91.2,
+      "CharXiv-R": 91.3,
+      "MCP Atlas": 84.2
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/kimi-k3"
+  },
+  "l3.1-70b-euryale-v2.2": {
+    "id": "l3.1-70b-euryale-v2.2",
+    "name": "L3.1 70B Euryale v2.2",
+    "organization": "Sao10K",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/l3.1-70b-euryale-v2.2"
+  },
+  "l3-8b-lunaris-v1": {
+    "id": "l3-8b-lunaris-v1",
+    "name": "L3 8B Lunaris v1",
+    "organization": "Sao10K",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/l3-8b-lunaris-v1"
+  },
+  "laguna-s-2.1": {
+    "id": "laguna-s-2.1",
+    "name": "Laguna S 2.1",
+    "organization": "Poolside",
+    "rank": 72,
+    "score": 39.48,
+    "benchmarks": {
+      "SWE-bench Pro": 59.4,
+      "Toolathlon": 49.7
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/laguna-s-2.1"
+  },
+  "laguna-xs-2.1": {
+    "id": "laguna-xs-2.1",
+    "name": "Laguna XS 2.1",
+    "organization": "Poolside",
+    "rank": 186,
+    "score": 24.1,
+    "benchmarks": {
+      "SWE-bench Verified": 70.9,
+      "SWE-bench Pro": 47.6
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/laguna-xs-2.1"
+  },
+  "lfm-2.5-2.6b": {
+    "id": "lfm-2.5-2.6b",
+    "name": "LFM2.5-2.6B",
+    "organization": "Liquid AI",
+    "rank": 232,
+    "score": 18.62,
+    "benchmarks": {
+      "AIME 2025": 51.9
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/lfm-2.5-2.6b"
+  },
+  "lfm-2.5-vl-3b": {
+    "id": "lfm-2.5-vl-3b",
+    "name": "LFM2.5-VL-3B",
+    "organization": "Liquid AI",
+    "rank": 333,
+    "score": 2.9,
+    "benchmarks": {
+      "MMMU-Pro": 30.5
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/lfm-2.5-vl-3b"
+  },
+  "ling-3.0-flash": {
+    "id": "ling-3.0-flash",
+    "name": "Ling 3.0 Flash",
+    "organization": "InclusionAI",
+    "rank": 97,
+    "score": 36.02,
+    "benchmarks": {
+      "SWE-bench Pro": 56.6,
+      "BrowseComp": 72.2,
+      "MCP Atlas": 65.5
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/ling-3.0-flash"
+  },
+  "ling-3.0-flash-fin": {
+    "id": "ling-3.0-flash-fin",
+    "name": "Ling 3.0 Flash Fin",
+    "organization": "InclusionAI",
+    "rank": 61,
+    "score": 42.56,
+    "benchmarks": {
+      "Apex Agents": 29.2
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/ling-3.0-flash-fin"
+  },
+  "llama-3.1-405b-instruct": {
+    "id": "llama-3.1-405b-instruct",
+    "name": "Llama 3.1 405B Instruct",
+    "organization": "Meta",
+    "rank": 257,
+    "score": 14.4,
+    "benchmarks": {
+      "GPQA": 50.7
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/llama-3.1-405b-instruct"
+  },
+  "llama-3.1-70b-instruct": {
+    "id": "llama-3.1-70b-instruct",
+    "name": "Llama 3.1 70B Instruct",
+    "organization": "Meta",
+    "rank": 310,
+    "score": 7.32,
+    "benchmarks": {
+      "GPQA": 41.7
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/llama-3.1-70b-instruct"
+  },
+  "llama-3.1-8b-instruct": {
+    "id": "llama-3.1-8b-instruct",
+    "name": "Llama 3.1 8B Instruct",
+    "organization": "Meta",
+    "rank": 363,
+    "score": -2.9,
+    "benchmarks": {
+      "GPQA": 30.4
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/llama-3.1-8b-instruct"
+  },
+  "llama-3.1-nemotron-70b-instruct": {
+    "id": "llama-3.1-nemotron-70b-instruct",
+    "name": "Llama 3.1 Nemotron 70B Instruct",
+    "organization": "NVIDIA",
+    "rank": 348,
+    "score": 0.07,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/llama-3.1-nemotron-70b-instruct"
+  },
+  "llama-3.1-nemotron-nano-8b-v1": {
+    "id": "llama-3.1-nemotron-nano-8b-v1",
+    "name": "Llama 3.1 Nemotron Nano 8B V1",
+    "organization": "NVIDIA",
+    "rank": 324,
+    "score": 4.44,
+    "benchmarks": {
+      "GPQA": 54.1,
+      "AIME 2025": 47.1
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/llama-3.1-nemotron-nano-8b-v1"
+  },
+  "llama-3.1-nemotron-ultra-253b-v1": {
+    "id": "llama-3.1-nemotron-ultra-253b-v1",
+    "name": "Llama 3.1 Nemotron Ultra 253B v1",
+    "organization": "NVIDIA",
+    "rank": 230,
+    "score": 18.86,
+    "benchmarks": {
+      "GPQA": 76.0,
+      "AIME 2025": 72.5
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/llama-3.1-nemotron-ultra-253b-v1"
+  },
+  "llama-3.2-11b-instruct": {
+    "id": "llama-3.2-11b-instruct",
+    "name": "Llama 3.2 11B Instruct",
+    "organization": "Meta",
+    "rank": 358,
+    "score": -1.59,
+    "benchmarks": {
+      "GPQA": 32.8,
+      "MMMU": 50.7,
+      "MMMU-Pro": 33.0
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/llama-3.2-11b-instruct"
+  },
+  "llama-3.2-3b-instruct": {
+    "id": "llama-3.2-3b-instruct",
+    "name": "Llama 3.2 3B Instruct",
+    "organization": "Meta",
+    "rank": 384,
+    "score": -6.38,
+    "benchmarks": {
+      "GPQA": 32.8
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/llama-3.2-3b-instruct"
+  },
+  "llama-3.2-90b-instruct": {
+    "id": "llama-3.2-90b-instruct",
+    "name": "Llama 3.2 90B Instruct",
+    "organization": "Meta",
+    "rank": 321,
+    "score": 4.91,
+    "benchmarks": {
+      "GPQA": 46.7,
+      "MMMU": 60.3,
+      "MMMU-Pro": 45.2
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/llama-3.2-90b-instruct"
+  },
+  "llama-3.3-70b-instruct": {
+    "id": "llama-3.3-70b-instruct",
+    "name": "Llama 3.3 70B Instruct",
+    "organization": "Meta",
+    "rank": 266,
+    "score": 13.48,
+    "benchmarks": {
+      "GPQA": 50.5
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/llama-3.3-70b-instruct"
+  },
+  "llama-3.3-nemotron-super-49b-v1": {
+    "id": "llama-3.3-nemotron-super-49b-v1",
+    "name": "Llama-3.3 Nemotron Super 49B v1",
+    "organization": "NVIDIA",
+    "rank": 270,
+    "score": 12.78,
+    "benchmarks": {
+      "GPQA": 66.7,
+      "AIME 2025": 58.4
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/llama-3.3-nemotron-super-49b-v1"
+  },
+  "llama-4-maverick": {
+    "id": "llama-4-maverick",
+    "name": "Llama 4 Maverick",
+    "organization": "Meta",
+    "rank": 258,
+    "score": 14.36,
+    "benchmarks": {
+      "GPQA": 69.8,
+      "MMMU": 73.4,
+      "MMMU-Pro": 59.6
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/llama-4-maverick"
+  },
+  "llama-4-scout": {
+    "id": "llama-4-scout",
+    "name": "Llama 4 Scout",
+    "organization": "Meta",
+    "rank": 307,
+    "score": 7.52,
+    "benchmarks": {
+      "GPQA": 57.2,
+      "MMMU": 69.4
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/llama-4-scout"
+  },
+  "llama-guard-4-12b": {
+    "id": "llama-guard-4-12b",
+    "name": "Llama Guard 4 12B",
+    "organization": "Meta",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/llama-guard-4-12b"
+  },
+  "longcat-flash-chat": {
+    "id": "longcat-flash-chat",
+    "name": "LongCat-Flash-Chat",
+    "organization": "Meituan",
+    "rank": 222,
+    "score": 19.54,
+    "benchmarks": {
+      "GPQA": 73.2,
+      "AIME 2025": 61.3,
+      "SWE-bench Verified": 60.4,
+      "Terminal-Bench": 39.5
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/longcat-flash-chat"
+  },
+  "longcat-flash-lite": {
+    "id": "longcat-flash-lite",
+    "name": "LongCat-Flash-Lite",
+    "organization": "Meituan",
+    "rank": 234,
+    "score": 18.33,
+    "benchmarks": {
+      "GPQA": 66.8,
+      "AIME 2025": 63.2,
+      "SWE-bench Verified": 54.4,
+      "Terminal-Bench": 33.8
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/longcat-flash-lite"
+  },
+  "longcat-flash-thinking": {
+    "id": "longcat-flash-thinking",
+    "name": "LongCat-Flash-Thinking",
+    "organization": "Meituan",
+    "rank": 155,
+    "score": 28.48,
+    "benchmarks": {
+      "GPQA": 81.5,
+      "AIME 2025": 90.6,
+      "SWE-bench Verified": 59.4
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/longcat-flash-thinking"
+  },
+  "longcat-flash-thinking-2601": {
+    "id": "longcat-flash-thinking-2601",
+    "name": "LongCat-Flash-Thinking-2601",
+    "organization": "Meituan",
+    "rank": 105,
+    "score": 35.16,
+    "benchmarks": {
+      "GPQA": 80.5,
+      "AIME 2025": 99.6,
+      "HLE": 25.2,
+      "SWE-bench Verified": 70.0,
+      "BrowseComp": 56.6
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/longcat-flash-thinking-2601"
+  },
+  "magistral-medium": {
+    "id": "magistral-medium",
+    "name": "Magistral Medium",
+    "organization": "Mistral AI",
+    "rank": 272,
+    "score": 12.66,
+    "benchmarks": {
+      "GPQA": 70.8,
+      "AIME 2025": 64.9,
+      "HLE": 9.0
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/magistral-medium"
+  },
+  "magistral-small-2506": {
+    "id": "magistral-small-2506",
+    "name": "Magistral Small 2506",
+    "organization": "Mistral AI",
+    "rank": 286,
+    "score": 10.35,
+    "benchmarks": {
+      "GPQA": 68.2,
+      "AIME 2025": 62.8
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/magistral-small-2506"
+  },
+  "mai-code-1.1-flash": {
+    "id": "mai-code-1.1-flash",
+    "name": "MAI-Code-1.1-Flash",
+    "organization": "Microsoft",
+    "rank": 160,
+    "score": 27.63,
+    "benchmarks": {
+      "SWE-bench Verified": 72.6
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/mai-code-1.1-flash"
+  },
+  "mai-code-1-flash": {
+    "id": "mai-code-1-flash",
+    "name": "MAI-Code-1-Flash",
+    "organization": "Microsoft",
+    "rank": 153,
+    "score": 28.84,
+    "benchmarks": {
+      "GPQA": 84.6,
+      "HLE": 18.0,
+      "SWE-bench Verified": 71.6,
+      "SWE-bench Pro": 51.2,
+      "FrontierMath": 6.3
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/mai-code-1-flash"
+  },
+  "mai-thinking-1": {
+    "id": "mai-thinking-1",
+    "name": "MAI-Thinking-1",
+    "organization": "Microsoft",
+    "rank": 122,
+    "score": 32.77,
+    "benchmarks": {
+      "GPQA": 84.2,
+      "AIME 2025": 97.0,
+      "SWE-bench Verified": 73.5,
+      "SWE-bench Pro": 52.8
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/mai-thinking-1"
+  },
+  "medgemma-4b-it": {
+    "id": "medgemma-4b-it",
+    "name": "MedGemma 4B IT",
+    "organization": "Google",
+    "rank": 372,
+    "score": -4.7,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/medgemma-4b-it"
+  },
+  "mercury-2": {
+    "id": "mercury-2",
+    "name": "Mercury 2",
+    "organization": "Inception",
+    "rank": 197,
+    "score": 23.34,
+    "benchmarks": {
+      "GPQA": 74.0,
+      "AIME 2025": 91.1,
+      "SciCode": 38.0
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/mercury-2"
+  },
+  "mimo-v2.5": {
+    "id": "mimo-v2.5",
+    "name": "MiMo-V2.5",
+    "organization": "Xiaomi",
+    "rank": 100,
+    "score": 35.91,
+    "benchmarks": {
+      "SWE-bench Pro": 56.1,
+      "MMMU-Pro": 77.9,
+      "CharXiv-R": 81.0
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/mimo-v2.5"
+  },
+  "mimo-v2.5-pro": {
+    "id": "mimo-v2.5-pro",
+    "name": "MiMo-V2.5-Pro",
+    "organization": "Xiaomi",
+    "rank": 178,
+    "score": 25.45,
+    "benchmarks": {
+      "GPQA": 66.7,
+      "HLE": 34.0,
+      "SWE-bench Verified": 78.9,
+      "SWE-bench Pro": 57.2
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/mimo-v2.5-pro"
+  },
+  "mimo-v2.6-flash": {
+    "id": "mimo-v2.6-flash",
+    "name": "MiMo-V2.6-Flash",
+    "organization": "Xiaomi",
+    "rank": 45,
+    "score": 44.68,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/mimo-v2.6-flash"
+  },
+  "mimo-v2.6-pro": {
+    "id": "mimo-v2.6-pro",
+    "name": "MiMo-V2.6-Pro",
+    "organization": "Xiaomi",
+    "rank": 27,
+    "score": 48.72,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/mimo-v2.6-pro"
+  },
+  "mimo-v2-flash": {
+    "id": "mimo-v2-flash",
+    "name": "MiMo-V2-Flash",
+    "organization": "Xiaomi",
+    "rank": 139,
+    "score": 30.49,
+    "benchmarks": {
+      "GPQA": 83.7,
+      "AIME 2025": 94.1,
+      "HLE": 22.1,
+      "SWE-bench Verified": 73.4,
+      "BrowseComp": 58.3,
+      "Terminal-Bench": 30.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/mimo-v2-flash"
+  },
+  "mimo-v2-omni": {
+    "id": "mimo-v2-omni",
+    "name": "MiMo-V2-Omni",
+    "organization": "Xiaomi",
+    "rank": 165,
+    "score": 27.22,
+    "benchmarks": {
+      "SWE-bench Verified": 74.8
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/mimo-v2-omni"
+  },
+  "mimo-v2-pro": {
+    "id": "mimo-v2-pro",
+    "name": "MiMo-V2-Pro",
+    "organization": "Xiaomi",
+    "rank": 103,
+    "score": 35.42,
+    "benchmarks": {
+      "SWE-bench Verified": 78.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/mimo-v2-pro"
+  },
+  "minicpm-sala": {
+    "id": "minicpm-sala",
+    "name": "MiniCPM-SALA",
+    "organization": "OpenBMB",
+    "rank": 260,
+    "score": 14.1,
+    "benchmarks": {
+      "AIME 2025": 78.3
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/minicpm-sala"
+  },
+  "minimax-m1-40k": {
+    "id": "minimax-m1-40k",
+    "name": "MiniMax M1 40K",
+    "organization": "MiniMax",
+    "rank": 218,
+    "score": 20.18,
+    "benchmarks": {
+      "GPQA": 69.2,
+      "AIME 2025": 74.6,
+      "HLE": 7.2,
+      "SWE-bench Verified": 55.6,
+      "SimpleQA": 17.9,
+      "Tau-bench Retail": 67.8
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/minimax-m1-40k"
+  },
+  "minimax-m1-80k": {
+    "id": "minimax-m1-80k",
+    "name": "MiniMax M1 80K",
+    "organization": "MiniMax",
+    "rank": 212,
+    "score": 21.1,
+    "benchmarks": {
+      "GPQA": 70.0,
+      "AIME 2025": 76.9,
+      "HLE": 8.4,
+      "SWE-bench Verified": 56.0,
+      "SimpleQA": 18.5,
+      "Tau-bench Retail": 63.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/minimax-m1-80k"
+  },
+  "minimax-m2": {
+    "id": "minimax-m2",
+    "name": "MiniMax M2",
+    "organization": "MiniMax",
+    "rank": 170,
+    "score": 26.61,
+    "benchmarks": {
+      "GPQA": 78.0,
+      "AIME 2025": 78.0,
+      "HLE": 12.5,
+      "SWE-bench Verified": 69.4,
+      "BrowseComp": 44.0,
+      "Terminal-Bench": 46.3
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/minimax-m2"
+  },
+  "minimax-m2.1": {
+    "id": "minimax-m2.1",
+    "name": "MiniMax M2.1",
+    "organization": "MiniMax",
+    "rank": 131,
+    "score": 31.51,
+    "benchmarks": {
+      "GPQA": 81.0,
+      "AIME 2025": 81.0,
+      "HLE": 22.0,
+      "SWE-bench Verified": 67.0,
+      "BrowseComp": 62.0,
+      "Terminal-Bench": 47.9
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/minimax-m2.1"
+  },
+  "minimax-m2.5": {
+    "id": "minimax-m2.5",
+    "name": "MiniMax M2.5",
+    "organization": "MiniMax",
+    "rank": 89,
+    "score": 36.83,
+    "benchmarks": {
+      "SWE-bench Verified": 80.2,
+      "SWE-bench Pro": 55.4,
+      "BrowseComp": 76.3
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/minimax-m2.5"
+  },
+  "minimax-m2.7": {
+    "id": "minimax-m2.7",
+    "name": "MiniMax M2.7",
+    "organization": "MiniMax",
+    "rank": 102,
+    "score": 35.59,
+    "benchmarks": {
+      "SWE-bench Pro": 56.2,
+      "Toolathlon": 46.3
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/minimax-m2.7"
+  },
+  "minimax-m3": {
+    "id": "minimax-m3",
+    "name": "MiniMax M3",
+    "organization": "MiniMax",
+    "rank": 70,
+    "score": 40.73,
+    "benchmarks": {
+      "SWE-bench Verified": 80.5,
+      "SWE-bench Pro": 59.0,
+      "MMMU-Pro": 78.1,
+      "BrowseComp": 83.5,
+      "MCP Atlas": 74.2,
+      "Apex Agents": 27.7
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/minimax-m3"
+  },
+  "minimax-m3.1-flash": {
+    "id": "minimax-m3.1-flash",
+    "name": "MiniMax M3.1 Flash",
+    "organization": "MiniMax",
+    "rank": 29,
+    "score": 48.51,
+    "benchmarks": {
+      "CharXiv-R": 82.5
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/minimax-m3.1-flash"
+  },
+  "ministral-14b-latest": {
+    "id": "ministral-14b-latest",
+    "name": "Ministral 3 (14B Reasoning 2512)",
+    "organization": "Mistral AI",
+    "rank": 217,
+    "score": 20.27,
+    "benchmarks": {
+      "GPQA": 71.2,
+      "AIME 2025": 85.0
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/ministral-14b-latest"
+  },
+  "ministral-3-14b-base-2512": {
+    "id": "ministral-3-14b-base-2512",
+    "name": "Ministral 3 (14B Base 2512)",
+    "organization": "Mistral AI",
+    "rank": 331,
+    "score": 3.32,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/ministral-3-14b-base-2512"
+  },
+  "ministral-3-14b-instruct-2512": {
+    "id": "ministral-3-14b-instruct-2512",
+    "name": "MiniStral 3 (14B Instruct 2512)",
+    "organization": "Mistral AI",
+    "rank": 289,
+    "score": 9.85,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/ministral-3-14b-instruct-2512"
+  },
+  "ministral-3-3b-base-2512": {
+    "id": "ministral-3-3b-base-2512",
+    "name": "Ministral 3 (3B Base 2512)",
+    "organization": "Mistral AI",
+    "rank": 387,
+    "score": -6.69,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/ministral-3-3b-base-2512"
+  },
+  "ministral-3-3b-instruct-2512": {
+    "id": "ministral-3-3b-instruct-2512",
+    "name": "Ministral 3 (3B Instruct 2512)",
+    "organization": "Mistral AI",
+    "rank": 340,
+    "score": 1.91,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/ministral-3-3b-instruct-2512"
+  },
+  "ministral-3-8b-base-2512": {
+    "id": "ministral-3-8b-base-2512",
+    "name": "Ministral 3 (8B Base 2512)",
+    "organization": "Mistral AI",
+    "rank": 357,
+    "score": -1.38,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/ministral-3-8b-base-2512"
+  },
+  "ministral-3-8b-instruct-2512": {
+    "id": "ministral-3-8b-instruct-2512",
+    "name": "Ministral 3 (8B Instruct 2512)",
+    "organization": "Mistral AI",
+    "rank": 308,
+    "score": 7.4,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/ministral-3-8b-instruct-2512"
+  },
+  "ministral-3b-latest": {
+    "id": "ministral-3b-latest",
+    "name": "Min  istral 3 (3B Reasoning 2512)",
+    "organization": "Mistral AI",
+    "rank": 283,
+    "score": 10.85,
+    "benchmarks": {
+      "GPQA": 53.4,
+      "AIME 2025": 72.1
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/ministral-3b-latest"
+  },
+  "ministral-8b-instruct-2410": {
+    "id": "ministral-8b-instruct-2410",
+    "name": "Ministral 8B Instruct",
+    "organization": "Mistral AI",
+    "rank": 376,
+    "score": -5.01,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/ministral-8b-instruct-2410"
+  },
+  "ministral-8b-latest": {
+    "id": "ministral-8b-latest",
+    "name": "Ministral 3 (8B Reasoning 2512)",
+    "organization": "Mistral AI",
+    "rank": 246,
+    "score": 16.16,
+    "benchmarks": {
+      "GPQA": 66.8,
+      "AIME 2025": 78.7
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/ministral-8b-latest"
+  },
+  "mistral-large-2-2407": {
+    "id": "mistral-large-2-2407",
+    "name": "Mistral Large 2",
+    "organization": "Mistral AI",
+    "rank": 312,
+    "score": 7.09,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/mistral-large-2-2407"
+  },
+  "mistral-large-3-2509": {
+    "id": "mistral-large-3-2509",
+    "name": "Mistral Large 3",
+    "organization": "Mistral AI",
+    "rank": 287,
+    "score": 10.15,
+    "benchmarks": {
+      "MMMLU": 74.2
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/mistral-large-3-2509"
+  },
+  "mistral-large-3-675b-base-2512": {
+    "id": "mistral-large-3-675b-base-2512",
+    "name": "Mistral Large 3 (675B Base)",
+    "organization": "Mistral AI",
+    "rank": 299,
+    "score": 8.5,
+    "benchmarks": {
+      "GPQA": 43.9,
+      "SimpleQA": 23.8,
+      "MMMLU": 85.5
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/mistral-large-3-675b-base-2512"
+  },
+  "mistral-large-3-675B-instruct-2512-eagle": {
+    "id": "mistral-large-3-675B-instruct-2512-eagle",
+    "name": "Mistral Large 3 (675B Instruct 2512 Eagle)",
+    "organization": "Mistral AI",
+    "rank": 300,
+    "score": 8.4,
+    "benchmarks": {
+      "GPQA": 43.9,
+      "SimpleQA": 23.8,
+      "MMMLU": 85.5
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/mistral-large-3-675B-instruct-2512-eagle"
+  },
+  "mistral-large-3-675b-instruct-2512-nvfp4": {
+    "id": "mistral-large-3-675b-instruct-2512-nvfp4",
+    "name": "Mistral Large 3 (675B Instruct 2512 NVFP4)",
+    "organization": "Mistral AI",
+    "rank": 298,
+    "score": 8.6,
+    "benchmarks": {
+      "GPQA": 43.9,
+      "SimpleQA": 23.8,
+      "MMMLU": 85.5
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/mistral-large-3-675b-instruct-2512-nvfp4"
+  },
+  "mistral-large-4": {
+    "id": "mistral-large-4",
+    "name": "Mistral Large 4",
+    "organization": "Mistral AI",
+    "rank": 40,
+    "score": 45.63,
+    "benchmarks": {
+      "SciCode": 91.8
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/mistral-large-4"
+  },
+  "mistral-large-latest": {
+    "id": "mistral-large-latest",
+    "name": "Mistral Large 3 (675B Instruct 2512)",
+    "organization": "Mistral AI",
+    "rank": 294,
+    "score": 8.71,
+    "benchmarks": {
+      "GPQA": 43.9,
+      "SimpleQA": 23.8,
+      "MMMLU": 85.5
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/mistral-large-latest"
+  },
+  "mistral-medium-3-5": {
+    "id": "mistral-medium-3-5",
+    "name": "Mistral Medium 3.5",
+    "organization": "Mistral AI",
+    "rank": 169,
+    "score": 26.62,
+    "benchmarks": {
+      "AIME 2025": 86.3,
+      "SWE-bench Verified": 77.6,
+      "BrowseComp": 48.6
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/mistral-medium-3-5"
+  },
+  "mistral-nemo-instruct-2407": {
+    "id": "mistral-nemo-instruct-2407",
+    "name": "Mistral NeMo Instruct",
+    "organization": "Mistral AI",
+    "rank": 377,
+    "score": -5.05,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/mistral-nemo-instruct-2407"
+  },
+  "mistral-small-2409": {
+    "id": "mistral-small-2409",
+    "name": "Mistral Small",
+    "organization": "Mistral AI",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/mistral-small-2409"
+  },
+  "mistral-small-24b-base-2501": {
+    "id": "mistral-small-24b-base-2501",
+    "name": "Mistral Small 3 24B Base",
+    "organization": "Mistral AI",
+    "rank": 351,
+    "score": -0.62,
+    "benchmarks": {
+      "GPQA": 34.4
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/mistral-small-24b-base-2501"
+  },
+  "mistral-small-24b-instruct-2501": {
+    "id": "mistral-small-24b-instruct-2501",
+    "name": "Mistral Small 3 24B Instruct",
+    "organization": "Mistral AI",
+    "rank": 327,
+    "score": 3.86,
+    "benchmarks": {
+      "GPQA": 45.3
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/mistral-small-24b-instruct-2501"
+  },
+  "mistral-small-3.1-24b-base-2503": {
+    "id": "mistral-small-3.1-24b-base-2503",
+    "name": "Mistral Small 3.1 24B Base",
+    "organization": "Mistral AI",
+    "rank": 349,
+    "score": 0.01,
+    "benchmarks": {
+      "GPQA": 37.5,
+      "MMMU": 59.3
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/mistral-small-3.1-24b-base-2503"
+  },
+  "mistral-small-3.1-24b-instruct-2503": {
+    "id": "mistral-small-3.1-24b-instruct-2503",
+    "name": "Mistral Small 3.1 24B Instruct",
+    "organization": "Mistral AI",
+    "rank": 326,
+    "score": 3.87,
+    "benchmarks": {
+      "GPQA": 46.0,
+      "MMMU": 59.3,
+      "SimpleQA": 10.4
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/mistral-small-3.1-24b-instruct-2503"
+  },
+  "mistral-small-3.2-24b-instruct-2506": {
+    "id": "mistral-small-3.2-24b-instruct-2506",
+    "name": "Mistral Small 3.2 24B Instruct",
+    "organization": "Mistral AI",
+    "rank": 302,
+    "score": 8.14,
+    "benchmarks": {
+      "GPQA": 46.1,
+      "MMMU": 62.5,
+      "SimpleQA": 12.1
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/mistral-small-3.2-24b-instruct-2506"
+  },
+  "mistral-small-latest": {
+    "id": "mistral-small-latest",
+    "name": "Mistral Small 4",
+    "organization": "Mistral AI",
+    "rank": 233,
+    "score": 18.56,
+    "benchmarks": {
+      "GPQA": 71.2,
+      "AIME 2025": 83.8,
+      "MMMU-Pro": 60.0
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/mistral-small-latest"
+  },
+  "muse-glimmer-30b": {
+    "id": "muse-glimmer-30b",
+    "name": "Muse Glimmer-30B",
+    "organization": "Meta",
+    "rank": 110,
+    "score": 34.6,
+    "benchmarks": {
+      "GPQA": 83.5,
+      "HLE": 22.0,
+      "SWE-bench Verified": 76.0,
+      "SWE-bench Pro": 51.2,
+      "MMMU-Pro": 74.0,
+      "SciCode": 43.6
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/muse-glimmer-30b"
+  },
+  "muse-spark": {
+    "id": "muse-spark",
+    "name": "Muse Spark",
+    "organization": "Meta",
+    "rank": 68,
+    "score": 41.6,
+    "benchmarks": {
+      "GPQA": 89.5,
+      "HLE": 58.4,
+      "SWE-bench Verified": 77.4,
+      "SWE-bench Pro": 52.4,
+      "MMMU-Pro": 80.4,
+      "ARC-AGI v2": 42.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/muse-spark"
+  },
+  "muse-spark-1.1": {
+    "id": "muse-spark-1.1",
+    "name": "Muse Spark 1.1",
+    "organization": "Meta",
+    "rank": 30,
+    "score": 48.22,
+    "benchmarks": {
+      "HLE": 62.1,
+      "SWE-bench Pro": 61.5,
+      "CharXiv-R": 88.4,
+      "MCP Atlas": 88.1,
+      "Toolathlon": 75.6
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/muse-spark-1.1"
+  },
+  "muse-spark-1.2": {
+    "id": "muse-spark-1.2",
+    "name": "Muse Spark 1.2",
+    "organization": "Meta",
+    "rank": 90,
+    "score": 36.75,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/muse-spark-1.2"
+  },
+  "muse-spark-1.3": {
+    "id": "muse-spark-1.3",
+    "name": "Muse Spark 1.3",
+    "organization": "Meta",
+    "rank": 13,
+    "score": 51.9,
+    "benchmarks": {
+      "MRCR v2": 98.5
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/muse-spark-1.3"
+  },
+  "muse-spark-open": {
+    "id": "muse-spark-open",
+    "name": "Muse Spark Open",
+    "organization": "Meta",
+    "rank": 43,
+    "score": 44.93,
+    "benchmarks": {
+      "GPQA": 89.0,
+      "SciCode": 58.5,
+      "MCP Atlas": 89.2
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/muse-spark-open"
+  },
+  "muse-wonder": {
+    "id": "muse-wonder",
+    "name": "Muse Wonder",
+    "organization": "Meta",
+    "rank": 25,
+    "score": 49.2,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/muse-wonder"
+  },
+  "muse-wonder-1.0": {
+    "id": "muse-wonder-1.0",
+    "name": "Muse Wonder",
+    "organization": "Meta",
+    "rank": 22,
+    "score": 49.71,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/muse-wonder-1.0"
+  },
+  "muse-wonder-full": {
+    "id": "muse-wonder-full",
+    "name": "Muse Wonder Full",
+    "organization": "Meta",
+    "rank": 12,
+    "score": 52.52,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/muse-wonder-full"
+  },
+  "muse-wonder-full-1.0": {
+    "id": "muse-wonder-full-1.0",
+    "name": "Muse Wonder Full",
+    "organization": "Meta",
+    "rank": 11,
+    "score": 53.07,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/muse-wonder-full-1.0"
+  },
+  "mythomax-l2-13b": {
+    "id": "mythomax-l2-13b",
+    "name": "MythoMax L2 13B",
+    "organization": "Gryphe",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/mythomax-l2-13b"
+  },
+  "nemotron-3.5-bolt-74b-a9b-24gb": {
+    "id": "nemotron-3.5-bolt-74b-a9b-24gb",
+    "name": "Nemotron 3.5 Bolt (74B A9B 24GB)",
+    "organization": "NVIDIA",
+    "rank": 142,
+    "score": 29.94,
+    "benchmarks": {
+      "GPQA": 86.4,
+      "HLE": 25.3,
+      "BrowseComp": 66.8,
+      "SciCode": 41.0,
+      "MCP Atlas": 52.2
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/nemotron-3.5-bolt-74b-a9b-24gb"
+  },
+  "nemotron-3.5-lightning-30b-a3b": {
+    "id": "nemotron-3.5-lightning-30b-a3b",
+    "name": "Nemotron 3.5 Lightning (30B A3B)",
+    "organization": "NVIDIA",
+    "rank": 200,
+    "score": 22.09,
+    "benchmarks": {
+      "GPQA": 75.4,
+      "HLE": 11.7,
+      "SWE-bench Verified": 51.6,
+      "BrowseComp": 37.0,
+      "SciCode": 32.6
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/nemotron-3.5-lightning-30b-a3b"
+  },
+  "nemotron-3.5-super-vl-120b-a12b": {
+    "id": "nemotron-3.5-super-vl-120b-a12b",
+    "name": "Nemotron 3.5 Super VL (120B A12B)",
+    "organization": "NVIDIA",
+    "rank": 108,
+    "score": 34.97,
+    "benchmarks": {
+      "GPQA": 89.5,
+      "HLE": 31.8,
+      "SWE-bench Verified": 71.1,
+      "SWE-bench Pro": 51.8,
+      "BrowseComp": 78.0,
+      "SciCode": 47.1
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/nemotron-3.5-super-vl-120b-a12b"
+  },
+  "nemotron-3-nano-30b-a3b": {
+    "id": "nemotron-3-nano-30b-a3b",
+    "name": "Nemotron 3 Nano (30B A3B)",
+    "organization": "NVIDIA",
+    "rank": 214,
+    "score": 20.67,
+    "benchmarks": {
+      "GPQA": 75.0,
+      "AIME 2025": 99.2,
+      "HLE": 15.5,
+      "SWE-bench Verified": 38.8,
+      "Terminal-Bench": 8.5,
+      "SciCode": 33.3
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/nemotron-3-nano-30b-a3b"
+  },
+  "nemotron-3-super-120b-a12b": {
+    "id": "nemotron-3-super-120b-a12b",
+    "name": "Nemotron 3 Super (120B A12B)",
+    "organization": "NVIDIA",
+    "rank": 172,
+    "score": 26.46,
+    "benchmarks": {
+      "GPQA": 82.7,
+      "AIME 2025": 90.2,
+      "HLE": 22.8,
+      "SWE-bench Verified": 53.7,
+      "BrowseComp": 31.3,
+      "Terminal-Bench": 25.8
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/nemotron-3-super-120b-a12b"
+  },
+  "nemotron-3-ultra-550b-a55b": {
+    "id": "nemotron-3-ultra-550b-a55b",
+    "name": "Nemotron 3 Ultra (550B A55B)",
+    "organization": "NVIDIA",
+    "rank": 98,
+    "score": 35.99,
+    "benchmarks": {
+      "GPQA": 87.0,
+      "HLE": 37.4,
+      "SWE-bench Verified": 70.7,
+      "BrowseComp": 44.4,
+      "SciCode": 44.6
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/nemotron-3-ultra-550b-a55b"
+  },
+  "nemotron-content-safety-3.5": {
+    "id": "nemotron-content-safety-3.5",
+    "name": "Nemotron Content Safety 3.5",
+    "organization": "NVIDIA",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/nemotron-content-safety-3.5"
+  },
+  "nemotron-labs-dory-1.0-4b": {
+    "id": "nemotron-labs-dory-1.0-4b",
+    "name": "Nemotron Labs Dory 1.0 (4B)",
+    "organization": "NVIDIA",
+    "rank": 202,
+    "score": 22.06,
+    "benchmarks": {
+      "GPQA": 72.4,
+      "HLE": 10.9,
+      "SWE-bench Verified": 59.5,
+      "SciCode": 34.9
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/nemotron-labs-dory-1.0-4b"
+  },
+  "north-micro-vision-instruct": {
+    "id": "north-micro-vision-instruct",
+    "name": "North Micro Vision Instruct",
+    "organization": "Cohere",
+    "rank": 379,
+    "score": -5.4,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/north-micro-vision-instruct"
+  },
+  "north-mini-code-1.0": {
+    "id": "north-mini-code-1.0",
+    "name": "North Mini Code 1.0",
+    "organization": "Cohere",
+    "rank": 205,
+    "score": 21.68,
+    "benchmarks": {
+      "SWE-bench Verified": 67.6,
+      "SWE-bench Pro": 40.2,
+      "SciCode": 38.2
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/north-mini-code-1.0"
+  },
+  "nova-2-lite": {
+    "id": "nova-2-lite",
+    "name": "Nova 2 Lite",
+    "organization": "Amazon",
+    "rank": 181,
+    "score": 25.15,
+    "benchmarks": {
+      "GPQA": 79.6,
+      "AIME 2025": 91.0,
+      "SWE-bench Verified": 64.5,
+      "MMMU-Pro": 61.8,
+      "Terminal-Bench": 32.5,
+      "MCP Atlas": 24.6
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/nova-2-lite"
+  },
+  "nova-2-omni": {
+    "id": "nova-2-omni",
+    "name": "Nova 2 Omni",
+    "organization": "Amazon",
+    "rank": 176,
+    "score": 25.56,
+    "benchmarks": {
+      "AIME 2025": 92.1,
+      "MMMU-Pro": 61.4
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/nova-2-omni"
+  },
+  "nova-2-pro": {
+    "id": "nova-2-pro",
+    "name": "Nova 2 Pro",
+    "organization": "Amazon",
+    "rank": 138,
+    "score": 30.63,
+    "benchmarks": {
+      "GPQA": 81.4,
+      "AIME 2025": 92.3,
+      "SWE-bench Verified": 70.0,
+      "MMMU-Pro": 63.5,
+      "Terminal-Bench": 41.3
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/nova-2-pro"
+  },
+  "nova-2-sonic": {
+    "id": "nova-2-sonic",
+    "name": "Nova 2 Sonic",
+    "organization": "Amazon",
+    "rank": 295,
+    "score": 8.71,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/nova-2-sonic"
+  },
+  "nova-lite": {
+    "id": "nova-lite",
+    "name": "Nova Lite",
+    "organization": "Amazon",
+    "rank": 311,
+    "score": 7.24,
+    "benchmarks": {
+      "GPQA": 42.0,
+      "MMMU": 56.2
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/nova-lite"
+  },
+  "nova-micro": {
+    "id": "nova-micro",
+    "name": "Nova Micro",
+    "organization": "Amazon",
+    "rank": 338,
+    "score": 2.12,
+    "benchmarks": {
+      "GPQA": 40.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/nova-micro"
+  },
+  "nova-pro": {
+    "id": "nova-pro",
+    "name": "Nova Pro",
+    "organization": "Amazon",
+    "rank": 276,
+    "score": 11.94,
+    "benchmarks": {
+      "GPQA": 46.9,
+      "MMMU": 61.7
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/nova-pro"
+  },
+  "nvidia-nemotron-nano-9b-v2": {
+    "id": "nvidia-nemotron-nano-9b-v2",
+    "name": "Nemotron Nano 9B v2",
+    "organization": "NVIDIA",
+    "rank": 236,
+    "score": 18.15,
+    "benchmarks": {
+      "GPQA": 64.0,
+      "AIME 2025": 72.1
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/nvidia-nemotron-nano-9b-v2"
+  },
+  "o1-2024-12-17": {
+    "id": "o1-2024-12-17",
+    "name": "o1",
+    "organization": "OpenAI",
+    "rank": 215,
+    "score": 20.64,
+    "benchmarks": {
+      "GPQA": 78.0,
+      "SWE-bench Verified": 41.0,
+      "MMMU": 77.6,
+      "SimpleQA": 47.0,
+      "FrontierMath": 5.5,
+      "MMMLU": 87.7
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/o1-2024-12-17"
+  },
+  "o1-mini": {
+    "id": "o1-mini",
+    "name": "o1-mini",
+    "organization": "OpenAI",
+    "rank": 290,
+    "score": 9.68,
+    "benchmarks": {
+      "GPQA": 60.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/o1-mini"
+  },
+  "o1-preview": {
+    "id": "o1-preview",
+    "name": "o1-preview",
+    "organization": "OpenAI",
+    "rank": 244,
+    "score": 16.27,
+    "benchmarks": {
+      "GPQA": 73.3,
+      "SWE-bench Verified": 41.3,
+      "SimpleQA": 42.4
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/o1-preview"
+  },
+  "o1-pro": {
+    "id": "o1-pro",
+    "name": "o1-pro",
+    "organization": "OpenAI",
+    "rank": 224,
+    "score": 19.46,
+    "benchmarks": {
+      "GPQA": 79.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/o1-pro"
+  },
+  "o3-2025-04-16": {
+    "id": "o3-2025-04-16",
+    "name": "o3",
+    "organization": "OpenAI",
+    "rank": 135,
+    "score": 30.79,
+    "benchmarks": {
+      "GPQA": 83.3,
+      "AIME 2025": 86.4,
+      "HLE": 14.7,
+      "SWE-bench Verified": 69.1,
+      "MMMU": 82.9,
+      "MMMU-Pro": 76.4
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/o3-2025-04-16"
+  },
+  "o3-mini": {
+    "id": "o3-mini",
+    "name": "o3-mini",
+    "organization": "OpenAI",
+    "rank": 211,
+    "score": 21.16,
+    "benchmarks": {
+      "GPQA": 77.2,
+      "SWE-bench Verified": 49.3,
+      "SimpleQA": 15.0,
+      "FrontierMath": 9.2,
+      "Tau-bench Retail": 57.6
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/o3-mini"
+  },
+  "o3-pro-2025-06-10": {
+    "id": "o3-pro-2025-06-10",
+    "name": "o3-pro",
+    "organization": "OpenAI",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/o3-pro-2025-06-10"
+  },
+  "o4-mini": {
+    "id": "o4-mini",
+    "name": "o4-mini",
+    "organization": "OpenAI",
+    "rank": 166,
+    "score": 27.19,
+    "benchmarks": {
+      "GPQA": 81.4,
+      "AIME 2025": 92.7,
+      "HLE": 14.7,
+      "SWE-bench Verified": 68.1,
+      "MMMU": 81.6,
+      "BrowseComp": 51.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/o4-mini"
+  },
+  "parse-v5.0": {
+    "id": "parse-v5.0",
+    "name": "Parse",
+    "organization": "Cohere",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/parse-v5.0"
+  },
+  "phi-3.5-mini-instruct": {
+    "id": "phi-3.5-mini-instruct",
+    "name": "Phi-3.5-mini-instruct",
+    "organization": "Microsoft",
+    "rank": 370,
+    "score": -4.14,
+    "benchmarks": {
+      "GPQA": 30.4,
+      "MMMLU": 55.4
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/phi-3.5-mini-instruct"
+  },
+  "phi-3.5-moe-instruct": {
+    "id": "phi-3.5-moe-instruct",
+    "name": "Phi-3.5-MoE-instruct",
+    "organization": "Microsoft",
+    "rank": 342,
+    "score": 1.59,
+    "benchmarks": {
+      "GPQA": 36.8,
+      "MMMLU": 69.9
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/phi-3.5-moe-instruct"
+  },
+  "phi-3.5-vision-instruct": {
+    "id": "phi-3.5-vision-instruct",
+    "name": "Phi-3.5-vision-instruct",
+    "organization": "Microsoft",
+    "rank": 369,
+    "score": -3.65,
+    "benchmarks": {
+      "MMMU": 43.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/phi-3.5-vision-instruct"
+  },
+  "phi-4": {
+    "id": "phi-4",
+    "name": "Phi 4",
+    "organization": "Microsoft",
+    "rank": 320,
+    "score": 5.08,
+    "benchmarks": {
+      "GPQA": 56.1,
+      "SimpleQA": 3.0
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/phi-4"
+  },
+  "phi-4-mini": {
+    "id": "phi-4-mini",
+    "name": "Phi 4 Mini",
+    "organization": "Microsoft",
+    "rank": 371,
+    "score": -4.38,
+    "benchmarks": {
+      "GPQA": 25.2
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/phi-4-mini"
+  },
+  "phi-4-mini-reasoning": {
+    "id": "phi-4-mini-reasoning",
+    "name": "Phi 4 Mini Reasoning",
+    "organization": "Microsoft",
+    "rank": 313,
+    "score": 6.79,
+    "benchmarks": {
+      "GPQA": 52.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/phi-4-mini-reasoning"
+  },
+  "phi-4-multimodal-instruct": {
+    "id": "phi-4-multimodal-instruct",
+    "name": "Phi-4-multimodal-instruct",
+    "organization": "Microsoft",
+    "rank": 336,
+    "score": 2.49,
+    "benchmarks": {
+      "MMMU": 55.1,
+      "MMMU-Pro": 38.5
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/phi-4-multimodal-instruct"
+  },
+  "phi-4-reasoning": {
+    "id": "phi-4-reasoning",
+    "name": "Phi 4 Reasoning",
+    "organization": "Microsoft",
+    "rank": 278,
+    "score": 11.7,
+    "benchmarks": {
+      "GPQA": 65.8,
+      "AIME 2025": 62.9
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/phi-4-reasoning"
+  },
+  "phi-4-reasoning-plus": {
+    "id": "phi-4-reasoning-plus",
+    "name": "Phi 4 Reasoning Plus",
+    "organization": "Microsoft",
+    "rank": 255,
+    "score": 14.7,
+    "benchmarks": {
+      "GPQA": 68.9,
+      "AIME 2025": 78.0
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/phi-4-reasoning-plus"
+  },
+  "pixtral-12b-2409": {
+    "id": "pixtral-12b-2409",
+    "name": "Pixtral-12B",
+    "organization": "Mistral AI",
+    "rank": 360,
+    "score": -1.92,
+    "benchmarks": {
+      "MMMU": 52.5
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/pixtral-12b-2409"
+  },
+  "pixtral-large": {
+    "id": "pixtral-large",
+    "name": "Pixtral Large",
+    "organization": "Mistral AI",
+    "rank": 280,
+    "score": 11.51,
+    "benchmarks": {
+      "MMMU": 64.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/pixtral-large"
+  },
+  "qvq-72b-preview": {
+    "id": "qvq-72b-preview",
+    "name": "QvQ-72B-Preview",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 306,
+    "score": 7.58,
+    "benchmarks": {
+      "MMMU": 70.3
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/qvq-72b-preview"
+  },
+  "qwen-2.5-14b-instruct": {
+    "id": "qwen-2.5-14b-instruct",
+    "name": "Qwen2.5 14B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 330,
+    "score": 3.49,
+    "benchmarks": {
+      "GPQA": 45.5
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/qwen-2.5-14b-instruct"
+  },
+  "qwen-2.5-32b-instruct": {
+    "id": "qwen-2.5-32b-instruct",
+    "name": "Qwen2.5 32B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 309,
+    "score": 7.39,
+    "benchmarks": {
+      "GPQA": 49.5
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/qwen-2.5-32b-instruct"
+  },
+  "qwen-2.5-72b-instruct": {
+    "id": "qwen-2.5-72b-instruct",
+    "name": "Qwen2.5 72B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 277,
+    "score": 11.8,
+    "benchmarks": {
+      "GPQA": 49.0
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/qwen-2.5-72b-instruct"
+  },
+  "qwen-2.5-7b-instruct": {
+    "id": "qwen-2.5-7b-instruct",
+    "name": "Qwen2.5 7B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 337,
+    "score": 2.14,
+    "benchmarks": {
+      "GPQA": 36.4
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/qwen-2.5-7b-instruct"
+  },
+  "qwen-2.5-coder-32b-instruct": {
+    "id": "qwen-2.5-coder-32b-instruct",
+    "name": "Qwen2.5-Coder 32B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 341,
+    "score": 1.73,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/qwen-2.5-coder-32b-instruct"
+  },
+  "qwen-2.5-coder-7b-instruct": {
+    "id": "qwen-2.5-coder-7b-instruct",
+    "name": "Qwen2.5-Coder 7B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 367,
+    "score": -3.49,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/qwen-2.5-coder-7b-instruct"
+  },
+  "qwen2.5-omni-7b": {
+    "id": "qwen2.5-omni-7b",
+    "name": "Qwen2.5-Omni-7B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 322,
+    "score": 4.87,
+    "benchmarks": {
+      "GPQA": 30.8,
+      "MMMU": 59.2,
+      "MMMU-Pro": 36.6
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/qwen2.5-omni-7b"
+  },
+  "qwen2.5-vl-32b": {
+    "id": "qwen2.5-vl-32b",
+    "name": "Qwen2.5 VL 32B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 292,
+    "score": 9.43,
+    "benchmarks": {
+      "GPQA": 46.0,
+      "MMMU": 70.0,
+      "MMMU-Pro": 49.5,
+      "OSWorld": 5.9,
+      "ScreenSpot-Pro": 39.4
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/qwen2.5-vl-32b"
+  },
+  "qwen2.5-vl-72b": {
+    "id": "qwen2.5-vl-72b",
+    "name": "Qwen2.5 VL 72B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 274,
+    "score": 12.39,
+    "benchmarks": {
+      "MMMU": 70.2,
+      "MMMU-Pro": 51.1,
+      "OSWorld": 8.8,
+      "ScreenSpot-Pro": 43.6
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/qwen2.5-vl-72b"
+  },
+  "qwen2.5-vl-7b": {
+    "id": "qwen2.5-vl-7b",
+    "name": "Qwen2.5 VL 7B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 316,
+    "score": 6.23,
+    "benchmarks": {
+      "MMMU": 58.6,
+      "MMMU-Pro": 38.3,
+      "ScreenSpot-Pro": 29.0
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/qwen2.5-vl-7b"
+  },
+  "qwen2-72b-instruct": {
+    "id": "qwen2-72b-instruct",
+    "name": "Qwen2 72B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 318,
+    "score": 5.45,
+    "benchmarks": {
+      "GPQA": 42.4
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/qwen2-72b-instruct"
+  },
+  "qwen2-7b-instruct": {
+    "id": "qwen2-7b-instruct",
+    "name": "Qwen2 7B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 373,
+    "score": -4.79,
+    "benchmarks": {
+      "GPQA": 25.3
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/qwen2-7b-instruct"
+  },
+  "qwen2-vl-72b": {
+    "id": "qwen2-vl-72b",
+    "name": "Qwen2-VL-72B-Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 261,
+    "score": 14.04,
+    "benchmarks": {
+      "MMMU-Pro": 46.2
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/qwen2-vl-72b"
+  },
+  "qwen3-14b": {
+    "id": "qwen3-14b",
+    "name": "Qwen3 14B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 238,
+    "score": 17.83,
+    "benchmarks": {
+      "AIME 2025": 70.4
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/qwen3-14b"
+  },
+  "qwen3-235b-a22b": {
+    "id": "qwen3-235b-a22b",
+    "name": "Qwen3 235B A22B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 253,
+    "score": 15.26,
+    "benchmarks": {
+      "GPQA": 47.5,
+      "AIME 2025": 81.5,
+      "MMMLU": 86.7
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/qwen3-235b-a22b"
+  },
+  "qwen3-235b-a22b-instruct-2507": {
+    "id": "qwen3-235b-a22b-instruct-2507",
+    "name": "Qwen3-235B-A22B-Instruct-2507",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 189,
+    "score": 23.9,
+    "benchmarks": {
+      "GPQA": 77.5,
+      "AIME 2025": 70.3,
+      "SimpleQA": 54.3
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/qwen3-235b-a22b-instruct-2507"
+  },
+  "qwen3-235b-a22b-thinking-2507": {
+    "id": "qwen3-235b-a22b-thinking-2507",
+    "name": "Qwen3-235B-A22B-Thinking-2507",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 159,
+    "score": 27.79,
+    "benchmarks": {
+      "GPQA": 81.1,
+      "AIME 2025": 92.3,
+      "HLE": 18.2,
+      "Tau-bench Retail": 67.8
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/qwen3-235b-a22b-thinking-2507"
+  },
+  "qwen3-30b-a3b": {
+    "id": "qwen3-30b-a3b",
+    "name": "Qwen3 30B A3B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 241,
+    "score": 16.98,
+    "benchmarks": {
+      "GPQA": 65.8,
+      "AIME 2025": 70.9
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/qwen3-30b-a3b"
+  },
+  "qwen3-32b": {
+    "id": "qwen3-32b",
+    "name": "Qwen3 32B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 235,
+    "score": 18.17,
+    "benchmarks": {
+      "AIME 2025": 72.9
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/qwen3-32b"
+  },
+  "qwen3.5-0.8b": {
+    "id": "qwen3.5-0.8b",
+    "name": "Qwen3.5-0.8B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 386,
+    "score": -6.49,
+    "benchmarks": {
+      "GPQA": 11.9,
+      "MMMLU": 44.3
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/qwen3.5-0.8b"
+  },
+  "qwen3.5-122b-a10b": {
+    "id": "qwen3.5-122b-a10b",
+    "name": "Qwen3.5-122B-A10B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 109,
+    "score": 34.8,
+    "benchmarks": {
+      "GPQA": 86.6,
+      "HLE": 47.5,
+      "SWE-bench Verified": 72.0,
+      "MMMU": 83.9,
+      "MMMU-Pro": 76.9,
+      "BrowseComp": 63.8
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3.5-122b-a10b"
+  },
+  "qwen3.5-27b": {
+    "id": "qwen3.5-27b",
+    "name": "Qwen3.5-27B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 116,
+    "score": 33.69,
+    "benchmarks": {
+      "GPQA": 85.5,
+      "HLE": 48.5,
+      "SWE-bench Verified": 72.4,
+      "MMMU": 82.3,
+      "MMMU-Pro": 75.0,
+      "BrowseComp": 61.0
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3.5-27b"
+  },
+  "qwen3.5-2b": {
+    "id": "qwen3.5-2b",
+    "name": "Qwen3.5-2B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 329,
+    "score": 3.5,
+    "benchmarks": {
+      "GPQA": 51.6,
+      "MMMLU": 63.1
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/qwen3.5-2b"
+  },
+  "qwen3.5-35b-a3b": {
+    "id": "qwen3.5-35b-a3b",
+    "name": "Qwen3.5-35B-A3B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 137,
+    "score": 30.64,
+    "benchmarks": {
+      "GPQA": 84.2,
+      "HLE": 47.4,
+      "SWE-bench Verified": 69.2,
+      "MMMU": 81.4,
+      "MMMU-Pro": 75.1,
+      "BrowseComp": 61.0
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3.5-35b-a3b"
+  },
+  "qwen3.5-397b-a17b": {
+    "id": "qwen3.5-397b-a17b",
+    "name": "Qwen3.5-397B-A17B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 80,
+    "score": 38.49,
+    "benchmarks": {
+      "GPQA": 88.4,
+      "HLE": 28.7,
+      "SWE-bench Verified": 76.4,
+      "BrowseComp": 69.0,
+      "MMMLU": 88.5,
+      "Toolathlon": 38.3
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3.5-397b-a17b"
+  },
+  "qwen3.5-4b": {
+    "id": "qwen3.5-4b",
+    "name": "Qwen3.5-4B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 227,
+    "score": 19.21,
+    "benchmarks": {
+      "GPQA": 76.2,
+      "MMMLU": 76.1
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/qwen3.5-4b"
+  },
+  "qwen3.5-9b": {
+    "id": "qwen3.5-9b",
+    "name": "Qwen3.5-9B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 185,
+    "score": 24.4,
+    "benchmarks": {
+      "GPQA": 81.7,
+      "MMMLU": 81.2
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/qwen3.5-9b"
+  },
+  "qwen3.6-27b": {
+    "id": "qwen3.6-27b",
+    "name": "Qwen3.6-27B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 104,
+    "score": 35.33,
+    "benchmarks": {
+      "GPQA": 87.8,
+      "HLE": 24.0,
+      "SWE-bench Verified": 77.2,
+      "SWE-bench Pro": 53.5,
+      "MMMU": 82.9,
+      "MMMU-Pro": 75.8
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3.6-27b"
+  },
+  "qwen3.6-35b-a3b": {
+    "id": "qwen3.6-35b-a3b",
+    "name": "Qwen3.6-35B-A3B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 125,
+    "score": 32.2,
+    "benchmarks": {
+      "GPQA": 86.0,
+      "HLE": 21.4,
+      "SWE-bench Verified": 73.4,
+      "SWE-bench Pro": 49.5,
+      "MMMU": 81.7,
+      "MMMU-Pro": 75.3
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3.6-35b-a3b"
+  },
+  "qwen3.6-plus": {
+    "id": "qwen3.6-plus",
+    "name": "Qwen3.6 Plus",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 75,
+    "score": 39.12,
+    "benchmarks": {
+      "GPQA": 90.4,
+      "HLE": 28.8,
+      "SWE-bench Verified": 78.8,
+      "SWE-bench Pro": 56.6,
+      "MMMU": 86.0,
+      "MMMU-Pro": 78.8
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3.6-plus"
+  },
+  "qwen3.7-max": {
+    "id": "qwen3.7-max",
+    "name": "Qwen3.7 Max",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 42,
+    "score": 45.19,
+    "benchmarks": {
+      "GPQA": 92.4,
+      "HLE": 41.4,
+      "SWE-bench Verified": 80.4,
+      "SWE-bench Pro": 60.6,
+      "SciCode": 53.5,
+      "MMMLU": 90.3
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3.7-max"
+  },
+  "qwen3.7-plus": {
+    "id": "qwen3.7-plus",
+    "name": "Qwen3.7-Plus",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 63,
+    "score": 42.35,
+    "benchmarks": {
+      "GPQA": 90.3,
+      "HLE": 34.7,
+      "SWE-bench Verified": 77.7,
+      "SWE-bench Pro": 57.6,
+      "MMMU-Pro": 79.0,
+      "SciCode": 51.3
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3.7-plus"
+  },
+  "qwen3.8-2.4t-a95b": {
+    "id": "qwen3.8-2.4t-a95b",
+    "name": "Qwen3.8-2.4T-A95B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/qwen3.8-2.4t-a95b"
+  },
+  "qwen3.8-27b": {
+    "id": "qwen3.8-27b",
+    "name": "Qwen3.8-27B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 47,
+    "score": 44.43,
+    "benchmarks": {
+      "GPQA": 89.2,
+      "HLE": 30.8,
+      "SWE-bench Pro": 61.7,
+      "CharXiv-R": 90.2
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/qwen3.8-27b"
+  },
+  "qwen3.8-flash": {
+    "id": "qwen3.8-flash",
+    "name": "Qwen3.8 Flash",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 32,
+    "score": 48.02,
+    "benchmarks": {
+      "GPQA": 91.7,
+      "HLE": 35.9,
+      "SWE-bench Pro": 62.5,
+      "CharXiv-R": 90.6,
+      "Toolathlon": 73.5
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/qwen3.8-flash"
+  },
+  "qwen3.8-flash-next": {
+    "id": "qwen3.8-flash-next",
+    "name": "Qwen3.8-Flash-Next",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 31,
+    "score": 48.08,
+    "benchmarks": {
+      "GPQA": 91.7,
+      "HLE": 35.9,
+      "SWE-bench Pro": 62.5,
+      "CharXiv-R": 90.6,
+      "Toolathlon": 73.5
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/qwen3.8-flash-next"
+  },
+  "qwen3.8-max": {
+    "id": "qwen3.8-max",
+    "name": "Qwen3.8 Max",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 17,
+    "score": 50.75,
+    "benchmarks": {
+      "GPQA": 92.6,
+      "HLE": 43.6,
+      "SWE-bench Pro": 67.7,
+      "MMMU-Pro": 82.3,
+      "ScreenSpot-Pro": 84.5,
+      "Toolathlon": 72.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3.8-max"
+  },
+  "qwen3.8-omni-flash": {
+    "id": "qwen3.8-omni-flash",
+    "name": "Qwen3.8 Omni Flash",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 84,
+    "score": 37.84,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/qwen3.8-omni-flash"
+  },
+  "qwen3-coder": {
+    "id": "qwen3-coder",
+    "name": "Qwen3-Coder",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/qwen3-coder"
+  },
+  "qwen3-coder-480b-a35b-instruct": {
+    "id": "qwen3-coder-480b-a35b-instruct",
+    "name": "Qwen3-Coder 480B A35B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 213,
+    "score": 20.8,
+    "benchmarks": {
+      "SWE-bench Verified": 69.6,
+      "Tau-bench Retail": 77.5
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/qwen3-coder-480b-a35b-instruct"
+  },
+  "qwen3-max": {
+    "id": "qwen3-max",
+    "name": "Qwen3 Max",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 208,
+    "score": 21.47,
+    "benchmarks": {
+      "GPQA": 62.0,
+      "AIME 2025": 81.6,
+      "SWE-bench Verified": 69.6
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/qwen3-max"
+  },
+  "qwen3-max-thinking": {
+    "id": "qwen3-max-thinking",
+    "name": "Qwen3 Max Thinking",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 123,
+    "score": 32.72,
+    "benchmarks": {
+      "GPQA": 87.4,
+      "SWE-bench Verified": 75.3,
+      "BrowseComp": 53.9,
+      "MMMLU": 84.4,
+      "Toolathlon": 18.8
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/qwen3-max-thinking"
+  },
+  "qwen3-next-80b-a3b-base": {
+    "id": "qwen3-next-80b-a3b-base",
+    "name": "Qwen3-Next-80B-A3B-Base",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/qwen3-next-80b-a3b-base"
+  },
+  "qwen3-next-80b-a3b-instruct": {
+    "id": "qwen3-next-80b-a3b-instruct",
+    "name": "Qwen3-Next-80B-A3B-Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 220,
+    "score": 19.88,
+    "benchmarks": {
+      "GPQA": 72.9,
+      "AIME 2025": 69.5,
+      "Tau-bench Retail": 60.9
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/qwen3-next-80b-a3b-instruct"
+  },
+  "qwen3-next-80b-a3b-thinking": {
+    "id": "qwen3-next-80b-a3b-thinking",
+    "name": "Qwen3-Next-80B-A3B-Thinking",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 193,
+    "score": 23.55,
+    "benchmarks": {
+      "GPQA": 77.2,
+      "AIME 2025": 87.8,
+      "Tau-bench Retail": 69.6
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/qwen3-next-80b-a3b-thinking"
+  },
+  "qwen3-vl-235b-a22b-instruct": {
+    "id": "qwen3-vl-235b-a22b-instruct",
+    "name": "Qwen3 VL 235B A22B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 184,
+    "score": 24.43,
+    "benchmarks": {
+      "AIME 2025": 74.7,
+      "MMMU-Pro": 68.1,
+      "SimpleQA": 51.9,
+      "OSWorld": 66.7,
+      "CharXiv-R": 62.1,
+      "ScreenSpot-Pro": 62.0
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3-vl-235b-a22b-instruct"
+  },
+  "qwen3-vl-235b-a22b-thinking": {
+    "id": "qwen3-vl-235b-a22b-thinking",
+    "name": "Qwen3 VL 235B A22B Thinking",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 173,
+    "score": 26.45,
+    "benchmarks": {
+      "AIME 2025": 89.7,
+      "HLE": 13.6,
+      "MMMU-Pro": 69.3,
+      "SimpleQA": 44.4,
+      "OSWorld": 38.1,
+      "CharXiv-R": 66.1
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3-vl-235b-a22b-thinking"
+  },
+  "qwen3-vl-30b-a3b-instruct": {
+    "id": "qwen3-vl-30b-a3b-instruct",
+    "name": "Qwen3 VL 30B A3B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 247,
+    "score": 16.12,
+    "benchmarks": {
+      "GPQA": 70.4,
+      "AIME 2025": 69.3,
+      "MMMU-Pro": 60.4,
+      "SimpleQA": 27.0,
+      "OSWorld": 30.3,
+      "CharXiv-R": 48.9
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3-vl-30b-a3b-instruct"
+  },
+  "qwen3-vl-30b-a3b-thinking": {
+    "id": "qwen3-vl-30b-a3b-thinking",
+    "name": "Qwen3 VL 30B A3B Thinking",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 237,
+    "score": 17.98,
+    "benchmarks": {
+      "GPQA": 74.4,
+      "AIME 2025": 83.1,
+      "MMMU-Pro": 63.0,
+      "SimpleQA": 23.9,
+      "OSWorld": 30.6,
+      "CharXiv-R": 56.6
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3-vl-30b-a3b-thinking"
+  },
+  "qwen3-vl-32b-instruct": {
+    "id": "qwen3-vl-32b-instruct",
+    "name": "Qwen3 VL 32B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 219,
+    "score": 20.01,
+    "benchmarks": {
+      "GPQA": 68.9,
+      "AIME 2025": 66.2,
+      "MMMU-Pro": 65.3,
+      "OSWorld": 32.6,
+      "CharXiv-R": 62.8,
+      "ScreenSpot-Pro": 57.9
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3-vl-32b-instruct"
+  },
+  "qwen3-vl-32b-thinking": {
+    "id": "qwen3-vl-32b-thinking",
+    "name": "Qwen3 VL 32B Thinking",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 196,
+    "score": 23.39,
+    "benchmarks": {
+      "GPQA": 73.1,
+      "AIME 2025": 83.7,
+      "MMMU-Pro": 68.1,
+      "SimpleQA": 55.4,
+      "OSWorld": 41.0,
+      "CharXiv-R": 65.2
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3-vl-32b-thinking"
+  },
+  "qwen3-vl-4b-instruct": {
+    "id": "qwen3-vl-4b-instruct",
+    "name": "Qwen3 VL 4B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 285,
+    "score": 10.39,
+    "benchmarks": {
+      "AIME 2025": 46.6,
+      "MMMU-Pro": 53.2,
+      "SimpleQA": 48.0,
+      "OSWorld": 26.2,
+      "CharXiv-R": 39.7,
+      "ScreenSpot-Pro": 59.5
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3-vl-4b-instruct"
+  },
+  "qwen3-vl-4b-thinking": {
+    "id": "qwen3-vl-4b-thinking",
+    "name": "Qwen3 VL 4B Thinking",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 273,
+    "score": 12.64,
+    "benchmarks": {
+      "GPQA": 64.1,
+      "AIME 2025": 74.5,
+      "MMMU-Pro": 57.0,
+      "OSWorld": 31.4,
+      "CharXiv-R": 50.3,
+      "ScreenSpot-Pro": 49.2
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3-vl-4b-thinking"
+  },
+  "qwen3-vl-8b-instruct": {
+    "id": "qwen3-vl-8b-instruct",
+    "name": "Qwen3 VL 8B Instruct",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 264,
+    "score": 13.58,
+    "benchmarks": {
+      "AIME 2025": 45.9,
+      "MMMU-Pro": 55.9,
+      "OSWorld": 33.9,
+      "CharXiv-R": 46.4,
+      "ScreenSpot-Pro": 54.6
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/qwen3-vl-8b-instruct"
+  },
+  "qwen3-vl-8b-thinking": {
+    "id": "qwen3-vl-8b-thinking",
+    "name": "Qwen3 VL 8B Thinking",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 248,
+    "score": 15.97,
+    "benchmarks": {
+      "GPQA": 69.9,
+      "AIME 2025": 80.3,
+      "MMMU-Pro": 60.4,
+      "SimpleQA": 49.6,
+      "OSWorld": 33.9,
+      "CharXiv-R": 53.0
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/qwen3-vl-8b-thinking"
+  },
+  "qwq-32b": {
+    "id": "qwq-32b",
+    "name": "QwQ-32B",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 256,
+    "score": 14.45,
+    "benchmarks": {
+      "GPQA": 65.2
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/qwq-32b"
+  },
+  "qwq-32b-preview": {
+    "id": "qwq-32b-preview",
+    "name": "QwQ-32B-Preview",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "rank": 297,
+    "score": 8.66,
+    "benchmarks": {
+      "GPQA": 65.2
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/qwq-32b-preview"
+  },
+  "sakana-namazu": {
+    "id": "sakana-namazu",
+    "name": "Sakana Namazu",
+    "organization": "Sakana AI",
+    "rank": 66,
+    "score": 42.06,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/sakana-namazu"
+  },
+  "sarvam-105b": {
+    "id": "sarvam-105b",
+    "name": "Sarvam-105B",
+    "organization": "Sarvam AI",
+    "rank": 179,
+    "score": 25.41,
+    "benchmarks": {
+      "GPQA": 78.7,
+      "AIME 2025": 96.7,
+      "HLE": 11.2,
+      "SWE-bench Verified": 45.0,
+      "BrowseComp": 49.5
+    },
+    "benchmark_count": 5,
+    "url": "https://llm-stats.com/models/sarvam-105b"
+  },
+  "sarvam-30b": {
+    "id": "sarvam-30b",
+    "name": "Sarvam-30B",
+    "organization": "Sarvam AI",
+    "rank": 226,
+    "score": 19.22,
+    "benchmarks": {
+      "GPQA": 66.5,
+      "AIME 2025": 96.7,
+      "SWE-bench Verified": 34.0,
+      "BrowseComp": 35.5
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/sarvam-30b"
+  },
+  "seed-1.8": {
+    "id": "seed-1.8",
+    "name": "Seed 1.8",
+    "organization": "ByteDance",
+    "rank": 113,
+    "score": 34.03,
+    "benchmarks": {
+      "AIME 2025": 94.3,
+      "SWE-bench Verified": 72.9,
+      "MMMU": 83.4,
+      "MMMU-Pro": 73.2,
+      "BrowseComp": 67.6,
+      "OSWorld": 61.9
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/seed-1.8"
+  },
+  "seed-2.0-code": {
+    "id": "seed-2.0-code",
+    "name": "Seed 2.0 Code",
+    "organization": "ByteDance",
+    "rank": null,
+    "score": null,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/seed-2.0-code"
+  },
+  "seed-2.0-lite": {
+    "id": "seed-2.0-lite",
+    "name": "Seed 2.0 Lite",
+    "organization": "ByteDance",
+    "rank": 129,
+    "score": 31.76,
+    "benchmarks": {
+      "GPQA": 85.1,
+      "AIME 2025": 93.0,
+      "SWE-bench Verified": 73.5
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/seed-2.0-lite"
+  },
+  "seed-2.0-mini": {
+    "id": "seed-2.0-mini",
+    "name": "Seed 2.0 Mini",
+    "organization": "ByteDance",
+    "rank": 157,
+    "score": 27.95,
+    "benchmarks": {
+      "GPQA": 79.0,
+      "AIME 2025": 87.0,
+      "MMMU": 79.7,
+      "MMMU-Pro": 71.4,
+      "ARC-AGI v2": 1.5,
+      "MMMLU": 81.6
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/seed-2.0-mini"
+  },
+  "seed-2.0-pro": {
+    "id": "seed-2.0-pro",
+    "name": "Seed 2.0 Pro",
+    "organization": "ByteDance",
+    "rank": 73,
+    "score": 39.31,
+    "benchmarks": {
+      "GPQA": 88.9,
+      "AIME 2025": 98.3,
+      "SWE-bench Verified": 76.5,
+      "BrowseComp": 77.3
+    },
+    "benchmark_count": 4,
+    "url": "https://llm-stats.com/models/seed-2.0-pro"
+  },
+  "seed-2.1-pro": {
+    "id": "seed-2.1-pro",
+    "name": "Seed 2.1 Pro",
+    "organization": "ByteDance",
+    "rank": 38,
+    "score": 45.81,
+    "benchmarks": {
+      "HLE": 55.7,
+      "SWE-bench Pro": 57.5,
+      "MMMU-Pro": 82.7,
+      "BrowseComp": 86.2,
+      "SciCode": 59.8,
+      "OSWorld": 78.8
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/seed-2.1-pro"
+  },
+  "seed-2.1-turbo": {
+    "id": "seed-2.1-turbo",
+    "name": "Seed 2.1 Turbo",
+    "organization": "ByteDance",
+    "rank": 59,
+    "score": 42.66,
+    "benchmarks": {
+      "HLE": 54.6,
+      "SWE-bench Pro": 57.0,
+      "MMMU-Pro": 82.2,
+      "BrowseComp": 84.9,
+      "SciCode": 57.8,
+      "OSWorld": 76.4
+    },
+    "benchmark_count": 6,
+    "url": "https://llm-stats.com/models/seed-2.1-turbo"
+  },
+  "shieldstral-1.0-3b": {
+    "id": "shieldstral-1.0-3b",
+    "name": "Shieldstral 1.0 (3B)",
+    "organization": "Mistral AI",
+    "rank": 362,
+    "score": -2.57,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/shieldstral-1.0-3b"
+  },
+  "solar-mini4": {
+    "id": "solar-mini4",
+    "name": "Solar Mini 4",
+    "organization": "Upstage",
+    "rank": 127,
+    "score": 31.89,
+    "benchmarks": {
+      "SciCode": 47.6
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/solar-mini4"
+  },
+  "solar-pro4": {
+    "id": "solar-pro4",
+    "name": "Solar Pro 4",
+    "organization": "Upstage",
+    "rank": 107,
+    "score": 35.01,
+    "benchmarks": {
+      "GPQA": 89.0,
+      "SWE-bench Verified": 70.6,
+      "BrowseComp": 49.2
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/solar-pro4"
+  },
+  "step-3.5-flash": {
+    "id": "step-3.5-flash",
+    "name": "Step-3.5-Flash",
+    "organization": "StepFun",
+    "rank": 86,
+    "score": 37.0,
+    "benchmarks": {
+      "AIME 2025": 97.3,
+      "SWE-bench Verified": 74.4,
+      "BrowseComp": 69.0
+    },
+    "benchmark_count": 3,
+    "url": "https://llm-stats.com/models/step-3.5-flash"
+  },
+  "step-3.7-flash": {
+    "id": "step-3.7-flash",
+    "name": "Step 3.7 Flash",
+    "organization": "StepFun",
+    "rank": 144,
+    "score": 29.88,
+    "benchmarks": {
+      "SWE-bench Pro": 56.3
+    },
+    "benchmark_count": 1,
+    "url": "https://llm-stats.com/models/step-3.7-flash"
+  },
+  "step3-vl-10b": {
+    "id": "step3-vl-10b",
+    "name": "Step3-VL-10B",
+    "organization": "StepFun",
+    "rank": 180,
+    "score": 25.27,
+    "benchmarks": {
+      "AIME 2025": 87.7,
+      "MMMU": 78.1
+    },
+    "benchmark_count": 2,
+    "url": "https://llm-stats.com/models/step3-vl-10b"
+  },
+  "u2": {
+    "id": "u2",
+    "name": "U2",
+    "organization": "Unisound",
+    "rank": 198,
+    "score": 23.21,
+    "benchmarks": {},
+    "benchmark_count": 0,
+    "url": "https://llm-stats.com/models/u2"
+  }
+}
