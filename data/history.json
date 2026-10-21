@@ -1,5 +1,13 @@
 [
   {
+    "event_id": "309e187ea49e9d82",
+    "type": "price_change",
+    "model_id": "moonshotai/kimi-k2.7-code",
+    "provider": "OpenRouter",
+    "detected_at": "2026-10-21T10:04:47.917147+00:00",
+    "details": "Input: $0.6712 -> $0.6725"
+  },
+  {
     "event_id": "2324fae77c5fc2c4",
     "type": "new_free_model",
     "model_id": "big-pickle",
@@ -1590,13 +1598,5 @@
     "provider": "OpenRouter",
     "detected_at": "2026-10-21T09:33:36.326440+00:00",
     "details": "Added with input: $1.25/1M, output: $4.25/1M"
-  },
-  {
-    "event_id": "e43009b762229f16",
-    "type": "new_model",
-    "model_id": "~deepseek/deepseek-v4-flash-latest",
-    "provider": "OpenRouter",
-    "detected_at": "2026-10-21T09:33:36.326440+00:00",
-    "details": "Added with input: $0.0475/1M, output: $0.1568/1M"
   }
 ]
