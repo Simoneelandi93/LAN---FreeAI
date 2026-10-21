@@ -1,5 +1,21 @@
 [
   {
+    "event_id": "d2d57ff016fadf91",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-21T19:34:26.226888+00:00",
+    "details": "Input: $0.051691 -> $0.02282; output: $0.12 -> $0.05385"
+  },
+  {
+    "event_id": "4aa3476873fda61a",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T19:34:26.226888+00:00",
+    "details": "Input: $0.051691 -> $0.0326; output: $0.12 -> $0.0718"
+  },
+  {
     "event_id": "821b98d6d6ebf91b",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -1582,21 +1598,5 @@
     "provider": "302.AI, Amazon Bedrock, Cortecs, Crusoe, Deep Infra, DevPass (LLM Gateway), GreenPT, Hugging Face, Jiekou.AI, Meganova, Merge Gateway, ModelScope, Nebius Token Factory, OpenRouter, Pioneer, Qiniu, Scaleway, Venice AI, Vercel AI Gateway, submodel",
     "detected_at": "2026-10-21T11:52:14.084489+00:00",
     "details": "Deep Infra: $0.09/$0.55 per 1M; Pioneer: $1.2/$1.2 per 1M; Vercel AI Gateway: $0.22/$0.88 per 1M; Hugging Face: $0.855/$2.565 per 1M; Merge Gateway: $0.1/$0.6 per 1M; Crusoe: $0.22/$0.8 per 1M; Amazon Bedrock: $0.22/$0.88 per 1M; Nebius Token Factory: $0.2/$0.6 per 1M; GreenPT: $1.026/$3.078 per 1M; OpenRouter: $0.09/$0.55 per 1M; Cortecs: $0.199/$0.598 per 1M; ModelScope: $0/$0 per 1M; Scaleway: $0.75/$2.25 per 1M; DevPass (LLM Gateway): $0.09/$0.58 per 1M; Venice AI: $0.15/$0.75 per 1M; submodel: $0.2/$0.3 per 1M; Jiekou.AI: $0.15/$0.8 per 1M; 302.AI: $0.29/$1.143 per 1M; Meganova: $0.09/$0.6 per 1M"
-  },
-  {
-    "event_id": "4e569c9fb11002d5",
-    "type": "new_model",
-    "model_id": "qwen/qwen3.5-9b",
-    "provider": "Cortecs, Deep Infra, DevPass (LLM Gateway), EmpirioLabs AI, Hugging Face, Kilo Gateway, Merge Gateway, Mixlayer, NanoGPT, OVHcloud AI Endpoints, OpenRouter, Pioneer, QVAC, Regolo AI, TensorX, Thinking Machines, Together AI, routing.run",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Deep Infra: $0.1/$0.15 per 1M; Together AI: $0.17/$0.25 per 1M; Pioneer: $0.3/$0.3 per 1M; OVHcloud AI Endpoints: $0.12/$0.18 per 1M; Hugging Face: $0.17/$0.25 per 1M; Merge Gateway: $0.09/$0.13 per 1M; Regolo AI: $0.15/$0.6 per 1M; EmpirioLabs AI: $0.09/$0.13 per 1M; Kilo Gateway: $0.08/$0.13 per 1M; OpenRouter: $0.08/$0.13 per 1M; TensorX: $0.15/$0.2 per 1M; Cortecs: $0.111/$0.167 per 1M; DevPass (LLM Gateway): $0.1/$0.15 per 1M; QVAC: $0/$0 per 1M; Mixlayer: $0.1/$0.4 per 1M; NanoGPT: $0.05/$0.15 per 1M; routing.run: $0.16/$0.48 per 1M; Thinking Machines: $0.3/$0.807 per 1M"
-  },
-  {
-    "event_id": "927a3413ba3baae0",
-    "type": "new_model",
-    "model_id": "qwen/qwen3-32b",
-    "provider": "Abacus, Alibaba, Alibaba (China), Amazon Bedrock, Cortecs, Deep Infra, DevPass (LLM Gateway), DigitalOcean, Helicone, Hugging Face, Jiekou.AI, Kilo Gateway, Merge Gateway, NanoGPT, OpenRouter, Pioneer, Qiniu, Vercel AI Gateway, iFlow",
-    "detected_at": "2026-10-21T11:52:14.084489+00:00",
-    "details": "Deep Infra: $0.08/$0.28 per 1M; Pioneer: $0.9/$0.9 per 1M; Vercel AI Gateway: $0.15/$0.6 per 1M; Helicone: $0.29/$0.59 per 1M; Hugging Face: $0.29/$0.59 per 1M; Merge Gateway: $0.15/$0.6 per 1M; Amazon Bedrock: $0.15/$0.6 per 1M; Kilo Gateway: $0.08/$0.28 per 1M; OpenRouter: $0.08/$0.28 per 1M; DigitalOcean: $0.25/$0.55 per 1M; Cortecs: $0.179/$0.697 per 1M; iFlow: $0/$0 per 1M; Alibaba (China): $0.287/$1.147 per 1M; DevPass (LLM Gateway): $0.36/$0.87 per 1M; Abacus: $0.09/$0.29 per 1M; Alibaba: $0.7/$2.8 per 1M; Jiekou.AI: $0.1/$0.45 per 1M; NanoGPT: $0.1/$0.3 per 1M"
   }
 ]
