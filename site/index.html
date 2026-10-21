@@ -69,6 +69,21 @@
             <button class="filter" data-filter="free" role="tab" aria-selected="false">Free Tier</button>
             <button class="filter" data-filter="openrouter" role="tab" aria-selected="false">OpenRouter</button>
           </div>
+
+          <!-- Dropdown Provider con Checkbox -->
+          <div class="provider-dropdown" id="providerDropdownContainer">
+            <button type="button" class="prov-dropdown-btn" id="providerDropdownBtn" aria-haspopup="true" aria-expanded="false">
+              <span id="providerDropdownLabel">Providers (Tutti)</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="prov-dropdown-menu" id="providerDropdownMenu">
+              <div class="prov-actions">
+                <button type="button" id="provSelectAll">Tutti</button>
+                <button type="button" id="provDeselectAll">Nessuno</button>
+              </div>
+              <div class="prov-checkbox-list" id="providerCheckboxList"></div>
+            </div>
+          </div>
         </div>
 
         <div class="search-wrap">

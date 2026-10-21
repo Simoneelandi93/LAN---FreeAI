@@ -3,6 +3,8 @@ let history = [];
 let statsById = {};
 let activeView = "models";
 let activeFilter = "all";
+let selectedProviders = new Set();
+let allAvailableProviders = [];
 let activeChangesRange = "all";
 let visibleCount = 100;
 let sortKey = "name";
@@ -15,6 +17,59 @@ const FILTERS = {
 };
 
 const MILLIS_DAY = 86400000;
+const NINEROUTER_API_URL = "http://localhost:20128/v1/models";
+let nineRouterModels = [];
+let nineRouterNormMap = new Map();
+
+function normalizeSlug(value) {
+  return String(value ?? "").toLowerCase().replace(/^openrouter\//, "").replace(/[^a-z0-9]/g, "");
+}
+
+async function fetchNineRouterModels() {
+  try {
+    const response = await fetch(NINEROUTER_API_URL, { signal: AbortSignal.timeout(2000) });
+    if (!response.ok) return;
+    const body = await response.json();
+    const list = Array.isArray(body?.data) ? body.data : Array.isArray(body) ? body : [];
+    nineRouterModels = list.map(model => model.id || model.name || "").filter(Boolean);
+    nineRouterNormMap.clear();
+    for (const id of nineRouterModels) {
+      nineRouterNormMap.set(normalizeSlug(id), id);
+      const slash = id.indexOf("/");
+      if (slash >= 0) nineRouterNormMap.set(normalizeSlug(id.slice(slash + 1)), id);
+    }
+  } catch {
+    nineRouterModels = [];
+    nineRouterNormMap.clear();
+  }
+}
+
+function resolveNineRouterId(model) {
+  const candidates = [model.model_id, model.id, model.name,
+    model.provider_id && model.model_id ? `${model.provider_id}/${model.model_id}` : null
+  ].filter(Boolean);
+  for (const candidate of candidates) {
+    if (nineRouterModels.includes(candidate)) return { id: candidate, matched: true };
+  }
+  for (const candidate of candidates) {
+    const match = nineRouterNormMap.get(normalizeSlug(candidate));
+    if (match) return { id: match, matched: true };
+  }
+  return { id: model.model_id || model.name || model.id || "unnamed-model", matched: false };
+}
+
+async function copyText(text) {
+  if (navigator.clipboard?.writeText) return navigator.clipboard.writeText(text);
+  const input = document.createElement("textarea");
+  input.value = text;
+  input.style.position = "fixed";
+  input.style.opacity = "0";
+  document.body.append(input);
+  input.select();
+  const copied = document.execCommand("copy");
+  input.remove();
+  if (!copied) throw new Error("Clipboard copy failed");
+}
 
 async function fetchJson(name) {
   for (const path of [`data/${name}`, `../data/${name}`]) {
@@ -111,12 +166,71 @@ function cmpModels(a, b) {
   return sortDir === "asc" ? r : -r;
 }
 
+function populateProviderDropdown(provSet) {
+  allAvailableProviders = [...provSet].sort();
+  selectedProviders = new Set(allAvailableProviders);
+  const container = document.getElementById("providerCheckboxList");
+  container.innerHTML = allAvailableProviders.map(pid => `
+    <label class="prov-item">
+      <input type="checkbox" value="${esc(pid)}" checked>
+      <span>${esc(pid)}</span>
+    </label>
+  `).join("");
+  container.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) selectedProviders.add(checkbox.value);
+      else selectedProviders.delete(checkbox.value);
+      updateProviderDropdownLabel();
+      visibleCount = 100;
+      render();
+    });
+  });
+  document.getElementById("provSelectAll").onclick = () => {
+    selectedProviders = new Set(allAvailableProviders);
+    container.querySelectorAll("input[type='checkbox']").forEach(checkbox => checkbox.checked = true);
+    updateProviderDropdownLabel();
+    visibleCount = 100;
+    render();
+  };
+  document.getElementById("provDeselectAll").onclick = () => {
+    selectedProviders.clear();
+    container.querySelectorAll("input[type='checkbox']").forEach(checkbox => checkbox.checked = false);
+    updateProviderDropdownLabel();
+    visibleCount = 100;
+    render();
+  };
+  updateProviderDropdownLabel();
+}
+
+function updateProviderDropdownLabel() {
+  const total = allAvailableProviders.length;
+  const selected = selectedProviders.size;
+  const label = selected === total ? "Providers (Tutti)" : selected === 0
+    ? "Providers (Nessuno)" : `Providers (${selected}/${total})`;
+  document.getElementById("providerDropdownLabel").textContent = label;
+}
+
+const providerDropdownButton = document.getElementById("providerDropdownBtn");
+const providerDropdownMenu = document.getElementById("providerDropdownMenu");
+providerDropdownButton.addEventListener("click", event => {
+  event.stopPropagation();
+  const open = providerDropdownMenu.classList.toggle("show");
+  providerDropdownButton.setAttribute("aria-expanded", String(open));
+});
+document.addEventListener("click", event => {
+  if (!document.getElementById("providerDropdownContainer").contains(event.target)) {
+    providerDropdownMenu.classList.remove("show");
+    providerDropdownButton.setAttribute("aria-expanded", "false");
+  }
+});
+
 async function loadData() {
   try {
     const [catalog, histData, statsData] = await Promise.all([
       fetchJson("models.json"),
       fetchJson("history.json").catch(() => []),
       fetchJson("llm_stats.json").catch(() => ({})),
+      fetchNineRouterModels(),
     ]);
     models = Array.isArray(catalog) ? catalog : [];
     history = Array.isArray(histData) ? histData : [];
@@ -126,6 +240,7 @@ async function loadData() {
     document.body.classList.toggle("no-stats", !hasStats);
 
     const provSet = new Set(models.map(m => m.provider_id).filter(id => !isInvalidText(id)));
+    populateProviderDropdown(provSet);
     document.getElementById("totalModels").textContent = models.length.toLocaleString();
     document.getElementById("totalProviders").textContent = provSet.size.toLocaleString();
     document.getElementById("totalFree").textContent = models.filter(m => m.is_free).length.toLocaleString();
@@ -171,12 +286,19 @@ function renderModels(filtered) {
     const url = m.provider_url || m.source_url || "#";
     const displayName = getModelName(m);
     const displayProvider = getProviderName(m, s);
+    const routerMatch = resolveNineRouterId(m);
+    const matchClass = routerMatch.matched ? "matched" : "";
+    const tooltip = routerMatch.matched ? `Match found in 9router (${routerMatch.id})` : "Copy to search in 9router";
     return `<tr>
       <td class="text-center font-mono">${rank}</td>
       <td>
         <div class="model-cell">
           <div class="model-line">
             <a class="model-title" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(displayName)}</a>
+            <button class="copy-9router-btn ${matchClass}" data-copy="${esc(routerMatch.id)}" title="${esc(tooltip)}" type="button">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>9router</span>
+            </button>
             ${capPills(m)}
           </div>
           <span class="model-provider-sub">${esc(displayProvider)}</span>
@@ -192,6 +314,25 @@ function renderModels(filtered) {
       <td class="text-center">${licenseTag}</td>
     </tr>`;
   }).join("");
+
+  body.querySelectorAll(".copy-9router-btn").forEach(button => {
+    button.addEventListener("click", async event => {
+      event.preventDefault();
+      try {
+        await copyText(button.dataset.copy);
+        const label = button.querySelector("span");
+        const originalText = label.textContent;
+        label.textContent = "Copiato!";
+        button.classList.add("copied");
+        setTimeout(() => {
+          label.textContent = originalText;
+          button.classList.remove("copied");
+        }, 1500);
+      } catch (error) {
+        console.error("Clipboard copy failed:", error);
+      }
+    });
+  });
 
   if (!list.length) {
     body.innerHTML = `<tr><td colspan="10"><div class="empty"><h3>No models found</h3><p>Try refining your search query or reset filters.</p></div></td></tr>`;
@@ -298,12 +439,14 @@ function render() {
   const isChanges = activeView === "changes";
 
   const modelFilters = document.getElementById("modelFilters");
+  const providerDropdown = document.getElementById("providerDropdownContainer");
   const tableView = document.getElementById("tableView");
   const capLegend = document.getElementById("capLegend");
   const providerGrid = document.getElementById("providerGrid");
   const changesView = document.getElementById("changesView");
 
   if (modelFilters) modelFilters.style.display = isModels ? "flex" : "none";
+  if (providerDropdown) providerDropdown.style.display = isModels ? "inline-block" : "none";
   if (tableView) tableView.style.display = isModels ? "block" : "none";
   if (capLegend) capLegend.style.display = isModels ? "flex" : "none";
   if (providerGrid) providerGrid.style.display = isProviders ? "block" : "none";
@@ -315,6 +458,7 @@ function render() {
   const fn = FILTERS[activeFilter] || FILTERS.all;
   const filtered = models.filter(m => {
     if (!fn(m)) return false;
+    if (selectedProviders && !selectedProviders.has(m.provider_id)) return false;
     if (!query) return true;
     const name = getModelName(m).toLowerCase();
     const prov = getProviderName(m).toLowerCase();
