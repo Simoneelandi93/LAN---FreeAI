@@ -100,13 +100,16 @@
         <table class="model-table" id="modelTable">
           <thead>
             <tr>
+              <th class="col-rank sortable text-center" data-sort="rank">Rank <span class="sort-ind"></span></th>
               <th class="col-name sortable" data-sort="name">Model <span class="sort-ind"></span></th>
-              <th class="col-provider sortable" data-sort="provider">Provider <span class="sort-ind"></span></th>
-              <th class="col-cap">Capabilities</th>
-              <th class="col-score sortable text-right" data-sort="score">Benchmark <span class="sort-ind"></span></th>
-              <th class="col-price sortable text-right" data-sort="input">Input / 1M <span class="sort-ind"></span></th>
-              <th class="col-price sortable text-right" data-sort="output">Output / 1M <span class="sort-ind"></span></th>
+              <th class="col-score sortable text-right" data-sort="score">LLM Stats <span class="sort-ind"></span></th>
+              <th class="col-benchmark sortable text-right" data-sort="reasoning">Reasoning <span class="sort-ind"></span></th>
+              <th class="col-benchmark sortable text-right" data-sort="coding">Coding <span class="sort-ind"></span></th>
+              <th class="col-benchmark sortable text-right" data-sort="agent">Agent <span class="sort-ind"></span></th>
               <th class="col-context sortable text-right" data-sort="context">Context <span class="sort-ind"></span></th>
+              <th class="col-speed sortable text-right" data-sort="speed">Speed <span class="sort-ind"></span></th>
+              <th class="col-price sortable text-right" data-sort="input">Pricing $/M <span class="sort-ind"></span></th>
+              <th class="col-license text-center">License</th>
             </tr>
           </thead>
           <tbody id="modelBody"></tbody>

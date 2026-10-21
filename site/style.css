@@ -712,3 +712,17 @@ body.no-stats .col-score,
 body.no-stats .score-cell {
   display: none;
 }
+
+/* Column widths */
+.col-rank { width: 64px; }
+.col-benchmark { width: 84px; }
+.col-speed { width: 78px; }
+.col-license { width: 96px; }
+
+/* Hide benchmark cluster when no stats data */
+body.no-stats .col-score,
+body.no-stats .col-benchmark,
+body.no-stats .score-cell,
+body.no-stats .col-bench {
+  display: none;
+}

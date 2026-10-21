@@ -41,15 +41,16 @@ function priceFmt(v) {
 }
 
 function sortValue(m, key) {
+  const s = m.llm_stats_id ? statsById[m.llm_stats_id] : null;
   switch (key) {
+    case "rank": return s && s.rank ? Number(s.rank) : 9999;
     case "name": return (m.name || "").toLowerCase();
-    case "provider": return (m.provider || "").toLowerCase();
-    case "score": {
-      const s = m.llm_stats_id ? statsById[m.llm_stats_id] : null;
-      return s && Number.isFinite(Number(s.score)) ? Number(s.score) : null;
-    }
+    case "score": return s && Number.isFinite(Number(s.score)) ? Number(s.score) : null;
+    case "reasoning": return s && Number.isFinite(Number(s.reasoning_score)) ? Number(s.reasoning_score) : null;
+    case "coding": return s && Number.isFinite(Number(s.coding_score)) ? Number(s.coding_score) : null;
+    case "agent": return s && Number.isFinite(Number(s.agent_score)) ? Number(s.agent_score) : null;
+    case "speed": return s && Number.isFinite(Number(s.speed)) ? Number(s.speed) : (Number(m.speed) || null);
     case "input": return price(m.input_price_per_m);
-    case "output": return price(m.output_price_per_m);
     case "context": return Number(m.context_window) || null;
     default: return null;
   }
@@ -58,8 +59,8 @@ function sortValue(m, key) {
 function cmpModels(a, b) {
   const va = sortValue(a, sortKey);
   const vb = sortValue(b, sortKey);
-  const aNull = va === null;
-  const bNull = vb === null;
+  const aNull = va === null || va === 9999;
+  const bNull = vb === null || vb === 9999;
   if (aNull && bNull) return 0;
   if (aNull) return 1;
   if (bNull) return -1;
@@ -98,7 +99,7 @@ async function loadData() {
     document.getElementById("lastUpdated").textContent = latest ? `Synced ${new Date(latest).toLocaleDateString()}` : "Catalog active";
   } catch (e) {
     document.getElementById("lastUpdated").textContent = "Offline";
-    document.getElementById("modelBody").innerHTML = `<tr><td colspan="7"><div class="empty"><h3>Catalog unreachable</h3><p>Could not load model datasets.</p></div></td></tr>`;
+    document.getElementById("modelBody").innerHTML = `<tr><td colspan="10"><div class="empty"><h3>Catalog unreachable</h3><p>Could not load model datasets.</p></div></td></tr>`;
     return;
   }
   render();
@@ -137,39 +138,59 @@ function scoreCell(m) {
   return `<a class="score-badge" href="${esc(s.url || 'https://llm-stats.com/')}" target="_blank" rel="noopener noreferrer" title="${esc(tip)}">${bits.join(" · ")}</a>`;
 }
 
+function fmtScore(val) {
+  if (val === null || val === undefined || isNaN(val)) return '<span class="cell-na">—</span>';
+  return `<span class="score-val">${Number(val).toFixed(1)}</span>`;
+}
+
 function renderModels(filtered) {
   const sorted = [...filtered].sort(cmpModels);
   const list = sorted.slice(0, visibleCount);
   const body = document.getElementById("modelBody");
 
   body.innerHTML = list.map(m => {
+    const s = m.llm_stats_id ? statsById[m.llm_stats_id] : null;
+
+    const rank = s && s.rank ? `<span class="rank-badge">#${s.rank}</span>` : '<span class="cell-na">—</span>';
+    const overallScore = s && s.score !== null && s.score !== undefined && Number.isFinite(Number(s.score))
+      ? `<span class="score-primary">${Number(s.score).toFixed(1)}</span>` : '<span class="cell-na">—</span>';
+    const reasoning = fmtScore(s ? s.reasoning_score : null);
+    const coding = fmtScore(s ? s.coding_score : null);
+    const agent = fmtScore(s ? s.agent_score : null);
+
+    const rawSpeed = s ? s.speed : m.speed;
+    const speed = rawSpeed ? `${Math.round(rawSpeed)} t/s` : '<span class="cell-na">—</span>';
+
     const inp = price(m.input_price_per_m);
-    const out = price(m.output_price_per_m);
     const inpFmt = priceFmt(inp);
-    const outFmt = priceFmt(out);
     const ctx = ctxFmt(m.context_window);
-    const inpCls = m.is_free ? "free" : (inp === null ? "na" : "");
-    const outCls = m.is_free ? "free" : (out === null ? "na" : "");
-    const ctxCls = ctx === "—" ? "na" : "";
-    const orBadge = m.provider_id === "openrouter" ? `<span class="badge-or">OpenRouter</span>` : "";
+
+    const isProprietary = !m.open_weights;
+    const licenseTag = isProprietary
+      ? '<span class="license-tag proprietary">Proprietary</span>'
+      : '<span class="license-tag open">Open</span>';
+
     const url = m.provider_url || m.source_url || "#";
 
     return `<tr>
+      <td class="text-center font-mono">${rank}</td>
       <td>
         <a class="model-title" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(m.name)}</a>
-        <span class="model-id">${esc(m.model_id)}</span>
+        <span class="model-provider-sub">${esc(m.provider || (s ? s.organization : "") || "—")}</span>
       </td>
-      <td><span class="provider-cell">${esc(m.provider)}</span></td>
-      <td>${capPills(m)}</td>
-      <td class="score-cell text-right">${scoreCell(m)}</td>
-      <td class="price-cell text-right ${inpCls}">${inpFmt}</td>
-      <td class="price-cell text-right ${outCls}">${outFmt}${orBadge}</td>
-      <td class="context-cell text-right ${ctxCls}">${ctx}</td>
+      <td class="text-right col-score">${overallScore}</td>
+      <td class="text-right font-mono col-bench">${reasoning}</td>
+      <td class="text-right font-mono col-bench">${coding}</td>
+      <td class="text-right font-mono col-bench">${agent}</td>
+      <td class="text-right font-mono">${ctx}</td>
+      <td class="text-right font-mono speed-cell">${speed}</td>
+      <td class="text-right font-mono ${inp === 0 ? 'text-emerald' : ''}">${inpFmt}</td>
+      <td class="text-center">${licenseTag}</td>
     </tr>`;
   }).join("");
 
   if (!list.length) {
-    body.innerHTML = `<tr><td colspan="7"><div class="empty"><h3>No models found</h3><p>Try refining your search query or reset filters.</p></div></td></tr>`;
+    body.innerHTML = `<tr><td colspan="10"><div class="empty"><h3>No models found</h3><p>Try refining your search query or reset filters.</p></div></td></tr>`;
   }
   document.getElementById("loadMore").hidden = filtered.length <= visibleCount;
 }
