@@ -1,5 +1,21 @@
 [
   {
+    "event_id": "516512be93f50e4f",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-21T23:04:41.305063+00:00",
+    "details": "Input: $0.00441 -> $0.0413; output: $0.134175 -> $0.0773"
+  },
+  {
+    "event_id": "28b94e22a42a6c12",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Fireworks AI, OpenRouter",
+    "detected_at": "2026-10-21T23:04:41.305063+00:00",
+    "details": "Input: $0.049 -> $0.07; output: $0.375 -> $0.5"
+  },
+  {
     "event_id": "8801a241fe0601b0",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-flash-latest",
@@ -1582,21 +1598,5 @@
     "provider": "OpenRouter, Privatemode AI",
     "detected_at": "2026-10-21T14:37:46.554321+00:00",
     "details": "Input: $0.051691 -> $0.041191; output: $0.12 -> $0.12"
-  },
-  {
-    "event_id": "b649d0dfada97958",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-pro-latest",
-    "provider": "OpenRouter, The Grid AI",
-    "detected_at": "2026-10-21T13:48:05.133717+00:00",
-    "details": "Input: $0.225 -> $0.20196; output: $8 -> $0.60588"
-  },
-  {
-    "event_id": "a586e64c76f068c1",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-21T13:48:05.133717+00:00",
-    "details": "Input: $0.051691 -> $0.0413; output: $0.12 -> $0.12"
   }
 ]
