@@ -18,8 +18,12 @@ const FILTERS = {
 
 const MILLIS_DAY = 86400000;
 const NINEROUTER_API_URL = "http://localhost:20128/v1/models";
+const OMNIROUTER_API_URL = "http://localhost:10129/v1/models";
 let nineRouterModels = [];
 let nineRouterNormMap = new Map();
+let omniRouterModels = [];
+let omniRouterNormMap = new Map();
+let routerStatus = { "9router": { ok: false, count: 0 }, "OmniRouter": { ok: false, count: 0 } };
 
 function normalizeSlug(value) {
   return String(value ?? "").toLowerCase().replace(/^openrouter\//, "").replace(/[^a-z0-9]/g, "");
@@ -38,9 +42,33 @@ async function fetchNineRouterModels() {
       const slash = nr.id.indexOf("/");
       if (slash >= 0) nineRouterNormMap.set(normalizeSlug(nr.id.slice(slash + 1)), nr.id);
     }
+    routerStatus["9router"] = { ok: true, count: nineRouterModels.length };
   } catch {
     nineRouterModels = [];
     nineRouterNormMap.clear();
+    routerStatus["9router"] = { ok: false, count: 0 };
+  }
+  await fetchOmniRouterModels();
+}
+
+async function fetchOmniRouterModels() {
+  try {
+    const response = await fetch(OMNIROUTER_API_URL, { signal: AbortSignal.timeout(2000) });
+    if (!response.ok) return;
+    const body = await response.json();
+    const list = Array.isArray(body?.data) ? body.data : Array.isArray(body) ? body : [];
+    omniRouterModels = list.map(m => ({ id: m.id || "", owned_by: m.owned_by || "" })).filter(m => m.id);
+    omniRouterNormMap.clear();
+    for (const nr of omniRouterModels) {
+      omniRouterNormMap.set(normalizeSlug(nr.id), nr.id);
+      const slash = nr.id.indexOf("/");
+      if (slash >= 0) omniRouterNormMap.set(normalizeSlug(nr.id.slice(slash + 1)), nr.id);
+    }
+    routerStatus["OmniRouter"] = { ok: true, count: omniRouterModels.length };
+  } catch {
+    omniRouterModels = [];
+    omniRouterNormMap.clear();
+    routerStatus["OmniRouter"] = { ok: false, count: 0 };
   }
 }
 
@@ -48,12 +76,12 @@ function clean(str) {
   return String(str || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
-function resolveNineRouterId(model) {
+function resolveRouterId(model, routerModels, routerLabel) {
   const catProv = clean(model.provider_id);
   const catModel = clean(model.model_id || model.name);
 
   // 1. MATCH PERFETTO: stesso provider AND stesso modello
-  for (const nr of nineRouterModels) {
+  for (const nr of routerModels) {
     const nrOwner = clean(nr.owned_by);
     const nrCleanId = clean(nr.id);
     const providerMatches = (nrOwner && (nrOwner === catProv || catProv.includes(nrOwner) || nrOwner.includes(catProv)))
@@ -61,23 +89,23 @@ function resolveNineRouterId(model) {
     if (providerMatches) {
       const modelPart = nr.id.includes("/") ? nr.id.split("/").slice(1).join("/") : nr.id;
       if (clean(modelPart) === catModel || nrCleanId.includes(catModel) || catModel.includes(clean(modelPart))) {
-        return { id: nr.id, status: "verified", tooltip: `Verified in 9router (${model.provider_id}): ${nr.id}` };
+        return { id: nr.id, status: "verified", tooltip: `Verified in ${routerLabel} (${model.provider_id}): ${nr.id}` };
       }
     }
   }
 
-  // 2. Modello esiste in 9router ma sotto ALTRO provider
-  for (const nr of nineRouterModels) {
+  // 2. Modello esiste ma sotto ALTRO provider
+  for (const nr of routerModels) {
     const modelPart = nr.id.includes("/") ? nr.id.split("/").slice(1).join("/") : nr.id;
     if (clean(modelPart) === catModel && clean(modelPart).length > 3) {
       const formatted = model.model_id && model.model_id.startsWith(`${model.provider_id}/`) ? model.model_id : `${model.provider_id}/${model.model_id || model.name || "model"}`;
-      return { id: formatted, status: "wrong_provider", tooltip: `In 9router via '${nr.owned_by || "altro"}', not '${model.provider_id}'` };
+      return { id: formatted, status: "wrong_provider", tooltip: `In ${routerLabel} via '${nr.owned_by || "altro"}', not '${model.provider_id}'` };
     }
   }
 
-  // 3. Non trovato in 9router
+  // 3. Non trovato
   const formatted = model.model_id && model.model_id.startsWith(`${model.provider_id}/`) ? model.model_id : `${model.provider_id}/${model.model_id || model.name || "model"}`;
-  return { id: formatted, status: "not_configured", tooltip: `Not in 9router. Copy: ${formatted}` };
+  return { id: formatted, status: "not_configured", tooltip: `Not in ${routerLabel}. Copy: ${formatted}` };
 }
 
 async function copyText(text) {
@@ -246,6 +274,18 @@ document.addEventListener("click", event => {
   }
 });
 
+function updateRouterStatusUI() {
+  const setStatus = (indicatorId, labelId, id) => {
+    const s = routerStatus[id] || { ok: false, count: 0 };
+    const dot = document.getElementById(indicatorId);
+    const label = document.getElementById(labelId);
+    if (dot) { dot.style.background = s.ok ? "#10b981" : "#64748b"; dot.style.boxShadow = s.ok ? "0 0 8px #10b981" : "none"; }
+    if (label) label.textContent = s.ok ? `${s.count} mod` : "offline";
+  };
+  setStatus("status9router", "status9routerLabel", "9router");
+  setStatus("statusOmniRouter", "statusOmniRouterLabel", "OmniRouter");
+}
+
 async function loadData() {
   try {
     const [catalog, histData, statsData] = await Promise.all([
@@ -260,6 +300,8 @@ async function loadData() {
 
     const hasStats = models.some(m => m.llm_stats_id && statsById[m.llm_stats_id]);
     document.body.classList.toggle("no-stats", !hasStats);
+
+    updateRouterStatusUI();
 
     const provSet = new Set(models.map(m => m.provider_id).filter(id => !isInvalidText(id)));
     populateProviderDropdown(provSet);
@@ -308,18 +350,23 @@ function renderModels(filtered) {
     const url = m.provider_url || m.source_url || "#";
     const displayName = getModelName(m);
     const displayProvider = getProviderName(m, s);
-    const routerMatch = resolveNineRouterId(m);
-    const matchClass = routerMatch.status === "verified" ? "matched" : routerMatch.status === "wrong_provider" ? "warn" : "";
-    const tooltip = routerMatch.tooltip;
+    const nrMatch = resolveRouterId(m, nineRouterModels, "9router");
+    const omniMatch = resolveRouterId(m, omniRouterModels, "OmniRouter");
+    const nrClass = nrMatch.status === "verified" ? "matched" : nrMatch.status === "wrong_provider" ? "warn" : "";
+    const omniClass = omniMatch.status === "verified" ? "matched" : omniMatch.status === "wrong_provider" ? "warn" : "";
     return `<tr>
       <td class="text-center font-mono">${rank}</td>
       <td>
         <div class="model-cell">
           <div class="model-line">
             <a class="model-title" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(displayName)}</a>
-            <button class="copy-9router-btn ${matchClass}" data-copy="${esc(routerMatch.id)}" title="${esc(tooltip)}" type="button">
+            <button class="copy-router-btn ${nrClass}" data-copy="${esc(nrMatch.id)}" title="${esc(nrMatch.tooltip)}" type="button">
               <svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="1" width="10" height="11" rx="1" ry="1"></rect><rect x="5" y="3" width="6" height="2" rx="0.5" ry="0.5"></rect><rect x="5" y="7" width="6" height="2" rx="0.5" ry="0.5"></rect></svg>
-              <span>9router</span>
+              <span>9r</span>
+            </button>
+            <button class="copy-router-btn ${omniClass}" data-copy="${esc(omniMatch.id)}" title="${esc(omniMatch.tooltip)}" type="button">
+              <svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="1" width="10" height="11" rx="1" ry="1"></rect><rect x="5" y="3" width="6" height="2" rx="0.5" ry="0.5"></rect><rect x="5" y="7" width="6" height="2" rx="0.5" ry="0.5"></rect></svg>
+              <span>Omni</span>
             </button>
             ${capPills(m)}
           </div>
@@ -337,7 +384,7 @@ function renderModels(filtered) {
     </tr>`;
   }).join("");
 
-  body.querySelectorAll(".copy-9router-btn").forEach(button => {
+  body.querySelectorAll(".copy-router-btn").forEach(button => {
     button.addEventListener("click", async event => {
       event.preventDefault();
       try {
