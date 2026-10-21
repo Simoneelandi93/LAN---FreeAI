@@ -1,5 +1,21 @@
 [
   {
+    "event_id": "8801a241fe0601b0",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T22:36:41.139777+00:00",
+    "details": "Input: $0.049 -> $0.07; output: $0.375 -> $0.5"
+  },
+  {
+    "event_id": "53fe07bf6f366161",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-21T22:36:41.139777+00:00",
+    "details": "Input: $0.00441 -> $0.0413; output: $0.134175 -> $0.0773"
+  },
+  {
     "event_id": "644e7b88706944c0",
     "type": "new_model",
     "model_id": "reka-ai/glm-5.3-flash",
@@ -1582,21 +1598,5 @@
     "provider": "Kilo Gateway",
     "detected_at": "2026-10-21T13:48:05.133717+00:00",
     "details": "Input: $0.051691 -> $0.0413; output: $0.12 -> $0.12"
-  },
-  {
-    "event_id": "4c2f6b936bd42592",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-pro-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-21T13:48:05.133717+00:00",
-    "details": "Input: $0.225 -> $0.20196; output: $8 -> $0.60588"
-  },
-  {
-    "event_id": "821b98d6d6ebf91b",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-21T12:49:11.602327+00:00",
-    "details": "Input: $0.238 -> $0.238; output: $24 -> $16"
   }
 ]
