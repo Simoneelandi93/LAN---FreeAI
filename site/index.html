@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0e1510">
   <meta name="description" content="A live index of AI inference providers, models, pricing, and capabilities.">
-  <title>Free AI Radar — Provider and Model Catalog</title>
+  <title>Free AI Radar — Model and Provider Catalog</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
   <div class="shell">
     <header class="topbar">
-      <a class="brand" href="#catalog" aria-label="Free AI Radar home">
+      <a class="brand" href="#" aria-label="Free AI Radar home">
         <span class="brand-mark" aria-hidden="true">R</span>
         <span class="brand-text">Free AI Radar</span>
       </a>
@@ -24,47 +24,72 @@
     <main>
       <section class="intro">
         <p class="intro-note">Live provider index</p>
-        <h1>Find the model.<br><span>Compare where it runs.</span></h1>
-        <p class="intro-copy">One searchable catalog of AI inference providers, the models they serve, and what each listing costs. Prices are per million tokens.</p>
+        <h1>AI models &amp; the providers that serve them</h1>
+        <p class="intro-copy">Every model listing from <a href="https://models.dev/" target="_blank" rel="noopener noreferrer">models.dev</a>, in one place with pricing, capabilities, and provider links. OpenRouter price changes are tracked and sent to Telegram.</p>
       </section>
 
       <section class="stats" aria-label="Catalog summary">
         <div class="stat">
           <strong class="stat-value" id="totalModels">—</strong>
-          <span class="stat-label">Models listed</span>
+          <span class="stat-label">Model listings</span>
         </div>
         <div class="stat">
           <strong class="stat-value" id="totalProviders">—</strong>
-          <span class="stat-label">Providers indexed</span>
+          <span class="stat-label">Providers</span>
         </div>
         <div class="stat">
           <strong class="stat-value" id="totalFree">—</strong>
-          <span class="stat-label">Zero-priced listings</span>
+          <span class="stat-label">Zero-priced</span>
+        </div>
+        <div class="stat">
+          <strong class="stat-value" id="totalReasoning">—</strong>
+          <span class="stat-label">Reasoning models</span>
         </div>
       </section>
 
-      <section class="catalog" id="catalog" aria-label="Model catalog">
+      <nav class="tabs-primary" role="tablist" aria-label="View">
+        <button class="tab-pri active" data-view="models" role="tab" aria-selected="true">Models</button>
+        <button class="tab-pri" data-view="providers" role="tab" aria-selected="false">Providers</button>
+      </nav>
+
+      <section class="catalog" id="catalog" aria-label="Catalog">
         <div class="catalog-head">
-          <div class="catalog-title">
-            <h2>Catalog</h2>
-            <p>OpenRouter listings are watched for price changes and reported on Telegram.</p>
-          </div>
-          <label class="search-wrap">
-            <span class="sr-only">Search models or providers</span>
+          <div class="search-wrap">
+            <span class="sr-only">Search</span>
             <input type="search" id="searchInput" placeholder="Search models or providers" autocomplete="off">
-          </label>
+          </div>
         </div>
 
-        <div class="filters" role="tablist" aria-label="Catalog filters">
+        <div class="filters" id="modelFilters" role="tablist" aria-label="Model filters">
           <button class="filter active" data-filter="all" role="tab" aria-selected="true">All models</button>
           <button class="filter" data-filter="free" role="tab" aria-selected="false">Zero-priced</button>
+          <button class="filter" data-filter="openrouter" role="tab" aria-selected="false">OpenRouter</button>
           <button class="filter" data-filter="reasoning" role="tab" aria-selected="false">Reasoning</button>
           <button class="filter" data-filter="tool" role="tab" aria-selected="false">Tool use</button>
-          <button class="filter" data-filter="openrouter" role="tab" aria-selected="false">OpenRouter</button>
         </div>
 
         <div class="result-count" id="resultCount" role="status"></div>
-        <div class="model-list" id="modelList" aria-live="polite"></div>
+
+        <div class="table-wrap" id="tableView">
+          <table class="model-table" id="modelTable">
+            <thead>
+              <tr>
+                <th class="col-name">Model</th>
+                <th class="col-provider">Provider</th>
+                <th class="col-cap">Capabilities</th>
+                <th class="col-price">Input / 1M</th>
+                <th class="col-price">Output / 1M</th>
+                <th class="col-context">Context</th>
+              </tr>
+            </thead>
+            <tbody id="modelBody"></tbody>
+          </table>
+        </div>
+
+        <div class="provider-grid" id="providerGrid">
+          <div class="provider-list" id="providerList"></div>
+        </div>
+
         <button class="load-more" id="loadMore" hidden>Show more models</button>
       </section>
     </main>

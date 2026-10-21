@@ -1,23 +1,42 @@
 let models = [];
+let activeView = "models";
 let activeFilter = "all";
-let visibleCount = 80;
+let visibleCount = 100;
 
 const FILTERS = {
   all: () => true,
-  free: model => model.is_free,
-  reasoning: model => model.reasoning,
-  tool: model => model.tool_call,
-  openrouter: model => model.provider_id === "openrouter",
+  free: m => m.is_free,
+  openrouter: m => m.provider_id === "openrouter",
+  reasoning: m => m.reasoning,
+  tool: m => m.tool_call,
 };
 
 async function fetchJson(name) {
   for (const path of [`data/${name}`, `../data/${name}`]) {
-    try {
-      const response = await fetch(path);
-      if (response.ok) return await response.json();
-    } catch {}
+    try { const r = await fetch(path); if (r.ok) return await r.json(); } catch {}
   }
-  throw new Error(`Could not load ${name}`);
+  throw new Error(`Cannot load ${name}`);
+}
+
+function esc(v) {
+  return String(v ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" })[c]);
+}
+
+function price(v) {
+  if (v === null || v === undefined || v === "") return null;
+  const n = Number(v);
+  return Number.isFinite(n) ? n : null;
+}
+
+function priceFmt(v) {
+  if (v === null) return "—";
+  return v === 0 ? "$0" : `$${v.toLocaleString(undefined, { maximumFractionDigits: 4 })}`;
+}
+
+function ctxFmt(v) {
+  if (!v || !Number(v)) return "—";
+  const n = Number(v);
+  return n >= 1000 ? `${(n / 1000).toLocaleString(undefined, { maximumFractionDigits: 1 })}k` : n.toLocaleString();
 }
 
 async function loadData() {
@@ -27,166 +46,154 @@ async function loadData() {
       fetchJson("history.json").catch(() => []),
     ]);
     models = catalog;
-    const providers = new Set(models.map(model => model.provider_id).filter(Boolean));
+    const provSet = new Set(models.map(m => m.provider_id).filter(Boolean));
     document.getElementById("totalModels").textContent = models.length.toLocaleString();
-    document.getElementById("totalProviders").textContent = providers.size.toLocaleString();
-    document.getElementById("totalFree").textContent = models.filter(model => model.is_free).length.toLocaleString();
-
+    document.getElementById("totalProviders").textContent = provSet.size.toLocaleString();
+    document.getElementById("totalFree").textContent = models.filter(m => m.is_free).length.toLocaleString();
+    document.getElementById("totalReasoning").textContent = models.filter(m => m.reasoning).length.toLocaleString();
     const latest = history[0]?.detected_at;
-    document.getElementById("lastUpdated").textContent = latest
-      ? `Last sync ${new Date(latest).toLocaleDateString()}`
-      : "Catalog synced";
-    render();
-  } catch (error) {
-    console.error("Could not load the catalog", error);
+    document.getElementById("lastUpdated").textContent = latest ? `Synced ${new Date(latest).toLocaleDateString()}` : "Catalog synced";
+  } catch (e) {
     document.getElementById("lastUpdated").textContent = "Catalog unavailable";
-    document.getElementById("modelList").innerHTML = `
-      <div class="empty">
-        <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/>
-        </svg>
-        <h3>Catalog unavailable</h3>
-        <p>Data could not be loaded. Check that the sync workflow has run, then reload the page.</p>
-      </div>`;
-    document.getElementById("resultCount").textContent = "";
+    document.getElementById("modelBody").innerHTML = `<tr><td colspan="6"><div class="empty"><h3>Catalog unavailable</h3><p>Could not load model data. Run the sync workflow and reload.</p></div></td></tr>`;
+    return;
   }
+  render();
 }
 
-function escapeHtml(value) {
-  return String(value ?? "").replace(/[&<>"']/g, char => ({
-    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
-  })[char]);
+function capDots(m) {
+  let html = '<span class="cap-dots">';
+  html += `<span class="cap-dot ${m.reasoning ? 'on rag' : ''}"${m.reasoning ? ' title="Reasoning"' : ''}></span>`;
+  html += `<span class="cap-dot ${m.tool_call ? 'on tool' : ''}"${m.tool_call ? ' title="Tool use"' : ''}></span>`;
+  html += `<span class="cap-dot ${m.structured_output ? 'on str' : ''}"${m.structured_output ? ' title="Structured output"' : ''}></span>`;
+  html += `<span class="cap-dot ${m.open_weights ? 'on open' : ''}"${m.open_weights ? ' title="Open weights"' : ''}></span>`;
+  html += "</span>";
+  return html;
 }
 
-function formatPrice(value) {
-  if (value === null || value === undefined || value === "") return "Not listed";
-  const number = Number(value);
-  if (!Number.isFinite(number)) return "Not listed";
-  if (number === 0) return "$0";
-  return `$${number.toLocaleString(undefined, { maximumFractionDigits: 4 })}`;
+function capLegend() {
+  return `<div class="cap-dots" style="gap: 10px; margin-top: 4px;">
+    <span class="cap-dot on rag" style="width: 10px; height: 10px;"></span><span style="font-size: 10px; color: var(--muted);">Reasoning</span>
+    <span class="cap-dot on tool" style="width: 10px; height: 10px;"></span><span style="font-size: 10px; color: var(--muted);">Tool use</span>
+    <span class="cap-dot on str" style="width: 10px; height: 10px;"></span><span style="font-size: 10px; color: var(--muted);">Structured</span>
+    <span class="cap-dot on open" style="width: 10px; height: 10px;"></span><span style="font-size: 10px; color: var(--muted);">Open</span>
+  </div>`;
 }
 
-function formatContext(value) {
-  if (!value) return "Not listed";
-  if (value >= 1000) {
-    return `${(value / 1000).toLocaleString(undefined, { maximumFractionDigits: 1 })}k`;
+function renderModels(filtered) {
+  const list = filtered.slice(0, visibleCount);
+  const body = document.getElementById("modelBody");
+  body.innerHTML = list.map(m => {
+    const inp = price(m.input_price_per_m);
+    const out = price(m.output_price_per_m);
+    const inpFmt = priceFmt(inp);
+    const outFmt = priceFmt(out);
+    const ctx = ctxFmt(m.context_window);
+    const inpCls = m.is_free ? "free" : (inp === null ? "na" : "");
+    const outCls = m.is_free ? "free" : (out === null ? "na" : "");
+    const ctxCls = ctx === "—" ? "na" : "";
+    const orBadge = m.provider_id === "openrouter" ? `<span class="badge-or">· OpenRouter</span>` : "";
+    const url = m.provider_url || m.source_url || "#";
+    return `<tr>
+      <td><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(m.name)}</a><span class="model-id">${esc(m.model_id)}</span></td>
+      <td><span class="provider-cell">${esc(m.provider)}</span></td>
+      <td>${capDots(m)}</td>
+      <td class="price-cell ${inpCls}">${inpFmt}</td>
+      <td class="price-cell ${outCls}">${outFmt}${orBadge}</td>
+      <td class="context-cell ${ctxCls}">${ctx}</td>
+    </tr>`;
+  }).join("");
+  if (!list.length) body.innerHTML = `<tr><td colspan="6"><div class="empty"><h3>No matches</h3><p>Try a different search term or clear the active filter.</p></div></td></tr>`;
+  document.getElementById("loadMore").hidden = filtered.length <= visibleCount;
+}
+
+function renderProviders(filtered) {
+  const grid = document.getElementById("providerGrid");
+  const list = document.getElementById("providerList");
+  grid.classList.add("active");
+  const provMap = {};
+  for (const m of models) {
+    const pid = m.provider_id;
+    if (!pid) continue;
+    if (!provMap[pid]) provMap[pid] = { id: pid, name: m.provider, url: m.provider_url || m.source_url || "#", total: 0, free: 0, reasoning: 0, tool: 0 };
+    provMap[pid].total++;
+    if (m.is_free) provMap[pid].free++;
+    if (m.reasoning) provMap[pid].reasoning++;
+    if (m.tool_call) provMap[pid].tool++;
   }
-  return value.toLocaleString();
-}
-
-function buildTags(model) {
-  const tags = [];
-  if (model.reasoning) tags.push('<span class="tag tag-reasoning">Reasoning</span>');
-  if (model.tool_call) tags.push('<span class="tag tag-tool">Tool use</span>');
-  if (model.open_weights) tags.push('<span class="tag tag-open">Open weights</span>');
-
-  const modalities = [...(model.modalities_input || [])];
-  const outputs = [...(model.modalities_output || [])];
-  if (modalities.length || outputs.length) {
-    const unique = [...new Set([...modalities, ...outputs])];
-    tags.push(`<span class="tag tag-modalities">${escapeHtml(unique.join(" · "))}</span>`);
+  let arr = Object.values(provMap);
+  if (filtered) {
+    const q = filtered.toLowerCase();
+    arr = arr.filter(p => p.name.toLowerCase().includes(q) || p.id.toLowerCase().includes(q));
   }
-
-  return tags.join("");
-}
-
-function renderModel(model) {
-  const inputPrice = formatPrice(model.input_price_per_m);
-  const outputPrice = formatPrice(model.output_price_per_m);
-  const context = formatContext(model.context_window);
-  const isTracked = model.provider_id === "openrouter";
-  const providerUrl = model.provider_url || model.source_url;
-
-  const inputClass = model.is_free ? "free" : (model.input_price_per_m === null ? "n-a" : "");
-  const outputClass = model.is_free ? "free" : (model.output_price_per_m === null ? "n-a" : "");
-  const contextClass = model.context_window ? "context-value" : "context-value n-a";
-
-  return `<article class="model-row">
-    <div class="model-main">
-      <div class="model-heading">
-        <h3 class="model-name"><a href="${escapeHtml(providerUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(model.name)}</a></h3>
-        ${model.is_free ? '<span class="free-badge">Free</span>' : ""}
-      </div>
-      <div class="provider-row">
-        <a class="provider-link" href="${escapeHtml(providerUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(model.provider)}</a>
-        <code class="model-id">${escapeHtml(model.model_id)}</code>
-      </div>
-      ${model.description ? `<p class="model-description">${escapeHtml(model.description)}</p>` : ""}
-      <div class="tags">${buildTags(model)}</div>
+  arr.sort((a, b) => b.total - a.total);
+  list.innerHTML = arr.map(p => `<article class="provider-card">
+    <h3 class="pc-name"><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.name)}</a></h3>
+    <p class="pc-meta">${esc(p.id)}</p>
+    <div class="pc-stats">
+      <div class="pc-stat"><strong>${p.total.toLocaleString()}</strong><span>Models</span></div>
+      <div class="pc-stat"><strong>${p.free.toLocaleString()}</strong><span>Free</span></div>
+      <div class="pc-stat"><strong>${p.reasoning.toLocaleString()}</strong><span>Reasoning</span></div>
+      <div class="pc-stat"><strong>${p.tool.toLocaleString()}</strong><span>Tool use</span></div>
     </div>
-    <div class="model-data">
-      <div class="price-box${isTracked ? " tracked" : ""}">
-        <span class="price-label">${isTracked ? "OpenRouter input / 1M" : "Input / 1M"}</span>
-        <strong class="price-value ${inputClass}">${inputPrice}</strong>
-      </div>
-      <div class="price-box${isTracked ? " tracked" : ""}">
-        <span class="price-label">${isTracked ? "OpenRouter output / 1M" : "Output / 1M"}</span>
-        <strong class="price-value ${outputClass}">${outputPrice}</strong>
-      </div>
-      <div class="price-box">
-        <span class="price-label">Context window</span>
-        <strong class="${contextClass}">${context}</strong>
-      </div>
-    </div>
-  </article>`;
+  </article>`).join("");
+  if (!arr.length) list.innerHTML = `<div class="empty"><h3>No providers match</h3><p>Try a different search term.</p></div>`;
+  document.getElementById("loadMore").hidden = true;
 }
 
 function render() {
   const query = document.getElementById("searchInput").value.trim().toLowerCase();
-  const matchesFilter = FILTERS[activeFilter] || FILTERS.all;
+  const isProviders = activeView === "providers";
 
-  const filtered = models.filter(model => {
-    if (!matchesFilter(model)) return false;
-    if (!query) return true;
-    const searchable = `${model.name} ${model.model_id} ${model.provider} ${model.description}`.toLowerCase();
-    return searchable.includes(query);
-  });
+  document.getElementById("modelFilters")?.classList.toggle("hidden", isProviders);
+  document.getElementById("tableView")?.classList.toggle("hidden", isProviders);
 
-  const list = document.getElementById("modelList");
+  document.getElementById("modelFilters")?.classList.toggle("hidden", isProviders);
+  document.getElementById("tableView")?.classList.toggle("hidden", isProviders);
+  document.getElementById("providerGrid")?.classList.toggle("active", isProviders);
+
   const resultCount = document.getElementById("resultCount");
 
-  resultCount.textContent = `${filtered.length.toLocaleString()} ${filtered.length === 1 ? "model" : "models"}`;
-
-  if (!filtered.length) {
-    list.innerHTML = `
-      <div class="empty">
-        <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
-        </svg>
-        <h3>No matches</h3>
-        <p>Try a different search term or clear the active filter.</p>
-      </div>`;
-    document.getElementById("loadMore").hidden = true;
+  if (isProviders) {
+    renderProviders(query);
+    resultCount.textContent = "";
     return;
   }
 
-  const visible = filtered.slice(0, visibleCount);
-  list.innerHTML = visible.map(renderModel).join("");
-  document.getElementById("loadMore").hidden = filtered.length <= visibleCount;
+  const fn = FILTERS[activeFilter] || FILTERS.all;
+  const filtered = models.filter(m => fn(m) && (!query ||
+    `${m.name} ${m.model_id} ${m.provider} ${m.description}`.toLowerCase().includes(query)));
+  resultCount.textContent = `${filtered.length.toLocaleString()} ${filtered.length === 1 ? "model" : "models"}`;
+  renderModels(filtered);
 }
 
-document.getElementById("searchInput").addEventListener("input", () => {
-  visibleCount = 80;
-  render();
-});
+document.getElementById("searchInput").addEventListener("input", () => { visibleCount = 100; render(); });
 
-document.querySelectorAll(".filter").forEach(button => {
-  button.addEventListener("click", () => {
-    document.querySelectorAll(".filter").forEach(item => {
-      item.classList.remove("active");
-      item.setAttribute("aria-selected", "false");
-    });
-    button.classList.add("active");
-    button.setAttribute("aria-selected", "true");
-    activeFilter = button.dataset.filter;
-    visibleCount = 80;
+document.querySelectorAll(".tab-pri").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".tab-pri").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+    btn.classList.add("active"); btn.setAttribute("aria-selected", "true");
+    activeView = btn.dataset.view;
+    visibleCount = 100;
+    if (activeView === "providers") {
+      document.getElementById("searchInput").value = "";
+      document.querySelectorAll("#modelFilters .filter").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+      document.querySelector("#modelFilters .filter[data-filter='all']")?.classList.add("active");
+    }
     render();
   });
 });
 
-document.getElementById("loadMore").addEventListener("click", () => {
-  visibleCount += 80;
-  render();
+document.querySelectorAll(".filter").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".filter").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+    btn.classList.add("active"); btn.setAttribute("aria-selected", "true");
+    activeFilter = btn.dataset.filter;
+    visibleCount = 100;
+    render();
+  });
 });
+
+document.getElementById("loadMore").addEventListener("click", () => { visibleCount += 100; render(); });
 
 loadData();
