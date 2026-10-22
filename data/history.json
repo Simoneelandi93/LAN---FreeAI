@@ -1,5 +1,13 @@
 [
   {
+    "event_id": "e1ef80bef450bd4f",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v3.2-thinking",
+    "provider": "302.AI, NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-10-22T17:05:13.281690+00:00",
+    "details": "Input: $0.07 -> $0.2088; output: $0.105 -> $0.3096"
+  },
+  {
     "event_id": "76e953ced5e022da",
     "type": "new_model",
     "model_id": "reka-ai/deepseek-v4.1-flash",
@@ -1590,13 +1598,5 @@
     "provider": "Helicone",
     "detected_at": "2026-10-21T16:39:02.030697+00:00",
     "details": "Input: $0.049999999999999996 -> $0.05; output: $0.09999999999999999 -> $0.1"
-  },
-  {
-    "event_id": "846f983e1bdd1dac",
-    "type": "price_change",
-    "model_id": "gemini-2.5-flash-lite",
-    "provider": "Helicone",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0.09999999999999999 -> $0.1; output: $0.39999999999999997 -> $0.4"
   }
 ]
