@@ -1,5 +1,21 @@
 [
   {
+    "event_id": "3efcb032bdb7ee9f",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T04:39:44.554938+00:00",
+    "details": "Input: $0.018 -> $0.0154; output: $0.121 -> $0.1443"
+  },
+  {
+    "event_id": "bb4603cf04b66f11",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-22T04:39:44.554938+00:00",
+    "details": "Input: $0.018 -> $0.0154; output: $0.121 -> $0.1443"
+  },
+  {
     "event_id": "79171c51bf4d9446",
     "type": "new_model",
     "model_id": "sference/deepseek-ai/DeepSeek-V4.1-Flash-1017",
@@ -1582,21 +1598,5 @@
     "provider": "SAP AI Core",
     "detected_at": "2026-10-21T16:05:55.121123+00:00",
     "details": "Input: $0.63 -> $2.5; output: $5.05 -> $10"
-  },
-  {
-    "event_id": "57c37b6506b14ba4",
-    "type": "price_change",
-    "model_id": "Qwen/Qwen3-VL-Embedding-8B",
-    "provider": "STACKIT",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.09 -> $0.09; output: $0.09 -> $0"
-  },
-  {
-    "event_id": "119eb56801923bd9",
-    "type": "price_change",
-    "model_id": "intfloat/e5-mistral-7b-instruct",
-    "provider": "STACKIT",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.02 -> $0.02243; output: $0.02 -> $0"
   }
 ]
