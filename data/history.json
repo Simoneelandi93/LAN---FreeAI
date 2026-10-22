@@ -1,5 +1,21 @@
 [
   {
+    "event_id": "e034ae00a951e3d3",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T09:39:05.353851+00:00",
+    "details": "Input: $0.0067 -> $0.0058; output: $0.188 -> $0.193"
+  },
+  {
+    "event_id": "fd529089b6b1ba29",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-22T09:39:05.353851+00:00",
+    "details": "Input: $0.0067 -> $0.0058; output: $0.188 -> $0.193"
+  },
+  {
     "event_id": "408bd928f5235b64",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -1582,21 +1598,5 @@
     "provider": "302.AI, Jiekou.AI, Merge Gateway",
     "detected_at": "2026-10-21T16:05:55.121123+00:00",
     "details": "Input: $2.7 -> $3; output: $13.5 -> $15"
-  },
-  {
-    "event_id": "9a3a110a475a3347",
-    "type": "price_change",
-    "model_id": "claude-haiku-4-5-20251001",
-    "provider": "302.AI, Jiekou.AI, Merge Gateway",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.9 -> $1; output: $4.5 -> $5"
-  },
-  {
-    "event_id": "30c7ac9001e507d4",
-    "type": "price_change",
-    "model_id": "cerebras/gpt-oss-120b-cs",
-    "provider": "Poe",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.35 -> $0.3535; output: $0.75 -> $0.7576"
   }
 ]
