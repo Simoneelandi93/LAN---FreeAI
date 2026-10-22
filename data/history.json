@@ -1,5 +1,13 @@
 [
   {
+    "event_id": "89c8ecfc25429c44",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-10-22T02:08:50.487731+00:00",
+    "details": "Input: $0.7506 -> $0.834; output: $2.2509 -> $2.501"
+  },
+  {
     "event_id": "78779a9c323a7ed9",
     "type": "price_change",
     "model_id": "phi-4-multimodal-instruct",
@@ -1590,13 +1598,5 @@
     "provider": "Eden AI",
     "detected_at": "2026-10-21T16:05:55.121123+00:00",
     "details": "Input: $1.00935 -> $1.01106; output: $3.02805 -> $3.03318"
-  },
-  {
-    "event_id": "ede0bb4dc7f66595",
-    "type": "price_change",
-    "model_id": "greenpt/deepseek-v4.1-flash",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.24673 -> $0.247148; output: $1.23365 -> $1.23574"
   }
 ]
