@@ -1,5 +1,21 @@
 [
   {
+    "event_id": "aa9ce4f840aef713",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-22T10:38:16.964143+00:00",
+    "details": "Input: $0.0058 -> $0.0052; output: $0.193 -> $0.1985"
+  },
+  {
+    "event_id": "1d8aad98445b3706",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T10:38:16.964143+00:00",
+    "details": "Input: $0.0058 -> $0.0052; output: $0.193 -> $0.1985"
+  },
+  {
     "event_id": "e034ae00a951e3d3",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -1582,21 +1598,5 @@
     "provider": "302.AI, Jiekou.AI, Merge Gateway",
     "detected_at": "2026-10-21T16:05:55.121123+00:00",
     "details": "Input: $4.5 -> $4.75; output: $22.5 -> $23.75"
-  },
-  {
-    "event_id": "b062fa8d34ce4d87",
-    "type": "price_change",
-    "model_id": "doubao-seed-1-8-251215",
-    "provider": "302.AI",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.114 -> $0.1143; output: $0.286 -> $0.286"
-  },
-  {
-    "event_id": "e2dc3423ffa099aa",
-    "type": "price_change",
-    "model_id": "claude-sonnet-4-5-20250929",
-    "provider": "302.AI, Jiekou.AI, Merge Gateway",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $2.7 -> $3; output: $13.5 -> $15"
   }
 ]
