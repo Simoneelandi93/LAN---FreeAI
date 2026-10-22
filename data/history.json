@@ -1,5 +1,37 @@
 [
   {
+    "event_id": "b91148158ef8870f",
+    "type": "price_change",
+    "model_id": "deepseek-v3.2-thinking",
+    "provider": "302.AI, NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-10-22T15:38:24.177983+00:00",
+    "details": "Input: $0.2088 -> $0.07; output: $0.3096 -> $0.105"
+  },
+  {
+    "event_id": "618071f5e4ac8bbe",
+    "type": "price_change",
+    "model_id": "z-ai/glm-5.2:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-22T15:38:24.177983+00:00",
+    "details": "Input: $0.42 -> $0.189; output: $1.32 -> $0.594"
+  },
+  {
+    "event_id": "4c68963dac21ed86",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-latest",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-22T15:38:24.177983+00:00",
+    "details": "Input: $0.20196 -> $0.1452; output: $0.60588 -> $0.4356"
+  },
+  {
+    "event_id": "d136b094a0fe34d4",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-pro-0813:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-22T15:38:24.177983+00:00",
+    "details": "Input: $0.20196 -> $0.1452; output: $0.60588 -> $0.4356"
+  },
+  {
     "event_id": "676f778961280662",
     "type": "price_change",
     "model_id": "thinkingmachines/inkling:thinking",
@@ -1566,37 +1598,5 @@
     "provider": "Alibaba (China), Deep Infra, Hugging Face, Jiekou.AI, Kilo Gateway, Meganova, Merge Gateway, NanoGPT, Novita AI, OpenRouter, Qiniu, TensorX, submodel",
     "detected_at": "2026-10-21T16:05:55.121123+00:00",
     "details": "Input: $0.5 -> $0.2; output: $2.15 -> $0.8"
-  },
-  {
-    "event_id": "1eff7796c365d95b",
-    "type": "price_change",
-    "model_id": "deepseek-reasoner",
-    "provider": "AnyAPI, Helicone, OrcaRouter",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.147 -> $0.242; output: $0.295 -> $0.726"
-  },
-  {
-    "event_id": "ecddc56217acaf82",
-    "type": "price_change",
-    "model_id": "anthropic/claude-opus-4.6",
-    "provider": "AIHubMix, Abacus, Amazon Bedrock, Anthropic, AnyAPI, Auriko, Azure, Azure Cognitive Services, Cloudflare AI Gateway, Cortecs, Databricks, DevPass (LLM Gateway), Eden AI, FreeModel, FrogBot, GMI Cloud, Impossibl, Jiekou.AI, Kilo Gateway, Merge Gateway, NEAR AI Cloud, Neon, Ofox, OpenCode, OpenRouter, Opper, OrcaRouter, Perplexity Agent, Pioneer, Poe, Prime Inference, Requesty, Snowflake Cortex, Tempr Gateway, Venice AI, Vercel AI Gateway, Vertex, Vertex (Anthropic), ZenMux",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $4.3 -> $4.2929; output: $21 -> $21.4646"
-  },
-  {
-    "event_id": "a47886722ec037c5",
-    "type": "price_change",
-    "model_id": "doubao-seed-2-0-mini-260428",
-    "provider": "AIHubMix",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.03 -> $0.030136; output: $0.28 -> $0.30136"
-  },
-  {
-    "event_id": "361e2c493cf8c92f",
-    "type": "price_change",
-    "model_id": "doubao-seed-2-0-lite-260428",
-    "provider": "AIHubMix",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.08 -> $0.09041; output: $0.51 -> $0.54246"
   }
 ]
