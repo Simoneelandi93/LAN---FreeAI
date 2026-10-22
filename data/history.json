@@ -1,5 +1,37 @@
 [
   {
+    "event_id": "676f778961280662",
+    "type": "price_change",
+    "model_id": "thinkingmachines/inkling:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-22T15:06:26.733763+00:00",
+    "details": "Input: $0.95 -> $1; output: $4.05 -> $4.05"
+  },
+  {
+    "event_id": "96c533a76a8e10fb",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-pro-0813:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-22T15:06:26.733763+00:00",
+    "details": "Input: $0.2244 -> $0.20196; output: $0.6732 -> $0.60588"
+  },
+  {
+    "event_id": "a6475fb9c42c0d16",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-latest",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-22T15:06:26.733763+00:00",
+    "details": "Input: $0.2244 -> $0.20196; output: $0.6732 -> $0.60588"
+  },
+  {
+    "event_id": "f0603a0f09a6f92f",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-flash-0731:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-22T15:06:26.733763+00:00",
+    "details": "Input: $0.05 -> $0.04444; output: $0.16 -> $0.13332"
+  },
+  {
     "event_id": "be8e76e90c6d7dd5",
     "type": "price_change",
     "model_id": "deepseek/deepseek-latest",
@@ -1566,37 +1598,5 @@
     "provider": "AIHubMix",
     "detected_at": "2026-10-21T16:05:55.121123+00:00",
     "details": "Input: $0.08 -> $0.09041; output: $0.51 -> $0.54246"
-  },
-  {
-    "event_id": "213d337d7d1cc137",
-    "type": "price_change",
-    "model_id": "openai/o3",
-    "provider": "302.AI, AIHubMix, Abacus, AnyAPI, Azure, Azure Cognitive Services, Cloudflare AI Gateway, DevPass (LLM Gateway), Eden AI, Impossibl, Jiekou.AI, Kilo Gateway, LowRouter, Merge Gateway, NEAR AI Cloud, OpenAI, OpenRouter, Poe, Vercel AI Gateway",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $1.8 -> $1.8182; output: $7.2 -> $7.2727"
-  },
-  {
-    "event_id": "ac33a218bd6a2611",
-    "type": "price_change",
-    "model_id": "coding-xiaomi-mimo-v2.5-pro",
-    "provider": "AIHubMix",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.2 -> $0.2; output: $0.6 -> $0.4"
-  },
-  {
-    "event_id": "fbf1fac289e27bc6",
-    "type": "price_change",
-    "model_id": "coding-xiaomi-mimo-v2.5",
-    "provider": "AIHubMix",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.08 -> $0.08; output: $0.4 -> $0.16"
-  },
-  {
-    "event_id": "55b49fab193a2b8f",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "OpenRouter, Privatemode AI",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.041191 -> $0.051691; output: $0.12 -> $0.12"
   }
 ]
