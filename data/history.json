@@ -1,5 +1,45 @@
 [
   {
+    "event_id": "5466a6c610a636b9",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-22T06:52:02.349339+00:00",
+    "details": "Input: $0.0132 -> $0.0097; output: $0.1589 -> $0.1707"
+  },
+  {
+    "event_id": "d5706226e4a20c40",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Fireworks AI, OpenRouter",
+    "detected_at": "2026-10-22T06:52:02.349339+00:00",
+    "details": "Input: $0.07 -> $0.025; output: $0.5 -> $0.25"
+  },
+  {
+    "event_id": "821b98d6d6ebf91b",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T06:52:02.349339+00:00",
+    "details": "Input: $0.238 -> $0.238; output: $24 -> $16"
+  },
+  {
+    "event_id": "c36348de661dc196",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T06:52:02.349339+00:00",
+    "details": "Input: $0.0132 -> $0.0097; output: $0.1589 -> $0.1707"
+  },
+  {
+    "event_id": "6fb2a4aa1a43509a",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T06:52:02.349339+00:00",
+    "details": "Input: $0.07 -> $0.025; output: $0.5 -> $0.25"
+  },
+  {
     "event_id": "10d2d265484c68a7",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -1558,45 +1598,5 @@
     "provider": "AI/ML API, Berget.AI",
     "detected_at": "2026-10-21T16:05:55.121123+00:00",
     "details": "Input: $0.275 -> $0.280375; output: $0.55 -> $0.56075"
-  },
-  {
-    "event_id": "ba49bc2d7f57c32b",
-    "type": "price_change",
-    "model_id": "amazon--nova-lite",
-    "provider": "SAP AI Core",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.3 -> $0.3; output: $2.37 -> $2.5"
-  },
-  {
-    "event_id": "b23731ee894a377c",
-    "type": "price_change",
-    "model_id": "mistralai--mistral-medium-instruct",
-    "provider": "SAP AI Core",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.36 -> $0.4; output: $1.22 -> $2"
-  },
-  {
-    "event_id": "235fab834cfffc4b",
-    "type": "price_change",
-    "model_id": "mistralai--mistral-small",
-    "provider": "SAP AI Core",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.07 -> $0.15; output: $0.28 -> $0.6"
-  },
-  {
-    "event_id": "d3c3156f7983cf14",
-    "type": "price_change",
-    "model_id": "amazon--nova-micro",
-    "provider": "SAP AI Core",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.03 -> $0.035; output: $0.1 -> $0.14"
-  },
-  {
-    "event_id": "fa124e8f1fc0f3b9",
-    "type": "price_change",
-    "model_id": "amazon--titan-embed-text",
-    "provider": "SAP AI Core",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.14 -> $0.02; output: $0 -> $0"
   }
 ]
