@@ -1,5 +1,21 @@
 [
   {
+    "event_id": "10d2d265484c68a7",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T05:38:51.771971+00:00",
+    "details": "Input: $0.0154 -> $0.0132; output: $0.1443 -> $0.1589"
+  },
+  {
+    "event_id": "ebce5431ddab88d7",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-22T05:38:51.771971+00:00",
+    "details": "Input: $0.0154 -> $0.0132; output: $0.1443 -> $0.1589"
+  },
+  {
     "event_id": "3efcb032bdb7ee9f",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -1582,21 +1598,5 @@
     "provider": "SAP AI Core",
     "detected_at": "2026-10-21T16:05:55.121123+00:00",
     "details": "Input: $0.14 -> $0.02; output: $0 -> $0"
-  },
-  {
-    "event_id": "1eacd10a127bab77",
-    "type": "price_change",
-    "model_id": "amazon--nova-pro",
-    "provider": "SAP AI Core",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.56 -> $0.8; output: $2.13 -> $3.2"
-  },
-  {
-    "event_id": "8a008a3fa17053aa",
-    "type": "price_change",
-    "model_id": "cohere--command-a-reasoning",
-    "provider": "SAP AI Core",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.63 -> $2.5; output: $5.05 -> $10"
   }
 ]
