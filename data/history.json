@@ -1,5 +1,37 @@
 [
   {
+    "event_id": "79171c51bf4d9446",
+    "type": "new_model",
+    "model_id": "sference/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-22T03:41:11.534137+00:00",
+    "details": "$0.5 in / $1.5 out per 1M"
+  },
+  {
+    "event_id": "b2c44e920ec8c0c4",
+    "type": "new_model",
+    "model_id": "sference/deepseek-ai/DeepSeek-V4-Flash-0731",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-22T03:41:11.534137+00:00",
+    "details": "$0.28 in / $0.56 out per 1M"
+  },
+  {
+    "event_id": "27f4c04f255a1f27",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-22T03:41:11.534137+00:00",
+    "details": "Input: $0.0273 -> $0.018; output: $0.083 -> $0.121"
+  },
+  {
+    "event_id": "2e7af98baef216a1",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T03:41:11.534137+00:00",
+    "details": "Input: $0.0273 -> $0.018; output: $0.083 -> $0.121"
+  },
+  {
     "event_id": "89c8ecfc25429c44",
     "type": "price_change",
     "model_id": "tencent/hy4-preview",
@@ -1566,37 +1598,5 @@
     "provider": "STACKIT",
     "detected_at": "2026-10-21T16:05:55.121123+00:00",
     "details": "Input: $0.02 -> $0.02243; output: $0.02 -> $0"
-  },
-  {
-    "event_id": "98859fa3ab4c3f38",
-    "type": "new_model",
-    "model_id": "reflection-beam",
-    "provider": "DigitalOcean",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "$0.4 in / $1.2 out per 1M"
-  },
-  {
-    "event_id": "1ffea05e47576401",
-    "type": "price_change",
-    "model_id": "greenpt/deepseek-v4-flash-0731",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.15701 -> $0.157276; output: $0.392525 -> $0.39319"
-  },
-  {
-    "event_id": "a4dbc7c65d344aaf",
-    "type": "price_change",
-    "model_id": "greenpt/gpt-oss-120b",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.2243 -> $0.22468; output: $0.78505 -> $0.78638"
-  },
-  {
-    "event_id": "469bd03c2585d5ef",
-    "type": "price_change",
-    "model_id": "greenpt/qwen3-235b-a22b-instruct-2507",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $1.00935 -> $1.01106; output: $3.02805 -> $3.03318"
   }
 ]
