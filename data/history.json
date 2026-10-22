@@ -1,5 +1,37 @@
 [
   {
+    "event_id": "be8e76e90c6d7dd5",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-latest",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-22T13:39:06.945394+00:00",
+    "details": "Input: $0.66 -> $0.2244; output: $1.98 -> $0.6732"
+  },
+  {
+    "event_id": "09668893974249be",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-pro-0813:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-22T13:39:06.945394+00:00",
+    "details": "Input: $0.66 -> $0.2244; output: $1.98 -> $0.6732"
+  },
+  {
+    "event_id": "88bbf67782098bf6",
+    "type": "price_change",
+    "model_id": "moonshotai/kimi-k2.6:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-22T13:39:06.945394+00:00",
+    "details": "Input: $0.45 -> $0.44935; output: $1.95 -> $1.892"
+  },
+  {
+    "event_id": "da7324cde7edc353",
+    "type": "new_model",
+    "model_id": "kolibri-1",
+    "provider": "Cortecs",
+    "detected_at": "2026-10-22T13:39:06.945394+00:00",
+    "details": "$0.167 in / $0.613 out per 1M"
+  },
+  {
     "event_id": "16daf6254a2d3ba0",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-pro-latest",
@@ -1566,37 +1598,5 @@
     "provider": "OpenRouter, Privatemode AI",
     "detected_at": "2026-10-21T16:05:55.121123+00:00",
     "details": "Input: $0.041191 -> $0.051691; output: $0.12 -> $0.12"
-  },
-  {
-    "event_id": "43eabf63663b1508",
-    "type": "price_change",
-    "model_id": "grok-4-1-fast-reasoning",
-    "provider": "302.AI, Azure, Azure Cognitive Services, DevPass (LLM Gateway), FrogBot, Jiekou.AI, Poe, Vercel AI Gateway, Vertex",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.18 -> $0.19; output: $0.45 -> $0.475"
-  },
-  {
-    "event_id": "c5682089e3fa3609",
-    "type": "price_change",
-    "model_id": "grok-4-1-fast-non-reasoning",
-    "provider": "Abacus, Azure, Azure Cognitive Services, DevPass (LLM Gateway), FrogBot, Jiekou.AI, Perplexity Agent, Poe, Vercel AI Gateway",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.18 -> $0.19; output: $0.45 -> $0.475"
-  },
-  {
-    "event_id": "57cfc97f12b32d96",
-    "type": "price_change",
-    "model_id": "text-embedding-3-large",
-    "provider": "Azure, Azure Cognitive Services, OpenAI, SAP AI Core, Vercel AI Gateway",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.09 -> $0.13; output: $0 -> $0"
-  },
-  {
-    "event_id": "bc9cdd684673bdd7",
-    "type": "price_change",
-    "model_id": "openai/gpt-5.4-pro",
-    "provider": "AI/ML API, Azure, Azure Cognitive Services, Cloudflare AI Gateway, DevPass (LLM Gateway), Eden AI, Impossibl, Kilo Gateway, Ofox, OpenAI, OpenCode, OpenRouter, Opper, OrcaRouter, Poe, Prime Inference, Requesty, Venice AI, Vercel AI Gateway, ZenMux",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $27 -> $27.2727; output: $160 -> $163.6364"
   }
 ]
