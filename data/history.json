@@ -1,5 +1,37 @@
 [
   {
+    "event_id": "408bd928f5235b64",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T08:43:28.296238+00:00",
+    "details": "Input: $0.0083 -> $0.0067; output: $0.1825 -> $0.188"
+  },
+  {
+    "event_id": "b1a627e31787f8b9",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T08:43:28.296238+00:00",
+    "details": "Input: $0.025 -> $0.07; output: $0.25 -> $0.5"
+  },
+  {
+    "event_id": "877a7c9eb3bd892b",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Fireworks AI, OpenRouter",
+    "detected_at": "2026-10-22T08:43:28.296238+00:00",
+    "details": "Input: $0.025 -> $0.07; output: $0.25 -> $0.5"
+  },
+  {
+    "event_id": "e94abbbe046d5537",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-22T08:43:28.296238+00:00",
+    "details": "Input: $0.0083 -> $0.0067; output: $0.1825 -> $0.188"
+  },
+  {
     "event_id": "7898ac2d30d976b8",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
@@ -1566,37 +1598,5 @@
     "provider": "Poe",
     "detected_at": "2026-10-21T16:05:55.121123+00:00",
     "details": "Input: $0.35 -> $0.3535; output: $0.75 -> $0.7576"
-  },
-  {
-    "event_id": "97fa25de8cdadf31",
-    "type": "price_change",
-    "model_id": "openai/gpt-4o-search",
-    "provider": "Poe",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $2.2 -> $2.2727; output: $9 -> $9.0909"
-  },
-  {
-    "event_id": "fa56f65cbf4a4833",
-    "type": "price_change",
-    "model_id": "openai/gpt-4o-aug",
-    "provider": "Poe",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $2.2 -> $2.2727; output: $9 -> $9.0909"
-  },
-  {
-    "event_id": "a40f53cffdf9b252",
-    "type": "model_became_free",
-    "model_id": "Qwen/Qwen3-8B",
-    "provider": "SiliconFlow, SiliconFlow (China)",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Was $0.06/0.06 per 1M, now free"
-  },
-  {
-    "event_id": "7376233570be5d4f",
-    "type": "price_change",
-    "model_id": "Qwen/Qwen3.5-9B",
-    "provider": "SiliconFlow, SiliconFlow (China)",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.1 -> $0.07472374; output: $0.15 -> $0.15"
   }
 ]
