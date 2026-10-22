@@ -1,5 +1,21 @@
 [
   {
+    "event_id": "5de56a5b2d970570",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T11:37:22.177830+00:00",
+    "details": "Input: $0.2235 -> $0.2503; output: $8 -> $8"
+  },
+  {
+    "event_id": "0cc435c6ff97b071",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "OpenRouter, The Grid AI",
+    "detected_at": "2026-10-22T11:37:22.177830+00:00",
+    "details": "Input: $0.2235 -> $0.2503; output: $8 -> $8"
+  },
+  {
     "event_id": "aa9ce4f840aef713",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -1582,21 +1598,5 @@
     "provider": "AnyAPI, Eden AI, Kilo Gateway, OpenRouter, OrcaRouter",
     "detected_at": "2026-10-21T16:05:55.121123+00:00",
     "details": "Input: $0.147 -> $0.15; output: $0.295 -> $0.6"
-  },
-  {
-    "event_id": "ab0b3a9abac6ac8d",
-    "type": "price_change",
-    "model_id": "kimi-k2-0905-preview",
-    "provider": "302.AI",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $0.632 -> $0.62854; output: $2.53 -> $2.5146"
-  },
-  {
-    "event_id": "48672ab9f936a069",
-    "type": "price_change",
-    "model_id": "claude-opus-4-5-20251101",
-    "provider": "302.AI, Jiekou.AI, Merge Gateway",
-    "detected_at": "2026-10-21T16:05:55.121123+00:00",
-    "details": "Input: $4.5 -> $4.75; output: $22.5 -> $23.75"
   }
 ]
