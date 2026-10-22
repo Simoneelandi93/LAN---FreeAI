@@ -1,5 +1,69 @@
 [
   {
+    "event_id": "76e953ced5e022da",
+    "type": "new_model",
+    "model_id": "reka-ai/deepseek-v4.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-22T16:39:00.248412+00:00",
+    "details": "$0.3 in / $1.2 out per 1M"
+  },
+  {
+    "event_id": "c2130f4966c13d30",
+    "type": "new_model",
+    "model_id": "reka-ai/deepseek-v4.1-flash-1017",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-22T16:39:00.248412+00:00",
+    "details": "$0.15 in / $0.6 out per 1M"
+  },
+  {
+    "event_id": "fbddebd00ce989cb",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/routers/glm-5p3-spot",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-10-22T16:39:00.248412+00:00",
+    "details": "$0.98 in / $3.08 out per 1M"
+  },
+  {
+    "event_id": "a416f6963f13567d",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/routers/deepseek-v4p1-flash-spot",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-10-22T16:39:00.248412+00:00",
+    "details": "$0.21 in / $0.84 out per 1M"
+  },
+  {
+    "event_id": "91e0f42be6f0f653",
+    "type": "new_model",
+    "model_id": "minimax/minimax-m3.1-flash",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T16:39:00.248412+00:00",
+    "details": "$0.15 in / $0.6 out per 1M"
+  },
+  {
+    "event_id": "821b98d6d6ebf91b",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T16:39:00.248412+00:00",
+    "details": "Input: $0.238 -> $0.238; output: $24 -> $16"
+  },
+  {
+    "event_id": "bfa6e19d6ceef0b5",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T16:39:00.248412+00:00",
+    "details": "Input: $0.0475 -> $0.0422; output: $0.1568 -> $0.1729"
+  },
+  {
+    "event_id": "3967285ca852f1ee",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T16:39:00.248412+00:00",
+    "details": "Input: $0.225 -> $0.1307; output: $8 -> $8"
+  },
+  {
     "event_id": "98e3f9b138e70000",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-v4-flash-latest",
@@ -1534,69 +1598,5 @@
     "provider": "Helicone",
     "detected_at": "2026-10-21T16:39:02.030697+00:00",
     "details": "Input: $0.09999999999999999 -> $0.1; output: $0.39999999999999997 -> $0.4"
-  },
-  {
-    "event_id": "0b90d4edc95e1c34",
-    "type": "price_change",
-    "model_id": "google/gemini-3.1-flash-lite-image",
-    "provider": "AIHubMix, Eden AI, Google, Kenari, Kilo Gateway, OpenRouter, Vertex",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0 -> $0.25; output: $0 -> $1.5"
-  },
-  {
-    "event_id": "b5787bcaaf70a877",
-    "type": "price_change",
-    "model_id": "qwen3.5-122b",
-    "provider": "Regolo AI",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0.9 -> $1.1215; output: $3.6 -> $4.7103"
-  },
-  {
-    "event_id": "2d4793e4146481f1",
-    "type": "price_change",
-    "model_id": "gemini-3.1-flash-tts-preview",
-    "provider": "Google, Kenari",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0 -> $1; output: $0 -> $20"
-  },
-  {
-    "event_id": "a6b75d6dee970d1b",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "OpenRouter, Privatemode AI",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0.051691 -> $0.041191; output: $0.12 -> $0.12"
-  },
-  {
-    "event_id": "ea924946f741c1e8",
-    "type": "new_model",
-    "model_id": "deepinfra/mistralai/Mixtral-8x7B-Instruct-v0.1",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "$0.4 in / $0.4 out per 1M"
-  },
-  {
-    "event_id": "9e3e8637ca8ecafd",
-    "type": "new_model",
-    "model_id": "deepinfra/meta-llama/Llama-Guard-4-12B",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "$0.18 in / $0.18 out per 1M"
-  },
-  {
-    "event_id": "51a2863731144edd",
-    "type": "new_model",
-    "model_id": "deepinfra/meta-llama/Llama-3.2-3B-Instruct",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "$0.02 in / $0.02 out per 1M"
-  },
-  {
-    "event_id": "5dfdc279b42b6ee0",
-    "type": "new_model",
-    "model_id": "cloudflare/@cf/meta/llama-3.2-3b-instruct",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "$0.0509 in / $0.335 out per 1M"
   }
 ]
