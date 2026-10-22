@@ -1,5 +1,13 @@
 [
   {
+    "event_id": "40bc805321c224fb",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-22T19:04:29.470548+00:00",
+    "details": "Input: $0.238 -> $0.238; output: $16 -> $24"
+  },
+  {
     "event_id": "687c39984c5fd946",
     "type": "price_change",
     "model_id": "tencent/hy4-preview",
@@ -1590,13 +1598,5 @@
     "provider": "Helicone",
     "detected_at": "2026-10-21T16:39:02.030697+00:00",
     "details": "Input: $0.39999999999999997 -> $0.4; output: $1.5999999999999999 -> $1.6"
-  },
-  {
-    "event_id": "c7725adda8b7eabf",
-    "type": "price_change",
-    "model_id": "llama-3.1-8b-instruct",
-    "provider": "Helicone",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0.02 -> $0.02; output: $0.049999999999999996 -> $0.05"
   }
 ]
