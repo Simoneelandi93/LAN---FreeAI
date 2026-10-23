@@ -6,6 +6,7 @@ let activeFilter = "all";
 let selectedProviders = new Set();
 let allAvailableProviders = [];
 let activeChangesRange = "all";
+let activeAlertFilter = "all";
 let visibleCount = 100;
 let sortKey = "name";
 let sortDir = "asc";
@@ -516,6 +517,8 @@ function renderChanges(query) {
       (ev.type && ev.type.toLowerCase().includes(query))
     );
   }
+  if (activeAlertFilter === "alerted") items = items.filter(ev => ev.alerted);
+  else if (activeAlertFilter === "silent") items = items.filter(ev => !ev.alerted);
   document.getElementById("resultCount").textContent = `Showing ${items.length.toLocaleString()} changelog events`;
   if (!items.length) {
     feed.innerHTML = `<div class="empty"><h3>No recent delta events</h3><p>No price modifications or catalog updates found in this timeframe.</p></div>`;
@@ -531,6 +534,7 @@ function renderChanges(query) {
   }
   const sortedDays = Object.values(groups).sort((a, b) => b.date.getTime() - a.date.getTime());
   const typeLabels = { new_model: "New Model", price_change: "Price Drop", model_became_free: "Free Tier" };
+  let activeChangeFilter = "all";
   feed.innerHTML = sortedDays.map(day => {
     const rows = day.events.map(ev => {
       const t = new Date(ev.detected_at);
@@ -551,6 +555,7 @@ function renderChanges(query) {
         : isPrice ? (direction === "increase" ? "rise" : "drop")
         : "free";
       const providerLabel = ev.provider && !isInvalidText(ev.provider) ? `<span class="chg-providers">${esc(ev.provider)}</span>` : "";
+      const alertedBadge = ev.alerted ? `<span class="chg-alerted">📢 Telegram</span>` : `<span class="chg-silent">dashboard only</span>`;
       const pricing = pricingMatch.length ? `<div class="chg-pricing">${pricingMatch.map(([, kind, oldValue, newValue]) => {
         const oldPrice = Number(oldValue);
         const newPrice = Number(newValue);
@@ -558,7 +563,7 @@ function renderChanges(query) {
         return `<div class="chg-price-line"><span class="chg-price-kind">${esc(kind)}</span><span class="chg-price-old">$${oldPrice.toLocaleString(undefined, { maximumFractionDigits: 6 })}</span><span class="chg-price-arrow" aria-hidden="true">→</span><strong class="chg-price-new ${priceDirection}">$${newPrice.toLocaleString(undefined, { maximumFractionDigits: 6 })}</strong><span class="chg-price-unit">per 1M tokens</span></div>`;
       }).join("")}</div>` : "";
       return `<article class="chg-row">
-        <div class="chg-row-meta"><span class="chg-time">${esc(time)}</span><span class="chg-tag ${tagCls}">${esc(lbl)}</span></div>
+        <div class="chg-row-meta"><span class="chg-time">${esc(time)}</span><span class="chg-tag ${tagCls}">${esc(lbl)}</span>${alertedBadge}</div>
         <div class="chg-row-content"><span class="chg-model">${esc(ev.model_id || "model")}</span>${providerLabel}${pricing}</div>
       </article>`;
     }).join("");
@@ -657,12 +662,22 @@ document.querySelectorAll(".filter").forEach(btn => {
   });
 });
 
-document.querySelectorAll(".chg-btn").forEach(btn => {
+document.querySelectorAll(".chg-btn[data-range]").forEach(btn => {
   btn.addEventListener("click", () => {
-    document.querySelectorAll(".chg-btn").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+    document.querySelectorAll(".chg-btn[data-range]").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
     btn.classList.add("active");
     btn.setAttribute("aria-selected", "true");
     activeChangesRange = btn.dataset.range;
+    render();
+  });
+});
+
+document.querySelectorAll(".alert-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".alert-btn").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+    btn.classList.add("active");
+    btn.setAttribute("aria-selected", "true");
+    activeAlertFilter = btn.dataset.alert;
     render();
   });
 });

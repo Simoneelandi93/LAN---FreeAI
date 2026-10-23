@@ -105,6 +105,7 @@ def detect_model_changes(
                 "provider": ", ".join(sorted({m.get("provider") or "Unknown" for m in group})),
                 "detected_at": now,
                 "details": _price_line(group),
+                "alerted": free_now,
             })
 
             if free_now:
@@ -132,6 +133,7 @@ def detect_model_changes(
                 "provider": ", ".join(sorted({m.get("provider") or "Unknown" for m in group})),
                 "detected_at": now,
                 "details": f"Was ${old_in}/{old_out} per 1M, now free",
+                "alerted": True,
             })
             became_free_alerts.append(
                 f"🚨 <b>PRICE DROPPED TO $0 (NOW FREE)</b>\n"
@@ -157,7 +159,7 @@ def detect_model_changes(
         in_direction = "increase" if new_in > old_in else "decrease" if new_in < old_in else "same"
         out_direction = "increase" if new_out > old_out else "decrease" if new_out < old_out else "same"
         direction = "increase" if new_in > old_in or new_out > old_out else "decrease" if new_in < old_in or new_out < old_out else "same"
-        events.append({
+        price_event = {
             "event_id": generate_event_id("price_change", key, f"{old_in}/{old_out}->{new_in}/{new_out}"),
             "type": "price_change",
             "model_id": representative.get("model_id", ""),
@@ -167,7 +169,9 @@ def detect_model_changes(
             "direction": direction,
             "in_direction": in_direction,
             "out_direction": out_direction,
-        })
+            "alerted": False,
+        }
+        events.append(price_event)
         # OpenRouter price-change alerts — both increases and decreases, >=20% only.
         # Uses OpenRouter's own row rather than the cross-provider minimum so the
         # quoted prices are actually OpenRouter's.
@@ -185,6 +189,7 @@ def detect_model_changes(
                 # 1e-12 tolerance: (1.2-1.0)/1.0 is 0.19999999999999996 in binary float
                 if abs(in_pct) >= PRICE_DROP_ALERT_THRESHOLD - 1e-12 \
                         or abs(out_pct) >= PRICE_DROP_ALERT_THRESHOLD - 1e-12:
+                    price_event["alerted"] = True
                     rising = or_new_in > or_old_in or or_new_out > or_old_out
                     price_drop_alerts.append(
                         f"{'📈' if rising else '📉'} <b>{'Price increase' if rising else 'Price drop'} (OpenRouter)</b>\n"

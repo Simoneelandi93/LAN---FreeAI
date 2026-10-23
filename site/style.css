@@ -726,6 +726,30 @@ a:hover {
 .chg-tag.rise { background: var(--rose-soft); color: var(--rose); }
 .chg-tag.free { background: var(--emerald-soft); color: var(--emerald); }
 
+.chg-alerted {
+  font: 600 9px var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  padding: 2px 5px;
+  border-radius: var(--radius-xs);
+  background: var(--accent-soft);
+  color: var(--accent-light);
+  white-space: nowrap;
+}
+
+.chg-silent {
+  font: 600 9px var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  padding: 2px 5px;
+  border-radius: var(--radius-xs);
+  background: rgba(148, 163, 184, 0.10);
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.alert-filters { margin-top: 6px; }
+
 .chg-model {
   font-family: var(--font-mono);
   font-weight: 500;
