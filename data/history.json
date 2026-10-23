@@ -1,5 +1,93 @@
 [
   {
+    "event_id": "7135b4c73e90e961",
+    "type": "price_change",
+    "model_id": "moonshotai/kimi-k2.6:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-23T01:06:47.997421+00:00",
+    "details": "Input: $0.44935 -> $0.45; output: $1.892 -> $1.95"
+  },
+  {
+    "event_id": "d127b5abb4fb45c4",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-pro-0813:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-23T01:06:47.997421+00:00",
+    "details": "Input: $0.1452 -> $0.66; output: $0.4356 -> $1.98"
+  },
+  {
+    "event_id": "f16f5f7522c11fdd",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-flash-0731:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-23T01:06:47.997421+00:00",
+    "details": "Input: $0.04444 -> $0.05; output: $0.13332 -> $0.16"
+  },
+  {
+    "event_id": "9adf22e182d2d265",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-23T01:06:47.997421+00:00",
+    "details": "Input: $0.0422 -> $0.0475; output: $0.1729 -> $0.1568"
+  },
+  {
+    "event_id": "0e56ed5d57658cac",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-latest",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-23T01:06:47.997421+00:00",
+    "details": "Input: $0.1452 -> $0.66; output: $0.4356 -> $1.98"
+  },
+  {
+    "event_id": "d156dc68005ee19f",
+    "type": "price_change",
+    "model_id": "z-ai/glm-5.2:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-23T01:06:47.997421+00:00",
+    "details": "Input: $0.189 -> $0.42; output: $0.594 -> $1.32"
+  },
+  {
+    "event_id": "fa345e4201cfc98e",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "OpenRouter, The Grid AI",
+    "detected_at": "2026-10-23T01:06:47.997421+00:00",
+    "details": "Input: $0.1307 -> $0.225; output: $8 -> $8"
+  },
+  {
+    "event_id": "10175acc37faa4c3",
+    "type": "price_change",
+    "model_id": "mistralai/mistral-small-3.2-24b-instruct",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-23T01:06:47.997421+00:00",
+    "details": "Input: $0.09375 -> $0.075; output: $0.25 -> $0.2"
+  },
+  {
+    "event_id": "a818f10487063c82",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-23T01:06:47.997421+00:00",
+    "details": "Input: $0.1307 -> $0.225; output: $8 -> $8"
+  },
+  {
+    "event_id": "2aab913363c0c9c9",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-23T01:06:47.997421+00:00",
+    "details": "Input: $0.0422 -> $0.0475; output: $0.1729 -> $0.1568"
+  },
+  {
+    "event_id": "821b98d6d6ebf91b",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-23T01:06:47.997421+00:00",
+    "details": "Input: $0.238 -> $0.238; output: $24 -> $16"
+  },
+  {
     "event_id": "25b57ce282e932ef",
     "type": "price_change",
     "model_id": "google/gemma-4-26B-A4B-it",
@@ -1510,93 +1598,5 @@
     "provider": "Eden AI, Helicone, Qiniu",
     "detected_at": "2026-10-21T16:39:02.030697+00:00",
     "details": "Input: $0.19999999999999998 -> $0.2; output: $0.5 -> $0.5"
-  },
-  {
-    "event_id": "dc452bb7b6e45cee",
-    "type": "price_change",
-    "model_id": "z-ai/glm-4.6",
-    "provider": "Helicone, Qiniu",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0.44999999999999996 -> $0.45; output: $1.5 -> $1.5"
-  },
-  {
-    "event_id": "f11e06d4e3c8b308",
-    "type": "price_change",
-    "model_id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
-    "provider": "IO.NET",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0.1 -> $0.11875; output: $0.8 -> $1.2625"
-  },
-  {
-    "event_id": "d142173aed41a888",
-    "type": "price_change",
-    "model_id": "moonshotai/Kimi-K2-Instruct-0905",
-    "provider": "Hugging Face, IO.NET, Jiekou.AI, NanoGPT, Novita AI, Vercel AI Gateway",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0.39 -> $0.4; output: $1.8 -> $1.8"
-  },
-  {
-    "event_id": "8a73354893041a4f",
-    "type": "price_change",
-    "model_id": "openai/whisper-large-v3-turbo",
-    "provider": "Groq, Kenari, evroc",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0 -> $0.0023; output: $0 -> $0.0023"
-  },
-  {
-    "event_id": "0620d6a76bdcf6af",
-    "type": "price_change",
-    "model_id": "mistral-medium-3.5-128b",
-    "provider": "Scaleway",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $1.5 -> $1.68225; output: $7.5 -> $8.41125"
-  },
-  {
-    "event_id": "69f3cf4b9b7d1a1f",
-    "type": "price_change",
-    "model_id": "openai/gpt-image-2",
-    "provider": "AIHubMix, Azure, Azure Cognitive Services, FastRouter, Kenari, OpenAI, Poe, Vercel AI Gateway",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0 -> $5; output: $0 -> $30"
-  },
-  {
-    "event_id": "38522fd2f98aaffb",
-    "type": "price_change",
-    "model_id": "google/gemini-3-pro-image",
-    "provider": "AIHubMix, Abacus, Eden AI, Google, Kenari, Kilo Gateway, OpenRouter, Poe, Requesty, Vercel AI Gateway, Vertex",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0 -> $2; output: $0 -> $12"
-  },
-  {
-    "event_id": "476bde007010d16e",
-    "type": "price_change",
-    "model_id": "google/gemini-3.1-flash-image",
-    "provider": "AIHubMix, Abacus, Eden AI, Google, Kenari, Kilo Gateway, OpenRouter, Requesty, Vercel AI Gateway, Vertex",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0 -> $0.5; output: $0 -> $2"
-  },
-  {
-    "event_id": "c0ccdbdc059f4584",
-    "type": "price_change",
-    "model_id": "claude-3.5-haiku",
-    "provider": "Helicone",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0.7999999999999999 -> $0.8; output: $4 -> $4"
-  },
-  {
-    "event_id": "1334854a6770a766",
-    "type": "price_change",
-    "model_id": "gpt-5-nano",
-    "provider": "DigitalOcean, Helicone",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0.049999999999999996 -> $0.05; output: $0.39999999999999997 -> $0.4"
-  },
-  {
-    "event_id": "03ad8a480582aecf",
-    "type": "price_change",
-    "model_id": "llama-3.1-8b-instant",
-    "provider": "Helicone",
-    "detected_at": "2026-10-21T16:39:02.030697+00:00",
-    "details": "Input: $0.049999999999999996 -> $0.05; output: $0.08 -> $0.08"
   }
 ]
