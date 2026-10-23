@@ -1,5 +1,38 @@
 [
   {
+    "event_id": "fd42322117cd3acb",
+    "type": "price_change",
+    "model_id": "reflection/beam-1.0-501b-a23b",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-23T09:38:36.829798+00:00",
+    "details": "Input: $0.25 -> $0.24; output: $1 -> $0.98",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease"
+  },
+  {
+    "event_id": "9441a08354189812",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-23T09:38:36.829798+00:00",
+    "details": "Input: $0.2247 -> $0.2565; output: $8 -> $8",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same"
+  },
+  {
+    "event_id": "0fa59ed98bd279b1",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "OpenRouter, The Grid AI",
+    "detected_at": "2026-10-23T09:38:36.829798+00:00",
+    "details": "Input: $0.2247 -> $0.2565; output: $8 -> $8",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same"
+  },
+  {
     "event_id": "7898ac2d30d976b8",
     "type": "price_change",
     "model_id": "google/gemma-4-26B-A4B-it",
@@ -1697,29 +1730,5 @@
     "provider": "Kilo Gateway",
     "detected_at": "2026-10-21T19:34:26.226888+00:00",
     "details": "Input: $0.051691 -> $0.0326; output: $0.12 -> $0.0718"
-  },
-  {
-    "event_id": "821b98d6d6ebf91b",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-21T18:41:33.467172+00:00",
-    "details": "Input: $0.238 -> $0.238; output: $24 -> $16"
-  },
-  {
-    "event_id": "4e89ef51bf14af32",
-    "type": "new_model",
-    "model_id": "lightonocr-3-0.8b",
-    "provider": "Scaleway",
-    "detected_at": "2026-10-21T18:41:33.467172+00:00",
-    "details": "$2.464 in / $0 out per 1M"
-  },
-  {
-    "event_id": "7898ac2d30d976b8",
-    "type": "price_change",
-    "model_id": "google/gemma-4-26B-A4B-it",
-    "provider": "CoreWeave, EmpirioLabs AI, Merge Gateway, NanoGPT",
-    "detected_at": "2026-10-21T18:07:47.036718+00:00",
-    "details": "Input: $0.05 -> $0.05; output: $0.255 -> $0.29"
   }
 ]
