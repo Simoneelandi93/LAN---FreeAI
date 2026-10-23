@@ -87,6 +87,7 @@ def detect_model_changes(
     events: List[Dict[str, Any]] = []
     became_free_alerts: List[str] = []
     new_free_alerts: List[str] = []
+    new_paid_alerts: List[str] = []
     price_drop_alerts: List[str] = []
     digest_lines: List[str] = []
     now = datetime.now(timezone.utc).isoformat()
@@ -98,6 +99,8 @@ def detect_model_changes(
         name = html.escape(representative.get("name") or representative.get("model_id", key))
 
         if old_group is None:
+            is_openrouter = _openrouter_entry(group) is not None
+            alerted_new = free_now or is_openrouter
             events.append({
                 "event_id": generate_event_id("new_model", key, now),
                 "type": "new_free_model" if free_now else "new_model",
@@ -105,7 +108,7 @@ def detect_model_changes(
                 "provider": ", ".join(sorted({m.get("provider") or "Unknown" for m in group})),
                 "detected_at": now,
                 "details": _price_line(group),
-                "alerted": free_now,
+                "alerted": alerted_new,
             })
 
             if free_now:
@@ -115,6 +118,19 @@ def detect_model_changes(
                     f"<b>Available at:</b> {_provider_text(group)}\n"
                     f"<b>Context:</b> {_max_context(group):,} tokens\n"
                     f"<a href='{_link(group)}'>View in provider catalog</a>"
+                )
+            elif is_openrouter:
+                or_entry = _openrouter_entry(group)
+                or_in = or_entry.get("input_price_per_m")
+                or_out = or_entry.get("output_price_per_m")
+                pricing = f"${or_in if or_in is not None else '?'} in / ${or_out if or_out is not None else '?'} out per 1M"
+                new_paid_alerts.append(
+                    f"🆕 <b>New model (OpenRouter)</b>\n"
+                    f"<b>Model:</b> {name}\n"
+                    f"<b>Available at:</b> {_provider_text(group)}\n"
+                    f"<b>Context:</b> {_max_context(group):,} tokens\n"
+                    f"<b>Pricing:</b> {pricing}\n"
+                    f"<a href='{html.escape(or_entry.get('provider_url') or _link(group), quote=True)}'>View on OpenRouter</a>"
                 )
             else:
                 digest_lines.append(f"• {name} — {_provider_text(group, 2)} ({_price_line(group)})")
@@ -206,6 +222,7 @@ def detect_model_changes(
     alerts: List[str] = []
     alerts.extend(became_free_alerts)
     alerts.extend(new_free_alerts)
+    alerts.extend(new_paid_alerts)
     alerts.extend(price_drop_alerts)
 
     if digest_lines:

@@ -55,12 +55,15 @@ One run sends messages in this order:
 
 1. 🚨 **Price dropped to $0** — a model that was previously paid is now free (any provider).
 2. 🎁 **New 100% free model** — a free model appeared for the first time (any provider).
-3. 📈📉 **OpenRouter price change** — OpenRouter's input or output price moved ≥20%, up or down.
-4. 📊 **Digest** — up to 10 other new models in a single message.
+3. 🆕 **New model (OpenRouter)** — a paid model debuted on OpenRouter.
+4. 📈📉 **OpenRouter price change** — OpenRouter's input or output price moved ≥20%, up or down.
+5. 📊 **Digest** — up to 10 other new models in a single message.
 
-Free-model alerts ($0 transitions + new free models) are uncapped; price-change alerts are also uncapped. Rate limits (HTTP 429) are retried twice, honouring Telegram's `retry_after`.
+Free-model alerts ($0 transitions + new free models), new OpenRouter models, and price-change alerts are all uncapped. Rate limits (HTTP 429) are retried twice, honouring Telegram's `retry_after`.
 
 Alerts fire only when something *changes* — a run where nothing moved sends nothing.
+
+The dashboard logs every event regardless of whether it alerted; each changelog row shows a **📢 Telegram** / **dashboard only** badge, with **Telegram only** and **Dashboard only** filters to compare the two.
 
 ---
 
