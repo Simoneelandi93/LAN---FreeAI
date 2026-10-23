@@ -51,16 +51,14 @@ Your dashboard is then live at `https://<your-username>.github.io/<your-repo>/`.
 
 ## 🔔 Alert Behaviour
 
-One run sends **at most 10 messages**, in this order:
+One run sends messages in this order:
 
-1. 🚨 **Price dropped to $0** — a model that was previously paid is now free.
-2. 🎁 **New 100% free model** — a free model appeared for the first time.
-3. 📉 **Price drop** — at least 20% cheaper than the previous snapshot.
+1. 🚨 **Price dropped to $0** — a model that was previously paid is now free (any provider).
+2. 🎁 **New 100% free model** — a free model appeared for the first time (any provider).
+3. 📈📉 **OpenRouter price change** — OpenRouter's input or output price moved ≥20%, up or down.
 4. 📊 **Digest** — up to 10 other new models in a single message.
 
-Free-model alerts are capped at 5 per run; anything beyond that is summarised as
-`+N more free model(s)` so a big catalog refresh can't spam you. Rate limits
-(HTTP 429) are retried twice, honouring Telegram's `retry_after`.
+Free-model alerts ($0 transitions + new free models) are uncapped; price-change alerts are also uncapped. Rate limits (HTTP 429) are retried twice, honouring Telegram's `retry_after`.
 
 Alerts fire only when something *changes* — a run where nothing moved sends nothing.
 

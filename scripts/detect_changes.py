@@ -4,9 +4,7 @@ import re
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Tuple
 
-# Hard cap on how many free-model alerts one run may send (protects Telegram rate limits)
-MAX_FREE_ALERTS = 5
-# Only alert on price drops of at least this fraction (0.2 = 20%) to keep the feed useful
+# Only alert on price moves of at least this fraction (0.2 = 20%) to keep the feed useful
 PRICE_DROP_ALERT_THRESHOLD = 0.2
 
 
@@ -33,6 +31,10 @@ def _group_by_key(models: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]
 def _min_price(group: List[Dict[str, Any]], field: str) -> Optional[float]:
     values = [m.get(field) for m in group if isinstance(m.get(field), (int, float))]
     return min(values) if values else None
+
+
+def _openrouter_entry(group: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+    return next((m for m in group if m.get("provider_id") == "openrouter"), None)
 
 
 def _max_context(group: List[Dict[str, Any]]) -> int:
@@ -72,8 +74,9 @@ def detect_model_changes(
     """
     Diffs the previous snapshot against the current one. Returns:
       1. Event records for history.json
-      2. Alert messages for Telegram — prioritised, batched and capped:
-         free transitions first, one digest for other new models, never a flood.
+      2. Alert messages for Telegram — prioritised and batched, never a flood:
+         free transitions first, OpenRouter price changes, one digest for the rest.
+         The digest itself is capped at 10 lines; everything else is sent.
     """
     old_groups = _group_by_key(old_models)
     new_groups = _group_by_key(new_models)
@@ -140,7 +143,8 @@ def detect_model_changes(
             )
             continue
 
-        # Ordinary price drops (both directions recorded, only decreases alerted)
+        # Cross-provider price change: recorded for history/dashboard, never alerted.
+        # Telegram only gets OpenRouter's own changes, further below.
         old_in = _min_price(old_group, "input_price_per_m")
         new_in = _min_price(group, "input_price_per_m")
         old_out = _min_price(old_group, "output_price_per_m")
@@ -150,7 +154,6 @@ def detect_model_changes(
         if new_in == old_in and new_out == old_out:
             continue
 
-        drop_pct = (old_in - new_in) / old_in if old_in else 0
         in_direction = "increase" if new_in > old_in else "decrease" if new_in < old_in else "same"
         out_direction = "increase" if new_out > old_out else "decrease" if new_out < old_out else "same"
         direction = "increase" if new_in > old_in or new_out > old_out else "decrease" if new_in < old_in or new_out < old_out else "same"
@@ -165,39 +168,48 @@ def detect_model_changes(
             "in_direction": in_direction,
             "out_direction": out_direction,
         })
-        if new_in < old_in and drop_pct >= PRICE_DROP_ALERT_THRESHOLD:
-            price_drop_alerts.append(
-                f"📉 <b>Price drop</b>\n"
-                f"<b>Model:</b> {name}\n"
-                f"<b>Available at:</b> {_provider_text(group, 2)}\n"
-                f"<b>Input:</b> ${old_in}/1M → <b>${new_in}/1M</b>\n"
-                f"<a href='{_link(group)}'>View in provider catalog</a>"
-            )
+        # OpenRouter price-change alerts — both increases and decreases, >=20% only.
+        # Uses OpenRouter's own row rather than the cross-provider minimum so the
+        # quoted prices are actually OpenRouter's.
+        old_or = _openrouter_entry(old_group)
+        new_or = _openrouter_entry(group)
+        if old_or and new_or:
+            or_old_in = old_or.get("input_price_per_m")
+            or_new_in = new_or.get("input_price_per_m")
+            or_old_out = old_or.get("output_price_per_m")
+            or_new_out = new_or.get("output_price_per_m")
+            if isinstance(or_old_in, (int, float)) and isinstance(or_new_in, (int, float)) \
+                    and (or_old_in, or_old_out) != (or_new_in, or_new_out):
+                in_pct = (or_new_in - or_old_in) / or_old_in if or_old_in else 0
+                out_pct = (or_new_out - or_old_out) / or_old_out if or_old_out else 0
+                # 1e-12 tolerance: (1.2-1.0)/1.0 is 0.19999999999999996 in binary float
+                if abs(in_pct) >= PRICE_DROP_ALERT_THRESHOLD - 1e-12 \
+                        or abs(out_pct) >= PRICE_DROP_ALERT_THRESHOLD - 1e-12:
+                    rising = or_new_in > or_old_in or or_new_out > or_old_out
+                    price_drop_alerts.append(
+                        f"{'📈' if rising else '📉'} <b>{'Price increase' if rising else 'Price drop'} (OpenRouter)</b>\n"
+                        f"<b>Model:</b> {name}\n"
+                        f"<b>Input:</b> ${or_old_in}/1M → <b>${or_new_in}/1M</b>\n"
+                        f"<b>Output:</b> ${or_old_out}/1M → <b>${or_new_out}/1M</b>\n"
+                        f"<a href='{html.escape(new_or.get('provider_url') or _link(group), quote=True)}'>View on OpenRouter</a>"
+                    )
 
     if legacy_snapshot:
         # Schema migration: record history, stay silent on Telegram
         return events, []
 
     alerts: List[str] = []
-    priority = became_free_alerts + new_free_alerts
-    suppressed = 0
-    if len(priority) > MAX_FREE_ALERTS:
-        suppressed = len(priority) - MAX_FREE_ALERTS
-        priority = priority[:MAX_FREE_ALERTS]
-    alerts.extend(priority)
-    alerts.extend(price_drop_alerts[:MAX_FREE_ALERTS])
+    alerts.extend(became_free_alerts)
+    alerts.extend(new_free_alerts)
+    alerts.extend(price_drop_alerts)
 
     if digest_lines:
         shown = digest_lines[:10]
         extra = len(digest_lines) - len(shown)
         footer = f"\n…and {extra} more" if extra > 0 else ""
-        if suppressed:
-            footer += f"\n+{suppressed} more free model(s) — see the dashboard"
         alerts.append(
             f"📊 <b>{len(digest_lines)} new model(s) this cycle</b>\n"
             + "\n".join(shown) + footer
         )
-    elif suppressed:
-        alerts.append(f"🎁 {suppressed} more free model(s) went live — see the dashboard.")
 
     return events, alerts
