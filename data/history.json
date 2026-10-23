@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "8c6592931e42666b",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-23T12:45:18.524475+00:00",
+    "details": "Input: $0.07 -> $0.066; output: $0.5 -> $0.6",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "4cefaf6ef50451a7",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Fireworks AI, OpenRouter",
+    "detected_at": "2026-10-23T12:45:18.524475+00:00",
+    "details": "Input: $0.07 -> $0.066; output: $0.5 -> $0.6",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
     "event_id": "52c6365822e02cee",
     "type": "price_change",
     "model_id": "tencent/hy4-preview",
@@ -1719,21 +1743,5 @@
     "provider": "Kilo Gateway",
     "detected_at": "2026-10-21T20:38:08.732979+00:00",
     "details": "$0 in / $0 out per 1M"
-  },
-  {
-    "event_id": "9e2eda594a0162ac",
-    "type": "new_model",
-    "model_id": "cohere/rerank-v5-pro",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T20:38:08.732979+00:00",
-    "details": "Pricing unavailable"
-  },
-  {
-    "event_id": "0a1a8b5501fc0296",
-    "type": "new_model",
-    "model_id": "cohere/rerank-v5-fast",
-    "provider": "Vercel AI Gateway",
-    "detected_at": "2026-10-21T20:38:08.732979+00:00",
-    "details": "Pricing unavailable"
   }
 ]
