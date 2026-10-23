@@ -629,15 +629,25 @@ a:hover {
   overflow: hidden;
 }
 
-.chg-day h3 {
+.chg-day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
   margin: 0;
   padding: 10px 14px;
   background: var(--bg-subtle);
   font-size: 12px;
   font-weight: 600;
+  color: var(--text);
   border-bottom: 1px solid var(--border);
-  display: flex;
-  justify-content: space-between;
+}
+
+.badge-counter {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-dim);
 }
 
 .chg-row {
