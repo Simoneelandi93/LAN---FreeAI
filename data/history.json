@@ -1,5 +1,16 @@
 [
   {
+    "event_id": "90426d9c43d6343e",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-23T03:41:15.344541+00:00",
+    "details": "Input: $0.239 -> $0.238; output: $5.5 -> $5.5",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same"
+  },
+  {
     "event_id": "f9d184518763d641",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -1695,13 +1706,5 @@
     "provider": "NanoGPT",
     "detected_at": "2026-10-21T18:07:47.036718+00:00",
     "details": "$0.1 in / $0.45 out per 1M"
-  },
-  {
-    "event_id": "f0603a0f09a6f92f",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-v4-flash-0731:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-21T18:07:47.036718+00:00",
-    "details": "Input: $0.05 -> $0.04444; output: $0.16 -> $0.13332"
   }
 ]
