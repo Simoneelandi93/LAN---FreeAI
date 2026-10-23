@@ -1,5 +1,26 @@
 [
   {
+    "event_id": "52c6365822e02cee",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-10-23T10:36:31.542012+00:00",
+    "details": "Input: $0.7923 -> $0.834; output: $2.37595 -> $2.501",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "42c80f4b639b9dab",
+    "type": "new_model",
+    "model_id": "prism-ml/ternary-bonsai-2-9b",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-23T10:36:31.542012+00:00",
+    "details": "$0.08 in / $0.13 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "fd42322117cd3acb",
     "type": "price_change",
     "model_id": "reflection/beam-1.0-501b-a23b",
@@ -1714,21 +1735,5 @@
     "provider": "Vercel AI Gateway",
     "detected_at": "2026-10-21T20:38:08.732979+00:00",
     "details": "Pricing unavailable"
-  },
-  {
-    "event_id": "d2d57ff016fadf91",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "OpenRouter, Privatemode AI",
-    "detected_at": "2026-10-21T19:34:26.226888+00:00",
-    "details": "Input: $0.051691 -> $0.02282; output: $0.12 -> $0.05385"
-  },
-  {
-    "event_id": "4aa3476873fda61a",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-21T19:34:26.226888+00:00",
-    "details": "Input: $0.051691 -> $0.0326; output: $0.12 -> $0.0718"
   }
 ]
