@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "9f4f616148ada67c",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-23T22:35:04.641843+00:00",
+    "details": "Input: $0.0285 -> $0.0244; output: $0.0923 -> $0.0987",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "aba05e7a0d3655da",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -1986,13 +1998,5 @@
     "provider": "AI/ML API",
     "detected_at": "2026-10-22T12:47:35.561552+00:00",
     "details": "Input: $0.55016 -> $0.4232; output: $2.7508 -> $2.116"
-  },
-  {
-    "event_id": "ccf239dd5abc244d",
-    "type": "price_change",
-    "model_id": "morph/morph-v3-fast",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $1.10032 -> $0.8464; output: $1.65048 -> $1.2696"
   }
 ]
