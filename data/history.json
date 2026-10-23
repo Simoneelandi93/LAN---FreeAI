@@ -1,5 +1,35 @@
 [
   {
+    "event_id": "d351708331e19eb7",
+    "type": "new_model",
+    "model_id": "moonshot/kimi-k3.1-pro-highspeed",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-23T19:35:00.665713+00:00",
+    "details": "$4 in / $20 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "a23e6c5301aa3e53",
+    "type": "new_model",
+    "model_id": "moonshot/kimi-k3.1-pro",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-23T19:35:00.665713+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "618071f5e4ac8bbe",
+    "type": "price_change",
+    "model_id": "z-ai/glm-5.2:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-23T19:35:00.665713+00:00",
+    "details": "Input: $0.42 -> $0.189; output: $1.32 -> $0.594",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "61f6d143989113f8",
     "type": "model_became_free",
     "model_id": "moonshotai/kimi-k3.1-pro",
@@ -1948,29 +1978,5 @@
     "provider": "AI/ML API",
     "detected_at": "2026-10-22T12:47:35.561552+00:00",
     "details": "Input: $0.89401 -> $0.6877; output: $1.03155 -> $0.7935"
-  },
-  {
-    "event_id": "a0532e8888b9fc1e",
-    "type": "price_change",
-    "model_id": "relace/relace-search",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $1.3754 -> $1.058; output: $4.1262 -> $3.174"
-  },
-  {
-    "event_id": "b2484eac60e982dc",
-    "type": "price_change",
-    "model_id": "relace/relace-apply-3",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $1.16909 -> $0.8993; output: $1.71925 -> $1.3225"
-  },
-  {
-    "event_id": "5de56a5b2d970570",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-pro-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-22T11:37:22.177830+00:00",
-    "details": "Input: $0.2235 -> $0.2503; output: $8 -> $8"
   }
 ]
