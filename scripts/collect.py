@@ -26,6 +26,23 @@ def save_json(filepath: str, data: Any):
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
+def _build_offer_map(offers: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
+    """Maps every offer's included model IDs to its quota block."""
+    omap = {}
+    for o in offers:
+        for mid in o.get("models_included", []):
+            omap[mid] = {k: v for k, v in o.items() if k != "models_included"}
+    return omap
+
+def _merge_quota(model: Dict[str, Any], offer_map: Dict[str, Dict[str, Any]]) -> None:
+    """Link a provider free tier record onto each matching model row."""
+    mid = model.get("model_id", "") or ""
+    pid = model.get("provider_id", "") or ""
+    key = mid if mid else f"{pid}/{model.get('name', '')}"
+    offer = offer_map.get(key)
+    if offer is not None:
+        model["offer"] = offer
+
 def main():
     print(f"[{datetime.now(timezone.utc).isoformat()}] Starting AI Catalog Sync...")
 
@@ -55,6 +72,13 @@ def main():
         attach_llm_stats(new_models, llm_stats)
         # Store the score table once; models.json only carries a short pointer id.
         save_json(STATS_FILE, stats_index(llm_stats))
+
+    # 1c. Merge curated free-tier quotas into each free model row so the
+    #     dashboard can show how many requests / tokens per minute the user
+    #     has left on that model.  Built from the committed offers block.
+    offer_map = _build_offer_map(curated_offers)
+    for m in new_models:
+        _merge_quota(m, offer_map)
 
     # 2. Diff and detect changes (free transitions first, batched, capped)
     events, alerts = detect_model_changes(old_models, new_models)

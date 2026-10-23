@@ -176,6 +176,22 @@ function ctxFmt(v) {
   return n >= 1000 ? `${(n / 1000).toLocaleString(undefined, { maximumFractionDigits: 1 })}k` : n.toLocaleString();
 }
 
+function quotaFmt(offer) {
+  if (!offer) return '<span class="cell-na">—</span>';
+  const parts = [];
+  const day = Number(offer.quota_requests_day);
+  const tpm = Number(offer.quota_tokens_minute);
+  const rolling = offer.rolling_window;
+  if (Number.isFinite(day) && day > 0) parts.push(`${day.toLocaleString()} req/d`);
+  if (Number.isFinite(tpm) && tpm > 0) parts.push(`${tpm.toLocaleString()} tok/min`);
+  if (rolling && Number.isFinite(Number(rolling.requests))) {
+    parts.length = 0;
+    parts.push(`${rolling.requests} req / ${rolling.window_hours}h`);
+  }
+  if (!parts.length) return '<span class="cell-na">—</span>';
+  return `<span class="quota-badge">${esc(parts.join(' · '))}</span>`;
+}
+
 function fmtScore(val) {
   const n = Number(val);
   if (!Number.isFinite(n)) return '<span class="cell-na">—</span>';
@@ -377,6 +393,7 @@ function renderModels(filtered) {
       <td class="text-right font-mono">${ctx}</td>
       <td class="text-right font-mono speed-cell">${speed}</td>
       <td class="text-right font-mono">${inpFmt}</td>
+      <td class="text-center">${quotaFmt(m.offer)}</td>
       <td class="text-center">${licenseTag}</td>
     </tr>`;
   }).join("");
@@ -457,7 +474,7 @@ async function modalCopy(id) {
   });
 
   if (!list.length) {
-    body.innerHTML = `<tr><td colspan="10"><div class="empty"><h3>No models found</h3><p>Try refining your search query or reset filters.</p></div></td></tr>`;
+    body.innerHTML = `<tr><td colspan="11"><div class="empty"><h3>No models found</h3><p>Try refining your search query or reset filters.</p></div></td></tr>`;
   }
   document.getElementById("loadMore").hidden = filtered.length <= visibleCount;
 }

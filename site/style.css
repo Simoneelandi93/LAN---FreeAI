@@ -495,6 +495,18 @@ a:hover {
   border: 1px solid var(--border);
 }
 
+.quota-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: var(--radius-xs);
+  font-size: 10px;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  background: var(--bg-subtle);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+}
+
 .price-cell, .context-cell, .score-cell {
   font-family: var(--font-mono);
   font-size: 12.5px;
@@ -915,6 +927,7 @@ a:hover {
 .col-benchmark { width: 84px; }
 .col-speed { width: 78px; }
 .col-license { width: 96px; }
+.col-quota { width: 150px; }
 
 /* Hide benchmark cluster when no stats data */
 body.no-stats .col-score,
