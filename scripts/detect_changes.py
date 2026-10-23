@@ -151,6 +151,9 @@ def detect_model_changes(
             continue
 
         drop_pct = (old_in - new_in) / old_in if old_in else 0
+        in_direction = "increase" if new_in > old_in else "decrease" if new_in < old_in else "same"
+        out_direction = "increase" if new_out > old_out else "decrease" if new_out < old_out else "same"
+        direction = "increase" if new_in > old_in or new_out > old_out else "decrease" if new_in < old_in or new_out < old_out else "same"
         events.append({
             "event_id": generate_event_id("price_change", key, f"{old_in}/{old_out}->{new_in}/{new_out}"),
             "type": "price_change",
@@ -158,6 +161,9 @@ def detect_model_changes(
             "provider": ", ".join(sorted({m.get("provider") or "Unknown" for m in group})),
             "detected_at": now,
             "details": f"Input: ${old_in} -> ${new_in}; output: ${old_out} -> ${new_out}",
+            "direction": direction,
+            "in_direction": in_direction,
+            "out_direction": out_direction,
         })
         if new_in < old_in and drop_pct >= PRICE_DROP_ALERT_THRESHOLD:
             price_drop_alerts.append(

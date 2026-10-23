@@ -535,17 +535,27 @@ function renderChanges(query) {
     const rows = day.events.map(ev => {
       const t = new Date(ev.detected_at);
       const time = isNaN(t.getTime()) ? "—" : t.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" });
-      const tagCls = ev.type === "new_model" ? "new" : (ev.type === "price_change" ? "drop" : "free");
-      const lbl = typeLabels[ev.type] || "Update";
-      const providerLabel = ev.provider && !isInvalidText(ev.provider) ? `<span class="chg-providers">${esc(ev.provider)}</span>` : "";
-      const pricingMatch = ev.type === "price_change" && typeof ev.details === "string"
+      const isPrice = ev.type === "price_change";
+      const pricingMatch = isPrice && typeof ev.details === "string"
         ? [...ev.details.matchAll(/(Input|output):\s*\$([\d.]+)\s*->\s*\$([\d.]+)/gi)]
         : [];
+      const direction = ev.direction
+        || (pricingMatch.length
+          ? (pricingMatch.some(([, , o, n]) => Number(n) > Number(o)) ? "increase"
+            : pricingMatch.some(([, , o, n]) => Number(n) < Number(o)) ? "decrease" : "same")
+          : "same");
+      const lbl = isPrice
+        ? (direction === "increase" ? "Price Increase" : direction === "decrease" ? "Price Drop" : "Price Change")
+        : (typeLabels[ev.type] || "Update");
+      const tagCls = ev.type === "new_model" ? "new"
+        : isPrice ? (direction === "increase" ? "rise" : "drop")
+        : "free";
+      const providerLabel = ev.provider && !isInvalidText(ev.provider) ? `<span class="chg-providers">${esc(ev.provider)}</span>` : "";
       const pricing = pricingMatch.length ? `<div class="chg-pricing">${pricingMatch.map(([, kind, oldValue, newValue]) => {
         const oldPrice = Number(oldValue);
         const newPrice = Number(newValue);
-        const direction = newPrice < oldPrice ? "lower" : newPrice > oldPrice ? "higher" : "same";
-        return `<div class="chg-price-line"><span class="chg-price-kind">${esc(kind)}</span><span class="chg-price-old">$${oldPrice.toLocaleString(undefined, { maximumFractionDigits: 6 })}</span><span class="chg-price-arrow" aria-hidden="true">→</span><strong class="chg-price-new ${direction}">$${newPrice.toLocaleString(undefined, { maximumFractionDigits: 6 })}</strong><span class="chg-price-unit">per 1M tokens</span></div>`;
+        const priceDirection = newPrice < oldPrice ? "lower" : newPrice > oldPrice ? "higher" : "same";
+        return `<div class="chg-price-line"><span class="chg-price-kind">${esc(kind)}</span><span class="chg-price-old">$${oldPrice.toLocaleString(undefined, { maximumFractionDigits: 6 })}</span><span class="chg-price-arrow" aria-hidden="true">→</span><strong class="chg-price-new ${priceDirection}">$${newPrice.toLocaleString(undefined, { maximumFractionDigits: 6 })}</strong><span class="chg-price-unit">per 1M tokens</span></div>`;
       }).join("")}</div>` : "";
       return `<article class="chg-row">
         <div class="chg-row-meta"><span class="chg-time">${esc(time)}</span><span class="chg-tag ${tagCls}">${esc(lbl)}</span></div>
