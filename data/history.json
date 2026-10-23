@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "a816e2922bf03bc0",
+    "type": "price_change",
+    "model_id": "gemma-4-26b-a4b",
+    "provider": "CoreWeave, EmpirioLabs AI, Merge Gateway, NanoGPT",
+    "detected_at": "2026-10-23T20:37:42.607468+00:00",
+    "details": "Input: $0.05 -> $0.05; output: $0.29 -> $0.225",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "03a4338d38c8e374",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-23T20:37:42.607468+00:00",
+    "details": "Input: $0.09 -> $0.0675; output: $0.3 -> $0.225",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "d351708331e19eb7",
     "type": "new_model",
     "model_id": "moonshot/kimi-k3.1-pro-highspeed",
@@ -1962,21 +1986,5 @@
     "provider": "AI/ML API, Merge Gateway, Neon",
     "detected_at": "2026-10-22T12:47:35.561552+00:00",
     "details": "Input: $0.06877 -> $0.0529; output: $0.20631 -> $0.1587"
-  },
-  {
-    "event_id": "c3a057678c42dddc",
-    "type": "price_change",
-    "model_id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $1.352 -> $1.04; output: $1.352 -> $1.04"
-  },
-  {
-    "event_id": "a61dd170aec4ea2f",
-    "type": "price_change",
-    "model_id": "sao10k/l3.3-euryale-70b",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.89401 -> $0.6877; output: $1.03155 -> $0.7935"
   }
 ]
