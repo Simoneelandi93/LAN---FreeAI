@@ -1,5 +1,38 @@
 [
   {
+    "event_id": "687c39984c5fd946",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-10-23T17:36:21.789919+00:00",
+    "details": "Input: $0.834 -> $0.7506; output: $2.501 -> $2.2509",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "9ab72ebfcb696a98",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-23T17:36:21.789919+00:00",
+    "details": "Input: $0.019 -> $0.07; output: $0.6 -> $0.5",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "f905b475e56d0c0e",
+    "type": "new_model",
+    "model_id": "deepseek-v4-1-flash-uncensored",
+    "provider": "Venice AI",
+    "detected_at": "2026-10-23T17:36:21.789919+00:00",
+    "details": "$0.33 in / $1.32 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "f22a9ec9501d6608",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-flash-latest",
@@ -1917,29 +1950,5 @@
     "provider": "CoreWeave, EmpirioLabs AI, Merge Gateway, NanoGPT",
     "detected_at": "2026-10-22T07:41:40.220643+00:00",
     "details": "Input: $0.05 -> $0.05; output: $0.255 -> $0.29"
-  },
-  {
-    "event_id": "32e61333ab0b55b1",
-    "type": "price_change",
-    "model_id": "google/gemma-4-26b-a4b-it:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-22T07:41:40.220643+00:00",
-    "details": "Input: $0.0765 -> $0.09; output: $0.255 -> $0.3"
-  },
-  {
-    "event_id": "1c41b48eaad76db5",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "OpenRouter, Privatemode AI",
-    "detected_at": "2026-10-22T07:41:40.220643+00:00",
-    "details": "Input: $0.0097 -> $0.0083; output: $0.1707 -> $0.1825"
-  },
-  {
-    "event_id": "298a93adc566a237",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-22T07:41:40.220643+00:00",
-    "details": "Input: $0.0097 -> $0.0083; output: $0.1707 -> $0.1825"
   }
 ]
