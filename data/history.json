@@ -1,5 +1,27 @@
 [
   {
+    "event_id": "22d828c3b652bfa2",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "OpenRouter, The Grid AI",
+    "detected_at": "2026-10-23T04:40:29.525377+00:00",
+    "details": "Input: $0.225 -> $0.2247; output: $8 -> $8",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same"
+  },
+  {
+    "event_id": "318f75e359f9875a",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-23T04:40:29.525377+00:00",
+    "details": "Input: $0.225 -> $0.2247; output: $8 -> $8",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same"
+  },
+  {
     "event_id": "90426d9c43d6343e",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -1690,21 +1712,5 @@
     "provider": "NanoGPT, Vercel AI Gateway",
     "detected_at": "2026-10-21T18:07:47.036718+00:00",
     "details": "Input: $0.834 -> $0.7506; output: $2.501 -> $2.2509"
-  },
-  {
-    "event_id": "d56b9a575902170e",
-    "type": "new_model",
-    "model_id": "nbeerbower/gemma4-gutenberg-31b",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-21T18:07:47.036718+00:00",
-    "details": "$0.1 in / $0.45 out per 1M"
-  },
-  {
-    "event_id": "885e244bacf03016",
-    "type": "new_model",
-    "model_id": "ateron/gemma-4-dark-thoughts-v2-31b",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-21T18:07:47.036718+00:00",
-    "details": "$0.1 in / $0.45 out per 1M"
   }
 ]
