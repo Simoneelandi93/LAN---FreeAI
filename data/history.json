@@ -1,5 +1,35 @@
 [
   {
+    "event_id": "7898ac2d30d976b8",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26B-A4B-it",
+    "provider": "CoreWeave, EmpirioLabs AI, Merge Gateway, NanoGPT",
+    "detected_at": "2026-10-23T07:41:24.940950+00:00",
+    "details": "Input: $0.05 -> $0.05; output: $0.255 -> $0.29",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase"
+  },
+  {
+    "event_id": "32e61333ab0b55b1",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-23T07:41:24.940950+00:00",
+    "details": "Input: $0.0765 -> $0.09; output: $0.255 -> $0.3",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase"
+  },
+  {
+    "event_id": "034a37f65838f2f6",
+    "type": "new_model",
+    "model_id": "abliteration-ai/abliterated-model-large-flash",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-23T07:41:24.940950+00:00",
+    "details": "$1 in / $2 out per 1M"
+  },
+  {
     "event_id": "77a44b645d2a4358",
     "type": "new_model",
     "model_id": "nebius/deepseek-ai/DeepSeek-V4.1-Flash-1017",
@@ -1691,29 +1721,5 @@
     "provider": "CoreWeave, EmpirioLabs AI, Merge Gateway, NanoGPT",
     "detected_at": "2026-10-21T18:07:47.036718+00:00",
     "details": "Input: $0.05 -> $0.05; output: $0.255 -> $0.29"
-  },
-  {
-    "event_id": "35de766c7a50b292",
-    "type": "new_model",
-    "model_id": "nimbz/gemma-4-giftige-blume-31b-v2",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-21T18:07:47.036718+00:00",
-    "details": "$0.1 in / $0.45 out per 1M"
-  },
-  {
-    "event_id": "75a1343f294cafd4",
-    "type": "new_model",
-    "model_id": "nimbz/schattenblume-31b",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-21T18:07:47.036718+00:00",
-    "details": "$0.1 in / $0.45 out per 1M"
-  },
-  {
-    "event_id": "ac53de9bc0c6da14",
-    "type": "new_model",
-    "model_id": "TheDrummer/skyfall-31b-v4.2",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-21T18:07:47.036718+00:00",
-    "details": "$0.12 in / $0.15 out per 1M"
   }
 ]
