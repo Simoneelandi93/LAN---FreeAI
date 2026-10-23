@@ -1,5 +1,24 @@
 [
   {
+    "event_id": "77a44b645d2a4358",
+    "type": "new_model",
+    "model_id": "nebius/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-23T05:38:19.729572+00:00",
+    "details": "$0.3 in / $1.2 out per 1M"
+  },
+  {
+    "event_id": "0324a1007575dd59",
+    "type": "price_change",
+    "model_id": "minimax/minimax-m3.1-flash",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-23T05:38:19.729572+00:00",
+    "details": "Input: $0.1 -> $0.1; output: $0.5 -> $0.55",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase"
+  },
+  {
     "event_id": "22d828c3b652bfa2",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-pro-latest",
@@ -1696,21 +1715,5 @@
     "provider": "NanoGPT",
     "detected_at": "2026-10-21T18:07:47.036718+00:00",
     "details": "$0.12 in / $0.15 out per 1M"
-  },
-  {
-    "event_id": "15ee9af5b04a5210",
-    "type": "new_model",
-    "model_id": "ornith-ai/ornith-1.5-122b",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-21T18:07:47.036718+00:00",
-    "details": "$0.2 in / $0.8 out per 1M"
-  },
-  {
-    "event_id": "687c39984c5fd946",
-    "type": "price_change",
-    "model_id": "tencent/hy4-preview",
-    "provider": "NanoGPT, Vercel AI Gateway",
-    "detected_at": "2026-10-21T18:07:47.036718+00:00",
-    "details": "Input: $0.834 -> $0.7506; output: $2.501 -> $2.2509"
   }
 ]
