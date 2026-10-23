@@ -1,7 +1,8 @@
 import json
 import os
 from datetime import datetime, timezone
-from typing import Any
+from typing import Any, Dict, List
+from sources.free_tiers_upstream import fetch_upstream_free_tiers, PROVIDER_ALIASES
 from sources.models_dev import fetch_models_dev_catalog
 from sources.llm_stats import fetch_llm_stats, attach_llm_stats, stats_index
 from scripts.detect_changes import detect_model_changes
@@ -26,22 +27,57 @@ def save_json(filepath: str, data: Any):
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
+import re
+
+
+def _norm_id(value: str) -> str:
+    """Strips provider prefixes and punctuation so ids from either source compare equal."""
+    v = str(value or "").lower()
+    if "/" in v:
+        v = v.rsplit("/", 1)[-1]
+    return re.sub(r"[^a-z0-9]", "", v)
+
+
 def _build_offer_map(offers: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
-    """Maps every offer's included model IDs to its quota block."""
+    """
+    Maps every offer's included model IDs to its quota block.
+
+    Keys are (normalized offer id, normalized model id). The offer id is also
+    expanded through PROVIDER_ALIASES so a catalog provider like 'groq' matches
+    upstream's 'groq-cloud'. Model ids normalize away prefixes and punctuation
+    so 'qwen/qwen3.8-27b' and 'qwen3-8-27b' collapse together.
+    """
     omap = {}
     for o in offers:
+        block = {k: v for k, v in o.items() if k != "models_included"}
+        oid = _norm_id(o.get("id", ""))
+        # Register under the upstream id plus every alias that points at it
+        provider_keys = {oid}
+        for our_pid, upstream_pid in PROVIDER_ALIASES.items():
+            if upstream_pid == o.get("id"):
+                provider_keys.add(_norm_id(our_pid))
         for mid in o.get("models_included", []):
-            omap[mid] = {k: v for k, v in o.items() if k != "models_included"}
+            nmid = _norm_id(mid)
+            for pk in provider_keys:
+                omap[(pk, nmid)] = block
     return omap
+
 
 def _merge_quota(model: Dict[str, Any], offer_map: Dict[str, Dict[str, Any]]) -> None:
     """Link a provider free tier record onto each matching model row."""
-    mid = model.get("model_id", "") or ""
-    pid = model.get("provider_id", "") or ""
-    key = mid if mid else f"{pid}/{model.get('name', '')}"
-    offer = offer_map.get(key)
-    if offer is not None:
-        model["offer"] = offer
+    mid = _norm_id(model.get("model_id", "") or model.get("name", ""))
+    pid = _norm_id(model.get("provider_id", ""))
+    offer = offer_map.get((pid, mid))
+    if offer is None:
+        return
+    # Per-model rate limits win over the provider's universal quota.
+    for pm in offer.get("per_model_rate_limits") or []:
+        if _norm_id(pm.get("model_id", "")) == mid:
+            merged = dict(offer)
+            merged.update({k: v for k, v in pm.items() if k != "model_id"})
+            model["offer"] = merged
+            return
+    model["offer"] = offer
 
 def main():
     print(f"[{datetime.now(timezone.utc).isoformat()}] Starting AI Catalog Sync...")
@@ -60,7 +96,17 @@ def main():
 
     # 1. Fetch the complete provider and model catalog
     new_models = fetch_models_dev_catalog()
-    curated_offers = load_json(OFFERS_FILE, [])
+
+    # 1a. Fetch upstream free-tier quotas (replaces hand-maintained offers.json).
+    #     Falls back to the committed file if upstream is unreachable.
+    offers_cache = os.path.join(DATA_DIR, "offers_cache.json")
+    upstream_offers = fetch_upstream_free_tiers(offers_cache)
+    if upstream_offers:
+        curated_offers = upstream_offers
+        save_json(OFFERS_FILE, curated_offers)  # overwrite with fresh upstream data
+    else:
+        curated_offers = load_json(OFFERS_FILE, [])
+        print("[Warn] Using committed offers.json fallback.")
 
     if not new_models:
         print("[Warn] No models fetched from providers. Keeping old snapshot.")

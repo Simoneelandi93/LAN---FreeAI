@@ -1,118 +1,1445 @@
 [
   {
-    "id": "groq-free-tier",
-    "provider": "GroqCloud",
-    "title": "Groq Ultra-Fast Free Tier",
-    "offer_type": "permanent_quota",
-    "models_included": [
-      "llama-3.3-70b-versatile",
-      "llama-3.1-8b-instant",
-      "gemma2-9b-it"
-    ],
-    "requires_card": false,
-    "quota_requests_day": 14400,
-    "quota_tokens_minute": 6000,
-    "status": "active",
-    "source_url": "https://console.groq.com/settings/limits"
-  },
-  {
     "id": "google-ai-studio",
     "provider": "Google AI Studio",
-    "title": "Gemini Free API Tier",
+    "title": "Google AI Studio",
+    "offer_type": "permanent_free",
     "models_included": [
-      "gemini-1.5-flash",
-      "gemini-2.0-flash-exp",
-      "gemini-1.5-pro"
+      "gemini-2.5-flash",
+      "gemini-2.0-flash",
+      "gemini-3.5-flash-lite"
     ],
     "requires_card": false,
-    "quota_requests_day": 1500,
-    "quota_tokens_minute": 1000000,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
     "status": "active",
-    "source_url": "https://ai.google.dev/pricing"
+    "source_url": "https://aistudio.google.com/",
+    "notes": "",
+    "per_model_rate_limits": [
+      {
+        "model_id": "gemini-2.5-flash",
+        "rpm": 15,
+        "tpm": 1000000,
+        "rpd": 1500
+      },
+      {
+        "model_id": "gemini-2.0-flash",
+        "rpm": 15,
+        "tpm": 1000000,
+        "rpd": 1500
+      },
+      {
+        "model_id": "gemini-3.5-flash-lite",
+        "rpm": 15,
+        "tpm": 250000,
+        "rpd": 500
+      }
+    ]
   },
   {
-    "id": "cerebras-free-tier",
-    "provider": "Cerebras Cloud",
-    "title": "Cerebras Inference Free Tier",
+    "id": "groq-cloud",
+    "provider": "Groq Cloud",
+    "title": "Groq Cloud",
+    "offer_type": "permanent_free",
     "models_included": [
-      "llama3.1-8b",
-      "llama3.3-70b"
+      "qwen/qwen3.8-27b",
+      "openai/gpt-oss-120b",
+      "whisper-large-v3"
     ],
     "requires_card": false,
-    "quota_requests_day": 1000000,
-    "quota_tokens_minute": 60000,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
     "status": "active",
-    "source_url": "https://cerebras.ai/pricing"
+    "source_url": "https://console.groq.com/",
+    "notes": "llama-3.3-70b-versatile and llama-3.1-8b-instant moved to Enterprise (Contact Sales). Limits enforced per organization.",
+    "per_model_rate_limits": [
+      {
+        "model_id": "qwen/qwen3.8-27b",
+        "rpm": 30,
+        "tpm": 6000,
+        "rpd": 1000
+      },
+      {
+        "model_id": "openai/gpt-oss-120b",
+        "rpm": 30,
+        "tpm": 8000,
+        "rpd": 1000
+      },
+      {
+        "model_id": "whisper-large-v3",
+        "rpm": 20
+      }
+    ]
   },
   {
-    "id": "github-models-preview",
-    "provider": "GitHub Models",
-    "title": "GitHub Models Playground & API",
+    "id": "nvidia-nim",
+    "provider": "NVIDIA NIM",
+    "title": "NVIDIA NIM",
+    "offer_type": "trial_evaluation",
+    "models_included": [],
+    "requires_card": false,
+    "quota_requests_day": 1000,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": 40,
+    "status": "active",
+    "source_url": "https://build.nvidia.com/",
+    "notes": ""
+  },
+  {
+    "id": "deepseek",
+    "provider": "DeepSeek API",
+    "title": "DeepSeek API",
+    "offer_type": "welcome_bonus_and_budget",
     "models_included": [
-      "gpt-4o",
-      "claude-3-5-sonnet",
-      "o1-mini",
-      "llama-3.3-70b"
+      "deepseek-flash",
+      "deepseek-v4-flash"
     ],
     "requires_card": false,
-    "quota_requests_day": 150,
-    "quota_tokens_minute": 15,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
     "status": "active",
-    "source_url": "https://github.com/marketplace/models"
+    "source_url": "https://platform.deepseek.com/",
+    "notes": ""
+  },
+  {
+    "id": "maritaca-ai",
+    "provider": "Maritaca AI (MariTalk)",
+    "title": "Maritaca AI (MariTalk)",
+    "offer_type": "onboarding_credit_and_paid",
+    "models_included": [
+      "sabia-4",
+      "sabia-4-thinking",
+      "sabiazinho-4"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://plataforma.maritaca.ai/",
+    "notes": "R$ 20 one-time onboarding credit. No perpetual free API tier.",
+    "per_model_rate_limits": [
+      {
+        "model_id": "sabia-4",
+        "rpm": 60
+      },
+      {
+        "model_id": "sabia-4-thinking",
+        "rpm": 60
+      },
+      {
+        "model_id": "sabiazinho-4",
+        "rpm": 60
+      }
+    ]
   },
   {
     "id": "cloudflare-workers-ai",
-    "provider": "Cloudflare",
-    "title": "Workers AI Free Neurons",
+    "provider": "Cloudflare Workers AI",
+    "title": "Cloudflare Workers AI",
+    "offer_type": "permanent_free",
     "models_included": [
-      "@cf/meta/llama-3.1-8b-instruct",
-      "@cf/mistral/mistral-7b-instruct-v0.1"
+      "@cf/meta/llama-3.3-70b-instruct",
+      "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+      "@cf/qwen/qwen2.5-coder-32b-instruct",
+      "@cf/baai/bge-large-en-v1.5"
     ],
     "requires_card": false,
-    "quota_requests_day": 10000,
+    "quota_requests_day": null,
     "quota_tokens_minute": null,
+    "quota_requests_minute": null,
     "status": "active",
-    "source_url": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+    "source_url": "https://dash.cloudflare.com/",
+    "notes": "",
+    "free_daily_allocation": "10,000 Neurons/day"
   },
   {
-    "id": "sambanova-cloud",
-    "provider": "SambaNova",
-    "title": "SambaNova Cloud Free Tier",
+    "id": "huggingface",
+    "provider": "Hugging Face Serverless Inference",
+    "title": "Hugging Face Serverless Inference",
+    "offer_type": "permanent_free",
     "models_included": [
-      "Meta-Llama-3.1-405B-Instruct",
-      "Meta-Llama-3.3-70B-Instruct"
+      "meta-llama/Llama-3.3-70B-Instruct",
+      "Qwen/Qwen2.5-72B-Instruct",
+      "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"
     ],
     "requires_card": false,
-    "quota_requests_day": 1000,
-    "quota_tokens_minute": 5000,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": 30,
     "status": "active",
-    "source_url": "https://cloud.sambanova.ai/pricing"
+    "source_url": "https://huggingface.co/settings/tokens",
+    "notes": ""
   },
   {
-    "id": "opencode-zen-free",
-    "provider": "OpenCode Zen",
-    "title": "OpenCode Free Coding Models",
-    "offer_type": "coding_rolling_quota",
+    "id": "sambanova",
+    "provider": "SambaNova Cloud",
+    "title": "SambaNova Cloud",
+    "offer_type": "paid_developer_tier",
     "models_included": [
-      "big-pickle",
-      "deepseek-v4.1-flash-free",
-      "glm-5.3-flash-free",
-      "minimax-m3.1-flash-free",
-      "mimo-v2.6-flash-free",
-      "nemotron-3.5-super-vl-free",
-      "nemotron-3.5-lightning-free",
-      "longcat-2.5-preview-free",
-      "beam-free",
-      "jev-1.13-free"
+      "Meta-Llama-3.3-70B-Instruct",
+      "DeepSeek-R1"
+    ],
+    "requires_card": true,
+    "quota_requests_day": null,
+    "quota_tokens_minute": 6000,
+    "quota_requests_minute": 30,
+    "status": "active",
+    "source_url": "https://cloud.sambanova.ai/",
+    "notes": "Transitioned to Developer Tier requiring payment method registration (credit card); 20M tokens/day developer cap"
+  },
+  {
+    "id": "nomic-ai",
+    "provider": "Nomic AI",
+    "title": "Nomic AI",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "nomic-embed-text-v1.5"
     ],
     "requires_card": false,
-    "quota_requests_day": 960,
+    "quota_requests_day": null,
     "quota_tokens_minute": null,
-    "rolling_window": {
-      "requests": 200,
-      "window_hours": 5
-    },
+    "quota_requests_minute": null,
     "status": "active",
-    "source_url": "https://opencode.ai/docs"
+    "source_url": "https://www.nomic.ai/",
+    "notes": ""
+  },
+  {
+    "id": "mixedbread-ai",
+    "provider": "Mixedbread AI",
+    "title": "Mixedbread AI",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "mixedbread-ai/mxbai-rerank-large-v1"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://www.mixedbread.ai/",
+    "notes": ""
+  },
+  {
+    "id": "inception-labs",
+    "provider": "Inception Labs (Mercury API)",
+    "title": "Inception Labs (Mercury API)",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "mercury-2",
+      "mercury-2.5"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://platform.inceptionlabs.ai/",
+    "notes": "100,000,000 free tokens (one-time onboarding grant per account, non-recurring)"
+  },
+  {
+    "id": "reka-ai",
+    "provider": "Reka AI",
+    "title": "Reka AI",
+    "offer_type": "monthly_recurring",
+    "models_included": [
+      "reka-flash",
+      "reka-core",
+      "reka-edge"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://platform.reka.ai/",
+    "notes": "$10/month + 3h video analysis",
+    "per_model_rate_limits": [
+      {
+        "model_id": "reka-flash",
+        "rpm": 30,
+        "tpm": 150000
+      },
+      {
+        "model_id": "reka-core",
+        "rpm": 10,
+        "tpm": 50000
+      },
+      {
+        "model_id": "reka-edge",
+        "rpm": 60,
+        "tpm": 300000
+      }
+    ]
+  },
+  {
+    "id": "bytez",
+    "provider": "Bytez",
+    "title": "Bytez",
+    "offer_type": "periodic_recurring",
+    "models_included": [
+      "meta-llama/llama-3.3-70b-instruct",
+      "qwen/qwen-2.5-72b-instruct"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://bytez.com/",
+    "notes": "$1.00 every 4 weeks"
+  },
+  {
+    "id": "morph-labs",
+    "provider": "Morph Labs",
+    "title": "Morph Labs",
+    "offer_type": "monthly_recurring",
+    "models_included": [
+      "morph-fast-apply"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://morphllm.com/",
+    "notes": "250,000 credits/month"
+  },
+  {
+    "id": "internlm",
+    "provider": "InternLM (Shanghai AI Lab)",
+    "title": "InternLM (Shanghai AI Lab)",
+    "offer_type": "monthly_recurring",
+    "models_included": [
+      "internlm2.5-20b-chat",
+      "internlm-xcomposer2.5"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://internlm.intern-ai.org.cn/",
+    "notes": "1M in / 3M out tokens/month"
+  },
+  {
+    "id": "sarvam-ai",
+    "provider": "Sarvam AI (India)",
+    "title": "Sarvam AI (India)",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "sarvam-2b",
+      "sarvam-translate"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://docs.sarvam.ai/",
+    "notes": "₹1,000 INR non-expiring"
+  },
+  {
+    "id": "sea-lion",
+    "provider": "SEA-LION (AI Singapore)",
+    "title": "SEA-LION (AI Singapore)",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "sea-lion-v3-7b-instruct"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": 100000,
+    "quota_requests_minute": 10,
+    "status": "active",
+    "source_url": "https://sea-lion.ai/",
+    "notes": ""
+  },
+  {
+    "id": "fireworks-ai",
+    "provider": "Fireworks AI",
+    "title": "Fireworks AI",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "accounts/fireworks/models/llama-v3p3-70b-instruct",
+      "accounts/fireworks/models/qwen2p5-72b-instruct",
+      "accounts/fireworks/models/deepseek-v3",
+      "accounts/fireworks/models/deepseek-r1"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://fireworks.ai/",
+    "notes": "$1.00 USD free credits without card",
+    "per_model_rate_limits": [
+      {
+        "model_id": "accounts/fireworks/models/llama-v3p3-70b-instruct",
+        "rpm": 600,
+        "tpm": 10000
+      },
+      {
+        "model_id": "accounts/fireworks/models/qwen2p5-72b-instruct",
+        "rpm": 600,
+        "tpm": 10000
+      },
+      {
+        "model_id": "accounts/fireworks/models/deepseek-v3",
+        "rpm": 600,
+        "tpm": 10000
+      },
+      {
+        "model_id": "accounts/fireworks/models/deepseek-r1",
+        "rpm": 600,
+        "tpm": 10000
+      }
+    ]
+  },
+  {
+    "id": "baseten",
+    "provider": "Baseten",
+    "title": "Baseten",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "meta-llama/Llama-3.3-70B-Instruct",
+      "deepseek-ai/DeepSeek-V3"
+    ],
+    "requires_card": true,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://baseten.co/",
+    "notes": "$30 USD free compute credits on workspace initialization (requires credit card)",
+    "per_model_rate_limits": [
+      {
+        "model_id": "meta-llama/Llama-3.3-70B-Instruct",
+        "rpm": 60
+      },
+      {
+        "model_id": "deepseek-ai/DeepSeek-V3",
+        "rpm": 60
+      }
+    ]
+  },
+  {
+    "id": "replicate",
+    "provider": "Replicate",
+    "title": "Replicate",
+    "offer_type": "developer_trial",
+    "models_included": [
+      "meta/meta-llama-3.3-70b-instruct",
+      "deepseek-ai/deepseek-r1",
+      "black-forest-labs/flux-schnell"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://replicate.com/",
+    "notes": "Developer trial runs for language and diffusion models"
+  },
+  {
+    "id": "xai-grok",
+    "provider": "xAI Console (Grok API)",
+    "title": "xAI Console (Grok API)",
+    "offer_type": "monthly_recurring",
+    "models_included": [
+      "grok-2-1212",
+      "grok-2-vision-1212"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://console.x.ai/",
+    "notes": "$25 USD/month developer grant",
+    "per_model_rate_limits": [
+      {
+        "model_id": "grok-2-1212",
+        "rpm": 60,
+        "tpm": 10000
+      },
+      {
+        "model_id": "grok-2-vision-1212",
+        "rpm": 60,
+        "tpm": 10000
+      }
+    ]
+  },
+  {
+    "id": "deepgram",
+    "provider": "Deepgram",
+    "title": "Deepgram",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "nova-2",
+      "nova-2-general",
+      "aura-asteria-en"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://console.deepgram.com/",
+    "notes": "$200 USD in free perpetual credits (~775 hours of Nova-2)",
+    "per_model_rate_limits": [
+      {
+        "model_id": "nova-2",
+        "rpm": 1000
+      },
+      {
+        "model_id": "nova-2-general",
+        "rpm": 1000
+      },
+      {
+        "model_id": "aura-asteria-en",
+        "rpm": 1000
+      }
+    ]
+  },
+  {
+    "id": "assemblyai",
+    "provider": "AssemblyAI",
+    "title": "AssemblyAI",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "best",
+      "nano",
+      "lemur-70b-chat"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://assemblyai.com/",
+    "notes": "$50 USD free credits (~100h to 330h audio)",
+    "per_model_rate_limits": [
+      {
+        "model_id": "best",
+        "rpm": 100
+      },
+      {
+        "model_id": "nano",
+        "rpm": 100
+      },
+      {
+        "model_id": "lemur-70b-chat",
+        "rpm": 100
+      }
+    ]
+  },
+  {
+    "id": "elevenlabs",
+    "provider": "ElevenLabs",
+    "title": "ElevenLabs",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "eleven_multilingual_v2",
+      "eleven_flash_v2_5"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://elevenlabs.io/",
+    "notes": "10,000 characters per month free forever without credit card",
+    "per_model_rate_limits": [
+      {
+        "model_id": "eleven_multilingual_v2",
+        "rpm": 20
+      },
+      {
+        "model_id": "eleven_flash_v2_5",
+        "rpm": 20
+      }
+    ]
+  },
+  {
+    "id": "cartesia",
+    "provider": "Cartesia",
+    "title": "Cartesia",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "sonic-english",
+      "sonic-multilingual"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://play.cartesia.ai/",
+    "notes": "Sonic API Free Tier with sub-150ms real-time voice latency",
+    "per_model_rate_limits": [
+      {
+        "model_id": "sonic-english",
+        "rpm": 30
+      },
+      {
+        "model_id": "sonic-multilingual",
+        "rpm": 30
+      }
+    ]
+  },
+  {
+    "id": "lemonfox-ai",
+    "provider": "Lemonfox.ai",
+    "title": "Lemonfox.ai",
+    "offer_type": "trial_and_budget",
+    "models_included": [
+      "whisper-1",
+      "lemonfox-tts-v1"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://lemonfox.ai/",
+    "notes": "1-month free trial with 10M compute credits, followed by $5/month budget tier (50M credits)",
+    "per_model_rate_limits": [
+      {
+        "model_id": "whisper-1",
+        "rpm": 20
+      },
+      {
+        "model_id": "lemonfox-tts-v1",
+        "rpm": 20
+      }
+    ]
+  },
+  {
+    "id": "voyage-ai",
+    "provider": "Voyage AI",
+    "title": "Voyage AI",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "voyage-3",
+      "voyage-code-3",
+      "rerank-2"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://dash.voyageai.com/",
+    "notes": "200M tokens trial + 50M tokens permanent free",
+    "per_model_rate_limits": [
+      {
+        "model_id": "voyage-3",
+        "rpm": 300,
+        "tpm": 1000000
+      },
+      {
+        "model_id": "voyage-code-3",
+        "rpm": 300,
+        "tpm": 1000000
+      },
+      {
+        "model_id": "rerank-2",
+        "rpm": 300,
+        "tpm": 1000000
+      }
+    ]
+  },
+  {
+    "id": "jina-ai",
+    "provider": "Jina AI",
+    "title": "Jina AI",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "jina-embeddings-v3",
+      "jina-reranker-v2-base-multilingual",
+      "r.jina.ai"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://cloud.jina.ai/",
+    "notes": "10M free tokens on signup + Reader API (r.jina.ai) 100% free forever",
+    "per_model_rate_limits": [
+      {
+        "model_id": "jina-embeddings-v3",
+        "rpm": 500
+      },
+      {
+        "model_id": "jina-reranker-v2-base-multilingual",
+        "rpm": 500
+      },
+      {
+        "model_id": "r.jina.ai",
+        "rpm": 200
+      }
+    ]
+  },
+  {
+    "id": "tavily-ai",
+    "provider": "Tavily AI",
+    "title": "Tavily AI",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "tavily-search-basic",
+      "tavily-search-advanced"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://app.tavily.com/",
+    "notes": "1,000 search API credits per month free forever",
+    "per_model_rate_limits": [
+      {
+        "model_id": "tavily-search-basic",
+        "rpm": 100
+      },
+      {
+        "model_id": "tavily-search-advanced",
+        "rpm": 100
+      }
+    ]
+  },
+  {
+    "id": "exa-ai",
+    "provider": "Exa.ai",
+    "title": "Exa.ai",
+    "offer_type": "monthly_recurring",
+    "models_included": [
+      "exa-search-neural"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://dashboard.exa.ai/",
+    "notes": "Recurring $10 USD/month grant (resets 1st of each month, ~1,400 searches) + $10 USD onboarding bonus",
+    "per_model_rate_limits": [
+      {
+        "model_id": "exa-search-neural",
+        "rpm": 60
+      }
+    ]
+  },
+  {
+    "id": "qdrant-cloud",
+    "provider": "Qdrant Cloud",
+    "title": "Qdrant Cloud",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "qdrant-hnsw-dense"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://cloud.qdrant.io/",
+    "notes": "1 Free Forever Cloud Cluster (1GB RAM / 0.5 vCPU / ~1M vectors)"
+  },
+  {
+    "id": "stepfun",
+    "provider": "StepFun (Jieyue Xingchen)",
+    "title": "StepFun (Jieyue Xingchen)",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "step-1-128k",
+      "step-1-256k",
+      "step-2-16k"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://platform.stepfun.ai/",
+    "notes": "¥50 RMB (~$7.00 USD) welcome credits on registration",
+    "per_model_rate_limits": [
+      {
+        "model_id": "step-1-128k",
+        "rpm": 60,
+        "tpm": 100000
+      },
+      {
+        "model_id": "step-1-256k",
+        "rpm": 60,
+        "tpm": 100000
+      },
+      {
+        "model_id": "step-2-16k",
+        "rpm": 60,
+        "tpm": 100000
+      }
+    ]
+  },
+  {
+    "id": "01-ai",
+    "provider": "01.AI (Lingyi Wanwu)",
+    "title": "01.AI (Lingyi Wanwu)",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "yi-lightning",
+      "yi-large",
+      "yi-medium-200k"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://platform.lingyiwanwu.com/",
+    "notes": "¥36 RMB (~$5.10 USD) welcome trial credits",
+    "per_model_rate_limits": [
+      {
+        "model_id": "yi-lightning",
+        "rpm": 60,
+        "tpm": 120000
+      },
+      {
+        "model_id": "yi-large",
+        "rpm": 60,
+        "tpm": 120000
+      },
+      {
+        "model_id": "yi-medium-200k",
+        "rpm": 60,
+        "tpm": 120000
+      }
+    ]
+  },
+  {
+    "id": "modelscope",
+    "provider": "ModelScope (Alibaba DAMO)",
+    "title": "ModelScope (Alibaba DAMO)",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "Qwen/Qwen2.5-72B-Instruct",
+      "Qwen/Qwen2.5-Coder-32B-Instruct",
+      "iic/SenseVoiceSmall"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://modelscope.cn/",
+    "notes": "Permanent 100% free daily serverless inference on open models",
+    "per_model_rate_limits": [
+      {
+        "model_id": "Qwen/Qwen2.5-72B-Instruct",
+        "rpm": 30,
+        "rpd": 1000
+      },
+      {
+        "model_id": "Qwen/Qwen2.5-Coder-32B-Instruct",
+        "rpm": 30,
+        "rpd": 1000
+      },
+      {
+        "model_id": "iic/SenseVoiceSmall",
+        "rpm": 30,
+        "rpd": 1000
+      }
+    ]
+  },
+  {
+    "id": "runpod-serverless",
+    "provider": "RunPod Serverless",
+    "title": "RunPod Serverless",
+    "offer_type": "budget_gateway",
+    "models_included": [
+      "meta-llama/Llama-3.3-70B-Instruct",
+      "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"
+    ],
+    "requires_card": true,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://www.runpod.io/",
+    "notes": "Micro-budget gateway ($5 USD) with true scale-to-zero per-second billing"
+  },
+  {
+    "id": "centml",
+    "provider": "CentML (CServe)",
+    "title": "CentML (CServe)",
+    "offer_type": "developer_trial",
+    "models_included": [
+      "meta-llama/Llama-3.3-70B-Instruct"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://centml.ai/",
+    "notes": "Developer trial credits for compiled model execution",
+    "per_model_rate_limits": [
+      {
+        "model_id": "meta-llama/Llama-3.3-70B-Instruct",
+        "rpm": 60,
+        "tpm": 100000
+      }
+    ]
+  },
+  {
+    "id": "openrouter",
+    "provider": "OpenRouter",
+    "title": "OpenRouter",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "meta-llama/llama-3.3-70b-instruct:free",
+      "deepseek/deepseek-r1:free"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://openrouter.ai/",
+    "notes": "24 active :free models with up to 262k context",
+    "per_model_rate_limits": [
+      {
+        "model_id": "meta-llama/llama-3.3-70b-instruct:free",
+        "rpm": 20,
+        "rpd": 200
+      },
+      {
+        "model_id": "deepseek/deepseek-r1:free",
+        "rpm": 20,
+        "rpd": 200
+      }
+    ]
+  },
+  {
+    "id": "mistral-ai",
+    "provider": "Mistral AI",
+    "title": "Mistral AI",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "mistral-small-latest",
+      "codestral-latest"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://console.mistral.ai/",
+    "notes": "La Plateforme Free Tier: 60 RPM / 4M tokens/month",
+    "per_model_rate_limits": [
+      {
+        "model_id": "mistral-small-latest",
+        "rpm": 60
+      },
+      {
+        "model_id": "codestral-latest",
+        "rpm": 60
+      }
+    ]
+  },
+  {
+    "id": "kimi-moonshot",
+    "provider": "Moonshot AI (Kimi)",
+    "title": "Moonshot AI (Kimi)",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "moonshot-v1-8k",
+      "moonshot-v1-32k",
+      "moonshot-v1-128k"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://platform.moonshot.cn/",
+    "notes": "¥15 RMB welcome credits on registration"
+  },
+  {
+    "id": "anthropic",
+    "provider": "Anthropic (Claude)",
+    "title": "Anthropic (Claude)",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "claude-3-5-sonnet-latest",
+      "claude-3-5-haiku-latest"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://console.anthropic.com/",
+    "notes": "$5 USD initial developer trial credits"
+  },
+  {
+    "id": "openai",
+    "provider": "OpenAI",
+    "title": "OpenAI",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "gpt-4o-mini",
+      "gpt-4o"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://platform.openai.com/",
+    "notes": "$5 USD developer trial credits on new accounts"
+  },
+  {
+    "id": "cerebras",
+    "provider": "Cerebras Cloud",
+    "title": "Cerebras Cloud",
+    "offer_type": "deprecated_closed",
+    "models_included": [
+      "llama3.1-70b"
+    ],
+    "requires_card": true,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://cloud.cerebras.ai/",
+    "notes": "Audited: Free Tier definitively closed (HTTP 402 Payment Required)"
+  },
+  {
+    "id": "deepinfra",
+    "provider": "DeepInfra",
+    "title": "DeepInfra",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "meta-llama/Meta-Llama-3.3-70B-Instruct"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://deepinfra.com/",
+    "notes": "$1.80 USD trial credits on signup without credit card"
+  },
+  {
+    "id": "zhipu-ai",
+    "provider": "Zhipu AI (BigModel)",
+    "title": "Zhipu AI (BigModel)",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "glm-4-flash",
+      "glm-4.7-flash",
+      "glm-4v-flash"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://open.bigmodel.cn/",
+    "notes": "GLM-4-Flash 100% free forever + 25M tokens welcome grant"
+  },
+  {
+    "id": "baidu-qianfan",
+    "provider": "Baidu Qianfan",
+    "title": "Baidu Qianfan",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "ERNIE-Speed-8K",
+      "ERNIE-Speed-128K",
+      "ERNIE-Lite-8K-0922"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://qianfan.cloud.baidu.com/",
+    "notes": "ERNIE-Speed & ERNIE-Lite 100% free forever (300 RPM / 300k TPM)",
+    "per_model_rate_limits": [
+      {
+        "model_id": "ERNIE-Speed-8K",
+        "rpm": 300,
+        "tpm": 300000
+      },
+      {
+        "model_id": "ERNIE-Speed-128K",
+        "rpm": 300,
+        "tpm": 300000
+      },
+      {
+        "model_id": "ERNIE-Lite-8K-0922",
+        "rpm": 300,
+        "tpm": 300000
+      }
+    ]
+  },
+  {
+    "id": "alibaba-dashscope",
+    "provider": "Alibaba Cloud Model Studio (DashScope)",
+    "title": "Alibaba Cloud Model Studio (DashScope)",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "qwen-turbo",
+      "qwen-plus",
+      "qwen-max",
+      "qwen-long"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://dashscope.console.aliyun.com/",
+    "notes": "1M to 2M free tokens per Qwen model (90-180 days validity)"
+  },
+  {
+    "id": "tencent-hunyuan",
+    "provider": "Tencent Cloud Hunyuan",
+    "title": "Tencent Cloud Hunyuan",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "hunyuan-lite",
+      "hunyuan-standard"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://cloud.tencent.com/product/hunyuan",
+    "notes": "1-year free tier package for Hunyuan-Lite + 1,000 3D credits"
+  },
+  {
+    "id": "bytedance-volcano",
+    "provider": "ByteDance Volcano Engine (Doubao)",
+    "title": "ByteDance Volcano Engine (Doubao)",
+    "offer_type": "paid_only",
+    "models_included": [
+      "doubao-pro-32k"
+    ],
+    "requires_card": true,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://www.volcengine.com/",
+    "notes": "Audited: Professional API is strictly paid in RMB (no developer free tier)"
+  },
+  {
+    "id": "minimax",
+    "provider": "MiniMax",
+    "title": "MiniMax",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "abab6.5s-chat",
+      "speech-01"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://api.minimax.chat/",
+    "notes": "¥15 RMB free trial credits on signup",
+    "per_model_rate_limits": [
+      {
+        "model_id": "speech-01",
+        "rpm": 60
+      }
+    ]
+  },
+  {
+    "id": "hyperbolic",
+    "provider": "Hyperbolic",
+    "title": "Hyperbolic",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "meta-llama/Meta-Llama-3.1-405B",
+      "Qwen/Qwen2.5-Coder-32B-Instruct"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://hyperbolic.xyz/",
+    "notes": "60 RPM permanent Basic Free Tier without credit card",
+    "per_model_rate_limits": [
+      {
+        "model_id": "meta-llama/Meta-Llama-3.1-405B",
+        "rpm": 60
+      },
+      {
+        "model_id": "Qwen/Qwen2.5-Coder-32B-Instruct",
+        "rpm": 60
+      }
+    ]
+  },
+  {
+    "id": "siliconflow",
+    "provider": "SiliconFlow (SiliconCloud)",
+    "title": "SiliconFlow (SiliconCloud)",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "Qwen/Qwen2.5-7B-Instruct",
+      "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://siliconflow.cn/",
+    "notes": "1,000 RPM / 40,000 TPM on open-source free models + 20M tokens bonus",
+    "per_model_rate_limits": [
+      {
+        "model_id": "Qwen/Qwen2.5-7B-Instruct",
+        "rpm": 1000,
+        "tpm": 40000
+      },
+      {
+        "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+        "rpm": 1000,
+        "tpm": 40000
+      }
+    ]
+  },
+  {
+    "id": "pollinations",
+    "provider": "Pollinations.ai",
+    "title": "Pollinations.ai",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "openai",
+      "flux"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://pollinations.ai/",
+    "notes": "100% free forever for text, image, audio, and vision without account",
+    "per_model_rate_limits": [
+      {
+        "model_id": "openai",
+        "rpm": 60
+      },
+      {
+        "model_id": "flux",
+        "rpm": 30
+      }
+    ]
+  },
+  {
+    "id": "cohere",
+    "provider": "Cohere",
+    "title": "Cohere",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "command-r-plus",
+      "rerank-v3.5",
+      "embed-multilingual-v3.0"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://cohere.com/",
+    "notes": "Trial API Key: 1,000 calls/month, 20 RPM chat, 10 RPM rerank, 100 RPM embed",
+    "per_model_rate_limits": [
+      {
+        "model_id": "command-r-plus",
+        "rpm": 20
+      },
+      {
+        "model_id": "rerank-v3.5",
+        "rpm": 10
+      },
+      {
+        "model_id": "embed-multilingual-v3.0",
+        "rpm": 100
+      }
+    ]
+  },
+  {
+    "id": "awanllm",
+    "provider": "AwanLLM",
+    "title": "AwanLLM",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "Meta-Llama-3.1-8B-Instruct"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://www.awanllm.com/",
+    "notes": "Free Lite Tier with unlimited tokens (20 RPM / 200 RPD)",
+    "per_model_rate_limits": [
+      {
+        "model_id": "Meta-Llama-3.1-8B-Instruct",
+        "rpm": 20,
+        "rpd": 200
+      }
+    ]
+  },
+  {
+    "id": "scaleway",
+    "provider": "Scaleway Generative APIs",
+    "title": "Scaleway Generative APIs",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "llama-3.3-70b-instruct"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://console.scaleway.com/",
+    "notes": "1,000,000 tokens/month + 60 mins audio transcription free in European Cloud"
+  },
+  {
+    "id": "novita-ai",
+    "provider": "Novita AI",
+    "title": "Novita AI",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "meta-llama/llama-3.1-70b-instruct"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://novita.ai/",
+    "notes": "$10 to $100 in sandbox trial credits (20 IPM image / 60 RPM LLM)",
+    "per_model_rate_limits": [
+      {
+        "model_id": "meta-llama/llama-3.1-70b-instruct",
+        "rpm": 60
+      }
+    ]
+  },
+  {
+    "id": "nebius",
+    "provider": "Nebius Token Factory",
+    "title": "Nebius Token Factory",
+    "offer_type": "welcome_credits",
+    "models_included": [
+      "meta-llama/Meta-Llama-3.1-405B-Instruct"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://studio.nebius.ai/",
+    "notes": "AI Builder Program with $400+ in compute credits",
+    "per_model_rate_limits": [
+      {
+        "model_id": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+        "rpm": 60
+      }
+    ]
+  },
+  {
+    "id": "xkiro",
+    "provider": "xKiro Gateway",
+    "title": "xKiro Gateway",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "xkiro-default"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://xkiro.com/",
+    "notes": "5,000,000 tokens/day free tier + $5 wallet micro-budget"
+  },
+  {
+    "id": "opencode",
+    "provider": "OpenCode (Zen & Go)",
+    "title": "OpenCode (Zen & Go)",
+    "offer_type": "permanent_free",
+    "models_included": [
+      "mimo-v2.5-free",
+      "minimax-m2.5-free"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://opencode.ai/",
+    "notes": "OpenCode Zen with zero markup and free native models (MiMo V2.5 / MiniMax M2.5)",
+    "per_model_rate_limits": [
+      {
+        "model_id": "mimo-v2.5-free",
+        "rpm": 60
+      },
+      {
+        "model_id": "minimax-m2.5-free",
+        "rpm": 60
+      }
+    ]
+  },
+  {
+    "id": "b-ai",
+    "provider": "B.AI",
+    "title": "B.AI",
+    "offer_type": "budget_gateway",
+    "models_included": [
+      "b-ai-general"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://b.ai/",
+    "notes": "1 USD = 1M credits with up to 90% dynamic discount during off-peak hours",
+    "per_model_rate_limits": [
+      {
+        "model_id": "b-ai-general",
+        "rpm": 120
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-mimo",
+    "provider": "Xiaomi MiMo",
+    "title": "Xiaomi MiMo",
+    "offer_type": "budget_pay_as_you_go",
+    "models_included": [
+      "mimo-v2.6-flash"
+    ],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://api.xiaomimimo.com/",
+    "notes": ""
   }
 ]

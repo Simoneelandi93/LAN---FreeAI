@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "aba05e7a0d3655da",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-23T22:00:47.243822+00:00",
+    "details": "Input: $0.0052 -> $0.0285; output: $0.1985 -> $0.0923",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "6066d49555f79277",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-23T22:00:47.243822+00:00",
+    "details": "Input: $0.0052 -> $0.0285; output: $0.1985 -> $0.0923",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "a816e2922bf03bc0",
     "type": "price_change",
     "model_id": "gemma-4-26b-a4b",
@@ -1970,21 +1994,5 @@
     "provider": "AI/ML API",
     "detected_at": "2026-10-22T12:47:35.561552+00:00",
     "details": "Input: $1.10032 -> $0.8464; output: $1.65048 -> $1.2696"
-  },
-  {
-    "event_id": "70396f51ee4b3891",
-    "type": "price_change",
-    "model_id": "morph/morph-v3-large",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $1.23786 -> $0.9522; output: $2.61326 -> $2.0102"
-  },
-  {
-    "event_id": "473bdccb25fb9f3f",
-    "type": "price_change",
-    "model_id": "google/gemma-3-12b-it",
-    "provider": "AI/ML API, Merge Gateway, Neon",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.06877 -> $0.0529; output: $0.20631 -> $0.1587"
   }
 ]

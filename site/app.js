@@ -178,11 +178,13 @@ function ctxFmt(v) {
 
 function quotaFmt(offer) {
   if (!offer) return '<span class="cell-na">—</span>';
-  const parts = [];
-  const day = Number(offer.quota_requests_day);
-  const tpm = Number(offer.quota_tokens_minute);
+  const day = Number(offer.quota_requests_day ?? offer.rpd);
+  const tpm = Number(offer.quota_tokens_minute ?? offer.tpm);
+  const rpm = Number(offer.quota_requests_minute ?? offer.rpm);
   const rolling = offer.rolling_window;
+  const parts = [];
   if (Number.isFinite(day) && day > 0) parts.push(`${day.toLocaleString()} req/d`);
+  if (Number.isFinite(rpm) && rpm > 0) parts.push(`${rpm.toLocaleString()} req/min`);
   if (Number.isFinite(tpm) && tpm > 0) parts.push(`${tpm.toLocaleString()} tok/min`);
   if (rolling && Number.isFinite(Number(rolling.requests))) {
     parts.length = 0;

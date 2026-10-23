@@ -10,7 +10,7 @@
 - **Free detection**: flags any model whose input *and* output cost are $0 (`is_free`), across every provider.
 - **Prioritised Telegram alerts**: price-drops-to-$0 and brand-new free models first, then one digest for the rest — never a flood.
 - **Self-updating dashboard**: filterable table (free / OpenRouter / reasoning / tool use / open weights) deployed to GitHub Pages on each data change.
-- **Curated free tiers**: `data/offers.json` holds provider quotas, card requirements and rolling-window limits (OpenCode Zen, Groq, Google AI Studio, Cerebras, GitHub Models, Cloudflare, SambaNova).
+- **Auto-updated free tiers**: `data/offers.json` is generated every sync from the community-maintained [awesome-ai-free-tiers](https://github.com/4pixeltechBR/awesome-ai-free-tiers) dataset (65 providers, 126 model entries with per-model rate limits), so quotas and deprecated tiers stay current without hand edits.
 
 ---
 
@@ -93,7 +93,7 @@ Open `http://localhost:8000/site/`. The frontend loads `data/*.json`, falling ba
 |---|---|---|
 | models.dev catalog | `models.dev/api.json` | Pricing per 1M tokens, context limits, modalities, capabilities for every tracked provider. |
 | LLM Stats | `api.zeroeval.com/leaderboard/models/full` + `/leaderboard/indexes/compact` | Benchmark scores and leaderboard ranks, joined to catalog rows **by model name**. Public and keyless. |
-| `data/offers.json` | committed file | Hand-maintained provider quotas and card requirements; the collector reads but does not rewrite it. |
+| awesome-ai-free-tiers | `4pixeltechBR/awesome-ai-free-tiers` → `data/providers.json` | Community-audited free-tier quotas, rate limits, billing tiers and deprecation status for 65 providers. Fetched with ETag caching; `data/offers_cache.json` is the local copy and `data/offers.json` the normalized output. |
 
 ### Joining LLM Stats by name
 
