@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "61f6d143989113f8",
+    "type": "model_became_free",
+    "model_id": "moonshotai/kimi-k3.1-pro",
+    "provider": "Kimi For Coding (kimi.ai), Kimi For Coding (kimi.com), Moonshot AI, Moonshot AI (China), OpenCode Go, OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-10-23T19:05:04.443082+00:00",
+    "details": "Was $2/10 per 1M, now free",
+    "alerted": true
+  },
+  {
+    "event_id": "852b490006a0ac29",
+    "type": "model_became_free",
+    "model_id": "kimi-k3.1-pro-highspeed",
+    "provider": "Kimi For Coding (kimi.ai), Kimi For Coding (kimi.com), Moonshot AI, Moonshot AI (China), Vercel AI Gateway",
+    "detected_at": "2026-10-23T19:05:04.443082+00:00",
+    "details": "Was $4/20 per 1M, now free",
+    "alerted": true
+  },
+  {
     "event_id": "ee5a38d4a333e5c5",
     "type": "new_model",
     "model_id": "moonshotai/kimi-k3.1-pro",
@@ -1954,21 +1972,5 @@
     "provider": "Kilo Gateway",
     "detected_at": "2026-10-22T11:37:22.177830+00:00",
     "details": "Input: $0.2235 -> $0.2503; output: $8 -> $8"
-  },
-  {
-    "event_id": "0cc435c6ff97b071",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-pro-latest",
-    "provider": "OpenRouter, The Grid AI",
-    "detected_at": "2026-10-22T11:37:22.177830+00:00",
-    "details": "Input: $0.2235 -> $0.2503; output: $8 -> $8"
-  },
-  {
-    "event_id": "aa9ce4f840aef713",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "OpenRouter, Privatemode AI",
-    "detected_at": "2026-10-22T10:38:16.964143+00:00",
-    "details": "Input: $0.0058 -> $0.0052; output: $0.193 -> $0.1985"
   }
 ]
