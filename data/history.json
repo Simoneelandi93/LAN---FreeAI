@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "b9ddddbfe5b46523",
+    "type": "new_model",
+    "model_id": "inference.net/minimax-m3.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T09:36:15.255652+00:00",
+    "details": "$0.1 in / $0.5 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "7289e458eb4a05d1",
+    "type": "new_model",
+    "model_id": "nebius/minimax-m3.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T09:36:15.255652+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "ee1ddd1cc5909446",
+    "type": "new_model",
+    "model_id": "together-ai/minimax-m3.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T09:36:15.255652+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "866900eaa2b3f716",
+    "type": "new_model",
+    "model_id": "novita/minimax-m3.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T09:36:15.255652+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "598433b9121eabf1",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T09:36:15.255652+00:00",
+    "details": "Input: $0.075 -> $0.075; output: $1.575 -> $4.295",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "fbb2dec15808633b",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T09:36:15.255652+00:00",
+    "details": "Input: $0.19 -> $0.19; output: $7.7001 -> $8.94",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "2e3798fb2edad43f",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -2078,53 +2138,5 @@
     "provider": "Eden AI",
     "detected_at": "2026-10-22T16:06:28.294100+00:00",
     "details": "Input: $0.73021 -> $0.728325; output: $0.73021 -> $0.728325"
-  },
-  {
-    "event_id": "1bf52b6f5b7b2975",
-    "type": "price_change",
-    "model_id": "scaleway/deepseek-v4-flash-0731",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-22T16:06:28.294100+00:00",
-    "details": "Input: $0.44936 -> $0.4482; output: $0.89872 -> $0.8964"
-  },
-  {
-    "event_id": "a43a0019fab0eab2",
-    "type": "price_change",
-    "model_id": "scaleway/qwen3-235b-a22b-instruct-2507",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-22T16:06:28.294100+00:00",
-    "details": "Input: $0.84255 -> $0.840375; output: $2.52765 -> $2.521124"
-  },
-  {
-    "event_id": "286995bcdd0fc23c",
-    "type": "price_change",
-    "model_id": "scaleway/gpt-oss-120b",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-22T16:06:28.294100+00:00",
-    "details": "Input: $0.16851 -> $0.168075; output: $0.67404 -> $0.6723"
-  },
-  {
-    "event_id": "73e6c4a080525dd6",
-    "type": "price_change",
-    "model_id": "scaleway/deepseek-v4.1-flash",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-22T16:06:28.294100+00:00",
-    "details": "Input: $0.67404 -> $0.6723; output: $2.02212 -> $2.016899"
-  },
-  {
-    "event_id": "a35e5365b36c1bf7",
-    "type": "price_change",
-    "model_id": "scaleway/llama-3.3-70b-instruct",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-22T16:06:28.294100+00:00",
-    "details": "Input: $1.01106 -> $1.00845; output: $1.01106 -> $1.00845"
-  },
-  {
-    "event_id": "1dfaa6c325ef71ae",
-    "type": "price_change",
-    "model_id": "infomaniak/mistralai/Ministral-3-14B-Instruct-2512",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-22T16:06:28.294100+00:00",
-    "details": "Input: $0.33702 -> $0.33615; output: $0.44936 -> $0.4482"
   }
 ]
