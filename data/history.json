@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "8b0ab842e8d2e5b5",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-uncensored:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-24T03:39:34.271915+00:00",
+    "details": "$0.5 in / $1.5 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "a9b35ed8b791519e",
+    "type": "new_model",
+    "model_id": "xingchen-agi/xing4.0-29b-a4b",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-24T03:39:34.271915+00:00",
+    "details": "$0.22 in / $0.9 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "a1e5b7334f500d44",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -2046,21 +2064,5 @@
     "provider": "NanoGPT",
     "detected_at": "2026-10-22T13:39:06.945394+00:00",
     "details": "Input: $0.45 -> $0.44935; output: $1.95 -> $1.892"
-  },
-  {
-    "event_id": "da7324cde7edc353",
-    "type": "new_model",
-    "model_id": "kolibri-1",
-    "provider": "Cortecs",
-    "detected_at": "2026-10-22T13:39:06.945394+00:00",
-    "details": "$0.167 in / $0.613 out per 1M"
-  },
-  {
-    "event_id": "16daf6254a2d3ba0",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-pro-latest",
-    "provider": "OpenRouter, The Grid AI",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.2503 -> $0.225; output: $8 -> $8"
   }
 ]
