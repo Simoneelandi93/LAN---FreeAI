@@ -1,5 +1,50 @@
 [
   {
+    "event_id": "df692b8422adb9f8",
+    "type": "price_change",
+    "model_id": "reka-ai/deepseek-v4-pro",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T07:36:31.330503+00:00",
+    "details": "Input: $1.2 -> $0.9; output: $3.3 -> $1.9",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "8edaf88c10b9f7f3",
+    "type": "price_change",
+    "model_id": "reka-ai/glm-5.3",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T07:36:31.330503+00:00",
+    "details": "Input: $1.17 -> $0.45; output: $3.96 -> $1.8",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "6539c23ae0d420e2",
+    "type": "price_change",
+    "model_id": "reka-ai/deepseek-v4.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T07:36:31.330503+00:00",
+    "details": "Input: $0.3 -> $0.1; output: $1.2 -> $0.3",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "e1dc5f71bae0f0e8",
+    "type": "new_model",
+    "model_id": "entrim/deepseek-v4.1-flash-1017",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T07:36:31.330503+00:00",
+    "details": "$0.2 in / $0.8 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "c2b82a7a6de4d0e3",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -2061,37 +2106,5 @@
     "provider": "Eden AI",
     "detected_at": "2026-10-22T16:06:28.294100+00:00",
     "details": "Input: $0.247148 -> $0.24651; output: $1.23574 -> $1.23255"
-  },
-  {
-    "event_id": "77e6d4b9747d4986",
-    "type": "price_change",
-    "model_id": "greenpt/llama-3.3-70b-instruct",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-22T16:06:28.294100+00:00",
-    "details": "Input: $1.23574 -> $1.23255; output: $1.23574 -> $1.23255"
-  },
-  {
-    "event_id": "b91148158ef8870f",
-    "type": "price_change",
-    "model_id": "deepseek-v3.2-thinking",
-    "provider": "302.AI, NanoGPT, Vercel AI Gateway",
-    "detected_at": "2026-10-22T15:38:24.177983+00:00",
-    "details": "Input: $0.2088 -> $0.07; output: $0.3096 -> $0.105"
-  },
-  {
-    "event_id": "618071f5e4ac8bbe",
-    "type": "price_change",
-    "model_id": "z-ai/glm-5.2:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-22T15:38:24.177983+00:00",
-    "details": "Input: $0.42 -> $0.189; output: $1.32 -> $0.594"
-  },
-  {
-    "event_id": "4c68963dac21ed86",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-latest",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-22T15:38:24.177983+00:00",
-    "details": "Input: $0.20196 -> $0.1452; output: $0.60588 -> $0.4356"
   }
 ]
