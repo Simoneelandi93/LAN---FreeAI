@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "e3853ae0dc475656",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-24T21:34:18.251695+00:00",
+    "details": "Input: $0.0507 -> $0.0501; output: $0.0702 -> $0.0702",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "00c4c037db62d2fa",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T21:34:18.251695+00:00",
+    "details": "Input: $0.0507 -> $0.0504; output: $0.0702 -> $0.0702",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "65f6552350ba5323",
     "type": "new_free_model",
     "model_id": "iceman-contributor-free",
@@ -2199,21 +2223,5 @@
     "provider": "Kilo Gateway, OpenRouter",
     "detected_at": "2026-10-23T01:06:47.997421+00:00",
     "details": "Input: $0.09375 -> $0.075; output: $0.25 -> $0.2"
-  },
-  {
-    "event_id": "a818f10487063c82",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-pro-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-23T01:06:47.997421+00:00",
-    "details": "Input: $0.1307 -> $0.225; output: $8 -> $8"
-  },
-  {
-    "event_id": "2aab913363c0c9c9",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-v4-flash-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-23T01:06:47.997421+00:00",
-    "details": "Input: $0.0422 -> $0.0475; output: $0.1729 -> $0.1568"
   }
 ]
