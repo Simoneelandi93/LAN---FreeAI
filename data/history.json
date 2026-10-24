@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "5567550362ecb3e6",
+    "type": "new_model",
+    "model_id": "minimax-m3.1-flash",
+    "provider": "DigitalOcean",
+    "detected_at": "2026-10-24T04:05:54.022033+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "8b0ab842e8d2e5b5",
     "type": "new_model",
     "model_id": "deepseek/deepseek-v4.1-flash-uncensored:thinking",
@@ -2056,13 +2065,5 @@
     "provider": "NanoGPT",
     "detected_at": "2026-10-22T13:39:06.945394+00:00",
     "details": "Input: $0.66 -> $0.2244; output: $1.98 -> $0.6732"
-  },
-  {
-    "event_id": "88bbf67782098bf6",
-    "type": "price_change",
-    "model_id": "moonshotai/kimi-k2.6:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-22T13:39:06.945394+00:00",
-    "details": "Input: $0.45 -> $0.44935; output: $1.95 -> $1.892"
   }
 ]
