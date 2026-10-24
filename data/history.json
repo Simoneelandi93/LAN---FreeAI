@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "a1e5b7334f500d44",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-24T02:41:05.221067+00:00",
+    "details": "Input: $0.041 -> $0.0304; output: $0.0974 -> $0.0852",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "7c67cfe1a077aa08",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T02:41:05.221067+00:00",
+    "details": "Input: $0.041 -> $0.0304; output: $0.0974 -> $0.0852",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "d3d0cec7e5b1662a",
     "type": "price_change",
     "model_id": "nvidia/nemotron-3.5-super-vl",
@@ -2038,21 +2062,5 @@
     "provider": "OpenRouter, The Grid AI",
     "detected_at": "2026-10-22T12:47:35.561552+00:00",
     "details": "Input: $0.2503 -> $0.225; output: $8 -> $8"
-  },
-  {
-    "event_id": "d70ac45de3d1ff0d",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-pro-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.2503 -> $0.225; output: $8 -> $8"
-  },
-  {
-    "event_id": "40bc805321c224fb",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.238 -> $0.238; output: $16 -> $24"
   }
 ]
