@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "d3d0cec7e5b1662a",
+    "type": "price_change",
+    "model_id": "nvidia/nemotron-3.5-super-vl",
+    "provider": "DigitalOcean, Kilo Gateway, NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-10-24T01:43:43.209570+00:00",
+    "details": "Input: $0.075 -> $0.06; output: $0.35 -> $0.35",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "89c8ecfc25429c44",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-10-24T01:43:43.209570+00:00",
+    "details": "Input: $0.7506 -> $0.834; output: $2.2509 -> $2.501",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "dc1b58019596c5eb",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-24T01:43:43.209570+00:00",
+    "details": "Input: $0.0274 -> $0.041; output: $0.0852 -> $0.0974",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "55f288db606290da",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T01:43:43.209570+00:00",
+    "details": "Input: $0.0274 -> $0.041; output: $0.0852 -> $0.0974",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "b76bbd99b30f4856",
     "type": "price_change",
     "model_id": "nvidia/nemotron-3.5-super-vl",
@@ -2006,37 +2054,5 @@
     "provider": "Kilo Gateway",
     "detected_at": "2026-10-22T12:47:35.561552+00:00",
     "details": "Input: $0.238 -> $0.238; output: $16 -> $24"
-  },
-  {
-    "event_id": "05344441efdd45b0",
-    "type": "price_change",
-    "model_id": "anthropic/claude-sonnet-4.6",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $4.1262 -> $3.174; output: $20.631 -> $15.87"
-  },
-  {
-    "event_id": "c123a2aa604f150b",
-    "type": "price_change",
-    "model_id": "anthropic/claude-haiku-4.5",
-    "provider": "AI/ML API, Qiniu",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $1.3754 -> $1.058; output: $6.877 -> $5.29"
-  },
-  {
-    "event_id": "d5864a94a8f2aed6",
-    "type": "price_change",
-    "model_id": "anthropic/claude-sonnet-4.5",
-    "provider": "AI/ML API, Qiniu",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $4.1262 -> $3.174; output: $20.631 -> $15.87"
-  },
-  {
-    "event_id": "40d1eef1aaa554a5",
-    "type": "price_change",
-    "model_id": "anthropic/claude-opus-4.8",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $6.877 -> $5.29; output: $34.385 -> $26.45"
   }
 ]
