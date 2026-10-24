@@ -420,6 +420,12 @@ function renderModels(filtered) {
     </tr>`;
   }).join("");
 
+  if (!list.length) {
+    body.innerHTML = `<tr><td colspan="11"><div class="empty"><h3>No models found</h3><p>Try refining your search query or reset filters.</p></div></td></tr>`;
+  }
+  document.getElementById("loadMore").hidden = filtered.length <= visibleCount;
+}
+
 function showConfigModal(idx) {
   currentModelIdx = idx;
   const m = models[idx];
@@ -518,22 +524,14 @@ async function modalCopy(id) {
   } catch {}
 }
 
-// Wire up cfg-btn listeners after DOM is ready
-function wireCfgButtons() {
-  document.querySelectorAll(".cfg-btn").forEach(button => {
-    button.addEventListener("click", async event => {
-      event.preventDefault();
-      const idx = parseInt(button.dataset.modelIdx, 10);
-      showConfigModal(idx);
-    });
-  });
-}
-
-  if (!list.length) {
-    body.innerHTML = `<tr><td colspan="11"><div class="empty"><h3>No models found</h3><p>Try refining your search query or reset filters.</p></div></td></tr>`;
-  }
-  document.getElementById("loadMore").hidden = filtered.length <= visibleCount;
-}
+// Event delegation: survives table re-renders (innerHTML wipes per-element listeners)
+document.getElementById("modelBody").addEventListener("click", event => {
+  const button = event.target.closest(".cfg-btn");
+  if (!button) return;
+  event.preventDefault();
+  const idx = parseInt(button.dataset.modelIdx, 10);
+  if (Number.isFinite(idx)) showConfigModal(idx);
+});
 
 function renderProviders(query) {
   const list = document.getElementById("providerList");
@@ -767,5 +765,4 @@ document.querySelectorAll("th.sortable").forEach(th => {
   });
 });
 
-wireCfgButtons();
 loadData();
