@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "65f6552350ba5323",
+    "type": "new_free_model",
+    "model_id": "iceman-contributor-free",
+    "provider": "OpenCode Go",
+    "detected_at": "2026-10-24T21:04:47.675929+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "4ae26a0d7b8c22ca",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -2206,13 +2215,5 @@
     "provider": "Kilo Gateway",
     "detected_at": "2026-10-23T01:06:47.997421+00:00",
     "details": "Input: $0.0422 -> $0.0475; output: $0.1729 -> $0.1568"
-  },
-  {
-    "event_id": "821b98d6d6ebf91b",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-23T01:06:47.997421+00:00",
-    "details": "Input: $0.238 -> $0.238; output: $24 -> $16"
   }
 ]
