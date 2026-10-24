@@ -1,5 +1,77 @@
 [
   {
+    "event_id": "b76bbd99b30f4856",
+    "type": "price_change",
+    "model_id": "nvidia/nemotron-3.5-super-vl",
+    "provider": "DigitalOcean, Kilo Gateway, NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-10-24T01:02:37.096276+00:00",
+    "details": "Input: $0.1 -> $0.075; output: $0.4 -> $0.35",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "672b0c0b0d95e8d0",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-24T01:02:37.096276+00:00",
+    "details": "Input: $0.0422 -> $0.0422; output: $0.1729 -> $0.1694",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "689cb79ca474ac6a",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-24T01:02:37.096276+00:00",
+    "details": "Input: $0.0304 -> $0.0274; output: $0.122 -> $0.0852",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "428ebd4a163599f3",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T01:02:37.096276+00:00",
+    "details": "Input: $0.0422 -> $0.0422; output: $0.1729 -> $0.1694",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "9215e4cdcba96d25",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T01:02:37.096276+00:00",
+    "details": "Input: $0.0199 -> $0.0274; output: $0.122 -> $0.0852",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "821b98d6d6ebf91b",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T01:02:37.096276+00:00",
+    "details": "Input: $0.238 -> $0.238; output: $24 -> $16",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "97f3715aa1f9219f",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -1966,53 +2038,5 @@
     "provider": "AI/ML API",
     "detected_at": "2026-10-22T12:47:35.561552+00:00",
     "details": "Input: $6.877 -> $5.29; output: $34.385 -> $26.45"
-  },
-  {
-    "event_id": "fe4c4fe9f8b817ca",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-small-2603",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.257888 -> $0.198375; output: $1.03155 -> $0.7935"
-  },
-  {
-    "event_id": "2d3f29542e166431",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-small-3.1-24b-instruct",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.482765 -> $0.371358; output: $0.763347 -> $0.58719"
-  },
-  {
-    "event_id": "dd7df291898ce148",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-large-2407",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $2.7508 -> $2.116; output: $8.2524 -> $6.348"
-  },
-  {
-    "event_id": "4fa35b0c7e813d64",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-small-3.2-24b-instruct",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.103155 -> $0.07935; output: $0.27508 -> $0.2116"
-  },
-  {
-    "event_id": "6aa6a8663828c8f0",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-large",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $2.7508 -> $2.116; output: $8.2524 -> $6.348"
-  },
-  {
-    "event_id": "52abd49ee7290987",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-small-24b-instruct-2501",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.06877 -> $0.0529; output: $0.110032 -> $0.08464"
   }
 ]
