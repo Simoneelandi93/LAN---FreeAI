@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "8f3a32a9099b8199",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-24T17:33:03.126562+00:00",
+    "details": "Input: $0.0511 -> $0.0509; output: $0.0702 -> $0.0702",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "687c39984c5fd946",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-10-24T17:33:03.126562+00:00",
+    "details": "Input: $0.834 -> $0.7506; output: $2.501 -> $2.2509",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "2bcbdc22aacb321f",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T17:33:03.126562+00:00",
+    "details": "Input: $0.0511 -> $0.0509; output: $0.0702 -> $0.0702",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "c8fec63c8507b425",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -2170,29 +2206,5 @@
     "provider": "Fireworks AI",
     "detected_at": "2026-10-22T20:37:17.666600+00:00",
     "details": "$2.1 in / $10.5 out per 1M"
-  },
-  {
-    "event_id": "f745878f1a605f66",
-    "type": "price_change",
-    "model_id": "google/gemma-4-26b-a4b-it:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-22T20:37:17.666600+00:00",
-    "details": "Input: $0.09 -> $0.0765; output: $0.3 -> $0.255"
-  },
-  {
-    "event_id": "40bc805321c224fb",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-22T19:04:29.470548+00:00",
-    "details": "Input: $0.238 -> $0.238; output: $16 -> $24"
-  },
-  {
-    "event_id": "687c39984c5fd946",
-    "type": "price_change",
-    "model_id": "tencent/hy4-preview",
-    "provider": "NanoGPT, Vercel AI Gateway",
-    "detected_at": "2026-10-22T17:36:07.861606+00:00",
-    "details": "Input: $0.834 -> $0.7506; output: $2.501 -> $2.2509"
   }
 ]
