@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "c8fec63c8507b425",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-24T15:34:06.378795+00:00",
+    "details": "Input: $0.0512 -> $0.0511; output: $0.0702 -> $0.0702",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "ce5847b4a86748be",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T15:34:06.378795+00:00",
+    "details": "Input: $0.0502 -> $0.0511; output: $0.0709 -> $0.0702",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "ae5fef0ed9340225",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-v4-flash-latest",
@@ -2170,21 +2194,5 @@
     "provider": "NanoGPT, Vercel AI Gateway",
     "detected_at": "2026-10-22T17:36:07.861606+00:00",
     "details": "Input: $0.834 -> $0.7506; output: $2.501 -> $2.2509"
-  },
-  {
-    "event_id": "e1ef80bef450bd4f",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-v3.2-thinking",
-    "provider": "302.AI, NanoGPT, Vercel AI Gateway",
-    "detected_at": "2026-10-22T17:05:13.281690+00:00",
-    "details": "Input: $0.07 -> $0.2088; output: $0.105 -> $0.3096"
-  },
-  {
-    "event_id": "76e953ced5e022da",
-    "type": "new_model",
-    "model_id": "reka-ai/deepseek-v4.1-flash",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-10-22T16:39:00.248412+00:00",
-    "details": "$0.3 in / $1.2 out per 1M"
   }
 ]
