@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "179a9dc6cb49a32d",
+    "type": "price_change",
+    "model_id": "kolibri-1",
+    "provider": "Cortecs, Munito AI, Munito AI (EU)",
+    "detected_at": "2026-10-24T22:04:42.931388+00:00",
+    "details": "Input: $0.167 -> $0.13; output: $0.613 -> $0.51",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "e3853ae0dc475656",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -2215,13 +2227,5 @@
     "provider": "OpenRouter, The Grid AI",
     "detected_at": "2026-10-23T01:06:47.997421+00:00",
     "details": "Input: $0.1307 -> $0.225; output: $8 -> $8"
-  },
-  {
-    "event_id": "10175acc37faa4c3",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-small-3.2-24b-instruct",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-23T01:06:47.997421+00:00",
-    "details": "Input: $0.09375 -> $0.075; output: $0.25 -> $0.2"
   }
 ]
