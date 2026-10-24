@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "01157e22a7bcbeb1",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-24T13:34:09.850163+00:00",
+    "details": "Input: $0.0492 -> $0.0502; output: $0.0788 -> $0.0709",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "fbb2dec15808633b",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T13:34:09.850163+00:00",
+    "details": "Input: $0.19 -> $0.19; output: $7.7001 -> $8.94",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "3403e19bfaf98c66",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T13:34:09.850163+00:00",
+    "details": "Input: $0.0492 -> $0.0502; output: $0.0788 -> $0.0709",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "0916fd69d5550844",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -2138,29 +2174,5 @@
     "provider": "Fireworks AI",
     "detected_at": "2026-10-22T16:39:00.248412+00:00",
     "details": "$0.21 in / $0.84 out per 1M"
-  },
-  {
-    "event_id": "91e0f42be6f0f653",
-    "type": "new_model",
-    "model_id": "minimax/minimax-m3.1-flash",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-22T16:39:00.248412+00:00",
-    "details": "$0.15 in / $0.6 out per 1M"
-  },
-  {
-    "event_id": "821b98d6d6ebf91b",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-22T16:39:00.248412+00:00",
-    "details": "Input: $0.238 -> $0.238; output: $24 -> $16"
-  },
-  {
-    "event_id": "bfa6e19d6ceef0b5",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-v4-flash-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-22T16:39:00.248412+00:00",
-    "details": "Input: $0.0475 -> $0.0422; output: $0.1568 -> $0.1729"
   }
 ]
