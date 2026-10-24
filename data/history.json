@@ -1,5 +1,269 @@
 [
   {
+    "event_id": "8bf3d14aba8ef969",
+    "type": "new_model",
+    "model_id": "entrim/deepseek-v4.1-flash-1017",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "$0.2 in / $0.8 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "a95f4e6f26feffb1",
+    "type": "new_model",
+    "model_id": "novita/minimax-m3.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "deaea574bd7586ef",
+    "type": "new_model",
+    "model_id": "inference.net/minimax-m3.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "$0.1 in / $0.5 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "df692b8422adb9f8",
+    "type": "price_change",
+    "model_id": "reka-ai/deepseek-v4-pro",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $1.2 -> $0.9; output: $3.3 -> $1.9",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "6539c23ae0d420e2",
+    "type": "price_change",
+    "model_id": "reka-ai/deepseek-v4.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.3 -> $0.1; output: $1.2 -> $0.3",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "8edaf88c10b9f7f3",
+    "type": "price_change",
+    "model_id": "reka-ai/glm-5.3",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $1.17 -> $0.45; output: $3.96 -> $1.8",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "b5801f86c9f090c0",
+    "type": "new_model",
+    "model_id": "nebius/minimax-m3.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "e67a461dfda385fd",
+    "type": "new_model",
+    "model_id": "together-ai/minimax-m3.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "295ab5c2992cf658",
+    "type": "price_change",
+    "model_id": "nemotron-3.5-super-vl",
+    "provider": "DigitalOcean, Kilo Gateway, NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.1 -> $0.06; output: $0.4 -> $0.35",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "9d769a0ad7c141d7",
+    "type": "new_model",
+    "model_id": "minimax-m3.1-flash",
+    "provider": "DigitalOcean",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "89c8ecfc25429c44",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.7506 -> $0.834; output: $2.2509 -> $2.501",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "dae71b4d78f35265",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Fireworks AI, OpenRouter",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.07 -> $0.02; output: $0.5 -> $1",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "2e3798fb2edad43f",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.238 -> $0.19; output: $5.5 -> $5.5",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "7b0f058a0ed6d5d0",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.079 -> $0.075; output: $1.1 -> $1.1",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "fee53cea77e9984d",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.0422 -> $0.0422; output: $0.1729 -> $0.1763",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "7a14663c9925eb62",
+    "type": "new_model",
+    "model_id": "xingchen-agi/xing4.0-29b-a4b",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "$0.22 in / $0.9 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "59220204fc129330",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-uncensored:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "$0.33 in / $1.32 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "0bfdc0311d1d0c7c",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.0285 -> $0.0511; output: $0.0923 -> $0.0702",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "6610679d1c81994e",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.07 -> $0.02; output: $0.5 -> $1",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "e359af64e44238d1",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.0422 -> $0.0422; output: $0.1729 -> $0.1763",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "3be7fe0bfac10e33",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.238 -> $0.19; output: $24 -> $8.94",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "3f53956014a04f75",
+    "type": "price_change",
+    "model_id": "minimax/minimax-m3.1-flash",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.1 -> $0.09; output: $0.55 -> $0.5",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "6fca0b4d394a9a6e",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.0285 -> $0.0511; output: $0.0923 -> $0.0702",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "f40d5a53e5699cf1",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T16:07:43.912397+00:00",
+    "details": "Input: $0.079 -> $0.075; output: $1.4 -> $4.295",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "aba05e7a0d3655da",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -1802,197 +2066,5 @@
     "provider": "NanoGPT",
     "detected_at": "2026-10-22T15:06:26.733763+00:00",
     "details": "Input: $0.2244 -> $0.20196; output: $0.6732 -> $0.60588"
-  },
-  {
-    "event_id": "a6475fb9c42c0d16",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-latest",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-22T15:06:26.733763+00:00",
-    "details": "Input: $0.2244 -> $0.20196; output: $0.6732 -> $0.60588"
-  },
-  {
-    "event_id": "f0603a0f09a6f92f",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-v4-flash-0731:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-22T15:06:26.733763+00:00",
-    "details": "Input: $0.05 -> $0.04444; output: $0.16 -> $0.13332"
-  },
-  {
-    "event_id": "be8e76e90c6d7dd5",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-latest",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-22T13:39:06.945394+00:00",
-    "details": "Input: $0.66 -> $0.2244; output: $1.98 -> $0.6732"
-  },
-  {
-    "event_id": "09668893974249be",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-v4-pro-0813:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-22T13:39:06.945394+00:00",
-    "details": "Input: $0.66 -> $0.2244; output: $1.98 -> $0.6732"
-  },
-  {
-    "event_id": "88bbf67782098bf6",
-    "type": "price_change",
-    "model_id": "moonshotai/kimi-k2.6:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-22T13:39:06.945394+00:00",
-    "details": "Input: $0.45 -> $0.44935; output: $1.95 -> $1.892"
-  },
-  {
-    "event_id": "da7324cde7edc353",
-    "type": "new_model",
-    "model_id": "kolibri-1",
-    "provider": "Cortecs",
-    "detected_at": "2026-10-22T13:39:06.945394+00:00",
-    "details": "$0.167 in / $0.613 out per 1M"
-  },
-  {
-    "event_id": "16daf6254a2d3ba0",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-pro-latest",
-    "provider": "OpenRouter, The Grid AI",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.2503 -> $0.225; output: $8 -> $8"
-  },
-  {
-    "event_id": "d70ac45de3d1ff0d",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-pro-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.2503 -> $0.225; output: $8 -> $8"
-  },
-  {
-    "event_id": "40bc805321c224fb",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.238 -> $0.238; output: $16 -> $24"
-  },
-  {
-    "event_id": "05344441efdd45b0",
-    "type": "price_change",
-    "model_id": "anthropic/claude-sonnet-4.6",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $4.1262 -> $3.174; output: $20.631 -> $15.87"
-  },
-  {
-    "event_id": "c123a2aa604f150b",
-    "type": "price_change",
-    "model_id": "anthropic/claude-haiku-4.5",
-    "provider": "AI/ML API, Qiniu",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $1.3754 -> $1.058; output: $6.877 -> $5.29"
-  },
-  {
-    "event_id": "d5864a94a8f2aed6",
-    "type": "price_change",
-    "model_id": "anthropic/claude-sonnet-4.5",
-    "provider": "AI/ML API, Qiniu",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $4.1262 -> $3.174; output: $20.631 -> $15.87"
-  },
-  {
-    "event_id": "40d1eef1aaa554a5",
-    "type": "price_change",
-    "model_id": "anthropic/claude-opus-4.8",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $6.877 -> $5.29; output: $34.385 -> $26.45"
-  },
-  {
-    "event_id": "fe4c4fe9f8b817ca",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-small-2603",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.257888 -> $0.198375; output: $1.03155 -> $0.7935"
-  },
-  {
-    "event_id": "2d3f29542e166431",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-small-3.1-24b-instruct",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.482765 -> $0.371358; output: $0.763347 -> $0.58719"
-  },
-  {
-    "event_id": "dd7df291898ce148",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-large-2407",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $2.7508 -> $2.116; output: $8.2524 -> $6.348"
-  },
-  {
-    "event_id": "4fa35b0c7e813d64",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-small-3.2-24b-instruct",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.103155 -> $0.07935; output: $0.27508 -> $0.2116"
-  },
-  {
-    "event_id": "6aa6a8663828c8f0",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-large",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $2.7508 -> $2.116; output: $8.2524 -> $6.348"
-  },
-  {
-    "event_id": "52abd49ee7290987",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-small-24b-instruct-2501",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.06877 -> $0.0529; output: $0.110032 -> $0.08464"
-  },
-  {
-    "event_id": "dabf04281e6b5a65",
-    "type": "price_change",
-    "model_id": "mistralai/devstral-2512",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.605176 -> $0.46552; output: $3.02588 -> $2.3276"
-  },
-  {
-    "event_id": "48a26495267d1acb",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-medium-3",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.55016 -> $0.4232; output: $2.7508 -> $2.116"
-  },
-  {
-    "event_id": "061498f565f0a144",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-medium-3-5",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $2.0631 -> $1.587; output: $10.3155 -> $7.935"
-  },
-  {
-    "event_id": "2a1f69ee9897d8b6",
-    "type": "price_change",
-    "model_id": "mistralai/mistral-medium-3.1",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $0.55016 -> $0.4232; output: $2.7508 -> $2.116"
-  },
-  {
-    "event_id": "ccf239dd5abc244d",
-    "type": "price_change",
-    "model_id": "morph/morph-v3-fast",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-22T12:47:35.561552+00:00",
-    "details": "Input: $1.10032 -> $0.8464; output: $1.65048 -> $1.2696"
   }
 ]

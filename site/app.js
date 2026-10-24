@@ -170,6 +170,26 @@ function priceFmt(v) {
   return v === 0 ? '<span class="text-emerald font-semibold">$0.00</span>' : `$${v.toLocaleString(undefined, { maximumFractionDigits: 4 })}`;
 }
 
+function fmtPrice(v) {
+  if (v === null || v === undefined) return "—";
+  if (v === 0) return "$0";
+  return `$${v.toLocaleString(undefined, { maximumFractionDigits: 6 })}`;
+}
+
+function extractApiBase(source) {
+  if (!source || !source.includes("://")) return "";
+  try {
+    const parsed = new URL(source);
+    const parts = parsed.pathname.split("/");
+    let versionIdx = -1;
+    for (let i = 0; i < parts.length; i++) {
+      if (parts[i].match(/^\/v\d+$/)) { versionIdx = i; break; }
+    }
+    if (versionIdx >= 0) return `${parsed.protocol}//${parsed.host}${parts.slice(0, versionIdx + 1).join("/")}`;
+    return `${parsed.protocol}//${parsed.host}`;
+  } catch { return ""; }
+}
+
 function ctxFmt(v) {
   const n = Number(v);
   if (!Number.isFinite(n) || n <= 0) return '<span class="cell-na">—</span>';
@@ -445,6 +465,37 @@ function showConfigModal(idx) {
   if (omniUrl) document.getElementById("modalOmniUrl").dataset.copy = omniUrl;
   document.getElementById("modalOmniUrlCopy").style.display = omniUrl ? "" : "none";
 
+  // LiteLLM section
+  const ll = m.litellm;
+  const llSection = document.getElementById("modalLitellmSection");
+  if (ll) {
+    llSection.hidden = false;
+    document.getElementById("modalLlProvider").textContent = ll.litellm_provider || "—";
+    document.getElementById("modalLlModel").textContent = ll.model_name || "—";
+    document.getElementById("modalLlConfigKey").textContent = ll.litellm_key || "—";
+    document.getElementById("modalLlApiBase").textContent = extractApiBase(ll.source) || "—";
+    const inp = ll.input_cost_per_token;
+    const out = ll.output_cost_per_token;
+    const pricingParts = [];
+    if (inp != null) pricingParts.push(`in ${fmtPrice(inp)}/tok`);
+    if (out != null) pricingParts.push(`out ${fmtPrice(out)}/tok`);
+    document.getElementById("modalLlPricing").textContent = pricingParts.join(" / ") || "—";
+    const limitParts = [];
+    if (ll.max_input_tokens) limitParts.push(`${(ll.max_input_tokens / 1000).toFixed(0)}k in`);
+    if (ll.max_output_tokens) limitParts.push(`${(ll.max_output_tokens / 1000).toFixed(0)}k out`);
+    document.getElementById("modalLlLimits").textContent = limitParts.join(" / ") || "—";
+    const caps = [];
+    if (ll.supports_reasoning) caps.push("R");
+    if (ll.supports_vision) caps.push("V");
+    if (ll.supports_function_calling) caps.push("T");
+    if (ll.supports_prompt_caching) caps.push("C");
+    if (ll.supports_tool_choice) caps.push("TC");
+    if (ll.supports_response_schema) caps.push("{}");
+    document.getElementById("modalLlCaps").textContent = caps.join(" ") || "—";
+  } else {
+    llSection.hidden = true;
+  }
+
   document.getElementById("configOverlay").classList.add("show");
   document.getElementById("configModal").classList.add("show");
 }
@@ -467,13 +518,16 @@ async function modalCopy(id) {
   } catch {}
 }
 
-  body.querySelectorAll(".cfg-btn").forEach(button => {
+// Wire up cfg-btn listeners after DOM is ready
+function wireCfgButtons() {
+  document.querySelectorAll(".cfg-btn").forEach(button => {
     button.addEventListener("click", async event => {
       event.preventDefault();
       const idx = parseInt(button.dataset.modelIdx, 10);
       showConfigModal(idx);
     });
   });
+}
 
   if (!list.length) {
     body.innerHTML = `<tr><td colspan="11"><div class="empty"><h3>No models found</h3><p>Try refining your search query or reset filters.</p></div></td></tr>`;
@@ -713,4 +767,5 @@ document.querySelectorAll("th.sortable").forEach(th => {
   });
 });
 
+wireCfgButtons();
 loadData();

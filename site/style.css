@@ -1182,6 +1182,11 @@ body.no-stats .col-bench {
   color: var(--amber);
   border-color: rgba(245,158,11,0.4);
 }
+#modalLitellmSection {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  margin-top: 12px;
+}
 
 .cfg-btn {
   display: inline-flex;

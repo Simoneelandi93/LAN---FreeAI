@@ -14,6 +14,9 @@
         },
         {
             "path": "../../../../iCloudDrive/Software/Bats-Powershells"
+        },
+        {
+            "path": ".."
         }
     ]
 }

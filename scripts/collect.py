@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from typing import Any, Dict, List
 from sources.free_tiers_upstream import fetch_upstream_free_tiers, PROVIDER_ALIASES
 from sources.models_dev import fetch_models_dev_catalog
+from sources.litellm import fetch_litellm_catalog, enrich_models
 from sources.llm_stats import fetch_llm_stats, attach_llm_stats, stats_index
 from scripts.detect_changes import detect_model_changes
 from scripts.notify_telegram import send_telegram, send_alerts
@@ -107,6 +108,14 @@ def main():
     else:
         curated_offers = load_json(OFFERS_FILE, [])
         print("[Warn] Using committed offers.json fallback.")
+
+    # 1b. Enrich models with LiteLLM data (provider, pricing, capabilities).
+    litellm_entries = fetch_litellm_catalog()
+    if litellm_entries:
+        enrich_models(new_models, litellm_entries)
+        print(f"[litellm] Enriched {sum(1 for m in new_models if m.get('litellm'))} models.")
+    else:
+        print("[Warn] No LiteLLM data fetched — models not enriched.")
 
     if not new_models:
         print("[Warn] No models fetched from providers. Keeping old snapshot.")
