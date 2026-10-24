@@ -1,5 +1,38 @@
 [
   {
+    "event_id": "3fd47de24c27155d",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T22:33:39.638364+00:00",
+    "details": "Input: $0.19 -> $0.2137; output: $8.94 -> $7.7001",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "812f9df1a2d1cc03",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T22:33:39.638364+00:00",
+    "details": "Input: $0.0504 -> $0.0254; output: $0.0702 -> $0.1425",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "7c5bbe61743e6062",
+    "type": "new_model",
+    "model_id": "liquid/lfm-2.5-2.6b",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T22:33:39.638364+00:00",
+    "details": "$0.35 in / $0.5 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "179a9dc6cb49a32d",
     "type": "price_change",
     "model_id": "kolibri-1",
@@ -2203,29 +2236,5 @@
     "provider": "Arcee, NanoGPT, OpenRouter",
     "detected_at": "2026-10-23T01:06:47.997421+00:00",
     "details": "Input: $0.0422 -> $0.0475; output: $0.1729 -> $0.1568"
-  },
-  {
-    "event_id": "0e56ed5d57658cac",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-latest",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-23T01:06:47.997421+00:00",
-    "details": "Input: $0.1452 -> $0.66; output: $0.4356 -> $1.98"
-  },
-  {
-    "event_id": "d156dc68005ee19f",
-    "type": "price_change",
-    "model_id": "z-ai/glm-5.2:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-23T01:06:47.997421+00:00",
-    "details": "Input: $0.189 -> $0.42; output: $0.594 -> $1.32"
-  },
-  {
-    "event_id": "fa345e4201cfc98e",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-pro-latest",
-    "provider": "OpenRouter, The Grid AI",
-    "detected_at": "2026-10-23T01:06:47.997421+00:00",
-    "details": "Input: $0.1307 -> $0.225; output: $8 -> $8"
   }
 ]
