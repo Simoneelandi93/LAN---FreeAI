@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "c2b82a7a6de4d0e3",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-24T06:47:38.526556+00:00",
+    "details": "Input: $0.027602 -> $0.0175; output: $0.1593 -> $0.1425",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "40bc805321c224fb",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T06:47:38.526556+00:00",
+    "details": "Input: $0.238 -> $0.238; output: $16 -> $24",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "358f648fb3dc2680",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-24T06:47:38.526556+00:00",
+    "details": "Input: $0.027602 -> $0.0175; output: $0.1593 -> $0.1425",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "8ed60c7e2a76c662",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -2057,29 +2093,5 @@
     "provider": "NanoGPT",
     "detected_at": "2026-10-22T15:38:24.177983+00:00",
     "details": "Input: $0.20196 -> $0.1452; output: $0.60588 -> $0.4356"
-  },
-  {
-    "event_id": "d136b094a0fe34d4",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-v4-pro-0813:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-22T15:38:24.177983+00:00",
-    "details": "Input: $0.20196 -> $0.1452; output: $0.60588 -> $0.4356"
-  },
-  {
-    "event_id": "676f778961280662",
-    "type": "price_change",
-    "model_id": "thinkingmachines/inkling:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-22T15:06:26.733763+00:00",
-    "details": "Input: $0.95 -> $1; output: $4.05 -> $4.05"
-  },
-  {
-    "event_id": "96c533a76a8e10fb",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-v4-pro-0813:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-22T15:06:26.733763+00:00",
-    "details": "Input: $0.2244 -> $0.20196; output: $0.6732 -> $0.60588"
   }
 ]
