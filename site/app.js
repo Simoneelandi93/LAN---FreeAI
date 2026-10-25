@@ -380,11 +380,21 @@ function capPills(m) {
 }
 
 function renderModels(filtered) {
-  const sorted = [...filtered].sort(cmpModels);
+  // Group catalog rows by normalized model name so the same model served by
+  // N providers occupies one row; the primary provider is shown inline and
+  // the rest live behind a "+N" popup trigger.
+  const groups = new Map();
+  for (const m of filtered) {
+    const key = getModelName(m).toLowerCase();
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(m);
+  }
+  const sorted = [...groups.values()].map(g => pickPrimary(g)).sort((a, b) => cmpModels(a.model, b.model));
   const list = sorted.slice(0, visibleCount);
   const body = document.getElementById("modelBody");
 
-  body.innerHTML = list.map(m => {
+  body.innerHTML = list.map(g => {
+    const m = g.model;
     const s = m.llm_stats_id ? statsById[m.llm_stats_id] : null;
     const rank = s && Number.isFinite(Number(s.rank)) ? `<span class="rank-badge">#${s.rank}</span>` : '<span class="cell-na">—</span>';
     const overallScore = s && Number.isFinite(Number(s.score)) ? `<span class="score-primary">${Number(s.score).toFixed(1)}</span>` : '<span class="cell-na">—</span>';
@@ -399,10 +409,10 @@ function renderModels(filtered) {
     const url = m.provider_url || m.source_url || "#";
     const displayName = getModelName(m);
     const displayProvider = getProviderName(m, s);
-    const nrMatch = resolveRouterId(m, nineRouterModels, "9router");
-    const omniMatch = resolveRouterId(m, omniRouterModels, "OmniRouter");
-    const nrClass = nrMatch.status === "verified" ? "matched" : nrMatch.status === "wrong_provider" ? "warn" : "";
-    const omniClass = omniMatch.status === "verified" ? "matched" : omniMatch.status === "wrong_provider" ? "warn" : "";
+    const altCount = g.alternates.length;
+    const provTrigger = altCount
+      ? `<button class="prov-pop-trigger" data-prov-group="${esc(String(displayName))}" type="button" title="Show all ${altCount + 1} providers offering this model">+${altCount} more</button>`
+      : "";
     return `<tr>
       <td class="text-center font-mono">${rank}</td>
       <td>
@@ -414,7 +424,7 @@ function renderModels(filtered) {
             </button>
             ${capPills(m)}
           </div>
-          <span class="model-provider-sub">${esc(displayProvider)}</span>
+          <span class="model-provider-sub">${esc(displayProvider)}</span>${provTrigger}
         </div>
       </td>
       <td class="text-right col-score">${overallScore}</td>
@@ -433,6 +443,58 @@ function renderModels(filtered) {
     body.innerHTML = `<tr><td colspan="11"><div class="empty"><h3>No models found</h3><p>Try refining your search query or reset filters.</p></div></td></tr>`;
   }
   document.getElementById("loadMore").hidden = filtered.length <= visibleCount;
+}
+
+// Choose which provider's row represents a model group: free/cheapest first,
+// then best benchmark score, then biggest context window.
+function pickPrimary(group) {
+  const ranked = [...group].sort((a, b) => {
+    const fa = (a.is_free ? 0 : price(a.input_price_per_m) ?? Infinity);
+    const fb = (b.is_free ? 0 : price(b.input_price_per_m) ?? Infinity);
+    if (fa !== fb) return fa - fb;
+    const sa = a.llm_stats_id ? Number(statsById[a.llm_stats_id]?.score) : NaN;
+    const sb = b.llm_stats_id ? Number(statsById[b.llm_stats_id]?.score) : NaN;
+    const va = Number.isFinite(sa) ? sa : -1;
+    const vb = Number.isFinite(sb) ? sb : -1;
+    if (vb !== va) return vb - va;
+    return (Number(b.context_window) || 0) - (Number(a.context_window) || 0);
+  });
+  return { model: ranked[0], alternates: ranked.slice(1) };
+}
+
+function showProvPopup(displayName) {
+  const key = String(displayName || "").toLowerCase();
+  const group = models.filter(m => getModelName(m).toLowerCase() === key);
+  if (!group.length) return;
+  const { model: primary, alternates } = pickPrimary(group);
+  document.getElementById("provPopTitle").textContent = `${getModelName(primary)} — ${group.length} provider${group.length === 1 ? "" : "s"}`;
+  const rows = [{ m: primary, tag: "primary" }, ...alternates.map(m => ({ m, tag: null }))];
+  document.getElementById("provPopList").innerHTML = rows.map(({ m, tag }) => {
+    const s = m.llm_stats_id ? statsById[m.llm_stats_id] : null;
+    const inp = price(m.input_price_per_m);
+    const out = price(m.output_price_per_m);
+    const provName = getProviderName(m, s);
+    const provUrl = m.provider_url || m.source_url || "#";
+    return `<div class="prov-pop-row ${tag === "primary" ? "primary" : ""}">
+      <div class="pp-main">
+        <a class="pp-provider" href="${esc(provUrl)}" target="_blank" rel="noopener noreferrer">${esc(provName)}</a>
+        ${tag === "primary" ? '<span class="scout-best-tag">best price</span>' : ""}
+        ${m.is_free ? '<span class="license-tag open">Free</span>' : ""}
+      </div>
+      <div class="pp-meta">
+        <span class="pp-id">${esc(m.model_id || m.name || "")}</span>
+        <span class="pp-price">${inp === null ? "—" : inp === 0 ? '<span class="text-emerald">$0</span>' : `$${inp.toLocaleString(undefined, { maximumFractionDigits: 4 })}`}${out !== null ? ` / $${out.toLocaleString(undefined, { maximumFractionDigits: 4 })}` : ""} <span class="pp-unit">per 1M</span></span>
+        ${quotaFmt(m.offer)}
+      </div>
+    </div>`;
+  }).join("");
+  document.getElementById("provPopOverlay").classList.add("show");
+  document.getElementById("provPopModal").classList.add("show");
+}
+
+function closeProvPopup() {
+  document.getElementById("provPopOverlay").classList.remove("show");
+  document.getElementById("provPopModal").classList.remove("show");
 }
 
 function showConfigModal(idx) {
@@ -535,6 +597,8 @@ async function modalCopy(id) {
 
 // Event delegation: survives table re-renders (innerHTML wipes per-element listeners)
 document.getElementById("modelBody").addEventListener("click", event => {
+  const provBtn = event.target.closest(".prov-pop-trigger");
+  if (provBtn) { showProvPopup(provBtn.dataset.provGroup); return; }
   const button = event.target.closest(".cfg-btn");
   if (!button) return;
   event.preventDefault();
@@ -881,7 +945,7 @@ function updateSortIndicators() {
 }
 
 window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeModal();
+  if (e.key === "Escape") { closeModal(); closeProvPopup(); }
   if (e.key === "/" && document.activeElement !== document.getElementById("searchInput")) {
     e.preventDefault();
     document.getElementById("searchInput").focus();
