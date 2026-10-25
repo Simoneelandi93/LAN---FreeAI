@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "fb8a340e81e64219",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-25T23:32:46.684244+00:00",
+    "details": "Input: $0.226 -> $0.191; output: $5.5 -> $5.5",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "612ca6db52db69ab",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T23:32:46.684244+00:00",
+    "details": "Input: $0.226 -> $0.1919; output: $16 -> $8.1113",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "1c1d203243df9043",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -1959,24 +1983,6 @@
     "provider": "Azure, Azure Cognitive Services, DevPass (LLM Gateway), NanoGPT",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0.04 in / $0.04 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "e372418908ba3772",
-    "type": "new_model",
-    "model_id": "openai/gpt-4o-mini",
-    "provider": "AI/ML API, Abacus, Azure, Azure Cognitive Services, Cloudflare AI Gateway, Cortecs, CrossModel, DevPass (LLM Gateway), Eden AI, Impossibl, Kilo Gateway, LowRouter, Merge Gateway, NanoGPT, Ofox, OpenAI, OpenRouter, OrcaRouter, Poe, Prime Inference, Venice AI, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.075 in / $0.3 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "e879add0c7b43418",
-    "type": "new_model",
-    "model_id": "gpt-image-2.5-flare",
-    "provider": "AIHubMix, Azure, Azure Cognitive Services, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$5 in / $30 out per 1M",
     "alerted": false
   }
 ]
