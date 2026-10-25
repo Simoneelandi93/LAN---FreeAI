@@ -26,8 +26,8 @@ const FILTERS = {
 };
 
 const MILLIS_DAY = 86400000;
-const NINEROUTER_API_URL = "http://localhost:20128/v1/models";
-const OMNIROUTER_API_URL = "http://localhost:10129/v1/models";
+const NINEROUTER_API_URL = "http://127.0.0.1:20128/v1/models";
+const OMNIROUTER_API_URL = "http://127.0.0.1:10129/v1/models";
 let nineRouterModels = [];
 let nineRouterNormMap = new Map();
 let omniRouterModels = [];
@@ -340,7 +340,7 @@ function updateRouterStatusUI() {
         label.title = `${hint.name} connesso — ${s.count} modelli disponibili`;
       } else {
         label.textContent = `${hint.name}: offline — avvia il router sulla porta ${hint.port}`;
-        label.title = `${hint.name} non risponde su http://localhost:${hint.port}. Avvia il router in locale, poi la pagina si riconnette da sola entro 30 secondi.`;
+        label.title = `${hint.name} non risponde su http://127.0.0.1:${hint.port}. Avvia il router in locale, poi la pagina si riconnette da sola entro 30 secondi.`;
       }
     }
   };
