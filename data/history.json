@@ -1,5 +1,38 @@
 [
   {
+    "event_id": "f2997529c0dba36d",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-25T01:45:16.932377+00:00",
+    "details": "Input: $0.075 -> $0.074; output: $1.1 -> $1.1",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "67e86dc79d2bde74",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T01:45:16.932377+00:00",
+    "details": "Input: $0.075 -> $0.074; output: $4.295 -> $1.4",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "8fa02f824b47ac00",
+    "type": "new_model",
+    "model_id": "perceptron/perceptron-mk1.5",
+    "provider": "AI/ML API",
+    "detected_at": "2026-10-25T01:45:16.932377+00:00",
+    "details": "$0.1587 in / $1.587 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "81cbdb3c872aff82",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -1794,33 +1827,6 @@
     "provider": "AI/ML API, EmpirioLabs AI, GreenPT, Prime Inference, STACKIT",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "6357d84e15799d6e",
-    "type": "new_model",
-    "model_id": "google/gemini-3.1-pro-preview",
-    "provider": "302.AI, AI/ML API, AIHubMix, Abacus, Auriko, Cloudflare AI Gateway, CrossModel, DaoXE, Databricks, DevPass (LLM Gateway), Eden AI, FastRouter, FrogBot, Google, Impossibl, Kenari, Kilo Gateway, Merge Gateway, NanoGPT, Ofox, OpenCode, OpenRouter, Opper, OrcaRouter, Perplexity Agent, Prime Inference, Requesty, Snowflake Cortex, Standard Compute, Tempr Gateway, Venice AI, Vercel AI Gateway, Vertex, Vivgrid, ZenMux",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$1 in / $6 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "1303d140c324e868",
-    "type": "new_model",
-    "model_id": "meta/muse-spark-open",
-    "provider": "Cloudflare AI Gateway, Fireworks AI, Kilo Gateway, Merge Gateway, Modal, NanoGPT, Nebius Token Factory, Ollama Cloud, OpenRouter, Prime Inference, Requesty, Together AI, Venice AI, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$1.25 in / $4.25 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "8649ebee43ad60bd",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.6-terra-pro",
-    "provider": "302.AI, AI/ML API, NanoGPT, OpenRouter, Prime Inference, Venice AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$2 in / $12 out per 1M",
     "alerted": true
   }
 ]
