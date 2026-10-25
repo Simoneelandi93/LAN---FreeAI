@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "0c98797a61a8d7fe",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-25T18:39:06.765018+00:00",
+    "details": "Input: $0.226 -> $0.18; output: $5.5 -> $5.5",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "db5ac4205af02bd2",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T18:39:06.765018+00:00",
+    "details": "Input: $0.152 -> $0.18; output: $16 -> $16",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "1c1d203243df9043",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -1929,24 +1953,6 @@
     "provider": "302.AI, Jiekou.AI, Merge Gateway",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$3 in / $15 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "ffe19863fd9c6b9a",
-    "type": "new_model",
-    "model_id": "gemini-2.5-flash-lite-preview-06-17",
-    "provider": "Jiekou.AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.09 in / $0.36 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "bc72455dbd49cf36",
-    "type": "new_model",
-    "model_id": "grok-4-0709",
-    "provider": "Jiekou.AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$2.85 in / $14.25 out per 1M",
     "alerted": false
   }
 ]
