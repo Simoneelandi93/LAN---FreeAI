@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "bbd42b52dec45025",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-25T19:32:43.012797+00:00",
+    "details": "Input: $0.18 -> $0.1529; output: $5.5 -> $5.5",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "d5c2a58eb13f9ffe",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T19:32:43.012797+00:00",
+    "details": "Input: $0.18 -> $0.1529; output: $16 -> $10.5572",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "0c98797a61a8d7fe",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -1936,23 +1960,5 @@
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0 in / $0 out per 1M",
     "alerted": true
-  },
-  {
-    "event_id": "f881189233974063",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.4-pro",
-    "provider": "AI/ML API, Azure, Azure Cognitive Services, Cloudflare AI Gateway, DevPass (LLM Gateway), Eden AI, Impossibl, Kilo Gateway, Ofox, OpenAI, OpenCode, OpenRouter, Opper, OrcaRouter, Poe, Prime Inference, Requesty, Venice AI, Vercel AI Gateway, ZenMux",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$27.2727 in / $163.6364 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "15e062d1412b6c26",
-    "type": "new_model",
-    "model_id": "claude-sonnet-4-5-20250929",
-    "provider": "302.AI, Jiekou.AI, Merge Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$3 in / $15 out per 1M",
-    "alerted": false
   }
 ]
