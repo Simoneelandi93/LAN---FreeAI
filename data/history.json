@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "c607f054c9674ee2",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-25T03:42:42.481233+00:00",
+    "details": "Input: $0.0191 -> $0.0287; output: $0.1352 -> $0.0914",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "9f84bb40bde9fb19",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-25T03:42:42.481233+00:00",
+    "details": "Input: $0.1795 -> $0.19; output: $5.5 -> $5.5",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "f087f33d2f975d5b",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T03:42:42.481233+00:00",
+    "details": "Input: $0.1795 -> $0.19; output: $9.7224 -> $8.94",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "169098641e77aef0",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T03:42:42.481233+00:00",
+    "details": "Input: $0.0191 -> $0.0287; output: $0.1352 -> $0.0914",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "7635da5d7f742723",
     "type": "price_change",
     "model_id": "~z-ai/glm-latest",
@@ -1810,41 +1858,5 @@
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0 in / $0 out per 1M",
     "alerted": true
-  },
-  {
-    "event_id": "feb4cb8b0304cac0",
-    "type": "new_model",
-    "model_id": "minimax/minimax-m1",
-    "provider": "302.AI, Jiekou.AI, NanoGPT, OpenRouter, Qiniu",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.132 in / $1.254 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "59d3f4895d1f78ea",
-    "type": "new_model",
-    "model_id": "xiaomimimo/mimo-v2-flash",
-    "provider": "Jiekou.AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.1 in / $0.3 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "a1be1b2ae7c6a32b",
-    "type": "new_free_model",
-    "model_id": "qwen/qwen3-235b-a22b-2507",
-    "provider": "302.AI, Amazon Bedrock, Cortecs, Crusoe, Deep Infra, DevPass (LLM Gateway), GreenPT, Hugging Face, Jiekou.AI, Meganova, Merge Gateway, ModelScope, Nebius Token Factory, OpenRouter, Qiniu, Scaleway, Venice AI, Vercel AI Gateway, submodel",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "cd7c68e036599797",
-    "type": "new_model",
-    "model_id": "qwen/qwen3-235b-a22b-fp8",
-    "provider": "302.AI, Alibaba, Alibaba (China), Hugging Face, Jiekou.AI, Merge Gateway, NanoGPT, Qiniu",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.0875 in / $0.35 out per 1M",
-    "alerted": false
   }
 ]
