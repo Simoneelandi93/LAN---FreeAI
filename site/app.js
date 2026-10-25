@@ -322,17 +322,38 @@ document.addEventListener("click", event => {
   }
 });
 
+const ROUTER_HINTS = {
+  "9router": { port: 20128, name: "9router" },
+  "OmniRouter": { port: 10129, name: "OmniRouter" },
+};
+
 function updateRouterStatusUI() {
   const setStatus = (indicatorId, labelId, id) => {
     const s = routerStatus[id] || { ok: false, count: 0 };
+    const hint = ROUTER_HINTS[id];
     const dot = document.getElementById(indicatorId);
     const label = document.getElementById(labelId);
-    if (dot) { dot.style.background = s.ok ? "#10b981" : "#64748b"; dot.style.boxShadow = s.ok ? "0 0 8px #10b981" : "none"; }
-    if (label) label.textContent = s.ok ? `${s.count} mod` : "offline";
+    if (dot) { dot.style.background = s.ok ? "#10b981" : "#f59e0b"; dot.style.boxShadow = s.ok ? "0 0 8px #10b981" : "none"; }
+    if (label) {
+      if (s.ok) {
+        label.textContent = `${s.count} mod`;
+        label.title = `${hint.name} connesso — ${s.count} modelli disponibili`;
+      } else {
+        label.textContent = `${hint.name}: offline — avvia il router sulla porta ${hint.port}`;
+        label.title = `${hint.name} non risponde su http://localhost:${hint.port}. Avvia il router in locale, poi la pagina si riconnette da sola entro 30 secondi.`;
+      }
+    }
   };
   setStatus("status9router", "status9routerLabel", "9router");
   setStatus("statusOmniRouter", "statusOmniRouterLabel", "OmniRouter");
 }
+
+setInterval(async () => {
+  if (!routerStatus["9router"].ok || !routerStatus["OmniRouter"].ok) {
+    await fetchNineRouterModels();
+    updateRouterStatusUI();
+  }
+}, 30000);
 
 async function loadData() {
   try {

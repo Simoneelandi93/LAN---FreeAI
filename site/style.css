@@ -156,6 +156,12 @@ a:hover {
   color: var(--text-dim);
   font-family: var(--font-mono);
   margin-right: 4px;
+  cursor: help;
+  max-width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
 .status-indicator {
