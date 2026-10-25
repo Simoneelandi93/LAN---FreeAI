@@ -32,10 +32,16 @@
       </div>
       <div class="header-meta">
         <span class="status-indicator" id="status9router"></span>
-        <span class="router-status" id="status9routerLabel">9r:...</span>
+        <span class="router-status" id="status9routerLabel" role="button" tabindex="0">9r:...</span>
         <span class="status-indicator" id="statusOmniRouter"></span>
-        <span class="router-status" id="statusOmniRouterLabel">Omni:...</span>
+        <span class="router-status" id="statusOmniRouterLabel" role="button" tabindex="0">Omni:...</span>
         <span class="updated" id="lastUpdated">Checking...</span>
+        <button type="button" class="router-key-btn" id="routerKeyBtn" title="API key router" aria-label="Configura API key router">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -254,6 +260,21 @@
       <button class="cm-close" onclick="closeProvPopup()" type="button">&times;</button>
     </div>
     <div class="prov-pop-list" id="provPopList"></div>
+  </div>
+  <div class="modal-overlay" id="routerKeyOverlay" hidden></div>
+  <div class="config-modal router-key-modal" id="routerKeyModal" hidden>
+    <div class="cm-header">
+      <h2>API key router</h2>
+      <button class="cm-close" id="routerKeyCancel" type="button">&times;</button>
+    </div>
+    <div class="cm-section">
+      <p class="router-key-desc">9router e OmniRouter accettano richieste dal sito solo con una API key valida. Creala nel dashboard del router (Settings → API Keys) e incolla qui. La chiave resta solo nel tuo browser.</p>
+      <input type="password" id="routerKeyInput" class="router-key-input" placeholder="Incolla la API key…" autocomplete="off" spellcheck="false">
+      <div class="router-key-actions">
+        <button type="button" class="combo-action-btn" id="routerKeyCancel2">Annulla</button>
+        <button type="button" class="combo-action-btn router-key-save" id="routerKeySave">Salva e ricarica</button>
+      </div>
+    </div>
   </div>
   <script src="app.js"></script>
 </body>

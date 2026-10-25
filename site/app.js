@@ -33,6 +33,8 @@ let nineRouterNormMap = new Map();
 let omniRouterModels = [];
 let omniRouterNormMap = new Map();
 let routerStatus = { "9router": { ok: false, count: 0 }, "OmniRouter": { ok: false, count: 0 } };
+let routerApiKey = "";
+try { routerApiKey = localStorage.getItem("routerApiKey") || ""; } catch { /* storage unavailable */ }
 let currentModelIdx = null;
 
 function normalizeSlug(value) {
@@ -41,44 +43,52 @@ function normalizeSlug(value) {
 
 async function fetchNineRouterModels() {
   try {
-    const response = await fetch(NINEROUTER_API_URL, { signal: AbortSignal.timeout(2000) });
-    if (!response.ok) return;
-    const body = await response.json();
-    const list = Array.isArray(body?.data) ? body.data : Array.isArray(body) ? body : [];
-    nineRouterModels = list.map(m => ({ id: m.id || "", owned_by: m.owned_by || "" })).filter(m => m.id);
-    nineRouterNormMap.clear();
-    for (const nr of nineRouterModels) {
-      nineRouterNormMap.set(normalizeSlug(nr.id), nr.id);
-      const slash = nr.id.indexOf("/");
-      if (slash >= 0) nineRouterNormMap.set(normalizeSlug(nr.id.slice(slash + 1)), nr.id);
+    const url = routerApiKey ? `${NINEROUTER_API_URL}?key=${encodeURIComponent(routerApiKey)}` : NINEROUTER_API_URL;
+    const response = await fetch(url, { signal: AbortSignal.timeout(2000) });
+    if (!response.ok) {
+      routerStatus["9router"] = { ok: false, count: 0, authRequired: response.status === 401 };
+    } else {
+      const body = await response.json();
+      const list = Array.isArray(body?.data) ? body.data : Array.isArray(body) ? body : [];
+      nineRouterModels = list.map(m => ({ id: m.id || "", owned_by: m.owned_by || "" })).filter(m => m.id);
+      nineRouterNormMap.clear();
+      for (const nr of nineRouterModels) {
+        nineRouterNormMap.set(normalizeSlug(nr.id), nr.id);
+        const slash = nr.id.indexOf("/");
+        if (slash >= 0) nineRouterNormMap.set(normalizeSlug(nr.id.slice(slash + 1)), nr.id);
+      }
+      routerStatus["9router"] = { ok: true, count: nineRouterModels.length, authRequired: false };
     }
-    routerStatus["9router"] = { ok: true, count: nineRouterModels.length };
   } catch {
     nineRouterModels = [];
     nineRouterNormMap.clear();
-    routerStatus["9router"] = { ok: false, count: 0 };
+    routerStatus["9router"] = { ok: false, count: 0, authRequired: false };
   }
   await fetchOmniRouterModels();
 }
 
 async function fetchOmniRouterModels() {
   try {
-    const response = await fetch(OMNIROUTER_API_URL, { signal: AbortSignal.timeout(2000) });
-    if (!response.ok) return;
-    const body = await response.json();
-    const list = Array.isArray(body?.data) ? body.data : Array.isArray(body) ? body : [];
-    omniRouterModels = list.map(m => ({ id: m.id || "", owned_by: m.owned_by || "" })).filter(m => m.id);
-    omniRouterNormMap.clear();
-    for (const nr of omniRouterModels) {
-      omniRouterNormMap.set(normalizeSlug(nr.id), nr.id);
-      const slash = nr.id.indexOf("/");
-      if (slash >= 0) omniRouterNormMap.set(normalizeSlug(nr.id.slice(slash + 1)), nr.id);
+    const url = routerApiKey ? `${OMNIROUTER_API_URL}?key=${encodeURIComponent(routerApiKey)}` : OMNIROUTER_API_URL;
+    const response = await fetch(url, { signal: AbortSignal.timeout(2000) });
+    if (!response.ok) {
+      routerStatus["OmniRouter"] = { ok: false, count: 0, authRequired: response.status === 401 };
+    } else {
+      const body = await response.json();
+      const list = Array.isArray(body?.data) ? body.data : Array.isArray(body) ? body : [];
+      omniRouterModels = list.map(m => ({ id: m.id || "", owned_by: m.owned_by || "" })).filter(m => m.id);
+      omniRouterNormMap.clear();
+      for (const nr of omniRouterModels) {
+        omniRouterNormMap.set(normalizeSlug(nr.id), nr.id);
+        const slash = nr.id.indexOf("/");
+        if (slash >= 0) omniRouterNormMap.set(normalizeSlug(nr.id.slice(slash + 1)), nr.id);
+      }
+      routerStatus["OmniRouter"] = { ok: true, count: omniRouterModels.length, authRequired: false };
     }
-    routerStatus["OmniRouter"] = { ok: true, count: omniRouterModels.length };
   } catch {
     omniRouterModels = [];
     omniRouterNormMap.clear();
-    routerStatus["OmniRouter"] = { ok: false, count: 0 };
+    routerStatus["OmniRouter"] = { ok: false, count: 0, authRequired: false };
   }
 }
 
@@ -338,6 +348,9 @@ function updateRouterStatusUI() {
       if (s.ok) {
         label.textContent = `${s.count} mod`;
         label.title = `${hint.name} connesso — ${s.count} modelli disponibili`;
+      } else if (s.authRequired) {
+        label.textContent = `${hint.name}: serve una API key — clicca qui per configurarla`;
+        label.title = `${hint.name} rifiuta l'accesso dal sito pubblico (richiede API key). Clicca sull'icona ⚙ nell'header per inserire una API key creata nel dashboard di ${hint.name}.`;
       } else {
         label.textContent = `${hint.name}: offline — avvia il router sulla porta ${hint.port}`;
         label.title = `${hint.name} non risponde su http://127.0.0.1:${hint.port}. Avvia il router in locale, poi la pagina si riconnette da sola entro 30 secondi.`;
@@ -347,6 +360,53 @@ function updateRouterStatusUI() {
   setStatus("status9router", "status9routerLabel", "9router");
   setStatus("statusOmniRouter", "statusOmniRouterLabel", "OmniRouter");
 }
+
+function saveRouterApiKey(key) {
+  routerApiKey = key.trim();
+  try {
+    if (routerApiKey) localStorage.setItem("routerApiKey", routerApiKey);
+    else localStorage.removeItem("routerApiKey");
+  } catch { /* storage unavailable */ }
+}
+
+const routerKeyModal = document.getElementById("routerKeyModal");
+const routerKeyOverlay = document.getElementById("routerKeyOverlay");
+const routerKeyInput = document.getElementById("routerKeyInput");
+
+function openRouterKeyModal() {
+  if (!routerKeyModal) return;
+  routerKeyInput.value = routerApiKey;
+  routerKeyOverlay.hidden = false;
+  routerKeyModal.hidden = false;
+  routerKeyInput.focus();
+}
+
+function closeRouterKeyModal() {
+  if (!routerKeyModal) return;
+  routerKeyOverlay.hidden = true;
+  routerKeyModal.hidden = true;
+}
+
+function submitRouterKey() {
+  saveRouterApiKey(routerKeyInput.value || "");
+  closeRouterKeyModal();
+  fetchNineRouterModels().then(updateRouterStatusUI);
+}
+
+document.getElementById("routerKeyBtn")?.addEventListener("click", openRouterKeyModal);
+routerKeyOverlay?.addEventListener("click", closeRouterKeyModal);
+document.getElementById("routerKeySave")?.addEventListener("click", submitRouterKey);
+document.getElementById("routerKeyCancel")?.addEventListener("click", closeRouterKeyModal);
+document.getElementById("routerKeyCancel2")?.addEventListener("click", closeRouterKeyModal);
+for (const labelId of ["status9routerLabel", "statusOmniRouterLabel"]) {
+  document.getElementById(labelId)?.addEventListener("click", () => {
+    if (!routerStatus["9router"].ok || !routerStatus["OmniRouter"].ok) openRouterKeyModal();
+  });
+}
+routerKeyInput?.addEventListener("keydown", e => {
+  if (e.key === "Enter") submitRouterKey();
+  if (e.key === "Escape") closeRouterKeyModal();
+});
 
 setInterval(async () => {
   if (!routerStatus["9router"].ok || !routerStatus["OmniRouter"].ok) {
@@ -966,7 +1026,7 @@ function updateSortIndicators() {
 }
 
 window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") { closeModal(); closeProvPopup(); }
+  if (e.key === "Escape") { closeModal(); closeProvPopup(); closeRouterKeyModal(); }
   if (e.key === "/" && document.activeElement !== document.getElementById("searchInput")) {
     e.preventDefault();
     document.getElementById("searchInput").focus();
