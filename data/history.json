@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "7635da5d7f742723",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-25T02:42:52.618985+00:00",
+    "details": "Input: $0.074 -> $0.0703; output: $1.1 -> $1.1",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "f0c1c4a943926668",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-25T02:42:52.618985+00:00",
+    "details": "Input: $0.19 -> $0.1795; output: $5.5 -> $5.5",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "cc71dcf62f7e17e8",
+    "type": "price_change",
+    "model_id": "z-ai/GLM-4.5-Air:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:42:52.618985+00:00",
+    "details": "Input: $0.12 -> $0.13; output: $0.8 -> $0.85",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "e86f82690393b100",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T02:42:52.618985+00:00",
+    "details": "Input: $0.19 -> $0.1795; output: $8.94 -> $9.7224",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "0fe04b195746d214",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T02:42:52.618985+00:00",
+    "details": "Input: $0.074 -> $0.0703; output: $1.4 -> $4.3843",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "89c8ecfc25429c44",
     "type": "price_change",
     "model_id": "tencent/hy4-preview",
@@ -1786,50 +1846,5 @@
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0.0875 in / $0.35 out per 1M",
     "alerted": false
-  },
-  {
-    "event_id": "33ae67f3df25ebe7",
-    "type": "new_model",
-    "model_id": "qwen/qwen3-30b-a3b",
-    "provider": "302.AI, Deep Infra, DevPass (LLM Gateway), Helicone, Hugging Face, Jiekou.AI, Kilo Gateway, Merge Gateway, NanoGPT, OpenRouter, Qiniu, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.08 in / $0.285 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "9384425b08273f83",
-    "type": "new_model",
-    "model_id": "qwen/qwen3-32b",
-    "provider": "Abacus, Alibaba, Alibaba (China), Amazon Bedrock, Cortecs, Deep Infra, DevPass (LLM Gateway), Helicone, Hugging Face, Jiekou.AI, Kilo Gateway, Merge Gateway, NanoGPT, OpenRouter, Qiniu, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.08 in / $0.28 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "ba80b2f5fb655621",
-    "type": "new_model",
-    "model_id": "qwen/qwen3-coder-480b-a35b-instruct",
-    "provider": "302.AI, Abacus, Alibaba, Alibaba (China), Amazon Bedrock, DevPass (LLM Gateway), Hugging Face, Jiekou.AI, Merge Gateway, Qiniu, Together AI, Vercel AI Gateway, submodel",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.2 in / $0.8 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "9dc6d01b43b313a0",
-    "type": "new_model",
-    "model_id": "qwen/qwen3-next-80b-a3b-instruct",
-    "provider": "AI/ML API, Alibaba, Alibaba (China), Amazon Bedrock, Deep Infra, DevPass (LLM Gateway), Helicone, Hugging Face, Jalapeno Cloud, Jiekou.AI, Kilo Gateway, Merge Gateway, NanoGPT, Neon, OpenRouter, Qiniu, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.09 in / $0.574 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "49ccacf0e798d3fc",
-    "type": "new_free_model",
-    "model_id": "qwen/qwen3-235b-a22b-thinking-2507",
-    "provider": "DevPass (LLM Gateway), Hugging Face, Jiekou.AI, ModelScope, OpenRouter, Qiniu, Venice AI, submodel",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
   }
 ]
