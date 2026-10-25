@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "81cbdb3c872aff82",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-25T01:08:55.321968+00:00",
+    "details": "Input: $0.0502 -> $0.0191; output: $0.0819 -> $0.1352",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "9bbaa9f24b5509fe",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T01:08:55.321968+00:00",
+    "details": "Input: $0.0502 -> $0.0191; output: $0.0819 -> $0.1352",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "503c87efb7d6855a",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T01:08:55.321968+00:00",
+    "details": "Input: $0.19 -> $0.19; output: $8.5258 -> $8.94",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "1b92a0a1215abc5d",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T01:08:55.321968+00:00",
+    "details": "Input: $0.0422 -> $0.0422; output: $0.1763 -> $0.1694",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "da6297ec8c9751ff",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-25T01:08:55.321968+00:00",
+    "details": "Input: $0.0422 -> $0.0422; output: $0.1763 -> $0.1694",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "008a159252396cf5",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -1761,51 +1821,6 @@
     "provider": "302.AI, AI/ML API, NanoGPT, OpenRouter, Prime Inference, Venice AI",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$2 in / $12 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "1d568dc7a90fc367",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.6-luna-pro",
-    "provider": "302.AI, AI/ML API, NanoGPT, OpenRouter, Prime Inference, Venice AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.2 in / $1.2 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "9a0dbfb6ee6cabfb",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.6-sol-pro",
-    "provider": "302.AI, AI/ML API, NanoGPT, OpenRouter, Prime Inference, Venice AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$2 in / $10 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "1e95ca328c0249dc",
-    "type": "new_model",
-    "model_id": "mistralai/mixtral-8x22b-instruct",
-    "provider": "AI/ML API, Kilo Gateway, OpenRouter, Prime Inference",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$2 in / $6 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "34d04150f403d5eb",
-    "type": "new_model",
-    "model_id": "mistralai/mistral-nemo",
-    "provider": "AI/ML API, Helicone, Kilo Gateway, NanoGPT, OpenRouter, Prime Inference, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.029 in / $0.03 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "08cbb8bdb95bd731",
-    "type": "new_model",
-    "model_id": "mistralai/mistral-small-2603",
-    "provider": "AKI.IO, Cortecs, DevPass (LLM Gateway), Eden AI, EmpirioLabs AI, Infomaniak, Kilo Gateway, LowRouter, Mistral, OpenRouter, Opper, Prime Inference, Requesty, Tempr Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.15 in / $0.6 out per 1M",
     "alerted": true
   }
 ]
