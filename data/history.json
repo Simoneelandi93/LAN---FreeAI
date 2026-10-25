@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "004d3af5b98b39cc",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-25T21:33:59.359177+00:00",
+    "details": "Input: $0.202 -> $0.171; output: $5.5 -> $5.5",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "c6317702624d3f2b",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T21:33:59.359177+00:00",
+    "details": "Input: $0.202 -> $0.18; output: $16 -> $16",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "873349d019228483",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -1948,23 +1972,5 @@
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$1.42857143 in / $7.14285714 out per 1M",
     "alerted": true
-  },
-  {
-    "event_id": "54ba2c6f4d8668d5",
-    "type": "new_model",
-    "model_id": "gpt-4-turbo-vision",
-    "provider": "Azure, Azure Cognitive Services",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$10 in / $30 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "bea69a81a68472b5",
-    "type": "new_model",
-    "model_id": "grok-4-1-fast-reasoning",
-    "provider": "302.AI, Azure, Azure Cognitive Services, DevPass (LLM Gateway), FrogBot, Jiekou.AI, Poe, Vertex",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.19 in / $0.475 out per 1M",
-    "alerted": false
   }
 ]
