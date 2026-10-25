@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "873349d019228483",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-25T20:35:33.233012+00:00",
+    "details": "Input: $0.1529 -> $0.202; output: $5.5 -> $5.5",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "bb41dd31aff9d4ec",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T20:35:33.233012+00:00",
+    "details": "Input: $0.1529 -> $0.202; output: $10.5572 -> $16",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "bbd42b52dec45025",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -1942,23 +1966,5 @@
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0.19 in / $0.475 out per 1M",
     "alerted": false
-  },
-  {
-    "event_id": "0b288599c4ea8dec",
-    "type": "new_model",
-    "model_id": "gpt-5-codex",
-    "provider": "Abacus, Azure, Azure Cognitive Services, Impossibl, Jiekou.AI, OpenCode, Poe, Vercel AI Gateway, ZenMux",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$1.07 in / $8.5 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "c59504e01b9be621",
-    "type": "new_free_model",
-    "model_id": "moonshotai/kimi-k2.6",
-    "provider": "302.AI, AIHubMix, Abacus, Alibaba Token Plan, Alibaba Token Plan (China), Auriko, Azure, Azure Cognitive Services, Clarifai, ClinePass, Cloudflare Workers AI, CoreWeave, Cortecs, CrossModel, Crusoe, Deep Infra, DevPass (LLM Gateway), DigitalOcean, EBCloud, Eden AI, EmpirioLabs AI, FastRouter, FrogBot, GMI Cloud, GreenPT, Hugging Face, Inceptron, Infomaniak, Kenari, Kilo Gateway, Lilac, Melious, Merge Gateway, Moark, Moonshot AI, Moonshot AI (China), NEAR AI Cloud, NanoGPT, Novita AI, Nvidia, Ofox, Ollama Cloud, OpenCode, OpenRouter, OrcaRouter, Poe, Privatemode AI, Requesty, SCNet Token Plan, Tempr Gateway, TensorX, Thinking Machines, TokenGo, UnoRouter, Venice AI, Vercel AI Gateway, Wafer, ZenMux, evroc, routing.run",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
   }
 ]
