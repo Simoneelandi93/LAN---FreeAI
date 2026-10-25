@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "1b9ebde4f24ba906",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T06:47:59.568417+00:00",
+    "details": "Input: $0.044 -> $0.0418; output: $0.2 -> $0.077",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "337b19c7bff87204",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-25T06:47:59.568417+00:00",
+    "details": "Input: $0.044 -> $0.0418; output: $0.2 -> $0.077",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
     "event_id": "a90da8d13ba26f4d",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -1854,24 +1878,6 @@
     "provider": "AI/ML API, Helicone, Jiekou.AI, NanoGPT, Prime Inference, Qiniu",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0.4 in / $1.8 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "6aeb5fac93510da1",
-    "type": "new_model",
-    "model_id": "baidu/ernie-4.5-300b-a47b-paddle",
-    "provider": "Jiekou.AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.28 in / $1.1 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "05da812a523228ff",
-    "type": "new_model",
-    "model_id": "baidu/ernie-4.5-vl-424b-a47b",
-    "provider": "DevPass (LLM Gateway), Jiekou.AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.42 in / $1.25 out per 1M",
     "alerted": false
   }
 ]
