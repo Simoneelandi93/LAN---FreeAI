@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "1c1d203243df9043",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-25T17:33:22.414461+00:00",
+    "details": "Input: $0.171 -> $0.226; output: $5.5 -> $5.5",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "4c89e78411fee1ff",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T17:33:22.414461+00:00",
+    "details": "Input: $0.171 -> $0.152; output: $9.3421 -> $16",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "687c39984c5fd946",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-10-25T17:33:22.414461+00:00",
+    "details": "Input: $0.834 -> $0.7506; output: $2.501 -> $2.2509",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "386a0951ef7dbd2e",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -1912,32 +1948,5 @@
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$2.85 in / $14.25 out per 1M",
     "alerted": false
-  },
-  {
-    "event_id": "afa18af6707919f1",
-    "type": "new_model",
-    "model_id": "claude-sonnet-4-20250514",
-    "provider": "Jiekou.AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$2.7 in / $13.5 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "8e4c42ebed9802bb",
-    "type": "new_model",
-    "model_id": "claude-opus-4-1-20250805",
-    "provider": "302.AI, Jiekou.AI, Merge Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$13.5 in / $67.5 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "d6c28175cdd736bd",
-    "type": "new_model",
-    "model_id": "google/gemini-2.5-flash-lite",
-    "provider": "AIHubMix, AnyAPI, Cloudflare AI Gateway, CrossModel, Google, Impossibl, Jiekou.AI, Kenari, Kilo Gateway, LLMTR, Merge Gateway, NEAR AI Cloud, NanoGPT, Ofox, OpenRouter, OrcaRouter, Poe, Qiniu, SAP AI Core, Vercel AI Gateway, Vertex, ZenMux",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.05 in / $0.1 out per 1M",
-    "alerted": true
   }
 ]
