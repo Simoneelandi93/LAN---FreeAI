@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "ce1b0aa38d6f3455",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-25T12:41:56.162923+00:00",
+    "details": "Input: $0.18 -> $0.2147; output: $5.5 -> $5.5",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "5c4921fcce9f6112",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T12:41:56.162923+00:00",
+    "details": "Input: $0.18 -> $0.226; output: $16 -> $16",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "bc1b0820adcf0508",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -1885,23 +1909,5 @@
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0.18 in / $0.45 out per 1M",
     "alerted": false
-  },
-  {
-    "event_id": "f47a549226a0a908",
-    "type": "new_model",
-    "model_id": "grok-4-fast-reasoning",
-    "provider": "302.AI, Jiekou.AI, Poe",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.18 in / $0.45 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "f5f5dda296735b28",
-    "type": "new_free_model",
-    "model_id": "grok-code-fast-1",
-    "provider": "Abacus, Jiekou.AI, OpenCode, Poe",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
   }
 ]
