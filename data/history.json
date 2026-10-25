@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "a80192c17f2977fd",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-25T10:35:06.088255+00:00",
+    "details": "Input: $0.159 -> $0.2033; output: $5.5 -> $5.5",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "a7ba1b2f86015d3b",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T10:35:06.088255+00:00",
+    "details": "Input: $0.159 -> $0.2033; output: $16 -> $7.6972",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "2ad54801143337d0",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -1872,24 +1896,6 @@
     "provider": "302.AI, AIHubMix, Abacus, AnyAPI, Auriko, Cloudflare AI Gateway, Cortecs, CrossModel, Databricks, FastRouter, FrogBot, Google, Impossibl, Jiekou.AI, Kenari, Kilo Gateway, Merge Gateway, Modelis, NEAR AI Cloud, NanoGPT, Ofox, OpenRouter, OrcaRouter, Poe, QiHang, Qiniu, SAP AI Core, Standard Compute, Vercel AI Gateway, Vertex, ZenMux",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0.09 in / $0.71 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "be8af2f012d1c0a1",
-    "type": "new_model",
-    "model_id": "google/gemini-2.5-pro",
-    "provider": "302.AI, AIHubMix, Abacus, AnyAPI, Auriko, Cloudflare AI Gateway, Cortecs, CrossModel, Databricks, FastRouter, FrogBot, Google, Impossibl, Jiekou.AI, Kilo Gateway, Merge Gateway, Modelis, NEAR AI Cloud, NanoGPT, Ofox, OpenRouter, OrcaRouter, Poe, Qiniu, SAP AI Core, Standard Compute, Vercel AI Gateway, Vertex, ZenMux",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.625 in / $5 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "2b1f43c4372dc537",
-    "type": "new_model",
-    "model_id": "deepseek/deepseek-r1-0528",
-    "provider": "Alibaba (China), Deep Infra, Hugging Face, Jiekou.AI, Kilo Gateway, Meganova, Merge Gateway, NanoGPT, Novita AI, OpenRouter, Qiniu, TensorX, submodel",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.2 in / $0.8 out per 1M",
     "alerted": true
   }
 ]
