@@ -1,5 +1,233 @@
 [
   {
+    "event_id": "89c8ecfc25429c44",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "Input: $0.7506 -> $0.834; output: $2.2509 -> $2.501",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "e15a311d5195a959",
+    "type": "new_model",
+    "model_id": "Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-Derestricted-Lite",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "10addadc806be5be",
+    "type": "new_model",
+    "model_id": "Gemma-4-31B-StyleTune",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "1502265d8e5ba5ab",
+    "type": "new_model",
+    "model_id": "Gemma-4-31B-Gembrain-X-Core",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "a4ea81033e1aa7a9",
+    "type": "new_model",
+    "model_id": "Gemma-4-31B-K1-v5",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "c55261910ade967b",
+    "type": "new_model",
+    "model_id": "Gemma-4-31B-Dark-Gemistry",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "e1e4bc486d2d25d3",
+    "type": "new_model",
+    "model_id": "Gemma-4-31B-Animus-V14.1",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "23f4c080cffd57fd",
+    "type": "new_model",
+    "model_id": "synth-2.5-pro",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.1 in / $0.2 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "2a5358e23a09bb8e",
+    "type": "new_model",
+    "model_id": "synth-2.5-flash",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.03 in / $0.1 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "ebd3fa668a7724ff",
+    "type": "new_model",
+    "model_id": "Gemma-4-31B-Fabled",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "a716ef6adbcb925d",
+    "type": "new_model",
+    "model_id": "Gemma-4-31B-AssGuard",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "33a9b4ae8bd559a5",
+    "type": "new_model",
+    "model_id": "Gemma-4-31B-Novelist",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "ce50c909c0f31e72",
+    "type": "new_model",
+    "model_id": "Gemma-4-31B-Isometry-RP",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "78be84378fd77ff8",
+    "type": "new_model",
+    "model_id": "Gemma-4-31B-SDFT-Heretic-RP",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "d6862222f8030668",
+    "type": "new_model",
+    "model_id": "Gemma-4-31B-MeroMero",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "744f36f8eb4d9790",
+    "type": "new_model",
+    "model_id": "Qwen3.5-27B-Blossom-V6.4-Derestricted",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "eaf25e621e03c38a",
+    "type": "new_model",
+    "model_id": "Gemma-4-31B-Gembrain-uncensored-heretic",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "47a12d930161fd76",
+    "type": "new_model",
+    "model_id": "gemma-4-12b-it-starry-ocean",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.05 in / $0.25 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "6ed94a05d6358b24",
+    "type": "new_model",
+    "model_id": "Gemma-4-31B-Agares-v1",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "41632f3b8f92fca5",
+    "type": "new_model",
+    "model_id": "Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-Derestricted",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.306 in / $0.306 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "33a776793ba225b2",
+    "type": "new_model",
+    "model_id": "qwen/qwen2.5-vl-72b-instruct",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.69989 in / $0.69989 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "d9e96e9563816ae1",
+    "type": "new_model",
+    "model_id": "aisingapore/Qwen-SEA-LION-v4-32B-IT",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.3 in / $0.6 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "f38aed2b2ccc36ce",
+    "type": "new_model",
+    "model_id": "soob3123/GrayLine-Qwen3-8B",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.3 in / $0.3 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "1f64759b1b1cbe70",
+    "type": "new_model",
+    "model_id": "speakleash/Bielik-11B-v3.0-Instruct",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.48 in / $0.48 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "2db433c1438088b6",
+    "type": "new_model",
+    "model_id": "swiss-ai/apertus-v1.5-8b",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-25T02:09:17.757276+00:00",
+    "details": "$0.12 in / $0.24 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "f2997529c0dba36d",
     "type": "price_change",
     "model_id": "~z-ai/glm-latest",
@@ -1600,231 +1828,6 @@
     "type": "new_free_model",
     "model_id": "qwen/qwen3-235b-a22b-thinking-2507",
     "provider": "DevPass (LLM Gateway), Hugging Face, Jiekou.AI, ModelScope, OpenRouter, Qiniu, Venice AI, submodel",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "a68396422015751b",
-    "type": "new_model",
-    "model_id": "qwen/qwen3-next-80b-a3b-thinking",
-    "provider": "Alibaba, Alibaba (China), Jalapeno Cloud, Jiekou.AI, Kilo Gateway, Merge Gateway, NanoGPT, OpenRouter, Qiniu, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.144 in / $0.65 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "57c953facf2f58cf",
-    "type": "new_model",
-    "model_id": "qwen/qwen3-coder-next",
-    "provider": "Jiekou.AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.2 in / $1.5 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "4191ec759026f362",
-    "type": "new_free_model",
-    "model_id": "doubao-seed-evolving",
-    "provider": "Ofox, Volcengine Ark, Volcengine Ark Coding Plan",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "019a009f556fa082",
-    "type": "new_free_model",
-    "model_id": "bytedance-seed/seed-2.0-lite",
-    "provider": "AI/ML API, EmpirioLabs AI, Kilo Gateway, Merge Gateway, Ofox, OpenRouter, Volcengine Ark, Volcengine Ark Coding Plan",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "762dec203a406bf5",
-    "type": "new_free_model",
-    "model_id": "bytedance-seed/seed-2-1-turbo",
-    "provider": "EmpirioLabs AI, Ofox, OpenRouter, Venice AI, Vercel AI Gateway, Volcengine Ark, Volcengine Ark Coding Plan",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "a2804943817dc19b",
-    "type": "new_free_model",
-    "model_id": "stepfun/step-3.7-flash",
-    "provider": "AIHubMix, CommandCode, Deep Infra, DevPass (LLM Gateway), EmpirioLabs AI, Hugging Face, Kenari, Kilo Gateway, Novita AI, OpenRouter, Requesty, StepFun (China), StepFun (Global), StepFun Step Plan (China), StepFun Step Plan (Global), UnoRouter, Vercel AI Gateway, ZenMux",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "ac451feb5fc28ab7",
-    "type": "new_free_model",
-    "model_id": "stepfun/step-5-preview",
-    "provider": "AI/ML API, AIHubMix, CommandCode, Deep Infra, EmpirioLabs AI, Kilo Gateway, NanoGPT, Novita AI, Nvidia, OpenCode Go, OpenRouter, Requesty, StepFun (China), StepFun (Global), StepFun Step Plan (China), StepFun Step Plan (Global), Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "ea6947de7f8d0f00",
-    "type": "new_model",
-    "model_id": "step-3.5-flash-2603",
-    "provider": "EmpirioLabs AI, NanoGPT, StepFun (China), StepFun (Global), StepFun Step Plan (China), StepFun Step Plan (Global)",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.1 in / $0.3 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "b0b74688c9df4619",
-    "type": "new_model",
-    "model_id": "stepfun/step-3.5-flash",
-    "provider": "CommandCode, EmpirioLabs AI, Hugging Face, Kilo Gateway, NanoGPT, OpenRouter, StepFun (China), StepFun (Global), StepFun Step Plan (China), StepFun Step Plan (Global), ZenMux",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.09 in / $0.3 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "795bc5618fea1f48",
-    "type": "new_model",
-    "model_id": "step-router-v1",
-    "provider": "StepFun Step Plan (China)",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "Pricing unavailable",
-    "alerted": false
-  },
-  {
-    "event_id": "9d638b697af86457",
-    "type": "new_model",
-    "model_id": "sarvam-105b",
-    "provider": "FastRouter, NanoGPT, Sarvam AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.04 in / $0.16 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "23912a5e487cf4ef",
-    "type": "new_model",
-    "model_id": "sarvam-30b",
-    "provider": "Sarvam AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "Pricing unavailable",
-    "alerted": false
-  },
-  {
-    "event_id": "52ceb487d11c183f",
-    "type": "new_model",
-    "model_id": "google/gemini-3.7-flash",
-    "provider": "302.AI, AI/ML API, AIHubMix, Abacus, Cloudflare AI Gateway, CommandCode, Cortecs, CrossModel, DevPass (LLM Gateway), Eden AI, GitHub Copilot, Google, Kenari, Kilo Gateway, Merge Gateway, NanoGPT, Neon, Ofox, OpenCode, OpenRouter, Opper, Perplexity Agent, Poe, Prime Inference, Requesty, Tempr Gateway, Venice AI, Vercel AI Gateway, Vertex, Vivgrid",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.34285714 in / $1.71428571 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "e5a7b9242009d12d",
-    "type": "new_model",
-    "model_id": "x-ai/grok-4.5",
-    "provider": "302.AI, AIHubMix, Abacus, Cloudflare AI Gateway, CommandCode, CrossModel, DaoXE, DevPass (LLM Gateway), Eden AI, GitHub Copilot, Impossibl, Kenari, Kilo Gateway, Merge Gateway, NanoGPT, Ofox, OpenCode, OpenRouter, Opper, OrcaRouter, Perplexity Agent, Requesty, Tempr Gateway, Venice AI, Vercel AI Gateway, ZenMux, xAI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$2 in / $6 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "4855ff4221b4f50f",
-    "type": "new_model",
-    "model_id": "google/gemini-3.8-flash",
-    "provider": "302.AI, AI/ML API, AIHubMix, Aixy, Cloudflare AI Gateway, CommandCode, Cortecs, CrossModel, DevPass (LLM Gateway), Eden AI, GitHub Copilot, Google, Kilo Gateway, Merge Gateway, NEAR AI Cloud, NanoGPT, Neon, Ofox, OpenCode, OpenRouter, Opper, Perplexity Agent, Poe, Prime Inference, Requesty, SAP AI Core, Standard Compute, Tempr Gateway, Venice AI, Vercel AI Gateway, Vertex, Vivgrid",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.75 in / $3.75 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "f6ae72fbde293e00",
-    "type": "new_model",
-    "model_id": "google/gemini-3.5-flash",
-    "provider": "302.AI, AIHubMix, Abacus, Cloudflare AI Gateway, CommandCode, Cortecs, CrossModel, Databricks, DevPass (LLM Gateway), Eden AI, FastRouter, GitHub Copilot, Google, Impossibl, Kenari, Kilo Gateway, Merge Gateway, NEAR AI Cloud, NanoGPT, Neon, Ofox, OpenCode, OpenRouter, Opper, OrcaRouter, Poe, Prime Inference, Requesty, SAP AI Core, Tempr Gateway, UnoRouter, Venice AI, Vercel AI Gateway, Vertex, Xpersona, ZenMux",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.1857 in / $1.1142 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "75675b6f9ec84a7a",
-    "type": "new_model",
-    "model_id": "google/gemini-4-argon",
-    "provider": "302.AI, AIHubMix, Aixy, Cloudflare AI Gateway, CommandCode, Cortecs, CrossModel, DevPass (LLM Gateway), Eden AI, GitHub Copilot, Google, Kilo Gateway, Merge Gateway, NanoGPT, Ofox, OpenCode, OpenCode Go, OpenRouter, Perplexity Agent, Prime Inference, Requesty, Venice AI, Vercel AI Gateway, Vertex",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$2 in / $10 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "6403dd49a0e54170",
-    "type": "new_model",
-    "model_id": "anthropic/claude-haiku-4.5",
-    "provider": "AIHubMix, Anthropic, AnyAPI, Cloudflare AI Gateway, Cortecs, CrossModel, Databricks, DevPass (LLM Gateway), GitHub Copilot, Impossibl, Kilo Gateway, Model Oracle AI, NEAR AI Cloud, Neon, Ofox, OpenRouter, Opper, OrcaRouter, Pioneer, Requesty, Snowflake Cortex, Tempr Gateway, Xpersona",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.6 in / $3.7 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "775e19c82475a6cb",
-    "type": "new_model",
-    "model_id": "google/gemini-3.6-flash",
-    "provider": "302.AI, AI/ML API, AIHubMix, Abacus, Cloudflare AI Gateway, CommandCode, Cortecs, CrossModel, DevPass (LLM Gateway), Eden AI, GitHub Copilot, Google, Impossibl, Kenari, Kilo Gateway, Merge Gateway, NanoGPT, Neon, Ofox, OpenCode, OpenRouter, OrcaRouter, Perplexity Agent, Poe, Prime Inference, Requesty, SAP AI Core, Tempr Gateway, Venice AI, Vercel AI Gateway, Vertex",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.34285714 in / $1.71428571 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "3fc186862f3e0d87",
-    "type": "new_model",
-    "model_id": "mai-code-1.1-flash",
-    "provider": "GitHub Copilot",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.2 in / $1.2 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "ee13da1cc6817eb2",
-    "type": "new_free_model",
-    "model_id": "deepseek/deepseek-v4.1-flash-1017",
-    "provider": "Alibaba Token Plan, Alibaba Token Plan (China), Arcee, Baseten, Charm Hyper, Cloudflare Workers AI, Cortecs, Deep Infra, DeepSeek, DevPass (LLM Gateway), DigitalOcean, EmpirioLabs AI, Fireworks AI, Hugging Face, Kilo Gateway, Melious, Merge Gateway, Munito AI, NEAR AI Cloud, NanoGPT, Novita AI, Ofox, Ollama Cloud, OpenRouter, Prime Inference, Requesty, Synthetic, Thinking Machines, Umans AI, Umans AI Coding Plan, Venice AI, Vercel AI Gateway, engy",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "27daff023bfa1e62",
-    "type": "new_model",
-    "model_id": "deepseek/deepseek-v4-flash",
-    "provider": "Merge Gateway, NanoGPT, Ofox, Prime Inference, Venice AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.138 in / $0.275 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "cf26a1a6026a082c",
-    "type": "new_model",
-    "model_id": "deepseek/deepseek-v4-pro",
-    "provider": "Merge Gateway, Ofox, Prime Inference",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$1.32 in / $3.3 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "abc9c4d181132588",
-    "type": "new_free_model",
-    "model_id": "moonshotai/kimi-k3.1-pro",
-    "provider": "DevPass (LLM Gateway), Eden AI, Kimi For Coding (kimi.ai), Kimi For Coding (kimi.com), Merge Gateway, Moonshot AI, Moonshot AI (China), NanoGPT, OpenCode Go, OpenRouter, Prime Inference, Requesty, Venice AI, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "38de266f42e32387",
-    "type": "new_free_model",
-    "model_id": "google/gemma-3-27b-it",
-    "provider": "AI/ML API, EmpirioLabs AI, GreenPT, Prime Inference, STACKIT",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0 in / $0 out per 1M",
     "alerted": true
