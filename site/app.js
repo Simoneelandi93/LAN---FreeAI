@@ -11,6 +11,14 @@ let visibleCount = 100;
 let sortKey = "name";
 let sortDir = "asc";
 
+// Scout state
+let scoutSort = "score";
+let scoutScope = "daily";
+let scoutRouter = "9router";
+let scoutSelection = new Map(); // provider_id -> model (one pick per provider)
+const SCOUT_FRESH_DAYS = 7;
+let scoutEvents = [];
+
 const FILTERS = {
   all: () => true,
   free: m => Boolean(m.is_free),
@@ -337,6 +345,7 @@ async function loadData() {
     models = Array.isArray(catalog) ? catalog : [];
     history = Array.isArray(histData) ? histData : [];
     statsById = statsData && !Array.isArray(statsData) ? statsData : {};
+    scoutEvents = history.filter(ev => ev.type === "model_became_free" || ev.type === "new_model");
 
     const hasStats = models.some(m => m.llm_stats_id && statsById[m.llm_stats_id]);
     document.body.classList.toggle("no-stats", !hasStats);
@@ -651,6 +660,7 @@ function render() {
   const isModels = activeView === "models";
   const isProviders = activeView === "providers";
   const isChanges = activeView === "changes";
+  const isScout = activeView === "scout";
 
   const modelFilters = document.getElementById("modelFilters");
   const providerDropdown = document.getElementById("providerDropdownContainer");
@@ -658,6 +668,7 @@ function render() {
   const capLegend = document.getElementById("capLegend");
   const providerGrid = document.getElementById("providerGrid");
   const changesView = document.getElementById("changesView");
+  const scoutView = document.getElementById("scoutView");
 
   if (modelFilters) modelFilters.style.display = isModels ? "flex" : "none";
   if (providerDropdown) providerDropdown.style.display = isModels ? "inline-block" : "none";
@@ -665,9 +676,11 @@ function render() {
   if (capLegend) capLegend.style.display = isModels ? "flex" : "none";
   if (providerGrid) providerGrid.style.display = isProviders ? "block" : "none";
   if (changesView) changesView.style.display = isChanges ? "block" : "none";
+  if (scoutView) scoutView.style.display = isScout ? "block" : "none";
 
   if (isChanges) { renderChanges(query); return; }
   if (isProviders) { renderProviders(query); return; }
+  if (isScout) { renderScout(query); renderCombo(); return; }
 
   const fn = FILTERS[activeFilter] || FILTERS.all;
   const filtered = models.filter(m => {
@@ -684,6 +697,176 @@ function render() {
   document.getElementById("resultCount").textContent = `Showing ${filtered.length.toLocaleString()} matching models`;
   updateSortIndicators();
   renderModels(filtered);
+}
+
+// ---------- Scout: best free model per provider ----------
+
+function scoutQuotaValue(m) {
+  const o = m.offer || {};
+  const day = Number(o.quota_requests_day ?? o.rpd);
+  if (Number.isFinite(day) && day > 0) return day;
+  const rolling = o.rolling_window;
+  if (rolling && Number.isFinite(Number(rolling.requests)) && Number.isFinite(Number(rolling.window_hours))) {
+    // normalize a rolling window to a daily-equivalent request figure
+    return (Number(rolling.requests) / Number(rolling.window_hours)) * 24;
+  }
+  return 0;
+}
+
+function scoutQuotaLabel(m) {
+  const o = m.offer || {};
+  const day = Number(o.quota_requests_day ?? o.rpd);
+  if (Number.isFinite(day) && day > 0) return `${day.toLocaleString()} req/d`;
+  const rolling = o.rolling_window;
+  if (rolling && Number.isFinite(Number(rolling.requests))) {
+    return `${rolling.requests} req / ${rolling.window_hours}h`;
+  }
+  return "unknown";
+}
+
+function scoutFreshDate(modelId) {
+  let best = null;
+  for (const ev of scoutEvents) {
+    if (ev.model_id && modelId && ev.model_id.toLowerCase().includes(String(modelId).toLowerCase().split("/").pop())) {
+      const t = new Date(ev.detected_at);
+      if (!isNaN(t.getTime()) && (!best || t > best)) best = t;
+    }
+  }
+  return best;
+}
+
+function buildScoutList() {
+  // Candidates: $0-priced models AND models carrying a free-tier offer
+  // (quota-based free tiers like Google AI Studio are not $0 in the catalog
+  // but are free to use within the provider's daily quota).
+  const free = models.filter(m => (m.is_free || m.offer) && !isInvalidText(m.provider_id));
+  const byProvider = new Map();
+  for (const m of free) {
+    if (!byProvider.has(m.provider_id)) byProvider.set(m.provider_id, []);
+    byProvider.get(m.provider_id).push(m);
+  }
+  const rows = [];
+  for (const [pid, list] of byProvider) {
+    // Best by benchmark score, fall back to context window when unscored
+    const ranked = [...list].sort((a, b) => {
+      const sa = a.llm_stats_id ? Number(statsById[a.llm_stats_id]?.score) : NaN;
+      const sb = b.llm_stats_id ? Number(statsById[b.llm_stats_id]?.score) : NaN;
+      const va = Number.isFinite(sa) ? sa : -1;
+      const vb = Number.isFinite(sb) ? sb : -1;
+      if (vb !== va) return vb - va;
+      return (Number(b.context_window) || 0) - (Number(a.context_window) || 0);
+    });
+    const best = ranked[0];
+    if (scoutScope === "daily" && scoutQuotaValue(best) <= 0) continue;
+    rows.push({ provider: pid, best, alternates: ranked.slice(1, 4) });
+  }
+  return rows;
+}
+
+function scoutCmpRows(a, b) {
+  if (scoutSort === "score") {
+    const va = a.best.llm_stats_id ? Number(statsById[a.best.llm_stats_id]?.score) : NaN;
+    const vb = b.best.llm_stats_id ? Number(statsById[b.best.llm_stats_id]?.score) : NaN;
+    return (Number.isFinite(vb) ? vb : -1) - (Number.isFinite(va) ? va : -1);
+  }
+  if (scoutSort === "quota") return scoutQuotaValue(b.best) - scoutQuotaValue(a.best);
+  if (scoutSort === "fresh") {
+    const da = scoutFreshDate(a.best.model_id || a.best.name);
+    const db = scoutFreshDate(b.best.model_id || b.best.name);
+    return (db ? db.getTime() : 0) - (da ? da.getTime() : 0);
+  }
+  if (scoutSort === "context") return (Number(b.best.context_window) || 0) - (Number(a.best.context_window) || 0);
+  return 0;
+}
+
+function renderScout(query) {
+  const body = document.getElementById("scoutBody");
+  const routerHead = document.getElementById("scoutRouterColHead");
+  if (routerHead) routerHead.textContent = scoutRouter === "9router" ? "9router" : "Omni";
+
+  let rows = buildScoutList();
+  if (query) {
+    rows = rows.filter(r =>
+      r.provider.toLowerCase().includes(query) ||
+      getModelName(r.best).toLowerCase().includes(query) ||
+      String(r.best.model_id || "").toLowerCase().includes(query));
+  }
+  rows.sort(scoutCmpRows);
+
+  document.getElementById("resultCount").textContent = `Showing ${rows.length.toLocaleString()} providers with free models`;
+
+  if (!rows.length) {
+    body.innerHTML = `<tr><td colspan="8"><div class="empty"><h3>No free models match</h3><p>Switch the scope to "All free" or clear the search.</p></div></td></tr>`;
+    document.getElementById("loadMore").hidden = true;
+    return;
+  }
+
+  const now = Date.now();
+  const routerModels = scoutRouter === "9router" ? nineRouterModels : omniRouterModels;
+  const routerLabel = scoutRouter === "9router" ? "9router" : "OmniRouter";
+
+  body.innerHTML = rows.map(r => {
+    const m = r.best;
+    const s = m.llm_stats_id ? statsById[m.llm_stats_id] : null;
+    const score = s && Number.isFinite(Number(s.score)) ? `<span class="score-primary">${Number(s.score).toFixed(1)}</span>` : '<span class="cell-na">—</span>';
+    const speed = formatSpeed(s && s.speed ? s.speed : m.speed);
+    const ctx = ctxFmt(m.context_window);
+    const quota = scoutQuotaLabel(m);
+    const checked = scoutSelection.has(r.provider) ? "checked" : "";
+    const match = resolveRouterId(m, routerModels, routerLabel);
+    const badge = match.status === "verified"
+      ? `<span class="scout-router-badge matched">ready</span>`
+      : match.status === "wrong_provider"
+        ? `<span class="scout-router-badge matched">alt</span>`
+        : `<span class="scout-router-badge absent" title="${esc(match.tooltip)}">add</span>`;
+    const fresh = scoutFreshDate(m.model_id || m.name);
+    const freshTag = fresh && (now - fresh.getTime()) <= SCOUT_FRESH_DAYS * MILLIS_DAY
+      ? `<span class="scout-fresh-tag">new</span>` : "";
+    const bestTag = s && Number.isFinite(Number(s.rank)) && Number(s.rank) <= 20 ? `<span class="scout-best-tag">top ${Number(s.rank)}</span>` : "";
+    const altCount = r.alternates.length ? `<span class="scout-provider-mobile" title="${esc(r.alternates.map(a => getModelName(a)).join(", "))}">+${r.alternates.length} more free</span>` : "";
+    return `<tr>
+      <td class="text-center"><input type="checkbox" class="scout-select" data-provider="${esc(r.provider)}" ${checked} aria-label="Select ${esc(getModelName(m))}"></td>
+      <td>
+        <div class="model-cell">
+          <div class="model-line">
+            <a class="model-title" href="${esc(m.provider_url || m.source_url || "#")}" target="_blank" rel="noopener noreferrer">${esc(getModelName(m))}</a>
+            ${bestTag}${freshTag}${capPills(m)}
+          </div>
+          <span class="model-provider-sub">${esc(m.model_id || m.name || "")}</span>
+          ${altCount}
+        </div>
+      </td>
+      <td class="text-right col-score">${score}</td>
+      <td class="scout-provider-cell">${esc(r.provider)}</td>
+      <td class="text-right font-mono"><span class="quota-badge">${esc(quota)}</span></td>
+      <td class="text-right font-mono">${ctx}</td>
+      <td class="text-right font-mono speed-cell">${speed}</td>
+      <td class="text-center">${badge}</td>
+    </tr>`;
+  }).join("");
+  document.getElementById("loadMore").hidden = true;
+}
+
+function renderCombo() {
+  const slots = document.getElementById("comboSlots");
+  const count = document.getElementById("comboCount");
+  count.textContent = `${scoutSelection.size} selected`;
+  if (!scoutSelection.size) {
+    slots.innerHTML = `<span class="combo-empty">Tick one model per provider above to assemble the combo.</span>`;
+    return;
+  }
+  const routerModels = scoutRouter === "9router" ? nineRouterModels : omniRouterModels;
+  const routerLabel = scoutRouter === "9router" ? "9router" : "OmniRouter";
+  slots.innerHTML = [...scoutSelection.entries()].map(([pid, m]) => {
+    const match = resolveRouterId(m, routerModels, routerLabel);
+    const dotCls = match.status === "verified" ? "matched" : match.status === "wrong_provider" ? "warn" : "";
+    return `<span class="combo-slot">
+      <span class="combo-slot-provider">${esc(pid)}</span>
+      <span class="router-badge ${dotCls}"></span>
+      <span class="combo-slot-id">${esc(match.id)}</span>
+      <button class="combo-slot-remove" data-provider="${esc(pid)}" type="button" aria-label="Remove ${esc(pid)}">&times;</button>
+    </span>`;
+  }).join("");
 }
 
 function updateSortIndicators() {
@@ -717,6 +900,7 @@ document.querySelectorAll(".tab-pri").forEach(btn => {
     const searchInput = document.getElementById("searchInput");
     if (activeView === "providers") searchInput.placeholder = "Search providers by name or id...";
     else if (activeView === "changes") searchInput.placeholder = "Search changelog updates...";
+    else if (activeView === "scout") searchInput.placeholder = "Search free models or providers...";
     else searchInput.placeholder = "Search models, providers, architectures...";
     render();
   });
@@ -754,6 +938,77 @@ document.querySelectorAll(".alert-btn").forEach(btn => {
 });
 
 document.getElementById("loadMore").addEventListener("click", () => { visibleCount += 100; render(); });
+
+// ---------- Scout listeners ----------
+
+document.querySelectorAll("[data-scout-sort]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("[data-scout-sort]").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+    btn.classList.add("active");
+    btn.setAttribute("aria-selected", "true");
+    scoutSort = btn.dataset.scoutSort;
+    render();
+  });
+});
+
+document.querySelectorAll("[data-scout-scope]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("[data-scout-scope]").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+    btn.classList.add("active");
+    btn.setAttribute("aria-selected", "true");
+    scoutScope = btn.dataset.scoutScope;
+    render();
+  });
+});
+
+document.querySelectorAll(".combo-target-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".combo-target-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    scoutRouter = btn.dataset.router;
+    render();
+  });
+});
+
+document.getElementById("scoutBody").addEventListener("change", event => {
+  const box = event.target.closest(".scout-select");
+  if (!box) return;
+  const pid = box.dataset.provider;
+  if (box.checked) {
+    // Re-resolve the model from the current scout rows: one pick per provider
+    const rows = buildScoutList();
+    const row = rows.find(r => r.provider === pid);
+    if (row) scoutSelection.set(pid, row.best);
+  } else {
+    scoutSelection.delete(pid);
+  }
+  renderCombo();
+});
+
+document.getElementById("comboSlots").addEventListener("click", event => {
+  const btn = event.target.closest(".combo-slot-remove");
+  if (!btn) return;
+  scoutSelection.delete(btn.dataset.provider);
+  render();
+});
+
+document.getElementById("comboClear").addEventListener("click", () => {
+  scoutSelection.clear();
+  render();
+});
+
+document.getElementById("comboCopyAll").addEventListener("click", async () => {
+  const routerModels = scoutRouter === "9router" ? nineRouterModels : omniRouterModels;
+  const routerLabel = scoutRouter === "9router" ? "9router" : "OmniRouter";
+  const lines = [...scoutSelection.values()].map(m => resolveRouterId(m, routerModels, routerLabel).id);
+  if (!lines.length) return;
+  try {
+    await copyText(lines.join("\n"));
+    const btn = document.getElementById("comboCopyAll");
+    btn.textContent = "Copied!";
+    setTimeout(() => { btn.textContent = "Copy all IDs"; }, 1200);
+  } catch {}
+});
 
 document.querySelectorAll("th.sortable").forEach(th => {
   th.addEventListener("click", () => {

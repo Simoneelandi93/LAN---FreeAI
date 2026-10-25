@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "008a159252396cf5",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T00:02:20.730524+00:00",
+    "details": "Input: $0.2137 -> $0.19; output: $7.7001 -> $8.5258",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "fd4f3035e7c50e5b",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T00:02:20.730524+00:00",
+    "details": "Input: $0.0254 -> $0.0502; output: $0.1425 -> $0.0819",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "e1f416b4eae01a50",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-25T00:02:20.730524+00:00",
+    "details": "Input: $0.0501 -> $0.0502; output: $0.0702 -> $0.0819",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "cf9f1700ff61c256",
     "type": "new_model",
     "model_id": "anthropic/claude-opus-5.5",
@@ -1770,33 +1806,6 @@
     "provider": "AKI.IO, Cortecs, DevPass (LLM Gateway), Eden AI, EmpirioLabs AI, Infomaniak, Kilo Gateway, LowRouter, Mistral, OpenRouter, Opper, Prime Inference, Requesty, Tempr Gateway",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0.15 in / $0.6 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "aa66776d2f102c08",
-    "type": "new_model",
-    "model_id": "mistralai/mistral-large-2512",
-    "provider": "Prime Inference",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.5 in / $1.5 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "ca174f1378ae14df",
-    "type": "new_free_model",
-    "model_id": "qwen/qwen3-30b-a3b-instruct-2507",
-    "provider": "Ambient, Clarifai, Cortecs, ModelScope, NanoGPT, Nebius Token Factory, OpenRouter, Prime Inference, Qiniu",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "de33a314e77e1cb3",
-    "type": "new_model",
-    "model_id": "qwen/qwen3-vl-235b-a22b-instruct",
-    "provider": "Amazon Bedrock, Deep Infra, DevPass (LLM Gateway), Helicone, Hugging Face, Jalapeno Cloud, Kilo Gateway, Merge Gateway, NanoGPT, OpenRouter, OrcaRouter, Prime Inference",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.2 in / $0.88 out per 1M",
     "alerted": true
   }
 ]

@@ -1210,3 +1210,287 @@ body.no-stats .col-bench {
   color: var(--accent-light);
   border-color: var(--border-focus);
 }
+
+/* ============================================================
+   Scout view — best free model per provider
+   ============================================================ */
+
+.scout-view { display: none; }
+
+.scout-lede {
+  margin-bottom: 14px;
+}
+
+.scout-subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-muted);
+  max-width: 60ch;
+}
+
+.scout-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.scout-sort-group,
+.scout-toggle-group {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.scout-btn {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  padding: 5px 12px;
+  font-size: 12px;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.scout-btn:hover {
+  color: var(--text);
+  border-color: var(--border-focus);
+}
+
+.scout-btn.active {
+  background: var(--accent-soft);
+  border-color: var(--accent-light);
+  color: var(--accent-light);
+}
+
+/* ---------- Combo builder ---------- */
+
+.combo-builder {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.combo-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.combo-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.combo-target {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.combo-target-btn {
+  background: var(--bg-subtle);
+  border: none;
+  color: var(--text-muted);
+  padding: 4px 12px;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.combo-target-btn + .combo-target-btn {
+  border-left: 1px solid var(--border);
+}
+
+.combo-target-btn.active {
+  background: var(--accent-soft);
+  color: var(--accent-light);
+}
+
+.combo-count {
+  font-size: 12px;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+}
+
+.combo-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.combo-action-btn {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  font-size: 12px;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.combo-action-btn:hover {
+  color: var(--text);
+  border-color: var(--border-focus);
+}
+
+.combo-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 30px;
+}
+
+.combo-slot {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.combo-slot-provider {
+  color: var(--text-dim);
+  font-family: var(--font-sans);
+  font-size: 11px;
+}
+
+.combo-slot-remove {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  padding: 0 2px;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.combo-slot-remove:hover {
+  color: var(--rose);
+}
+
+.combo-slot-id {
+  color: var(--text);
+}
+
+.combo-empty {
+  font-size: 12px;
+  color: var(--text-dim);
+  align-self: center;
+}
+
+/* ---------- Scout table ---------- */
+
+.scout-table-container {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+.scout-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scout-table .col-select {
+  width: 40px;
+}
+
+.scout-table .col-provider-scout {
+  width: 170px;
+}
+
+.scout-table .col-router {
+  width: 110px;
+}
+
+.scout-select {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--accent-light);
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.scout-provider-cell {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.scout-best-tag {
+  display: inline-block;
+  background: var(--emerald-soft);
+  color: var(--emerald);
+  border-radius: var(--radius-xs);
+  padding: 1px 6px;
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.scout-fresh-tag {
+  display: inline-block;
+  background: var(--purple-soft);
+  color: var(--purple);
+  border-radius: var(--radius-xs);
+  padding: 1px 6px;
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.scout-router-badge {
+  display: inline-block;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xs);
+  padding: 1px 8px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+}
+
+.scout-router-badge.matched {
+  background: var(--emerald-soft);
+  color: var(--emerald);
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.scout-router-badge.absent {
+  color: var(--text-dim);
+}
+
+@media (max-width: 768px) {
+  .combo-actions {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .scout-table .col-provider-scout,
+  .scout-table .col-speed {
+    display: none;
+  }
+
+  .scout-provider-mobile {
+    display: block;
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+}
+

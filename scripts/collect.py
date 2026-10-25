@@ -32,23 +32,34 @@ import re
 
 
 def _norm_id(value: str) -> str:
-    """Strips provider prefixes and punctuation so ids from either source compare equal."""
+    """Strips provider prefixes, ':free' variant suffixes and punctuation so ids from either source compare equal."""
     v = str(value or "").lower()
     if "/" in v:
         v = v.rsplit("/", 1)[-1]
+    if ":" in v:
+        v = v.split(":", 1)[0]
     return re.sub(r"[^a-z0-9]", "", v)
 
 
-def _build_offer_map(offers: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
+def _has_universal_quota(offer: Dict[str, Any]) -> bool:
+    """True when the offer carries a provider-wide quota (not per-model limits)."""
+    return any(offer.get(k) for k in ("quota_requests_day", "quota_tokens_minute", "quota_requests_minute")) or bool(offer.get("rolling_window"))
+
+
+def _build_offer_map(offers: List[Dict[str, Any]]):
     """
     Maps every offer's included model IDs to its quota block.
 
-    Keys are (normalized offer id, normalized model id). The offer id is also
-    expanded through PROVIDER_ALIASES so a catalog provider like 'groq' matches
-    upstream's 'groq-cloud'. Model ids normalize away prefixes and punctuation
-    so 'qwen/qwen3.8-27b' and 'qwen3-8-27b' collapse together.
+    Returns (omap, pmap): omap keys are (normalized offer id, normalized model id)
+    for per-model quotas; pmap keys are just the normalized provider id and hold
+    offers with a provider-wide quota (quota set but no models_included list).
+
+    The offer id is expanded through PROVIDER_ALIASES so a catalog provider like
+    'groq' matches upstream's 'groq-cloud'. Model ids normalize away prefixes and
+    punctuation so 'qwen/qwen3.8-27b' and 'qwen3-8-27b' collapse together.
     """
     omap = {}
+    pmap = {}
     for o in offers:
         block = {k: v for k, v in o.items() if k != "models_included"}
         oid = _norm_id(o.get("id", ""))
@@ -57,20 +68,27 @@ def _build_offer_map(offers: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
         for our_pid, upstream_pid in PROVIDER_ALIASES.items():
             if upstream_pid == o.get("id"):
                 provider_keys.add(_norm_id(our_pid))
+        for pk in provider_keys:
+            if _has_universal_quota(o) and pk not in pmap:
+                pmap[pk] = block
         for mid in o.get("models_included", []):
             nmid = _norm_id(mid)
             for pk in provider_keys:
                 omap[(pk, nmid)] = block
-    return omap
+    return omap, pmap
 
 
-def _merge_quota(model: Dict[str, Any], offer_map: Dict[str, Dict[str, Any]]) -> None:
+def _merge_quota(model: Dict[str, Any], offer_map, provider_map) -> None:
     """Link a provider free tier record onto each matching model row."""
     mid = _norm_id(model.get("model_id", "") or model.get("name", ""))
     pid = _norm_id(model.get("provider_id", ""))
     offer = offer_map.get((pid, mid))
     if offer is None:
-        return
+        # Fall back to the provider's universal quota when the model isn't
+        # listed individually (e.g. nvidia-nim's 1000 req/day covers all models).
+        offer = provider_map.get(pid)
+        if offer is None:
+            return
     # Per-model rate limits win over the provider's universal quota.
     for pm in offer.get("per_model_rate_limits") or []:
         if _norm_id(pm.get("model_id", "")) == mid:
@@ -131,9 +149,9 @@ def main():
     # 1c. Merge curated free-tier quotas into each free model row so the
     #     dashboard can show how many requests / tokens per minute the user
     #     has left on that model.  Built from the committed offers block.
-    offer_map = _build_offer_map(curated_offers)
+    offer_map, provider_quota_map = _build_offer_map(curated_offers)
     for m in new_models:
-        _merge_quota(m, offer_map)
+        _merge_quota(m, offer_map, provider_quota_map)
 
     # 2. Diff and detect changes (free transitions first, batched, capped)
     events, alerts = detect_model_changes(old_models, new_models)

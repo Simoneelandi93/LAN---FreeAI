@@ -11,6 +11,7 @@
 - **Prioritised Telegram alerts**: price-drops-to-$0 and brand-new free models first, then one digest for the rest — never a flood.
 - **Self-updating dashboard**: filterable table (free / OpenRouter / reasoning / tool use / open weights) deployed to GitHub Pages on each data change.
 - **Auto-updated free tiers**: `data/offers.json` is generated every sync from the community-maintained [awesome-ai-free-tiers](https://github.com/4pixeltechBR/awesome-ai-free-tiers) dataset (65 providers, 126 model entries with per-model rate limits), so quotas and deprecated tiers stay current without hand edits.
+- **Scout view + combo builder**: ranks the best free model for every provider (by LLM Stats score, daily quota, freshness or context), flags models reachable on a local router, and builds a combo — one pick per provider — copyable as a ready-to-paste model-ID list for [9router](https://github.com/9router) or OmniRouter.
 
 ---
 
@@ -133,6 +134,16 @@ Note: OpenCode's free coding models are rate-limited to roughly **200 requests p
 5-hour rolling window** (`data/offers.json` → `rolling_window`), which is why the
 dashboard shows `200 req / 5h` rather than a daily figure.
 
+### Provider-wide quotas
+
+Some free tiers quota the provider, not each model — e.g. NVIDIA NIM's 1,000
+requests/day covers every NIM model, not one model each. When an upstream offer sets
+`quota_requests_day` / `rolling_window` but lists no `models_included`, the quota is
+treated as provider-wide and merged onto **every** model of that provider. Per-model
+rate limits still win when both apply. This is what fills the Scout view's *Free Quota*
+column for providers like `nvidia` (52 daily-quota models), `groq`, `google` and
+`openrouter`.
+
 ---
 
 ## 📂 Project Architecture
@@ -149,6 +160,8 @@ free-ai-radar/
 │   └── history.json       # Last 200 change events
 ├── sources/
 │   ├── models_dev.py      # models.dev → normalized model records
+│   ├── free_tiers_upstream.py # awesome-ai-free-tiers → normalized offers + provider aliases
+│   ├── litellm.py         # LiteLLM catalog → pricing/capability enrichment
 │   └── llm_stats.py       # LLM Stats public leaderboard → benchmark scores, joined by name
 ├── scripts/
 │   ├── collect.py         # Orchestrator (fetch → diff → alert → save)
@@ -159,6 +172,25 @@ free-ai-radar/
 
 `data/` is committed by the workflow, which is what triggers the Pages deploy.
 `[skip ci]` is deliberately **not** used, since it would also skip `deploy.yml`.
+
+### How the Scout view works
+
+The **Scout** tab answers one question: *what's the best free model I can get from
+each provider right now?*
+
+- **Candidates** are catalog rows with `is_free` or a merged free-tier offer, grouped
+  by provider. Each provider shows its single best model (highest LLM Stats score,
+  context as tiebreak) plus up to 4 alternates.
+- **Ranking modes**: `Score` (LLM Stats), `Quota` (daily-equivalent free requests —
+  rolling windows are converted, so `200 req / 5h` ≈ 960/day), `Fresh` (models that
+  appeared or turned free in the last 7 days, from `history.json`), `Context`.
+- **Daily scope** filter keeps only models with an actual daily/rolling quota, so a
+  combo doesn't include unlimited-but-unusable $0 rows.
+- **Router column** resolves each model to a 9router / OmniRouter model ID
+  (`ready` = exact match, `alt` = variant match, `add` = not routable yet).
+- **Combo builder**: one pick per provider (checkbox per row), then *Copy combo* puts
+  the resolved router IDs — newline-separated, one per slot — on the clipboard, ready
+  to paste into the router's model list.
 
 ---
 

@@ -64,6 +64,7 @@
           <nav class="view-tabs" role="tablist" aria-label="View selection">
             <button class="tab-pri active" data-view="models" role="tab" aria-selected="true">Models</button>
             <button class="tab-pri" data-view="providers" role="tab" aria-selected="false">Providers</button>
+            <button class="tab-pri" data-view="scout" role="tab" aria-selected="false">Scout</button>
             <button class="tab-pri" data-view="changes" role="tab" aria-selected="false">Changelog</button>
           </nav>
 
@@ -132,6 +133,59 @@
 
       <section class="provider-grid" id="providerGrid">
         <div class="provider-list" id="providerList"></div>
+      </section>
+
+      <section class="scout-view" id="scoutView">
+        <div class="scout-lede">
+          <p class="scout-subtitle">Best free model per provider, ranked by benchmark score. Pick one per provider to assemble a router combo.</p>
+        </div>
+
+        <div class="scout-controls">
+          <div class="scout-sort-group" id="scoutSortGroup" role="tablist" aria-label="Scout ranking">
+            <button class="scout-btn active" data-scout-sort="score" role="tab" aria-selected="true">Best score</button>
+            <button class="scout-btn" data-scout-sort="quota" role="tab" aria-selected="false">Best quota</button>
+            <button class="scout-btn" data-scout-sort="fresh" role="tab" aria-selected="false">Newest</button>
+            <button class="scout-btn" data-scout-sort="context" role="tab" aria-selected="false">Biggest context</button>
+          </div>
+          <div class="scout-toggle-group" role="tablist" aria-label="Scout scope">
+            <button class="scout-btn toggle active" data-scout-scope="daily" role="tab" aria-selected="true">Daily quota</button>
+            <button class="scout-btn toggle" data-scout-scope="all" role="tab" aria-selected="false">All free</button>
+          </div>
+        </div>
+
+        <div class="combo-builder" id="comboBuilder">
+          <div class="combo-head">
+            <span class="combo-title">Combo for</span>
+            <div class="combo-target">
+              <button class="combo-target-btn active" data-router="9router" type="button">9router</button>
+              <button class="combo-target-btn" data-router="omnirouter" type="button">OmniRouter</button>
+            </div>
+            <span class="combo-count" id="comboCount">0 selected</span>
+            <div class="combo-actions">
+              <button class="combo-action-btn" id="comboCopyAll" type="button">Copy all IDs</button>
+              <button class="combo-action-btn" id="comboClear" type="button">Clear</button>
+            </div>
+          </div>
+          <div class="combo-slots" id="comboSlots"></div>
+        </div>
+
+        <div class="scout-table-container" id="scoutTableContainer">
+          <table class="model-table scout-table" id="scoutTable">
+            <thead>
+              <tr>
+                <th class="col-select text-center"></th>
+                <th class="col-name sortable" data-sort="name">Model <span class="sort-ind"></span></th>
+                <th class="col-score sortable text-right" data-sort="score">Score <span class="sort-ind"></span></th>
+                <th class="col-provider-scout">Provider</th>
+                <th class="col-quota sortable text-right" data-sort="quota">Free Quota <span class="sort-ind"></span></th>
+                <th class="col-context sortable text-right" data-sort="context">Context <span class="sort-ind"></span></th>
+                <th class="col-speed sortable text-right" data-sort="speed">Speed <span class="sort-ind"></span></th>
+                <th class="col-router text-center" id="scoutRouterColHead">Router</th>
+              </tr>
+            </thead>
+            <tbody id="scoutBody"></tbody>
+          </table>
+        </div>
       </section>
 
       <section class="changes-view" id="changesView">
