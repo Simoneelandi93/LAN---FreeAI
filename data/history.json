@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "2ad54801143337d0",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
+    "detected_at": "2026-10-25T09:36:37.225989+00:00",
+    "details": "Input: $0.19 -> $0.159; output: $5.5 -> $5.5",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "5eac02c556284050",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T09:36:37.225989+00:00",
+    "details": "Input: $0.19 -> $0.159; output: $8.94 -> $16",
+    "direction": "increase",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "cfb307b9bf926f2a",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T09:36:37.225989+00:00",
+    "details": "Input: $0.0418 -> $0.0513; output: $0.077 -> $0.0701",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "e8ea8860d76296b5",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-25T09:36:37.225989+00:00",
+    "details": "Input: $0.0418 -> $0.0513; output: $0.077 -> $0.0701",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
     "event_id": "1b9ebde4f24ba906",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -1843,41 +1891,5 @@
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0.2 in / $0.8 out per 1M",
     "alerted": true
-  },
-  {
-    "event_id": "1f99961e2781cadb",
-    "type": "new_model",
-    "model_id": "deepseek/deepseek-chat-v3-0324",
-    "provider": "Crusoe, Deep Infra, Hugging Face, Jiekou.AI, Kilo Gateway, Meganova, OpenRouter, submodel",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.2 in / $0.8 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "d7cd86db084d7090",
-    "type": "new_model",
-    "model_id": "deepseek/deepseek-chat-v3.1",
-    "provider": "Abacus, Alibaba (China), Amazon Bedrock, CoreWeave, Deep Infra, Hugging Face, Jiekou.AI, Kilo Gateway, Meganova, Merge Gateway, NanoGPT, OpenRouter, Qiniu, SambaNova, Thinking Machines, Together AI, TokenGo, Vercel AI Gateway, Vertex, submodel",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.19 in / $0.7 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "7dceef4899fe3ad7",
-    "type": "new_model",
-    "model_id": "moonshotai/kimi-k2-instruct",
-    "provider": "Hugging Face, IO.NET, Jiekou.AI, NanoGPT, Novita AI, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.4 in / $1.8 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "4432408426a9c7e6",
-    "type": "new_model",
-    "model_id": "moonshotai/kimi-k2-0905",
-    "provider": "AI/ML API, Helicone, Jiekou.AI, NanoGPT, Prime Inference, Qiniu",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.4 in / $1.8 out per 1M",
-    "alerted": false
   }
 ]
