@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "9dbb1ae7abb7a215",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "OpenRouter, Privatemode AI",
+    "detected_at": "2026-10-25T04:39:24.059882+00:00",
+    "details": "Input: $0.0287 -> $0.0511; output: $0.0914 -> $0.0761",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "7f203efc17da0162",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-10-25T04:39:24.059882+00:00",
+    "details": "Input: $0.0287 -> $0.0511; output: $0.0914 -> $0.0761",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "c607f054c9674ee2",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",
@@ -1837,24 +1861,6 @@
     "type": "new_free_model",
     "model_id": "z-ai/glm-4.7-flash",
     "provider": "AI/ML API, Amazon Bedrock, Cloudflare Workers AI, Cortecs, Deep Infra, DevPass (LLM Gateway), EmpirioLabs AI, Hugging Face, Jiekou.AI, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, Pendra, Poe, Synthetic, Tempr Gateway, Vercel AI Gateway, Z.AI, Zhipu AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "28906cd38f8c63f4",
-    "type": "new_model",
-    "model_id": "z-ai/glm-4.5v",
-    "provider": "302.AI, AI/ML API, AIHubMix, DevPass (LLM Gateway), Hugging Face, Jiekou.AI, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, Tempr Gateway, Vercel AI Gateway, Z.AI, Zhipu AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.274 in / $0.86 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "be7ff3af933a2e38",
-    "type": "new_free_model",
-    "model_id": "z-ai/glm-4.5",
-    "provider": "302.AI, Abacus, DevPass (LLM Gateway), Impossibl, Jiekou.AI, Kilo Gateway, Merge Gateway, ModelScope, NanoGPT, OpenRouter, OrcaRouter, Qiniu, Tempr Gateway, Vercel AI Gateway, Z.AI, ZenMux, Zhipu AI",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0 in / $0 out per 1M",
     "alerted": true
