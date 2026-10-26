@@ -1,5 +1,152 @@
 [
   {
+    "event_id": "f87ea00ff30c66d3",
+    "type": "price_change",
+    "model_id": "qwen/qwen3-32b",
+    "provider": "Abacus, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, OpenRouter, SiliconFlow, SiliconFlow (China)",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "Input: $0.08 -> $0.08; output: $0.28 -> $0.24",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "821d05397da19389",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "Input: $0.1529 -> $0.1814; output: $9.75 -> $8.5226",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "e9441d9fe62bb8ac",
+    "type": "new_model",
+    "model_id": "morph-kimik3",
+    "provider": "Morph",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "$2.5 in / $14 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "9b17e95b623e942b",
+    "type": "new_model",
+    "model_id": "morph-dsv4flash",
+    "provider": "Morph",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "$0.141953125 in / $0.399625 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "3a9fc73963f1b45c",
+    "type": "new_model",
+    "model_id": "morph-kimik3-fast",
+    "provider": "Morph",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "$6 in / $22.5 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "2893be0362aeab60",
+    "type": "new_model",
+    "model_id": "morph-dsv41flash-1017",
+    "provider": "Morph",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "$0.12 in / $0.8 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "d7958c443a24ec9e",
+    "type": "new_model",
+    "model_id": "morph-dsv41flash",
+    "provider": "Morph",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "$0.12 in / $0.8 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "329c8eafb6619c08",
+    "type": "new_model",
+    "model_id": "morph-glm53flash",
+    "provider": "Morph",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "$0.2 in / $0.7 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "efea2e5388180e94",
+    "type": "new_model",
+    "model_id": "morph-glm52-744b",
+    "provider": "Morph",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "$1.19 in / $6 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "709a18b5ac9f37bf",
+    "type": "new_model",
+    "model_id": "morph-glm53-744b",
+    "provider": "Morph",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "$1.19 in / $6 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "3705bc9f6552289b",
+    "type": "price_change",
+    "model_id": "z-ai/glm-4.7-original",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "Input: $0.6 -> $0.4004; output: $2.2 -> $1.9292",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "7a52a94b8e6e9d00",
+    "type": "price_change",
+    "model_id": "z-ai/glm-4.7-original:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "Input: $0.6 -> $0.4004; output: $2.2 -> $1.9292",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "8b01886fb2cfe864",
+    "type": "new_free_model",
+    "model_id": "duo-chat-haiku-5-5",
+    "provider": "GitLab Duo",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "7e1ea2ce2f6267cb",
+    "type": "new_model",
+    "model_id": "au.anthropic.claude-sonnet-5-5",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "$2.2 in / $11 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "d14be48a3a59511b",
+    "type": "new_model",
+    "model_id": "minimax-m3.1-flash@eu",
+    "provider": "Requesty",
+    "detected_at": "2026-10-26T04:44:29.848831+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "b0c907e359f862e2",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4-flash",
@@ -1917,141 +2064,6 @@
     "provider": "Azure, Azure Cognitive Services",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0.125 in / $0.5 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "0e63a13d7a0fa688",
-    "type": "new_free_model",
-    "model_id": "mistralai/mistral-medium-3",
-    "provider": "Azure, Azure Cognitive Services, Eden AI, Kilo Gateway, Merge Gateway, Mistral, NanoGPT, Nvidia, OpenRouter, Vertex",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "162d9efddd1e2b7a",
-    "type": "new_model",
-    "model_id": "text-embedding-3-large",
-    "provider": "Azure, Azure Cognitive Services, OpenAI, SAP AI Core, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.13 in / $0 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "569285c22173f26d",
-    "type": "new_model",
-    "model_id": "openai/gpt-5-nano",
-    "provider": "AI/ML API, Abacus, Azure, Azure Cognitive Services, Cloudflare AI Gateway, Cortecs, Databricks, DevPass (LLM Gateway), Eden AI, FastRouter, Impossibl, Jiekou.AI, Kilo Gateway, LowRouter, Merge Gateway, NEAR AI Cloud, NanoGPT, Neon, Ofox, OpenAI, OpenCode, OpenRouter, OrcaRouter, Poe, Prime Inference, SAP AI Core, Snowflake Cortex, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.0455 in / $0.3636 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "0d033299c861bddb",
-    "type": "new_model",
-    "model_id": "text-embedding-3-small",
-    "provider": "Azure, Azure Cognitive Services, OpenAI, SAP AI Core, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.02 in / $0 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "4d29579046bc5186",
-    "type": "new_model",
-    "model_id": "openai/gpt-5",
-    "provider": "302.AI, AI/ML API, AIHubMix, Abacus, AnyAPI, Azure, Azure Cognitive Services, Cloudflare AI Gateway, Cortecs, Databricks, DevPass (LLM Gateway), Eden AI, FastRouter, Impossibl, Kilo Gateway, LowRouter, Merge Gateway, Model Oracle AI, NEAR AI Cloud, NanoGPT, Neon, Ofox, OpenAI, OpenCode, OpenRouter, OrcaRouter, Poe, Prime Inference, SAP AI Core, Snowflake Cortex, Vercel AI Gateway, ZenMux",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$1.07 in / $8.5 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "f63947993a68728f",
-    "type": "new_model",
-    "model_id": "openai/gpt-4.1-nano",
-    "provider": "302.AI, AI/ML API, Abacus, Azure, Azure Cognitive Services, Cloudflare AI Gateway, Cortecs, Eden AI, Impossibl, Kilo Gateway, Merge Gateway, NEAR AI Cloud, NanoGPT, OpenAI, OpenRouter, OrcaRouter, Poe, Prime Inference, SAP AI Core, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.09 in / $0.36 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "9c512c6a30cbe3c6",
-    "type": "new_model",
-    "model_id": "model-router",
-    "provider": "Azure, Azure Cognitive Services",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.14 in / $0 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "0007f2a34d99a4d6",
-    "type": "new_model",
-    "model_id": "gpt-image-2.5-sunburst",
-    "provider": "AIHubMix, Azure, Azure Cognitive Services, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$5 in / $30 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "271ce2a9f1531642",
-    "type": "new_model",
-    "model_id": "grok-4-1-fast-non-reasoning",
-    "provider": "Abacus, Azure, Azure Cognitive Services, DevPass (LLM Gateway), FrogBot, Jiekou.AI, Perplexity Agent, Poe",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.19 in / $0.475 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "31a8270bcd62e967",
-    "type": "new_free_model",
-    "model_id": "deepseek/deepseek-v4-flash",
-    "provider": "AI/ML API, Abacus, AgentRouter, Alibaba (China), Alibaba Token Plan, Alibaba Token Plan (China), AnyAPI, Auriko, Azure, Azure Cognitive Services, ClinePass, CommandCode, CrossModel, Deep Infra, DeepSeek, DevPass (LLM Gateway), DigitalOcean, EBCloud, Eden AI, GMI Cloud, HPC-AI, Hugging Face, Impossibl, InferX, Jalapeno Cloud, Kenari, Kilo Gateway, Merge Gateway, Moark, Modelis, NanoGPT, Neuralwatt, Ofox, OpenCode, OpenRouter, Opper, OrcaRouter, Pendra, Pioneer, Requesty, SCNet Token Plan, SenseNova (China), SiliconFlow, SiliconFlow (China), Standard Compute, TokenGo, Umans AI, Umans AI Coding Plan, UnoRouter, Vercel AI Gateway, Vivgrid, Volcengine Ark Coding Plan, ZenMux, above.dev, ai&, routing.run",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "3af38dcca05348ca",
-    "type": "new_model",
-    "model_id": "codestral-2501",
-    "provider": "Azure, Azure Cognitive Services",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.3 in / $0.9 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "1b8dbd1ad987d51b",
-    "type": "new_model",
-    "model_id": "anthropic/claude-sonnet-4.6",
-    "provider": "302.AI, AIHubMix, Abacus, Amazon Bedrock, Anthropic, AnyAPI, Auriko, Azure, Azure Cognitive Services, Cloudflare AI Gateway, CommandCode, Cortecs, CrossModel, DaoXE, Databricks, DevPass (LLM Gateway), Eden AI, FastRouter, FreeModel, FrogBot, GMI Cloud, GitHub Copilot, Impossibl, Kenari, Kilo Gateway, Merge Gateway, Modelis, NEAR AI Cloud, NanoGPT, Neon, Ofox, OpenCode, OpenRouter, Opper, OrcaRouter, Perplexity Agent, Poe, Prime Inference, Requesty, Snowflake Cortex, Tempr Gateway, Venice AI, Vercel AI Gateway, Vertex, Vertex (Anthropic), Xpersona, ZenMux, routing.run",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.9 in / $5.55 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "8ef075c353e61137",
-    "type": "new_model",
-    "model_id": "claude-mythos-5",
-    "provider": "Azure, Azure Cognitive Services",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$10 in / $50 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "804529781b2c439f",
-    "type": "new_model",
-    "model_id": "phi-4-multimodal",
-    "provider": "Azure, Azure Cognitive Services, NanoGPT",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.07 in / $0.11 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "e8bd1326f9dd77de",
-    "type": "new_model",
-    "model_id": "llama-4-scout-17b-16e-instruct",
-    "provider": "Azure, Azure Cognitive Services, Cloudflare Workers AI",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.2 in / $0.78 out per 1M",
     "alerted": false
   }
 ]
