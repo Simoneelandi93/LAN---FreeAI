@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "99304b25d542ca01",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-26T07:06:14.094196+00:00",
+    "details": "Input: $0.152 -> $0.18; output: $10 -> $10",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "47227e745aa4adcc",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -2058,15 +2070,6 @@
     "provider": "302.AI, AI/ML API, Abacus, AnyAPI, Azure, Azure Cognitive Services, Cloudflare AI Gateway, Cortecs, DevPass (LLM Gateway), Eden AI, Impossibl, Kilo Gateway, LowRouter, Merge Gateway, Model Oracle AI, NEAR AI Cloud, NanoGPT, Ofox, OpenAI, OpenRouter, OrcaRouter, Poe, Prime Inference, SAP AI Core, Vercel AI Gateway",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0.3636 in / $1.4545 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "8fa30f2b89334f57",
-    "type": "new_model",
-    "model_id": "anthropic/claude-opus-4.8",
-    "provider": "302.AI, AIHubMix, Abacus, AgentRouter, Amazon Bedrock, Anthropic, Azure, Azure Cognitive Services, Cloudflare AI Gateway, CommandCode, Cortecs, CrossModel, DaoXE, DevPass (LLM Gateway), Eden AI, FastRouter, FreeModel, GMI Cloud, GitHub Copilot, Impossibl, Kenari, Kilo Gateway, Merge Gateway, Model Oracle AI, Modelis, NEAR AI Cloud, NanoGPT, Neon, Ofox, OpenCode, OpenRouter, Opper, OrcaRouter, Poe, Prime Inference, Requesty, Snowflake Cortex, Tempr Gateway, UnoRouter, Venice AI, Vercel AI Gateway, Vertex, Vertex (Anthropic), Xpersona, ZenMux, routing.run",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.425 in / $2.125 out per 1M",
     "alerted": true
   }
 ]
