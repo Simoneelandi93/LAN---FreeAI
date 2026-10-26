@@ -65,7 +65,7 @@ function normalizeSlug(value) {
 async function fetchNineRouterModels() {
   try {
     const url = routerApiKey ? `${NINEROUTER_API_URL}?key=${encodeURIComponent(routerApiKey)}` : NINEROUTER_API_URL;
-    const response = await fetch(url, { signal: AbortSignal.timeout(2000) });
+    const response = await fetch(url, { signal: AbortSignal.timeout(15000) });
     if (!response.ok) {
       routerStatus["9router"] = { ok: false, count: 0, authRequired: response.status === 401 };
     } else {
@@ -91,7 +91,7 @@ async function fetchNineRouterModels() {
 async function fetchOmniRouterModels() {
   try {
     const url = routerApiKey ? `${OMNIROUTER_API_URL}?key=${encodeURIComponent(routerApiKey)}` : OMNIROUTER_API_URL;
-    const response = await fetch(url, { signal: AbortSignal.timeout(2000) });
+    const response = await fetch(url, { signal: AbortSignal.timeout(15000) });
     if (!response.ok) {
       routerStatus["OmniRouter"] = { ok: false, count: 0, authRequired: response.status === 401 };
     } else {
