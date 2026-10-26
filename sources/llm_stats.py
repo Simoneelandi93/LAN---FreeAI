@@ -235,10 +235,10 @@ def fetch_llm_stats() -> List[Dict[str, Any]]:
         for category in ("general", "reasoning", "coding", "agents"):
             g = (compact or {}).get(category) or {}
             for row in g.get("models", []):
-                model_id = row.get("model_id")
-                if not model_id:
+                stats_model_id = row.get("model_id")
+                if not stats_model_id:
                     continue
-                entry = index.setdefault(str(model_id), {})
+                entry = index.setdefault(str(stats_model_id), {})
                 entry[f"{category}_rank"] = row.get("rank")
                 entry[f"{category}_score"] = row.get("conservative")
                 entry[f"{category}_mu"] = row.get("mu")

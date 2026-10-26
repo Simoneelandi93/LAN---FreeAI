@@ -14,8 +14,17 @@ def generate_event_id(prefix: str, identifier: str, details: str) -> str:
 
 
 def model_key(model: Dict[str, Any]) -> str:
-    """Groups the same model across providers (models.dev lists one model many times)."""
-    name = model.get("name") or model.get("model_id", "")
+    """Groups the same model across providers.
+
+    Keyed on the catalog model_id slug, not the display name: providers spell
+    the same model differently ('Kimi Latest' vs 'MoonshotAI: Kimi Latest'),
+    which split one model into two diff groups and logged duplicate events.
+    Falls back to the name only when model_id is missing (legacy rows).
+    """
+    mid = model.get("model_id")
+    if mid:
+        return re.sub(r"[^a-z0-9]", "", str(mid).casefold())
+    name = model.get("name", "")
     return re.sub(r"[^a-z0-9]", "", name.casefold())
 
 

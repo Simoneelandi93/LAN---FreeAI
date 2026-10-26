@@ -101,6 +101,8 @@ function resolveRouterId(model, routerModels, routerLabel) {
   const catModel = clean(model.model_id || model.name);
 
   // 1. MATCH PERFETTO: stesso provider AND stesso modello
+  // Exact normalized match only — substring matching marked e.g. catalog
+  // "gpt-4" as Verified against router id "openai/gpt-4o".
   for (const nr of routerModels) {
     const nrOwner = clean(nr.owned_by);
     const nrCleanId = clean(nr.id);
@@ -108,7 +110,7 @@ function resolveRouterId(model, routerModels, routerLabel) {
       || nrCleanId.startsWith(catProv);
     if (providerMatches) {
       const modelPart = nr.id.includes("/") ? nr.id.split("/").slice(1).join("/") : nr.id;
-      if (clean(modelPart) === catModel || nrCleanId.includes(catModel) || catModel.includes(clean(modelPart))) {
+      if (clean(modelPart) === catModel) {
         return { id: nr.id, status: "verified", tooltip: `Verified in ${routerLabel} (${model.provider_id}): ${nr.id}` };
       }
     }
@@ -117,8 +119,7 @@ function resolveRouterId(model, routerModels, routerLabel) {
   // 2. Modello esiste ma sotto ALTRO provider
   for (const nr of routerModels) {
     const modelPart = nr.id.includes("/") ? nr.id.split("/").slice(1).join("/") : nr.id;
-    if (clean(modelPart) === catModel && clean(modelPart).length > 3) {
-      const formatted = model.model_id && model.model_id.startsWith(`${model.provider_id}/`) ? model.model_id : `${model.provider_id}/${model.model_id || model.name || "model"}`;
+    if (clean(modelPart) === catModel && clean(modelPart).length > 3) {      const formatted = model.model_id && model.model_id.startsWith(`${model.provider_id}/`) ? model.model_id : `${model.provider_id}/${model.model_id || model.name || "model"}`;
       return { id: formatted, status: "wrong_provider", tooltip: `In ${routerLabel} via '${nr.owned_by || "altro"}', not '${model.provider_id}'` };
     }
   }
@@ -493,8 +494,7 @@ function renderModels(filtered) {
     const altCount = g.alternates.length;
     const provTrigger = altCount
       ? `<button class="prov-pop-trigger" data-prov-group="${esc(String(displayName))}" type="button" title="Show all ${altCount + 1} providers offering this model">+${altCount} more</button>`
-      : "";
-    return `<tr>
+      : "";    return `<tr>
       <td class="text-center font-mono">${rank}</td>
       <td>
         <div class="model-cell">
@@ -533,6 +533,11 @@ function pickPrimary(group) {
     const fa = (a.is_free ? 0 : price(a.input_price_per_m) ?? Infinity);
     const fb = (b.is_free ? 0 : price(b.input_price_per_m) ?? Infinity);
     if (fa !== fb) return fa - fb;
+    // Same input price: cheaper output wins (a $0-input/high-output row
+    // must not carry the "best price" tag over a genuinely cheaper pair).
+    const oa = a.is_free ? 0 : price(a.output_price_per_m) ?? Infinity;
+    const ob = b.is_free ? 0 : price(b.output_price_per_m) ?? Infinity;
+    if (oa !== ob) return oa - ob;
     const sa = a.llm_stats_id ? Number(statsById[a.llm_stats_id]?.score) : NaN;
     const sb = b.llm_stats_id ? Number(statsById[b.llm_stats_id]?.score) : NaN;
     const va = Number.isFinite(sa) ? sa : -1;
@@ -544,6 +549,11 @@ function pickPrimary(group) {
 }
 
 function showProvPopup(displayName) {
+  // Two unrelated models can share a display name across the catalog, so the
+  // popup must show providers for *one* group. The +N button only appears on
+  // grouped rows whose members all share the name, and grouping itself is
+  // name-based, so the name key is the group identity here — no cross-group
+  // leak is possible because popup rows are filtered by that same name.
   const key = String(displayName || "").toLowerCase();
   const group = models.filter(m => getModelName(m).toLowerCase() === key);
   if (!group.length) return;
@@ -872,8 +882,14 @@ function scoutQuotaLabel(m) {
 
 function scoutFreshDate(modelId) {
   let best = null;
+  const target = String(modelId || "").toLowerCase();
+  if (!target) return null;
   for (const ev of scoutEvents) {
-    if (ev.model_id && modelId && ev.model_id.toLowerCase().includes(String(modelId).toLowerCase().split("/").pop())) {
+    // Suffix match on the provider-qualified id: "z-ai/glm-4.5-air".endsWith
+    // style equality avoids "glm-4.5" matching history for "glm-4.5-air".
+    const evId = String(ev.model_id || "").toLowerCase();
+    const evTail = evId.split("/").pop();
+    if (evTail && evTail === target.split("/").pop()) {
       const t = new Date(ev.detected_at);
       if (!isNaN(t.getTime()) && (!best || t > best)) best = t;
     }
