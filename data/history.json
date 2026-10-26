@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "e4e15c9fcfdc414b",
+    "type": "price_change",
+    "model_id": "moonshotai/kimi-k2.7-code",
+    "provider": "Abacus, CommandCode, CoreWeave, Deep Infra, HPC-AI, Hugging Face, Inceptron, IteraCompute, Kilo Gateway, NanoGPT, Nebius Token Factory, Novita AI, Ofox, OpenReason, OpenRouter, Perplexity Agent, SiliconFlow, TensorX, Vercel AI Gateway, ZenMux, ai&",
+    "detected_at": "2026-10-26T10:39:53.006828+00:00",
+    "details": "Input: $0.6712 -> $0.6712; output: $3.29 -> $3.1",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "3350736e53319fc4",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-26T10:39:53.006828+00:00",
+    "details": "Input: $0.225 -> $0.161; output: $10 -> $10",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "e6f9c94e43ea0dbd",
     "type": "price_change",
     "model_id": "moonshotai/kimi-k2.7-code",
@@ -2073,24 +2097,6 @@
     "provider": "Azure, Azure Cognitive Services, OpenAI, Vercel AI Gateway",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0.1 in / $0 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "354f70b717d202ae",
-    "type": "new_free_model",
-    "model_id": "moonshotai/kimi-k2.7-code",
-    "provider": "302.AI, AIHubMix, Abacus, Alibaba Token Plan, Alibaba Token Plan (China), Azure, Azure Cognitive Services, Charm Hyper, ClinePass, Cloudflare Workers AI, CommandCode, CoreWeave, Cortecs, CrossModel, Databricks, Deep Infra, DevPass (LLM Gateway), Eden AI, EmpirioLabs AI, GitHub Copilot, GreenPT, HPC-AI, Hugging Face, Inceptron, IteraCompute, Jalapeno Cloud, Kenari, Kilo Gateway, Melious, Merge Gateway, Moonshot AI, Moonshot AI (China), NanoGPT, Nebius Token Factory, Neuralwatt, Novita AI, Ofox, Ollama Cloud, OpenCode, OpenCode Go, OpenReason, OpenRouter, OrcaRouter, Perplexity Agent, Requesty, SCNet Token Plan, SiliconFlow, Synthetic, Tempr Gateway, TensorX, Venice AI, Vercel AI Gateway, Volcengine Ark Coding Plan, ZenMux, ai&, routing.run",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "36062c636f060f11",
-    "type": "new_model",
-    "model_id": "codex-mini",
-    "provider": "Azure, Azure Cognitive Services",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$1.5 in / $6 out per 1M",
     "alerted": false
   }
 ]
