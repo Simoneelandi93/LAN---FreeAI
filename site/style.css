@@ -378,32 +378,19 @@ a:hover { color: var(--accent-light); }
 
 .cell-na { color: var(--text-faint); }
 
-.kind-badge {
-  display: inline-block;
-  padding: 0 6px;
-  border-radius: var(--radius-xs);
-  font-size: 9px;
-  font-family: var(--font-mono);
-  font-weight: 500;
-  color: var(--text-dim);
-  background: var(--bg-subtle);
-  border: 1px solid var(--border);
-  white-space: nowrap;
-}
-
-.owner-link {
-  margin-left: 5px;
-  font-size: 10px;
-  color: var(--text-dim);
-}
-.owner-link:hover { color: var(--accent-light); }
-
 /* Source column header */
 .col-source { width: 70px; }
 .col-owner { width: 140px; }
 .col-price { width: 90px; }
 .col-context { width: 80px; }
 .col-quota { width: 110px; }
+.col-score { width: 70px; }
+
+.score-cell { font-size: 12px; }
+.score-val {
+  color: var(--text);
+  font-weight: 600;
+}
 .col-license { width: 70px; }
 
 /* License / cost tag */
