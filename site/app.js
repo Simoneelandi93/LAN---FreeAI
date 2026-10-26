@@ -770,14 +770,15 @@ function renderChanges(query) {
         : [];
       const direction = ev.direction
         || (pricingMatch.length
-          ? (pricingMatch.some(([, , o, n]) => Number(n) > Number(o)) ? "increase"
+          ? (pricingMatch.some(([, , o, n]) => Number(n) > Number(o))
+            ? (pricingMatch.some(([, , o, n]) => Number(n) < Number(o)) ? "mixed" : "increase")
             : pricingMatch.some(([, , o, n]) => Number(n) < Number(o)) ? "decrease" : "same")
           : "same");
       const lbl = isPrice
-        ? (direction === "increase" ? "Price Increase" : direction === "decrease" ? "Price Drop" : "Price Change")
+        ? (direction === "increase" ? "Price Increase" : direction === "decrease" ? "Price Drop" : direction === "mixed" ? "Price Mixed" : "Price Change")
         : (typeLabels[ev.type] || "Update");
       const tagCls = ev.type === "new_model" ? "new"
-        : isPrice ? (direction === "increase" ? "rise" : "drop")
+        : isPrice ? (direction === "increase" ? "rise" : direction === "decrease" ? "drop" : direction === "mixed" ? "mixed" : "drop")
         : "free";
       const providerLabel = ev.provider && !isInvalidText(ev.provider) ? `<span class="chg-providers">${esc(ev.provider)}</span>` : "";
       const alertedBadge = ev.alerted ? `<span class="chg-alerted">📢 Telegram</span>` : `<span class="chg-silent">dashboard only</span>`;

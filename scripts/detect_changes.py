@@ -174,7 +174,16 @@ def detect_model_changes(
 
         in_direction = "increase" if new_in > old_in else "decrease" if new_in < old_in else "same"
         out_direction = "increase" if new_out > old_out else "decrease" if new_out < old_out else "same"
-        direction = "increase" if new_in > old_in or new_out > old_out else "decrease" if new_in < old_in or new_out < old_out else "same"
+        # Only one overall direction when both dimensions agree; otherwise the
+        # badge would contradict the per-line details (input down + output up).
+        if in_direction == out_direction:
+            direction = in_direction
+        elif in_direction == "same":
+            direction = out_direction
+        elif out_direction == "same":
+            direction = in_direction
+        else:
+            direction = "mixed"
         price_event = {
             "event_id": generate_event_id("price_change", key, f"{old_in}/{old_out}->{new_in}/{new_out}"),
             "type": "price_change",
@@ -206,9 +215,21 @@ def detect_model_changes(
                 if abs(in_pct) >= PRICE_DROP_ALERT_THRESHOLD - 1e-12 \
                         or abs(out_pct) >= PRICE_DROP_ALERT_THRESHOLD - 1e-12:
                     price_event["alerted"] = True
-                    rising = or_new_in > or_old_in or or_new_out > or_old_out
+                    # Label from OpenRouter's own rows so the alert direction
+                    # matches the prices it quotes (not the cross-provider minimum).
+                    or_in_dir = "increase" if or_new_in > or_old_in else "decrease" if or_new_in < or_old_in else "same"
+                    or_out_dir = "increase" if or_new_out > or_old_out else "decrease" if or_new_out < or_old_out else "same"
+                    if or_in_dir != or_out_dir and or_in_dir != "same" and or_out_dir != "same":
+                        or_direction = "mixed"
+                    else:
+                        or_direction = or_in_dir if or_in_dir != "same" else or_out_dir
+                    rising = or_direction == "increase"
+                    direction_label = {
+                        "increase": "Price increase",
+                        "decrease": "Price drop",
+                    }.get(or_direction, "Price change")
                     price_drop_alerts.append(
-                        f"{'📈' if rising else '📉'} <b>{'Price increase' if rising else 'Price drop'} (OpenRouter)</b>\n"
+                        f"{'📈' if rising else '📉' if or_direction == 'decrease' else '🔄'} <b>{direction_label} (OpenRouter)</b>\n"
                         f"<b>Model:</b> {name}\n"
                         f"<b>Input:</b> ${or_old_in}/1M → <b>${or_new_in}/1M</b>\n"
                         f"<b>Output:</b> ${or_old_out}/1M → <b>${or_new_out}/1M</b>\n"

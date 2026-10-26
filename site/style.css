@@ -829,6 +829,7 @@ a:hover {
 .chg-tag.new { background: var(--emerald-soft); color: var(--emerald); }
 .chg-tag.drop { background: var(--amber-soft); color: var(--amber); }
 .chg-tag.rise { background: var(--rose-soft); color: var(--rose); }
+.chg-tag.mixed { background: var(--purple-soft); color: var(--purple); }
 .chg-tag.free { background: var(--emerald-soft); color: var(--emerald); }
 
 .chg-alerted {
