@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "e6f9c94e43ea0dbd",
+    "type": "price_change",
+    "model_id": "moonshotai/kimi-k2.7-code",
+    "provider": "Abacus, CommandCode, CoreWeave, Deep Infra, HPC-AI, Hugging Face, Inceptron, IteraCompute, Kilo Gateway, NanoGPT, Nebius Token Factory, Novita AI, Ofox, OpenReason, OpenRouter, Perplexity Agent, SiliconFlow, TensorX, Vercel AI Gateway, ZenMux, ai&",
+    "detected_at": "2026-10-26T11:41:18.329059+00:00",
+    "details": "Input: $0.6712 -> $0.6712; output: $3.1 -> $3.29",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "abc88ecec1a36d9e",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-26T11:41:18.329059+00:00",
+    "details": "Input: $0.161 -> $0.214; output: $10 -> $10",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "e4e15c9fcfdc414b",
     "type": "price_change",
     "model_id": "moonshotai/kimi-k2.7-code",
@@ -2080,23 +2104,5 @@
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0 in / $0 out per 1M",
     "alerted": true
-  },
-  {
-    "event_id": "ae6fda2d511c1a04",
-    "type": "new_free_model",
-    "model_id": "moonshotai/kimi-k2.5",
-    "provider": "302.AI, AIHubMix, Abacus, Alibaba Coding Plan, Alibaba Coding Plan (China), Alibaba Token Plan, Alibaba Token Plan (China), Amazon Bedrock, Auriko, Azure, Azure Cognitive Services, DaoXE, Deep Infra, DevPass (LLM Gateway), FrogBot, HPC-AI, Hugging Face, Jalapeno Cloud, Jiekou.AI, Kilo Gateway, Meganova, Melious, Merge Gateway, NanoGPT, Novita AI, OpenCode, OpenRouter, OrcaRouter, Poe, SCNet Token Plan, Tencent Coding Plan (China), TensorX, Venice AI, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "d13f617f680f9922",
-    "type": "new_model",
-    "model_id": "text-embedding-ada-002",
-    "provider": "Azure, Azure Cognitive Services, OpenAI, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.1 in / $0 out per 1M",
-    "alerted": false
   }
 ]
