@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "263332b9cdb42497",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-26T17:37:03.507395+00:00",
+    "details": "Input: $0.169 -> $0.2; output: $10 -> $10",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "e6f9c94e43ea0dbd",
     "type": "price_change",
     "model_id": "moonshotai/kimi-k2.7-code",
@@ -2220,15 +2232,6 @@
     "provider": "302.AI, AI/ML API, AIHubMix, Aixy, Amazon Bedrock, Azure, Azure Cognitive Services, Boundless, Cloudflare AI Gateway, CommandCode, Cortecs, CrossModel, DevPass (LLM Gateway), Eden AI, GitHub Copilot, Kilo Gateway, LowRouter, Merge Gateway, NEAR AI Cloud, NanoGPT, Neon, Ofox, OpenAI, OpenCode, OpenRouter, Perplexity Agent, Prime Inference, Requesty, Venice AI, Vercel AI Gateway, Vivgrid, ZenMux",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$2 in / $10 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "4ba13b4573f2e4e4",
-    "type": "new_free_model",
-    "model_id": "deepseek/deepseek-v4-pro-0813",
-    "provider": "AI/ML API, AIHubMix, Alibaba Token Plan, Alibaba Token Plan (China), Arcee, Baseten, Bothub, Boundless, Charm Hyper, Cloudflare Workers AI, CoreWeave, Cortecs, Deep Infra, DigitalOcean, EmpirioLabs AI, Hugging Face, IteraCompute, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, Ofox, Ollama Cloud, OpenRouter, OrcaRouter, Perplexity Agent, Requesty, RunInfra, SCNet Token Plan, SiliconFlow, Standard Compute, TensorX, Together AI, Venice AI, Vercel AI Gateway, Vivgrid, Volcengine Ark",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
     "alerted": true
   }
 ]
