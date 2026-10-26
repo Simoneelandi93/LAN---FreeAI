@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "ec85bbbb64c2e7b0",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-26T23:34:54.037663+00:00",
+    "details": "Input: $0.15 -> $0.17; output: $10 -> $8.099",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "4f3e48661cea5e75",
+    "type": "price_change",
+    "model_id": "ibm-granite/granite-4.0-h-micro",
+    "provider": "AI/ML API",
+    "detected_at": "2026-10-26T23:34:54.037663+00:00",
+    "details": "Input: $0.017 -> $0.017986; output: $0.112 -> $0.118496",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "c92ab1af8b7fb4b5",
     "type": "price_change",
     "model_id": "moonshotai/kimi-k2.7-code",
@@ -2232,24 +2256,6 @@
     "provider": "NanoGPT",
     "detected_at": "2026-10-25T02:09:17.757276+00:00",
     "details": "$0.69989 in / $0.69989 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "d9e96e9563816ae1",
-    "type": "new_model",
-    "model_id": "aisingapore/Qwen-SEA-LION-v4-32B-IT",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-25T02:09:17.757276+00:00",
-    "details": "$0.3 in / $0.6 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "f38aed2b2ccc36ce",
-    "type": "new_model",
-    "model_id": "soob3123/GrayLine-Qwen3-8B",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-25T02:09:17.757276+00:00",
-    "details": "$0.3 in / $0.3 out per 1M",
     "alerted": false
   }
 ]
