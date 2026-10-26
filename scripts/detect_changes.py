@@ -169,11 +169,21 @@ def detect_model_changes(
         new_out = _min_price(group, "output_price_per_m")
         if old_in is None or new_in is None:
             continue
-        if new_in == old_in and new_out == old_out:
+        # Output appearing from None (or being dropped to None) is itself a
+        # change, so don't skip on input alone.
+        if new_in == old_in and (old_out is None) == (new_out is None) \
+                and (new_out is None or new_out == old_out):
             continue
 
         in_direction = "increase" if new_in > old_in else "decrease" if new_in < old_in else "same"
-        out_direction = "increase" if new_out > old_out else "decrease" if new_out < old_out else "same"
+        # A missing output price (upstream dropped the field) must not crash the
+        # comparison; treat that side as unchanged in the direction labels.
+        out_direction = "same"
+        if old_out is not None and new_out is not None:
+            out_direction = "increase" if new_out > old_out else "decrease" if new_out < old_out else "same"
+        # When only the output side moved (None <-> value), pin the label to it.
+        if in_direction == "same" and out_direction == "same":
+            out_direction = "increase" if new_out is not None else "decrease"
         # Only one overall direction when both dimensions agree; otherwise the
         # badge would contradict the per-line details (input down + output up).
         if in_direction == out_direction:
@@ -190,7 +200,8 @@ def detect_model_changes(
             "model_id": representative.get("model_id", ""),
             "provider": ", ".join(sorted({m.get("provider") or "Unknown" for m in group})),
             "detected_at": now,
-            "details": f"Input: ${old_in} -> ${new_in}; output: ${old_out} -> ${new_out}",
+            "details": f"Input: ${old_in} -> ${new_in}"
+                       + (f"; output: ${old_out} -> ${new_out}" if old_out is not None and new_out is not None else ""),
             "direction": direction,
             "in_direction": in_direction,
             "out_direction": out_direction,
@@ -210,15 +221,19 @@ def detect_model_changes(
             if isinstance(or_old_in, (int, float)) and isinstance(or_new_in, (int, float)) \
                     and (or_old_in, or_old_out) != (or_new_in, or_new_out):
                 in_pct = (or_new_in - or_old_in) / or_old_in if or_old_in else 0
-                out_pct = (or_new_out - or_old_out) / or_old_out if or_old_out else 0
+                out_pct = (or_new_out - or_old_out) / or_old_out \
+                    if isinstance(or_old_out, (int, float)) and isinstance(or_new_out, (int, float)) and or_old_out else 0
                 # 1e-12 tolerance: (1.2-1.0)/1.0 is 0.19999999999999996 in binary float
                 if abs(in_pct) >= PRICE_DROP_ALERT_THRESHOLD - 1e-12 \
                         or abs(out_pct) >= PRICE_DROP_ALERT_THRESHOLD - 1e-12:
                     price_event["alerted"] = True
                     # Label from OpenRouter's own rows so the alert direction
                     # matches the prices it quotes (not the cross-provider minimum).
+                    # A None side is treated as unchanged rather than crash.
                     or_in_dir = "increase" if or_new_in > or_old_in else "decrease" if or_new_in < or_old_in else "same"
-                    or_out_dir = "increase" if or_new_out > or_old_out else "decrease" if or_new_out < or_old_out else "same"
+                    or_out_dir = "same"
+                    if isinstance(or_old_out, (int, float)) and isinstance(or_new_out, (int, float)):
+                        or_out_dir = "increase" if or_new_out > or_old_out else "decrease" if or_new_out < or_old_out else "same"
                     if or_in_dir != or_out_dir and or_in_dir != "same" and or_out_dir != "same":
                         or_direction = "mixed"
                     else:
@@ -232,7 +247,7 @@ def detect_model_changes(
                         f"{'📈' if rising else '📉' if or_direction == 'decrease' else '🔄'} <b>{direction_label} (OpenRouter)</b>\n"
                         f"<b>Model:</b> {name}\n"
                         f"<b>Input:</b> ${or_old_in}/1M → <b>${or_new_in}/1M</b>\n"
-                        f"<b>Output:</b> ${or_old_out}/1M → <b>${or_new_out}/1M</b>\n"
+                        f"<b>Output:</b> ${or_old_out if or_old_out is not None else '?'}/1M → <b>${or_new_out if or_new_out is not None else '?'}/1M</b>\n"
                         f"<a href='{html.escape(new_or.get('provider_url') or _link(group), quote=True)}'>View on OpenRouter</a>"
                     )
 
