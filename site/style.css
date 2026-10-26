@@ -383,6 +383,7 @@ a:hover { color: var(--accent-light); }
 .col-owner { width: 140px; }
 .col-price { width: 90px; }
 .col-context { width: 80px; }
+.col-quota { width: 110px; }
 .col-license { width: 70px; }
 
 /* License / cost tag */

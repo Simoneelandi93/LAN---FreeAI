@@ -2,6 +2,10 @@
 
 const NINEROUTER_API_URL = "http://127.0.0.1:20128/v1/models";
 const OPENROUTER_API_URL = "https://openrouter.ai/api/v1/models";
+// OmniRouter catalog is read from the upstream repo (curated free-tier file),
+// not the local daemon — the daemon needs an API key and its /v1/models is 401.
+const OMNIRROUTER_CATALOG_URL =
+  "https://raw.githubusercontent.com/cheaper-inference/OmniRoute/main/open-sse/config/freeModelCatalog.data.ts";
 
 let allModels = [];        // { id, name, owner, source, input_price_per_m, output_price_per_m, context_window, is_free }
 let filtered = [];
@@ -9,7 +13,7 @@ let activeSource = "9router";  // "9router" | "openrouter" | "both"
 let activeFilter = "all";      // "all" | "free" | "paid"
 let sortKey = "name";
 let sortDir = "asc";
-let visibleCount = 200;
+let visibleCount = 100000;  // Load all models at once
 let routerApiKey = "";
 try { routerApiKey = localStorage.getItem("routerApiKey") || ""; } catch { /* storage unavailable */ }
 
@@ -48,8 +52,8 @@ function fmtContext(v) {
 }
 
 function sourceBadge(source) {
-  const label = source === "9router" ? "9router" : "OpenRouter";
-  const cls = source === "9router" ? "source-badge-local" : "source-badge-remote";
+  const label = source === "9router" ? "9router" : source === "OmniRouter" ? "OmniRouter" : "OpenRouter";
+  const cls = source === "OpenRouter" ? "source-badge-remote" : "source-badge-local";
   return `<span class="${cls}">${label}</span>`;
 }
 
@@ -69,17 +73,17 @@ async function fetch9routerModels() {
     document.getElementById("status9routerLabel").textContent = `9r: ${list.length} models`;
     document.getElementById("status9router").style.background = "#10b981";
     return list.map(m => {
-      const prompt = Number(m.pricing?.prompt ?? 0) * 1_000_000;
-      const completion = Number(m.pricing?.completion ?? 0) * 1_000_000;
+      // 9router /v1/models exposes no pricing — costs are unknown (null), never $0.
+      const ctx = Number(m.context_length ?? m.capabilities?.contextWindow ?? 0) || 0;
       return {
         id: m.id || "",
-        name: m.name || m.id || "",
+        name: m.id || "",
         owner: m.owned_by || "",
         source: "9router",
-        input_price_per_m: round4(prompt),
-        output_price_per_m: round4(completion),
-        context_window: Number(m.context_length ?? m.contextWindow ?? 0) || 0,
-        is_free: prompt === 0 && completion === 0,
+        input_price_per_m: null,
+        output_price_per_m: null,
+        context_window: ctx,
+        is_free: false,
       };
     }).filter(m => m.id);
   } catch (e) {
@@ -87,6 +91,69 @@ async function fetch9routerModels() {
     document.getElementById("status9router").style.background = "#f59e0b";
     return [];
   }
+}
+
+// OmniRouter's free-tier catalog is a hand-curated TypeScript array. Parsing it
+// in the browser keeps the page working even when the local daemon is down (401).
+async function fetchOmniRouterModels() {
+  try {
+    const res = await fetch(OMNIRROUTER_CATALOG_URL, { signal: AbortSignal.timeout(15000) });
+    if (!res.ok) {
+      document.getElementById("statusOmniRouterLabel").textContent = `Omni: HTTP ${res.status}`;
+      document.getElementById("statusOmniRouter").style.background = "#f59e0b";
+      return [];
+    }
+    const text = await res.text();
+    const list = parseOmniCatalog(text);
+    document.getElementById("statusOmniRouterLabel").textContent = `Omni: ${list.length} free`;
+    document.getElementById("statusOmniRouter").style.background = "#10b981";
+    return list;
+  } catch (e) {
+    document.getElementById("statusOmniRouterLabel").textContent = "Omni: offline";
+    document.getElementById("statusOmniRouter").style.background = "#f59e0b";
+    return [];
+  }
+}
+
+// Extracts entries like:
+//   { provider: "agy", modelId: "gemini-3.8-flash-high", displayName: "Gemini 3.8 Flash (High)", monthlyTokens: 0, creditTokens: 0, freeType: "keyless", poolKey: "agy", tos: "avoid" },
+//   { provider: "xkiro", modelId: "qwen/qwen3-max:free", displayName: "Qwen3 Max (xKiro)", monthlyTokens: 150000000, creditTokens: 0, freeType: "recurring-daily", poolKey: "xkiro-free", tos: "caution", hardStopGuaranteed: true },
+// freeType "discontinued" means the tier is gone — skip it.
+function parseOmniCatalog(text) {
+  const start = text.indexOf("FREE_MODEL_BUDGETS");
+  if (start === -1) return [];
+  const bracket = text.indexOf("[", start);
+  const end = text.indexOf("];", bracket);
+  if (bracket === -1 || end === -1) return [];
+  const body = text.slice(bracket, end);
+
+  const out = [];
+  // [^}]* before the closing } handles optional trailing fields (e.g., hardStopGuaranteed)
+  const lineRe = /\{\s*provider:\s*"([^"]*)"[\s\S]*?modelId:\s*"([^"]*)"[\s\S]*?displayName:\s*"([^"]*)"[\s\S]*?monthlyTokens:\s*(\d+)[\s\S]*?creditTokens:\s*(\d+)[\s\S]*?freeType:\s*"([^"]*)"[\s\S]*?poolKey:\s*"([^"]*)"[\s\S]*?tos:\s*"([^"]*)"[^}]*\}/g;
+  let match;
+  while ((match = lineRe.exec(body)) !== null) {
+    const [, provider, modelId, displayName, monthlyTokens, creditTokens, freeType, poolKey, tos] = match;
+    if (freeType === "discontinued") continue;
+    const quota = Number(monthlyTokens) > 0
+      ? `${(Number(monthlyTokens) / 1_000_000).toFixed(1)}M/mo`
+      : Number(creditTokens) > 0
+        ? `${(Number(creditTokens) / 1_000_000).toFixed(0)}M one-time`
+        : "unlimited";
+    out.push({
+      id: `${provider}/${modelId}`,
+      name: displayName,
+      owner: provider,
+      source: "OmniRouter",
+      input_price_per_m: 0,
+      output_price_per_m: 0,
+      context_window: 0,
+      is_free: true,
+      free_type: freeType,
+      quota,
+      tos,
+    });
+  }
+  return out;
 }
 
 async function fetchOpenRouterModels() {
@@ -188,16 +255,16 @@ function renderTable() {
       <td class="text-right font-mono">${fmtPrice(inp)}</td>
       <td class="text-right font-mono">${fmtPrice(out)}</td>
       <td class="text-right font-mono">${fmtContext(m.context_window)}</td>
+      <td class="text-center font-mono text-dim">${esc(m.quota || "—")}</td>
       <td class="text-center">${costTag}</td>
     </tr>`;
   }).join("");
 
   if (!list.length) {
-    body.innerHTML = `<tr><td colspan="7"><div class="empty"><h3>No models found</h3><p>Check that 9router is running or try a different filter.</p></div></td></tr>`;
+    body.innerHTML = `<tr><td colspan="8"><div class="empty"><h3>No models found</h3><p>Check that 9router is running or try a different filter.</p></div></td></tr>`;
   }
 
   document.getElementById("resultCount").textContent = `Showing ${filtered.length.toLocaleString()} models`;
-  document.getElementById("loadMore").hidden = filtered.length <= visibleCount;
 }
 
 function updateSortIndicators() {
@@ -221,18 +288,22 @@ function render() {
 
 async function loadData() {
   document.getElementById("status9routerLabel").textContent = "9r: loading…";
+  document.getElementById("statusOmniRouterLabel").textContent = "Omni: loading…";
   document.getElementById("statusOpenRouterLabel").textContent = "OR: loading…";
 
-  const [nrModels, orModels] = await Promise.all([
+  const [nrModels, omniModels, orModels] = await Promise.all([
     fetch9routerModels(),
+    fetchOmniRouterModels(),
     fetchOpenRouterModels(),
   ]);
 
-  allModels = [...nrModels, ...orModels];
+  allModels = [...nrModels, ...omniModels, ...orModels];
 
   document.getElementById("total9router").textContent = nrModels.length.toLocaleString();
+  document.getElementById("totalOmniRouter").textContent = omniModels.length.toLocaleString();
   document.getElementById("totalOpenRouter").textContent = orModels.length.toLocaleString();
   document.getElementById("total9routerFree").textContent = nrModels.filter(m => m.is_free).length.toLocaleString();
+  document.getElementById("totalOmniRouterFree").textContent = omniModels.filter(m => m.is_free).length.toLocaleString();
   document.getElementById("totalOpenRouterFree").textContent = orModels.filter(m => m.is_free).length.toLocaleString();
   document.getElementById("lastUpdated").textContent = `Updated ${new Date().toLocaleTimeString()}`;
 
@@ -247,7 +318,7 @@ document.querySelectorAll(".tab-pri[data-source]").forEach(btn => {
     btn.classList.add("active");
     btn.setAttribute("aria-selected", "true");
     activeSource = btn.dataset.source;
-    visibleCount = 200;
+    visibleCount = 100000;  // Load all models at once
     render();
   });
 });
@@ -273,8 +344,7 @@ document.querySelectorAll("#modelTable th.sortable").forEach(th => {
   });
 });
 
-document.getElementById("searchInput").addEventListener("input", () => { visibleCount = 200; render(); });
-document.getElementById("loadMore").addEventListener("click", () => { visibleCount += 200; render(); });
+document.getElementById("searchInput").addEventListener("input", () => { render(); });
 
 // Router key modal (kept for future use — /v1/models is keyless)
 document.getElementById("routerKeyBtn")?.addEventListener("click", () => {
