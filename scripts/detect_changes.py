@@ -28,6 +28,11 @@ def model_key(model: Dict[str, Any]) -> str:
     return re.sub(r"[^a-z0-9]", "", name.casefold())
 
 
+def _norm_name(name: str) -> str:
+    """Normalize a display name for comparison (punctuation-stripped, case-folded)."""
+    return re.sub(r"[^a-z0-9]", "", str(name or "").casefold())
+
+
 def _group_by_key(models: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:
     groups: Dict[str, List[Dict[str, Any]]] = {}
     for model in models:
@@ -93,6 +98,15 @@ def detect_model_changes(
     # A snapshot from the pre-models.dev schema would mark everything as "new" at once
     legacy_snapshot = bool(old_models) and any("provider_id" not in m for m in old_models)
 
+    # Track known model names to compact alerts for same-name models at new providers
+    known_names: set[str] = set()
+    for _, group in old_groups.items():
+        rep = group[0]
+        known_names.add(_norm_name(rep.get("name") or rep.get("model_id") or ""))
+
+    # Also track names already seen this run to collapse multiple new providers for same model
+    seen_this_run: set[str] = set()
+
     events: List[Dict[str, Any]] = []
     became_free_alerts: List[str] = []
     new_free_alerts: List[str] = []
@@ -110,6 +124,11 @@ def detect_model_changes(
         if old_group is None:
             is_openrouter = _openrouter_entry(group) is not None
             alerted_new = free_now or is_openrouter
+            # A model_id we have never seen, but whose *display name* already
+            # exists (same model now listed by a second provider) is not a real
+            # debut — it gets a one-liner instead of a full alert block.
+            norm_name = _norm_name(name)
+            same_name = norm_name and (norm_name in known_names or norm_name in seen_this_run)
             events.append({
                 "event_id": generate_event_id("new_model", key, now),
                 "type": "new_free_model" if free_now else "new_model",
@@ -121,28 +140,44 @@ def detect_model_changes(
             })
 
             if free_now:
-                new_free_alerts.append(
-                    f"🎁 <b>NEW 100% FREE MODEL</b>\n"
-                    f"<b>Model:</b> {name}\n"
-                    f"<b>Available at:</b> {_provider_text(group)}\n"
-                    f"<b>Context:</b> {_max_context(group):,} tokens\n"
-                    f"<a href='{_link(group)}'>View in provider catalog</a>"
-                )
+                if same_name:
+                    new_free_alerts.append(
+                        f"🎁 <b>NEW FREE</b> — {name} @ {_provider_text(group, 2)}"
+                        f" · ctx {_max_context(group):,}"
+                    )
+                else:
+                    new_free_alerts.append(
+                        f"🎁 <b>NEW 100% FREE MODEL</b>\n"
+                        f"<b>Model:</b> {name}\n"
+                        f"<b>Available at:</b> {_provider_text(group)}\n"
+                        f"<b>Context:</b> {_max_context(group):,} tokens\n"
+                        f"<a href='{_link(group)}'>View in provider catalog</a>"
+                    )
             elif is_openrouter:
                 or_entry = _openrouter_entry(group)
                 or_in = or_entry.get("input_price_per_m")
                 or_out = or_entry.get("output_price_per_m")
                 pricing = f"${or_in if or_in is not None else '?'} in / ${or_out if or_out is not None else '?'} out per 1M"
-                new_paid_alerts.append(
-                    f"🆕 <b>New model (OpenRouter)</b>\n"
-                    f"<b>Model:</b> {name}\n"
-                    f"<b>Available at:</b> {_provider_text(group)}\n"
-                    f"<b>Context:</b> {_max_context(group):,} tokens\n"
-                    f"<b>Pricing:</b> {pricing}\n"
-                    f"<a href='{html.escape(or_entry.get('provider_url') or _link(group), quote=True)}'>View on OpenRouter</a>"
-                )
+                if same_name:
+                    new_paid_alerts.append(
+                        f"🆕 {name} @ OpenRouter — {pricing}"
+                        f" · ctx {_max_context(group):,}"
+                    )
+                else:
+                    new_paid_alerts.append(
+                        f"🆕 <b>New model (OpenRouter)</b>\n"
+                        f"<b>Model:</b> {name}\n"
+                        f"<b>Available at:</b> {_provider_text(group)}\n"
+                        f"<b>Context:</b> {_max_context(group):,} tokens\n"
+                        f"<b>Pricing:</b> {pricing}\n"
+                        f"<a href='{html.escape(or_entry.get('provider_url') or _link(group), quote=True)}'>View on OpenRouter</a>"
+                    )
             else:
                 digest_lines.append(f"• {name} — {_provider_text(group, 2)} ({_price_line(group)})")
+            # Remember the name so a second provider for the same model also
+            # collapses to a one-liner rather than a full block.
+            if norm_name:
+                seen_this_run.add(norm_name)
             continue
 
         old_free = _is_free_group(old_group)
