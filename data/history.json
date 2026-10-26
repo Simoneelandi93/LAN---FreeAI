@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "e6f9c94e43ea0dbd",
+    "type": "price_change",
+    "model_id": "moonshotai/kimi-k2.7-code",
+    "provider": "Abacus, CommandCode, CoreWeave, Deep Infra, HPC-AI, Hugging Face, Inceptron, IteraCompute, Kilo Gateway, NanoGPT, Nebius Token Factory, Novita AI, Ofox, OpenReason, OpenRouter, Perplexity Agent, SiliconFlow, TensorX, Vercel AI Gateway, ZenMux, ai&",
+    "detected_at": "2026-10-26T09:49:30.763091+00:00",
+    "details": "Input: $0.6712 -> $0.6712; output: $3.1 -> $3.29",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "2f4d7e7ce931d0fb",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-26T09:49:30.763091+00:00",
+    "details": "Input: $0.214 -> $0.225; output: $10 -> $10",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "e4e15c9fcfdc414b",
     "type": "price_change",
     "model_id": "moonshotai/kimi-k2.7-code",
@@ -2068,23 +2092,5 @@
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$1.5 in / $6 out per 1M",
     "alerted": false
-  },
-  {
-    "event_id": "64acac76a78e0512",
-    "type": "new_model",
-    "model_id": "openai/gpt-4.1",
-    "provider": "302.AI, AI/ML API, Abacus, AnyAPI, Azure, Azure Cognitive Services, Cloudflare AI Gateway, Cortecs, DevPass (LLM Gateway), Eden AI, FastRouter, Impossibl, Kilo Gateway, LowRouter, Merge Gateway, Model Oracle AI, NEAR AI Cloud, NanoGPT, Ofox, OpenAI, OpenRouter, OrcaRouter, Poe, Prime Inference, SAP AI Core, Snowflake Cortex, Vercel AI Gateway",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$1.8182 in / $7.2727 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "249637034215445b",
-    "type": "new_model",
-    "model_id": "openai/gpt-5-mini",
-    "provider": "302.AI, AI/ML API, Abacus, AnyAPI, Azure, Azure Cognitive Services, Cloudflare AI Gateway, Cortecs, Databricks, DevPass (LLM Gateway), Eden AI, FastRouter, GitHub Copilot, Impossibl, Jiekou.AI, Kilo Gateway, LowRouter, Merge Gateway, NEAR AI Cloud, NanoGPT, Neon, Ofox, OpenAI, OpenRouter, OrcaRouter, Perplexity Agent, Poe, Prime Inference, QiHang, SAP AI Core, Snowflake Cortex, Vercel AI Gateway, Vivgrid",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.04 in / $0.29 out per 1M",
-    "alerted": true
   }
 ]
