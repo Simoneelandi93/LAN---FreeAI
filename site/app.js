@@ -32,7 +32,7 @@ function getModelName(m) {
 function price(v) {
   if (isInvalidText(v)) return null;
   const n = Number(v);
-  return Number.isFinite(n) ? n : null;
+  return Number.isFinite(n) && n >= 0 ? n : null;
 }
 
 function fmtPrice(v) {
