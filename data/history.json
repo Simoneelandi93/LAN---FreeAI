@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "47227e745aa4adcc",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-26T05:40:31.800568+00:00",
+    "details": "Input: $0.1814 -> $0.152; output: $8.5226 -> $10",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
     "event_id": "f87ea00ff30c66d3",
     "type": "price_change",
     "model_id": "qwen/qwen3-32b",
@@ -2056,14 +2068,5 @@
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0.425 in / $2.125 out per 1M",
     "alerted": true
-  },
-  {
-    "event_id": "fc1126c38ce64b44",
-    "type": "new_model",
-    "model_id": "phi-4-reasoning-plus",
-    "provider": "Azure, Azure Cognitive Services",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.125 in / $0.5 out per 1M",
-    "alerted": false
   }
 ]
