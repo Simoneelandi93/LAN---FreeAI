@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "c92ab1af8b7fb4b5",
+    "type": "price_change",
+    "model_id": "moonshotai/kimi-k2.7-code",
+    "provider": "Abacus, Chutes, CommandCode, CoreWeave, Deep Infra, HPC-AI, Hugging Face, Inceptron, IteraCompute, Kilo Gateway, NanoGPT, Nebius Token Factory, Novita AI, Ofox, OpenReason, OpenRouter, Perplexity Agent, SiliconFlow, TensorX, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-10-26T22:38:14.277584+00:00",
+    "details": "Input: $0.6712 -> $0.56; output: $3.29 -> $3",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "0c92c22dd5112319",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-26T22:38:14.277584+00:00",
+    "details": "Input: $0.1795 -> $0.15; output: $10 -> $10",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
     "event_id": "35e276900459c6a1",
     "type": "new_model",
     "model_id": "auto/openai/gpt-6.1-terra",
@@ -2226,24 +2250,6 @@
     "provider": "NanoGPT",
     "detected_at": "2026-10-25T02:09:17.757276+00:00",
     "details": "$0.3 in / $0.3 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "1f64759b1b1cbe70",
-    "type": "new_model",
-    "model_id": "speakleash/Bielik-11B-v3.0-Instruct",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-25T02:09:17.757276+00:00",
-    "details": "$0.48 in / $0.48 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "2db433c1438088b6",
-    "type": "new_model",
-    "model_id": "swiss-ai/apertus-v1.5-8b",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-25T02:09:17.757276+00:00",
-    "details": "$0.12 in / $0.24 out per 1M",
     "alerted": false
   }
 ]
