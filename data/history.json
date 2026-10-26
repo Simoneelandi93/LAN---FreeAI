@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "64d4286c5040d0ba",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "AI/ML API, CommandCode, CrossModel, Deep Infra, Eden AI, Hugging Face, Kilo Gateway, LLM Gateway, NanoGPT, Novita AI, OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-10-26T01:48:43.586540+00:00",
+    "details": "Input: $0.7506 -> $0.7923; output: $2.2509 -> $2.37595",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "f375f30c626c9fd7",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-26T01:48:43.586540+00:00",
+    "details": "Input: $0.152 -> $0.2033; output: $5.5 -> $5.5",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
     "event_id": "15ae5bbf9c4a27d2",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-pro-latest",
@@ -2002,23 +2026,5 @@
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0.12 in / $0 out per 1M",
     "alerted": false
-  },
-  {
-    "event_id": "3320c0dc40cccad6",
-    "type": "new_model",
-    "model_id": "cohere-embed-v3-english",
-    "provider": "Azure, Azure Cognitive Services",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.1 in / $0 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "072bd854f56f8fba",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.2-codex",
-    "provider": "AIHubMix, Abacus, Azure, Azure Cognitive Services, DevPass (LLM Gateway), Impossibl, Jiekou.AI, Kilo Gateway, NanoGPT, Ofox, OpenCode, OpenRouter, OrcaRouter, Poe, QiHang, Vercel AI Gateway, Vivgrid, ZenMux",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.14 in / $1.14 out per 1M",
-    "alerted": true
   }
 ]
