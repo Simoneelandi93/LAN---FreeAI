@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "18a00afedc3695dd",
+    "type": "new_model",
+    "model_id": "gpt-6.1-terra@eu",
+    "provider": "Requesty",
+    "detected_at": "2026-10-26T21:04:40.665583+00:00",
+    "details": "$1.2 in / $6 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "2f80ff19148239c0",
     "type": "price_change",
     "model_id": "minimax/minimax-m3.1-flash",
@@ -2239,17 +2248,5 @@
     "detected_at": "2026-10-25T01:45:16.932377+00:00",
     "details": "$0.1587 in / $1.587 out per 1M",
     "alerted": false
-  },
-  {
-    "event_id": "81cbdb3c872aff82",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "OpenRouter, Privatemode AI",
-    "detected_at": "2026-10-25T01:08:55.321968+00:00",
-    "details": "Input: $0.0502 -> $0.0191; output: $0.0819 -> $0.1352",
-    "direction": "increase",
-    "in_direction": "decrease",
-    "out_direction": "increase",
-    "alerted": true
   }
 ]
