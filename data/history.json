@@ -1,5 +1,47 @@
 [
   {
+    "event_id": "720883c1fd44daa4",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-26T18:50:26.261234+00:00",
+    "details": "Input: $0.2 -> $0.159; output: $10 -> $10",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "f0fabefb90b3d2cf",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-26T18:50:26.261234+00:00",
+    "details": "Input: $0.02 -> $0.02; output: $1 -> $0.5",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "68039a785545f4a4",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.1-terra",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-26T18:50:26.261234+00:00",
+    "details": "$1 in / $5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "5ff1b4b618d95388",
+    "type": "new_model",
+    "model_id": "gpt-6.1-terra",
+    "provider": "OpenAI",
+    "detected_at": "2026-10-26T18:50:26.261234+00:00",
+    "details": "$1 in / $5 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "263332b9cdb42497",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -2196,42 +2238,6 @@
     "provider": "302.AI, AI/ML API, AIHubMix, AKI.IO, AMD, Alibaba (China), Alibaba Token Plan, Alibaba Token Plan (China), Arcee, Azure, Azure Cognitive Services, Baseten, Boundless, Charm Hyper, ClinePass, CommandCode, CoralBricks, CoreWeave, Cortecs, CrossModel, Deep Infra, DevPass (LLM Gateway), DigitalOcean, EmpirioLabs AI, Fireworks AI, GreenPT, Hugging Face, Inco, IteraCompute, Kenari, Kilo Gateway, Melious, Merge Gateway, Modal, NaN, NanoGPT, Nebius Token Factory, Neon, Neuralwatt, Novita AI, Nvidia, Ofox, Ollama Cloud, OpenCode, OpenCode Go, OpenRouter, Prime Inference, Requesty, SCNet Token Plan, Scaleway, SenseNova (China), Standard Compute, Synthetic, Tempr Gateway, TensorX, Thinking Machines, Tinfoil, Together AI, Umans AI, Umans AI Coding Plan, Vancine, Venice AI, Vercel AI Gateway, Vivgrid, Vultr, ZenMux, above.dev, ai&, engy",
     "detected_at": "2026-10-24T22:54:44.237812+00:00",
     "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "a9aa8bb2b307398f",
-    "type": "new_model",
-    "model_id": "openai/gpt-5.6-luna",
-    "provider": "302.AI, AI-ROUTER, AI/ML API, AIHubMix, Abacus, Aixy, Amazon Bedrock, Azure, Azure Cognitive Services, Bothub, Boundless, Cloudflare AI Gateway, CommandCode, Cortecs, CrossModel, Databricks, DevPass (LLM Gateway), Eden AI, GitHub Copilot, Impossibl, Kenari, Kilo Gateway, LowRouter, Merge Gateway, NEAR AI Cloud, NanoGPT, Neon, Ofox, OpenAI, OpenCode, OpenCode Go, OpenRouter, Opper, OrcaRouter, Perplexity Agent, Pioneer, Prime Inference, Requesty, SAP AI Core, Snowflake Cortex, Standard Compute, Venice AI, Vercel AI Gateway, Vivgrid, ZenMux, routing.run",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0.2 in / $1.14285714 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "25d984ba3e45d1c5",
-    "type": "new_free_model",
-    "model_id": "z-ai/glm-5.3",
-    "provider": "302.AI, AI/ML API, AIHubMix, AKI.IO, AgentRouter, Alibaba (China), Alibaba Token Plan, Alibaba Token Plan (China), Arcee, Baseten, Bothub, Boundless, Charm Hyper, ClinePass, CloudFerro Sherlock, Cloudflare Workers AI, CommandCode, CoreWeave, Cortecs, CrossModel, Deep Infra, DevPass (LLM Gateway), DigitalOcean, Eden AI, EmpirioLabs AI, Fireworks AI, Friendli, GreenPT, Hugging Face, Inceptron, Inco, IteraCompute, Kenari, Kilo Gateway, Melious, Merge Gateway, Mistral, Moark, Modal, NEAR AI Cloud, NaN, NanoGPT, Nebius Token Factory, Neon, Neuralwatt, Novita AI, Nvidia, Ofox, Ollama Cloud, OpenCode, OpenCode Go, OpenRouter, Opper, OrcaRouter, Perplexity Agent, Prime Inference, Privatemode AI, Requesty, RunInfra, SCNet Token Plan, Scaleway, SiliconFlow, Standard Compute, Synthetic, Tempr Gateway, TensorX, Thinking Machines, Tinfoil, Together AI, TokenGo, Umans AI, Umans AI Coding Plan, Vancine, Venice AI, Vercel AI Gateway, Vivgrid, Volcengine Ark Coding Plan, Vultr, Z.AI, Z.AI Coding Plan, ZenMux, Zhipu AI, Zhipu AI Coding Plan, ai&, engy",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "e91079eb7c3f3239",
-    "type": "new_free_model",
-    "model_id": "xiaomi/mimo-v2.6-flash",
-    "provider": "AIHubMix, AMD, Boundless, ClinePass, CrossModel, Deep Infra, DevPass (LLM Gateway), EmpirioLabs AI, Kilo Gateway, NaN, NanoGPT, Novita AI, OpenCode Go, OpenRouter, Requesty, Standard Compute, Tempr Gateway, Venice AI, Vercel AI Gateway, Vultr, Xiaomi, Xiaomi Token Plan (China), Xiaomi Token Plan (Europe), Xiaomi Token Plan (Singapore), above.dev",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "6ecf941c262fec8c",
-    "type": "new_model",
-    "model_id": "openai/gpt-6-sol",
-    "provider": "302.AI, AI/ML API, AIHubMix, Aixy, Amazon Bedrock, Azure, Azure Cognitive Services, Boundless, Cloudflare AI Gateway, CommandCode, Cortecs, CrossModel, DevPass (LLM Gateway), Eden AI, GitHub Copilot, Kilo Gateway, LowRouter, Merge Gateway, NEAR AI Cloud, NanoGPT, Neon, Ofox, OpenAI, OpenCode, OpenRouter, Perplexity Agent, Prime Inference, Requesty, Venice AI, Vercel AI Gateway, Vivgrid, ZenMux",
-    "detected_at": "2026-10-24T22:54:44.237812+00:00",
-    "details": "$2 in / $10 out per 1M",
     "alerted": true
   }
 ]
