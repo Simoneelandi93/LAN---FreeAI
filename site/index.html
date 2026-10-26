@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#090a0f">
-  <meta name="description" content="A live index of AI inference providers, models, pricing, and capabilities.">
-  <title>Free AI Radar — Model & Provider Intelligence</title>
+  <meta name="description" content="Models available on your local 9router and on OpenRouter.">
+  <title>Model Sources — 9router & OpenRouter</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   <div class="shell">
     <header class="topbar">
       <div class="brand-group">
-        <a class="brand" href="/" aria-label="Free AI Radar home">
+        <a class="brand" href="/" aria-label="Home">
           <span class="brand-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
@@ -26,17 +26,17 @@
               <circle cx="12" cy="12" r="3"></circle>
             </svg>
           </span>
-          <span class="brand-name">Free AI Radar</span>
+          <span class="brand-name">Model Sources</span>
         </a>
-        <span class="brand-badge">Catalog</span>
+        <span class="brand-badge">9router + OpenRouter</span>
       </div>
       <div class="header-meta">
         <span class="status-indicator" id="status9router"></span>
         <span class="router-status" id="status9routerLabel" role="button" tabindex="0">9r:...</span>
-        <span class="status-indicator" id="statusOmniRouter"></span>
-        <span class="router-status" id="statusOmniRouterLabel" role="button" tabindex="0">Omni:...</span>
+        <span class="status-indicator" id="statusOpenRouter"></span>
+        <span class="router-status" id="statusOpenRouterLabel" role="button" tabindex="0">OR:...</span>
         <span class="updated" id="lastUpdated">Checking...</span>
-        <button type="button" class="router-key-btn" id="routerKeyBtn" title="API key router" aria-label="Configura API key router">
+        <button type="button" class="router-key-btn" id="routerKeyBtn" title="Router API key" aria-label="Router API key">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="3"></circle>
             <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
@@ -46,54 +46,37 @@
     </header>
 
     <main>
-      <section class="stats" aria-label="Catalog summary">
+      <section class="stats" aria-label="Model counts">
         <div class="stat">
-          <span class="stat-label">Indexed Models</span>
-          <strong class="stat-value" id="totalModels">—</strong>
+          <span class="stat-label">9router models</span>
+          <strong class="stat-value" id="total9router">—</strong>
         </div>
         <div class="stat">
-          <span class="stat-label">Providers</span>
-          <strong class="stat-value" id="totalProviders">—</strong>
+          <span class="stat-label">OpenRouter models</span>
+          <strong class="stat-value text-blue" id="totalOpenRouter">—</strong>
         </div>
         <div class="stat">
-          <span class="stat-label">Zero-Cost Tier</span>
-          <strong class="stat-value text-emerald" id="totalFree">—</strong>
+          <span class="stat-label">Free on 9router</span>
+          <strong class="stat-value text-emerald" id="total9routerFree">—</strong>
         </div>
         <div class="stat">
-          <span class="stat-label">Reasoning Engines</span>
-          <strong class="stat-value text-purple" id="totalReasoning">—</strong>
+          <span class="stat-label">Free on OpenRouter</span>
+          <strong class="stat-value text-emerald" id="totalOpenRouterFree">—</strong>
         </div>
       </section>
 
       <section class="catalog-toolbar">
         <div class="toolbar-left">
-          <nav class="view-tabs" role="tablist" aria-label="View selection">
-            <button class="tab-pri active" data-view="models" role="tab" aria-selected="true">Models</button>
-            <button class="tab-pri" data-view="providers" role="tab" aria-selected="false">Providers</button>
-            <button class="tab-pri" data-view="scout" role="tab" aria-selected="false">Scout</button>
-            <button class="tab-pri" data-view="probe" role="tab" aria-selected="false">Probe</button>
-            <button class="tab-pri" data-view="changes" role="tab" aria-selected="false">Changelog</button>
+          <nav class="view-tabs" role="tablist" aria-label="Source">
+            <button class="tab-pri active" data-source="9router" role="tab" aria-selected="true">9router</button>
+            <button class="tab-pri" data-source="OpenRouter" role="tab" aria-selected="false">OpenRouter</button>
+            <button class="tab-pri" data-source="both" role="tab" aria-selected="false">Both</button>
           </nav>
 
-          <div class="filters" id="modelFilters" role="tablist" aria-label="Model filters">
+          <div class="filters" id="sourceFilters" role="tablist" aria-label="Filters">
             <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
-            <button class="filter" data-filter="free" role="tab" aria-selected="false">Free Tier</button>
-            <button class="filter" data-filter="openrouter" role="tab" aria-selected="false">OpenRouter</button>
-          </div>
-
-          <!-- Dropdown Provider con Checkbox -->
-          <div class="provider-dropdown" id="providerDropdownContainer">
-            <button type="button" class="prov-dropdown-btn" id="providerDropdownBtn" aria-haspopup="true" aria-expanded="false">
-              <span id="providerDropdownLabel">Providers (Tutti)</span>
-              <svg width="11" height="7" viewBox="0 0 14 8" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="2 2 7 7 12 2"></polyline></svg>
-            </button>
-            <div class="prov-dropdown-menu" id="providerDropdownMenu">
-              <div class="prov-actions">
-                <button type="button" id="provSelectAll">Tutti</button>
-                <button type="button" id="provDeselectAll">Nessuno</button>
-              </div>
-              <div class="prov-checkbox-list" id="providerCheckboxList"></div>
-            </div>
+            <button class="filter" data-filter="free" role="tab" aria-selected="false">Free</button>
+            <button class="filter" data-filter="paid" role="tab" aria-selected="false">Paid</button>
           </div>
         </div>
 
@@ -102,155 +85,30 @@
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
-          <input type="search" id="searchInput" placeholder="Search models, providers, architectures..." autocomplete="off">
+          <input type="search" id="searchInput" placeholder="Search models..." autocomplete="off">
           <kbd class="shortcut-hint">/</kbd>
         </div>
       </section>
 
-      <div class="catalog-meta" id="catalogMeta">
+      <div class="catalog-meta">
         <div class="result-count" id="resultCount" role="status"></div>
-        <div class="cap-legend" id="capLegend">
-          <span class="legend-item"><span class="cap-pill pill-reasoning pill-active">R</span> Reasoning</span>
-          <span class="legend-item"><span class="cap-pill pill-tool pill-active">T</span> Tool Call</span>
-          <span class="legend-item"><span class="cap-pill pill-json pill-active">{}</span> JSON</span>
-          <span class="legend-item"><span class="cap-pill pill-open pill-active">W</span> Open Weights</span>
-        </div>
       </div>
 
-      <section class="table-container" id="tableView">
+      <section class="table-container" id="modelTableContainer">
         <table class="model-table" id="modelTable">
           <thead>
             <tr>
-              <th class="col-rank sortable text-center" data-sort="rank">Rank <span class="sort-ind"></span></th>
               <th class="col-name sortable" data-sort="name">Model <span class="sort-ind"></span></th>
-              <th class="col-score sortable text-right" data-sort="score">LLM Stats <span class="sort-ind"></span></th>
-              <th class="col-benchmark sortable text-right" data-sort="reasoning">Reasoning <span class="sort-ind"></span></th>
-              <th class="col-benchmark sortable text-right" data-sort="coding">Coding <span class="sort-ind"></span></th>
-              <th class="col-benchmark sortable text-right" data-sort="agent">Agent <span class="sort-ind"></span></th>
+              <th class="col-source sortable text-center" data-sort="source">Source <span class="sort-ind"></span></th>
+              <th class="col-owner text-left">Owner</th>
+              <th class="col-price sortable text-right" data-sort="input">Input $/M <span class="sort-ind"></span></th>
+              <th class="col-price sortable text-right" data-sort="output">Output $/M <span class="sort-ind"></span></th>
               <th class="col-context sortable text-right" data-sort="context">Context <span class="sort-ind"></span></th>
-              <th class="col-speed sortable text-right" data-sort="speed">Speed <span class="sort-ind"></span></th>
-              <th class="col-price sortable text-right" data-sort="input">Pricing $/M <span class="sort-ind"></span></th>
-              <th class="col-quota text-center">Free Quota</th>
-              <th class="col-license text-center">License</th>
+              <th class="col-license text-center">Cost</th>
             </tr>
           </thead>
           <tbody id="modelBody"></tbody>
         </table>
-      </section>
-
-      <section class="provider-grid" id="providerGrid">
-        <div class="provider-list" id="providerList"></div>
-      </section>
-
-      <section class="scout-view" id="scoutView">
-        <div class="scout-lede">
-          <p class="scout-subtitle">Best free model per provider, ranked by benchmark score. Pick one per provider to assemble a router combo.</p>
-        </div>
-
-        <div class="scout-controls">
-          <div class="scout-sort-group" id="scoutSortGroup" role="tablist" aria-label="Scout ranking">
-            <button class="scout-btn active" data-scout-sort="score" role="tab" aria-selected="true">Best score</button>
-            <button class="scout-btn" data-scout-sort="quota" role="tab" aria-selected="false">Best quota</button>
-            <button class="scout-btn" data-scout-sort="fresh" role="tab" aria-selected="false">Newest</button>
-            <button class="scout-btn" data-scout-sort="context" role="tab" aria-selected="false">Biggest context</button>
-          </div>
-          <div class="scout-toggle-group" role="tablist" aria-label="Scout scope">
-            <button class="scout-btn toggle active" data-scout-scope="daily" role="tab" aria-selected="true">Daily quota</button>
-            <button class="scout-btn toggle" data-scout-scope="all" role="tab" aria-selected="false">All free</button>
-          </div>
-        </div>
-
-        <div class="combo-builder" id="comboBuilder">
-          <div class="combo-head">
-            <span class="combo-title">Combo for</span>
-            <div class="combo-target">
-              <button class="combo-target-btn active" data-router="9router" type="button">9router</button>
-              <button class="combo-target-btn" data-router="omnirouter" type="button">OmniRouter</button>
-            </div>
-            <span class="combo-count" id="comboCount">0 selected</span>
-            <div class="combo-actions">
-              <button class="combo-action-btn" id="comboCopyAll" type="button">Copy all IDs</button>
-              <button class="combo-action-btn" id="comboClear" type="button">Clear</button>
-            </div>
-          </div>
-          <div class="combo-slots" id="comboSlots"></div>
-        </div>
-
-        <div class="scout-table-container" id="scoutTableContainer">
-          <table class="model-table scout-table" id="scoutTable">
-            <thead>
-              <tr>
-                <th class="col-select text-center"></th>
-                <th class="col-name sortable" data-sort="name">Model <span class="sort-ind"></span></th>
-                <th class="col-score sortable text-right" data-sort="score">Score <span class="sort-ind"></span></th>
-                <th class="col-provider-scout">Provider</th>
-                <th class="col-quota sortable text-right" data-sort="quota">Free Quota <span class="sort-ind"></span></th>
-                <th class="col-context sortable text-right" data-sort="context">Context <span class="sort-ind"></span></th>
-                <th class="col-speed sortable text-right" data-sort="speed">Speed <span class="sort-ind"></span></th>
-                <th class="col-router text-center" id="scoutRouterColHead">Router</th>
-              </tr>
-            </thead>
-            <tbody id="scoutBody"></tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="changes-view" id="changesView">
-        <div class="changes-controls">
-          <button class="chg-btn active" data-range="all" role="tab" aria-selected="true">All Recorded</button>
-          <button class="chg-btn" data-range="weekly" role="tab" aria-selected="false">Last 7 Days</button>
-          <button class="chg-btn" data-range="daily" role="tab" aria-selected="false">Last 24 Hours</button>
-        </div>
-        <div class="changes-controls alert-filters">
-          <button class="chg-btn alert-btn active" data-alert="all" role="tab" aria-selected="true">All</button>
-          <button class="chg-btn alert-btn" data-alert="alerted" role="tab" aria-selected="false">Telegram only</button>
-          <button class="chg-btn alert-btn" data-alert="silent" role="tab" aria-selected="false">Dashboard only</button>
-        </div>
-        <div class="changes-feed" id="changesFeed"></div>
-      </section>
-
-      <!-- Probe view: test which 9router models actually respond -->
-      <section class="probe-view" id="probeView">
-        <div class="probe-lede">
-          <p class="probe-subtitle">Ping every free model on 9router and see which ones answer. OpenRouter-backed models are excluded by default.</p>
-        </div>
-
-        <div class="probe-controls">
-          <div class="probe-toggle-group" role="tablist" aria-label="Probe scope">
-            <button class="probe-btn toggle active" data-probe-scope="free" role="tab" aria-selected="true">Free models</button>
-            <button class="probe-btn toggle" data-probe-scope="all" role="tab" aria-selected="false">All models</button>
-          </div>
-          <div class="probe-toggle-group" role="tablist" aria-label="OpenRouter exclusion">
-            <button class="probe-btn toggle active" data-probe-exclude="true" role="tab" aria-selected="true">Exclude OpenRouter</button>
-            <button class="probe-btn toggle" data-probe-exclude="false" role="tab" aria-selected="false">Include OpenRouter</button>
-          </div>
-          <div class="probe-actions">
-            <button class="probe-action-btn" id="probeClear" type="button">Clear</button>
-            <button class="probe-action-btn probe-action-primary" id="probeRun" type="button">Probe all</button>
-          </div>
-        </div>
-
-        <div class="probe-stats" id="probeStats">
-          <div class="probe-stat"><strong id="probeStatTotal">—</strong><span>models</span></div>
-          <div class="probe-stat probe-stat-ok"><strong id="probeStatOk">0</strong><span>responded</span></div>
-          <div class="probe-stat probe-stat-bad"><strong id="probeStatBad">0</strong><span>failed</span></div>
-          <div class="probe-stat probe-stat-skipped"><strong id="probeStatSkip">0</strong><span>skipped</span></div>
-        </div>
-
-        <div class="probe-table-container" id="probeTableContainer">
-          <table class="model-table probe-table" id="probeTable">
-            <thead>
-              <tr>
-                <th class="col-model sortable" data-probe-sort="id">Model <span class="sort-ind"></span></th>
-                <th class="col-status sortable text-center" data-probe-sort="status">Status <span class="sort-ind"></span></th>
-                <th class="col-latency sortable text-right font-mono" data-probe-sort="latency">Latency <span class="sort-ind"></span></th>
-                <th class="col-error text-left">Detail</th>
-                <th class="col-action text-center">Action</th>
-              </tr>
-            </thead>
-            <tbody id="probeBody"></tbody>
-          </table>
-        </div>
       </section>
 
       <button class="load-more" id="loadMore" hidden>Load Remaining Entries</button>
@@ -258,69 +116,28 @@
 
     <footer class="footer">
       <div class="footer-content">
-        <p>Catalog feed powered by <a href="https://models.dev/" target="_blank" rel="noopener noreferrer">models.dev</a>. Benchmarks aggregated by <a href="https://llm-stats.com/" target="_blank" rel="noopener noreferrer">LLM Stats</a>.</p>
-        <p class="footer-sub">Updated autonomously via pipeline syncs.</p>
+        <p>Local router models + <a href="https://openrouter.ai/docs" target="_blank" rel="noopener noreferrer">OpenRouter</a> catalog.</p>
+        <p class="footer-sub">Data fetched live from each source.</p>
       </div>
     </footer>
   </div>
-  <div class="modal-overlay" id="configOverlay" onclick="closeModal()"></div>
-  <div class="config-modal" id="configModal">
-    <div class="cm-header">
-      <h2 id="modalModelName"></h2>
-      <button class="cm-close" onclick="closeModal()" type="button">&times;</button>
-    </div>
-    <div class="cm-section">
-      <div class="cm-row"><span class="cm-label">Provider</span><span class="cm-value" id="modalModelProvider"></span></div>
-      <div class="cm-row"><span class="cm-label">Model ID</span><span class="cm-value" id="modalModelId"></span><button class="cm-copy-btn" onclick="modalCopy('modalModelId')" type="button">Copy</button></div>
-      <div class="cm-row"><span class="cm-label">Full ID</span><span class="cm-value" id="modalFullId"></span><button class="cm-copy-btn" onclick="modalCopy('modalFullId')" type="button">Copy</button></div>
-      <div class="cm-row"><span class="cm-label">Source</span><a class="cm-value" id="modalSourceUrl" target="_blank" rel="noopener noreferrer"></a></div>
-    </div>
-    <div class="cm-section">
-      <h3><span style="color:#10b981">&#9679;</span> 9router (port 10128)</h3>
-      <div class="cm-row"><span class="cm-label">Status</span><span class="router-badge" id="modalNrStatus"></span><span class="cm-value" id="modalNrTooltip" style="font-size:11px;color:var(--text-dim);flex:1"></span></div>
-      <div class="cm-row"><span class="cm-label">Model</span><span class="cm-value" id="modalNrId"></span><button class="cm-copy-btn" id="modalNrIdCopy" onclick="modalCopy('modalNrId')" type="button">Copy</button></div>
-      <div class="cm-row"><span class="cm-label">URL</span><span class="cm-value" id="modalNrUrl"></span><button class="cm-copy-btn" id="modalNrUrlCopy" onclick="modalCopy('modalNrUrl')" type="button">Copy</button></div>
-    </div>
-    <div class="cm-section">
-      <h3><span style="color:#10b981">&#9679;</span> OmniRouter (port 10129)</h3>
-      <div class="cm-row"><span class="cm-label">Status</span><span class="router-badge" id="modalOmniStatus"></span><span class="cm-value" id="modalOmniTooltip" style="font-size:11px;color:var(--text-dim);flex:1"></span></div>
-      <div class="cm-row"><span class="cm-label">Model</span><span class="cm-value" id="modalOmniId"></span><button class="cm-copy-btn" id="modalOmniIdCopy" onclick="modalCopy('modalOmniId')" type="button">Copy</button></div>
-      <div class="cm-row"><span class="cm-label">URL</span><span class="cm-value" id="modalOmniUrl"></span><button class="cm-copy-btn" id="modalOmniUrlCopy" onclick="modalCopy('modalOmniUrl')" type="button">Copy</button></div>
-    </div>
-    <div class="cm-section" id="modalLitellmSection" hidden>
-      <h3><span style="color:#f59e0b">&#9679;</span> LiteLLM</h3>
-      <div class="cm-row"><span class="cm-label">Provider</span><span class="cm-value" id="modalLlProvider"></span></div>
-      <div class="cm-row"><span class="cm-label">Model</span><span class="cm-value" id="modalLlModel"></span><button class="cm-copy-btn" id="modalLlModelCopy" onclick="modalCopy('modalLlModel')" type="button">Copy</button></div>
-      <div class="cm-row"><span class="cm-label">Config key</span><span class="cm-value" id="modalLlConfigKey"></span><button class="cm-copy-btn" id="modalLlConfigKeyCopy" onclick="modalCopy('modalLlConfigKey')" type="button">Copy</button></div>
-      <div class="cm-row"><span class="cm-label">API base</span><span class="cm-value" id="modalLlApiBase"></span></div>
-      <div class="cm-row"><span class="cm-label">Pricing</span><span class="cm-value" id="modalLlPricing"></span></div>
-      <div class="cm-row"><span class="cm-label">Limits</span><span class="cm-value" id="modalLlLimits"></span></div>
-      <div class="cm-row"><span class="cm-label">Caps</span><span class="cm-value" id="modalLlCaps"></span></div>
-    </div>
-  </div>
-  <div class="modal-overlay" id="provPopOverlay" onclick="closeProvPopup()"></div>
-  <div class="config-modal prov-pop" id="provPopModal">
-    <div class="cm-header">
-      <h2 id="provPopTitle"></h2>
-      <button class="cm-close" onclick="closeProvPopup()" type="button">&times;</button>
-    </div>
-    <div class="prov-pop-list" id="provPopList"></div>
-  </div>
+
   <div class="modal-overlay" id="routerKeyOverlay" hidden></div>
   <div class="config-modal router-key-modal" id="routerKeyModal" hidden>
     <div class="cm-header">
-      <h2>API key router</h2>
+      <h2>Router API key</h2>
       <button class="cm-close" id="routerKeyCancel" type="button">&times;</button>
     </div>
     <div class="cm-section">
-      <p class="router-key-desc">9router e OmniRouter accettano richieste dal sito solo con una API key valida. Creala nel dashboard del router (Settings → API Keys) e incolla qui. La chiave resta solo nel tuo browser.</p>
-      <input type="password" id="routerKeyInput" class="router-key-input" placeholder="Incolla la API key…" autocomplete="off" spellcheck="false">
+      <p class="router-key-desc">9router accepts chat requests from the browser only with an API key. Create one in the router dashboard (Settings → API Keys) and paste it here. The key stays in your browser.</p>
+      <input type="password" id="routerKeyInput" class="router-key-input" placeholder="Paste API key…" autocomplete="off" spellcheck="false">
       <div class="router-key-actions">
-        <button type="button" class="combo-action-btn" id="routerKeyCancel2">Annulla</button>
-        <button type="button" class="combo-action-btn router-key-save" id="routerKeySave">Salva e ricarica</button>
+        <button type="button" class="combo-action-btn" id="routerKeyCancel2">Cancel</button>
+        <button type="button" class="combo-action-btn router-key-save" id="routerKeySave">Save</button>
       </div>
     </div>
   </div>
+
   <script src="app.js"></script>
 </body>
 </html>
