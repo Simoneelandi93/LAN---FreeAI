@@ -1,5 +1,26 @@
 [
   {
+    "event_id": "edc024557ba63021",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-26T21:37:30.819599+00:00",
+    "details": "Input: $0.151 -> $0.1795; output: $8.94 -> $10",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "25ca77af126ba143",
+    "type": "new_model",
+    "model_id": "sciforium/deepseek-v4.1-flash-1017",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-26T21:37:30.819599+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "18a00afedc3695dd",
     "type": "new_model",
     "model_id": "gpt-6.1-terra@eu",
@@ -2227,26 +2248,5 @@
     "in_direction": "decrease",
     "out_direction": "same",
     "alerted": true
-  },
-  {
-    "event_id": "67e86dc79d2bde74",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-25T01:45:16.932377+00:00",
-    "details": "Input: $0.075 -> $0.074; output: $4.295 -> $1.4",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "8fa02f824b47ac00",
-    "type": "new_model",
-    "model_id": "perceptron/perceptron-mk1.5",
-    "provider": "AI/ML API",
-    "detected_at": "2026-10-25T01:45:16.932377+00:00",
-    "details": "$0.1587 in / $1.587 out per 1M",
-    "alerted": false
   }
 ]
