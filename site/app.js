@@ -15,6 +15,12 @@ let sortKey = "name";
 let sortDir = "asc";
 let visibleCount = 100000;  // Load all models at once
 
+// Changelog state
+let history = [];
+let activeChangesRange = "all";   // "all" | "weekly" | "daily"
+let activeAlertFilter = "all";    // "all" | "alerted" | "silent"
+const MILLIS_DAY = 86400000;
+
 function esc(v) {
   return String(v ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" })[c]);
 }
@@ -240,6 +246,100 @@ function assignScores(omniModels, orModels, scoreIndex) {
   for (const m of omniModels) if (m.score === undefined) m.score = null;
 }
 
+// ---------- Changelog ----------
+// data/history.json is the last 200 delta events written by the collect
+// pipeline. Read-only here — the page never writes it.
+
+async function fetchHistory() {
+  // Same dual-path fallback as data/*.json: works from repo root and on Pages.
+  for (const url of ["data/history.json", "../data/history.json"]) {
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(10000) });
+      if (!res.ok) continue;
+      const data = await res.json();
+      return Array.isArray(data) ? data : [];
+    } catch (e) { /* try the next path */ }
+  }
+  return [];
+}
+
+const CHANGE_TYPE_LABELS = {
+  new_model: "New Model",
+  new_free_model: "New Free Model",
+  price_change: "Price Change",
+  model_became_free: "Free Tier",
+};
+
+function renderChanges(query) {
+  const feed = document.getElementById("changesFeed");
+  const now = new Date();
+  let cutoff = null;
+  if (activeChangesRange === "daily") cutoff = new Date(now.getTime() - MILLIS_DAY);
+  else if (activeChangesRange === "weekly") cutoff = new Date(now.getTime() - 7 * MILLIS_DAY);
+
+  let items = history;
+  if (cutoff) items = items.filter(ev => new Date(ev.detected_at) >= cutoff);
+  if (query) {
+    items = items.filter(ev =>
+      (ev.model_id && ev.model_id.toLowerCase().includes(query)) ||
+      (ev.provider && ev.provider.toLowerCase().includes(query)) ||
+      (ev.type && ev.type.toLowerCase().includes(query))
+    );
+  }
+  if (activeAlertFilter === "alerted") items = items.filter(ev => ev.alerted);
+  else if (activeAlertFilter === "silent") items = items.filter(ev => !ev.alerted);
+  document.getElementById("resultCount").textContent = `Showing ${items.length.toLocaleString()} changelog events`;
+  if (!items.length) {
+    feed.innerHTML = `<div class="empty"><h3>No recent delta events</h3><p>No price modifications or catalog updates found in this timeframe.</p></div>`;
+    return;
+  }
+  const groups = {};
+  for (const ev of items) {
+    const d = new Date(ev.detected_at);
+    const key = isNaN(d.getTime()) ? "Recent Updates" : d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+    if (!groups[key]) groups[key] = { label: key, date: isNaN(d.getTime()) ? new Date(0) : d, events: [] };
+    groups[key].events.push(ev);
+  }
+  const sortedDays = Object.values(groups).sort((a, b) => b.date.getTime() - a.date.getTime());
+  feed.innerHTML = sortedDays.map(day => {
+    const rows = day.events.map(ev => {
+      const t = new Date(ev.detected_at);
+      const time = isNaN(t.getTime()) ? "—" : t.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" });
+      const isPrice = ev.type === "price_change";
+      const pricingMatch = isPrice && typeof ev.details === "string"
+        ? [...ev.details.matchAll(/(Input|output):\s*\$([\d.]+)\s*->\s*\$([\d.]+)/gi)]
+        : [];
+      const direction = ev.direction
+        || (pricingMatch.length
+          ? (pricingMatch.some(([, , o, n]) => Number(n) > Number(o)) ? "increase"
+            : pricingMatch.some(([, , o, n]) => Number(n) < Number(o)) ? "decrease" : "same")
+          : "same");
+      const lbl = isPrice
+        ? (direction === "increase" ? "Price Increase" : direction === "decrease" ? "Price Drop" : "Price Change")
+        : (CHANGE_TYPE_LABELS[ev.type] || "Update");
+      const tagCls = ev.type === "new_model" || ev.type === "new_free_model" ? "new"
+        : isPrice ? (direction === "increase" ? "rise" : "drop")
+        : "free";
+      const providerLabel = ev.provider && !isInvalidText(ev.provider) ? `<span class="chg-providers">${esc(ev.provider)}</span>` : "";
+      const alertedBadge = ev.alerted ? `<span class="chg-alerted">📢 Telegram</span>` : `<span class="chg-silent">dashboard only</span>`;
+      const pricing = pricingMatch.length ? `<div class="chg-pricing">${pricingMatch.map(([, kind, oldValue, newValue]) => {
+        const oldPrice = Number(oldValue);
+        const newPrice = Number(newValue);
+        const priceDirection = newPrice < oldPrice ? "lower" : newPrice > oldPrice ? "higher" : "same";
+        return `<div class="chg-price-line"><span class="chg-price-kind">${esc(kind)}</span><span class="chg-price-old">$${oldPrice.toLocaleString(undefined, { maximumFractionDigits: 6 })}</span><span class="chg-price-arrow" aria-hidden="true">→</span><strong class="chg-price-new ${priceDirection}">$${newPrice.toLocaleString(undefined, { maximumFractionDigits: 6 })}</strong><span class="chg-price-unit">per 1M tokens</span></div>`;
+      }).join("")}</div>` : "";
+      return `<article class="chg-row">
+        <div class="chg-row-meta"><span class="chg-time">${esc(time)}</span><span class="chg-tag ${tagCls}">${esc(lbl)}</span>${alertedBadge}</div>
+        <div class="chg-row-content"><span class="chg-model">${esc(ev.model_id || "model")}</span>${providerLabel}${pricing}</div>
+      </article>`;
+    }).join("");
+    return `<div class="chg-day">
+      <div class="chg-day-header"><span>${esc(day.label)}</span><span class="badge-counter">${day.events.length} event${day.events.length === 1 ? '' : 's'}</span></div>
+      ${rows}
+    </div>`;
+  }).join("");
+}
+
 // ---------- Rendering ----------
 
 function applyFilters() {
@@ -333,6 +433,23 @@ function updateSortIndicators() {
 }
 
 function render() {
+  const query = document.getElementById("searchInput").value.trim().toLowerCase();
+  const isChanges = activeSource === "changes";
+
+  const toolbar = document.getElementById("sourceFilters");
+  if (toolbar) toolbar.style.display = isChanges ? "none" : "flex";
+
+  const tableView = document.getElementById("modelTableContainer");
+  const changesView = document.getElementById("changesView");
+  if (tableView) tableView.style.display = isChanges ? "none" : "block";
+  if (changesView) changesView.hidden = !isChanges;
+
+  document.getElementById("searchInput").placeholder = isChanges
+    ? "Search changelog updates..."
+    : "Search models...";
+
+  if (isChanges) { renderChanges(query); return; }
+
   applyFilters();
   renderTable();
   updateSortIndicators();
@@ -354,6 +471,8 @@ async function loadData() {
 
   allModels = [...omniModels, ...orModels];
 
+  history = await fetchHistory();
+
   document.getElementById("totalOmniRouter").textContent = omniModels.length.toLocaleString();
   document.getElementById("totalOpenRouter").textContent = orModels.length.toLocaleString();
   document.getElementById("totalOmniRouterFree").textContent = omniModels.filter(m => m.is_free).length.toLocaleString();
@@ -372,6 +491,20 @@ document.querySelectorAll(".tab-pri[data-source]").forEach(btn => {
     btn.setAttribute("aria-selected", "true");
     activeSource = btn.dataset.source;
     visibleCount = 100000;  // Load all models at once
+    render();
+  });
+});
+
+// Changelog range + alert filters
+document.querySelectorAll("#changesView .chg-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const scope = btn.dataset.range !== undefined ? "range" : "alert";
+    const group = scope === "range" ? ".chg-btn[data-range]" : ".chg-btn[data-alert]";
+    document.querySelectorAll(`#changesView ${group}`).forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+    btn.classList.add("active");
+    btn.setAttribute("aria-selected", "true");
+    if (scope === "range") activeChangesRange = btn.dataset.range;
+    else activeAlertFilter = btn.dataset.alert;
     render();
   });
 });
