@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#090a0f">
-  <meta name="description" content="Models available on your local 9router, OmniRouter, and OpenRouter.">
+  <meta name="description" content="Models from the 9router, OmniRouter and OpenRouter repos and catalogs — no local daemon, no API keys.">
   <title>Model Sources — 9router, OmniRouter & OpenRouter</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,12 +38,6 @@
         <span class="status-indicator" id="statusOpenRouter"></span>
         <span class="router-status" id="statusOpenRouterLabel" role="button" tabindex="0">OR:...</span>
         <span class="updated" id="lastUpdated">Checking...</span>
-        <button type="button" class="router-key-btn" id="routerKeyBtn" title="Router API key" aria-label="Router API key">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3"></circle>
-            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-          </svg>
-        </button>
       </div>
     </header>
 
@@ -127,26 +121,10 @@
 
     <footer class="footer">
       <div class="footer-content">
-        <p>Local router models (9router, OmniRouter) + <a href="https://openrouter.ai/docs" target="_blank" rel="noopener noreferrer">OpenRouter</a> catalog.</p>
+        <p>Catalogs read live from the 9router, OmniRouter and <a href="https://openrouter.ai/docs" target="_blank" rel="noopener noreferrer">OpenRouter</a> repos / APIs.</p>
         <p class="footer-sub">Data fetched live from each source.</p>
       </div>
     </footer>
-  </div>
-
-  <div class="modal-overlay" id="routerKeyOverlay" hidden></div>
-  <div class="config-modal router-key-modal" id="routerKeyModal" hidden>
-    <div class="cm-header">
-      <h2>Router API key</h2>
-      <button class="cm-close" id="routerKeyCancel" type="button">&times;</button>
-    </div>
-    <div class="cm-section">
-      <p class="router-key-desc">9router accepts chat requests from the browser only with an API key. Create one in the router dashboard (Settings → API Keys) and paste it here. The key stays in your browser.</p>
-      <input type="password" id="routerKeyInput" class="router-key-input" placeholder="Paste API key…" autocomplete="off" spellcheck="false">
-      <div class="router-key-actions">
-        <button type="button" class="combo-action-btn" id="routerKeyCancel2">Cancel</button>
-        <button type="button" class="combo-action-btn router-key-save" id="routerKeySave">Save</button>
-      </div>
-    </div>
   </div>
 
   <script src="app.js"></script>

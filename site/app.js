@@ -1,11 +1,19 @@
-// Model Sources — 9router (local) + OpenRouter (API)
+// Model Sources — 9router (repo) + OmniRouter (repo) + OpenRouter (API)
+// Everything is read from the upstream repos — no local daemon, no API keys.
 
-const NINEROUTER_API_URL = "http://127.0.0.1:20128/v1/models";
 const OPENROUTER_API_URL = "https://openrouter.ai/api/v1/models";
-// OmniRouter catalog is read from the upstream repo (curated free-tier file),
-// not the local daemon — the daemon needs an API key and its /v1/models is 401.
+// OmniRouter catalog is read from the upstream repo (curated free-tier file) —
+// the daemon needs an API key and its /v1/models is 401.
 const OMNIRROUTER_CATALOG_URL =
   "https://raw.githubusercontent.com/cheaper-inference/OmniRoute/main/open-sse/config/freeModelCatalog.data.ts";
+// 9router keeps its catalog as per-provider registry files in the repo. The tree
+// listing comes from the GitHub API (one request, 60/hr unauthenticated); the
+// files themselves come from raw.githubusercontent.com, which is not
+// rate-limited like the API.
+const NINEROUTER_TREE_URL =
+  "https://api.github.com/repos/decolua/9router/git/trees/master?recursive=1";
+const NINEROUTER_RAW_URL =
+  (path) => `https://raw.githubusercontent.com/decolua/9router/master/open-sse/providers/registry/${path}`;
 
 let allModels = [];        // { id, name, owner, source, input_price_per_m, output_price_per_m, context_window, is_free }
 let filtered = [];
@@ -14,8 +22,6 @@ let activeFilter = "all";      // "all" | "free" | "paid"
 let sortKey = "name";
 let sortDir = "asc";
 let visibleCount = 100000;  // Load all models at once
-let routerApiKey = "";
-try { routerApiKey = localStorage.getItem("routerApiKey") || ""; } catch { /* storage unavailable */ }
 
 function esc(v) {
   return String(v ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" })[c]);
@@ -57,40 +63,106 @@ function sourceBadge(source) {
   return `<span class="${cls}">${label}</span>`;
 }
 
+const KIND_LABELS = {
+  image: "image",
+  stt: "speech→text",
+  tts: "text→speech",
+  embedding: "embedding",
+  video: "video",
+};
+
 // ---------- Fetching ----------
 
+function n9routerModel(m) {
+  return {
+    id: m.id || "",
+    name: m.name || m.id || "",
+    owner: m.owned_by || "",
+    source: "9router",
+    input_price_per_m: null,
+    output_price_per_m: null,
+    context_window: Number(m.context_length ?? m.capabilities?.contextWindow ?? 0) || 0,
+    is_free: !!m.is_free,
+    kind: m.kind || "",
+    category: m.category || "",
+    notice: m.notice || "",
+  };
+}
+
 async function fetch9routerModels() {
-  const headers = routerApiKey ? { Authorization: `Bearer ${routerApiKey}` } : {};
   try {
-    const res = await fetch(NINEROUTER_API_URL, { headers, signal: AbortSignal.timeout(15000) });
-    if (!res.ok) {
-      document.getElementById("status9routerLabel").textContent = `9r: HTTP ${res.status}`;
-      document.getElementById("status9router").style.background = "#f59e0b";
-      return [];
+    const repo = await fetch9routerModelsFromRepo();
+    if (repo.length) {
+      document.getElementById("status9routerLabel").textContent = `9r: ${repo.length} models (repo)`;
+      document.getElementById("status9router").style.background = "#10b981";
+      return repo;
     }
-    const body = await res.json();
-    const list = Array.isArray(body?.data) ? body.data : Array.isArray(body) ? body : [];
-    document.getElementById("status9routerLabel").textContent = `9r: ${list.length} models`;
-    document.getElementById("status9router").style.background = "#10b981";
-    return list.map(m => {
-      // 9router /v1/models exposes no pricing — costs are unknown (null), never $0.
-      const ctx = Number(m.context_length ?? m.capabilities?.contextWindow ?? 0) || 0;
-      return {
-        id: m.id || "",
-        name: m.id || "",
-        owner: m.owned_by || "",
-        source: "9router",
-        input_price_per_m: null,
-        output_price_per_m: null,
-        context_window: ctx,
-        is_free: false,
-      };
-    }).filter(m => m.id);
+    document.getElementById("status9routerLabel").textContent = "9r: offline";
+    document.getElementById("status9router").style.background = "#f59e0b";
+    return [];
   } catch (e) {
     document.getElementById("status9routerLabel").textContent = "9r: offline";
     document.getElementById("status9router").style.background = "#f59e0b";
     return [];
   }
+}
+
+// The 9router repo keeps its model catalog as ~145 per-provider registry files
+// (open-sse/providers/registry/*.js), each exporting a provider object with
+// alias, display {name, notice}, category ("freeTier" | "oauth" | "free" | ...)
+// and a `models: [...]` array of { id, name, kind?, ... } literals.
+const N9REPO_REG_PREFIX = "open-sse/providers/registry/";
+
+async function fetch9routerModelsFromRepo() {
+  const res = await fetch(NINEROUTER_TREE_URL, { signal: AbortSignal.timeout(15000) });
+  if (!res.ok) throw new Error(`tree HTTP ${res.status}`);
+  const tree = await res.json();
+  const files = (tree?.tree || [])
+    .map(t => t.path)
+    .filter(p => p.startsWith(N9REPO_REG_PREFIX) && p.endsWith(".js") && !p.endsWith("/index.js"));
+
+  const seen = new Map();
+  const CHUNK = 8;
+  for (let i = 0; i < files.length; i += CHUNK) {
+    const results = await Promise.all(files.slice(i, i + CHUNK).map(async path => {
+      const provider = path.slice(N9REPO_REG_PREFIX.length, -3);
+      try {
+        const r = await fetch(NINEROUTER_RAW_URL(path.replace(N9REPO_REG_PREFIX, "")), { signal: AbortSignal.timeout(15000) });
+        return r.ok ? { text: await r.text(), provider } : null;
+      } catch { return null; }
+    }));
+    for (const result of results) {
+      if (!result) continue;
+      const text = result.text;
+      const alias = (text.match(/\balias:\s*"([^"]+)"/) || [])[1] || result.provider;
+      const displayName = (text.match(/\bname:\s*"([^"]+)"/) || [])[1] || "";
+      // Free-tier signal: the provider block advertises hasFree, or the whole
+      // registry is a free/oauth tier (category free/freeTier/oauth).
+      const hasFree = /hasFree:\s*true/.test(text);
+      const category = (text.match(/\bcategory:\s*"([^"]+)"/) || [])[1] || "";
+      const providerFree = hasFree || ["free", "freeTier", "oauth"].includes(category);
+      const noticeKind = (text.match(/(apiKeyUrl|signupUrl):\s*"([^"]+)"/) || [])[2] || "";
+      const m = text.match(/models:\s*\[([\s\S]*?)\n\s*\]/);
+      if (!m) continue;
+      const entryRe = /\{\s*id:\s*"([^"]+)"[^}]*\}/g;
+      let e;
+      while ((e = entryRe.exec(m[1])) !== null) {
+        const entry = e[0];
+        const name = entry.match(/name:\s*"([^"]*)"/);
+        const kind = entry.match(/kind:\s*"([^"]*)"/);
+        if (!seen.has(e[1])) seen.set(e[1], {
+          id: e[1],
+          name: name ? name[1] : "",
+          owned_by: displayName || alias,
+          is_free: providerFree,
+          kind: kind ? kind[1] : "",
+          category,
+          notice: noticeKind,
+        });
+      }
+    }
+  }
+  return [...seen.values()].map(n9routerModel).filter(m => m.id);
 }
 
 // OmniRouter's free-tier catalog is a hand-curated TypeScript array. Parsing it
@@ -197,26 +269,6 @@ function round4(n) {
 
 // ---------- Rendering ----------
 
-function sortValue(m, key) {
-  switch (key) {
-    case "name": return getModelName(m).toLowerCase();
-    case "source": return m.source;
-    case "input": return price(m.input_price_per_m) ?? Infinity;
-    case "output": return price(m.output_price_per_m) ?? Infinity;
-    case "context": return Number(m.context_window) || 0;
-    default: return getModelName(m).toLowerCase();
-  }
-}
-
-function cmpModels(a, b) {
-  const va = sortValue(a, sortKey);
-  const vb = sortValue(b, sortKey);
-  let r;
-  if (typeof va === "string") r = va.localeCompare(vb);
-  else r = va - vb;
-  return sortDir === "asc" ? r : -r;
-}
-
 function applyFilters() {
   const query = document.getElementById("searchInput").value.trim().toLowerCase();
   filtered = allModels.filter(m => {
@@ -231,6 +283,34 @@ function applyFilters() {
   filtered.sort(cmpModels);
 }
 
+// 9router rows carry no pricing (the repo lists none), so free rows with an
+// unknown price sort as $0 instead of being pushed to the paid end.
+function sortValue(m, key) {
+  switch (key) {
+    case "name": return getModelName(m).toLowerCase();
+    case "source": return m.source;
+    case "input": {
+      const v = price(m.input_price_per_m);
+      return v === null ? (m.is_free ? 0 : Infinity) : v;
+    }
+    case "output": {
+      const v = price(m.output_price_per_m);
+      return v === null ? (m.is_free ? 0 : Infinity) : v;
+    }
+    case "context": return Number(m.context_window) || 0;
+    default: return getModelName(m).toLowerCase();
+  }
+}
+
+function cmpModels(a, b) {
+  const va = sortValue(a, sortKey);
+  const vb = sortValue(b, sortKey);
+  let r;
+  if (typeof va === "string") r = va.localeCompare(vb);
+  else r = va - vb;
+  return sortDir === "asc" ? r : -r;
+}
+
 function renderTable() {
   const list = filtered.slice(0, visibleCount);
   const body = document.getElementById("modelBody");
@@ -241,27 +321,29 @@ function renderTable() {
     const costTag = m.is_free
       ? '<span class="license-tag open">Free</span>'
       : '<span class="license-tag proprietary">Paid</span>';
+    const kindLabel = m.kind ? KIND_LABELS[m.kind] || m.kind : "";
     return `<tr>
       <td>
         <div class="model-cell">
           <div class="model-line">
             <span class="model-title">${esc(getModelName(m))}</span>
+            ${kindLabel ? `<span class="kind-badge">${esc(kindLabel)}</span>` : ""}
           </div>
           <span class="model-provider-sub">${esc(m.id)}</span>
         </div>
       </td>
       <td class="text-center">${sourceBadge(m.source)}</td>
-      <td class="owner-cell">${esc(m.owner || "—")}</td>
+      <td class="owner-cell">${esc(m.owner || "—")}${m.notice ? `<a class="owner-link" href="${esc(m.notice)}" target="_blank" rel="noopener noreferrer" title="Provider signup / API keys">↗</a>` : ""}</td>
       <td class="text-right font-mono">${fmtPrice(inp)}</td>
       <td class="text-right font-mono">${fmtPrice(out)}</td>
       <td class="text-right font-mono">${fmtContext(m.context_window)}</td>
-      <td class="text-center font-mono text-dim">${esc(m.quota || "—")}</td>
+      <td class="text-center font-mono text-dim">${esc(m.quota || (m.is_free ? "unlimited" : "—"))}</td>
       <td class="text-center">${costTag}</td>
     </tr>`;
   }).join("");
 
   if (!list.length) {
-    body.innerHTML = `<tr><td colspan="8"><div class="empty"><h3>No models found</h3><p>Check that 9router is running or try a different filter.</p></div></td></tr>`;
+    body.innerHTML = `<tr><td colspan="8"><div class="empty"><h3>No models found</h3><p>Try a different filter, or the source may be unreachable right now.</p></div></td></tr>`;
   }
 
   document.getElementById("resultCount").textContent = `Showing ${filtered.length.toLocaleString()} models`;
@@ -346,33 +428,7 @@ document.querySelectorAll("#modelTable th.sortable").forEach(th => {
 
 document.getElementById("searchInput").addEventListener("input", () => { render(); });
 
-// Router key modal (kept for future use — /v1/models is keyless)
-document.getElementById("routerKeyBtn")?.addEventListener("click", () => {
-  document.getElementById("routerKeyInput").value = routerApiKey;
-  document.getElementById("routerKeyOverlay").hidden = false;
-  document.getElementById("routerKeyModal").hidden = false;
-});
-
-document.getElementById("routerKeyCancel")?.addEventListener("click", closeKeyModal);
-document.getElementById("routerKeyCancel2")?.addEventListener("click", closeKeyModal);
-document.getElementById("routerKeyOverlay")?.addEventListener("click", closeKeyModal);
-
-function closeKeyModal() {
-  document.getElementById("routerKeyOverlay").hidden = true;
-  document.getElementById("routerKeyModal").hidden = true;
-}
-
-document.getElementById("routerKeySave")?.addEventListener("click", () => {
-  routerApiKey = document.getElementById("routerKeyInput").value.trim();
-  try {
-    if (routerApiKey) localStorage.setItem("routerApiKey", routerApiKey);
-    else localStorage.removeItem("routerApiKey");
-  } catch { /* storage unavailable */ }
-  closeKeyModal();
-});
-
 window.addEventListener("keydown", e => {
-  if (e.key === "Escape") closeKeyModal();
   if (e.key === "/" && document.activeElement !== document.getElementById("searchInput")) {
     e.preventDefault();
     document.getElementById("searchInput").focus();
