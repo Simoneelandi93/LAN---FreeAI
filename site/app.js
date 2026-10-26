@@ -27,6 +27,7 @@ const FILTERS = {
 
 const MILLIS_DAY = 86400000;
 const NINEROUTER_API_URL = "http://127.0.0.1:20128/v1/models";
+const NINEROUTER_CHAT_URL = "http://127.0.0.1:20128/v1/chat/completions";
 const OMNIROUTER_API_URL = "http://127.0.0.1:10129/v1/models";
 let nineRouterModels = [];
 let nineRouterNormMap = new Map();
@@ -36,6 +37,26 @@ let routerStatus = { "9router": { ok: false, count: 0 }, "OmniRouter": { ok: fal
 let routerApiKey = "";
 try { routerApiKey = localStorage.getItem("routerApiKey") || ""; } catch { /* storage unavailable */ }
 let currentModelIdx = null;
+
+// Probe state
+let probeScope = "free";       // "free" | "all"
+let probeExclude = "true";     // "true" = skip OpenRouter-backed models
+let probeResults = new Map();  // router id -> { status, latency, detail }
+let probeRunning = false;
+let probeSortKey = "status";   // "status" | "id" | "latency"
+let probeSortDir = "asc";
+
+const PROBE_CONCURRENCY = 4;
+const PROBE_TIMEOUT_MS = 15000;
+const PROBE_PROMPT = "ping";
+try {
+  const saved = localStorage.getItem("probeResults");
+  if (saved) probeResults = new Map(JSON.parse(saved));
+} catch { /* storage unavailable */ }
+
+function persistProbeResults() {
+  try { localStorage.setItem("probeResults", JSON.stringify([...probeResults])); } catch { /* storage unavailable */ }
+}
 
 function normalizeSlug(value) {
   return String(value ?? "").toLowerCase().replace(/^openrouter\//, "").replace(/[^a-z0-9]/g, "");
@@ -817,6 +838,7 @@ function render() {
   const isProviders = activeView === "providers";
   const isChanges = activeView === "changes";
   const isScout = activeView === "scout";
+  const isProbe = activeView === "probe";
 
   const modelFilters = document.getElementById("modelFilters");
   const providerDropdown = document.getElementById("providerDropdownContainer");
@@ -833,7 +855,10 @@ function render() {
   if (providerGrid) providerGrid.style.display = isProviders ? "block" : "none";
   if (changesView) changesView.style.display = isChanges ? "block" : "none";
   if (scoutView) scoutView.style.display = isScout ? "block" : "none";
+  const probeView = document.getElementById("probeView");
+  if (probeView) probeView.style.display = isProbe ? "block" : "none";
 
+  if (isProbe) { renderProbe(); return; }
   if (isChanges) { renderChanges(query); return; }
   if (isProviders) { renderProviders(query); return; }
   if (isScout) { renderScout(query); renderCombo(); return; }
@@ -853,6 +878,175 @@ function render() {
   document.getElementById("resultCount").textContent = `Showing ${filtered.length.toLocaleString()} matching models`;
   updateSortIndicators();
   renderModels(filtered);
+}
+
+// ---------- Probe: ping every 9router model and see what answers ----------
+
+function isRouterFree(id) {
+  return String(id || "").toLowerCase().includes(":free");
+}
+
+function isOpenRouterId(id) {
+  return String(id || "").toLowerCase().startsWith("openrouter/");
+}
+
+function probeCandidates() {
+  const exclude = probeExclude === "true";
+  return nineRouterModels
+    .filter(nr => probeScope === "all" || isRouterFree(nr.id))
+    .filter(nr => !(exclude && isOpenRouterId(nr.id)))
+    .map(nr => nr.id);
+}
+
+async function probeOne(id) {
+  const started = performance.now();
+  const headers = { "Content-Type": "application/json" };
+  if (routerApiKey) headers.Authorization = `Bearer ${routerApiKey}`;
+  try {
+    const res = await fetch(NINEROUTER_CHAT_URL, {
+      method: "POST",
+      headers,
+      body: JSON.stringify({
+        model: id,
+        messages: [{ role: "user", content: PROBE_PROMPT }],
+        max_tokens: 1,
+      }),
+      signal: AbortSignal.timeout(PROBE_TIMEOUT_MS),
+    });
+    const latency = Math.round(performance.now() - started);
+    let detail = "";
+    let body = null;
+    try { body = await res.json(); } catch { /* non-JSON body */ }
+    if (res.ok && body?.choices?.length) {
+      return { status: "responding", latency, detail: "ok" };
+    }
+    if (res.status === 401) detail = "401 — missing/invalid API key";
+    else if (res.status === 402) detail = "402 — quota exhausted";
+    else if (res.status === 429) detail = "429 — rate limited";
+    else if (res.status === 404) detail = "404 — model not found";
+    else if (body?.error?.message) detail = body.error.message;
+    else detail = `${res.status} ${res.statusText}`.trim();
+    return { status: "failing", latency, detail: detail.slice(0, 120) };
+  } catch (e) {
+    const latency = Math.round(performance.now() - started);
+    const detail = e?.name === "TimeoutError" ? "timeout" : (e?.message || "network error");
+    return { status: "failing", latency, detail: detail.slice(0, 120) };
+  }
+}
+
+async function runProbe(ids) {
+  if (probeRunning) return;
+  probeRunning = true;
+  const runBtn = document.getElementById("probeRun");
+  runBtn.disabled = true;
+  runBtn.textContent = "Probing…";
+
+  for (const id of ids) {
+    if (!probeResults.has(id)) probeResults.set(id, { status: "pending", latency: null, detail: "" });
+  }
+  renderProbe();
+
+  const queue = [...ids];
+  const workers = Array.from({ length: PROBE_CONCURRENCY }, async () => {
+    while (queue.length) {
+      const id = queue.shift();
+      const result = await probeOne(id);
+      probeResults.set(id, result);
+      persistProbeResults();
+      renderProbe();
+    }
+  });
+  await Promise.all(workers);
+
+  probeRunning = false;
+  runBtn.disabled = false;
+  runBtn.textContent = "Probe all";
+  renderProbe();
+}
+
+function probeSortValue(id, r) {
+  if (probeSortKey === "latency") {
+    const n = Number(r?.latency);
+    return Number.isFinite(n) ? n : 99999;
+  }
+  if (probeSortKey === "id") return id;
+  // status order: responding, pending, failing
+  const order = { responding: 0, pending: 1, failing: 2, skipped: 3 };
+  return order[r?.status] ?? 4;
+}
+
+function probeCmp(a, b) {
+  const va = probeSortValue(a, probeResults.get(a));
+  const vb = probeSortValue(b, probeResults.get(b));
+  let r;
+  if (typeof va === "string") r = va.localeCompare(vb);
+  else r = va - vb;
+  return probeSortDir === "asc" ? r : -r;
+}
+
+function renderProbe() {
+  const body = document.getElementById("probeBody");
+  if (!body) return;
+  const exclude = probeExclude === "true";
+  const candidates = probeCandidates();
+  const all = probeScope === "all" ? nineRouterModels.map(nr => nr.id) : nineRouterModels.filter(nr => isRouterFree(nr.id)).map(nr => nr.id);
+  const skipped = all.filter(id => exclude && isOpenRouterId(id));
+
+  let ids = candidates.filter(id => !skipped.includes(id));
+  ids.sort(probeCmp);
+
+  const counted = ids.filter(id => probeResults.has(id) && probeResults.get(id).status !== "pending");
+  const ok = counted.filter(id => probeResults.get(id).status === "responding").length;
+  const bad = counted.filter(id => probeResults.get(id).status === "failing").length;
+  document.getElementById("probeStatTotal").textContent = ids.length.toLocaleString();
+  document.getElementById("probeStatOk").textContent = String(ok);
+  document.getElementById("probeStatBad").textContent = String(bad);
+  document.getElementById("probeStatSkip").textContent = String(skipped.length);
+
+  const runBtn = document.getElementById("probeRun");
+  if (!ids.length) {
+    body.innerHTML = `<tr><td colspan="5"><div class="empty"><h3>No models to probe</h3><p>Start 9router on port 20128, then run the probe.</p></div></td></tr>`;
+    if (runBtn) runBtn.disabled = true;
+    return;
+  }
+  if (runBtn && !probeRunning) runBtn.disabled = false;
+
+  body.innerHTML = ids.map(id => {
+    const r = probeResults.get(id) || { status: "pending", latency: null, detail: "" };
+    const badge = r.status === "responding"
+      ? '<span class="probe-status-badge responding">responds</span>'
+      : r.status === "failing"
+        ? '<span class="probe-status-badge failing">fails</span>'
+        : '<span class="probe-status-badge pending">pending</span>';
+    const latency = r.latency === null ? '<span class="cell-na">—</span>' : `<span class="probe-latency">${r.latency} ms</span>`;
+    const detail = r.detail ? `<span class="probe-error">${esc(r.detail)}</span>` : '<span class="cell-na">—</span>';
+    return `<tr>
+      <td class="probe-model-id">${esc(id)}</td>
+      <td class="text-center">${badge}</td>
+      <td class="text-right">${latency}</td>
+      <td class="probe-error-cell">${detail}</td>
+      <td class="text-center"><button class="probe-retry-btn" data-probe-id="${esc(id)}" type="button">retry</button></td>
+    </tr>`;
+  }).join("");
+
+  updateProbeSortIndicators();
+}
+
+function updateProbeSortIndicators() {
+  const upIcon = `<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>`;
+  const downIcon = `<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>`;
+  document.querySelectorAll("#probeTable th.sortable").forEach(th => {
+    const ind = th.querySelector(".sort-ind");
+    if (!ind) return;
+    if (th.dataset.probeSort === probeSortKey) ind.innerHTML = probeSortDir === "asc" ? upIcon : downIcon;
+    else ind.innerHTML = "";
+  });
+}
+
+function setProbeSort(key) {
+  if (probeSortKey === key) probeSortDir = probeSortDir === "asc" ? "desc" : "asc";
+  else { probeSortKey = key; probeSortDir = "asc"; }
+  renderProbe();
 }
 
 // ---------- Scout: best free model per provider ----------
@@ -1063,6 +1257,7 @@ document.querySelectorAll(".tab-pri").forEach(btn => {
     if (activeView === "providers") searchInput.placeholder = "Search providers by name or id...";
     else if (activeView === "changes") searchInput.placeholder = "Search changelog updates...";
     else if (activeView === "scout") searchInput.placeholder = "Search free models or providers...";
+    else if (activeView === "probe") searchInput.placeholder = "Search models to probe...";
     else searchInput.placeholder = "Search models, providers, architectures...";
     render();
   });
@@ -1172,7 +1367,7 @@ document.getElementById("comboCopyAll").addEventListener("click", async () => {
   } catch {}
 });
 
-document.querySelectorAll("th.sortable").forEach(th => {
+document.querySelectorAll("#modelTable th.sortable").forEach(th => {
   th.addEventListener("click", () => {
     const key = th.dataset.sort;
     if (sortKey === key) sortDir = sortDir === "asc" ? "desc" : "asc";
@@ -1180,6 +1375,53 @@ document.querySelectorAll("th.sortable").forEach(th => {
     visibleCount = 100;
     render();
   });
+});
+
+// ---------- Probe listeners ----------
+
+document.querySelectorAll("[data-probe-scope]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("[data-probe-scope]").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+    btn.classList.add("active");
+    btn.setAttribute("aria-selected", "true");
+    probeScope = btn.dataset.probeScope;
+    render();
+  });
+});
+
+document.querySelectorAll("[data-probe-exclude]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("[data-probe-exclude]").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+    btn.classList.add("active");
+    btn.setAttribute("aria-selected", "true");
+    probeExclude = btn.dataset.probeExclude;
+    render();
+  });
+});
+
+document.querySelectorAll("#probeTable th.sortable").forEach(th => {
+  th.addEventListener("click", () => setProbeSort(th.dataset.probeSort));
+});
+
+document.getElementById("probeRun")?.addEventListener("click", () => {
+  if (!routerApiKey) openRouterKeyModal();
+  else runProbe(probeCandidates());
+});
+
+document.getElementById("probeClear")?.addEventListener("click", () => {
+  probeResults.clear();
+  persistProbeResults();
+  renderProbe();
+});
+
+document.getElementById("probeBody")?.addEventListener("click", event => {
+  const btn = event.target.closest(".probe-retry-btn");
+  if (!btn) return;
+  const id = btn.dataset.probeId;
+  probeResults.set(id, { status: "pending", latency: null, detail: "" });
+  persistProbeResults();
+  renderProbe();
+  runProbe([id]);
 });
 
 loadData();

@@ -71,6 +71,7 @@
             <button class="tab-pri active" data-view="models" role="tab" aria-selected="true">Models</button>
             <button class="tab-pri" data-view="providers" role="tab" aria-selected="false">Providers</button>
             <button class="tab-pri" data-view="scout" role="tab" aria-selected="false">Scout</button>
+            <button class="tab-pri" data-view="probe" role="tab" aria-selected="false">Probe</button>
             <button class="tab-pri" data-view="changes" role="tab" aria-selected="false">Changelog</button>
           </nav>
 
@@ -206,6 +207,50 @@
           <button class="chg-btn alert-btn" data-alert="silent" role="tab" aria-selected="false">Dashboard only</button>
         </div>
         <div class="changes-feed" id="changesFeed"></div>
+      </section>
+
+      <!-- Probe view: test which 9router models actually respond -->
+      <section class="probe-view" id="probeView">
+        <div class="probe-lede">
+          <p class="probe-subtitle">Ping every free model on 9router and see which ones answer. OpenRouter-backed models are excluded by default.</p>
+        </div>
+
+        <div class="probe-controls">
+          <div class="probe-toggle-group" role="tablist" aria-label="Probe scope">
+            <button class="probe-btn toggle active" data-probe-scope="free" role="tab" aria-selected="true">Free models</button>
+            <button class="probe-btn toggle" data-probe-scope="all" role="tab" aria-selected="false">All models</button>
+          </div>
+          <div class="probe-toggle-group" role="tablist" aria-label="OpenRouter exclusion">
+            <button class="probe-btn toggle active" data-probe-exclude="true" role="tab" aria-selected="true">Exclude OpenRouter</button>
+            <button class="probe-btn toggle" data-probe-exclude="false" role="tab" aria-selected="false">Include OpenRouter</button>
+          </div>
+          <div class="probe-actions">
+            <button class="probe-action-btn" id="probeClear" type="button">Clear</button>
+            <button class="probe-action-btn probe-action-primary" id="probeRun" type="button">Probe all</button>
+          </div>
+        </div>
+
+        <div class="probe-stats" id="probeStats">
+          <div class="probe-stat"><strong id="probeStatTotal">—</strong><span>models</span></div>
+          <div class="probe-stat probe-stat-ok"><strong id="probeStatOk">0</strong><span>responded</span></div>
+          <div class="probe-stat probe-stat-bad"><strong id="probeStatBad">0</strong><span>failed</span></div>
+          <div class="probe-stat probe-stat-skipped"><strong id="probeStatSkip">0</strong><span>skipped</span></div>
+        </div>
+
+        <div class="probe-table-container" id="probeTableContainer">
+          <table class="model-table probe-table" id="probeTable">
+            <thead>
+              <tr>
+                <th class="col-model sortable" data-probe-sort="id">Model <span class="sort-ind"></span></th>
+                <th class="col-status sortable text-center" data-probe-sort="status">Status <span class="sort-ind"></span></th>
+                <th class="col-latency sortable text-right font-mono" data-probe-sort="latency">Latency <span class="sort-ind"></span></th>
+                <th class="col-error text-left">Detail</th>
+                <th class="col-action text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody id="probeBody"></tbody>
+          </table>
+        </div>
       </section>
 
       <button class="load-more" id="loadMore" hidden>Load Remaining Entries</button>
