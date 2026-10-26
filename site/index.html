@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#090a0f">
-  <meta name="description" content="Models from the 9router, OmniRouter and OpenRouter repos and catalogs — no local daemon, no API keys.">
-  <title>Model Sources — 9router, OmniRouter & OpenRouter</title>
+  <meta name="description" content="Models from the OmniRouter and OpenRouter repos and catalogs — no local daemon, no API keys.">
+  <title>Model Sources — OmniRouter & OpenRouter</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -28,11 +28,9 @@
           </span>
           <span class="brand-name">Model Sources</span>
         </a>
-        <span class="brand-badge">9router + OmniRouter + OpenRouter</span>
+        <span class="brand-badge">OmniRouter + OpenRouter</span>
       </div>
       <div class="header-meta">
-        <span class="status-indicator" id="status9router"></span>
-        <span class="router-status" id="status9routerLabel" role="button" tabindex="0">9r:...</span>
         <span class="status-indicator" id="statusOmniRouter"></span>
         <span class="router-status" id="statusOmniRouterLabel" role="button" tabindex="0">Omni:...</span>
         <span class="status-indicator" id="statusOpenRouter"></span>
@@ -44,20 +42,12 @@
     <main>
       <section class="stats" aria-label="Model counts">
         <div class="stat">
-          <span class="stat-label">9router models</span>
-          <strong class="stat-value" id="total9router">—</strong>
-        </div>
-        <div class="stat">
           <span class="stat-label">OmniRouter models</span>
           <strong class="stat-value text-emerald" id="totalOmniRouter">—</strong>
         </div>
         <div class="stat">
           <span class="stat-label">OpenRouter models</span>
           <strong class="stat-value text-blue" id="totalOpenRouter">—</strong>
-        </div>
-        <div class="stat">
-          <span class="stat-label">Free on 9router</span>
-          <strong class="stat-value text-emerald" id="total9routerFree">—</strong>
         </div>
         <div class="stat">
           <span class="stat-label">Free on OmniRouter</span>
@@ -72,8 +62,7 @@
       <section class="catalog-toolbar">
         <div class="toolbar-left">
           <nav class="view-tabs" role="tablist" aria-label="Source">
-            <button class="tab-pri active" data-source="9router" role="tab" aria-selected="true">9router</button>
-            <button class="tab-pri" data-source="OmniRouter" role="tab" aria-selected="false">OmniRouter</button>
+            <button class="tab-pri active" data-source="OmniRouter" role="tab" aria-selected="true">OmniRouter</button>
             <button class="tab-pri" data-source="OpenRouter" role="tab" aria-selected="false">OpenRouter</button>
             <button class="tab-pri" data-source="both" role="tab" aria-selected="false">Both</button>
           </nav>
@@ -121,7 +110,7 @@
 
     <footer class="footer">
       <div class="footer-content">
-        <p>Catalogs read live from the 9router, OmniRouter and <a href="https://openrouter.ai/docs" target="_blank" rel="noopener noreferrer">OpenRouter</a> repos / APIs.</p>
+        <p>Catalogs read live from the OmniRouter repo and the <a href="https://openrouter.ai/docs" target="_blank" rel="noopener noreferrer">OpenRouter</a> API.</p>
         <p class="footer-sub">Data fetched live from each source.</p>
       </div>
     </footer>

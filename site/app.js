@@ -1,4 +1,4 @@
-// Model Sources — 9router (repo) + OmniRouter (repo) + OpenRouter (API)
+// Model Sources — OmniRouter (repo) + OpenRouter (API)
 // Everything is read from the upstream repos — no local daemon, no API keys.
 
 const OPENROUTER_API_URL = "https://openrouter.ai/api/v1/models";
@@ -6,18 +6,10 @@ const OPENROUTER_API_URL = "https://openrouter.ai/api/v1/models";
 // the daemon needs an API key and its /v1/models is 401.
 const OMNIRROUTER_CATALOG_URL =
   "https://raw.githubusercontent.com/cheaper-inference/OmniRoute/main/open-sse/config/freeModelCatalog.data.ts";
-// 9router keeps its catalog as per-provider registry files in the repo. The tree
-// listing comes from the GitHub API (one request, 60/hr unauthenticated); the
-// files themselves come from raw.githubusercontent.com, which is not
-// rate-limited like the API.
-const NINEROUTER_TREE_URL =
-  "https://api.github.com/repos/decolua/9router/git/trees/master?recursive=1";
-const NINEROUTER_RAW_URL =
-  (path) => `https://raw.githubusercontent.com/decolua/9router/master/open-sse/providers/registry/${path}`;
 
 let allModels = [];        // { id, name, owner, source, input_price_per_m, output_price_per_m, context_window, is_free }
 let filtered = [];
-let activeSource = "9router";  // "9router" | "openrouter" | "both"
+let activeSource = "OmniRouter";  // "OmniRouter" | "OpenRouter" | "both"
 let activeFilter = "all";      // "all" | "free" | "paid"
 let sortKey = "name";
 let sortDir = "asc";
@@ -58,7 +50,7 @@ function fmtContext(v) {
 }
 
 function sourceBadge(source) {
-  const label = source === "9router" ? "9router" : source === "OmniRouter" ? "OmniRouter" : "OpenRouter";
+  const label = source === "OmniRouter" ? "OmniRouter" : "OpenRouter";
   const cls = source === "OpenRouter" ? "source-badge-remote" : "source-badge-local";
   return `<span class="${cls}">${label}</span>`;
 }
@@ -72,98 +64,6 @@ const KIND_LABELS = {
 };
 
 // ---------- Fetching ----------
-
-function n9routerModel(m) {
-  return {
-    id: m.id || "",
-    name: m.name || m.id || "",
-    owner: m.owned_by || "",
-    source: "9router",
-    input_price_per_m: null,
-    output_price_per_m: null,
-    context_window: Number(m.context_length ?? m.capabilities?.contextWindow ?? 0) || 0,
-    is_free: !!m.is_free,
-    kind: m.kind || "",
-    category: m.category || "",
-    notice: m.notice || "",
-  };
-}
-
-async function fetch9routerModels() {
-  try {
-    const repo = await fetch9routerModelsFromRepo();
-    if (repo.length) {
-      document.getElementById("status9routerLabel").textContent = `9r: ${repo.length} models (repo)`;
-      document.getElementById("status9router").style.background = "#10b981";
-      return repo;
-    }
-    document.getElementById("status9routerLabel").textContent = "9r: offline";
-    document.getElementById("status9router").style.background = "#f59e0b";
-    return [];
-  } catch (e) {
-    document.getElementById("status9routerLabel").textContent = "9r: offline";
-    document.getElementById("status9router").style.background = "#f59e0b";
-    return [];
-  }
-}
-
-// The 9router repo keeps its model catalog as ~145 per-provider registry files
-// (open-sse/providers/registry/*.js), each exporting a provider object with
-// alias, display {name, notice}, category ("freeTier" | "oauth" | "free" | ...)
-// and a `models: [...]` array of { id, name, kind?, ... } literals.
-const N9REPO_REG_PREFIX = "open-sse/providers/registry/";
-
-async function fetch9routerModelsFromRepo() {
-  const res = await fetch(NINEROUTER_TREE_URL, { signal: AbortSignal.timeout(15000) });
-  if (!res.ok) throw new Error(`tree HTTP ${res.status}`);
-  const tree = await res.json();
-  const files = (tree?.tree || [])
-    .map(t => t.path)
-    .filter(p => p.startsWith(N9REPO_REG_PREFIX) && p.endsWith(".js") && !p.endsWith("/index.js"));
-
-  const seen = new Map();
-  const CHUNK = 8;
-  for (let i = 0; i < files.length; i += CHUNK) {
-    const results = await Promise.all(files.slice(i, i + CHUNK).map(async path => {
-      const provider = path.slice(N9REPO_REG_PREFIX.length, -3);
-      try {
-        const r = await fetch(NINEROUTER_RAW_URL(path.replace(N9REPO_REG_PREFIX, "")), { signal: AbortSignal.timeout(15000) });
-        return r.ok ? { text: await r.text(), provider } : null;
-      } catch { return null; }
-    }));
-    for (const result of results) {
-      if (!result) continue;
-      const text = result.text;
-      const alias = (text.match(/\balias:\s*"([^"]+)"/) || [])[1] || result.provider;
-      const displayName = (text.match(/\bname:\s*"([^"]+)"/) || [])[1] || "";
-      // Free-tier signal: the provider block advertises hasFree, or the whole
-      // registry is a free/oauth tier (category free/freeTier/oauth).
-      const hasFree = /hasFree:\s*true/.test(text);
-      const category = (text.match(/\bcategory:\s*"([^"]+)"/) || [])[1] || "";
-      const providerFree = hasFree || ["free", "freeTier", "oauth"].includes(category);
-      const noticeKind = (text.match(/(apiKeyUrl|signupUrl):\s*"([^"]+)"/) || [])[2] || "";
-      const m = text.match(/models:\s*\[([\s\S]*?)\n\s*\]/);
-      if (!m) continue;
-      const entryRe = /\{\s*id:\s*"([^"]+)"[^}]*\}/g;
-      let e;
-      while ((e = entryRe.exec(m[1])) !== null) {
-        const entry = e[0];
-        const name = entry.match(/name:\s*"([^"]*)"/);
-        const kind = entry.match(/kind:\s*"([^"]*)"/);
-        if (!seen.has(e[1])) seen.set(e[1], {
-          id: e[1],
-          name: name ? name[1] : "",
-          owned_by: displayName || alias,
-          is_free: providerFree,
-          kind: kind ? kind[1] : "",
-          category,
-          notice: noticeKind,
-        });
-      }
-    }
-  }
-  return [...seen.values()].map(n9routerModel).filter(m => m.id);
-}
 
 // OmniRouter's free-tier catalog is a hand-curated TypeScript array. Parsing it
 // in the browser keeps the page working even when the local daemon is down (401).
@@ -283,8 +183,7 @@ function applyFilters() {
   filtered.sort(cmpModels);
 }
 
-// 9router rows carry no pricing (the repo lists none), so free rows with an
-// unknown price sort as $0 instead of being pushed to the paid end.
+// OpenRouter rows without pricing (rare) sort by their free status.
 function sortValue(m, key) {
   switch (key) {
     case "name": return getModelName(m).toLowerCase();
@@ -369,22 +268,18 @@ function render() {
 // ---------- Init ----------
 
 async function loadData() {
-  document.getElementById("status9routerLabel").textContent = "9r: loading…";
   document.getElementById("statusOmniRouterLabel").textContent = "Omni: loading…";
   document.getElementById("statusOpenRouterLabel").textContent = "OR: loading…";
 
-  const [nrModels, omniModels, orModels] = await Promise.all([
-    fetch9routerModels(),
+  const [omniModels, orModels] = await Promise.all([
     fetchOmniRouterModels(),
     fetchOpenRouterModels(),
   ]);
 
-  allModels = [...nrModels, ...omniModels, ...orModels];
+  allModels = [...omniModels, ...orModels];
 
-  document.getElementById("total9router").textContent = nrModels.length.toLocaleString();
   document.getElementById("totalOmniRouter").textContent = omniModels.length.toLocaleString();
   document.getElementById("totalOpenRouter").textContent = orModels.length.toLocaleString();
-  document.getElementById("total9routerFree").textContent = nrModels.filter(m => m.is_free).length.toLocaleString();
   document.getElementById("totalOmniRouterFree").textContent = omniModels.filter(m => m.is_free).length.toLocaleString();
   document.getElementById("totalOpenRouterFree").textContent = orModels.filter(m => m.is_free).length.toLocaleString();
   document.getElementById("lastUpdated").textContent = `Updated ${new Date().toLocaleTimeString()}`;
