@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "ca121ed7ac88dac7",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Arcee, Kilo Gateway, LLM Gateway, Merge Gateway, NEAR AI Cloud, NanoGPT, Novita AI, Ofox, OpenRouter, Prime Inference, Vercel AI Gateway",
+    "detected_at": "2026-10-27T08:44:39.228501+00:00",
+    "details": "Input: $0.075 -> $0.048; output: $0.3 -> $0.3",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "93189dea1952b589",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-27T08:44:39.228501+00:00",
+    "details": "Input: $0.15 -> $0.179; output: $10 -> $10",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "0a8bebef4128db46",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-27T08:44:39.228501+00:00",
+    "details": "Input: $0.1 -> $0.048; output: $0.6 -> $0.6",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "9365ca283e84cea6",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-27T08:44:39.228501+00:00",
+    "details": "Input: $0.0765 -> $0.09; output: $0.255 -> $0.3",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "3b0eada3b53390b7",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T08:44:39.228501+00:00",
+    "details": "Input: $0.2266 -> $0.2484; output: $8 -> $8",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "84721f18b0b72300",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4-flash",
@@ -2251,65 +2311,5 @@
     "in_direction": "increase",
     "out_direction": "same",
     "alerted": true
-  },
-  {
-    "event_id": "5c4921fcce9f6112",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-25T12:41:56.162923+00:00",
-    "details": "Input: $0.18 -> $0.226; output: $16 -> $16",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "bc1b0820adcf0508",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
-    "detected_at": "2026-10-25T11:33:41.193795+00:00",
-    "details": "Input: $0.2033 -> $0.18; output: $5.5 -> $5.5",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "same",
-    "alerted": true
-  },
-  {
-    "event_id": "ba968ed1046a2849",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-25T11:33:41.193795+00:00",
-    "details": "Input: $0.2033 -> $0.18; output: $7.6972 -> $16",
-    "direction": "increase",
-    "in_direction": "decrease",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "a80192c17f2977fd",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
-    "detected_at": "2026-10-25T10:35:06.088255+00:00",
-    "details": "Input: $0.159 -> $0.2033; output: $5.5 -> $5.5",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "same",
-    "alerted": true
-  },
-  {
-    "event_id": "a7ba1b2f86015d3b",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-25T10:35:06.088255+00:00",
-    "details": "Input: $0.159 -> $0.2033; output: $16 -> $7.6972",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "decrease",
-    "alerted": false
   }
 ]
