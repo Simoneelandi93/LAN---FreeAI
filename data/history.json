@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "9f2d8b36dc70b3c6",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-27T21:32:56.691221+00:00",
+    "details": "Input: $0.15 -> $0.169; output: $10 -> $8.94",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "964dce1189a7d97f",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T21:32:56.691221+00:00",
+    "details": "Input: $0.0345 -> $0.0379; output: $0.0823 -> $0.0798",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
     "event_id": "efe8852f04c5b5bf",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -2322,30 +2346,6 @@
     "direction": "mixed",
     "in_direction": "decrease",
     "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "76b8e1df656c89f4",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-pro-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-26T14:54:58.848423+00:00",
-    "details": "Input: $0.2565 -> $0.165; output: $8 -> $0.495",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": true
-  },
-  {
-    "event_id": "756940fee672d041",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-v4-flash-0731:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-26T14:54:58.848423+00:00",
-    "details": "Input: $0.05 -> $0.04444; output: $0.16 -> $0.13332",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
     "alerted": false
   }
 ]
