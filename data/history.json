@@ -1,5 +1,62 @@
 [
   {
+    "event_id": "09292b0b512ddd6a",
+    "type": "new_model",
+    "model_id": "tencent/deepseek-v4.1-flash-1017",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-27T06:53:48.123958+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "deed5a06306b3193",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T06:53:48.123958+00:00",
+    "details": "Input: $0.2211 -> $0.2266; output: $8 -> $8",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "620c1586b586ac96",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T06:53:48.123958+00:00",
+    "details": "Input: $0.02 -> $0.02; output: $0.511839 -> $1",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "498b72008c9efc62",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-27T06:53:48.123958+00:00",
+    "details": "Input: $0.0699 -> $0.0703; output: $1.1 -> $1.1",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "1d6d398b952feea0",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-27T06:53:48.123958+00:00",
+    "details": "Input: $0.19 -> $0.169; output: $8.94 -> $10",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
     "event_id": "94f8c0ef57a99cbb",
     "type": "price_change",
     "model_id": "xiaomi/mimo-v2.6-flash",
@@ -2254,65 +2311,5 @@
     "in_direction": "increase",
     "out_direction": "decrease",
     "alerted": false
-  },
-  {
-    "event_id": "e8ea8860d76296b5",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "OpenRouter, Privatemode AI",
-    "detected_at": "2026-10-25T09:36:37.225989+00:00",
-    "details": "Input: $0.0418 -> $0.0513; output: $0.077 -> $0.0701",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "decrease",
-    "alerted": true
-  },
-  {
-    "event_id": "1b9ebde4f24ba906",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-25T06:47:59.568417+00:00",
-    "details": "Input: $0.044 -> $0.0418; output: $0.2 -> $0.077",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "337b19c7bff87204",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "OpenRouter, Privatemode AI",
-    "detected_at": "2026-10-25T06:47:59.568417+00:00",
-    "details": "Input: $0.044 -> $0.0418; output: $0.2 -> $0.077",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": true
-  },
-  {
-    "event_id": "a90da8d13ba26f4d",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-25T05:36:51.355842+00:00",
-    "details": "Input: $0.0511 -> $0.044; output: $0.0761 -> $0.2",
-    "direction": "increase",
-    "in_direction": "decrease",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "b839af9bf48a9bb0",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "OpenRouter, Privatemode AI",
-    "detected_at": "2026-10-25T05:36:51.355842+00:00",
-    "details": "Input: $0.0511 -> $0.044; output: $0.0761 -> $0.2",
-    "direction": "increase",
-    "in_direction": "decrease",
-    "out_direction": "increase",
-    "alerted": true
   }
 ]
