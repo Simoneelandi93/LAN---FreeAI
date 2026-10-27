@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "94f8c0ef57a99cbb",
+    "type": "price_change",
+    "model_id": "xiaomi/mimo-v2.6-flash",
+    "provider": "CrossModel, Kilo Gateway, LLM Gateway, NanoGPT, OpenRouter, Standard Compute, Venice AI, Vercel AI Gateway",
+    "detected_at": "2026-10-27T05:39:07.124995+00:00",
+    "details": "Input: $0.14 -> $0.1; output: $0.28 -> $0.28",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "430845a365c4a4c1",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T05:39:07.124995+00:00",
+    "details": "Input: $0.02 -> $0.02; output: $0.106042 -> $0.511839",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
     "event_id": "3d56b8acb0002ef2",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-pro-latest",
@@ -2289,30 +2313,6 @@
     "direction": "increase",
     "in_direction": "decrease",
     "out_direction": "increase",
-    "alerted": true
-  },
-  {
-    "event_id": "67cf2d05bcd4b1d8",
-    "type": "price_change",
-    "model_id": "ornith-ai/ornith-1.5-122b",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-25T05:36:51.355842+00:00",
-    "details": "Input: $0.2 -> $0.26; output: $0.8 -> $2.08",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "9dbb1ae7abb7a215",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "OpenRouter, Privatemode AI",
-    "detected_at": "2026-10-25T04:39:24.059882+00:00",
-    "details": "Input: $0.0287 -> $0.0511; output: $0.0914 -> $0.0761",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "decrease",
     "alerted": true
   }
 ]
