@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "c89ef9e6e404a4cd",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-27T16:05:52.462136+00:00",
+    "details": "Input: $0.179 -> $0.2; output: $10 -> $10",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "b7731aef6708a1ec",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T16:05:52.462136+00:00",
+    "details": "Input: $0.0313 -> $0.0379; output: $0.0846 -> $0.0846",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "506c0bd7a2531811",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4.1-flash-1017",
@@ -2304,24 +2328,6 @@
     "provider": "Morph",
     "detected_at": "2026-10-26T04:44:29.848831+00:00",
     "details": "$2.5 in / $14 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "9b17e95b623e942b",
-    "type": "new_model",
-    "model_id": "morph-dsv4flash",
-    "provider": "Morph",
-    "detected_at": "2026-10-26T04:44:29.848831+00:00",
-    "details": "$0.141953125 in / $0.399625 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "3a9fc73963f1b45c",
-    "type": "new_model",
-    "model_id": "morph-kimik3-fast",
-    "provider": "Morph",
-    "detected_at": "2026-10-26T04:44:29.848831+00:00",
-    "details": "$6 in / $22.5 out per 1M",
     "alerted": false
   }
 ]
