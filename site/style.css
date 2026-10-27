@@ -500,6 +500,14 @@ a:hover { color: var(--accent-light); }
   padding-top: 1px;
 }
 
+.chg-row-badges {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+}
+
 .chg-row-content {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;

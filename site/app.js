@@ -18,7 +18,7 @@ let visibleCount = 100000;  // Load all models at once
 // Changelog state
 let history = [];
 let activeChangesRange = "all";   // "all" | "weekly" | "daily"
-let activeAlertFilter = "all";    // "all" | "alerted" | "silent"
+let activeAlertFilter = "alerted";  // default: only events that were sent to Telegram
 const MILLIS_DAY = 86400000;
 
 function esc(v) {
@@ -329,8 +329,9 @@ function renderChanges(query) {
         return `<div class="chg-price-line"><span class="chg-price-kind">${esc(kind)}</span><span class="chg-price-old">$${oldPrice.toLocaleString(undefined, { maximumFractionDigits: 6 })}</span><span class="chg-price-arrow" aria-hidden="true">→</span><strong class="chg-price-new ${priceDirection}">$${newPrice.toLocaleString(undefined, { maximumFractionDigits: 6 })}</strong><span class="chg-price-unit">per 1M tokens</span></div>`;
       }).join("")}</div>` : "";
       return `<article class="chg-row">
-        <div class="chg-row-meta"><span class="chg-time">${esc(time)}</span><span class="chg-tag ${tagCls}">${esc(lbl)}</span>${alertedBadge}</div>
+        <div class="chg-row-meta"><span class="chg-time">${esc(time)}</span><span class="chg-tag ${tagCls}">${esc(lbl)}</span></div>
         <div class="chg-row-content"><span class="chg-model">${esc(ev.model_id || "model")}</span>${providerLabel}${pricing}</div>
+        <div class="chg-row-badges">${alertedBadge}</div>
       </article>`;
     }).join("");
     return `<div class="chg-day">
