@@ -1,5 +1,77 @@
 [
   {
+    "event_id": "c69c6859fa17ed40",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Arcee, Kilo Gateway, LLM Gateway, Merge Gateway, NEAR AI Cloud, NanoGPT, Novita AI, Ofox, OpenRouter, Prime Inference, Vercel AI Gateway",
+    "detected_at": "2026-10-27T17:33:18.617246+00:00",
+    "details": "Input: $0.017 -> $0.075; output: $0.3 -> $0.3",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "7df683893b730c44",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-27T17:33:18.617246+00:00",
+    "details": "Input: $0.017 -> $0.0422; output: $0.1694 -> $0.1694",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "590ee8d600f6de94",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-27T17:33:18.617246+00:00",
+    "details": "Input: $0.1605 -> $0.2; output: $8.94 -> $10",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "61bba9aef82f8c9f",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T17:33:18.617246+00:00",
+    "details": "Input: $0.0417 -> $0.0379; output: $0.0771 -> $0.074",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "9b0edf594454ef11",
+    "type": "price_change",
+    "model_id": "qwen3-235b-a22b-instruct-2507",
+    "provider": "302.AI, Cortecs, GreenPT, Qiniu, Scaleway, Venice AI",
+    "detected_at": "2026-10-27T17:33:18.617246+00:00",
+    "details": "Input: $0.09 -> $0.15; output: $0.58 -> $0.598",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "041f8876de7ffb10",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-27T17:33:18.617246+00:00",
+    "details": "Input: $0.017 -> $0.1; output: $0.6 -> $0.6",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "72f9a3488b08b0ae",
     "type": "price_change",
     "model_id": "z-ai/glm-5.2",
@@ -2271,69 +2343,6 @@
     "direction": "increase",
     "in_direction": "increase",
     "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "e4e15c9fcfdc414b",
-    "type": "price_change",
-    "model_id": "moonshotai/kimi-k2.7-code",
-    "provider": "Abacus, CommandCode, CoreWeave, Deep Infra, HPC-AI, Hugging Face, Inceptron, IteraCompute, Kilo Gateway, NanoGPT, Nebius Token Factory, Novita AI, Ofox, OpenReason, OpenRouter, Perplexity Agent, SiliconFlow, TensorX, Vercel AI Gateway, ZenMux, ai&",
-    "detected_at": "2026-10-26T08:51:46.420986+00:00",
-    "details": "Input: $0.6712 -> $0.6712; output: $3.29 -> $3.1",
-    "direction": "decrease",
-    "in_direction": "same",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "c8414db5c7f13955",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-26T08:51:46.420986+00:00",
-    "details": "Input: $0.152 -> $0.214; output: $10 -> $10",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "same",
-    "alerted": true
-  },
-  {
-    "event_id": "b9c45c0199d11fc3",
-    "type": "price_change",
-    "model_id": "minimax/minimax-m3.1-flash",
-    "provider": "Eden AI, Kilo Gateway, LLM Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, Vercel AI Gateway, ZenMux",
-    "detected_at": "2026-10-26T08:51:46.420986+00:00",
-    "details": "Input: $0.09 -> $0.1; output: $0.5 -> $0.55",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "0243c6f597eaecd8",
-    "type": "new_model",
-    "model_id": "azure/gpt-4.1-nano@eu",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-26T08:51:46.420986+00:00",
-    "details": "$0.11 in / $0.44 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "2ca0be52a4784a9a",
-    "type": "new_model",
-    "model_id": "azure/gpt-4.1-nano",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-26T08:51:46.420986+00:00",
-    "details": "$0.1 in / $0.4 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "16f38d3ea01666d0",
-    "type": "new_model",
-    "model_id": "microsoft/o3-mini",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-26T08:51:46.420986+00:00",
-    "details": "$1.1 in / $4.4 out per 1M",
     "alerted": false
   }
 ]
