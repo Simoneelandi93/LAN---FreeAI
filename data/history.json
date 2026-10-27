@@ -1,5 +1,77 @@
 [
   {
+    "event_id": "efe8852f04c5b5bf",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-27T20:32:36.203695+00:00",
+    "details": "Input: $0.179 -> $0.15; output: $10 -> $10",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "cb7733bf95c8699b",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T20:32:36.203695+00:00",
+    "details": "Input: $0.0345 -> $0.0345; output: $0.0701 -> $0.0823",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "edb9eb9bec9de3da",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T20:32:36.203695+00:00",
+    "details": "Input: $0.022 -> $0.0182; output: $1.46 -> $1.8",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "e2bca9c4d207ff21",
+    "type": "price_change",
+    "model_id": "reka-ai/deepseek-v4-pro",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-27T20:32:36.203695+00:00",
+    "details": "Input: $0.9 -> $0.6; output: $1.9 -> $1.26",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "5b4a939c4c7473e8",
+    "type": "price_change",
+    "model_id": "reka-ai/deepseek-v4.1-flash-1017",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-27T20:32:36.203695+00:00",
+    "details": "Input: $0.15 -> $0.16; output: $0.6 -> $0.64",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "6b1e6afdb4aab7e3",
+    "type": "price_change",
+    "model_id": "reka-ai/deepseek-v4.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-27T20:32:36.203695+00:00",
+    "details": "Input: $0.1 -> $0.15; output: $0.3 -> $0.6",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "9273a5c98680043b",
     "type": "price_change",
     "model_id": "z-ai/glm-5.2",
@@ -2274,69 +2346,6 @@
     "direction": "decrease",
     "in_direction": "decrease",
     "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "b9e1e422b08dc16f",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-v4-pro-0813:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-26T14:54:58.848423+00:00",
-    "details": "Input: $0.45 -> $0.165; output: $0.8 -> $0.495",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "e7069012f72b5287",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-latest",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-26T14:54:58.848423+00:00",
-    "details": "Input: $0.45 -> $0.165; output: $0.8 -> $0.495",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "afe3c295b97d1ab8",
-    "type": "price_change",
-    "model_id": "moonshotai/kimi-k2.6:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-26T14:54:58.848423+00:00",
-    "details": "Input: $0.45 -> $0.44935; output: $1.95 -> $1.892",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "b3a7c97825933304",
-    "type": "new_model",
-    "model_id": "google/gemma-4-12b-it-starry-ocean",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-26T14:54:58.848423+00:00",
-    "details": "$0.05 in / $0.25 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "85da4302394113b5",
-    "type": "new_model",
-    "model_id": "google/gemma-4-31b-it-scarlet",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-26T14:54:58.848423+00:00",
-    "details": "$0.1 in / $0.45 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "0f3e954b2053e067",
-    "type": "new_model",
-    "model_id": "google/gemma-4-26b-a4b-it-chimeraxheretic",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-26T14:54:58.848423+00:00",
-    "details": "$0.12 in / $0.38 out per 1M",
     "alerted": false
   }
 ]
