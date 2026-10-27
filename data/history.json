@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "db9ce7b496488b70",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-27T23:32:58.053700+00:00",
+    "details": "Input: $0.2 -> $0.159; output: $10 -> $9.7533",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "7256e211c4cb2723",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T23:32:58.053700+00:00",
+    "details": "Input: $0.0416 -> $0.0399; output: $0.0771 -> $0.0771",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
     "event_id": "e9dcc95eac8b517b",
     "type": "price_change",
     "model_id": "z-ai/glm-5.2",
@@ -2325,24 +2349,6 @@
     "provider": "NanoGPT",
     "detected_at": "2026-10-26T15:28:51.792268+00:00",
     "details": "$0.05 in / $0.25 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "830867d1e2859e15",
-    "type": "new_model",
-    "model_id": "gemma-4-31b-it-scarlet",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-26T15:28:51.792268+00:00",
-    "details": "$0.1 in / $0.45 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "05c564aded258dd9",
-    "type": "new_model",
-    "model_id": "gemma-4-26b-a4b-it-chimeraxheretic",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-26T15:28:51.792268+00:00",
-    "details": "$0.12 in / $0.38 out per 1M",
     "alerted": false
   }
 ]
