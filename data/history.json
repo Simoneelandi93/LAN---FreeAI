@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "245c570ee5f158ea",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-27T03:42:19.132694+00:00",
+    "details": "Input: $0.19 -> $0.19; output: $10 -> $8.94",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "7ffc764f99be0649",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T03:42:19.132694+00:00",
+    "details": "Input: $0.016841 -> $0.02; output: $0.01 -> $0.028561",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "2ac703cf90a96a5e",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T03:42:19.132694+00:00",
+    "details": "Input: $0.2257 -> $0.2381; output: $8 -> $8",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "52c6365822e02cee",
     "type": "price_change",
     "model_id": "tencent/hy4-preview",
@@ -2277,42 +2313,6 @@
     "direction": "increase",
     "in_direction": "increase",
     "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "7635da5d7f742723",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-latest",
-    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
-    "detected_at": "2026-10-25T02:42:52.618985+00:00",
-    "details": "Input: $0.074 -> $0.0703; output: $1.1 -> $1.1",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "same",
-    "alerted": true
-  },
-  {
-    "event_id": "f0c1c4a943926668",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
-    "detected_at": "2026-10-25T02:42:52.618985+00:00",
-    "details": "Input: $0.19 -> $0.1795; output: $5.5 -> $5.5",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "cc71dcf62f7e17e8",
-    "type": "price_change",
-    "model_id": "z-ai/GLM-4.5-Air:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-25T02:42:52.618985+00:00",
-    "details": "Input: $0.12 -> $0.13; output: $0.8 -> $0.85",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
     "alerted": false
   }
 ]
