@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "f8d66da08820ad90",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T11:38:20.504279+00:00",
+    "details": "Input: $0.0285 -> $0.0258; output: $0.0923 -> $0.0923",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "efe8852f04c5b5bf",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-27T11:38:20.504279+00:00",
+    "details": "Input: $0.179 -> $0.15; output: $10 -> $10",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
     "event_id": "bb517fb75dc30e86",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4.1-flash-1017",
@@ -2271,30 +2295,6 @@
     "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
     "detected_at": "2026-10-25T19:32:43.012797+00:00",
     "details": "Input: $0.18 -> $0.1529; output: $5.5 -> $5.5",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "same",
-    "alerted": true
-  },
-  {
-    "event_id": "d5c2a58eb13f9ffe",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway",
-    "detected_at": "2026-10-25T19:32:43.012797+00:00",
-    "details": "Input: $0.18 -> $0.1529; output: $16 -> $10.5572",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "0c98797a61a8d7fe",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Fireworks AI, NanoGPT, OpenRouter, Privatemode AI, The Grid AI",
-    "detected_at": "2026-10-25T18:39:06.765018+00:00",
-    "details": "Input: $0.226 -> $0.18; output: $5.5 -> $5.5",
     "direction": "decrease",
     "in_direction": "decrease",
     "out_direction": "same",
