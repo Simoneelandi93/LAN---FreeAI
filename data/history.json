@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "3e52450fd01115c5",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T15:07:03.408850+00:00",
+    "details": "Input: $0.1259 -> $0.1259; output: $0.52272 -> $8",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "5516d341ac8819ae",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-27T15:07:03.408850+00:00",
+    "details": "Input: $0.024 -> $0.024; output: $0.1637 -> $0.1694",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "71a53f3fc9ea689c",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-27T15:07:03.408850+00:00",
+    "details": "Input: $0.0258 -> $0.0313; output: $0.1046 -> $0.1046",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
     "event_id": "a1331a3c4edc462a",
     "type": "price_change",
     "model_id": "moonshotai/kimi-k2.7-code",
@@ -2271,33 +2307,6 @@
     "direction": "decrease",
     "in_direction": "decrease",
     "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "8b01886fb2cfe864",
-    "type": "new_free_model",
-    "model_id": "duo-chat-haiku-5-5",
-    "provider": "GitLab Duo",
-    "detected_at": "2026-10-26T04:44:29.848831+00:00",
-    "details": "$0 in / $0 out per 1M",
-    "alerted": true
-  },
-  {
-    "event_id": "7e1ea2ce2f6267cb",
-    "type": "new_model",
-    "model_id": "au.anthropic.claude-sonnet-5-5",
-    "provider": "Amazon Bedrock",
-    "detected_at": "2026-10-26T04:44:29.848831+00:00",
-    "details": "$2.2 in / $11 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "d14be48a3a59511b",
-    "type": "new_model",
-    "model_id": "minimax-m3.1-flash@eu",
-    "provider": "Requesty",
-    "detected_at": "2026-10-26T04:44:29.848831+00:00",
-    "details": "$0.3 in / $1.2 out per 1M",
     "alerted": false
   }
 ]
