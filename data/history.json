@@ -1,5 +1,47 @@
 [
   {
+    "event_id": "86bfe1246fa07434",
+    "type": "new_model",
+    "model_id": "deepseek-v4.1-flash-cyber",
+    "provider": "DevPass (LLM Gateway)",
+    "detected_at": "2026-10-28T21:33:12.967318+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "e52c8c695f322fcd",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-28T21:33:12.967318+00:00",
+    "details": "Input: $0.1318 -> $0.1035; output: $8 -> $4.3",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "0e607db8f66957b5",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-28T21:33:12.967318+00:00",
+    "details": "Input: $0.0115 -> $0.0138; output: $1.8 -> $1.8",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "500ac62c9e21a03f",
+    "type": "new_model",
+    "model_id": "inference.net/deepseek-v4.1-flash-cyber",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-10-28T21:33:12.967318+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "a415fcb1c37318be",
     "type": "price_change",
     "model_id": "z-ai/glm-5.2",
@@ -2314,53 +2356,5 @@
     "in_direction": "increase",
     "out_direction": "decrease",
     "alerted": true
-  },
-  {
-    "event_id": "48228f67d620dc42",
-    "type": "price_change",
-    "model_id": "moonshotai/kimi-k2.6:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-27T12:49:24.738951+00:00",
-    "details": "Input: $0.39 -> $0.3895; output: $1.8 -> $1.64",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "76692ddf06f463fc",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-v4-pro-0813:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-27T12:49:24.738951+00:00",
-    "details": "Input: $0.66 -> $0.24156; output: $1.98 -> $0.72468",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "bbe502f10188d28f",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-latest",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-27T12:49:24.738951+00:00",
-    "details": "Input: $0.66 -> $0.24156; output: $1.98 -> $0.72468",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "f8d66da08820ad90",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-27T11:38:20.504279+00:00",
-    "details": "Input: $0.0285 -> $0.0258; output: $0.0923 -> $0.0923",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "same",
-    "alerted": false
   }
 ]
