@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "f5d1f983d9a78935",
+    "type": "price_change",
+    "model_id": "z-ai/glm-5.2",
+    "provider": "Ambient, CrossModel, Crusoe, Eden AI, Impossibl, Kilo Gateway, LLM Gateway, Merge Gateway, Mistral, NanoGPT, Ofox, OpenRouter, OrcaRouter, Prime Inference, Standard Compute, Tempr Gateway, TensorX, TokenGo, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-10-28T07:32:59.489732+00:00",
+    "details": "Input: $0.0298 -> $0.0225; output: $1.32 -> $1.32",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "32d2feb4990c69c8",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-28T07:32:59.489732+00:00",
+    "details": "Input: $0.159 -> $0.151; output: $10 -> $9.7224",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "779f7594b5e0992c",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-28T07:32:59.489732+00:00",
+    "details": "Input: $0.0438 -> $0.0379; output: $0.11 -> $0.0798",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
     "event_id": "40b4f91bf5f84f1d",
     "type": "price_change",
     "model_id": "z-ai/glm-5.2",
@@ -2322,36 +2358,6 @@
     "provider": "Kilo Gateway, NanoGPT, OpenRouter",
     "detected_at": "2026-10-26T21:37:30.819599+00:00",
     "details": "Input: $0.151 -> $0.1795; output: $8.94 -> $10",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "25ca77af126ba143",
-    "type": "new_model",
-    "model_id": "sciforium/deepseek-v4.1-flash-1017",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-10-26T21:37:30.819599+00:00",
-    "details": "$0.15 in / $0.6 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "18a00afedc3695dd",
-    "type": "new_model",
-    "model_id": "gpt-6.1-terra@eu",
-    "provider": "Requesty",
-    "detected_at": "2026-10-26T21:04:40.665583+00:00",
-    "details": "$1.2 in / $6 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "2f80ff19148239c0",
-    "type": "price_change",
-    "model_id": "minimax/minimax-m3.1-flash",
-    "provider": "Eden AI, Kilo Gateway, LLM Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, Vercel AI Gateway, ZenMux",
-    "detected_at": "2026-10-26T20:39:13.012274+00:00",
-    "details": "Input: $0.1 -> $0.15; output: $0.55 -> $0.6",
     "direction": "increase",
     "in_direction": "increase",
     "out_direction": "increase",
