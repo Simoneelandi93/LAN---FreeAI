@@ -29,8 +29,8 @@ let lookupIndex = null;      // { byKey: Map, searchTerms: [{term, key}], ... } 
 let lookupData = null;       // raw {generated_at, models}
 
 // Boards state (data/leaderboard.json — OpenRouter usage; scores come from llm_stats.json)
-let leaderboard = null;      // { generated_at, source, window, usage[] }
-let activeBoard = "usage";   // "usage" | "free"
+let leaderboard = null;      // { generated_at, source, window, usage[], fastest[], value[], newest[] }
+let activeBoard = "usage";   // "usage" | "free" | "value" | "fastest" | "newest"
 let scoreById = new Map();   // llm_stats_id -> {name, score, rank}
 
 // ---------- Persisted view state ----------
@@ -55,7 +55,7 @@ function loadSavedState() {
     activeTypeFilter: ["all", "new"],
     sortDir: ["asc", "desc"],
   };
-  if (["usage", "free"].includes(saved.activeBoard)) activeBoard = saved.activeBoard;
+  if (["usage", "free", "value", "fastest", "newest"].includes(saved.activeBoard)) activeBoard = saved.activeBoard;
   if (allowed.activeSource.includes(saved.activeSource)) activeSource = saved.activeSource;
   if (allowed.activeFilter.includes(saved.activeFilter)) activeFilter = saved.activeFilter;
   if (allowed.activeChangesRange.includes(saved.activeChangesRange)) activeChangesRange = saved.activeChangesRange;
@@ -810,6 +810,132 @@ function renderFreeBoard() {
   </table>`;
 }
 
+// Value / Fastest / Newest boards come from the OpenRouter catalog itself
+// (data/leaderboard.json value/fastest/newest sections). Score + jump column
+// join through the same lookup index as the usage board.
+function catalogBoardRows(key) {
+  const rows = (leaderboard && Array.isArray(leaderboard[key])) ? leaderboard[key] : [];
+  return rows.map(r => ({ ...r, entry: entryForBoardRow({ openrouterId: r.openrouter_id, name: r.name }) }));
+}
+
+function scoreCellHTML(entry) {
+  const score = scoreForEntry(entry);
+  return score === null ? '<span class="cell-na">—</span>' : `<span class="score-val">${score.toFixed(1)}</span>`;
+}
+
+function renderValueBoard() {
+  const body = document.getElementById("boardsBody");
+  const note = document.getElementById("boardsNote");
+  const rows = catalogBoardRows("value");
+  if (!rows.length) {
+    note.textContent = "";
+    body.innerHTML = `<div class="empty"><h3>Value leaders unavailable</h3><p>The next catalog sync will fetch them.</p></div>`;
+    return;
+  }
+  note.textContent = "Cheapest paid text models on OpenRouter, ranked by blended price (80% input + 20% output, $/M tokens). Free variants live on the Best FREE board.";
+  const trs = rows.map(r => {
+    const pin = Number(r.price_in) * 1e6, pout = Number(r.price_out) * 1e6;
+    const query = r.entry ? r.entry.name : r.name;
+    return `<tr>
+      <td class="text-right">${r.rank}</td>
+      <td><span class="lb-name">${esc(r.name)}</span></td>
+      <td class="text-right lb-tokens">${fmtPrice(pin)}/M</td>
+      <td class="text-right lb-tokens">${fmtPrice(pout)}/M</td>
+      <td class="text-center">${fmtContext(r.context_window)}</td>
+      <td class="text-center score-col">${scoreCellHTML(r.entry)}</td>
+      <td class="text-center">${jumpBtnHTML(query)}</td>
+    </tr>`;
+  }).join("");
+  body.innerHTML = `<table class="model-table lb-table">
+    <thead><tr>
+      <th class="text-right">#</th><th>Model</th>
+      <th class="text-right" title="USD per million input tokens">In $/M</th>
+      <th class="text-right" title="USD per million output tokens">Out $/M</th>
+      <th class="text-center">Context</th>
+      <th class="text-center score-col" title="LLM Stats benchmark score — quality, from a different source than price">Score</th>
+      <th class="text-center">Details</th>
+    </tr></thead>
+    <tbody>${trs}</tbody>
+  </table>`;
+}
+
+function renderFastestBoard() {
+  const body = document.getElementById("boardsBody");
+  const note = document.getElementById("boardsNote");
+  const rows = catalogBoardRows("fastest");
+  if (!rows.length) {
+    note.textContent = "";
+    body.innerHTML = `<div class="empty"><h3>Speed data unavailable</h3><p>The next catalog sync will fetch it.</p></div>`;
+    return;
+  }
+  note.textContent = "OpenRouter's own provider performance data: median output throughput (tok/s) across providers, with the fastest provider named. Not our measurement.";
+  const trs = rows.map(r => {
+    const tps = Number(r.throughput);
+    const lat = Number(r.latency_ms);
+    const query = r.entry ? r.entry.name : r.name;
+    return `<tr>
+      <td class="text-right">${r.rank}</td>
+      <td><span class="lb-name">${esc(r.name)}</span></td>
+      <td class="text-right lb-tokens">${Number.isFinite(tps) ? `${tps.toLocaleString(undefined, { maximumFractionDigits: 0 })} tok/s` : '<span class="cell-na">—</span>'}</td>
+      <td class="text-right">${Number.isFinite(lat) ? `${lat.toLocaleString(undefined, { maximumFractionDigits: 0 })} ms` : '<span class="cell-na">—</span>'}</td>
+      <td>${esc(r.best_provider || "—")}</td>
+      <td class="text-center score-col">${scoreCellHTML(r.entry)}</td>
+      <td class="text-center">${jumpBtnHTML(query)}</td>
+    </tr>`;
+  }).join("");
+  body.innerHTML = `<table class="model-table lb-table">
+    <thead><tr>
+      <th class="text-right">#</th><th>Model</th>
+      <th class="text-right" title="Median output tokens per second across OpenRouter providers">Throughput</th>
+      <th class="text-right" title="Median time to first token, milliseconds">Latency</th>
+      <th title="The provider with the highest measured throughput for this model">Fastest at</th>
+      <th class="text-center score-col" title="LLM Stats benchmark score — quality, from a different source than speed">Score</th>
+      <th class="text-center">Details</th>
+    </tr></thead>
+    <tbody>${trs}</tbody>
+  </table>`;
+}
+
+function renderNewestBoard() {
+  const body = document.getElementById("boardsBody");
+  const note = document.getElementById("boardsNote");
+  const rows = catalogBoardRows("newest");
+  if (!rows.length) {
+    note.textContent = "";
+    body.innerHTML = `<div class="empty"><h3>Newest models unavailable</h3><p>The next catalog sync will fetch them.</p></div>`;
+    return;
+  }
+  note.textContent = `Newest text models on the OpenRouter catalog, by listing date · ingested ${new Date(leaderboard.generated_at).toLocaleDateString(undefined, { month: "short", day: "numeric" })}. New does not mean free — prices are on each row.`;
+  const trs = rows.map(r => {
+    const d = r.created ? new Date(r.created * 1000) : null;
+    const date = d ? d.toLocaleDateString(undefined, { month: "short", day: "numeric" }) : '<span class="cell-na">—</span>';
+    const pin = Number(r.price_in), pout = Number(r.price_out);
+    const price = (Number.isFinite(pin) && Number.isFinite(pout))
+      ? (pin === 0 && pout === 0 ? '<span class="text-emerald font-semibold">free</span>'
+        : `${fmtPrice(pin * 1e6)} → ${fmtPrice(pout * 1e6)}`)
+      : '<span class="cell-na">—</span>';
+    const query = r.entry ? r.entry.name : r.name;
+    return `<tr>
+      <td class="text-right">${r.rank}</td>
+      <td><span class="lb-name">${esc(r.name)}</span></td>
+      <td class="text-center">${date}</td>
+      <td class="text-center">${fmtContext(r.context_window)}</td>
+      <td class="text-right lb-tokens" title="Input → output, USD per million tokens">${price}</td>
+      <td class="text-center score-col">${scoreCellHTML(r.entry)}</td>
+      <td class="text-center">${jumpBtnHTML(query)}</td>
+    </tr>`;
+  }).join("");
+  body.innerHTML = `<table class="model-table lb-table">
+    <thead><tr>
+      <th class="text-right">#</th><th>Model</th><th class="text-center">Listed</th>
+      <th class="text-center">Context</th><th class="text-right" title="Input → output, USD per million tokens">$/M in → out</th>
+      <th class="text-center score-col" title="LLM Stats benchmark score — quality, from a different source than recency">Score</th>
+      <th class="text-center">Details</th>
+    </tr></thead>
+    <tbody>${trs}</tbody>
+  </table>`;
+}
+
 function renderBoards() {
   const note = document.getElementById("boardsNote");
   document.querySelectorAll("#boardsView .board-btn").forEach(b => {
@@ -818,9 +944,14 @@ function renderBoards() {
     b.setAttribute("aria-selected", String(on));
   });
   if (activeBoard === "usage") renderUsageBoard();
-  else renderFreeBoard();
+  else if (activeBoard === "free") renderFreeBoard();
+  else if (activeBoard === "value") renderValueBoard();
+  else if (activeBoard === "fastest") renderFastestBoard();
+  else renderNewestBoard();
   if (note.textContent) {
-    const src = activeBoard === "usage" ? leaderboard?.source : "llm-stats.com via data/llm_stats.json";
+    const src = activeBoard === "usage" ? leaderboard?.source
+      : activeBoard === "free" ? "llm-stats.com via data/llm_stats.json"
+      : "openrouter.ai catalog + rankings APIs via data/leaderboard.json";
     note.title = src ? `Source: ${src}` : "";
   }
 }

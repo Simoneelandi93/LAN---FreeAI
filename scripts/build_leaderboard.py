@@ -1,11 +1,20 @@
-"""Builds data/leaderboard.json: OpenRouter real-usage rankings for the Boards tab.
+"""Builds data/leaderboard.json: OpenRouter-derived boards for the Boards tab.
 
-Source: whatstrending.ai/api/models — a daily republish of OpenRouter's own
-token-volume rankings (openrouter.ai/rankings). Ingested, not computed: we don't
-see request traffic ourselves. Falls back to the committed file when unreachable.
+Sections:
+- usage:    OpenRouter real-usage rankings via whatstrending.ai/api/models (trailing
+            7 days) — ingested, not computed, we don't see request traffic ourselves.
+- fastest:  OpenRouter's own /rankings#performance data (p50 throughput/latency across
+            providers, from their frontend API).
+- value:    cheapest paid text models, computed from OpenRouter catalog pricing
+            (blended input/output $/M tokens).
+- newest:   newest OpenRouter text models by catalog `created` timestamp.
+
+Every section falls back to the committed file when its source is unreachable, so a
+flaky upstream never blanks a board.
 """
 import json
 import os
+import re
 from datetime import datetime, timezone
 from typing import Any, Dict, List
 
@@ -14,15 +23,27 @@ import requests
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 LEADERBOARD_FILE = os.path.join(DATA_DIR, "leaderboard.json")
 USAGE_URL = "https://whatstrending.ai/api/models"
-# Keep the board a digest, not a dump.
+CATALOG_URL = "https://openrouter.ai/api/v1/models"
+PERF_URL = "https://openrouter.ai/api/frontend/v1/rankings/performance"
+# Keep each board a digest, not a dump.
 MAX_ROWS = 50
+BOARD_ROWS = 25
+# A rough blend for "value": input tokens usually dominate a request, but output
+# price matters enough to break ties between same-input-price models.
+INPUT_WEIGHT = 0.8
+OUTPUT_WEIGHT = 0.2
+DATE_SUFFIX = re.compile(r"-\d{8}$")
+
+
+def _get(url: str) -> Any:
+    res = requests.get(url, headers={"User-Agent": "Free-AI-Radar/1.0"}, timeout=30)
+    res.raise_for_status()
+    return res.json()
 
 
 def fetch_usage_rankings() -> List[Dict[str, Any]]:
     try:
-        res = requests.get(USAGE_URL, headers={"User-Agent": "Free-AI-Radar/1.0"}, timeout=30)
-        res.raise_for_status()
-        body = res.json()
+        body = _get(USAGE_URL)
         rows = body.get("data") if isinstance(body, dict) else body
         if not isinstance(rows, list):
             return []
@@ -47,29 +68,167 @@ def fetch_usage_rankings() -> List[Dict[str, Any]]:
         return []
 
 
+def fetch_catalog() -> List[Dict[str, Any]]:
+    try:
+        body = _get(CATALOG_URL + "?order=newest")
+        rows = body.get("data") if isinstance(body, dict) else body
+        return rows if isinstance(rows, list) else []
+    except Exception as e:
+        print(f"[leaderboard] OpenRouter catalog unavailable: {e}")
+        return []
+
+
+def _text_only(m: Dict[str, Any]) -> bool:
+    mods = ((m.get("architecture") or {}).get("output_modalities")) or []
+    return "text" in mods
+
+
+def _is_variant(id: str) -> bool:
+    """Batch/passthrough variants of the same model clutter a newest board."""
+    return id.endswith(":batch")
+
+
+def build_newest(catalog: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    rows = []
+    for m in catalog:
+        if not _text_only(m) or _is_variant(m.get("id") or ""):
+            continue
+        rows.append({
+            "openrouter_id": m.get("id") or "",
+            "name": m.get("name") or "",
+            "created": m.get("created") or 0,
+            "context_window": m.get("context_length") or 0,
+            "price_in": (m.get("pricing") or {}).get("prompt"),
+            "price_out": (m.get("pricing") or {}).get("completion"),
+        })
+    rows.sort(key=lambda r: r["created"], reverse=True)
+    for i, r in enumerate(rows, 1):
+        r["rank"] = i
+    return rows[:BOARD_ROWS]
+
+
+def build_value(catalog: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Cheapest paid text models, blended input/output price per M tokens."""
+    rows = []
+    for m in catalog:
+        if not _text_only(m) or _is_variant(m.get("id") or ""):
+            continue
+        p = m.get("pricing") or {}
+        try:
+            pin, pout = float(p.get("prompt") or 0), float(p.get("completion") or 0)
+        except (TypeError, ValueError):
+            continue
+        if pin <= 0 and pout <= 0:
+            continue  # free variants live on the free boards, not a price board
+        rows.append({
+            "openrouter_id": m.get("id") or "",
+            "name": m.get("name") or "",
+            "context_window": m.get("context_length") or 0,
+            "price_in": pin,
+            "price_out": pout,
+            "value_score": pin * INPUT_WEIGHT + pout * OUTPUT_WEIGHT,
+        })
+    rows.sort(key=lambda r: r["value_score"])
+    for i, r in enumerate(rows, 1):
+        r["rank"] = i
+    return rows[:BOARD_ROWS]
+
+
+def _join_perf_id(oid: str, v1_ids: Dict[str, None]) -> str:
+    """Map a rankings/performance dated slug to the v1 catalog id the lookup index knows."""
+    if oid in v1_ids:
+        return oid
+    base = DATE_SUFFIX.sub("", oid)
+    if base in v1_ids:
+        return base
+    if base + ":free" in v1_ids:
+        return base + ":free"
+    pref = [i for i in v1_ids if i.startswith(base) and (len(i) == len(base) or i[len(base)] in "-:@")]
+    return pref[0] if len(pref) == 1 else ""
+
+
+def fetch_fastest(catalog: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """OpenRouter's own 'Fastest models' data: p50 throughput/latency per model."""
+    try:
+        perf = _get(PERF_URL)
+        rows_raw = perf.get("data") if isinstance(perf, dict) else perf
+        if isinstance(rows_raw, dict):
+            rows_raw = rows_raw.get("data")
+        if not isinstance(rows_raw, list):
+            return []
+        v1_ids = {(m.get("id") or ""): None for m in catalog}
+        # p50_throughput is tok/s; price from the catalog row when joinable.
+        price_by_id = {}
+        for m in catalog:
+            p = m.get("pricing") or {}
+            try:
+                price_by_id[m["id"]] = (float(p.get("prompt") or 0), float(p.get("completion") or 0))
+            except (TypeError, ValueError):
+                pass
+        out = []
+        for r in rows_raw:
+            if not isinstance(r, dict) or not r.get("id"):
+                continue
+            oid = _join_perf_id(r["id"], v1_ids)
+            pin, pout = price_by_id.get(oid, (None, None))
+            out.append({
+                "rank": r.get("rank"),
+                "name": r.get("name") or "",
+                "openrouter_id": oid,
+                "raw_id": r.get("id") or "",
+                "throughput": r.get("p50_throughput"),
+                "latency_ms": r.get("p50_latency"),
+                "best_provider": r.get("best_throughput_provider") or "",
+                "price_in": pin,
+                "price_out": pout,
+                "provider_count": r.get("provider_count"),
+            })
+        out = [r for r in out if r["throughput"]]
+        out.sort(key=lambda r: r["throughput"], reverse=True)
+        for i, r in enumerate(out, 1):
+            r["rank"] = i
+        return out[:BOARD_ROWS]
+    except Exception as e:
+        print(f"[leaderboard] Performance data unavailable: {e}")
+        return []
+
+
 def main():
-    rows = fetch_usage_rankings()
-    existing = []
+    existing = {}
     if os.path.exists(LEADERBOARD_FILE):
         try:
             with open(LEADERBOARD_FILE, encoding="utf-8") as f:
-                existing = (json.load(f) or {}).get("usage", [])
+                existing = json.load(f) or {}
         except Exception:
-            existing = []
-    if not rows:
-        print("[leaderboard] Keeping committed leaderboard.json (fetch failed or empty).")
-        return
+            existing = {}
+
+    usage = fetch_usage_rankings()
+    catalog = fetch_catalog()
+    fastest = fetch_fastest(catalog) if catalog else []
+    newest = build_newest(catalog) if catalog else []
+    value = build_value(catalog) if catalog else []
+
     payload = {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "source": "openrouter.ai/rankings via whatstrending.ai/api/models",
-        "window": "trailing 7 days",
-        "usage": rows[:MAX_ROWS],
+        "generated_at": existing.get("generated_at") or "",
+        "source": existing.get("source") or "openrouter.ai/rankings via whatstrending.ai/api/models",
+        "window": existing.get("window") or "trailing 7 days",
+        "usage": usage[:MAX_ROWS] if usage else existing.get("usage", []),
+        "fastest": fastest,
+        "value": value,
+        "newest": newest,
     }
+    if usage:
+        payload["generated_at"] = datetime.now(timezone.utc).isoformat()
+
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(LEADERBOARD_FILE, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
-    free_count = sum(1 for r in payload["usage"] if r["free"])
-    print(f"[leaderboard] {len(payload['usage'])} usage rows ({free_count} free-flagged), generated {payload['generated_at']}.")
+    free_count = sum(1 for r in payload["usage"] if r.get("free"))
+    print(
+        f"[leaderboard] {len(payload['usage'])} usage rows ({free_count} free-flagged), "
+        f"{len(payload['fastest'])} fastest, {len(payload['value'])} value, "
+        f"{len(payload['newest'])} newest. Generated {payload['generated_at']}."
+    )
 
 
 if __name__ == "__main__":
