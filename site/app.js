@@ -487,6 +487,18 @@ function fmtCardPrice(p) {
   return "—";
 }
 
+function fmtChecked(p) {
+  // Freshness label for community-reported quotas. After ~30 days the entry
+  // gray-stamps: still shown, but visibly stale.
+  if (!p.checked_at) return "";
+  const d = new Date(p.checked_at);
+  if (isNaN(d.getTime())) return "";
+  const days = Math.floor((Date.now() - d.getTime()) / MILLIS_DAY);
+  const label = d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+  if (days > 30) return `<span class="lk-stale" title="Quota last confirmed ${days} days ago — may be outdated">checked ${esc(label)} · stale</span>`;
+  return `<span class="lk-checked" title="Quota confirmed against the provider directory ${days === 0 ? "today" : `${days} day${days === 1 ? "" : "s"} ago`}">checked ${esc(label)}</span>`;
+}
+
 function lookupCardHTML(entry, { isAlt = false } = {}) {
   const groups = {};
   for (const p of entry.providers) (groups[p.tier] = groups[p.tier] || []).push(p);
@@ -496,6 +508,7 @@ function lookupCardHTML(entry, { isAlt = false } = {}) {
     const rows = groups[t].map(p => {
       const copyId = esc(p.model_id || "");
       const quota = p.quota ? `<span class="lk-quota">${esc(p.quota)}</span>` : "";
+      const checked = fmtChecked(p);
       const card = p.requires_card ? `<span class="lk-card-req" title="Provider requires a payment method on file">card required</span>` : "";
       const link = p.provider_url || p.offer_url;
       const provName = esc(p.provider || p.provider_id || "provider");
@@ -503,7 +516,7 @@ function lookupCardHTML(entry, { isAlt = false } = {}) {
         <span class="lk-provider-name">${link ? `<a href="${esc(link)}" target="_blank" rel="noopener noreferrer">${provName}</a>` : provName}</span>
         <code class="lk-model-id" title="Copy model ID" data-copy="${copyId}">${copyId}</code>
         <span class="lk-price">${fmtCardPrice(p)}</span>
-        ${quota}${card}
+        ${quota}${checked}${card}
       </div>`;
     }).join("");
     return `<div class="lk-tier lk-tier-${t}">

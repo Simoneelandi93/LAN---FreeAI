@@ -890,3 +890,15 @@ a:hover { color: var(--accent-light); }
   border-radius: 999px;
   padding: 0 8px;
 }
+
+.lk-checked, .lk-stale {
+  font-size: 10.5px;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.lk-stale {
+  color: #f59e0b;
+  border: 1px dashed rgba(245, 158, 11, 0.5);
+  border-radius: 999px;
+  padding: 0 8px;
+}

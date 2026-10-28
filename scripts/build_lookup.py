@@ -98,6 +98,7 @@ def build_lookup(models: List[Dict[str, Any]]) -> Dict[str, Any]:
             "quota": _quota_text(offer),
             "offer_type": offer.get("offer_type") or "",
             "requires_card": bool(offer.get("requires_card")),
+            "checked_at": offer.get("checked_at") or "",
             "offer_url": offer.get("source_url") or "",
             "provider_url": m.get("provider_url") or m.get("source_url") or "",
             "status": m.get("status") or "",

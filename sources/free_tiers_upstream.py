@@ -82,7 +82,11 @@ def fetch_upstream_free_tiers(cache_file: Optional[str] = None) -> List[Dict[str
     Pulls the upstream free-tier directory and normalizes it into our offers.json
     shape: {id, provider, title, offer_type, models_included, requires_card,
             quota_requests_day, quota_tokens_minute, quota_requests_minute,
-            status, source_url, notes}.
+            status, source_url, notes, checked_at}.
+
+    checked_at is the moment we last confirmed the quotas against upstream
+    (fresh fetch OR 304-revalidate) — the community dataset itself carries no
+    audit date, so ours is the only freshness signal the UI can show.
 
     Returns [] on failure so callers can fall back to the committed offers.json.
     """
@@ -97,13 +101,13 @@ def fetch_upstream_free_tiers(cache_file: Optional[str] = None) -> List[Dict[str
         res = requests.get(UPSTREAM_URL, headers=headers, timeout=30)
         if res.status_code == 304:
             print(f"[Upstream] Free tiers unchanged (304); reusing {len(cached_providers)} cached providers.")
-            return _normalize(cached_providers)
+            return _normalize(cached_providers, cache.get("fetched_at"))
         res.raise_for_status()
         raw = res.json()
     except Exception as e:
         if cached_providers:
             print(f"[Upstream] Unavailable ({e}); reusing {len(cached_providers)} cached providers.")
-            return _normalize(cached_providers)
+            return _normalize(cached_providers, cache.get("fetched_at"))
         print(f"[Upstream] Free-tier dataset unavailable ({e}).")
         return []
 
@@ -112,10 +116,10 @@ def fetch_upstream_free_tiers(cache_file: Optional[str] = None) -> List[Dict[str
           f"({sum(len(p.get('models', [])) for p in providers)} model entries), "
           f"{len(res.content) // 1024} KB response.")
     _save_cache(cache_file, res.headers.get("etag"), providers)
-    return _normalize(providers)
+    return _normalize(providers, datetime.now(timezone.utc).isoformat())
 
 
-def _normalize(providers: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def _normalize(providers: List[Dict[str, Any]], checked_at: Optional[str] = None) -> List[Dict[str, Any]]:
     """Converts upstream provider records into our offer schema."""
     offers: List[Dict[str, Any]] = []
     for p in providers:
@@ -145,6 +149,7 @@ def _normalize(providers: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             "status": p.get("status") or "active",
             "source_url": p.get("console_url") or p.get("base_url") or "",
             "notes": p.get("notes") or p.get("grant") or "",
+            "checked_at": checked_at or "",
         }
         if daily_allocation:
             offer["free_daily_allocation"] = daily_allocation
