@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "a4c8bb8a6d3b0d23",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-28T03:34:00.949660+00:00",
+    "details": "Input: $0.151 -> $0.15; output: $10 -> $8.94",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "0f47c9f1b4deae7d",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-28T03:34:00.949660+00:00",
+    "details": "Input: $0.0453 -> $0.0453; output: $0.0798 -> $0.0745",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "52c6365822e02cee",
     "type": "price_change",
     "model_id": "tencent/hy4-preview",
@@ -2328,30 +2352,6 @@
     "direction": "decrease",
     "in_direction": "decrease",
     "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "8530aa542081ebad",
-    "type": "price_change",
-    "model_id": "zai-org/GLM-5.2",
-    "provider": "Abacus, Arcee, Baseten, Berget.AI, CommandCode, CoreWeave, Deep Infra, Friendli, HPC-AI, Hugging Face, Inceptron, Lilac, Nebius Token Factory, Novita AI, Pioneer, SiliconFlow, SiliconFlow (China), Together AI, Venice AI, evroc",
-    "detected_at": "2026-10-26T15:54:37.593913+00:00",
-    "details": "Input: $0.62 -> $0.62; output: $2.4 -> $1.782",
-    "direction": "decrease",
-    "in_direction": "same",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "e4e15c9fcfdc414b",
-    "type": "price_change",
-    "model_id": "moonshotai/kimi-k2.7-code",
-    "provider": "Abacus, Chutes, CommandCode, CoreWeave, Deep Infra, HPC-AI, Hugging Face, Inceptron, IteraCompute, Kilo Gateway, NanoGPT, Nebius Token Factory, Novita AI, Ofox, OpenReason, OpenRouter, Perplexity Agent, SiliconFlow, TensorX, Vercel AI Gateway, ZenMux",
-    "detected_at": "2026-10-26T15:28:51.792268+00:00",
-    "details": "Input: $0.6712 -> $0.6712; output: $3.29 -> $3.1",
-    "direction": "decrease",
-    "in_direction": "same",
-    "out_direction": "decrease",
     "alerted": false
   }
 ]
