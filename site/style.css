@@ -926,3 +926,25 @@ a:hover { color: var(--accent-light); }
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+
+.lk-jump {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 999px;
+  padding: 2px 9px;
+  font: 500 11px var(--font-sans);
+  cursor: pointer;
+  transition: all 0.12s ease;
+  white-space: nowrap;
+}
+.lk-jump:hover,
+.lk-jump:focus-visible {
+  color: var(--emerald);
+  border-color: rgba(16, 185, 129, 0.5);
+  background: var(--emerald-soft);
+}
+.score-col { white-space: nowrap; }

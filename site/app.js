@@ -361,6 +361,7 @@ function editDistanceLE(a, b, max) {
 function buildLookupIndex(data) {
   const byKey = new Map();
   const searchTerms = [];   // {term, key, weight}
+  const idToKey = new Map();  // normalized provider model_id / full_id -> canonical key
   for (const [key, entry] of Object.entries(data.models)) {
     byKey.set(key, entry);
     // Canonical name, full weight; also token-split so "opus 5.5" matches "claude opus 5.5".
@@ -370,9 +371,51 @@ function buildLookupIndex(data) {
     }
     // Model IDs carry spellings display names lack (claude-opus-5.5).
     const ids = new Set(entry.providers.map(p => normToken(p.model_id)).filter(t => t.length >= 4));
-    for (const id of ids) searchTerms.push({ term: id, key, weight: 2 });
+    for (const id of ids) {
+      searchTerms.push({ term: id, key, weight: 2 });
+      if (!idToKey.has(id)) idToKey.set(id, key);
+    }
+    for (const p of entry.providers) {
+      const full = normToken(p.full_id);
+      if (full.length >= 4 && !idToKey.has(full)) idToKey.set(full, key);
+    }
   }
-  return { byKey, searchTerms };
+  return { byKey, searchTerms, idToKey };
+}
+
+// Resolves a board row (OpenRouter id or display name) to a canonical lookup
+// entry, so the boards can show our score and link into the Lookup tab.
+function entryForBoardRow({ openrouterId = "", name = "" } = {}) {
+  if (!lookupIndex) return null;
+  const byId = openrouterId ? lookupIndex.idToKey.get(normToken(openrouterId)) : null;
+  if (byId) return lookupIndex.byKey.get(byId);
+  if (!name) return null;
+  const n = normToken(name);
+  for (const [key, entry] of lookupIndex.byKey) {
+    if (normToken(key) === n) return entry;
+  }
+  return null;
+}
+
+function scoreForEntry(entry) {
+  if (!entry || !entry.llm_stats_id) return null;
+  const s = Number((scoreById.get(entry.llm_stats_id) || {}).score);
+  return Number.isFinite(s) ? s : null;
+}
+
+const LK_JUMP_SVG = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>`;
+
+function jumpBtnHTML(query) {
+  return `<button class="lk-jump" data-jump="${esc(query)}" title="Open this model in the Lookup tab — all providers, free tiers, quotas">${LK_JUMP_SVG} Lookup</button>`;
+}
+
+function jumpToLookup(query) {
+  activeSource = "lookup";
+  const input = document.getElementById("searchInput");
+  input.value = query;
+  saveState();
+  render();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function searchLookup(query) {
@@ -597,6 +640,8 @@ function renderLookup(query) {
 }
 
 // Copy-to-clipboard via event delegation: cards re-render on every keystroke.
+// The boards body gets its own listener for the Lookup jump buttons — same
+// delegation pattern, since board tables re-render on every tab switch.
 function setupLookupCopy() {
   document.getElementById("lookupResults").addEventListener("click", async e => {
     const el = e.target.closest(".lk-model-id");
@@ -619,6 +664,12 @@ function setupLookupCopy() {
     el.classList.add("copied");
     el.title = "Copied!";
     setTimeout(() => { el.classList.remove("copied"); el.title = "Copy model ID"; }, 1200);
+  });
+
+  document.getElementById("boardsBody").addEventListener("click", e => {
+    const btn = e.target.closest(".lk-jump");
+    if (!btn) return;
+    jumpToLookup(btn.dataset.jump);
   });
 }
 
@@ -680,19 +731,27 @@ function renderUsageBoard() {
     const change = Number(r.change);
     const changeCls = change > 0 ? "rise" : change < 0 ? "drop" : "";
     const changeTxt = change > 0 ? `▲${change}` : change < 0 ? `▼${Math.abs(change)}` : "·";
+    const entry = entryForBoardRow({ openrouterId: r.openrouter_id, name: r.name });
+    const score = scoreForEntry(entry);
+    const scoreCell = score === null ? '<span class="cell-na">—</span>' : `<span class="score-val">${score.toFixed(1)}</span>`;
+    const query = entry ? entry.name : r.name;
     return `<tr>
       <td class="text-right">${r.rank}</td>
       <td><span class="lb-name">${esc(r.name)}</span>${r.free ? `<span class="lb-free-badge">free</span>` : ""}</td>
       <td class="text-center">${esc(r.provider)}</td>
       <td class="text-right lb-tokens">${esc(r.tokens_display || fmtTokens(r.tokens))}</td>
       <td class="text-right">${fmtTokens(r.requests)}</td>
+      <td class="text-center score-col">${scoreCell}</td>
       <td class="text-center"><span class="chg-tag ${changeCls}">${changeTxt}</span></td>
+      <td class="text-center">${jumpBtnHTML(query)}</td>
     </tr>`;
   }).join("");
   body.innerHTML = `<table class="model-table lb-table">
     <thead><tr>
       <th class="text-right">#</th><th>Model</th><th class="text-center">Provider</th>
-      <th class="text-right">Tokens/wk</th><th class="text-right">Requests/wk</th><th class="text-center">±</th>
+      <th class="text-right">Tokens/wk</th><th class="text-right">Requests/wk</th>
+      <th class="text-center score-col" title="LLM Stats benchmark score — quality, from a different source than usage">Score</th>
+      <th class="text-center">±</th><th class="text-center">Providers</th>
     </tr></thead>
     <tbody>${rows}</tbody>
   </table>`;
@@ -735,12 +794,13 @@ function renderFreeBoard() {
       <td class="text-right"><span class="score-val">${r.score.toFixed(1)}</span></td>
       <td class="text-center">${fmtContext(r.entry.context_window)}</td>
       <td>${provs}${more}</td>
+      <td class="text-center">${jumpBtnHTML(r.entry.name)}</td>
     </tr>`;
   }).join("");
   body.innerHTML = `<table class="model-table lb-table">
     <thead><tr>
       <th class="text-right">#</th><th>Model</th><th class="text-right">Score</th>
-      <th class="text-center">Context</th><th>Free at</th>
+      <th class="text-center">Context</th><th>Free at</th><th class="text-center">Details</th>
     </tr></thead>
     <tbody>${trs}</tbody>
   </table>`;
