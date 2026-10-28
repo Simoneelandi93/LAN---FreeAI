@@ -5,8 +5,10 @@ Sections:
             7 days) — ingested, not computed, we don't see request traffic ourselves.
 - fastest:  OpenRouter's own /rankings#performance data (p50 throughput/latency across
             providers, from their frontend API).
-- value:    cheapest paid text models, computed from OpenRouter catalog pricing
-            (blended input/output $/M tokens).
+- value:    OpenRouter's "Benchmark performance per dollar" board, rebuilt from
+            their own inputs: Artificial Analysis intelligence score divided by
+            the weighted input price (their blend, weighted toward input).
+            Only models scoring in the top half qualify, as on their page.
 - newest:   newest OpenRouter text models by catalog `created` timestamp.
 
 Every section falls back to the committed file when its source is unreachable, so a
@@ -25,13 +27,10 @@ LEADERBOARD_FILE = os.path.join(DATA_DIR, "leaderboard.json")
 USAGE_URL = "https://whatstrending.ai/api/models"
 CATALOG_URL = "https://openrouter.ai/api/v1/models"
 PERF_URL = "https://openrouter.ai/api/frontend/v1/rankings/performance"
+BENCH_URL = "https://openrouter.ai/api/frontend/v1/rankings/benchmarks"
 # Keep each board a digest, not a dump.
 MAX_ROWS = 50
 BOARD_ROWS = 25
-# A rough blend for "value": input tokens usually dominate a request, but output
-# price matters enough to break ties between same-input-price models.
-INPUT_WEIGHT = 0.8
-OUTPUT_WEIGHT = 0.2
 DATE_SUFFIX = re.compile(r"-\d{8}$")
 
 
@@ -126,28 +125,82 @@ def build_newest(catalog: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return rows[:BOARD_ROWS]
 
 
+def _resolve_catalog_id(slug: str, catalog_ids: List[str]) -> str:
+    """Benchmarks permaslugs are dated ("...-flash-20261017"); the v1 catalog
+    often carries the undated id. Strip the date and match, longest prefix wins."""
+    if slug in catalog_ids:
+        return slug
+    base = DATE_SUFFIX.sub("", slug)
+    if base in catalog_ids:
+        return base
+    for cand in catalog_ids:
+        if cand.startswith(base) and (len(cand) == len(base) or cand[len(base)] in "-:"):
+            return cand
+    return ""
+
+
 def build_value(catalog: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """Cheapest paid text models, blended input/output price per M tokens."""
+    """OpenRouter's own value board: Artificial Analysis score per dollar.
+
+    Their page ("Benchmark performance per dollar") divides the AA intelligence
+    score by the weighted input price — a blend weighted toward input to match
+    typical usage — and only models scoring in the top half qualify. We rebuild
+    it from the same inputs their benchmarks endpoint exposes:
+    valsIndex.models (scores) x weightedInputPrices ($/M).
+    """
+    try:
+        body = _get(BENCH_URL)
+        data = body.get("data") if isinstance(body, dict) else body
+        vals = (data or {}).get("valsIndex") or {}
+        scores = vals.get("models") or []
+        prices = data.get("weightedInputPrices") or {}
+    except Exception as e:
+        print(f"[leaderboard] Benchmarks data unavailable: {e}")
+        return []
+    if not scores or not prices:
+        return []
+
+    scored = [m for m in scores if m.get("score") is not None]
+    if not scored:
+        return []
+    # "Only models scoring in the top half qualify" — OpenRouter's cutoff.
+    ranked = sorted(scored, key=lambda m: m["score"], reverse=True)
+    half = ranked[:max(1, len(ranked) // 2)]
+    half_scores = {m["permaslug"]: m for m in half}
+
+    # Catalog gives the display name, context window and per-token in/out price.
+    cat_ids = [m.get("id") or "" for m in catalog if _text_only(m)]
+    cat_by_id = {cid: m for cid, m in zip(cat_ids, [m for m in catalog if _text_only(m)])}
+
     rows = []
-    for m in catalog:
-        if not _text_only(m) or _is_variant(m.get("id") or ""):
+    for slug, info in half_scores.items():
+        price = prices.get(slug)
+        if not price:
             continue
-        p = m.get("pricing") or {}
-        try:
-            pin, pout = float(p.get("prompt") or 0), float(p.get("completion") or 0)
-        except (TypeError, ValueError):
-            continue
-        if pin <= 0 and pout <= 0:
-            continue  # free variants live on the free boards, not a price board
+        cid = _resolve_catalog_id(slug, cat_ids) or _resolve_catalog_id(info.get("heuristic_openrouter_slug") or "", cat_ids)
+        m = cat_by_id.get(cid)
+        pin = pout = None
+        ctx = 0
+        name = info.get("vals_model_label") or slug
+        if m:
+            name = m.get("name") or name
+            ctx = m.get("context_length") or 0
+            p = m.get("pricing") or {}
+            try:
+                pin, pout = float(p.get("prompt") or 0), float(p.get("completion") or 0)
+            except (TypeError, ValueError):
+                pass
         rows.append({
-            "openrouter_id": m.get("id") or "",
-            "name": m.get("name") or "",
-            "context_window": m.get("context_length") or 0,
+            "openrouter_id": cid or slug,
+            "name": name,
+            "aa_score": info.get("score"),
+            "weighted_input_price": price,      # $/M, their weighted blend
+            "value_score": round(info["score"] / price, 2),
+            "context_window": ctx,
             "price_in": pin,
             "price_out": pout,
-            "value_score": pin * INPUT_WEIGHT + pout * OUTPUT_WEIGHT,
         })
-    rows.sort(key=lambda r: r["value_score"])
+    rows.sort(key=lambda r: r["value_score"], reverse=True)
     for i, r in enumerate(rows, 1):
         r["rank"] = i
     return rows[:BOARD_ROWS]

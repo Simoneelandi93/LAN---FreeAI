@@ -30,11 +30,11 @@ BOARD_RENDERERS = {
 }
 # Fields used to join boards to the lookup index. They are inputs, not
 # display columns, so their absence from a renderer is not a bug.
-JOIN_FIELDS = {"openrouter_id", "raw_id", "rank", "free", "value_score"}
+JOIN_FIELDS = {"openrouter_id", "raw_id", "rank", "free", "value_score", "weighted_input_price"}
 # Fields the builder writes that the renderer must not ignore.
 MUST_SHOW = {
     "usage": ["name", "tokens_display", "requests", "change", "provider", "price_in", "price_out", "context_window"],
-    "value": ["name", "price_in", "price_out", "context_window"],
+    "value": ["name", "aa_score", "weighted_input_price", "value_score", "context_window"],
     "fastest": ["name", "throughput", "latency_ms", "best_provider", "best_price_per_m"],
     "newest": ["name", "created", "context_window", "price_in", "price_out"],
 }
@@ -42,6 +42,7 @@ MUST_SHOW = {
 # catalog yet) — exempt from the "always empty" check.
 OPTIONAL_FIELDS = {
     "usage": {"price_in", "price_out"},
+    "value": {"price_in", "price_out"},
 }
 
 problems = []

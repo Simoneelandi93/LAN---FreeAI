@@ -868,27 +868,38 @@ function renderValueBoard() {
     body.innerHTML = `<div class="empty"><h3>Value leaders unavailable</h3><p>The next catalog sync will fetch them.</p></div>`;
     return;
   }
-  note.textContent = "Cheapest paid text models on OpenRouter, ranked by blended price (80% input + 20% output, $/M tokens). Free variants live on the Best FREE board.";
+  note.textContent = "OpenRouter's \"Benchmark performance per dollar\": Artificial Analysis intelligence score divided by their weighted input price (weighted toward input to match typical usage). Only models scoring in the top half qualify.";
   const trs = rows.map(r => {
     const pin = Number(r.price_in) * 1e6, pout = Number(r.price_out) * 1e6;
+    const wip = Number(r.weighted_input_price);
+    const aa = Number(r.aa_score);
+    const val = Number(r.value_score);
+    const wipCell = Number.isFinite(wip) ? `${fmtPrice(wip)}/M` : '<span class="cell-na">—</span>';
+    const aaCell = Number.isFinite(aa) ? `<span class="score-val" title="Artificial Analysis intelligence index, from OpenRouter's benchmarks data">${aa.toFixed(1)}</span>` : '<span class="cell-na">—</span>';
+    const valCell = Number.isFinite(val) ? `<span class="score-val" title="AA score per weighted-input dollar — the higher the more benchmark quality per dollar">${val.toLocaleString(undefined, { maximumFractionDigits: 1 })}</span>` : '<span class="cell-na">—</span>';
+    const pinPout = (Number.isFinite(pin) && Number.isFinite(pout))
+      ? `${fmtPrice(pin)} / ${fmtPrice(pout)}`
+      : '<span class="cell-na">—</span>';
     const query = r.entry ? r.entry.name : r.name;
     return `<tr>
       <td class="text-right">${r.rank}</td>
       <td><span class="lb-name">${esc(r.name)}</span></td>
-      <td class="text-right lb-tokens">${fmtPrice(pin)}/M</td>
-      <td class="text-right lb-tokens">${fmtPrice(pout)}/M</td>
+      <td class="text-center score-col">${valCell}</td>
+      <td class="text-center score-col">${aaCell}</td>
+      <td class="text-right lb-tokens">${wipCell}</td>
+      <td class="text-right lb-tokens" title="Catalog input / output price, USD per million tokens">${pinPout}</td>
       <td class="text-center">${fmtContext(r.context_window)}</td>
-      <td class="text-center score-col">${scoreCellHTML(r.entry)}</td>
       <td class="text-center">${jumpBtnHTML(query)}</td>
     </tr>`;
   }).join("");
   body.innerHTML = `<table class="model-table lb-table">
     <thead><tr>
       <th class="text-right">#</th><th>Model</th>
-      <th class="text-right" title="USD per million input tokens">In $/M</th>
-      <th class="text-right" title="USD per million output tokens">Out $/M</th>
+      <th class="text-center score-col" title="Artificial Analysis intelligence score per weighted-input dollar — OpenRouter's value metric">Value</th>
+      <th class="text-center score-col" title="Artificial Analysis intelligence index (OpenRouter benchmarks data)">AA score</th>
+      <th class="text-right" title="OpenRouter's weighted input price, USD per million tokens — weighted toward input to match typical usage">Wtd $/M</th>
+      <th class="text-right" title="Catalog input / output price, USD per million tokens">Cat. in/out $/M</th>
       <th class="text-center">Context</th>
-      <th class="text-center score-col" title="LLM Stats benchmark score — quality, from a different source than price">Score</th>
       <th class="text-center">Details</th>
     </tr></thead>
     <tbody>${trs}</tbody>
