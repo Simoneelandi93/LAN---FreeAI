@@ -9,7 +9,7 @@ const OMNIRROUTER_CATALOG_URL =
 
 let allModels = [];        // { id, name, owner, source, input_price_per_m, output_price_per_m, context_window, is_free }
 let filtered = [];
-let activeSource = "OmniRouter";  // "OmniRouter" | "OpenRouter" | "both"
+let activeSource = "OmniRouter";  // "OmniRouter" | "OpenRouter" | "both" | "lookup" | "changes"
 let activeFilter = "all";      // "all" | "free" | "paid"
 let sortKey = "name";
 let sortDir = "asc";
@@ -20,7 +20,53 @@ let history = [];
 let activeChangesRange = "all";   // "all" | "weekly" | "daily"
 let activeAlertFilter = "alerted";  // default: only events that were sent to Telegram
 let activeTypeFilter = "all";       // "all" | "new" (new_model + new_free_model only)
+let omniFailed = false;
+let orFailed = false;
 const MILLIS_DAY = 86400000;
+
+// Lookup state (data/lookup.json, built by scripts/build_lookup.py)
+let lookupIndex = null;      // { byKey: Map, searchTerms: [{term, key}], ... } built lazily
+let lookupData = null;       // raw {generated_at, models}
+
+// ---------- Persisted view state ----------
+// Remembers the last view across refreshes. Deliberately excludes the search
+// box: a half-typed query surviving a reload is more annoying than useful.
+const STORAGE_KEY = "modelSources.view.v1";
+
+function loadSavedState() {
+  let saved = null;
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    saved = raw ? JSON.parse(raw) : null;
+  } catch (e) { /* storage unavailable or corrupt — fall back to defaults */ }
+  if (!saved || typeof saved !== "object") return;
+
+  // Guard each value against a left-over from a renamed or removed filter.
+  const allowed = {
+    activeSource: ["OmniRouter", "OpenRouter", "both", "lookup", "changes"],
+    activeFilter: ["all", "free", "paid"],
+    activeChangesRange: ["all", "weekly", "daily"],
+    activeAlertFilter: ["alerted", "all", "silent"],
+    activeTypeFilter: ["all", "new"],
+    sortDir: ["asc", "desc"],
+  };
+  if (allowed.activeSource.includes(saved.activeSource)) activeSource = saved.activeSource;
+  if (allowed.activeFilter.includes(saved.activeFilter)) activeFilter = saved.activeFilter;
+  if (allowed.activeChangesRange.includes(saved.activeChangesRange)) activeChangesRange = saved.activeChangesRange;
+  if (allowed.activeAlertFilter.includes(saved.activeAlertFilter)) activeAlertFilter = saved.activeAlertFilter;
+  if (allowed.activeTypeFilter.includes(saved.activeTypeFilter)) activeTypeFilter = saved.activeTypeFilter;
+  if (typeof saved.sortKey === "string" && saved.sortKey) sortKey = saved.sortKey;
+  if (allowed.sortDir.includes(saved.sortDir)) sortDir = saved.sortDir;
+}
+
+function saveState() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      activeSource, activeFilter, sortKey, sortDir,
+      activeChangesRange, activeAlertFilter, activeTypeFilter,
+    }));
+  } catch (e) { /* private mode / quota — nothing to do */ }
+}
 
 function esc(v) {
   return String(v ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" })[c]);
@@ -83,18 +129,16 @@ function sourceBadge(source) {
 async function fetchOmniRouterModels() {
   try {
     const res = await fetch(OMNIRROUTER_CATALOG_URL, { signal: AbortSignal.timeout(15000) });
-    if (!res.ok) {
-      document.getElementById("statusOmniRouterLabel").textContent = `Omni: HTTP ${res.status}`;
-      document.getElementById("statusOmniRouter").style.background = "#f59e0b";
-      return [];
-    }
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const text = await res.text();
     const list = parseOmniCatalog(text);
     document.getElementById("statusOmniRouterLabel").textContent = `Omni: ${list.length} free`;
     document.getElementById("statusOmniRouter").style.background = "#10b981";
     return list;
   } catch (e) {
-    document.getElementById("statusOmniRouterLabel").textContent = "Omni: offline";
+    omniFailed = true;
+    const msg = e instanceof Error && /^HTTP \d+$/.test(e.message) ? e.message : "offline";
+    document.getElementById("statusOmniRouterLabel").textContent = `Omni: ${msg}`;
     document.getElementById("statusOmniRouter").style.background = "#f59e0b";
     return [];
   }
@@ -144,11 +188,7 @@ function parseOmniCatalog(text) {
 async function fetchOpenRouterModels() {
   try {
     const res = await fetch(OPENROUTER_API_URL, { signal: AbortSignal.timeout(15000) });
-    if (!res.ok) {
-      document.getElementById("statusOpenRouterLabel").textContent = `OR: HTTP ${res.status}`;
-      document.getElementById("statusOpenRouter").style.background = "#f59e0b";
-      return [];
-    }
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const body = await res.json();
     const list = Array.isArray(body?.data) ? body.data : [];
     document.getElementById("statusOpenRouterLabel").textContent = `OR: ${list.length} models`;
@@ -173,7 +213,9 @@ async function fetchOpenRouterModels() {
       };
     }).filter(m => m.id);
   } catch (e) {
-    document.getElementById("statusOpenRouterLabel").textContent = "OR: offline";
+    orFailed = true;
+    const msg = e instanceof Error && /^HTTP \d+$/.test(e.message) ? e.message : "offline";
+    document.getElementById("statusOpenRouterLabel").textContent = `OR: ${msg}`;
     document.getElementById("statusOpenRouter").style.background = "#f59e0b";
     return [];
   }
@@ -262,6 +304,303 @@ async function fetchHistory() {
     } catch (e) { /* try the next path */ }
   }
   return [];
+}
+
+// ---------- Model lookup ----------
+// data/lookup.json groups every catalog row under one canonical name, with each
+// provider's price/tier/quota attached. The search is deliberately forgiving:
+// "glm5" must find "GLM-5.3", "opus 5.5" must find "Claude Opus 5.5".
+
+async function fetchLookup() {
+  for (const url of ["data/lookup.json", "../data/lookup.json"]) {
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(10000) });
+      if (!res.ok) continue;
+      const data = await res.json();
+      if (data && data.models) return data;
+    } catch (e) { /* try the next path */ }
+  }
+  return null;
+}
+
+function normToken(s) {
+  return String(s || "").toLowerCase().replace(/[^a-z0-9.]/g, "");
+}
+
+function editDistanceLE(a, b, max) {
+  // Optimal-string-alignment distance (Levenshtein + adjacent transposition):
+  // "cluade" vs "claude" is a transposition and must count as distance 1.
+  // Bails out early once even the best cell in a row exceeds max.
+  if (Math.abs(a.length - b.length) > max) return false;
+  let prev2 = null;
+  let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i];
+    let rowMin = i;
+    for (let j = 1; j <= b.length; j++) {
+      let d = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
+        d = Math.min(d, (prev2[j - 2] ?? Infinity) + 1);
+      }
+      cur[j] = d;
+      if (d < rowMin) rowMin = d;
+    }
+    if (rowMin > max) return false;
+    prev2 = prev;
+    prev = cur;
+  }
+  return prev[b.length] <= max;
+}
+
+function buildLookupIndex(data) {
+  const byKey = new Map();
+  const searchTerms = [];   // {term, key, weight}
+  for (const [key, entry] of Object.entries(data.models)) {
+    byKey.set(key, entry);
+    // Canonical name, full weight; also token-split so "opus 5.5" matches "claude opus 5.5".
+    searchTerms.push({ term: key, key, weight: 0 });
+    for (const t of key.split(/\s+/)) {
+      if (t.length >= 2) searchTerms.push({ term: t, key, weight: 1 });
+    }
+    // Model IDs carry spellings display names lack (claude-opus-5.5).
+    const ids = new Set(entry.providers.map(p => normToken(p.model_id)).filter(t => t.length >= 4));
+    for (const id of ids) searchTerms.push({ term: id, key, weight: 2 });
+  }
+  return { byKey, searchTerms };
+}
+
+function searchLookup(query) {
+  if (!lookupIndex) return { exact: [], near: [] };
+  const q = normToken(query);
+  if (!q) return { exact: [], near: [] };
+  const exact = new Map();   // key -> rank (lower = better)
+  const near = new Map();
+
+  const consider = (key, rank) => {
+    const cur = exact.get(key);
+    if (cur === undefined || rank < cur) exact.set(key, rank);
+  };
+  const suggest = (key, rank) => {
+    const cur = near.get(key);
+    if (cur === undefined || rank < cur) near.set(key, rank);
+  };
+
+  for (const { term, key, weight } of lookupIndex.searchTerms) {
+    // Substring hits rank by position (earlier = more specific).
+    const idx = term.indexOf(q);
+    if (idx !== -1) {
+      consider(key, weight * 100 + idx + (term.length === q.length ? -50 : 0));
+      continue;
+    }
+    // Typo tolerance on the whole term, close in length only.
+    if (q.length >= 4 && Math.abs(term.length - q.length) <= Math.max(2, q.length >> 2)
+        && editDistanceLE(term, q, q.length <= 6 ? 1 : 2)) {
+      suggest(key, 10 + weight);
+    }
+  }
+  // Multi-word queries: "cluade opus" must match "claude opus 5.5" even though
+  // the concatenated tokens are far apart. Score each term by how many of the
+  // query's words it matches (substring or typo-distance-1).
+  const words = query.toLowerCase().split(/\s+/).filter(w => w.length >= 3);
+  if (words.length > 1 || (!exact.size && !near.size)) {
+    for (const [key, entry] of lookupIndex.byKey) {
+      const hay = key.split(/\s+/);
+      let matched = 0;
+      for (const w of words) {
+        const wn = normToken(w);
+        if (!wn) { matched++; continue; }
+        // Longer words get distance 2 ("gmaio" → "gemini"); short ones only 1.
+        const typoDist = wn.length >= 5 ? 2 : 1;
+        let hit = hay.some(t => {
+          const tn = normToken(t);
+          if (tn.includes(wn)) return true;
+          // IDs spelled claude-opus-5.5: compare pieces too.
+          return tn.split(/[.-]/).some(piece => piece === wn || (wn.length >= 4 && piece.length >= 4 && editDistanceLE(piece, wn, 1)));
+        });
+        if (!hit && wn.length >= 4) {
+          hit = hay.some(t => {
+            const tn = normToken(t);
+            return tn.length >= 4 && editDistanceLE(tn, wn, typoDist);
+          });
+        }
+        if (hit) matched++;
+      }
+      if (matched === words.length && words.length) {
+        // All words matched — a real (possibly typo'd) multi-word hit.
+        consider(key, 200 + (entry.has_free ? 0 : 50));
+      } else if (matched >= Math.ceil(words.length * 0.6) && words.length >= 2) {
+        suggest(key, 20 + (words.length - matched));
+      }
+    }
+  }
+  const toSorted = (m, limit) => [...m.entries()]
+    .sort((a, b) => a[1] - b[1] || a[0].localeCompare(b[0]))
+    .slice(0, limit)
+    .map(([key]) => lookupIndex.byKey.get(key));
+  return { exact: toSorted(exact, 8), near: toSorted(near, 6) };
+}
+
+// Same-family cards with a free provider, ranked by name similarity to the target.
+function freeAlternatives(entry) {
+  if (!lookupIndex) return [];
+  const fam = entry.family;
+  const nameTokens = new Set(normToken(entry.name).split(".").flatMap(t => t.split("-")).filter(t => t.length >= 3));
+  const out = [];
+  for (const [key, other] of lookupIndex.byKey) {
+    if (other === entry || !other.has_free) continue;
+    let score = 0;
+    if (fam && other.family === fam) score += 2;
+    let overlap = 0;
+    for (const t of nameTokens) {
+      for (const ot of key.split(/\s+/)) {
+        if (ot === t || (t.length >= 4 && editDistanceLE(ot, t, 1))) { overlap++; break; }
+      }
+    }
+    score += overlap;
+    if (score >= 2) out.push([other, score]);
+  }
+  return out.sort((a, b) => b[1] - a[1] || a[0].name.localeCompare(b[0].name))
+    .slice(0, 4).map(([e]) => e);
+}
+
+const TIER_LABELS = {
+  free: "Free",
+  free_quota: "Free · quota",
+  credit: "Credits",
+  paid: "Paid",
+};
+const TIER_DESC = {
+  free: "No cost, no card — use it as long as the provider offers it.",
+  free_quota: "No cost, but capped: check the request/token quota.",
+  credit: "Free via signup credits or a trial — burns out.",
+  paid: "Pay per token.",
+};
+
+function fmtCardPrice(p) {
+  if (p.tier === "free") return "$0";
+  if (p.tier === "free_quota") return "$0";
+  const inP = Number(p.price_in), outP = Number(p.price_out);
+  if (Number.isFinite(inP) || Number.isFinite(outP)) {
+    const f = v => Number.isFinite(v) ? `$${v.toLocaleString(undefined, { maximumFractionDigits: 4 })}` : "?";
+    return `${f(inP)} / ${f(outP)} per 1M`;
+  }
+  return "—";
+}
+
+function lookupCardHTML(entry, { isAlt = false } = {}) {
+  const groups = {};
+  for (const p of entry.providers) (groups[p.tier] = groups[p.tier] || []).push(p);
+  const tierOrder = ["free", "free_quota", "credit", "paid"];
+  const ctx = entry.context_window ? `<span class="lk-ctx">${fmtContext(entry.context_window)} context</span>` : "";
+  const sections = tierOrder.filter(t => groups[t]).map(t => {
+    const rows = groups[t].map(p => {
+      const copyId = esc(p.model_id || "");
+      const quota = p.quota ? `<span class="lk-quota">${esc(p.quota)}</span>` : "";
+      const card = p.requires_card ? `<span class="lk-card-req" title="Provider requires a payment method on file">card required</span>` : "";
+      const link = p.provider_url || p.offer_url;
+      const provName = esc(p.provider || p.provider_id || "provider");
+      return `<div class="lk-provider">
+        <span class="lk-provider-name">${link ? `<a href="${esc(link)}" target="_blank" rel="noopener noreferrer">${provName}</a>` : provName}</span>
+        <code class="lk-model-id" title="Copy model ID" data-copy="${copyId}">${copyId}</code>
+        <span class="lk-price">${fmtCardPrice(p)}</span>
+        ${quota}${card}
+      </div>`;
+    }).join("");
+    return `<div class="lk-tier lk-tier-${t}">
+      <div class="lk-tier-head"><span class="lk-tier-label">${TIER_LABELS[t]}</span><span class="lk-tier-desc">${TIER_DESC[t]}</span></div>
+      ${rows}
+    </div>`;
+  }).join("");
+  const altTag = isAlt ? `<span class="lk-alt-tag">closest free alternative</span>` : "";
+  return `<article class="lk-card${isAlt ? " lk-card-alt" : ""}">
+    <div class="lk-card-head">
+      <h4>${esc(entry.name)}</h4>
+      ${ctx}${altTag}
+    </div>
+    ${sections}
+  </article>`;
+}
+
+function renderLookup(query) {
+  const results = document.getElementById("lookupResults");
+  const intro = document.getElementById("lookupIntro");
+  if (!lookupData) {
+    intro.hidden = false;
+    results.innerHTML = `<div class="empty"><h3>Lookup data unavailable</h3><p>The next catalog sync will generate it (scripts/build_lookup.py).</p></div>`;
+    return;
+  }
+  if (!query) {
+    intro.hidden = false;
+    // Landing state: a few free picks so the tab is never blank.
+    const picks = Object.entries(lookupData.models)
+      .filter(([, e]) => e.has_free && e.providers.length >= 2)
+      .slice(0, 6).map(([, e]) => lookupCardHTML(e)).join("");
+    results.innerHTML = `<div class="lk-section-title">Recently available free models</div>${picks}`;
+    return;
+  }
+  intro.hidden = true;
+  const { exact, near } = searchLookup(query);
+  if (!exact.length && !near.length) {
+    results.innerHTML = `<div class="empty"><h3>No match for "${esc(query)}"</h3><p>Try a shorter fragment of the name — "opus", "gemini", "kimi".</p></div>`;
+    return;
+  }
+  const exactHTML = exact.map(e => lookupCardHTML(e)).join("");
+  let html = exact.length ? `<div class="lk-section-title">${exact.length} match${exact.length === 1 ? "" : "es"}</div>${exactHTML}` : "";
+  if (!exact.length && near.length) {
+    // Query matched only fuzzily — show those as primary.
+    html = `<div class="lk-section-title">Did you mean…</div>${near.map(e => lookupCardHTML(e)).join("")}`;
+  } else if (near.length) {
+    html += `<div class="lk-section-title">Similar names</div>${near.map(e => lookupCardHTML(e)).join("")}`;
+  }
+  // Killer feature: a dead-end query (exact match exists, no free provider)
+  // must still return something actionable. Near-duplicate cards ("Claude Opus
+  // 5.5" / "Anthropic Claude Opus 5.5") share alternatives, so collect and
+  // dedupe instead of emitting a section per card.
+  const deadEnds = exact.filter(e => !e.has_free);
+  if (deadEnds.length) {
+    const seenAlts = new Set();
+    const alts = [];
+    for (const e of deadEnds) {
+      for (const a of freeAlternatives(e)) {
+        if (!seenAlts.has(a.name)) { seenAlts.add(a.name); alts.push(a); }
+      }
+    }
+    const label = deadEnds.length === 1
+      ? `No free source for ${esc(deadEnds[0].name)} — closest free alternatives`
+      : `No free source for ${esc(deadEnds[0].name)}${deadEnds.length > 2 ? ` and ${deadEnds.length - 1} similar` : " and similar"} — closest free alternatives`;
+    if (alts.length) {
+      html += `<div class="lk-section-title lk-alt-title">${label}</div>${alts.map(a => lookupCardHTML(a, { isAlt: true })).join("")}`;
+    } else {
+      html += `<div class="lk-alt-title lk-none">No free source for ${esc(deadEnds[0].name)} is known right now — and no close free alternative either. Cheapest paid: ${esc((deadEnds[0].providers[0] || {}).provider || "?")} at ${fmtCardPrice(deadEnds[0].providers[0] || {})}</div>`;
+    }
+  }
+  results.innerHTML = html;
+}
+
+// Copy-to-clipboard via event delegation: cards re-render on every keystroke.
+function setupLookupCopy() {
+  document.getElementById("lookupResults").addEventListener("click", async e => {
+    const el = e.target.closest(".lk-model-id");
+    if (!el) return;
+    const text = el.dataset.copy;
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch (err) {
+      // Clipboard API denied (non-secure origin / permission): fall back to a
+      // temporary textarea + execCommand, which still works in most browsers.
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand("copy"); } catch (e2) { /* give up silently */ }
+      ta.remove();
+    }
+    el.classList.add("copied");
+    el.title = "Copied!";
+    setTimeout(() => { el.classList.remove("copied"); el.title = "Copy model ID"; }, 1200);
+  });
 }
 
 const CHANGE_TYPE_LABELS = {
@@ -435,23 +774,61 @@ function updateSortIndicators() {
   });
 }
 
+// Pushes the current filter state back into the control styling. Needed because
+// loadSavedState restores state without firing any click handler.
+function syncControls() {
+  document.querySelectorAll(".tab-pri[data-source]").forEach(b => {
+    const on = b.dataset.source === activeSource;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-selected", String(on));
+  });
+  document.querySelectorAll(".filter[data-filter]").forEach(b => {
+    const on = b.dataset.filter === activeFilter;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-selected", String(on));
+  });
+  document.querySelectorAll("#changesView .chg-btn[data-range]").forEach(b => {
+    const on = b.dataset.range === activeChangesRange;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-selected", String(on));
+  });
+  document.querySelectorAll("#changesView .chg-btn[data-alert]").forEach(b => {
+    const on = b.dataset.alert === activeAlertFilter;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-selected", String(on));
+  });
+  document.querySelectorAll("#changesView .chg-btn[data-changes-type]").forEach(b => {
+    const on = b.dataset.changesType === activeTypeFilter;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-selected", String(on));
+  });
+}
+
 function render() {
   const query = document.getElementById("searchInput").value.trim().toLowerCase();
   const isChanges = activeSource === "changes";
+  const isLookup = activeSource === "lookup";
+
+  syncControls();
 
   const toolbar = document.getElementById("sourceFilters");
-  if (toolbar) toolbar.style.display = isChanges ? "none" : "flex";
+  if (toolbar) toolbar.style.display = isChanges || isLookup ? "none" : "flex";
 
   const tableView = document.getElementById("modelTableContainer");
   const changesView = document.getElementById("changesView");
-  if (tableView) tableView.style.display = isChanges ? "none" : "block";
+  const lookupView = document.getElementById("lookupView");
+  if (tableView) tableView.style.display = isChanges || isLookup ? "none" : "block";
   if (changesView) changesView.hidden = !isChanges;
+  if (lookupView) lookupView.hidden = !isLookup;
 
   document.getElementById("searchInput").placeholder = isChanges
     ? "Search changelog updates..."
-    : "Search models...";
+    : isLookup
+      ? "Search a model — \"opus 5.5\", \"glm5\", \"gemini flash\"..."
+      : "Search models...";
 
   if (isChanges) { renderChanges(query); return; }
+  if (isLookup) { renderLookup(query); return; }
 
   applyFilters();
   renderTable();
@@ -475,12 +852,19 @@ async function loadData() {
   allModels = [...omniModels, ...orModels];
 
   history = await fetchHistory();
+  lookupData = await fetchLookup();
+  lookupIndex = lookupData ? buildLookupIndex(lookupData) : null;
 
   document.getElementById("totalOmniRouter").textContent = omniModels.length.toLocaleString();
   document.getElementById("totalOpenRouter").textContent = orModels.length.toLocaleString();
   document.getElementById("totalOmniRouterFree").textContent = omniModels.filter(m => m.is_free).length.toLocaleString();
   document.getElementById("totalOpenRouterFree").textContent = orModels.filter(m => m.is_free).length.toLocaleString();
   document.getElementById("lastUpdated").textContent = `Updated ${new Date().toLocaleTimeString()}`;
+
+  // Only surface Retry when a source actually failed — a slow-but-successful
+  // load must not leave a permanent button in the header.
+  const retry = document.getElementById("retryBtn");
+  retry.hidden = !(omniFailed || orFailed);
 
   render();
 }
@@ -494,6 +878,7 @@ document.querySelectorAll(".tab-pri[data-source]").forEach(btn => {
     btn.setAttribute("aria-selected", "true");
     activeSource = btn.dataset.source;
     visibleCount = 100000;  // Load all models at once
+    saveState();
     render();
   });
 });
@@ -511,6 +896,7 @@ document.querySelectorAll("#changesView .chg-btn").forEach(btn => {
     if (scope === "range") activeChangesRange = btn.dataset.range;
     else if (scope === "alert") activeAlertFilter = btn.dataset.alert;
     else activeTypeFilter = btn.dataset.changesType;
+    saveState();
     render();
   });
 });
@@ -522,6 +908,7 @@ document.querySelectorAll(".filter[data-filter]").forEach(btn => {
     btn.setAttribute("aria-selected", "true");
     activeFilter = btn.dataset.filter;
     visibleCount = 200;
+    saveState();
     render();
   });
 });
@@ -531,6 +918,7 @@ document.querySelectorAll("#modelTable th.sortable").forEach(th => {
     const key = th.dataset.sort;
     if (sortKey === key) sortDir = sortDir === "asc" ? "desc" : "asc";
     else { sortKey = key; sortDir = "asc"; }
+    saveState();
     visibleCount = 200;
     render();
   });
@@ -545,4 +933,12 @@ window.addEventListener("keydown", e => {
   }
 });
 
+document.getElementById("retryBtn").addEventListener("click", () => {
+  omniFailed = false;
+  orFailed = false;
+  loadData();
+});
+
+loadSavedState();
+setupLookupCopy();
 loadData();

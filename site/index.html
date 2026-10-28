@@ -6,6 +6,13 @@
   <meta name="theme-color" content="#090a0f">
   <meta name="description" content="Models from the OmniRouter and OpenRouter repos and catalogs — no local daemon, no API keys.">
   <title>Model Sources — OmniRouter & OpenRouter</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2310b981' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m4.93 4.93 4.24 4.24'/%3E%3Cpath d='m14.83 9.17 4.24-4.24'/%3E%3Cpath d='m14.83 14.83 4.24 4.24'/%3E%3Cpath d='m9.17 14.83-4.24 4.24'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E">
+  <meta property="og:title" content="Model Sources — OmniRouter & OpenRouter">
+  <meta property="og:description" content="Live catalog of ~9,000 models across ~230 providers, benchmark scores, free-tier quotas and a changelog of price drops to $0.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <!-- CANONICAL is replaced with the live Pages URL by .github/workflows/deploy.yml -->
+  <link rel="canonical" href="__PAGES_URL__">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -36,6 +43,7 @@
         <span class="status-indicator" id="statusOpenRouter"></span>
         <span class="router-status" id="statusOpenRouterLabel" role="button" tabindex="0">OR:...</span>
         <span class="updated" id="lastUpdated">Checking...</span>
+        <button class="retry-btn" id="retryBtn" type="button" hidden>Retry</button>
       </div>
     </header>
 
@@ -65,6 +73,7 @@
             <button class="tab-pri active" data-source="OmniRouter" role="tab" aria-selected="true">OmniRouter</button>
             <button class="tab-pri" data-source="OpenRouter" role="tab" aria-selected="false">OpenRouter</button>
             <button class="tab-pri" data-source="both" role="tab" aria-selected="false">Both</button>
+            <button class="tab-pri" data-source="lookup" role="tab" aria-selected="false">Lookup</button>
             <button class="tab-pri" data-source="changes" role="tab" aria-selected="false">Changelog</button>
           </nav>
 
@@ -98,14 +107,22 @@
               <th class="col-owner text-left">Owner</th>
               <th class="col-price sortable text-right" data-sort="input">Input $/M <span class="sort-ind"></span></th>
               <th class="col-price sortable text-right" data-sort="output">Output $/M <span class="sort-ind"></span></th>
-              <th class="col-context sortable text-right" data-sort="context">Context <span class="sort-ind"></span></th>
-              <th class="col-score sortable text-center" data-sort="score">Score <span class="sort-ind"></span></th>
-              <th class="col-quota text-center">Quota</th>
-              <th class="col-license text-center">Cost</th>
+              <th class="col-context sortable text-right" data-sort="context" title="Maximum context window in tokens">Context <span class="sort-ind"></span></th>
+              <th class="col-score sortable text-center" data-sort="score" title="LLM Stats benchmark score (0–100). — means no benchmark data for this model">Score <span class="sort-ind"></span></th>
+              <th class="col-quota text-center" title="Free-tier request quota, from the provider's published free tier">Quota</th>
+              <th class="col-cost text-center" title="Free when both input and output cost $0">Cost</th>
             </tr>
           </thead>
           <tbody id="modelBody"></tbody>
         </table>
+      </section>
+
+      <section class="lookup-view" id="lookupView" hidden>
+        <div class="lookup-intro" id="lookupIntro">
+          <h3>Find a model, see who serves it free</h3>
+          <p>Type a model name — "claude opus", "glm5", "gemini flash". Typos are fine. Providers are grouped: free forever → free with quota → signup credits → paid. If a model has no free source, the closest free alternatives are shown.</p>
+        </div>
+        <div class="lookup-results" id="lookupResults"></div>
       </section>
 
       <section class="changes-view" id="changesView" hidden>
@@ -135,6 +152,16 @@
       </div>
     </footer>
   </div>
+
+  <noscript>
+    <style>.shell { display: none; }</style>
+    <div style="font-family: system-ui, sans-serif; background: #090a0f; color: #e6e9f2; min-height: 100vh; display: grid; place-items: center; text-align: center; padding: 24px;">
+      <div>
+        <h1 style="font-size: 20px; margin: 0 0 8px;">Model Sources</h1>
+        <p style="color: #9aa4b2; margin: 0;">This dashboard needs JavaScript — it loads the live model catalogs in your browser.</p>
+      </div>
+    </div>
+  </noscript>
 
   <script src="app.js"></script>
 </body>

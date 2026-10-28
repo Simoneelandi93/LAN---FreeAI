@@ -12,6 +12,7 @@
 - **Self-updating dashboard**: filterable table (free / OpenRouter / reasoning / tool use / open weights) deployed to GitHub Pages on each data change.
 - **Auto-updated free tiers**: `data/offers.json` is generated every sync from the community-maintained [awesome-ai-free-tiers](https://github.com/4pixeltechBR/awesome-ai-free-tiers) dataset (65 providers, 126 model entries with per-model rate limits), so quotas and deprecated tiers stay current without hand edits.
 - **Scout view + combo builder**: ranks the best free model for every provider (by LLM Stats score, daily quota, freshness or context), flags models reachable on a local router, and builds a combo — one pick per provider — copyable as a ready-to-paste model-ID list for [9router](https://github.com/9router) or OmniRouter.
+- **Model lookup**: type a model name (typos welcome — "cluade opus" finds Claude Opus) and get a card of every provider serving it, grouped free → free-with-quota → signup credits → paid, each with the exact model ID one click to copy. When a model has no free source, the closest free alternatives are suggested instead of a dead end. Backed by `data/lookup.json`, generated every sync by `scripts/build_lookup.py`.
 
 ---
 
@@ -157,7 +158,8 @@ free-ai-radar/
 │   ├── models.json        # Normalized catalog snapshot (~9k models)
 │   ├── llm_stats.json     # LLM Stats score table (416 models, joined by id)
 │   ├── offers.json        # Provider free tiers and quotas (curated)
-│   └── history.json       # Last 200 change events
+│   ├── history.json       # Last 200 change events
+│   └── lookup.json        # Model-centric join: canonical name → providers with tiers
 ├── sources/
 │   ├── models_dev.py      # models.dev → normalized model records
 │   ├── free_tiers_upstream.py # awesome-ai-free-tiers → normalized offers + provider aliases
@@ -166,6 +168,7 @@ free-ai-radar/
 ├── scripts/
 │   ├── collect.py         # Orchestrator (fetch → diff → alert → save)
 │   ├── detect_changes.py  # Grouping, free-transition and price-drop logic
+│   ├── build_lookup.py    # Canonical-name grouping + per-provider tier labeling
 │   └── notify_telegram.py # Batched, rate-limit-aware Telegram sender
 └── site/                  # Zero-dependency frontend (HTML, CSS, JS)
 ```

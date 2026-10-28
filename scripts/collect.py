@@ -8,12 +8,14 @@ from sources.litellm import fetch_litellm_catalog, enrich_models
 from sources.llm_stats import fetch_llm_stats, attach_llm_stats, stats_index
 from scripts.detect_changes import detect_model_changes
 from scripts.notify_telegram import send_telegram, send_alerts
+from scripts.build_lookup import save_lookup
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 MODELS_FILE = os.path.join(DATA_DIR, "models.json")
 OFFERS_FILE = os.path.join(DATA_DIR, "offers.json")
 HISTORY_FILE = os.path.join(DATA_DIR, "history.json")
 STATS_FILE = os.path.join(DATA_DIR, "llm_stats.json")
+LOOKUP_FILE = os.path.join(DATA_DIR, "lookup.json")
 def load_json(filepath: str, default: Any = None):
     if os.path.exists(filepath):
         try:
@@ -165,6 +167,7 @@ def main():
     save_json(MODELS_FILE, new_models)
     save_json(OFFERS_FILE, curated_offers)
     save_json(HISTORY_FILE, updated_history)
+    save_lookup(new_models)
 
     print(
         f"[Done] Total models tracked: {len(new_models)} "
