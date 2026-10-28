@@ -92,7 +92,9 @@ function esc(v) {
 function isInvalidText(val) {
   if (val === null || val === undefined) return true;
   const s = String(val).trim().toLowerCase();
-  return s === "" || s === "nan" || s === "null" || s === "undefined" || s === "none";
+  // "nan" is a real provider (nan.builders, brand name "NaN") — only junk
+  // strings, not it. Numeric NaN is caught by Number.isFinite in price().
+  return s === "" || s === "null" || s === "undefined" || s === "none";
 }
 
 function getModelName(m) {
@@ -523,6 +525,12 @@ function freeAlternatives(entry) {
     .slice(0, 4).map(([e]) => e);
 }
 
+const STATUS_BADGES = {
+  deprecated: { cls: "lk-status-deprecated", label: "deprecated", title: "Provider marked this model deprecated — it may return HTTP 410 any moment" },
+  beta: { cls: "lk-status-beta", label: "beta", title: "Provider marks this model beta — expect changes or removal" },
+  alpha: { cls: "lk-status-beta", label: "alpha", title: "Provider marks this model alpha — early preview, may break" },
+};
+
 const TIER_LABELS = {
   free: "Free",
   free_quota: "Free · quota",
@@ -570,13 +578,15 @@ function lookupCardHTML(entry, { isAlt = false } = {}) {
       const quota = p.quota ? `<span class="lk-quota">${esc(p.quota)}</span>` : "";
       const checked = fmtChecked(p);
       const card = p.requires_card ? `<span class="lk-card-req" title="Provider requires a payment method on file">card required</span>` : "";
+      const status = STATUS_BADGES[p.status] || "";
+      const statusBadge = status ? `<span class="${status.cls}" title="${status.title}">${status.label}</span>` : "";
       const link = p.provider_url || p.offer_url;
       const provName = esc(p.provider || p.provider_id || "provider");
       return `<div class="lk-provider">
         <span class="lk-provider-name">${link ? `<a href="${esc(link)}" target="_blank" rel="noopener noreferrer">${provName}</a>` : provName}</span>
         <code class="lk-model-id" title="Copy model ID" data-copy="${copyId}">${copyId}</code>
         <span class="lk-price">${fmtCardPrice(p)}</span>
-        ${quota}${checked}${card}
+        ${statusBadge}${quota}${checked}${card}
       </div>`;
     }).join("");
     return `<div class="lk-tier lk-tier-${t}">
@@ -749,6 +759,14 @@ function renderUsageBoard() {
     const entry = entryForBoardRow({ openrouterId: r.openrouter_id, name: r.name });
     const score = scoreForEntry(entry);
     const scoreCell = score === null ? '<span class="cell-na">—</span>' : `<span class="score-val">${score.toFixed(1)}</span>`;
+    const pin = Number(r.price_in), pout = Number(r.price_out);
+    const hasPrice = Number.isFinite(pin) && Number.isFinite(pout);
+    const priceTxt = hasPrice
+      ? (pin === 0 && pout === 0 ? "free" : `${fmtPrice(pin * 1e6)} / ${fmtPrice(pout * 1e6)}`)
+      : null;
+    const priceCell = priceTxt
+      ? `<td class="text-right lb-tokens" title="Input / output, USD per million tokens — from the OpenRouter catalog${r.free ? ", flagged free by the usage source" : ""}">${priceTxt === "free" ? '<span class="text-emerald font-semibold">free</span>' : priceTxt}</td>`
+      : '<td class="text-right lb-tokens"><span class="cell-na">—</span></td>';
     const query = entry ? entry.name : r.name;
     return `<tr>
       <td class="text-right">${r.rank}</td>
@@ -756,6 +774,8 @@ function renderUsageBoard() {
       <td class="text-center">${esc(r.provider)}</td>
       <td class="text-right lb-tokens">${esc(r.tokens_display || fmtTokens(r.tokens))}</td>
       <td class="text-right">${fmtTokens(r.requests)}</td>
+      ${priceCell}
+      <td class="text-center">${fmtContext(r.context_window)}</td>
       <td class="text-center score-col">${scoreCell}</td>
       <td class="text-center"><span class="chg-tag ${changeCls}">${changeTxt}</span></td>
       <td class="text-center">${jumpBtnHTML(query)}</td>
@@ -765,6 +785,8 @@ function renderUsageBoard() {
     <thead><tr>
       <th class="text-right">#</th><th>Model</th><th class="text-center">Provider</th>
       <th class="text-right">Tokens/wk</th><th class="text-right">Requests/wk</th>
+      <th class="text-right" title="Input / output, USD per million tokens — from the OpenRouter catalog">$/M in/out</th>
+      <th class="text-center">Context</th>
       <th class="text-center score-col" title="LLM Stats benchmark score — quality, from a different source than usage">Score</th>
       <th class="text-center">±</th><th class="text-center">Providers</th>
     </tr></thead>
@@ -800,7 +822,10 @@ function renderFreeBoard() {
   }
   note.textContent = "Best: LLM Stats benchmark score (artificial-analysis-style intelligence index), filtered to models with a free provider. Free-tier quotas are on each model's Lookup card.";
   const trs = rows.map((r, i) => {
-    const provs = r.freeProviders.slice(0, 3).map(p => esc(p.provider)).join(", ");
+    const provs = r.freeProviders.slice(0, 3).map(p => {
+      const name = esc(p.provider);
+      return p.status === "deprecated" ? `<span class="prov-deprecated" title="This provider marked the model deprecated — it may stop working">${name}</span>` : name;
+    }).join(", ");
     const more = r.freeProviders.length > 3 ? ` +${r.freeProviders.length - 3}` : "";
     const firstId = r.freeProviders[0]?.model_id || "";
     return `<tr>
@@ -879,17 +904,32 @@ function renderFastestBoard() {
     body.innerHTML = `<div class="empty"><h3>Speed data unavailable</h3><p>The next catalog sync will fetch it.</p></div>`;
     return;
   }
-  note.textContent = "OpenRouter's own provider performance data: median output throughput (tok/s) across providers, with the fastest provider named. Not our measurement.";
+  note.textContent = "OpenRouter's own provider performance data: median output throughput (tok/s) across providers, with the fastest provider named. The price column is what you pay at that fastest provider ($/M tokens) — not our measurement.";
   const trs = rows.map(r => {
     const tps = Number(r.throughput);
     const lat = Number(r.latency_ms);
+    const bestPrice = Number(r.best_price_per_m);
+    const priceCell = Number.isFinite(bestPrice)
+      ? (bestPrice === 0 ? '<span class="text-emerald font-semibold">free</span>' : `${fmtPrice(bestPrice)}/M`)
+      : '<span class="cell-na">—</span>';
+    // Everything else the row carries goes into the tooltip, so no field is
+    // collected but invisible.
+    const tips = [];
+    if (r.provider_count) tips.push(`${r.provider_count} providers`);
+    if (r.best_latency_provider) tips.push(`lowest latency at ${r.best_latency_provider} (${fmtPrice(Number(r.best_latency_price_per_m))}/M)`);
+    const pin = Number(r.price_in), pout = Number(r.price_out);
+    if (Number.isFinite(pin) && Number.isFinite(pout)) {
+      tips.push(`cheapest anywhere: ${fmtPrice(pin * 1e6)}/M in, ${fmtPrice(pout * 1e6)}/M out`);
+    }
+    const tipAttr = tips.length ? ` title="${esc(tips.join(" · "))}"` : "";
     const query = r.entry ? r.entry.name : r.name;
     return `<tr>
       <td class="text-right">${r.rank}</td>
       <td><span class="lb-name">${esc(r.name)}</span></td>
       <td class="text-right lb-tokens">${Number.isFinite(tps) ? `${tps.toLocaleString(undefined, { maximumFractionDigits: 0 })} tok/s` : '<span class="cell-na">—</span>'}</td>
       <td class="text-right">${Number.isFinite(lat) ? `${lat.toLocaleString(undefined, { maximumFractionDigits: 0 })} ms` : '<span class="cell-na">—</span>'}</td>
-      <td>${esc(r.best_provider || "—")}</td>
+      <td${tipAttr}>${esc(r.best_provider || "—")}</td>
+      <td class="text-right lb-tokens">${priceCell}</td>
       <td class="text-center score-col">${scoreCellHTML(r.entry)}</td>
       <td class="text-center">${jumpBtnHTML(query)}</td>
     </tr>`;
@@ -900,6 +940,7 @@ function renderFastestBoard() {
       <th class="text-right" title="Median output tokens per second across OpenRouter providers">Throughput</th>
       <th class="text-right" title="Median time to first token, milliseconds">Latency</th>
       <th title="The provider with the highest measured throughput for this model">Fastest at</th>
+      <th class="text-right" title="USD per million tokens at that fastest provider">$/M</th>
       <th class="text-center score-col" title="LLM Stats benchmark score — quality, from a different source than speed">Score</th>
       <th class="text-center">Details</th>
     </tr></thead>

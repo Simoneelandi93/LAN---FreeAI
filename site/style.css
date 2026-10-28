@@ -891,6 +891,28 @@ a:hover { color: var(--accent-light); }
   padding: 0 8px;
 }
 
+.lk-status-deprecated {
+  font-size: 11px;
+  color: var(--rose);
+  border: 1px solid rgba(228, 86, 92, 0.45);
+  border-radius: 999px;
+  padding: 0 8px;
+}
+
+.lk-status-beta {
+  font-size: 11px;
+  color: var(--amber);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 999px;
+  padding: 0 8px;
+}
+
+.prov-deprecated {
+  color: var(--rose);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
 .lk-checked, .lk-stale {
   font-size: 10.5px;
   color: var(--text-dim);

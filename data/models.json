@@ -645,7 +645,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/zai-coding-plan/"
   },
   {
@@ -675,7 +675,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/zai-coding-plan/",
     "litellm": {
       "litellm_key": "together_ai/zai-org/GLM-4.7",
@@ -724,7 +724,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/zai-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.2",
@@ -775,7 +775,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/zai-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.3",
@@ -826,7 +826,7 @@
     "context_window": 200000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/zai-coding-plan/",
     "litellm": {
       "litellm_key": "novita/zai-org/glm-5-turbo",
@@ -877,7 +877,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/zai-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.3-flash",
@@ -928,7 +928,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/zai-coding-plan/"
   },
   {
@@ -51196,7 +51196,7 @@
     "context_window": 131072,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/tencent-coding-plan/"
   },
   {
@@ -51226,7 +51226,7 @@
     "context_window": 131072,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/tencent-coding-plan/"
   },
   {
@@ -51256,7 +51256,7 @@
     "context_window": 131072,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/tencent-coding-plan/"
   },
   {
@@ -51286,7 +51286,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/tencent-coding-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.5",
@@ -51335,7 +51335,7 @@
     "context_window": 131072,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/tencent-coding-plan/"
   },
   {
@@ -51365,7 +51365,7 @@
     "context_window": 202752,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/tencent-coding-plan/",
     "litellm": {
       "litellm_key": "together_ai/zai-org/GLM-5",
@@ -51414,7 +51414,7 @@
     "context_window": 131072,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/tencent-coding-plan/"
   },
   {
@@ -51446,7 +51446,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/tencent-coding-plan/",
     "litellm": {
       "litellm_key": "deepinfra/moonshotai/Kimi-K2.5",
@@ -68358,7 +68358,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "baseten/moonshotai/Kimi-K2.6",
@@ -68407,7 +68407,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "deepinfra/Qwen/Qwen3.7-Max",
@@ -68458,7 +68458,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "together_ai/Qwen/Qwen3.6-Plus",
@@ -68508,7 +68508,7 @@
     "context_window": 0,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/happyhorse-1.1-i2v",
@@ -68559,7 +68559,7 @@
     "context_window": 0,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/happyhorse-1.1-r2v",
@@ -68611,7 +68611,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/"
   },
   {
@@ -68641,7 +68641,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "prism/deepseek-v4-flash",
@@ -68693,7 +68693,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/deepseek-v4-pro",
@@ -68745,7 +68745,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/kimi-k2.7-code",
@@ -68797,7 +68797,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "together_ai/deepseek-ai/DeepSeek-V4.1-Flash-1017",
@@ -68846,7 +68846,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/qwen-image-2.0",
@@ -68898,7 +68898,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "llm_stats_id": "qwen3.8-max"
   },
@@ -68929,7 +68929,7 @@
     "context_window": 131072,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
@@ -68978,7 +68978,7 @@
     "context_window": 196608,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.5",
@@ -69027,7 +69027,7 @@
     "context_window": 0,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/happyhorse-1.1-t2v",
@@ -69077,7 +69077,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.2",
@@ -69131,7 +69131,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/qwen3.8-max",
@@ -69182,7 +69182,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "baseten/deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -69231,7 +69231,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.3",
@@ -69282,7 +69282,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/"
   },
   {
@@ -69312,7 +69312,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/qwen-image-2.0-pro",
@@ -69362,7 +69362,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "baseten/deepseek-ai/DeepSeek-V4-Pro-0813",
@@ -69413,7 +69413,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/qwen3.8-flash",
@@ -69464,7 +69464,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/"
   },
   {
@@ -69494,7 +69494,7 @@
     "context_window": 202752,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "together_ai/zai-org/GLM-5",
@@ -69543,7 +69543,7 @@
     "context_window": 202752,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "together_ai/zai-org/GLM-5.1",
@@ -69593,7 +69593,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/deepseek-v4.1-flash",
@@ -69646,7 +69646,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "deepinfra/moonshotai/Kimi-K2.5",
@@ -69697,7 +69697,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/qwen3.7-plus",
@@ -77252,7 +77252,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-sgp/",
     "litellm": {
       "litellm_key": "opencode_go/mimo-v2.6-pro",
@@ -77306,7 +77306,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-sgp/",
     "litellm": {
       "litellm_key": "opencode_go/mimo-v2.6-flash",
@@ -77357,7 +77357,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-sgp/"
   },
   {
@@ -77387,7 +77387,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-sgp/",
     "litellm": {
       "litellm_key": "opencode_go/mimo-v2.5-pro",
@@ -77438,7 +77438,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-sgp/"
   },
   {
@@ -77468,7 +77468,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-sgp/"
   },
   {
@@ -77501,7 +77501,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-sgp/",
     "litellm": {
       "litellm_key": "opencode_go/mimo-v2.5",
@@ -107314,7 +107314,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/umans-ai-coding-plan/",
     "llm_stats_id": "glm-5.3-flash"
   },
@@ -107346,7 +107346,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/umans-ai-coding-plan/",
     "llm_stats_id": "deepseek-v4.1-flash-1017"
   },
@@ -107378,7 +107378,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/umans-ai-coding-plan/",
     "llm_stats_id": "kimi-k3"
   },
@@ -107410,7 +107410,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/umans-ai-coding-plan/"
   },
   {
@@ -107440,7 +107440,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/umans-ai-coding-plan/"
   },
   {
@@ -107471,7 +107471,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/umans-ai-coding-plan/",
     "llm_stats_id": "qwen3.6-35b-a3b"
   },
@@ -107502,7 +107502,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/umans-ai-coding-plan/",
     "llm_stats_id": "glm-5.3"
   },
@@ -107534,7 +107534,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/umans-ai-coding-plan/",
     "llm_stats_id": "deepseek-v4.1-flash"
   },
@@ -107567,7 +107567,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/umans-ai-coding-plan/"
   },
   {
@@ -120128,7 +120128,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/nan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.3",
@@ -120180,7 +120180,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/nan/",
     "llm_stats_id": "gemma-4-26b-a4b-it"
   },
@@ -120212,7 +120212,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/nan/",
     "litellm": {
       "litellm_key": "prism/deepseek-v4-flash",
@@ -120266,7 +120266,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/nan/",
     "llm_stats_id": "qwen3.6-35b-a3b"
   },
@@ -120298,7 +120298,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/nan/",
     "litellm": {
       "litellm_key": "opencode_go/qwen3.8-flash",
@@ -120351,7 +120351,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/nan/",
     "litellm": {
       "litellm_key": "opencode_go/mimo-v2.6-flash",
@@ -120403,7 +120403,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/nan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.3-flash",
@@ -120454,7 +120454,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/nan/"
   },
   {
@@ -195495,7 +195495,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/kuae-cloud-coding-plan/",
     "litellm": {
       "litellm_key": "together_ai/zai-org/GLM-4.7",
@@ -231920,7 +231920,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-ams/",
     "litellm": {
       "litellm_key": "opencode_go/mimo-v2.6-pro",
@@ -231974,7 +231974,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-ams/",
     "litellm": {
       "litellm_key": "opencode_go/mimo-v2.6-flash",
@@ -232025,7 +232025,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-ams/"
   },
   {
@@ -232055,7 +232055,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-ams/",
     "litellm": {
       "litellm_key": "opencode_go/mimo-v2.5-pro",
@@ -232106,7 +232106,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-ams/"
   },
   {
@@ -232136,7 +232136,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-ams/"
   },
   {
@@ -232169,7 +232169,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-ams/",
     "litellm": {
       "litellm_key": "opencode_go/mimo-v2.5",
@@ -233700,7 +233700,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-cn-coding-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.1",
@@ -233749,7 +233749,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-cn-coding-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.7-highspeed",
@@ -233799,7 +233799,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-cn-coding-plan/",
     "litellm": {
       "litellm_key": "refuseless/minimax-m3.1-flash",
@@ -233848,7 +233848,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-cn-coding-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2",
@@ -233897,7 +233897,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-cn-coding-plan/",
     "litellm": {
       "litellm_key": "aihubmix/minimax-m2.7",
@@ -233946,7 +233946,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-cn-coding-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.5",
@@ -233995,7 +233995,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-cn-coding-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.5-highspeed",
@@ -234045,7 +234045,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-cn-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/minimax-m3",
@@ -234098,7 +234098,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-cn-coding-plan/"
   },
   {
@@ -239483,7 +239483,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan/",
     "litellm": {
       "litellm_key": "together_ai/Qwen/Qwen3.6-Plus",
@@ -239532,7 +239532,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/qwen3-coder-plus",
@@ -239580,7 +239580,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan/",
     "litellm": {
       "litellm_key": "aihubmix/qwen3-coder-next",
@@ -239630,7 +239630,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/qwen3.5-plus",
@@ -239678,7 +239678,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/qwen3-max-2026-01-23",
@@ -239727,7 +239727,7 @@
     "context_window": 202752,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan/",
     "litellm": {
       "litellm_key": "together_ai/zai-org/GLM-4.7",
@@ -239776,7 +239776,7 @@
     "context_window": 196608,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.5",
@@ -239825,7 +239825,7 @@
     "context_window": 202752,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan/",
     "litellm": {
       "litellm_key": "together_ai/zai-org/GLM-5",
@@ -239876,7 +239876,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan/",
     "litellm": {
       "litellm_key": "deepinfra/moonshotai/Kimi-K2.5",
@@ -239927,7 +239927,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/qwen3.7-plus",
@@ -254840,7 +254840,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "baseten/moonshotai/Kimi-K2.6",
@@ -254889,7 +254889,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "deepinfra/Qwen/Qwen3.7-Max",
@@ -254940,7 +254940,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "together_ai/Qwen/Qwen3.6-Plus",
@@ -254990,7 +254990,7 @@
     "context_window": 0,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/happyhorse-1.1-i2v",
@@ -255041,7 +255041,7 @@
     "context_window": 0,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/happyhorse-1.1-r2v",
@@ -255093,7 +255093,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/"
   },
   {
@@ -255123,7 +255123,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "prism/deepseek-v4-flash",
@@ -255175,7 +255175,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "opencode_go/deepseek-v4-pro",
@@ -255227,7 +255227,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "opencode_go/kimi-k2.7-code",
@@ -255279,7 +255279,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "together_ai/deepseek-ai/DeepSeek-V4.1-Flash-1017",
@@ -255328,7 +255328,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/qwen-image-2.0",
@@ -255380,7 +255380,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "llm_stats_id": "qwen3.8-max"
   },
@@ -255411,7 +255411,7 @@
     "context_window": 131072,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
@@ -255460,7 +255460,7 @@
     "context_window": 196608,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.5",
@@ -255509,7 +255509,7 @@
     "context_window": 0,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/happyhorse-1.1-t2v",
@@ -255559,7 +255559,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.2",
@@ -255613,7 +255613,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "opencode_go/qwen3.8-max",
@@ -255664,7 +255664,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "baseten/deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -255713,7 +255713,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.3",
@@ -255764,7 +255764,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/"
   },
   {
@@ -255794,7 +255794,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/qwen-image-2.0-pro",
@@ -255844,7 +255844,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "baseten/deepseek-ai/DeepSeek-V4-Pro-0813",
@@ -255895,7 +255895,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "opencode_go/qwen3.8-flash",
@@ -255946,7 +255946,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/"
   },
   {
@@ -255976,7 +255976,7 @@
     "context_window": 202752,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "together_ai/zai-org/GLM-5",
@@ -256025,7 +256025,7 @@
     "context_window": 202752,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "together_ai/zai-org/GLM-5.1",
@@ -256075,7 +256075,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "opencode_go/deepseek-v4.1-flash",
@@ -256128,7 +256128,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "deepinfra/moonshotai/Kimi-K2.5",
@@ -256179,7 +256179,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
       "litellm_key": "opencode_go/qwen3.7-plus",
@@ -256711,7 +256711,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/kimi-code-plan-cn/",
     "llm_stats_id": "kimi-k2.8"
   },
@@ -256743,7 +256743,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/kimi-code-plan-cn/"
   },
   {
@@ -256775,7 +256775,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/kimi-code-plan-cn/"
   },
   {
@@ -256807,7 +256807,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/kimi-code-plan-cn/",
     "llm_stats_id": "kimi-k3"
   },
@@ -256840,7 +256840,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/kimi-code-plan-cn/"
   },
   {
@@ -256872,7 +256872,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/kimi-code-plan-cn/"
   },
   {
@@ -268415,7 +268415,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/volcengine-coding-plan/",
     "litellm": {
       "litellm_key": "prism/deepseek-v4-flash",
@@ -268467,7 +268467,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/volcengine-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/deepseek-v4-pro",
@@ -268519,7 +268519,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/volcengine-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/kimi-k2.7-code",
@@ -268572,7 +268572,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/volcengine-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/minimax-m3",
@@ -268625,7 +268625,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/volcengine-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/kimi-k3",
@@ -268676,7 +268676,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/volcengine-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.3",
@@ -268729,7 +268729,7 @@
     "context_window": 256000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/volcengine-coding-plan/",
     "litellm": {
       "litellm_key": "aihubmix/doubao-seed-2-1-turbo",
@@ -268780,7 +268780,7 @@
     "context_window": 256000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/volcengine-coding-plan/",
     "llm_stats_id": "seed-2.0-lite"
   },
@@ -268813,7 +268813,7 @@
     "context_window": 256000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/volcengine-coding-plan/"
   },
   {
@@ -268846,7 +268846,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/volcengine-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.3-flash",
@@ -268897,7 +268897,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-coding-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.1",
@@ -268946,7 +268946,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-coding-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.7-highspeed",
@@ -268996,7 +268996,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-coding-plan/",
     "litellm": {
       "litellm_key": "refuseless/minimax-m3.1-flash",
@@ -269045,7 +269045,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-coding-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2",
@@ -269094,7 +269094,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-coding-plan/",
     "litellm": {
       "litellm_key": "aihubmix/minimax-m2.7",
@@ -269143,7 +269143,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-coding-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.5",
@@ -269192,7 +269192,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-coding-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.5-highspeed",
@@ -269242,7 +269242,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/minimax-m3",
@@ -269295,7 +269295,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/minimax-coding-plan/"
   },
   {
@@ -269327,7 +269327,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/kimi-code-plan-global/"
   },
   {
@@ -269358,7 +269358,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/kimi-code-plan-global/"
   },
   {
@@ -269390,7 +269390,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/kimi-code-plan-global/"
   },
   {
@@ -269422,7 +269422,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/kimi-code-plan-global/",
     "llm_stats_id": "kimi-k3"
   },
@@ -269455,7 +269455,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/kimi-code-plan-global/"
   },
   {
@@ -269487,7 +269487,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/kimi-code-plan-global/"
   },
   {
@@ -270861,7 +270861,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/opencode-go/"
   },
   {
@@ -271048,7 +271048,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/opencode-go/"
   },
   {
@@ -271128,7 +271128,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/opencode-go/",
     "litellm": {
       "litellm_key": "opencode_go/beam-free",
@@ -271180,7 +271180,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/opencode-go/"
   },
   {
@@ -271370,7 +271370,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/opencode-go/",
     "litellm": {
       "litellm_key": "opencode_go/longcat-2.5-preview-free",
@@ -271956,7 +271956,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/opencode-go/",
     "llm_stats_id": "minimax-m3.1-flash"
   },
@@ -322228,7 +322228,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan-cn/",
     "litellm": {
       "litellm_key": "together_ai/Qwen/Qwen3.6-Plus",
@@ -322277,7 +322277,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan-cn/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/qwen3-coder-plus",
@@ -322325,7 +322325,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan-cn/",
     "litellm": {
       "litellm_key": "aihubmix/qwen3-coder-next",
@@ -322374,7 +322374,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan-cn/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/qwen3.5-plus",
@@ -322422,7 +322422,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan-cn/",
     "litellm": {
       "litellm_key": "qwen_ai_platform/qwen3-max-2026-01-23",
@@ -322471,7 +322471,7 @@
     "context_window": 202752,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan-cn/",
     "litellm": {
       "litellm_key": "together_ai/zai-org/GLM-4.7",
@@ -322520,7 +322520,7 @@
     "context_window": 196608,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan-cn/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.5",
@@ -322569,7 +322569,7 @@
     "context_window": 202752,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan-cn/",
     "litellm": {
       "litellm_key": "together_ai/zai-org/GLM-5",
@@ -322619,7 +322619,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan-cn/",
     "litellm": {
       "litellm_key": "deepinfra/moonshotai/Kimi-K2.5",
@@ -322670,7 +322670,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-coding-plan-cn/",
     "litellm": {
       "litellm_key": "opencode_go/qwen3.7-plus",
@@ -381672,7 +381672,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-cn/",
     "litellm": {
       "litellm_key": "opencode_go/mimo-v2.5",
@@ -381726,7 +381726,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-cn/",
     "litellm": {
       "litellm_key": "opencode_go/mimo-v2.6-pro",
@@ -381777,7 +381777,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-cn/"
   },
   {
@@ -381807,7 +381807,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-cn/"
   },
   {
@@ -381837,7 +381837,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-cn/",
     "litellm": {
       "litellm_key": "opencode_go/mimo-v2.5-pro",
@@ -381888,7 +381888,7 @@
     "context_window": 8192,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-cn/"
   },
   {
@@ -381921,7 +381921,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/xiaomi-token-plan-cn/",
     "litellm": {
       "litellm_key": "opencode_go/mimo-v2.6-flash",
@@ -388092,7 +388092,7 @@
     "context_window": 256000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/tencent-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/hy3",
@@ -390850,7 +390850,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/zhipuai-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.3",
@@ -390903,7 +390903,7 @@
     "context_window": 128000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/zhipuai-coding-plan/",
     "litellm": {
       "litellm_key": "novita/zai-org/glm-4.6v",
@@ -390954,7 +390954,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/zhipuai-coding-plan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.3-flash",
@@ -391005,7 +391005,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/zhipuai-coding-plan/"
   },
   {
@@ -407308,7 +407308,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "baseten/moonshotai/Kimi-K2.6",
@@ -407360,7 +407360,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.3-flash",
@@ -407411,7 +407411,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "prism/deepseek-v4-flash",
@@ -407463,7 +407463,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.2",
@@ -407517,7 +407517,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/qwen3.8-max",
@@ -407569,7 +407569,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "deepinfra/moonshotai/Kimi-K2.5",
@@ -407618,7 +407618,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/glm-5.3",
@@ -407669,7 +407669,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "together_ai/zai-org/GLM-5",
@@ -407718,7 +407718,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "aihubmix/minimax-m2.7",
@@ -407767,7 +407767,7 @@
     "context_window": 204800,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "novita/minimax/minimax-m2.5",
@@ -407816,7 +407816,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/kimi-k3",
@@ -407867,7 +407867,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/deepseek-v4.1-flash",
@@ -407918,7 +407918,7 @@
     "context_window": 200000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "together_ai/zai-org/GLM-5.1",
@@ -407967,7 +407967,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "baseten/deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -408016,7 +408016,7 @@
     "context_window": 1048576,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/minimax-m3",
@@ -408067,7 +408067,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/deepseek-v4-pro",
@@ -408117,7 +408117,7 @@
     "context_window": 262144,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/kimi-k2.7-code",
@@ -408170,7 +408170,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "opencode_go/qwen3.8-flash",
@@ -408221,7 +408221,7 @@
     "context_window": 1000000,
     "input_price_per_m": 0,
     "output_price_per_m": 0,
-    "is_free": true,
+    "is_free": false,
     "source_url": "https://models.dev/providers/scnet-token-plan/",
     "litellm": {
       "litellm_key": "baseten/deepseek-ai/DeepSeek-V4-Pro-0813",

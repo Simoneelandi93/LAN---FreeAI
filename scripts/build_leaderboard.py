@@ -41,7 +41,20 @@ def _get(url: str) -> Any:
     return res.json()
 
 
-def fetch_usage_rankings() -> List[Dict[str, Any]]:
+def fetch_usage_rankings(catalog: List[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
+    # Price/context come from the OpenRouter catalog (keyed by the `or` id), not
+    # the usage upstream's own `pricing` string — spot-checks showed it
+    # disagrees with the catalog for several models (stale or rounded there).
+    price_by_id = {}
+    ctx_by_id = {}
+    for m in catalog or []:
+        mid = m.get("id") or ""
+        p = m.get("pricing") or {}
+        try:
+            price_by_id[mid] = (float(p.get("prompt") or 0), float(p.get("completion") or 0))
+        except (TypeError, ValueError):
+            price_by_id[mid] = (None, None)
+        ctx_by_id[mid] = m.get("context_length") or 0
     try:
         body = _get(USAGE_URL)
         rows = body.get("data") if isinstance(body, dict) else body
@@ -51,6 +64,8 @@ def fetch_usage_rankings() -> List[Dict[str, Any]]:
         for r in rows:
             if not isinstance(r, dict):
                 continue
+            oid = r.get("or") or ""
+            pin, pout = price_by_id.get(oid, (None, None))
             out.append({
                 "rank": r.get("rank"),
                 "name": r.get("name") or "",
@@ -59,8 +74,12 @@ def fetch_usage_rankings() -> List[Dict[str, Any]]:
                 "tokens_display": r.get("scoreDisplay") or "",
                 "requests": r.get("requests") or 0,
                 "change": r.get("change") if isinstance(r.get("change"), (int, float)) else 0,
-                "openrouter_id": r.get("or") or "",
+                "openrouter_id": oid,
                 "free": "free" in str(r.get("pricing") or "").lower() or "(free)" in str(r.get("name") or "").lower(),
+                # Per-token, like every other board section — the UI scales to $/M.
+                "price_in": pin,
+                "price_out": pout,
+                "context_window": ctx_by_id.get(oid) or 0,
             })
         return out
     except Exception as e:
@@ -135,7 +154,11 @@ def build_value(catalog: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
 
 def _join_perf_id(oid: str, v1_ids: Dict[str, None]) -> str:
-    """Map a rankings/performance dated slug to the v1 catalog id the lookup index knows."""
+    """Map a rankings/performance dated slug to the v1 catalog id the lookup index knows.
+
+    The two catalogs don't always order the same tokens: the performance API
+    says "claude-4.5-haiku" where the v1 catalog says "claude-haiku-4.5".
+    """
     if oid in v1_ids:
         return oid
     base = DATE_SUFFIX.sub("", oid)
@@ -144,7 +167,31 @@ def _join_perf_id(oid: str, v1_ids: Dict[str, None]) -> str:
     if base + ":free" in v1_ids:
         return base + ":free"
     pref = [i for i in v1_ids if i.startswith(base) and (len(i) == len(base) or i[len(base)] in "-:@")]
-    return pref[0] if len(pref) == 1 else ""
+    if len(pref) == 1:
+        return pref[0]
+    # Same vendor, same tokens, different order: the performance API writes
+    # "claude-4.5-haiku" where the v1 catalog writes "claude-haiku-4.5".
+    vendor, _, rest = base.partition("/")
+    wanted = sorted(rest.split("-"))
+    matches = []
+    for cand in v1_ids:
+        cvendor, _, crest = cand.partition("/")
+        if cvendor != vendor:
+            continue
+        core = crest.split(":")[0]
+        if sorted(core.split("-")) == wanted:
+            matches.append(cand)
+    if len(matches) == 1:
+        return matches[0]
+    if matches:
+        # Prefer the plain id over a :batch / :free twin.
+        plain = [m for m in matches if ":" not in m]
+        if len(plain) == 1:
+            return plain[0]
+        free = [m for m in matches if m.endswith(":free")]
+        if len(free) == 1:
+            return free[0]
+    return ""
 
 
 def fetch_fastest(catalog: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -179,6 +226,13 @@ def fetch_fastest(catalog: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                 "throughput": r.get("p50_throughput"),
                 "latency_ms": r.get("p50_latency"),
                 "best_provider": r.get("best_throughput_provider") or "",
+                # $/M at the fastest provider, straight from the performance
+                # API — this is the price that buys the speed, not the
+                # cheapest price anywhere. Already per-million.
+                "best_price_per_m": r.get("best_throughput_price"),
+                "best_latency_provider": r.get("best_latency_provider") or "",
+                "best_latency_price_per_m": r.get("best_latency_price"),
+                # Cheapest catalog price, per token, for cross-checking.
                 "price_in": pin,
                 "price_out": pout,
                 "provider_count": r.get("provider_count"),
@@ -202,8 +256,8 @@ def main():
         except Exception:
             existing = {}
 
-    usage = fetch_usage_rankings()
     catalog = fetch_catalog()
+    usage = fetch_usage_rankings(catalog)
     fastest = fetch_fastest(catalog) if catalog else []
     newest = build_newest(catalog) if catalog else []
     value = build_value(catalog) if catalog else []

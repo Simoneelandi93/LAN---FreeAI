@@ -4,6 +4,27 @@ from typing import Any, Dict, List
 MODELS_DEV_URL = "https://models.dev/api.json"
 MODELS_DEV_PROVIDER_URL = "https://models.dev/providers/{provider}/"
 
+# Providers whose models.dev cost is 0 because usage is metered through a PAID
+# monthly plan (coding/token plans, memberships), not because inference is free.
+# Verified against each provider's own pricing docs 2026-10-28. Without this,
+# they pollute the Best FREE board with models that need a subscription.
+PAID_PLAN_PROVIDERS = {
+    "alibaba-coding-plan", "alibaba-coding-plan-cn",
+    "alibaba-token-plan", "alibaba-token-plan-cn",
+    "kimi-code-plan-cn", "kimi-code-plan-global",
+    "kuae-cloud-coding-plan",
+    "minimax-cn-coding-plan", "minimax-coding-plan",
+    "nan",                     # nan.builders — membership plans (€14.99–€200/mo)
+    "opencode-go",
+    "scnet-token-plan",
+    "tencent-coding-plan", "tencent-token-plan",
+    "umans-ai-coding-plan",
+    "volcengine-coding-plan",
+    "xiaomi-token-plan-cn", "xiaomi-token-plan-ams", "xiaomi-token-plan-sgp",
+    "zai-coding-plan",
+    "zhipuai-coding-plan",
+}
+
 
 def fetch_models_dev_catalog() -> List[Dict[str, Any]]:
     headers = {"User-Agent": "Free-AI-Radar/1.0"}
@@ -48,7 +69,8 @@ def fetch_models_dev_catalog() -> List[Dict[str, Any]]:
                 "context_window": limit.get("context") or 0,
                 "input_price_per_m": input_cost,
                 "output_price_per_m": output_cost,
-                "is_free": input_cost == 0 and output_cost == 0,
+                # Zero cost means free only when the provider isn't plan-metered.
+                "is_free": input_cost == 0 and output_cost == 0 and provider_id not in PAID_PLAN_PROVIDERS,
                 "source_url": provider_url,
             })
 
