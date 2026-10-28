@@ -74,6 +74,7 @@
             <button class="tab-pri" data-source="OpenRouter" role="tab" aria-selected="false">OpenRouter</button>
             <button class="tab-pri" data-source="both" role="tab" aria-selected="false">Both</button>
             <button class="tab-pri" data-source="lookup" role="tab" aria-selected="false">Lookup</button>
+            <button class="tab-pri" data-source="boards" role="tab" aria-selected="false">Boards</button>
             <button class="tab-pri" data-source="changes" role="tab" aria-selected="false">Changelog</button>
           </nav>
 
@@ -115,6 +116,15 @@
           </thead>
           <tbody id="modelBody"></tbody>
         </table>
+      </section>
+
+      <section class="boards-view" id="boardsView" hidden>
+        <div class="boards-controls">
+          <button class="chg-btn board-btn active" data-board="usage" role="tab" aria-selected="true">Most Used</button>
+          <button class="chg-btn board-btn" data-board="free" role="tab" aria-selected="false">Best FREE</button>
+        </div>
+        <p class="boards-note" id="boardsNote"></p>
+        <div class="boards-body" id="boardsBody"></div>
       </section>
 
       <section class="lookup-view" id="lookupView" hidden>

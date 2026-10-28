@@ -169,6 +169,10 @@ def main():
     save_json(HISTORY_FILE, updated_history)
     save_lookup(new_models)
 
+    # 5. Usage rankings for the Boards tab (independent of the catalog diff)
+    from scripts.build_leaderboard import main as build_leaderboard
+    build_leaderboard()
+
     print(
         f"[Done] Total models tracked: {len(new_models)} "
         f"across {len({m['provider_id'] for m in new_models})} providers"

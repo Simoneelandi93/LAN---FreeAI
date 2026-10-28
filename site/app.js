@@ -9,7 +9,7 @@ const OMNIRROUTER_CATALOG_URL =
 
 let allModels = [];        // { id, name, owner, source, input_price_per_m, output_price_per_m, context_window, is_free }
 let filtered = [];
-let activeSource = "OmniRouter";  // "OmniRouter" | "OpenRouter" | "both" | "lookup" | "changes"
+let activeSource = "OmniRouter";  // "OmniRouter" | "OpenRouter" | "both" | "lookup" | "boards" | "changes"
 let activeFilter = "all";      // "all" | "free" | "paid"
 let sortKey = "name";
 let sortDir = "asc";
@@ -28,6 +28,11 @@ const MILLIS_DAY = 86400000;
 let lookupIndex = null;      // { byKey: Map, searchTerms: [{term, key}], ... } built lazily
 let lookupData = null;       // raw {generated_at, models}
 
+// Boards state (data/leaderboard.json — OpenRouter usage; scores come from llm_stats.json)
+let leaderboard = null;      // { generated_at, source, window, usage[] }
+let activeBoard = "usage";   // "usage" | "free"
+let scoreById = new Map();   // llm_stats_id -> {name, score, rank}
+
 // ---------- Persisted view state ----------
 // Remembers the last view across refreshes. Deliberately excludes the search
 // box: a half-typed query surviving a reload is more annoying than useful.
@@ -43,13 +48,14 @@ function loadSavedState() {
 
   // Guard each value against a left-over from a renamed or removed filter.
   const allowed = {
-    activeSource: ["OmniRouter", "OpenRouter", "both", "lookup", "changes"],
+    activeSource: ["OmniRouter", "OpenRouter", "both", "lookup", "boards", "changes"],
     activeFilter: ["all", "free", "paid"],
     activeChangesRange: ["all", "weekly", "daily"],
     activeAlertFilter: ["alerted", "all", "silent"],
     activeTypeFilter: ["all", "new"],
     sortDir: ["asc", "desc"],
   };
+  if (["usage", "free"].includes(saved.activeBoard)) activeBoard = saved.activeBoard;
   if (allowed.activeSource.includes(saved.activeSource)) activeSource = saved.activeSource;
   if (allowed.activeFilter.includes(saved.activeFilter)) activeFilter = saved.activeFilter;
   if (allowed.activeChangesRange.includes(saved.activeChangesRange)) activeChangesRange = saved.activeChangesRange;
@@ -63,7 +69,7 @@ function saveState() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
       activeSource, activeFilter, sortKey, sortDir,
-      activeChangesRange, activeAlertFilter, activeTypeFilter,
+      activeChangesRange, activeAlertFilter, activeTypeFilter, activeBoard,
     }));
   } catch (e) { /* private mode / quota — nothing to do */ }
 }
@@ -616,6 +622,145 @@ function setupLookupCopy() {
   });
 }
 
+// ---------- Boards ----------
+// "Most Used" = real OpenRouter token volume (ingested daily).
+// "Best FREE" = LLM Stats benchmark score joined onto free providers from lookup.json.
+// Usage ≠ quality: the two boards intentionally disagree.
+
+async function loadScoreMap() {
+  // {llm_stats_id: payload} — same file loadScoreIndex() reads, richer payload.
+  for (const url of ["data/llm_stats.json", "../data/llm_stats.json"]) {
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(10000) });
+      if (!res.ok) continue;
+      const stats = await res.json();
+      const map = new Map();
+      for (const v of Object.values(stats || {})) {
+        if (v && v.id) map.set(v.id, v);
+      }
+      if (map.size) return map;
+    } catch (e) { /* try the next path */ }
+  }
+  return new Map();
+}
+// "Most Used" = real OpenRouter token volume (ingested daily).
+// "Best FREE" = LLM Stats benchmark score joined onto free providers from lookup.json.
+// Usage ≠ quality: the two boards intentionally disagree.
+
+async function fetchLeaderboard() {
+  for (const url of ["data/leaderboard.json", "../data/leaderboard.json"]) {
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(10000) });
+      if (!res.ok) continue;
+      const data = await res.json();
+      if (data && Array.isArray(data.usage)) return data;
+    } catch (e) { /* try the next path */ }
+  }
+  return null;
+}
+
+function fmtTokens(n) {
+  if (!Number.isFinite(n) || n <= 0) return "—";
+  if (n >= 1e12) return `${(n / 1e12).toFixed(2)}T`;
+  if (n >= 1e9) return `${(n / 1e9).toFixed(1)}B`;
+  if (n >= 1e6) return `${(n / 1e6).toFixed(1)}M`;
+  return n.toLocaleString();
+}
+
+function renderUsageBoard() {
+  const body = document.getElementById("boardsBody");
+  const note = document.getElementById("boardsNote");
+  if (!leaderboard || !leaderboard.usage.length) {
+    note.textContent = "";
+    body.innerHTML = `<div class="empty"><h3>Usage rankings unavailable</h3><p>The next catalog sync will fetch them.</p></div>`;
+    return;
+  }
+  note.textContent = `Used: OpenRouter token volume, ${leaderboard.window} · ingested ${new Date(leaderboard.generated_at).toLocaleDateString(undefined, { month: "short", day: "numeric" })} — market demand, not quality. Traffic concentrates on cheap models.`;
+  const rows = leaderboard.usage.map(r => {
+    const change = Number(r.change);
+    const changeCls = change > 0 ? "rise" : change < 0 ? "drop" : "";
+    const changeTxt = change > 0 ? `▲${change}` : change < 0 ? `▼${Math.abs(change)}` : "·";
+    return `<tr>
+      <td class="text-right">${r.rank}</td>
+      <td><span class="lb-name">${esc(r.name)}</span>${r.free ? `<span class="lb-free-badge">free</span>` : ""}</td>
+      <td class="text-center">${esc(r.provider)}</td>
+      <td class="text-right lb-tokens">${esc(r.tokens_display || fmtTokens(r.tokens))}</td>
+      <td class="text-right">${fmtTokens(r.requests)}</td>
+      <td class="text-center"><span class="chg-tag ${changeCls}">${changeTxt}</span></td>
+    </tr>`;
+  }).join("");
+  body.innerHTML = `<table class="model-table lb-table">
+    <thead><tr>
+      <th class="text-right">#</th><th>Model</th><th class="text-center">Provider</th>
+      <th class="text-right">Tokens/wk</th><th class="text-right">Requests/wk</th><th class="text-center">±</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+}
+
+// Best FREE: lookup cards with a free provider, ranked by LLM Stats score.
+// Free tier quality of the provider row itself isn't benchmarked separately —
+// the score is the model family's, which is the honest framing shown in the note.
+function bestFreeRows() {
+  if (!lookupIndex) return [];
+  const rows = [];
+  for (const entry of lookupIndex.byKey.values()) {
+    if (!entry.has_free || !entry.llm_stats_id) continue;
+    const stats = scoreById.get(entry.llm_stats_id);
+    if (!stats || !Number.isFinite(Number(stats.score))) continue;
+    const freeProviders = entry.providers.filter(p => p.tier === "free" || p.tier === "free_quota");
+    rows.push({ entry, stats, freeProviders, score: Number(stats.score) });
+  }
+  rows.sort((a, b) => b.score - a.score);
+  return rows.slice(0, 25);
+}
+
+function renderFreeBoard() {
+  const body = document.getElementById("boardsBody");
+  const note = document.getElementById("boardsNote");
+  const rows = bestFreeRows();
+  if (!rows.length) {
+    note.textContent = "";
+    body.innerHTML = `<div class="empty"><h3>No scored free models</h3><p>Needs both lookup.json and llm_stats.json — waiting on the next sync.</p></div>`;
+    return;
+  }
+  note.textContent = "Best: LLM Stats benchmark score (artificial-analysis-style intelligence index), filtered to models with a free provider. Free-tier quotas are on each model's Lookup card.";
+  const trs = rows.map((r, i) => {
+    const provs = r.freeProviders.slice(0, 3).map(p => esc(p.provider)).join(", ");
+    const more = r.freeProviders.length > 3 ? ` +${r.freeProviders.length - 3}` : "";
+    const firstId = r.freeProviders[0]?.model_id || "";
+    return `<tr>
+      <td class="text-right">${i + 1}</td>
+      <td><span class="lb-name lk-model-id" data-copy="${esc(firstId)}" title="Copy ${esc(firstId)} — open Lookup for all providers">${esc(r.entry.name)}</span></td>
+      <td class="text-right"><span class="score-val">${r.score.toFixed(1)}</span></td>
+      <td class="text-center">${fmtContext(r.entry.context_window)}</td>
+      <td>${provs}${more}</td>
+    </tr>`;
+  }).join("");
+  body.innerHTML = `<table class="model-table lb-table">
+    <thead><tr>
+      <th class="text-right">#</th><th>Model</th><th class="text-right">Score</th>
+      <th class="text-center">Context</th><th>Free at</th>
+    </tr></thead>
+    <tbody>${trs}</tbody>
+  </table>`;
+}
+
+function renderBoards() {
+  const note = document.getElementById("boardsNote");
+  document.querySelectorAll("#boardsView .board-btn").forEach(b => {
+    const on = b.dataset.board === activeBoard;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-selected", String(on));
+  });
+  if (activeBoard === "usage") renderUsageBoard();
+  else renderFreeBoard();
+  if (note.textContent) {
+    const src = activeBoard === "usage" ? leaderboard?.source : "llm-stats.com via data/llm_stats.json";
+    note.title = src ? `Source: ${src}` : "";
+  }
+}
+
 const CHANGE_TYPE_LABELS = {
   new_model: "New Model",
   new_free_model: "New Free Model",
@@ -821,27 +966,33 @@ function render() {
   const query = document.getElementById("searchInput").value.trim().toLowerCase();
   const isChanges = activeSource === "changes";
   const isLookup = activeSource === "lookup";
+  const isBoards = activeSource === "boards";
 
   syncControls();
 
   const toolbar = document.getElementById("sourceFilters");
-  if (toolbar) toolbar.style.display = isChanges || isLookup ? "none" : "flex";
+  if (toolbar) toolbar.style.display = isChanges || isLookup || isBoards ? "none" : "flex";
 
   const tableView = document.getElementById("modelTableContainer");
   const changesView = document.getElementById("changesView");
   const lookupView = document.getElementById("lookupView");
-  if (tableView) tableView.style.display = isChanges || isLookup ? "none" : "block";
+  const boardsView = document.getElementById("boardsView");
+  if (tableView) tableView.style.display = isChanges || isLookup || isBoards ? "none" : "block";
   if (changesView) changesView.hidden = !isChanges;
   if (lookupView) lookupView.hidden = !isLookup;
+  if (boardsView) boardsView.hidden = !isBoards;
 
   document.getElementById("searchInput").placeholder = isChanges
     ? "Search changelog updates..."
     : isLookup
       ? "Search a model — \"opus 5.5\", \"glm5\", \"gemini flash\"..."
-      : "Search models...";
+      : isBoards
+        ? "Search models..."
+        : "Search models...";
 
   if (isChanges) { renderChanges(query); return; }
   if (isLookup) { renderLookup(query); return; }
+  if (isBoards) { renderBoards(); return; }
 
   applyFilters();
   renderTable();
@@ -867,6 +1018,8 @@ async function loadData() {
   history = await fetchHistory();
   lookupData = await fetchLookup();
   lookupIndex = lookupData ? buildLookupIndex(lookupData) : null;
+  leaderboard = await fetchLeaderboard();
+  scoreById = await loadScoreMap();
 
   document.getElementById("totalOmniRouter").textContent = omniModels.length.toLocaleString();
   document.getElementById("totalOpenRouter").textContent = orModels.length.toLocaleString();
@@ -891,6 +1044,15 @@ document.querySelectorAll(".tab-pri[data-source]").forEach(btn => {
     btn.setAttribute("aria-selected", "true");
     activeSource = btn.dataset.source;
     visibleCount = 100000;  // Load all models at once
+    saveState();
+    render();
+  });
+});
+
+// Boards tab switcher
+document.querySelectorAll("#boardsView .board-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    activeBoard = btn.dataset.board;
     saveState();
     render();
   });
