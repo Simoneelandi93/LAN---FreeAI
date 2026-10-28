@@ -643,7 +643,9 @@ function renderLookup(query) {
 // The boards body gets its own listener for the Lookup jump buttons — same
 // delegation pattern, since board tables re-render on every tab switch.
 function setupLookupCopy() {
-  document.getElementById("lookupResults").addEventListener("click", async e => {
+  // One shared copy handler for every container that can hold a .lk-model-id
+  // (lookup cards AND board rows) — delegated, since both re-render often.
+  const copyHandler = async e => {
     const el = e.target.closest(".lk-model-id");
     if (!el) return;
     const text = el.dataset.copy;
@@ -664,7 +666,9 @@ function setupLookupCopy() {
     el.classList.add("copied");
     el.title = "Copied!";
     setTimeout(() => { el.classList.remove("copied"); el.title = "Copy model ID"; }, 1200);
-  });
+  };
+  document.getElementById("lookupResults").addEventListener("click", copyHandler);
+  document.getElementById("boardsBody").addEventListener("click", copyHandler);
 
   document.getElementById("boardsBody").addEventListener("click", e => {
     const btn = e.target.closest(".lk-jump");
