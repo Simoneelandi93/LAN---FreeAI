@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "ddcd1f615fc834b8",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-28T04:33:31.608286+00:00",
+    "details": "Input: $0.15 -> $0.15; output: $8.94 -> $9.7224",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "6c19a76a596ae773",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-28T04:33:31.608286+00:00",
+    "details": "Input: $0.0453 -> $0.0462; output: $0.0745 -> $0.0737",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "a4c8bb8a6d3b0d23",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -2328,30 +2352,6 @@
     "direction": "decrease",
     "in_direction": "decrease",
     "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "48228f67d620dc42",
-    "type": "price_change",
-    "model_id": "moonshotai/kimi-k2.6:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-26T16:40:57.305570+00:00",
-    "details": "Input: $0.39 -> $0.3895; output: $1.8 -> $1.64",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "c0dd23cdcd68dfaf",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-26T15:54:37.593913+00:00",
-    "details": "Input: $0.161 -> $0.152; output: $10 -> $10",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "same",
     "alerted": false
   }
 ]
