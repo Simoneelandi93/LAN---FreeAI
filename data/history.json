@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "64d4286c5040d0ba",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "AI/ML API, CommandCode, CrossModel, Deep Infra, Eden AI, Hugging Face, Kilo Gateway, LLM Gateway, NanoGPT, Novita AI, OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-10-28T01:33:40.644559+00:00",
+    "details": "Input: $0.7506 -> $0.7923; output: $2.2509 -> $2.37595",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "cdb0d77749a7d18b",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-pro-0423",
+    "provider": "Merge Gateway, Ofox",
+    "detected_at": "2026-10-28T01:33:40.644559+00:00",
+    "details": "Input: $1.32 -> $1.65; output: $3.3 -> $3.3",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "c4f19aca18be39e7",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-28T01:33:40.644559+00:00",
+    "details": "Input: $0.0182 -> $0.0166; output: $1.8 -> $1.8",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "9552b013837fd85f",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-28T01:33:40.644559+00:00",
+    "details": "Input: $0.2565 -> $0.2542; output: $8 -> $8",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "d6238000b174e83b",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-28T01:33:40.644559+00:00",
+    "details": "Input: $0.1605 -> $0.151; output: $8.94 -> $10",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "5d46db528de05d6c",
     "type": "price_change",
     "model_id": "zai-org/GLM-5.2",
@@ -2293,65 +2353,5 @@
     "in_direction": "decrease",
     "out_direction": "increase",
     "alerted": true
-  },
-  {
-    "event_id": "8583ca03dd283300",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-26T15:28:51.792268+00:00",
-    "details": "Input: $0.1919 -> $0.161; output: $7.6972 -> $10",
-    "direction": "mixed",
-    "in_direction": "decrease",
-    "out_direction": "increase",
-    "alerted": true
-  },
-  {
-    "event_id": "78a1290a93d5b6da",
-    "type": "price_change",
-    "model_id": "moonshotai/Kimi-K2.6-TEE",
-    "provider": "Chutes",
-    "detected_at": "2026-10-26T15:28:51.792268+00:00",
-    "details": "Input: $0.45 -> $0.39; output: $1.95 -> $1.8",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "42461814ff0e779b",
-    "type": "price_change",
-    "model_id": "zai-org/GLM-5.1-TEE",
-    "provider": "Chutes",
-    "detected_at": "2026-10-26T15:28:51.792268+00:00",
-    "details": "Input: $0.98 -> $0.9; output: $3.08 -> $2.9",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "9fc797fed2dc563a",
-    "type": "price_change",
-    "model_id": "greenpt/deepseek-v4-flash-0731",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-26T15:28:51.792268+00:00",
-    "details": "Input: $0.156702 -> $0.156632; output: $0.391755 -> $0.39158",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "dbdd036b56958ce2",
-    "type": "price_change",
-    "model_id": "greenpt/qwen3-235b-a22b-instruct-2507",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-26T15:28:51.792268+00:00",
-    "details": "Input: $1.007369 -> $1.00692; output: $3.022108 -> $3.020759",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
   }
 ]
