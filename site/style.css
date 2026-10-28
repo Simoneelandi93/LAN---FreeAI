@@ -597,6 +597,9 @@ a:hover { color: var(--accent-light); }
 
 .alert-filters { margin-top: 6px; }
 
+/* New-model recap row: neutral on purpose, the green "New Model" tag below carries the meaning. */
+.type-filters { margin-top: 6px; }
+
 .chg-model {
   font-family: var(--font-mono);
   font-weight: 500;

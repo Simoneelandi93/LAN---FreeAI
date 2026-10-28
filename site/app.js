@@ -19,6 +19,7 @@ let visibleCount = 100000;  // Load all models at once
 let history = [];
 let activeChangesRange = "all";   // "all" | "weekly" | "daily"
 let activeAlertFilter = "alerted";  // default: only events that were sent to Telegram
+let activeTypeFilter = "all";       // "all" | "new" (new_model + new_free_model only)
 const MILLIS_DAY = 86400000;
 
 function esc(v) {
@@ -288,6 +289,7 @@ function renderChanges(query) {
   }
   if (activeAlertFilter === "alerted") items = items.filter(ev => ev.alerted);
   else if (activeAlertFilter === "silent") items = items.filter(ev => !ev.alerted);
+  if (activeTypeFilter === "new") items = items.filter(ev => ev.type === "new_model" || ev.type === "new_free_model");
   document.getElementById("resultCount").textContent = `Showing ${items.length.toLocaleString()} changelog events`;
   if (!items.length) {
     feed.innerHTML = `<div class="empty"><h3>No recent delta events</h3><p>No price modifications or catalog updates found in this timeframe.</p></div>`;
@@ -499,13 +501,16 @@ document.querySelectorAll(".tab-pri[data-source]").forEach(btn => {
 // Changelog range + alert filters
 document.querySelectorAll("#changesView .chg-btn").forEach(btn => {
   btn.addEventListener("click", () => {
-    const scope = btn.dataset.range !== undefined ? "range" : "alert";
-    const group = scope === "range" ? ".chg-btn[data-range]" : ".chg-btn[data-alert]";
+    const scope = btn.dataset.range !== undefined ? "range"
+      : btn.dataset.alert !== undefined ? "alert" : "type";
+    const group = scope === "range" ? ".chg-btn[data-range]"
+      : scope === "alert" ? ".chg-btn[data-alert]" : ".chg-btn[data-changes-type]";
     document.querySelectorAll(`#changesView ${group}`).forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
     btn.classList.add("active");
     btn.setAttribute("aria-selected", "true");
     if (scope === "range") activeChangesRange = btn.dataset.range;
-    else activeAlertFilter = btn.dataset.alert;
+    else if (scope === "alert") activeAlertFilter = btn.dataset.alert;
+    else activeTypeFilter = btn.dataset.changesType;
     render();
   });
 });
