@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=__BUILD_ID__">
 </head>
 <body>
   <div class="shell">
@@ -119,13 +119,7 @@
       </section>
 
       <section class="boards-view" id="boardsView" hidden>
-        <div class="boards-controls">
-          <button class="chg-btn board-btn active" data-board="usage" role="tab" aria-selected="true">Most Used</button>
-          <button class="chg-btn board-btn" data-board="free" role="tab" aria-selected="false">Best FREE</button>
-          <button class="chg-btn board-btn" data-board="value" role="tab" aria-selected="false">Value Leaders</button>
-          <button class="chg-btn board-btn" data-board="fastest" role="tab" aria-selected="false">Fastest</button>
-          <button class="chg-btn board-btn" data-board="newest" role="tab" aria-selected="false">Newest</button>
-        </div>
+        <div class="boards-controls" id="boardsControls"></div>
         <p class="boards-note" id="boardsNote"></p>
         <div class="boards-body" id="boardsBody"></div>
       </section>
@@ -176,6 +170,6 @@
     </div>
   </noscript>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=__BUILD_ID__"></script>
 </body>
 </html>

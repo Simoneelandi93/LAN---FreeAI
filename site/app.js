@@ -28,6 +28,17 @@ const MILLIS_DAY = 86400000;
 let lookupIndex = null;      // { byKey: Map, searchTerms: [{term, key}], ... } built lazily
 let lookupData = null;       // raw {generated_at, models}
 
+// Boards tab. The tab strip is generated from this list so the buttons can
+// never drift out of sync with the renderers.
+const BOARDS = [
+  { key: "usage",   label: "Most Used" },
+  { key: "free",    label: "Best FREE" },
+  { key: "value",   label: "Value Leaders" },
+  { key: "fastest", label: "Fastest" },
+  { key: "newest",  label: "Newest" },
+];
+const BOARD_KEYS = BOARDS.map(b => b.key);
+
 // Boards state (data/leaderboard.json — OpenRouter usage; scores come from llm_stats.json)
 let leaderboard = null;      // { generated_at, source, window, usage[], fastest[], value[], newest[] }
 let activeBoard = "usage";   // "usage" | "free" | "value" | "fastest" | "newest"
@@ -55,7 +66,7 @@ function loadSavedState() {
     activeTypeFilter: ["all", "new"],
     sortDir: ["asc", "desc"],
   };
-  if (["usage", "free", "value", "fastest", "newest"].includes(saved.activeBoard)) activeBoard = saved.activeBoard;
+  if (BOARD_KEYS.includes(saved.activeBoard)) activeBoard = saved.activeBoard;
   if (allowed.activeSource.includes(saved.activeSource)) activeSource = saved.activeSource;
   if (allowed.activeFilter.includes(saved.activeFilter)) activeFilter = saved.activeFilter;
   if (allowed.activeChangesRange.includes(saved.activeChangesRange)) activeChangesRange = saved.activeChangesRange;
@@ -936,6 +947,14 @@ function renderNewestBoard() {
   </table>`;
 }
 
+const BOARD_RENDERERS = {
+  usage: renderUsageBoard,
+  free: renderFreeBoard,
+  value: renderValueBoard,
+  fastest: renderFastestBoard,
+  newest: renderNewestBoard,
+};
+
 function renderBoards() {
   const note = document.getElementById("boardsNote");
   document.querySelectorAll("#boardsView .board-btn").forEach(b => {
@@ -943,11 +962,7 @@ function renderBoards() {
     b.classList.toggle("active", on);
     b.setAttribute("aria-selected", String(on));
   });
-  if (activeBoard === "usage") renderUsageBoard();
-  else if (activeBoard === "free") renderFreeBoard();
-  else if (activeBoard === "value") renderValueBoard();
-  else if (activeBoard === "fastest") renderFastestBoard();
-  else renderNewestBoard();
+  (BOARD_RENDERERS[activeBoard] || renderUsageBoard)();
   if (note.textContent) {
     const src = activeBoard === "usage" ? leaderboard?.source
       : activeBoard === "free" ? "llm-stats.com via data/llm_stats.json"
@@ -1244,14 +1259,22 @@ document.querySelectorAll(".tab-pri[data-source]").forEach(btn => {
   });
 });
 
-// Boards tab switcher
-document.querySelectorAll("#boardsView .board-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
+// Boards tab switcher — the strip is generated from BOARDS so a new board is
+// one entry, not a markup change plus a renderer.
+(function setupBoards() {
+  const strip = document.getElementById("boardsControls");
+  if (!strip) return;
+  strip.innerHTML = BOARDS.map(b =>
+    `<button class="chg-btn board-btn" data-board="${b.key}" role="tab" aria-selected="false">${esc(b.label)}</button>`
+  ).join("");
+  strip.addEventListener("click", (e) => {
+    const btn = e.target.closest(".board-btn");
+    if (!btn) return;
     activeBoard = btn.dataset.board;
     saveState();
     render();
   });
-});
+})();
 
 // Changelog range + alert filters
 document.querySelectorAll("#changesView .chg-btn").forEach(btn => {
