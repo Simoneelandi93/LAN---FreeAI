@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "687c39984c5fd946",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "AI/ML API, CommandCode, CrossModel, Deep Infra, Eden AI, Hugging Face, Kilo Gateway, LLM Gateway, NanoGPT, Novita AI, OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-10-28T16:33:27.151160+00:00",
+    "details": "Input: $0.834 -> $0.7506; output: $2.501 -> $2.2509",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "80ec75011470c15d",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-28T16:33:27.151160+00:00",
+    "details": "Input: $0.0422 -> $0.0422; output: $0.1637 -> $0.1694",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "badd5ddc63b2581e",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-28T16:33:27.151160+00:00",
+    "details": "Input: $0.0237 -> $0.0259; output: $0.1142 -> $0.1042",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "38f0d443ff716faa",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-28T16:33:27.151160+00:00",
+    "details": "Input: $0.19 -> $0.1577; output: $10 -> $9.7439",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "756940fee672d041",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-flash-0731:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-28T16:33:27.151160+00:00",
+    "details": "Input: $0.05 -> $0.04444; output: $0.16 -> $0.13332",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "f355056ff0dc4dd6",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4-pro-0813",
@@ -2296,62 +2356,5 @@
     "in_direction": "decrease",
     "out_direction": "same",
     "alerted": false
-  },
-  {
-    "event_id": "7c88b3652f9f08b3",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-latest",
-    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-27T07:43:41.228748+00:00",
-    "details": "Input: $0.0703 -> $0.0699; output: $1.1 -> $1.1",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "09292b0b512ddd6a",
-    "type": "new_model",
-    "model_id": "tencent/deepseek-v4.1-flash-1017",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-27T06:53:48.123958+00:00",
-    "details": "$0.15 in / $0.6 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "deed5a06306b3193",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-pro-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-27T06:53:48.123958+00:00",
-    "details": "Input: $0.2211 -> $0.2266; output: $8 -> $8",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "620c1586b586ac96",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-27T06:53:48.123958+00:00",
-    "details": "Input: $0.02 -> $0.02; output: $0.511839 -> $1",
-    "direction": "increase",
-    "in_direction": "same",
-    "out_direction": "increase",
-    "alerted": true
-  },
-  {
-    "event_id": "498b72008c9efc62",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-latest",
-    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-27T06:53:48.123958+00:00",
-    "details": "Input: $0.0699 -> $0.0703; output: $1.1 -> $1.1",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "same",
-    "alerted": true
   }
 ]
