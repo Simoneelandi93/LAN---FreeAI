@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "687c39984c5fd946",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "AI/ML API, CommandCode, CrossModel, Deep Infra, Eden AI, Hugging Face, Kilo Gateway, LLM Gateway, NanoGPT, Novita AI, OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-10-29T16:33:23.726609+00:00",
+    "details": "Input: $0.834 -> $0.7506; output: $2.501 -> $2.2509",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "26b36d0ce916bbff",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-29T16:33:23.726609+00:00",
+    "details": "Input: $0.0339 -> $0.0372; output: $1.8 -> $1.64",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "40e36024d4b1061b",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-flash-latest",
@@ -2256,30 +2280,6 @@
     "direction": "decrease",
     "in_direction": "decrease",
     "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "a80d9c9853b31f36",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-28T02:34:56.464104+00:00",
-    "details": "Input: $0.0345 -> $0.0453; output: $0.0823 -> $0.0798",
-    "direction": "mixed",
-    "in_direction": "increase",
-    "out_direction": "decrease",
-    "alerted": true
-  },
-  {
-    "event_id": "64d4286c5040d0ba",
-    "type": "price_change",
-    "model_id": "tencent/hy4-preview",
-    "provider": "AI/ML API, CommandCode, CrossModel, Deep Infra, Eden AI, Hugging Face, Kilo Gateway, LLM Gateway, NanoGPT, Novita AI, OpenRouter, Vercel AI Gateway",
-    "detected_at": "2026-10-28T01:33:40.644559+00:00",
-    "details": "Input: $0.7506 -> $0.7923; output: $2.2509 -> $2.37595",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
     "alerted": false
   }
 ]
