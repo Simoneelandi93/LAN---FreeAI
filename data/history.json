@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "40e36024d4b1061b",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-29T15:32:41.007634+00:00",
+    "details": "Input: $0.0309 -> $0.0339; output: $1.8 -> $1.8",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "5e56c4b83abd87f5",
+    "type": "price_change",
+    "model_id": "mistral/mistral-large-4",
+    "provider": "CommandCode, LLM Gateway, Vercel AI Gateway",
+    "detected_at": "2026-10-29T15:32:41.007634+00:00",
+    "details": "Input: $1.36 -> $0.7; output: $4.18 -> $2.1",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "3fe1235aa7a80710",
     "type": "price_change",
     "model_id": "z-ai/glm-5.2",
@@ -2256,30 +2280,6 @@
     "direction": "increase",
     "in_direction": "increase",
     "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "cdb0d77749a7d18b",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-v4-pro-0423",
-    "provider": "Merge Gateway, Ofox",
-    "detected_at": "2026-10-28T01:33:40.644559+00:00",
-    "details": "Input: $1.32 -> $1.65; output: $3.3 -> $3.3",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "c4f19aca18be39e7",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-28T01:33:40.644559+00:00",
-    "details": "Input: $0.0182 -> $0.0166; output: $1.8 -> $1.8",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "same",
     "alerted": false
   }
 ]
