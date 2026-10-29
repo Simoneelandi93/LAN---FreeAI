@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "fc928fbdf7b60c6c",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-29T22:33:04.681464+00:00",
+    "details": "Input: $0.0434 -> $0.0318; output: $0.1658 -> $0.1811",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "d00a730ff63498e5",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-29T22:33:04.681464+00:00",
+    "details": "Input: $0.1529 -> $0.1529; output: $10 -> $9.3388",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "041b2ac3378011b7",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-29T22:33:04.681464+00:00",
+    "details": "Input: $0.0503 -> $0.0457; output: $0.0701 -> $0.0701",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "e84bae2ad817ca7f",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4.1-flash",
@@ -2241,42 +2277,6 @@
     "provider": "Amazon Bedrock",
     "detected_at": "2026-10-28T06:40:23.901220+00:00",
     "details": "$1.1 in / $5.5 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "003d6827e7a165f4",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-28T05:32:47.856173+00:00",
-    "details": "Input: $0.15 -> $0.1605; output: $9.7224 -> $10",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": true
-  },
-  {
-    "event_id": "341ad0c274cecd33",
-    "type": "price_change",
-    "model_id": "ionos/Qwen/Qwen3-Coder-Next",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-28T05:32:47.856173+00:00",
-    "details": "Input: $0.16782 -> $0.16725; output: $0.89504 -> $0.892",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "e7ad9e4956dd64b3",
-    "type": "price_change",
-    "model_id": "ionos/openai/gpt-oss-120b",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-28T05:32:47.856173+00:00",
-    "details": "Input: $0.16782 -> $0.16725; output: $0.72722 -> $0.72475",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
     "alerted": false
   }
 ]
