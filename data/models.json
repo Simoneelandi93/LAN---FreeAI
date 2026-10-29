@@ -651,7 +651,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#gemini-models",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
@@ -839,7 +839,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-pro-image",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
@@ -28615,7 +28615,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#gemini-models",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
@@ -29329,7 +29329,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-pro-image",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
@@ -86587,7 +86587,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#gemini-models",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
@@ -88238,7 +88238,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-pro-image",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
@@ -138595,7 +138595,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#gemini-models",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
@@ -153489,7 +153489,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#gemini-models",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
@@ -156161,7 +156161,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-pro-image",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
@@ -203821,7 +203821,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-pro-image",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
@@ -297810,7 +297810,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#gemini-models",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
@@ -298301,7 +298301,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-pro-image",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
@@ -399188,7 +399188,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#gemini-models",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
@@ -399872,7 +399872,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-pro-image",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/images/generations",
