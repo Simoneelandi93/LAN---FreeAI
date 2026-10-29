@@ -1,5 +1,35 @@
 [
   {
+    "event_id": "665352c467b8bb22",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-29T06:40:06.587200+00:00",
+    "details": "Input: $0.016 -> $0.0133; output: $1.44 -> $1.44",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "ef7c86b3d6e22bc4",
+    "type": "new_model",
+    "model_id": "arkanecloud/deepseek-ai/DeepSeek-V4-Flash-0731",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-29T06:40:06.587200+00:00",
+    "details": "$0.2 in / $0.4 out per 1M",
+    "alerted": false
+  },
+  {
+    "event_id": "436bd95e8bd92ac0",
+    "type": "new_model",
+    "model_id": "arkanecloud/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "provider": "Eden AI",
+    "detected_at": "2026-10-29T06:40:06.587200+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "c01d3213d0814c27",
     "type": "price_change",
     "model_id": "greenpt/qwen3-235b-a22b-instruct-2507",
@@ -2264,42 +2294,6 @@
     "details": "Input: $0.0345 -> $0.0345; output: $0.0701 -> $0.0823",
     "direction": "increase",
     "in_direction": "same",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "edb9eb9bec9de3da",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-27T20:32:36.203695+00:00",
-    "details": "Input: $0.022 -> $0.0182; output: $1.46 -> $1.8",
-    "direction": "mixed",
-    "in_direction": "decrease",
-    "out_direction": "increase",
-    "alerted": true
-  },
-  {
-    "event_id": "e2bca9c4d207ff21",
-    "type": "price_change",
-    "model_id": "reka-ai/deepseek-v4-pro",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-10-27T20:32:36.203695+00:00",
-    "details": "Input: $0.9 -> $0.6; output: $1.9 -> $1.26",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "5b4a939c4c7473e8",
-    "type": "price_change",
-    "model_id": "reka-ai/deepseek-v4.1-flash-1017",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-10-27T20:32:36.203695+00:00",
-    "details": "Input: $0.15 -> $0.16; output: $0.6 -> $0.64",
-    "direction": "increase",
-    "in_direction": "increase",
     "out_direction": "increase",
     "alerted": false
   }
