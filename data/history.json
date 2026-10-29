@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "7ba2a46688989a43",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-29T07:32:35.930169+00:00",
+    "details": "Input: $0.0133 -> $0.0121; output: $1.44 -> $1.44",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "665352c467b8bb22",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-flash-latest",
@@ -2283,18 +2295,6 @@
     "direction": "decrease",
     "in_direction": "decrease",
     "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "cb7733bf95c8699b",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-27T20:32:36.203695+00:00",
-    "details": "Input: $0.0345 -> $0.0345; output: $0.0701 -> $0.0823",
-    "direction": "increase",
-    "in_direction": "same",
-    "out_direction": "increase",
     "alerted": false
   }
 ]
