@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "64d4286c5040d0ba",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "AI/ML API, CommandCode, CrossModel, Deep Infra, Eden AI, Hugging Face, Kilo Gateway, LLM Gateway, NanoGPT, Novita AI, OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-10-29T01:33:37.620582+00:00",
+    "details": "Input: $0.7506 -> $0.7923; output: $2.2509 -> $2.37595",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "0db4aeeb38dff7c3",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-29T01:33:37.620582+00:00",
+    "details": "Input: $0.0379 -> $0.0345; output: $0.0798 -> $0.0798",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "4afcfc3c22fa94f4",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-29T01:33:37.620582+00:00",
+    "details": "Input: $0.0138 -> $0.0151; output: $1.8 -> $1.8",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "4d7f8a03e860d023",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4-pro-0813",
@@ -2319,42 +2355,6 @@
     "direction": "decrease",
     "in_direction": "same",
     "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "1858e46ad1d32fe9",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-27T14:07:02.755750+00:00",
-    "details": "Input: $0.1605 -> $0.2; output: $9.7533 -> $10",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": true
-  },
-  {
-    "event_id": "8f529bab623161bb",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-27T14:07:02.755750+00:00",
-    "details": "Input: $0.02 -> $0.02; output: $1 -> $1.21",
-    "direction": "increase",
-    "in_direction": "same",
-    "out_direction": "increase",
-    "alerted": true
-  },
-  {
-    "event_id": "3828245efec46af7",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-v4-flash-latest",
-    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-27T14:07:02.755750+00:00",
-    "details": "Input: $0.024 -> $0.024; output: $0.1568 -> $0.1637",
-    "direction": "increase",
-    "in_direction": "same",
-    "out_direction": "increase",
     "alerted": false
   }
 ]
