@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "b2e70c71c8ac1254",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-29T23:32:57.473027+00:00",
+    "details": "Input: $0.044 -> $0.0372; output: $0.383 -> $1.14",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "b4dcd53758f67b27",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-29T23:32:57.473027+00:00",
+    "details": "Input: $0.0318 -> $0.0345; output: $0.1811 -> $0.1877",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "27e801d219ae2f19",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-29T23:32:57.473027+00:00",
+    "details": "Input: $0.0457 -> $0.0513; output: $0.0701 -> $0.0701",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "fc928fbdf7b60c6c",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-v4-flash-latest",
@@ -2248,35 +2284,5 @@
     "in_direction": "decrease",
     "out_direction": "same",
     "alerted": true
-  },
-  {
-    "event_id": "02747b50d850ad80",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-28T06:40:23.901220+00:00",
-    "details": "Input: $0.0451 -> $0.0438; output: $0.0737 -> $0.11",
-    "direction": "mixed",
-    "in_direction": "decrease",
-    "out_direction": "increase",
-    "alerted": true
-  },
-  {
-    "event_id": "6133a133f9566064",
-    "type": "new_model",
-    "model_id": "global.openai.gpt-6.1-terra",
-    "provider": "Amazon Bedrock",
-    "detected_at": "2026-10-28T06:40:23.901220+00:00",
-    "details": "$1 in / $5 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "6d745b0520866c93",
-    "type": "new_model",
-    "model_id": "us.openai.gpt-6.1-terra",
-    "provider": "Amazon Bedrock",
-    "detected_at": "2026-10-28T06:40:23.901220+00:00",
-    "details": "$1.1 in / $5.5 out per 1M",
-    "alerted": false
   }
 ]
