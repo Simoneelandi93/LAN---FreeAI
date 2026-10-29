@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "048999cb59e1f8a0",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-29T20:32:46.037890+00:00",
+    "details": "Input: $0.1719 -> $0.1824; output: $9.7471 -> $9.3388",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "40cc0968c84edab8",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -2262,18 +2274,6 @@
     "provider": "Eden AI",
     "detected_at": "2026-10-28T05:32:47.856173+00:00",
     "details": "Input: $0.44752 -> $0.446; output: $0.89504 -> $0.892",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "8ad79292ef0264eb",
-    "type": "price_change",
-    "model_id": "infomaniak/mistralai/Ministral-3-14B-Instruct-2512",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-28T05:32:47.856173+00:00",
-    "details": "Input: $0.33564 -> $0.3345; output: $0.44752 -> $0.446",
     "direction": "decrease",
     "in_direction": "decrease",
     "out_direction": "decrease",
