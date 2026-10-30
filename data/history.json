@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "382b16e878c102f9",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-30T17:32:46.658249+00:00",
+    "details": "Input: $0.1529 -> $0.1615; output: $10 -> $10",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "9e98689504842752",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-30T17:32:46.658249+00:00",
+    "details": "Input: $0.0331 -> $0.0486; output: $0.28 -> $0.28",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "4b47b2f2665ba2be",
+    "type": "price_change",
+    "model_id": "arcee-ai/trinity-large-thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-30T17:32:46.658249+00:00",
+    "details": "Input: $0.25 -> $0.25; output: $0.8 -> $0.9",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "1a12df2178d63327",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
@@ -2304,42 +2340,6 @@
     "provider": "Eden AI",
     "detected_at": "2026-10-29T06:40:06.587200+00:00",
     "details": "$0.3 in / $1.2 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "c01d3213d0814c27",
-    "type": "price_change",
-    "model_id": "greenpt/qwen3-235b-a22b-instruct-2507",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-29T05:33:13.302670+00:00",
-    "details": "Input: $1.0035 -> $1.001971; output: $3.0105 -> $3.005912",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "4ffded541cd858ad",
-    "type": "price_change",
-    "model_id": "greenpt/deepseek-v4.1-flash",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-29T05:33:13.302670+00:00",
-    "details": "Input: $0.2453 -> $0.244926; output: $1.2265 -> $1.224631",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "6e1280be7996d62f",
-    "type": "price_change",
-    "model_id": "greenpt/llama-3.3-70b-instruct",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-29T05:33:13.302670+00:00",
-    "details": "Input: $1.2265 -> $1.224631; output: $1.2265 -> $1.224631",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
     "alerted": false
   }
 ]
