@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "feef6e20cd090ce3",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-10-30T23:32:40.410794+00:00",
+    "details": "Input: $0.03 -> $0.01; output: $0.09 -> $0.03",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "374f1654c717a246",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-30T23:32:40.410794+00:00",
+    "details": "Input: $0.0486 -> $0.0341; output: $0.28 -> $0.1599",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "098a17f2c0cf4557",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-30T23:32:40.410794+00:00",
+    "details": "Input: $0.1634 -> $0.1529; output: $10 -> $10",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "0ed392cc3f3abf4f",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-30T23:32:40.410794+00:00",
+    "details": "Input: $0.03 -> $0.01; output: $0.09 -> $0.03",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "904d7dc5e13fe6cb",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
@@ -2291,54 +2339,6 @@
     "details": "Input: $0.435 -> $0.66; output: $0.87 -> $1.98",
     "direction": "increase",
     "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "8c99d24947ae30ce",
-    "type": "price_change",
-    "model_id": "tencent/deepseek-v4-flash",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-10-29T14:33:06.158859+00:00",
-    "details": "Input: $0.14 -> $0.15; output: $0.28 -> $0.6",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "ac1836eba22e1bdf",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-v4-pro-0813",
-    "provider": "AI/ML API, Arcee, IteraCompute, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, OrcaRouter, Standard Compute, TensorX, Vercel AI Gateway",
-    "detected_at": "2026-10-29T13:32:38.979727+00:00",
-    "details": "Input: $0.66 -> $0.65868; output: $1.98 -> $1.97604",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "b8925b2691b518e0",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-v4.1-flash",
-    "provider": "AI/ML API, Arcee, CommandCode, CrossModel, IteraCompute, Kilo Gateway, Merge Gateway, Modular, NanoGPT, Novita AI, Ofox, OpenRouter, Prime Inference, Standard Compute, TensorX, Vercel AI Gateway, ZenMux",
-    "detected_at": "2026-10-29T13:32:38.979727+00:00",
-    "details": "Input: $0.045 -> $0.0447; output: $0.25 -> $0.1788",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "4f6bcca10588fd33",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-v4-flash-latest",
-    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-29T13:32:38.979727+00:00",
-    "details": "Input: $0.057 -> $0.0539; output: $0.1341 -> $0.1415",
-    "direction": "mixed",
-    "in_direction": "decrease",
     "out_direction": "increase",
     "alerted": false
   }
