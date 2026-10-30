@@ -12480,24 +12480,6 @@
     "output_price_per_m": 5.5,
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
-    "litellm": {
-      "litellm_key": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
-      "litellm_provider": "bedrock_converse",
-      "model_name": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
-      "max_input_tokens": 200000,
-      "max_output_tokens": 64000,
-      "input_cost_per_token": 1.1e-06,
-      "output_cost_per_token": 5.5e-06,
-      "supports_reasoning": true,
-      "supports_vision": true,
-      "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
-      "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://aws.amazon.com/bedrock/pricing/",
-      "supported_endpoints": []
-    },
     "llm_stats_id": "claude-haiku-4-5-20251001"
   },
   {
@@ -13869,7 +13851,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-next-80b-a3b.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen3-next-80b-a3b-instruct"
@@ -17823,7 +17805,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://aws.amazon.com/bedrock/pricing/",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "glm-5"
