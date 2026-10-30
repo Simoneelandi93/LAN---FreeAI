@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "1baa08705e35d67c",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-30T21:32:38.617263+00:00",
+    "details": "Input: $0.0429 -> $0.0314; output: $0.1677 -> $0.1677",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "a4b97b518f015f35",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-30T21:32:38.617263+00:00",
+    "details": "Input: $0.1634 -> $0.1624; output: $10 -> $10",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "90cce3517d7e7865",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-v4-flash-latest",
@@ -2313,30 +2337,6 @@
     "provider": "NanoGPT",
     "detected_at": "2026-10-29T13:32:38.979727+00:00",
     "details": "Input: $0.66 -> $0.65868; output: $1.98 -> $1.97604",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "7d55b02916e85422",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-latest",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-29T13:32:38.979727+00:00",
-    "details": "Input: $0.66 -> $0.65868; output: $1.98 -> $1.97604",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "004cd0285647d284",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-v4.1-flash:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-29T13:32:38.979727+00:00",
-    "details": "Input: $0.09 -> $0.0447; output: $0.25 -> $0.1788",
     "direction": "decrease",
     "in_direction": "decrease",
     "out_direction": "decrease",
