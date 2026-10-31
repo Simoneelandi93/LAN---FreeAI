@@ -1,5 +1,26 @@
 [
   {
+    "event_id": "6a54907854173903",
+    "type": "price_change",
+    "model_id": "glm-5.3-fast",
+    "provider": "DevPass (LLM Gateway), Inco, Wally",
+    "detected_at": "2026-10-31T03:04:19.829921+00:00",
+    "details": "Input: $2.8 -> $2.1; output: $8.8 -> $6.6",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "bac19d4f0b588a3e",
+    "type": "new_model",
+    "model_id": "deepseek-v4-pro-fast",
+    "provider": "Wally",
+    "detected_at": "2026-10-31T03:04:19.829921+00:00",
+    "details": "$1.91 in / $3.83 out per 1M",
+    "alerted": false
+  },
+  {
     "event_id": "52c6365822e02cee",
     "type": "price_change",
     "model_id": "tencent/hy4-preview",
@@ -2334,30 +2355,6 @@
     "direction": "increase",
     "in_direction": "increase",
     "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "687c39984c5fd946",
-    "type": "price_change",
-    "model_id": "tencent/hy4-preview",
-    "provider": "AI/ML API, CommandCode, CrossModel, Deep Infra, Eden AI, Hugging Face, Kilo Gateway, LLM Gateway, NanoGPT, Novita AI, OpenRouter, Vercel AI Gateway",
-    "detected_at": "2026-10-29T16:33:23.726609+00:00",
-    "details": "Input: $0.834 -> $0.7506; output: $2.501 -> $2.2509",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "26b36d0ce916bbff",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-29T16:33:23.726609+00:00",
-    "details": "Input: $0.0339 -> $0.0372; output: $1.8 -> $1.64",
-    "direction": "mixed",
-    "in_direction": "increase",
-    "out_direction": "decrease",
     "alerted": false
   }
 ]
