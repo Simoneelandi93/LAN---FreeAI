@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "1b702b3ca5e9fe30",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-pro-0813",
+    "provider": "AI/ML API, Arcee, IteraCompute, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, OrcaRouter, Standard Compute, TensorX, Vercel AI Gateway",
+    "detected_at": "2026-10-31T12:32:11.840849+00:00",
+    "details": "Input: $0.65868 -> $0.2838; output: $1.97604 -> $0.8514",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "68e477b37fe6a642",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-latest",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-31T12:32:11.840849+00:00",
+    "details": "Input: $0.65868 -> $0.2838; output: $1.97604 -> $0.8514",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "acb950bab1707dcc",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-pro-0813:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-31T12:32:11.840849+00:00",
+    "details": "Input: $0.65868 -> $0.2838; output: $1.97604 -> $0.8514",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "ac1836eba22e1bdf",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4-pro-0813",
@@ -2319,39 +2355,6 @@
     "direction": "increase",
     "in_direction": "increase",
     "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "3273495700b77a70",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-pro-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-30T02:35:11.298931+00:00",
-    "details": "Input: $0.1035 -> $0.1035; output: $8 -> $4",
-    "direction": "decrease",
-    "in_direction": "same",
-    "out_direction": "decrease",
-    "alerted": true
-  },
-  {
-    "event_id": "cf4483a8b3b290cd",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-30T02:35:11.298931+00:00",
-    "details": "Input: $0.0309 -> $0.0339; output: $1.25 -> $1.14",
-    "direction": "mixed",
-    "in_direction": "increase",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "f0ca3ec0e83170f0",
-    "type": "new_model",
-    "model_id": "mistral-large-4-0-8",
-    "provider": "Mistral",
-    "detected_at": "2026-10-30T02:35:11.298931+00:00",
-    "details": "$0.7 in / $2.1 out per 1M",
     "alerted": false
   }
 ]
