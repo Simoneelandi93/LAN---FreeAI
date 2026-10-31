@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "2a1bd984df1e512d",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-10-31T13:32:20.274964+00:00",
+    "details": "Input: $0.01 -> $0.012; output: $0.03 -> $0.035",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "39c571bbdde2c715",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-10-31T13:32:20.274964+00:00",
+    "details": "Input: $0.01 -> $0.012; output: $0.03 -> $0.035",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "1b702b3ca5e9fe30",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4-pro-0813",
@@ -2334,27 +2358,6 @@
     "provider": "NEAR AI Cloud",
     "detected_at": "2026-10-30T02:35:11.298931+00:00",
     "details": "$0.3 in / $1.2 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "4397e8626a9ba1d7",
-    "type": "new_model",
-    "model_id": "Qwen/Qwen3.8-27B-abliterated",
-    "provider": "NEAR AI Cloud",
-    "detected_at": "2026-10-30T02:35:11.298931+00:00",
-    "details": "$0.04 in / $1.35 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "10cd0f82df79aa41",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-30T02:35:11.298931+00:00",
-    "details": "Input: $0.0457 -> $0.0477; output: $0.0701 -> $0.0701",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "same",
     "alerted": false
   }
 ]
