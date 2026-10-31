@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "64d4286c5040d0ba",
+    "type": "price_change",
+    "model_id": "tencent/hy4-preview",
+    "provider": "AI/ML API, CommandCode, CrossModel, Deep Infra, Eden AI, Hugging Face, Kilo Gateway, LLM Gateway, NanoGPT, Novita AI, OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-10-31T01:33:53.265121+00:00",
+    "details": "Input: $0.7506 -> $0.7923; output: $2.2509 -> $2.37595",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "03a350dd3cc63c36",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-31T01:33:53.265121+00:00",
+    "details": "Input: $0.0522 -> $0.0398; output: $0.28 -> $0.1432",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "2ade5f052fc70c6f",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-31T01:33:53.265121+00:00",
+    "details": "Input: $0.1824 -> $0.1539; output: $9.3388 -> $9.3388",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "3d9a0e1ce12c0d5f",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-31T01:33:53.265121+00:00",
+    "details": "Input: $0.0216 -> $0.0237; output: $0.1238 -> $0.1142",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "92b61dd59895bc26",
     "type": "price_change",
     "model_id": "minimax/minimax-m2.5",
@@ -2310,45 +2358,6 @@
     "direction": "mixed",
     "in_direction": "decrease",
     "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "8aee0f2b3777680e",
-    "type": "price_change",
-    "model_id": "z-ai/glm-5.2:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-29T14:33:06.158859+00:00",
-    "details": "Input: $0.226 -> $0.158; output: $2.208 -> $1.544",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "f832d214c17576cf",
-    "type": "new_model",
-    "model_id": "tencent/mimo-v2.6-flash",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-10-29T14:33:06.158859+00:00",
-    "details": "$0.14 in / $0.28 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "9098253f379cd6a1",
-    "type": "new_model",
-    "model_id": "tencent/mimo-v2.6-pro",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-10-29T14:33:06.158859+00:00",
-    "details": "$0.435 in / $0.87 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "22826d1fb3a57e7f",
-    "type": "new_model",
-    "model_id": "tencent/kimi-k2.8-preview",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-10-29T14:33:06.158859+00:00",
-    "details": "$1 in / $4 out per 1M",
     "alerted": false
   }
 ]
