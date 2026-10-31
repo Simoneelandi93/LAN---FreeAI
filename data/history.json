@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "92b61dd59895bc26",
+    "type": "price_change",
+    "model_id": "minimax/minimax-m2.5",
+    "provider": "Amazon Bedrock, Eden AI, HPC-AI, Kilo Gateway, LLM Gateway, Merge Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, OrcaRouter, Qiniu, TensorX, TokenGo, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-10-31T00:43:13.367719+00:00",
+    "details": "Input: $0.27 -> $0.27; output: $1.08 -> $0.95",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "fb01114f85ffd644",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-31T00:43:13.367719+00:00",
+    "details": "Input: $0.1529 -> $0.1824; output: $10 -> $9.3388",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "9beaf8a8c77b02d1",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-10-31T00:43:13.367719+00:00",
+    "details": "Input: $0.0341 -> $0.0522; output: $0.1599 -> $0.28",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "0553579a655aff96",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-31T00:43:13.367719+00:00",
+    "details": "Input: $0.0197 -> $0.0216; output: $0.1324 -> $0.1238",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "feef6e20cd090ce3",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
@@ -2301,45 +2349,6 @@
     "provider": "LLM Gateway",
     "detected_at": "2026-10-29T14:33:06.158859+00:00",
     "details": "$1 in / $4 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "e69becb41218b8dd",
-    "type": "new_model",
-    "model_id": "tencent/glm-5.3-flash",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-10-29T14:33:06.158859+00:00",
-    "details": "$0.15 in / $0.5 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "3b9796fa47a7c533",
-    "type": "new_model",
-    "model_id": "tencent/glm-5.3",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-10-29T14:33:06.158859+00:00",
-    "details": "$1.4 in / $4.4 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "b36d8ac973bad24b",
-    "type": "new_model",
-    "model_id": "tencent/glm-5.3-flashx",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-10-29T14:33:06.158859+00:00",
-    "details": "$0.37 in / $1.25 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "b010423cb233a526",
-    "type": "price_change",
-    "model_id": "tencent/deepseek-v4-pro",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-10-29T14:33:06.158859+00:00",
-    "details": "Input: $0.435 -> $0.66; output: $0.87 -> $1.98",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
     "alerted": false
   }
 ]
