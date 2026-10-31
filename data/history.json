@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "f9d83c24138fc211",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-31T08:32:41.156393+00:00",
+    "details": "Input: $0.0163 -> $0.0163; output: $0.1402 -> $0.1479",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "ed290a6c6a7ea2a9",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-10-31T08:32:41.156393+00:00",
+    "details": "Input: $0.0141 -> $0.0155; output: $0.158 -> $0.158",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "48228f67d620dc42",
     "type": "price_change",
     "model_id": "moonshotai/kimi-k2.6:thinking",
@@ -2331,30 +2355,6 @@
     "provider": "NanoGPT",
     "detected_at": "2026-10-30T00:52:41.056617+00:00",
     "details": "Input: $0.0324 -> $0.09; output: $0.1296 -> $0.25",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "7ce7efdcca6df3b6",
-    "type": "price_change",
-    "model_id": "deepseek/deepseek-latest",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-30T00:52:41.056617+00:00",
-    "details": "Input: $0.4488 -> $0.66; output: $1.3464 -> $1.98",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "0c031cf1906fc7f6",
-    "type": "price_change",
-    "model_id": "moonshotai/kimi-k2.6:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-30T00:52:41.056617+00:00",
-    "details": "Input: $0.3895 -> $0.39; output: $1.64 -> $1.8",
     "direction": "increase",
     "in_direction": "increase",
     "out_direction": "increase",
