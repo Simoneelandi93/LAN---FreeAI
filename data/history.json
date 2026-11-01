@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "a8cc591382c03731",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-01T06:35:17.990656+00:00",
+    "details": "Input: $0.015 -> $0.026; output: $0.054 -> $0.095",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "769ac350dc2c10a6",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-11-01T06:35:17.990656+00:00",
+    "details": "Input: $0.018 -> $0.024; output: $0.055 -> $0.085",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "0a8b890dfdb1f276",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-01T06:35:17.990656+00:00",
+    "details": "Input: $0.0114 -> $0.0093; output: $0.1584 -> $0.1702",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "1d01cdcacdfb8ea1",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-01T06:35:17.990656+00:00",
+    "details": "Input: $0.018 -> $0.028; output: $0.055 -> $0.085",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "8cb45289898ada89",
     "type": "price_change",
     "model_id": "openai/gpt-oss-120b",
@@ -2311,53 +2359,5 @@
     "in_direction": "decrease",
     "out_direction": "increase",
     "alerted": true
-  },
-  {
-    "event_id": "e5ff0d4f6bd85b20",
-    "type": "price_change",
-    "model_id": "google/gemma-4-26b-a4b-it:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-30T12:38:49.315993+00:00",
-    "details": "Input: $0.032 -> $0.035; output: $0.096 -> $0.105",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "36a001a9e2e4bd1d",
-    "type": "price_change",
-    "model_id": "google/gemma-4-26b-a4b-it",
-    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
-    "detected_at": "2026-10-30T12:38:49.315993+00:00",
-    "details": "Input: $0.031 -> $0.03; output: $0.092 -> $0.09",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "d3d7cf0d3dc24195",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-30T12:38:49.315993+00:00",
-    "details": "Input: $0.152 -> $0.1529; output: $10 -> $10",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "38cb3a9029c387fb",
-    "type": "price_change",
-    "model_id": "moonshotai/kimi-k2.7-code",
-    "provider": "Abacus, Chutes, CommandCode, CoreWeave, Deep Infra, HPC-AI, Hugging Face, Inceptron, IteraCompute, Kilo Gateway, NanoGPT, Nebius Token Factory, Novita AI, Ofox, OpenReason, OpenRouter, Perplexity Agent, SiliconFlow, TensorX, Vercel AI Gateway, ZenMux",
-    "detected_at": "2026-10-30T12:38:49.315993+00:00",
-    "details": "Input: $0.56 -> $0.6; output: $3 -> $3",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "same",
-    "alerted": false
   }
 ]
