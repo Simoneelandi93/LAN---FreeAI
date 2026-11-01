@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "eacb7a098ad2f675",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-01T20:32:25.972784+00:00",
+    "details": "Input: $0.013 -> $0.019; output: $0.048 -> $0.069",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "82c98ec852cd0eea",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-01T20:32:25.972784+00:00",
+    "details": "Input: $0.062 -> $0.0675; output: $0.186 -> $0.225",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "cc868f60f4c63314",
     "type": "price_change",
     "model_id": "openai/gpt-oss-120b",
@@ -2347,29 +2371,5 @@
     "detected_at": "2026-10-30T18:32:40.609790+00:00",
     "details": "$0.2 in / $0.5 out per 1M",
     "alerted": false
-  },
-  {
-    "event_id": "382b16e878c102f9",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-30T17:32:46.658249+00:00",
-    "details": "Input: $0.1529 -> $0.1615; output: $10 -> $10",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "9e98689504842752",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-v4-flash-latest",
-    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-30T17:32:46.658249+00:00",
-    "details": "Input: $0.0331 -> $0.0486; output: $0.28 -> $0.28",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "same",
-    "alerted": true
   }
 ]
