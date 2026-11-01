@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "d8f9d3bac491f3c3",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-01T14:32:15.072024+00:00",
+    "details": "Input: $0.017 -> $0.018; output: $0.062 -> $0.065",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "5e03faaa0c54679b",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-01T14:32:15.072024+00:00",
+    "details": "Input: $0.046 -> $0.052; output: $0.138 -> $0.155",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "17b898bbd136c203",
+    "type": "price_change",
+    "model_id": "pqhaz/DeepSeek-V4.1-Flash-1017-heretic",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-01T14:32:15.072024+00:00",
+    "details": "Input: $0.1854 -> $0.198; output: $0.7416 -> $0.792",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "ad376ecb1034c478",
+    "type": "price_change",
+    "model_id": "pqhaz/DeepSeek-V4.1-Flash-1017-heretic:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-01T14:32:15.072024+00:00",
+    "details": "Input: $0.1854 -> $0.198; output: $0.7416 -> $0.792",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "4f20bc40bfdac918",
     "type": "price_change",
     "model_id": "openai/gpt-oss-120b",
@@ -2310,54 +2358,6 @@
     "direction": "decrease",
     "in_direction": "decrease",
     "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "46c7b99bbfd47d75",
-    "type": "price_change",
-    "model_id": "scaleway/deepseek-v4.1-flash-1017",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-30T15:33:21.365210+00:00",
-    "details": "Input: $0.6678 -> $0.67032; output: $2.003399 -> $2.01096",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "6bc7037287c43555",
-    "type": "price_change",
-    "model_id": "scaleway/qwen3-235b-a22b-instruct-2507",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-30T15:33:21.365210+00:00",
-    "details": "Input: $0.83475 -> $0.8379; output: $2.504249 -> $2.5137",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "e3c8e28911c72f5b",
-    "type": "price_change",
-    "model_id": "scaleway/gpt-oss-120b",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-30T15:33:21.365210+00:00",
-    "details": "Input: $0.16695 -> $0.16758; output: $0.6678 -> $0.67032",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "88143b70121108ef",
-    "type": "price_change",
-    "model_id": "scaleway/deepseek-v4-flash-0731",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-30T15:33:21.365210+00:00",
-    "details": "Input: $0.4452 -> $0.44688; output: $0.8904 -> $0.89376",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
     "alerted": false
   }
 ]
