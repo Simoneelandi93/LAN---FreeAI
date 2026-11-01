@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "cc868f60f4c63314",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-01T19:32:34.667247+00:00",
+    "details": "Input: $0.014 -> $0.013; output: $0.051 -> $0.048",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "8ed8dc8be3f65995",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-01T19:32:34.667247+00:00",
+    "details": "Input: $0.065 -> $0.062; output: $0.196 -> $0.186",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "6ac0c34c56c03763",
     "type": "price_change",
     "model_id": "openai/gpt-oss-120b",
@@ -2347,29 +2371,5 @@
     "in_direction": "increase",
     "out_direction": "same",
     "alerted": true
-  },
-  {
-    "event_id": "4b47b2f2665ba2be",
-    "type": "price_change",
-    "model_id": "arcee-ai/trinity-large-thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-30T17:32:46.658249+00:00",
-    "details": "Input: $0.25 -> $0.25; output: $0.8 -> $0.9",
-    "direction": "increase",
-    "in_direction": "same",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "1a12df2178d63327",
-    "type": "price_change",
-    "model_id": "google/gemma-4-26b-a4b-it",
-    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
-    "detected_at": "2026-10-30T16:32:48.254790+00:00",
-    "details": "Input: $0.036 -> $0.03; output: $0.108 -> $0.09",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
   }
 ]
