@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "99296f289b09391b",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-01T09:32:37.766195+00:00",
+    "details": "Input: $0.023 -> $0.026; output: $0.087 -> $0.097",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "28525a2fe5908c21",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-01T09:32:37.766195+00:00",
+    "details": "Input: $0.065 -> $0.056; output: $0.195 -> $0.169",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "2960793bc02756c3",
     "type": "price_change",
     "model_id": "openai/gpt-oss-120b",
@@ -2331,30 +2355,6 @@
     "provider": "Eden AI",
     "detected_at": "2026-10-30T15:33:21.365210+00:00",
     "details": "Input: $0.2226 -> $0.22344; output: $0.7791 -> $0.78204",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "c4c6e81a9e461b68",
-    "type": "price_change",
-    "model_id": "greenpt/deepseek-v4-flash-0731",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-30T15:33:21.365210+00:00",
-    "details": "Input: $0.15582 -> $0.156408; output: $0.38955 -> $0.39102",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "516bc0214db4688f",
-    "type": "price_change",
-    "model_id": "greenpt/deepseek-v4.1-flash",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-30T15:33:21.365210+00:00",
-    "details": "Input: $0.24486 -> $0.245784; output: $1.224299 -> $1.22892",
     "direction": "increase",
     "in_direction": "increase",
     "out_direction": "increase",
