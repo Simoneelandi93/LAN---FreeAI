@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "cce2e0ed88b50df0",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-01T10:32:37.332621+00:00",
+    "details": "Input: $0.026 -> $0.019; output: $0.097 -> $0.071",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "36847b396403e970",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-01T10:32:37.332621+00:00",
+    "details": "Input: $0.056 -> $0.052; output: $0.169 -> $0.155",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "99296f289b09391b",
     "type": "price_change",
     "model_id": "openai/gpt-oss-120b",
@@ -2331,30 +2355,6 @@
     "provider": "Eden AI",
     "detected_at": "2026-10-30T15:33:21.365210+00:00",
     "details": "Input: $0.72345 -> $0.72618; output: $0.72345 -> $0.72618",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "1a40d693c853606d",
-    "type": "price_change",
-    "model_id": "greenpt/qwen3-235b-a22b-instruct-2507",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-30T15:33:21.365210+00:00",
-    "details": "Input: $1.0017 -> $1.00548; output: $3.005099 -> $3.01644",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "82c5fa0adaf0918d",
-    "type": "price_change",
-    "model_id": "greenpt/gpt-oss-120b",
-    "provider": "Eden AI",
-    "detected_at": "2026-10-30T15:33:21.365210+00:00",
-    "details": "Input: $0.2226 -> $0.22344; output: $0.7791 -> $0.78204",
     "direction": "increase",
     "in_direction": "increase",
     "out_direction": "increase",
