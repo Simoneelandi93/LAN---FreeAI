@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "42ce1a200aad593f",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-11-02T00:46:27.208221+00:00",
+    "details": "Input: $0.024 -> $0.021; output: $0.1 -> $0.062",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "12fe6f984915de92",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-02T00:46:27.208221+00:00",
+    "details": "Input: $0.037 -> $0.022; output: $0.11 -> $0.067",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "31ba84e1dbba00d2",
     "type": "price_change",
     "model_id": "openai/gpt-oss-120b",
@@ -2353,29 +2377,5 @@
     "in_direction": "increase",
     "out_direction": "decrease",
     "alerted": false
-  },
-  {
-    "event_id": "04f52ca2472db335",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-30T20:32:29.688788+00:00",
-    "details": "Input: $0.1529 -> $0.1634; output: $9.3388 -> $10",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "8ab5814d26fd5789",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-v4-flash-latest",
-    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-30T19:32:51.116881+00:00",
-    "details": "Input: $0.0369 -> $0.0304; output: $0.1751 -> $0.28",
-    "direction": "mixed",
-    "in_direction": "decrease",
-    "out_direction": "increase",
-    "alerted": true
   }
 ]
