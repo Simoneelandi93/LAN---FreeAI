@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "7155df6ae91596a1",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-11-02T04:32:41.316466+00:00",
+    "details": "Input: $0.021 -> $0.023; output: $0.064 -> $0.069",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "7fd318b7978d2e78",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-02T04:32:41.316466+00:00",
+    "details": "Input: $0.021 -> $0.023; output: $0.064 -> $0.069",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "5eb40dedce31b916",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
@@ -2353,29 +2377,5 @@
     "in_direction": "increase",
     "out_direction": "increase",
     "alerted": true
-  },
-  {
-    "event_id": "0553579a655aff96",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-31T00:43:13.367719+00:00",
-    "details": "Input: $0.0197 -> $0.0216; output: $0.1324 -> $0.1238",
-    "direction": "mixed",
-    "in_direction": "increase",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "feef6e20cd090ce3",
-    "type": "price_change",
-    "model_id": "google/gemma-4-26b-a4b-it",
-    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
-    "detected_at": "2026-10-30T23:32:40.410794+00:00",
-    "details": "Input: $0.03 -> $0.01; output: $0.09 -> $0.03",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
   }
 ]
