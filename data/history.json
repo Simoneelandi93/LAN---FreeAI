@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "a6ccea6fc6d5ca33",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-02T08:33:08.862267+00:00",
+    "details": "Input: $0.025 -> $0.03; output: $0.092 -> $0.15",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "e0569a349eb9bf3c",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-02T08:33:08.862267+00:00",
+    "details": "Input: $0.037 -> $0.062; output: $0.111 -> $0.186",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "8a9b32b7d13ee69b",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
@@ -2352,27 +2376,6 @@
     "direction": "decrease",
     "in_direction": "decrease",
     "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "bac19d4f0b588a3e",
-    "type": "new_model",
-    "model_id": "deepseek-v4-pro-fast",
-    "provider": "Wally",
-    "detected_at": "2026-10-31T03:04:19.829921+00:00",
-    "details": "$1.91 in / $3.83 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "52c6365822e02cee",
-    "type": "price_change",
-    "model_id": "tencent/hy4-preview",
-    "provider": "AI/ML API, CommandCode, CrossModel, Deep Infra, Eden AI, Hugging Face, Kilo Gateway, LLM Gateway, NanoGPT, Novita AI, OpenRouter, Vercel AI Gateway",
-    "detected_at": "2026-10-31T02:33:04.317111+00:00",
-    "details": "Input: $0.7923 -> $0.834; output: $2.37595 -> $2.501",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
     "alerted": false
   }
 ]
