@@ -269166,7 +269166,8 @@
     "input_price_per_m": 0.37,
     "output_price_per_m": 1.25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "glm-5.3-flashx-legal"
   },
   {
     "id": "openrouter/z-ai/glm-5.1",
@@ -309603,7 +309604,8 @@
     "input_price_per_m": 0.37,
     "output_price_per_m": 1.25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "glm-5.3-flashx-legal"
   },
   {
     "id": "nano-gpt/z-ai/GLM-4.6-turbo:thinking",
@@ -330391,7 +330393,8 @@
     "input_price_per_m": 0.37,
     "output_price_per_m": 1.25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/kilo/"
+    "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "glm-5.3-flashx-legal"
   },
   {
     "id": "kilo/z-ai/glm-5.1",
@@ -400911,7 +400914,8 @@
     "input_price_per_m": 0.37,
     "output_price_per_m": 1.25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "glm-5.3-flashx-legal"
   },
   {
     "id": "vercel/zai/glm-5.1",
