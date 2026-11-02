@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "410c57dce2772b4c",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-02T19:31:59.106760+00:00",
+    "details": "Input: $0.0527 -> $0.0514; output: $0.28 -> $0.28",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "1d923c7b01fe91f1",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-v4-flash-latest",
@@ -2352,18 +2364,6 @@
     "direction": "decrease",
     "in_direction": "same",
     "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "4d9acffed9c93f88",
-    "type": "price_change",
-    "model_id": "~moonshotai/kimi-latest",
-    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
-    "detected_at": "2026-10-31T06:33:59.117616+00:00",
-    "details": "Input: $0.1548 -> $0.1558; output: $10 -> $10",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "same",
     "alerted": false
   }
 ]
