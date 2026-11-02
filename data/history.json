@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "1d923c7b01fe91f1",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-02T18:32:46.550336+00:00",
+    "details": "Input: $0.0566 -> $0.0527; output: $0.28 -> $0.28",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "201d55b19d342a2c",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-11-02T18:32:46.550336+00:00",
+    "details": "Input: $0.024 -> $0.04; output: $0.1 -> $0.15",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "e14b6f378c76cd6d",
     "type": "price_change",
     "model_id": "xiaomi/mimo-v2.5",
@@ -2340,30 +2364,6 @@
     "direction": "increase",
     "in_direction": "increase",
     "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "3460992e8df443cb",
-    "type": "price_change",
-    "model_id": "~z-ai/glm-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-31T06:33:59.117616+00:00",
-    "details": "Input: $0.0216 -> $0.018; output: $0.1238 -> $0.1238",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "same",
-    "alerted": false
-  },
-  {
-    "event_id": "9a030fb475402374",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-10-31T06:33:59.117616+00:00",
-    "details": "Input: $0.017 -> $0.0141; output: $0.19 -> $0.173",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
     "alerted": false
   }
 ]
