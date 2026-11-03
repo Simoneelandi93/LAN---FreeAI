@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "3d0d5aa6f162ee77",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-03T20:04:12.202542+00:00",
+    "details": "Input: $0.2 -> $0.1596; output: $10 -> $10",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "815b73949170063d",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
