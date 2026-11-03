@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "351f523ac457daeb",
+    "type": "new_free_model",
+    "model_id": "crouton-alpha-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-11-03T20:33:14.269945+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "10a999ec25b9aae9",
+    "type": "new_model",
+    "model_id": "baidu/kimi-k3",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-03T20:33:14.269945+00:00",
+    "details": "$3 in / $15 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "7fe7e71b1529d657",
     "type": "new_model",
     "model_id": "soob3123/GrayLine-Qwen3-8B",

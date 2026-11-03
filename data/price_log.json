@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "307e646dff324ffd",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-03T20:33:14.269945+00:00",
+    "details": "Input: $0.03 -> $0.022; output: $0.15 -> $0.081",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "57cc518ba9e5337c",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-03T20:33:14.269945+00:00",
+    "details": "Input: $0.1596 -> $0.151; output: $10 -> $10",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "d70e6c80673c66f6",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-03T20:33:14.269945+00:00",
+    "details": "Input: $0.0313 -> $0.0313; output: $0.0846 -> $0.0784",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "a27df33811022e84",
+    "type": "price_change",
+    "model_id": "nomic-embed-text",
+    "provider": "Tinfoil",
+    "detected_at": "2026-11-03T20:33:14.269945+00:00",
+    "details": "Input: $0.05 -> $0.016; output: $0 -> $0",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "3d0d5aa6f162ee77",
     "type": "price_change",
     "model_id": "~moonshotai/kimi-latest",
