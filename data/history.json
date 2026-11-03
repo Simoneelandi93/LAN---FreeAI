@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "c3b9ac56939d52c4",
+    "type": "new_free_model",
+    "model_id": "stealth/crouton-alpha",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-03T21:33:03.563262+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "351f523ac457daeb",
     "type": "new_free_model",
     "model_id": "crouton-alpha-free",
