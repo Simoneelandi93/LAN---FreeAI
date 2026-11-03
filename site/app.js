@@ -29,6 +29,37 @@ let lookupIndex = null;      // { byKey: Map, searchTerms: [{term, key}], ... } 
 let lookupData = null;       // raw {generated_at, models}
 let releaseIndex = null;     // normalized name -> {released_at, provider, source_url}
 
+// Free Tiers tab (data/offers.json — every published offer, including providers
+// with no models.dev catalog row).
+let offersIndex = [];        // [{ id, provider, offer_type, quota, notes, source_url, checked_at, model_count }]
+let activeTierFilter = "all"; // "all" | "free" | "quota" | "credit" | "unparsed"
+
+function normOfferId(s) {
+  return String(s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+// Providers whose offer covers every catalog row ('models_included' empty) report
+// their real footprint here; the others already list explicit model ids.
+async function fetchOfferModelCounts() {
+  const counts = new Map();
+  for (const url of ["data/models.json", "../data/models.json"]) {
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(10000) });
+      if (!res.ok) continue;
+      const rows = await res.json();
+      if (!Array.isArray(rows)) continue;
+      for (const m of rows) {
+        const o = m && m.offer;
+        if (!o) continue;
+        const key = normOfferId(o.id);
+        counts.set(key, (counts.get(key) || 0) + 1);
+      }
+      return counts;
+    } catch (e) { /* try the next path */ }
+  }
+  return counts;
+}
+
 // Boards tab. The tab strip is generated from this list so the buttons can
 // never drift out of sync with the renderers.
 const BOARDS = [
@@ -62,14 +93,16 @@ function loadSavedState() {
 
   // Guard each value against a left-over from a renamed or removed filter.
   const allowed = {
-    activeSource: ["OmniRouter", "OpenRouter", "both", "lookup", "boards", "changes"],
+    activeSource: ["OmniRouter", "OpenRouter", "both", "lookup", "tiers", "boards", "changes"],
     activeFilter: ["all", "free", "paid"],
     activeChangesRange: ["all", "weekly", "daily"],
     activeAlertFilter: ["alerted", "all", "silent"],
     activeTypeFilter: ["all", "new"],
+    activeTierFilter: ["all", "free", "quota", "credit", "unparsed"],
     sortDir: ["asc", "desc"],
   };
   if (BOARD_KEYS.includes(saved.activeBoard)) activeBoard = saved.activeBoard;
+  if (allowed.activeTierFilter.includes(saved.activeTierFilter)) activeTierFilter = saved.activeTierFilter;
   if (allowed.activeSource.includes(saved.activeSource)) activeSource = saved.activeSource;
   if (allowed.activeFilter.includes(saved.activeFilter)) activeFilter = saved.activeFilter;
   if (allowed.activeChangesRange.includes(saved.activeChangesRange)) activeChangesRange = saved.activeChangesRange;
@@ -83,7 +116,7 @@ function saveState() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
       activeSource, activeFilter, sortKey, sortDir,
-      activeChangesRange, activeAlertFilter, activeTypeFilter, activeBoard,
+      activeChangesRange, activeAlertFilter, activeTypeFilter, activeBoard, activeTierFilter,
     }));
   } catch (e) { /* private mode / quota — nothing to do */ }
 }
@@ -355,6 +388,99 @@ function releaseDateFor(name) {
   if (!releaseIndex || !name) return "";
   const hit = releaseIndex[releaseKey(name)];
   return hit && hit.released_at ? hit.released_at : "";
+}
+
+// ---------- Free tiers ----------
+// data/offers.json is the merged offer list (awesome-ai-free-tiers primary,
+// FreeInference.dev secondary). It includes providers with no models.dev catalog
+// row, so this view is the only place those tiers are visible.
+
+async function fetchOffers() {
+  for (const url of ["data/offers.json", "../data/offers.json"]) {
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(10000) });
+      if (!res.ok) continue;
+      const data = await res.json();
+      return Array.isArray(data) ? data : [];
+    } catch (e) { /* try the next path */ }
+  }
+  return [];
+}
+
+const TIER_TYPE_LABELS = {
+  permanent_free: "Free forever",
+  monthly_recurring: "Free forever",
+  periodic_recurring: "Free forever",
+  permanent_quota: "Free · quota",
+  promo_limited: "Promo (limited)",
+  welcome_credits: "Signup credits",
+  developer_trial: "Developer trial",
+  trial_evaluation: "Trial / eval",
+};
+
+function tierTypeLabel(t) {
+  return TIER_TYPE_LABELS[t] || t || "Free";
+}
+
+function offerQuotaText(o) {
+  const parts = [];
+  if (o.quota_requests_day) parts.push(`${Number(o.quota_requests_day).toLocaleString()} req/day`);
+  if (o.quota_requests_minute) parts.push(`${Number(o.quota_requests_minute).toLocaleString()}/min`);
+  if (o.rolling_window) parts.push(o.rolling_window);
+  if (o.quota_tokens_minute) parts.push(`${Number(o.quota_tokens_minute).toLocaleString()} tok/min`);
+  return parts.join(" · ");
+}
+
+function renderTiers(query) {
+  const q = (query || "").toLowerCase();
+  const list = offersIndex.filter(o => {
+    if (activeTierFilter === "free" && o.offer_type !== "permanent_free" && o.offer_type !== "monthly_recurring" && o.offer_type !== "periodic_recurring") return false;
+    if (activeTierFilter === "quota" && !o.quota) return false;
+    if (activeTierFilter === "credit" && !(o.offer_type === "welcome_credits" || o.offer_type === "developer_trial")) return false;
+    if (activeTierFilter === "unparsed" && o.quota) return false;
+    if (!q) return true;
+    return (o.provider || "").toLowerCase().includes(q)
+      || (o.id || "").toLowerCase().includes(q)
+      || (o.notes || "").toLowerCase().includes(q);
+  });
+
+  const counts = {
+    all: offersIndex.length,
+    free: offersIndex.filter(o => o.offer_type === "permanent_free" || o.offer_type === "monthly_recurring" || o.offer_type === "periodic_recurring").length,
+    quota: offersIndex.filter(o => o.quota).length,
+    credit: offersIndex.filter(o => o.offer_type === "welcome_credits" || o.offer_type === "developer_trial").length,
+    unparsed: offersIndex.filter(o => !o.quota).length,
+  };
+  const btns = [["all", "All"], ["free", "Free forever"], ["quota", "With quota"], ["credit", "Credits / trial"], ["unparsed", "Quota unpublished"]];
+  document.getElementById("tiersControls").innerHTML = btns.map(([k, label]) =>
+    `<button class="tier-btn${activeTierFilter === k ? " active" : ""}" data-tier="${k}" role="tab" aria-selected="${activeTierFilter === k}">${label} <span class="badge-counter">${counts[k]}</span></button>`
+  ).join("");
+
+  const body = document.getElementById("tiersResults");
+  body.innerHTML = list.map(o => {
+    const quota = o.quota
+      ? `<span class="tier-quota">${esc(o.quota)}</span>`
+      : `<span class="tier-quota-none">not published</span>`;
+    const note = o.notes ? `<span class="tier-notes" title="${esc(o.notes)}">${esc(o.notes)}</span>` : "";
+    const link = o.source_url ? `<a href="${esc(o.source_url)}" target="_blank" rel="noopener noreferrer">${esc(o.provider || o.id)}</a>` : esc(o.provider || o.id);
+    const checked = o.checked_at
+      ? `<span class="tier-checked">checked ${esc(String(o.checked_at).slice(0, 10))}</span>` : "";
+    const src = o.data_source === "freeinference"
+      ? `<span class="tier-src">FreeInference</span>`
+      : `<span class="tier-src tier-src-primary">awesome-ai-free-tiers</span>`;
+    return `<div class="tier-row">
+      <div class="tier-main">
+        <span class="tier-name">${link}</span>
+        <span class="tier-type">${esc(tierTypeLabel(o.offer_type))}</span>
+        <span class="tier-models">${o.model_count ? `${o.model_count} model${o.model_count === 1 ? "" : "s"}` : "provider-wide"}</span>
+      </div>
+      <div class="tier-detail">${quota}${note}${checked}${src}</div>
+    </div>`;
+  }).join("");
+
+  if (!list.length) {
+    body.innerHTML = `<div class="empty"><h3>No tiers found</h3><p>Try a different filter or search.</p></div>`;
+  }
 }
 
 async function fetchLookup() {
@@ -1264,32 +1390,38 @@ function render() {
   const isChanges = activeSource === "changes";
   const isLookup = activeSource === "lookup";
   const isBoards = activeSource === "boards";
+  const isTiers = activeSource === "tiers";
 
   syncControls();
 
   const toolbar = document.getElementById("sourceFilters");
-  if (toolbar) toolbar.style.display = isChanges || isLookup || isBoards ? "none" : "flex";
+  if (toolbar) toolbar.style.display = isChanges || isLookup || isBoards || isTiers ? "none" : "flex";
 
   const tableView = document.getElementById("modelTableContainer");
   const changesView = document.getElementById("changesView");
   const lookupView = document.getElementById("lookupView");
   const boardsView = document.getElementById("boardsView");
-  if (tableView) tableView.style.display = isChanges || isLookup || isBoards ? "none" : "block";
+  const tiersView = document.getElementById("tiersView");
+  if (tableView) tableView.style.display = isChanges || isLookup || isBoards || isTiers ? "none" : "block";
   if (changesView) changesView.hidden = !isChanges;
   if (lookupView) lookupView.hidden = !isLookup;
   if (boardsView) boardsView.hidden = !isBoards;
+  if (tiersView) tiersView.hidden = !isTiers;
 
   document.getElementById("searchInput").placeholder = isChanges
     ? "Search changelog updates..."
     : isLookup
       ? "Search a model — \"opus 5.5\", \"glm5\", \"gemini flash\"..."
-      : isBoards
-        ? "Search models..."
-        : "Search models...";
+      : isTiers
+        ? "Search free tiers — \"cursor\", \"kilo\", \"copilot\"..."
+        : isBoards
+          ? "Search models..."
+          : "Search models...";
 
   if (isChanges) { renderChanges(query); return; }
   if (isLookup) { renderLookup(query); return; }
   if (isBoards) { renderBoards(); return; }
+  if (isTiers) { renderTiers(query); return; }
 
   applyFilters();
   renderTable();
@@ -1311,6 +1443,22 @@ async function loadData() {
   assignScores(omniModels, orModels, scoreIndex);
 
   allModels = [...omniModels, ...orModels];
+
+  const [offers, catalogCounts] = await Promise.all([fetchOffers(), fetchOfferModelCounts()]);
+  offersIndex = offers.map(o => {
+    const listed = Array.isArray(o.models_included) ? o.models_included.length : 0;
+    return {
+      id: o.id || "",
+      provider: o.provider || o.title || o.id || "",
+      offer_type: o.offer_type || "permanent_free",
+      quota: offerQuotaText(o),
+      notes: o.notes || "",
+      source_url: o.source_url || "",
+      checked_at: o.checked_at || "",
+      model_count: listed || catalogCounts.get(normOfferId(o.id)) || 0,
+      data_source: o.data_source || "primary",
+    };
+  }).sort((a, b) => a.provider.localeCompare(b.provider));
 
   history = await fetchHistory();
   lookupData = await fetchLookup();
@@ -1363,6 +1511,15 @@ document.querySelectorAll(".tab-pri[data-source]").forEach(btn => {
     render();
   });
 })();
+
+// Free Tiers filters — re-rendered by renderTiers, so the handler is delegated.
+document.getElementById("tiersControls").addEventListener("click", (e) => {
+  const btn = e.target.closest(".tier-btn");
+  if (!btn) return;
+  activeTierFilter = btn.dataset.tier;
+  saveState();
+  render();
+});
 
 // Changelog range + alert filters
 document.querySelectorAll("#changesView .chg-btn").forEach(btn => {

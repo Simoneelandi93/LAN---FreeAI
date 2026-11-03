@@ -13,6 +13,7 @@
 - **Auto-updated free tiers**: `data/offers.json` is generated every sync from the community-maintained [awesome-ai-free-tiers](https://github.com/4pixeltechBR/awesome-ai-free-tiers) dataset (65 providers, 126 model entries with per-model rate limits), so quotas and deprecated tiers stay current without hand edits.
 - **Scout view + combo builder**: ranks the best free model for every provider (by LLM Stats score, daily quota, freshness or context), flags models reachable on a local router, and builds a combo — one pick per provider — copyable as a ready-to-paste model-ID list for [9router](https://github.com/9router) or OmniRouter.
 - **Model lookup**: type a model name (typos welcome — "cluade opus" finds Claude Opus) and get a card of every provider serving it, grouped free → free-with-quota → signup credits → paid, each with the exact model ID one click to copy. When a model has no free source, the closest free alternatives are suggested instead of a dead end. Backed by `data/lookup.json`, generated every sync by `scripts/build_lookup.py`. Community-reported quotas carry a "checked {date}" stamp that turns stale after 30 days.
+- **Free Tiers tab**: every offer in `data/offers.json` as one row per provider — quota, model count, access notes, verification date and source (awesome-ai-free-tiers or FreeInference.dev). This is where bundled and IDE tiers appear: Cursor, GitHub Copilot Free, Kilo Gateway, Windsurf, Figma and others have no models.dev catalog row, so they never show on a lookup card but still publish a real free tier. Filter by free-forever / quota-published / credits / quota-unpublished.
 - **Boards**: five deliberately different rankings. *Most Used* = real OpenRouter token volume over the trailing 7 days (ingested daily from openrouter.ai/rankings via whatstrending.ai into `data/leaderboard.json`). *Best FREE* = LLM Stats benchmark scores joined onto free providers from `lookup.json` — the highest-quality models you can run for $0. *Value Leaders* = cheapest paid text models by blended input/output price. *Fastest* = OpenRouter's own p50 throughput/latency per provider. *Newest* = latest catalog listings by `created` date. Usage ≠ quality ≠ price ≠ speed, and the notes on each board say so.
 
 ---
@@ -163,9 +164,14 @@ column for providers like `nvidia` (52 daily-quota models), `groq`, `google` and
 FreeInference's quota fields are free text (`"Not published"`, `"256K - 1M"`),
 so only values that parse to a real number become quotas; the rest are kept
 verbatim in `notes`. Its model names are display labels rather than catalog ids,
-so `models_included` is left empty and the quota applies provider-wide. Offers
-whose provider has no catalog rows at all (18 at the time of writing) can't
-attach a quota to any model; the run log lists them under
+so `models_included` is left empty and the quota applies provider-wide. The
+**Free Tiers** tab lists every offer from this union — including the bundled and
+IDE tiers (Cursor, Copilot, Kilo, Windsurf…) that have no models.dev catalog row
+and so never appear on a lookup card. Its model counts come from the offers
+file when it lists explicit ids, and from `data/models.json` otherwise, which is
+how a provider-wide offer like Kilo Gateway reports its 381 covered models.
+Offers whose provider has no catalog rows at all (18 at the time of writing)
+still can't attach a quota to any model; the run log lists them under
 `[Warn] N merged offer(s) match no catalog provider` instead of letting them
 vanish silently.
 

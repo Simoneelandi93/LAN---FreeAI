@@ -74,6 +74,7 @@
             <button class="tab-pri" data-source="OpenRouter" role="tab" aria-selected="false">OpenRouter</button>
             <button class="tab-pri" data-source="both" role="tab" aria-selected="false">Both</button>
             <button class="tab-pri" data-source="lookup" role="tab" aria-selected="false">Lookup</button>
+            <button class="tab-pri" data-source="tiers" role="tab" aria-selected="false">Free Tiers</button>
             <button class="tab-pri" data-source="boards" role="tab" aria-selected="false">Boards</button>
             <button class="tab-pri" data-source="changes" role="tab" aria-selected="false">Changelog</button>
           </nav>
@@ -130,6 +131,15 @@
           <p>Type a model name — "claude opus", "glm5", "gemini flash". Typos are fine. Providers are grouped: free forever → free with quota → signup credits → paid. If a model has no free source, the closest free alternatives are shown.</p>
         </div>
         <div class="lookup-results" id="lookupResults"></div>
+      </section>
+
+      <section class="tiers-view" id="tiersView" hidden>
+        <div class="tiers-controls" id="tiersControls"></div>
+        <div class="tiers-intro">
+          <h3>Every published free tier</h3>
+          <p>One row per provider offer, including IDE and bundled tiers (Cursor, Copilot, Kilo) that have no model-catalog row. Quotas are parsed from each provider's published limits; "not published" means the source gave no number.</p>
+        </div>
+        <div class="tiers-results" id="tiersResults"></div>
       </section>
 
       <section class="changes-view" id="changesView" hidden>
