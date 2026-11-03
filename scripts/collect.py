@@ -6,6 +6,8 @@ from sources.free_tiers_upstream import fetch_upstream_free_tiers, PROVIDER_ALIA
 from sources.models_dev import fetch_models_dev_catalog
 from sources.litellm import fetch_litellm_catalog, enrich_models
 from sources.llm_stats import fetch_llm_stats, attach_llm_stats, stats_index
+from sources.aidatahub import fetch_model_releases, build_release_index
+from sources.freeinference import fetch_free_inference, merge_offers, unresolved_offers
 from scripts.detect_changes import detect_model_changes
 from scripts.notify_telegram import send_telegram, send_alerts
 from scripts.build_lookup import save_lookup
@@ -13,6 +15,7 @@ from scripts.build_lookup import save_lookup
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 MODELS_FILE = os.path.join(DATA_DIR, "models.json")
 OFFERS_FILE = os.path.join(DATA_DIR, "offers.json")
+RELEASES_FILE = os.path.join(DATA_DIR, "releases.json")
 HISTORY_FILE = os.path.join(DATA_DIR, "history.json")
 # Price moves are the bulk of every run's diff, so at a small cap they push new
 # models out of the changelog within hours. Keep the changelog reserved for
@@ -162,6 +165,18 @@ def main():
         print("[Warn] No models fetched from providers. Keeping old snapshot.")
         new_models = old_models
 
+    # 1a-ii. Union the FreeInference directory onto the primary free-tier source.
+    #      The primary wins on quota numbers; this only adds providers it lacks.
+    fi_offers = fetch_free_inference(os.path.join(DATA_DIR, "freeinference_cache.json"))
+    if fi_offers:
+        curated_offers = merge_offers(curated_offers, fi_offers)
+        dangling = unresolved_offers(curated_offers, [m.get("provider_id", "") for m in new_models])
+        if dangling:
+            print(f"[Warn] {len(dangling)} merged offer(s) match no catalog provider: "
+                  f"{', '.join(dangling[:8])}")
+    else:
+        print("[Warn] FreeInference directory unavailable; primary source only.")
+
     # 1b. Optional benchmark enrichment from llm-stats.com, joined by model name
     llm_stats = fetch_llm_stats()
     if llm_stats:
@@ -175,6 +190,15 @@ def main():
     offer_map, provider_quota_map = _build_offer_map(curated_offers)
     for m in new_models:
         _merge_quota(m, offer_map, provider_quota_map)
+
+    # 1d. Official release dates from AIDataHub. Joined by name on the frontend;
+    #     this only fills the announcement date models.dev leaves blank.
+    releases = fetch_model_releases(os.path.join(DATA_DIR, "aidatahub_cache.json"))
+    if releases:
+        save_json(RELEASES_FILE, build_release_index(releases))
+        print(f"[AIDataHub] Recorded {len(releases)} release(s).")
+    else:
+        print("[Warn] Release feed unavailable; keeping previous data/releases.json.")
 
     # 2. Diff and detect changes (free transitions first, batched, capped)
     events, alerts = detect_model_changes(old_models, new_models)

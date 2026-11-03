@@ -98,6 +98,8 @@ Open `http://localhost:8000/site/`. The frontend loads `data/*.json`, falling ba
 | models.dev catalog | `models.dev/api.json` | Pricing per 1M tokens, context limits, modalities, capabilities for every tracked provider. |
 | LLM Stats | `api.zeroeval.com/leaderboard/models/full` + `/leaderboard/indexes/compact` | Benchmark scores and leaderboard ranks, joined to catalog rows **by model name**. Public and keyless. |
 | awesome-ai-free-tiers | `4pixeltechBR/awesome-ai-free-tiers` → `data/providers.json` | Community-audited free-tier quotas, rate limits, billing tiers and deprecation status for 65 providers. Fetched with ETag caching; `data/offers_cache.json` is the local copy and `data/offers.json` the normalized output. |
+| FreeInference.dev | `freeinference.dev/data/providers.json` | Curated free-tier directory (37 providers, 129 models) with a published JSON Schema and `data_version` fingerprint. Adds bundled/IDE tiers the primary source lacks (GitHub Copilot Free, Kilo Gateway, Nous Portal, v0, …). Union of coverage — the primary source wins on quota numbers. |
+| AIDataHub | `aidatahub.io/api/model-releases.json` | Official release dates (Anthropic, OpenAI, Google, xAI, Mistral, DeepSeek, Cohere, Qwen) plus a JSON Schema, RSS and client library. Fills the announcement date models.dev leaves blank; shown on lookup cards as "announced {date}". |
 
 ### Joining LLM Stats by name
 
@@ -147,6 +149,35 @@ rate limits still win when both apply. This is what fills the Scout view's *Free
 column for providers like `nvidia` (52 daily-quota models), `groq`, `google` and
 `openrouter`.
 
+### Two free-tier sources
+
+`data/offers.json` is a union of two directories:
+
+- **awesome-ai-free-tiers** (primary) — structured numeric quotas. Wins on any
+  conflict, because its figures are machine-readable rather than prose.
+- **FreeInference.dev** (secondary) — a curated directory that covers bundled and
+  IDE tiers the primary lacks: GitHub Copilot Free, Kilo Gateway, Nous Portal,
+  v0, Kaggle, Figma, Canva, and others. Only providers the primary does not have
+  at all are added, so no existing quota is ever overwritten.
+
+FreeInference's quota fields are free text (`"Not published"`, `"256K - 1M"`),
+so only values that parse to a real number become quotas; the rest are kept
+verbatim in `notes`. Its model names are display labels rather than catalog ids,
+so `models_included` is left empty and the quota applies provider-wide. Offers
+whose provider has no catalog rows at all (18 at the time of writing) can't
+attach a quota to any model; the run log lists them under
+`[Warn] N merged offer(s) match no catalog provider` instead of letting them
+vanish silently.
+
+### Release dates
+
+`data/releases.json` is the AIDataHub release index, keyed on a normalized model
+name and joined on render. It supplies the **official announcement date** that
+models.dev leaves blank for many models, shown on lookup cards as
+`announced 2026-10-06`. Audio, vision, robotics and tooling releases are
+filtered out — matching the release *name* only, never its summary, because a
+chat model's announcement routinely mentions its TTS and image siblings.
+
 ---
 
 ## 📂 Project Architecture
@@ -160,7 +191,8 @@ free-ai-radar/
 ├── data/
 │   ├── models.json        # Normalized catalog snapshot (~9k models)
 │   ├── llm_stats.json     # LLM Stats score table (416 models, joined by id)
-│   ├── offers.json        # Provider free tiers and quotas (curated)
+│   ├── offers.json        # Provider free tiers and quotas (two sources, merged)
+│   ├── releases.json      # Official announcement dates, joined by model name
 │   ├── history.json       # Debuts and free transitions (changelog)
 │   ├── price_log.json     # Cross-provider price moves, kept out of the changelog
 │   ├── lookup.json        # Model-centric join: canonical name → providers with tiers
@@ -168,6 +200,8 @@ free-ai-radar/
 ├── sources/
 │   ├── models_dev.py      # models.dev → normalized model records
 │   ├── free_tiers_upstream.py # awesome-ai-free-tiers → normalized offers + provider aliases
+│   ├── freeinference.py   # FreeInference.dev → offers the primary source lacks
+│   ├── aidatahub.py       # AIDataHub → official release dates
 │   ├── litellm.py         # LiteLLM catalog → pricing/capability enrichment
 │   └── llm_stats.py       # LLM Stats public leaderboard → benchmark scores, joined by name
 ├── scripts/

@@ -27,6 +27,7 @@ const MILLIS_DAY = 86400000;
 // Lookup state (data/lookup.json, built by scripts/build_lookup.py)
 let lookupIndex = null;      // { byKey: Map, searchTerms: [{term, key}], ... } built lazily
 let lookupData = null;       // raw {generated_at, models}
+let releaseIndex = null;     // normalized name -> {released_at, provider, source_url}
 
 // Boards tab. The tab strip is generated from this list so the buttons can
 // never drift out of sync with the renderers.
@@ -333,6 +334,29 @@ async function fetchHistory() {
 // provider's price/tier/quota attached. The search is deliberately forgiving:
 // "glm5" must find "GLM-5.3", "opus 5.5" must find "Claude Opus 5.5".
 
+// ---------- Release dates ----------
+// data/releases.json is the AIDataHub release index (official announcement
+// dates, joined by normalized model name). Optional: the card just omits the
+// line when the file is missing or the name has no match.
+
+async function fetchReleases() {
+  for (const url of ["data/releases.json", "../data/releases.json"]) {
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(10000) });
+      if (!res.ok) continue;
+      const data = await res.json();
+      return (data && data.releases) || {};
+    } catch (e) { /* try the next path */ }
+  }
+  return {};
+}
+
+function releaseDateFor(name) {
+  if (!releaseIndex || !name) return "";
+  const hit = releaseIndex[releaseKey(name)];
+  return hit && hit.released_at ? hit.released_at : "";
+}
+
 async function fetchLookup() {
   for (const url of ["data/lookup.json", "../data/lookup.json"]) {
     try {
@@ -347,6 +371,12 @@ async function fetchLookup() {
 
 function normToken(s) {
   return String(s || "").toLowerCase().replace(/[^a-z0-9.]/g, "");
+}
+
+// The release index is keyed on alphanumerics only (matching the Python
+// build_release_index), so dots must go here too or "GPT-6.1" never matches.
+function releaseKey(s) {
+  return String(s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
 function editDistanceLE(a, b, max) {
@@ -575,6 +605,8 @@ function lookupCardHTML(entry, { isAlt = false } = {}) {
   for (const p of entry.providers) (groups[p.tier] = groups[p.tier] || []).push(p);
   const tierOrder = ["free", "free_quota", "credit", "paid"];
   const ctx = entry.context_window ? `<span class="lk-ctx">${fmtContext(entry.context_window)} context</span>` : "";
+  const released = releaseDateFor(entry.name);
+  const rel = released ? `<span class="lk-rel" title="Official announcement date (AIDataHub)">announced ${esc(released)}</span>` : "";
   const sections = tierOrder.filter(t => groups[t]).map(t => {
     const rows = groups[t].map(p => {
       const copyId = esc(p.model_id || "");
@@ -601,7 +633,7 @@ function lookupCardHTML(entry, { isAlt = false } = {}) {
   return `<article class="lk-card${isAlt ? " lk-card-alt" : ""}">
     <div class="lk-card-head">
       <h4>${esc(entry.name)}</h4>
-      ${ctx}${altTag}
+      ${ctx}${rel}${altTag}
     </div>
     ${sections}
   </article>`;
@@ -1283,6 +1315,7 @@ async function loadData() {
   history = await fetchHistory();
   lookupData = await fetchLookup();
   lookupIndex = lookupData ? buildLookupIndex(lookupData) : null;
+  releaseIndex = await fetchReleases();
   leaderboard = await fetchLeaderboard();
   scoreById = await loadScoreMap();
 
