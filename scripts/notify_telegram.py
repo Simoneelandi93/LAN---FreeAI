@@ -5,8 +5,10 @@ import requests
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-# Safety net: never send more than this many messages in a single run
-MAX_MESSAGES_PER_RUN = 10
+# Safety net: never send more than this many messages in a single run. Set above
+# the old 10 because every debut now alerts — at 10 a busy cycle truncated the
+# new-model list and the tail was lost entirely.
+MAX_MESSAGES_PER_RUN = 30
 # Pause between messages to stay well inside Telegram's per-chat rate limit
 MESSAGE_INTERVAL_SECONDS = 1.0
 MAX_RETRIES_ON_429 = 2

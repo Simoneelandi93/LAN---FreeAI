@@ -18,7 +18,7 @@ let visibleCount = 100000;  // Load all models at once
 // Changelog state
 let history = [];
 let activeChangesRange = "all";   // "all" | "weekly" | "daily"
-let activeAlertFilter = "alerted";  // default: only events that were sent to Telegram
+let activeAlertFilter = "all";     // default: everything — most debuts are not alerted, so "alerted" hid them
 let activeTypeFilter = "all";       // "all" | "new" (new_model + new_free_model only)
 let omniFailed = false;
 let orFailed = false;
@@ -47,7 +47,9 @@ let scoreById = new Map();   // llm_stats_id -> {name, score, rank}
 // ---------- Persisted view state ----------
 // Remembers the last view across refreshes. Deliberately excludes the search
 // box: a half-typed query surviving a reload is more annoying than useful.
-const STORAGE_KEY = "modelSources.view.v1";
+// v2: v1 persisted activeAlertFilter="alerted", which the new default must
+// override — keeping the key would pin every returning visitor to the old view.
+const STORAGE_KEY = "modelSources.view.v2";
 
 function loadSavedState() {
   let saved = null;
@@ -309,8 +311,9 @@ function assignScores(omniModels, orModels, scoreIndex) {
 }
 
 // ---------- Changelog ----------
-// data/history.json is the last 200 delta events written by the collect
-// pipeline. Read-only here — the page never writes it.
+// data/history.json holds debuts and free transitions written by the collect
+// pipeline; price moves live in data/price_log.json so they cannot evict them.
+// Read-only here — the page never writes either file.
 
 async function fetchHistory() {
   // Same dual-path fallback as data/*.json: works from repo root and on Pages.

@@ -89,8 +89,8 @@ def detect_model_changes(
     Diffs the previous snapshot against the current one. Returns:
       1. Event records for history.json
       2. Alert messages for Telegram — prioritised and batched, never a flood:
-         free transitions first, OpenRouter price changes, one digest for the rest.
-         The digest itself is capped at 10 lines; everything else is sent.
+         free transitions first, then every debut (free or paid), then OpenRouter
+         price changes. Debuts all alert; the batch cap lives in notify_telegram.
     """
     old_groups = _group_by_key(old_models)
     new_groups = _group_by_key(new_models)
@@ -112,7 +112,6 @@ def detect_model_changes(
     new_free_alerts: List[str] = []
     new_paid_alerts: List[str] = []
     price_drop_alerts: List[str] = []
-    digest_lines: List[str] = []
     now = datetime.now(timezone.utc).isoformat()
 
     for key, group in new_groups.items():
@@ -123,7 +122,11 @@ def detect_model_changes(
 
         if old_group is None:
             is_openrouter = _openrouter_entry(group) is not None
-            alerted_new = free_now or is_openrouter
+            # Every debut alerts. Gating this on `free_now or is_openrouter`
+            # silently dropped most new models: paid debuts on any other
+            # provider fell through to a digest capped at 10 lines, which
+            # MAX_MESSAGES_PER_RUN then dropped outright.
+            alerted_new = True
             # A model_id we have never seen, but whose *display name* already
             # exists (same model now listed by a second provider) is not a real
             # debut — it gets a one-liner instead of a full alert block.
@@ -172,8 +175,20 @@ def detect_model_changes(
                         f"<b>Pricing:</b> {pricing}\n"
                         f"<a href='{html.escape(or_entry.get('provider_url') or _link(group), quote=True)}'>View on OpenRouter</a>"
                     )
+            elif same_name:
+                new_paid_alerts.append(
+                    f"🆕 {name} @ {_provider_text(group, 2)} — {_price_line(group)}"
+                    f" · ctx {_max_context(group):,}"
+                )
             else:
-                digest_lines.append(f"• {name} — {_provider_text(group, 2)} ({_price_line(group)})")
+                new_paid_alerts.append(
+                    f"🆕 <b>New model</b>\n"
+                    f"<b>Model:</b> {name}\n"
+                    f"<b>Available at:</b> {_provider_text(group)}\n"
+                    f"<b>Context:</b> {_max_context(group):,} tokens\n"
+                    f"<b>Pricing:</b> {_price_line(group)}\n"
+                    f"<a href='{_link(group)}'>View in provider catalog</a>"
+                )
             # Remember the name so a second provider for the same model also
             # collapses to a one-liner rather than a full block.
             if norm_name:
@@ -304,14 +319,5 @@ def detect_model_changes(
     alerts.extend(new_free_alerts)
     alerts.extend(new_paid_alerts)
     alerts.extend(price_drop_alerts)
-
-    if digest_lines:
-        shown = digest_lines[:10]
-        extra = len(digest_lines) - len(shown)
-        footer = f"\n…and {extra} more" if extra > 0 else ""
-        alerts.append(
-            f"📊 <b>{len(digest_lines)} new model(s) this cycle</b>\n"
-            + "\n".join(shown) + footer
-        )
 
     return events, alerts

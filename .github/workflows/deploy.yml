@@ -7,6 +7,15 @@ on:
       - "data/**"
       - "site/**"
   workflow_dispatch:
+  # The only thing that writes data/ is the collect workflow's bot commit, and
+  # GitHub never re-triggers `push` workflows from GITHUB_TOKEN commits. Without
+  # this the dashboard freezes at the last manual push — which is exactly what
+  # happened: 40+ syncs and ~280 data commits produced zero deploys.
+  # No `branches` filter: workflow_run matches the completed run's own head
+  # branch, and filtering here would silently drop the deploy on main.
+  workflow_run:
+    workflows: ["Sync Models & Quotas"]
+    types: [completed]
 
 permissions:
   contents: read

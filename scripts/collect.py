@@ -14,6 +14,12 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 MODELS_FILE = os.path.join(DATA_DIR, "models.json")
 OFFERS_FILE = os.path.join(DATA_DIR, "offers.json")
 HISTORY_FILE = os.path.join(DATA_DIR, "history.json")
+# Price moves are the bulk of every run's diff, so at a small cap they push new
+# models out of the changelog within hours. Keep the changelog reserved for
+# debuts and free transitions, and archive price moves in a separate log.
+HISTORY_LIMIT = 2000
+PRICE_LOG_FILE = os.path.join(DATA_DIR, "price_log.json")
+PRICE_LOG_LIMIT = 5000
 STATS_FILE = os.path.join(DATA_DIR, "llm_stats.json")
 LOOKUP_FILE = os.path.join(DATA_DIR, "lookup.json")
 def load_json(filepath: str, default: Any = None):
@@ -29,6 +35,20 @@ def save_json(filepath: str, data: Any):
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+def _merge_events(fresh: List[Dict[str, Any]], previous: List[Dict[str, Any]], limit: int) -> List[Dict[str, Any]]:
+    """Prepends this run's events, drops ids already on record, caps the list."""
+    seen = {e.get("event_id") for e in previous if e.get("event_id")}
+    merged: List[Dict[str, Any]] = []
+    for event in fresh:
+        eid = event.get("event_id")
+        if eid and eid in seen:
+            continue
+        if eid:
+            seen.add(eid)
+        merged.append(event)
+    return (merged + previous)[:limit]
 
 import re
 
@@ -114,6 +134,7 @@ def main():
 
     old_models = load_json(MODELS_FILE, [])
     old_history = load_json(HISTORY_FILE, [])
+    old_price_log = load_json(PRICE_LOG_FILE, [])
 
     # 1. Fetch the complete provider and model catalog
     new_models = fetch_models_dev_catalog()
@@ -162,11 +183,15 @@ def main():
     # 3. Send Telegram alerts as one capped, rate-limit-safe batch
     send_alerts(alerts)
 
-    # 4. Save snapshots
-    updated_history = (events + old_history)[:200]
+    # 4. Save snapshots. Price moves go to their own log so they cannot evict
+    # new models from the changelog; both lists are de-duplicated by event_id so
+    # a re-detected change (same key, same timestamp) is not written twice.
+    price_events = [e for e in events if e["type"] == "price_change"]
+    story_events = [e for e in events if e["type"] != "price_change"]
+    save_json(HISTORY_FILE, _merge_events(story_events, old_history, HISTORY_LIMIT))
+    save_json(PRICE_LOG_FILE, _merge_events(price_events, old_price_log, PRICE_LOG_LIMIT))
     save_json(MODELS_FILE, new_models)
     save_json(OFFERS_FILE, curated_offers)
-    save_json(HISTORY_FILE, updated_history)
     save_lookup(new_models)
 
     # 5. Usage rankings for the Boards tab (independent of the catalog diff)

@@ -58,15 +58,16 @@ One run sends messages in this order:
 
 1. 🚨 **Price dropped to $0** — a model that was previously paid is now free (any provider).
 2. 🎁 **New 100% free model** — a free model appeared for the first time (any provider).
-3. 🆕 **New model (OpenRouter)** — a paid model debuted on OpenRouter.
-4. 📈📉 **OpenRouter price change** — OpenRouter's input or output price moved ≥20%, up or down (up to 10 messages per run, like every alert class).
-5. 📊 **Digest** — up to 10 other new models in a single message.
+3. 🆕 **New model** — any paid model debut, on OpenRouter or any other provider.
+4. 📈📉 **OpenRouter price change** — OpenRouter's input or output price moved ≥20%, up or down.
 
-Free-model alerts ($0 transitions + new free models), new OpenRouter models, and price-change alerts are all prioritised above the digest; the whole batch is capped at 10 messages per run. Rate limits (HTTP 429) are retried twice, honouring Telegram's `retry_after`.
+Every debut alerts; nothing is demoted to a digest, so a new model is never dropped for lack of space. The whole batch is capped at 30 messages per run. Rate limits (HTTP 429) are retried twice, honouring Telegram's `retry_after`.
 
 Alerts fire only when something *changes* — a run where nothing moved sends nothing.
 
-The dashboard logs every event regardless of whether it alerted; each changelog row shows a **📢 Telegram** / **dashboard only** badge, with **Telegram only** and **Dashboard only** filters to compare the two.
+Cross-provider price moves are recorded in `data/price_log.json` but never alerted; only OpenRouter's own ≥20% moves are. Keeping them out of the changelog stops price noise from evicting new models.
+
+The dashboard logs every event regardless of whether it alerted; each changelog row shows a **📢 Telegram** / **dashboard only** badge, with **All**, **Telegram only** and **Dashboard only** filters to compare the two. The Changelog tab defaults to **All** — since most debuts are not alerted, a "Telegram only" default hid them.
 
 ---
 
@@ -154,12 +155,14 @@ column for providers like `nvidia` (52 daily-quota models), `groq`, `google` and
 free-ai-radar/
 ├── .github/workflows/
 │   ├── collect.yml        # Every 30m: fetch, diff, alert, commit data/
-│   └── deploy.yml         # Publishes site/ + data/ to GitHub Pages
+│   └── deploy.yml         # Publishes site/ + data/ to GitHub Pages on push
+│                          #   and on each completed collect run (workflow_run)
 ├── data/
 │   ├── models.json        # Normalized catalog snapshot (~9k models)
 │   ├── llm_stats.json     # LLM Stats score table (416 models, joined by id)
 │   ├── offers.json        # Provider free tiers and quotas (curated)
-│   ├── history.json       # Last 200 change events
+│   ├── history.json       # Debuts and free transitions (changelog)
+│   ├── price_log.json     # Cross-provider price moves, kept out of the changelog
 │   ├── lookup.json        # Model-centric join: canonical name → providers with tiers
 │   └── leaderboard.json   # OpenRouter boards: usage rankings, fastest, value, newest
 ├── sources/
