@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "0ce0279a064abbde",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-03T03:32:43.516120+00:00",
+    "details": "Input: $0.025 -> $0.028; output: $0.093 -> $0.104",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "df161796b5287bf0",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-03T03:32:43.516120+00:00",
+    "details": "Input: $0.1824 -> $0.1605; output: $10 -> $9.3388",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "6cbebcc6bf6a4db1",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-11-03T03:32:43.516120+00:00",
+    "details": "Input: $0.033 -> $0.034; output: $0.098 -> $0.101",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "4b9139885aaa6552",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-03T03:32:43.516120+00:00",
+    "details": "Input: $0.036 -> $0.036; output: $0.109 -> $0.108",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "02517b6abf7684a8",
     "type": "price_change",
     "model_id": "openai/gpt-oss-120b",
@@ -2319,51 +2367,6 @@
     "provider": "LLM Gateway",
     "detected_at": "2026-10-31T16:32:18.027289+00:00",
     "details": "$4 in / $20 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "67f1a35e0e47bc8e",
-    "type": "new_model",
-    "model_id": "runpod/kimi-k3.1-pro",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-10-31T16:32:18.027289+00:00",
-    "details": "$2 in / $10 out per 1M",
-    "alerted": false
-  },
-  {
-    "event_id": "424630ff45a4cf4b",
-    "type": "price_change",
-    "model_id": "minimax/minimax-m3.1-flash",
-    "provider": "Eden AI, Kilo Gateway, LLM Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, Vercel AI Gateway, ZenMux",
-    "detected_at": "2026-10-31T15:32:46.297999+00:00",
-    "details": "Input: $0.15 -> $0.075; output: $0.6 -> $0.3",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": true
-  },
-  {
-    "event_id": "920ac20d83c456d7",
-    "type": "price_change",
-    "model_id": "google/gemma-4-26b-a4b-it",
-    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
-    "detected_at": "2026-10-31T15:32:46.297999+00:00",
-    "details": "Input: $0.015 -> $0.017; output: $0.046 -> $0.052",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "1141470517acab60",
-    "type": "price_change",
-    "model_id": "google/gemma-4-26b-a4b-it:thinking",
-    "provider": "NanoGPT",
-    "detected_at": "2026-10-31T15:32:46.297999+00:00",
-    "details": "Input: $0.015 -> $0.019; output: $0.046 -> $0.057",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
     "alerted": false
   }
 ]
