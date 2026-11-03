@@ -176018,8 +176018,7 @@
       "source": "https://ai.google.dev/gemini-api/docs/pricing",
       "supported_endpoints": [
         "/v1/chat/completions",
-        "/v1/completions",
-        "/v1/batch"
+        "/v1/completions"
       ]
     }
   },
