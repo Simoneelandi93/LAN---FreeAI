@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "a4b128b0a0cfb627",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-03T09:32:39.830601+00:00",
+    "details": "Input: $0.03 -> $0.027; output: $0.15 -> $0.1",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "3b5dfcae6648f9ed",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-03T09:32:39.830601+00:00",
+    "details": "Input: $0.1824 -> $0.1539; output: $9.7471 -> $9.3388",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "852bdb773e3690a1",
     "type": "price_change",
     "model_id": "openai/gpt-oss-120b",
@@ -2346,30 +2370,6 @@
     "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
     "detected_at": "2026-11-01T00:51:02.109607+00:00",
     "details": "Input: $0.015 -> $0.013; output: $0.045 -> $0.039",
-    "direction": "decrease",
-    "in_direction": "decrease",
-    "out_direction": "decrease",
-    "alerted": false
-  },
-  {
-    "event_id": "7653e5cab38d2d28",
-    "type": "price_change",
-    "model_id": "reka-ai/deepseek-v4.1-flash",
-    "provider": "LLM Gateway",
-    "detected_at": "2026-11-01T00:51:02.109607+00:00",
-    "details": "Input: $0.11 -> $0.1275; output: $0.33 -> $0.51",
-    "direction": "increase",
-    "in_direction": "increase",
-    "out_direction": "increase",
-    "alerted": false
-  },
-  {
-    "event_id": "6a1ff272cb81d084",
-    "type": "price_change",
-    "model_id": "~deepseek/deepseek-flash-latest",
-    "provider": "Kilo Gateway, OpenRouter",
-    "detected_at": "2026-11-01T00:51:02.109607+00:00",
-    "details": "Input: $0.0129 -> $0.0108; output: $0.1 -> $0.0828",
     "direction": "decrease",
     "in_direction": "decrease",
     "out_direction": "decrease",
