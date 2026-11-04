@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "92bbf3a6b8470b3b",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-04T05:32:42.724265+00:00",
+    "details": "Input: $0.03 -> $0.024; output: $0.15 -> $0.09",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "0c99c201dd9a52d1",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-04T05:32:42.724265+00:00",
+    "details": "Input: $0.0298 -> $0.0283; output: $0.0846 -> $0.0846",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "2505ae5df9c0bb23",
+    "type": "price_change",
+    "model_id": "deepinfra/nemotron-3-super-120b-a12b",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-04T05:32:42.724265+00:00",
+    "details": "Input: $0.085 -> $0.075; output: $0.4 -> $0.4",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "efe166d69955a496",
     "type": "price_change",
     "model_id": "~z-ai/glm-flash-latest",

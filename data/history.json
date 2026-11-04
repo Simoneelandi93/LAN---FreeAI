@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "eff45d527c904b2a",
+    "type": "new_model",
+    "model_id": "tencent/hy4",
+    "provider": "Kilo Gateway, Vercel AI Gateway",
+    "detected_at": "2026-11-04T05:32:42.724265+00:00",
+    "details": "$0.417 in / $1.2505 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "9bfa691bf4da2b3f",
     "type": "new_model",
     "model_id": "EVA-UNIT-01/EVA-Qwen2.5-32B-v0.2",
