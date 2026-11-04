@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "e3f47a35ff7b23f6",
+    "type": "new_model",
+    "model_id": "flexai/glm-5.3-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-04T12:34:04.663314+00:00",
+    "details": "$0.08 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "71c51fcf809e08b9",
+    "type": "new_model",
+    "model_id": "flexai/glm-5.2",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-04T12:34:04.663314+00:00",
+    "details": "$0.7 in / $2.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d8ae7db247bdb043",
+    "type": "new_model",
+    "model_id": "flexai/deepseek-v4-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-04T12:34:04.663314+00:00",
+    "details": "$0.119 in / $0.238 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "eff45d527c904b2a",
     "type": "new_model",
     "model_id": "tencent/hy4",

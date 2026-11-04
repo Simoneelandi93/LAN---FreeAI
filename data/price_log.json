@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "4c1754b998989698",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-04T12:34:04.663314+00:00",
+    "details": "Input: $0.19 -> $0.1605; output: $8.94 -> $10",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "ad83a2b5d4d3dbc7",
     "type": "price_change",
     "model_id": "reka-ai/glm-5.3-flash",
