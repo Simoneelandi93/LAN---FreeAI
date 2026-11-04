@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "ad83a2b5d4d3dbc7",
+    "type": "price_change",
+    "model_id": "reka-ai/glm-5.3-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-04T11:04:25.192642+00:00",
+    "details": "Input: $0.18 -> $0.11; output: $0.6 -> $0.33",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "25eccc5070542b21",
+    "type": "price_change",
+    "model_id": "reka-ai/deepseek-v4.1-flash-1017",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-04T11:04:25.192642+00:00",
+    "details": "Input: $0.155 -> $0.15; output: $0.62 -> $0.6",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "5c9007737dfae90c",
     "type": "price_change",
     "model_id": "openai/gpt-oss-120b",
