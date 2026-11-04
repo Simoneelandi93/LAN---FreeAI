@@ -23584,7 +23584,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "responses",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-terra.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -24123,7 +24123,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "responses",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-luna.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -24376,7 +24376,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-east-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -24429,7 +24429,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://aws.amazon.com/bedrock/pricing/",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -24481,7 +24481,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-20b.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-east-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -24631,7 +24631,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-120b.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-east-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -28096,7 +28096,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-120b.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-east-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -29936,7 +29936,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "responses",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-luna.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -31311,7 +31311,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "responses",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-terra.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -293647,7 +293647,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "nova-pro"
@@ -293857,7 +293857,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "nova-lite"
@@ -294037,7 +294037,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "nova-micro"
@@ -379993,7 +379993,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-120b.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-east-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -380698,7 +380698,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-20b.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-east-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -380899,7 +380899,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "responses",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-terra.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -382329,7 +382329,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "responses",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-luna.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -387270,7 +387270,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "responses",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-luna.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -387425,7 +387425,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": null,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -387630,7 +387630,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-east-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -388043,7 +388043,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "responses",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-terra.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -388704,7 +388704,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://aws.amazon.com/bedrock/pricing/",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -391465,7 +391465,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-20b.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-east-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -392082,7 +392082,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-120b.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-east-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -392188,7 +392188,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": null,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -392602,7 +392602,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "nova-pro"
@@ -393106,7 +393106,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": null,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions",
         "/v1/responses"
@@ -393408,7 +393408,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-120b.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-east-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
@@ -393557,7 +393557,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-20b.html",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-east-1/index.json",
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
@@ -393954,7 +393954,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "nova-lite"
@@ -396390,7 +396390,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-gov-west-1/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "nova-micro"
