@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "f26fcee70abb6efc",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash",
+    "provider": "AI/ML API, Arcee, CommandCode, CrossModel, IteraCompute, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, Prime Inference, Standard Compute, TensorX, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-11-04T16:32:50.159768+00:00",
+    "details": "Input: $0.045 -> $0.0318; output: $0.25 -> $0.1272",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "12da2df2763ba394",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-04T16:32:50.159768+00:00",
+    "details": "Input: $0.09 -> $0.0318; output: $0.25 -> $0.1272",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "4dae04126e660004",
     "type": "price_change",
     "model_id": "openai/gpt-oss-120b",
