@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "f8dff1977ad31a48",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-04T14:32:44.667260+00:00",
+    "details": "Input: $0.029 -> $0.027; output: $0.107 -> $0.101",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "75ab82fcc0e99252",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash",
+    "provider": "AI/ML API, Arcee, CommandCode, CrossModel, IteraCompute, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, Prime Inference, Standard Compute, TensorX, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-11-04T14:32:44.667260+00:00",
+    "details": "Input: $0.032 -> $0.045; output: $0.288 -> $0.25",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "2d7ef678b3277249",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-04T14:32:44.667260+00:00",
+    "details": "Input: $0.032 -> $0.09; output: $0.288 -> $0.25",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "e915442a78a7b5c5",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-04T14:32:44.667260+00:00",
+    "details": "Input: $0.152 -> $0.1824; output: $10 -> $10",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "2e09199ed33f8c7e",
+    "type": "price_change",
+    "model_id": "mistral-nemo-instruct-2407",
+    "provider": "Cortecs",
+    "detected_at": "2026-11-04T14:32:44.667260+00:00",
+    "details": "Input: $0.14 -> $0.145; output: $0.14 -> $0.145",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "366c0ec7e4df3326",
     "type": "price_change",
     "model_id": "openai/gpt-oss-120b",
