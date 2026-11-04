@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "508794ca67210671",
+    "type": "new_model",
+    "model_id": "hy4",
+    "provider": "Tencent Token Plan, Tencent TokenHub",
+    "detected_at": "2026-11-04T19:33:07.247638+00:00",
+    "details": "$0.834 in / $2.501 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d673b19b798b7de8",
+    "type": "new_model",
+    "model_id": "ricursiveai/ripple-65b-preview",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-04T19:33:07.247638+00:00",
+    "details": "$0.2 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "38a3a2949199fbe4",
+    "type": "new_model",
+    "model_id": "prism-core",
+    "provider": "Charm Hyper",
+    "detected_at": "2026-11-04T19:33:07.247638+00:00",
+    "details": "$1.52432 in / $4.79072 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "e3f47a35ff7b23f6",
     "type": "new_model",
     "model_id": "flexai/glm-5.3-flash",
