@@ -1823,7 +1823,7 @@
     "source_url": "https://kilo.ai/gateway",
     "base_url": "https://api.kilo.ai/v1",
     "notes": "Universal gateway, $0 forever for default free models. Anonymous keyless at 200 req/hour per IP; :free-tagged models. OpenAI-compatible. No credit card. | access: api_key | verified: live-probe",
-    "checked_at": "2026-11-04",
+    "checked_at": "2026-11-05",
     "data_source": "freeinference"
   },
   {
@@ -1840,7 +1840,7 @@
     "source_url": "https://portal.nousresearch.com/api-docs",
     "base_url": "https://inference-api.nousresearch.com/v1",
     "notes": "Nous Research Hermes models, $0 monthly plan. Free 50 RPM / 500k TPM. OpenAI-compatible. No card on free plan. | access: api_key | verified: live-probe",
-    "checked_at": "2026-11-04",
+    "checked_at": "2026-11-05",
     "data_source": "freeinference"
   },
   {
@@ -1857,7 +1857,7 @@
     "source_url": "https://www.requesty.ai/pricing",
     "base_url": "https://router.requesty.ai/v1",
     "notes": "Gateway, $0 free models at 200 req/day. Routing, caching, EU residency. No credit card required. | access: api_key | verified: live-probe",
-    "checked_at": "2026-11-04",
+    "checked_at": "2026-11-05",
     "data_source": "freeinference"
   },
   {
@@ -1874,7 +1874,7 @@
     "source_url": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/",
     "base_url": "https://endpoints.ai.cloud.ovh.net/v1",
     "notes": "EU-sovereign. Anonymous keyless 2 req/min per IP per model. Authed 400 req/min. No usage cap apart from rate. No card for anonymous. | access: api_key | verified: live-probe | quota: not published",
-    "checked_at": "2026-11-04",
+    "checked_at": "2026-11-05",
     "data_source": "freeinference"
   }
 ]

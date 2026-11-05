@@ -1,6 +1,6 @@
 {
-  "etag": "W/\"b53aea48f99374fcffdba1172150daa3\"",
-  "fetched_at": "2026-11-05T17:04:32.471398+00:00",
+  "etag": "W/\"04a5fd37d916858269bcf61faf2cdc5f\"",
+  "fetched_at": "2026-11-05T17:32:55.444683+00:00",
   "events": [
     {
       "id": "openrouter:openrouter/auto-code:listing",
@@ -99,6 +99,26 @@
       "firstSeenAt": "2026-11-04T18:54:00.593Z",
       "publishedAt": "2026-11-04T18:54:00.593Z",
       "updatedAt": "2026-11-04T18:54:00.593Z",
+      "revision": 1,
+      "baseline": false
+    },
+    {
+      "id": "openrouter:google/gemini-omni-1.1-flash:listing",
+      "modelKey": "google:geminiomni11flash",
+      "modelId": "gemini-omni-1.1-flash",
+      "name": "Gemini Omni 1.1 Flash",
+      "provider": "Google",
+      "type": "listing",
+      "releasedAt": null,
+      "listedAt": "2026-11-04",
+      "availability": "openrouter",
+      "summary": "Listed on OpenRouter. This catalog listing does not establish the original release date.",
+      "sourceId": "openrouter",
+      "sourceUrl": "https://openrouter.ai/google/gemini-omni-1.1-flash",
+      "evidence": "OpenRouter model ID: google/gemini-omni-1.1-flash",
+      "firstSeenAt": "2026-11-05T17:24:00.735Z",
+      "publishedAt": "2026-11-05T17:24:00.735Z",
+      "updatedAt": "2026-11-05T17:24:00.735Z",
       "revision": 1,
       "baseline": false
     },
