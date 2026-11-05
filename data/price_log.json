@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "6ba8e2c3507310f0",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-11-05T13:33:03.825237+00:00",
+    "details": "Input: $0.027 -> $0.038; output: $0.082 -> $0.113",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "862c849f2126f783",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-05T13:33:03.825237+00:00",
+    "details": "Input: $0.059 -> $0.058; output: $0.28 -> $0.17688",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "2a0e55f0f8c8b20c",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-05T13:33:03.825237+00:00",
+    "details": "Input: $0.1567 -> $0.1567; output: $9.3388 -> $10",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "6ebcaee1e5901963",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-05T13:33:03.825237+00:00",
+    "details": "Input: $0.027 -> $0.047; output: $0.082 -> $0.14",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "7391ba11c37b8bb8",
+    "type": "price_change",
+    "model_id": "minimax/minimax-01",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-05T13:33:03.825237+00:00",
+    "details": "Input: $0.1394 -> $0.1394; output: $1.1 -> $1.122",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "984604bf9f7e3ca0",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",

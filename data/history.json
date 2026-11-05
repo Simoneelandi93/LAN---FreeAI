@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "5921a293d1ba1173",
+    "type": "new_model",
+    "model_id": "orca/orcacyber-k3.1-pro",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-05T13:33:03.825237+00:00",
+    "details": "$4 in / $20 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "b81cca504172f902",
     "type": "new_model",
     "model_id": "canopywave/qwen3.8-flash",
