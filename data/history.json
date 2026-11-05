@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "b81cca504172f902",
+    "type": "new_model",
+    "model_id": "canopywave/qwen3.8-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-05T08:32:36.486067+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1cf2ceb665d956fb",
+    "type": "new_model",
+    "model_id": "canopywave/minimax-m3.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-05T08:32:36.486067+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "85ff5603f091b5b0",
     "type": "new_model",
     "model_id": "scx-ai-gp/kimi-k3.1-pro",
