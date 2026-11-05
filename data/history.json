@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "85ff5603f091b5b0",
+    "type": "new_model",
+    "model_id": "scx-ai-gp/kimi-k3.1-pro",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-05T06:37:32.937851+00:00",
+    "details": "$1.9 in / $9.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "497e221cff9b64c2",
+    "type": "new_model",
+    "model_id": "inclusionai/ling-3.0-tiny",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-05T06:37:32.937851+00:00",
+    "details": "$0.015 in / $0.045 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "508794ca67210671",
     "type": "new_model",
     "model_id": "hy4",
