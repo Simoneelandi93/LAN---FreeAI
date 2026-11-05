@@ -1,6 +1,6 @@
 {
-  "etag": "W/\"dee59314c05267e4961d1dc480af1736\"",
-  "fetched_at": "2026-11-05T17:32:53.929636+00:00",
+  "etag": "W/\"317d149c5460247e8183ae66ba6560c5\"",
+  "fetched_at": "2026-11-05T18:04:56.711137+00:00",
   "payload": {
     "title": "Free Inference",
     "tagline": "Free LLM inference you can build with: an API key, a CLI login, or inference bundled inside a coding tool or builder. The test is whether you can ship an artifact you keep — code, an app, a site, a design, an agent, a skill. Chat-only free tiers are excluded on purpose.",
@@ -120,6 +120,26 @@
           },
           {
             "name": "Jev 1.13 Free",
+            "cost": "$0 (promo)",
+            "context": "256K - 1M",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "Crouton Alpha Free",
+            "cost": "$0 (promo)",
+            "context": "256K - 1M",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "Pulse Alpha Free",
             "cost": "$0 (promo)",
             "context": "256K - 1M",
             "rpm": "Not published",
@@ -1817,6 +1837,176 @@
         "access_method": "api_key",
         "artifact": "code",
         "base_url": "https://api.deepseek.com/v1"
+      },
+      {
+        "name": "TypeSafe AI",
+        "url": "https://typesafe.ai/",
+        "free_type": "Trial credits",
+        "notes": "$5 free signup credits (~120M input tokens on Jev). OpenAI-compatible endpoint. Ideal for Jev code generation, fast structured outputs, and type safety.",
+        "timeout": "Not published",
+        "verified": "2026-11-05",
+        "models": [
+          {
+            "name": "typesafe/jev-1.13",
+            "cost": "$0 ($5 signup credits)",
+            "context": "256K",
+            "rpm": "60",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          }
+        ],
+        "verified_method": "dashboard",
+        "docs_url": "https://docs.typesafe.ai/",
+        "access_method": "api_key",
+        "artifact": "code",
+        "base_url": "https://api.typesafe.ai/v1"
+      },
+      {
+        "name": "Braintrust",
+        "url": "https://www.braintrust.dev/pricing",
+        "free_type": "Trial credits",
+        "notes": "Starter plan ($0/mo, no card required) includes $10/month recurring model credits covering 13 built-in models (GPT-6 series, GPT-5.6 series, DeepSeek V4/V4.1, GLM-5.2/5.3, Kimi K3, and Jev) in playgrounds, evaluations, prompts, and the Braintrust SDK.",
+        "timeout": "Not published",
+        "verified": "2026-11-05",
+        "models": [
+          {
+            "name": "deepseek-v4.1-flash",
+            "cost": "$0 ($10/mo model credits)",
+            "context": "128K",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "deepseek-v4-flash-0731",
+            "cost": "$0 ($10/mo model credits)",
+            "context": "128K",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "glm-5.3-flash",
+            "cost": "$0 ($10/mo model credits)",
+            "context": "128K",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "glm-5.2",
+            "cost": "$0 ($10/mo model credits)",
+            "context": "128K",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "kimi-k3",
+            "cost": "$0 ($10/mo model credits)",
+            "context": "128K",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "jev",
+            "cost": "$0 ($10/mo model credits)",
+            "context": "256K",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "gpt-6-luna",
+            "cost": "$0 ($10/mo model credits)",
+            "context": "128K",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "gpt-6-sol",
+            "cost": "$0 ($10/mo model credits)",
+            "context": "128K",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "gpt-6.1-sol",
+            "cost": "$0 ($10/mo model credits)",
+            "context": "128K",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "gpt-6-astra",
+            "cost": "$0 ($10/mo model credits)",
+            "context": "128K",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "gpt-5.6-luna",
+            "cost": "$0 ($10/mo model credits)",
+            "context": "128K",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "gpt-5.6-terra",
+            "cost": "$0 ($10/mo model credits)",
+            "context": "128K",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          },
+          {
+            "name": "gpt-5.6-sol",
+            "cost": "$0 ($10/mo model credits)",
+            "context": "128K",
+            "rpm": "Not published",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-05"
+          }
+        ],
+        "verified_method": "docs",
+        "docs_url": "https://docs.braintrust.dev/plans-and-limits#model-credits",
+        "access_method": "api_key",
+        "artifact": "code",
+        "base_url": "https://api.braintrust.dev/v1/proxy"
       }
     ],
     "ga_measurement_id": "G-CFXWNKBD7G",
@@ -1870,6 +2060,6 @@
         "artifact": "agent/app"
       }
     ],
-    "data_version": "b3e22c7ddd45"
+    "data_version": "949045fead8f"
   }
 }
