@@ -1,6 +1,6 @@
 {
-  "etag": "W/\"c825be4fcac908c0e7f75bc30aac2ace\"",
-  "fetched_at": "2026-11-05T04:32:37.510536+00:00",
+  "etag": "W/\"76e2ca275cc76563218915a392ba31c4\"",
+  "fetched_at": "2026-11-05T05:04:27.085092+00:00",
   "events": [
     {
       "id": "openai:gptimage26flare:release",
@@ -675,11 +675,11 @@
       "summary": "Anthropic announced Claude Haiku 5.5 in an official release source. Check the source for access and rollout details.",
       "sourceId": "anthropic",
       "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview",
-      "evidence": "We’ve launched Claude Haiku 5.5 (claude-haiku-5-5), our most capable model tuned for high-volume and latency-sensitive work. It has a 1M token context window, 128k max output tokens, and adaptive thinking with the effort parameter. It’s available on the Claude API, Claude in Amazon Bedrock, Claude Platform on AWS, Claude on Google Cloud, and Claude in Microsoft Foundry. See What’s new in Claude Haiku 5.5.",
+      "evidence": "We’ve launched Claude Haiku 5.5 (claude-haiku-5-5), our most capable model tuned for high-volume and latency-sensitive work. It has a 1M token context window, 128k max output tokens, and adaptive thinking with the effort parameter. It’s available on the Claude API, Claude in Amazon Bedrock, Claude Platform on AWS, Claude Models on Google Cloud (Google managed), and Claude in Microsoft Foundry. See What’s new in Claud",
       "firstSeenAt": "2026-10-07T17:54:00.756Z",
       "publishedAt": "2026-10-07T17:54:00.756Z",
-      "updatedAt": "2026-10-27T17:54:00.829Z",
-      "revision": 2,
+      "updatedAt": "2026-11-05T04:54:00.661Z",
+      "revision": 3,
       "baseline": false
     },
     {
@@ -895,11 +895,11 @@
       "summary": "Anthropic announced Claude Sonnet 5.5 in an official release source. Check the source for access and rollout details.",
       "sourceId": "anthropic",
       "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview",
-      "evidence": "We’ve launched Claude Sonnet 5.5 (claude-sonnet-5-5). It’s available on the Claude API, Claude in Amazon Bedrock, Claude Platform on AWS, Claude on Google Cloud, and Claude in Microsoft Foundry. For its context window, output limits, and prices, see the Claude Sonnet 5.5 model page.",
+      "evidence": "We’ve launched Claude Sonnet 5.5 (claude-sonnet-5-5). It’s available on the Claude API, Claude in Amazon Bedrock, Claude Platform on AWS, Claude Models on Google Cloud (Google managed), and Claude in Microsoft Foundry. For its context window, output limits, and prices, see the Claude Sonnet 5.5 model page.",
       "firstSeenAt": "2026-09-28T18:09:00.698Z",
       "publishedAt": "2026-09-28T18:09:00.698Z",
-      "updatedAt": "2026-10-27T17:54:00.829Z",
-      "revision": 2,
+      "updatedAt": "2026-11-05T04:54:00.661Z",
+      "revision": 3,
       "baseline": false
     },
     {
@@ -1115,11 +1115,11 @@
       "summary": "Anthropic announced Claude Opus 5.5 in an official release source. Check the source for access and rollout details.",
       "sourceId": "anthropic",
       "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview",
-      "evidence": "We’ve launched Claude Opus 5.5 (claude-opus-5-5), a model for long-running agentic coding and knowledge work. It has a 1M token context window by default, 128k max output tokens, and always-on adaptive thinking, at $4 / $20 USD per MTok (Claude Opus 5 is $5 / $25 USD). Claude Opus 5.5 is available on the Claude API, Claude in Amazon Bedrock, Claude Platform on AWS, Claude on Google Cloud, and Claude in Microsoft Foun",
+      "evidence": "We’ve launched Claude Opus 5.5 (claude-opus-5-5), a model for long-running agentic coding and knowledge work. It has a 1M token context window by default, 128k max output tokens, and always-on adaptive thinking, at $4 / $20 USD per MTok (Claude Opus 5 is $5 / $25 USD). Claude Opus 5.5 is available on the Claude API, Claude in Amazon Bedrock, Claude Platform on AWS, Claude Models on Google Cloud (Google managed), and ",
       "firstSeenAt": "2026-09-22T18:24:39.550Z",
       "publishedAt": "2026-09-22T18:24:39.550Z",
-      "updatedAt": "2026-10-27T17:54:00.829Z",
-      "revision": 3,
+      "updatedAt": "2026-11-05T04:54:00.661Z",
+      "revision": 4,
       "baseline": true
     },
     {
@@ -3035,11 +3035,11 @@
       "summary": "Anthropic announced Claude Opus 5 in an official release source. Check the source for access and rollout details.",
       "sourceId": "anthropic",
       "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview",
-      "evidence": "We’ve launched Claude Opus 5 (claude-opus-5), a step-change improvement over Claude Opus 4.8. Claude Opus 5 supports a 1M token context window (both the default and the maximum), 128k max output tokens, and thinking on by default, at $5 / $25 USD per MTok, the same pricing as Claude Opus 4.8. It’s available on the Claude API, Claude in Amazon Bedrock, Claude Platform on AWS, Claude on Google Cloud, and Claude in Micr",
+      "evidence": "We’ve launched Claude Opus 5 (claude-opus-5), a step-change improvement over Claude Opus 4.8. Claude Opus 5 supports a 1M token context window (both the default and the maximum), 128k max output tokens, and thinking on by default, at $5 / $25 USD per MTok, the same pricing as Claude Opus 4.8. It’s available on the Claude API, Claude in Amazon Bedrock, Claude Platform on AWS, Claude Models on Google Cloud (Google mana",
       "firstSeenAt": "2026-09-22T18:24:39.550Z",
       "publishedAt": "2026-09-22T18:24:39.550Z",
-      "updatedAt": "2026-10-27T17:54:00.829Z",
-      "revision": 2,
+      "updatedAt": "2026-11-05T04:54:00.661Z",
+      "revision": 3,
       "baseline": true
     },
     {
