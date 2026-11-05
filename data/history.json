@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "add51ff77e1de2cc",
+    "type": "new_model",
+    "model_id": "azure/gpt-4o-mini-transcribe",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-05T14:32:58.504663+00:00",
+    "details": "$1.25 in / $5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "2a3dd074ee73c64a",
+    "type": "new_free_model",
+    "model_id": "azure/gpt-live-transcribe",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-05T14:32:58.504663+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "09179959ef0853b3",
+    "type": "new_model",
+    "model_id": "azure/gpt-4o-transcribe",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-05T14:32:58.504663+00:00",
+    "details": "$2.5 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "09003d9e2c21bdfb",
+    "type": "new_free_model",
+    "model_id": "azure/gpt-transcribe",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-05T14:32:58.504663+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "5921a293d1ba1173",
     "type": "new_model",
     "model_id": "orca/orcacyber-k3.1-pro",
