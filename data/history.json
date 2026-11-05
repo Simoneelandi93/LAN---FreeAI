@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "018c716323635295",
+    "type": "new_model",
+    "model_id": "canopywave/glm-5.3-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-05T20:32:50.793968+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "7dd2a6e1a648c9e2",
+    "type": "new_model",
+    "model_id": "canopywave/deepseek-v4-flash-0731",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-05T20:32:50.793968+00:00",
+    "details": "$0.14 in / $0.28 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "ce5c3ebf27ba2dab",
     "type": "new_model",
     "model_id": "novita/minimax-m3",

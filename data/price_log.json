@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "c4e8e6b800230296",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-05T20:32:50.793968+00:00",
+    "details": "Input: $0.017 -> $0.011; output: $0.062 -> $0.04",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "b4a7ad796da0ca05",
+    "type": "price_change",
+    "model_id": "alibaba/qwen3.8-27b",
+    "provider": "AI/ML API, Vercel AI Gateway",
+    "detected_at": "2026-11-05T20:32:50.793968+00:00",
+    "details": "Input: $0.4761 -> $0.06; output: $3 -> $2.3",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "ed1e399c40bde27e",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-05T20:32:50.793968+00:00",
+    "details": "Input: $0.1824 -> $0.1529; output: $10 -> $9.3388",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "10698c10142fffbb",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
