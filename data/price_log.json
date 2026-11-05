@@ -1,5 +1,77 @@
 [
   {
+    "event_id": "aab1d6dd180dde60",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-05T18:32:34.844379+00:00",
+    "details": "Input: $0.0448 -> $0.0434; output: $0.28 -> $0.28",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "2d2d4d33204f177f",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-11-05T18:32:34.844379+00:00",
+    "details": "Input: $0.035 -> $0.04; output: $0.106 -> $0.147",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "fe72ea3f8a3d94f5",
+    "type": "price_change",
+    "model_id": "google/gemini-omni-1.1-flash",
+    "provider": "Kilo Gateway, OpenRouter, Poe",
+    "detected_at": "2026-11-05T18:32:34.844379+00:00",
+    "details": "Input: $1.5152 -> $1.5; output: $9.0909 -> $9",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "51643c3518c06c67",
+    "type": "price_change",
+    "model_id": "openai/gpt-oss-120b",
+    "provider": "AI/ML API, Abacus, Amazon Bedrock, Baseten, CloudFerro Sherlock, CoreWeave, Crusoe, Deep Infra, DigitalOcean, FastRouter, Groq, Hugging Face, IO.NET, Kilo Gateway, Merge Gateway, NanoGPT, Nebius Token Factory, Novita AI, OCI Generative AI, OpenReason, OpenRouter, OrcaRouter, Prime Inference, STACKIT, SiliconFlow, Thinking Machines, Together AI, Venice AI, Vercel AI Gateway, ai&, evroc, submodel, watsonx.ai",
+    "detected_at": "2026-11-05T18:32:34.844379+00:00",
+    "details": "Input: $0.03 -> $0.022; output: $0.15 -> $0.08",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "4ba855cd52cd0c20",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-05T18:32:34.844379+00:00",
+    "details": "Input: $0.035 -> $0.051; output: $0.106 -> $0.154",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "232db5407768939b",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-flash-0731:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-05T18:32:34.844379+00:00",
+    "details": "Input: $0.04576 -> $0.04444; output: $0.13728 -> $0.13332",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "7b9fa2a85bf61fab",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
