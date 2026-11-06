@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "966b59d75c058ec3",
+    "type": "new_model",
+    "model_id": "scx-ai-gp/deepseek-v4.1-flash-1017",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-06T06:37:05.754698+00:00",
+    "details": "$0.135 in / $0.54 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "f8d574d595651293",
     "type": "new_model",
     "model_id": "huihui-ai/Qwen2.5-32B-Instruct-abliterated",
