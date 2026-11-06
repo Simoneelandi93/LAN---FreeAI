@@ -1657,23 +1657,6 @@
     "data_source": "freeinference"
   },
   {
-    "id": "devin-free",
-    "provider": "Devin (Free)",
-    "title": "Devin (Free)",
-    "offer_type": "permanent_quota",
-    "models_included": [],
-    "requires_card": false,
-    "quota_requests_day": null,
-    "quota_tokens_minute": null,
-    "quota_requests_minute": null,
-    "status": "active",
-    "source_url": "https://devin.ai/pricing",
-    "base_url": "",
-    "notes": "Devin Free offers a limited daily quota of agentic software engineering runs. Account login required, no credit card required. Runs bundled inside the Devin interface on SWE-2 and open models. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-10-29",
-    "data_source": "freeinference"
-  },
-  {
     "id": "windsurf",
     "provider": "Windsurf",
     "title": "Windsurf",
@@ -1909,6 +1892,23 @@
     "base_url": "https://api.braintrust.dev/v1/proxy",
     "notes": "Braintrust offers $10/month recurring model credit on Starter across 13 built-in models (including GPT-6 series, DeepSeek V4.1, GLM-5.3, and Jev). Work email required, no credit card required. Model credit resets monthly with no rollover. | access: api_key | verified: docs | quota: not published",
     "checked_at": "2026-11-05",
+    "data_source": "freeinference"
+  },
+  {
+    "id": "dots-studio",
+    "provider": "Dots Studio",
+    "title": "Dots Studio",
+    "offer_type": "welcome_credits",
+    "models_included": [],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": 60,
+    "status": "active",
+    "source_url": "https://dots.ai",
+    "base_url": "https://api.dots.ai/v1",
+    "notes": "Dots Studio offers free trial API credits and inference testing on Dots-3 Note and open-weight models. No credit card required. Trial credits are intended for evaluation and prototype development. | access: api_key | verified: docs",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   }
 ]
