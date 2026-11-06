@@ -1,5 +1,59 @@
 [
   {
+    "event_id": "f8d574d595651293",
+    "type": "new_model",
+    "model_id": "huihui-ai/Qwen2.5-32B-Instruct-abliterated",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-06T03:33:06.444818+00:00",
+    "details": "$0.7 in / $0.7 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "60d63b31c99f47a2",
+    "type": "new_model",
+    "model_id": "soob3123/GrayLine-Qwen3-8B",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-06T03:33:06.444818+00:00",
+    "details": "$0.3 in / $0.3 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "33ae58407882583a",
+    "type": "new_model",
+    "model_id": "soob3123/Veiled-Calla-12B",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-06T03:33:06.444818+00:00",
+    "details": "$0.3 in / $0.3 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6888c3f1f41dc9c1",
+    "type": "new_model",
+    "model_id": "deepcogito/cogito-v1-preview-qwen-32B",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-06T03:33:06.444818+00:00",
+    "details": "$1.8 in / $1.8 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "47b70bcec356ad16",
+    "type": "new_model",
+    "model_id": "EVA-UNIT-01/EVA-Qwen2.5-32B-v0.2",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-06T03:33:06.444818+00:00",
+    "details": "$0.799 in / $0.799 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1d3c540be91aa8bc",
+    "type": "new_model",
+    "model_id": "sicariussicariistuff/assistant-pepe-32b",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-06T03:33:06.444818+00:00",
+    "details": "$0.1 in / $0.45 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "2d86fa93ddd998dd",
     "type": "new_model",
     "model_id": "deepseek-v4-1-flash-1017-ultrafast",

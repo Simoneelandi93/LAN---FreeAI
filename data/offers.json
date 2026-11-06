@@ -1516,7 +1516,7 @@
     "status": "active",
     "source_url": "https://github.com/features/copilot",
     "base_url": "",
-    "notes": "Free plan: 2,000 completions/mo plus an unpublished allowance of GitHub AI Credits; models auto-selected. Login with GitHub OAuth, no card. | access: login | verified: docs | quota: not published",
+    "notes": "GitHub Copilot Free offers 2,000 code completions/month and 50 chat messages/month. GitHub account required, no credit card required. Models are auto-selected by GitHub and run bundled inside the editor. | access: login | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1533,7 +1533,7 @@
     "status": "active",
     "source_url": "https://kiro.dev/pricing",
     "base_url": "",
-    "notes": "Free plan: 50 credits/mo, resets monthly, unused credits do not roll over. Login via social or AWS Builder ID; no card for the free tier. | access: login | verified: docs | quota: not published",
+    "notes": "Kiro offers 50 free credits/month for spec-driven agent workflows. Social account or AWS Builder ID required, no credit card required. Unused credits do not roll over to the next month. | access: login | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1550,7 +1550,7 @@
     "status": "active",
     "source_url": "https://www.trae.ai/pricing",
     "base_url": "",
-    "notes": "Free plan: 5,000 autocompletions/mo plus limited standard-queue usage and SOLO mode. Frontier models bundled in the vendor UI; no card. | access: bundled | verified: docs | quota: not published",
+    "notes": "Trae offers 5,000 free code completions/month plus standard-queue access to Claude 3.5 Sonnet and GPT-4o. Account login required, no credit card required. Inference runs bundled inside the Trae IDE. | access: bundled | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1567,7 +1567,7 @@
     "status": "active",
     "source_url": "https://support.bolt.new/account-and-subscription/tokens",
     "base_url": "",
-    "notes": "Free plan: 1M tokens/mo with a 300K/day cap, resets monthly. Frontier models bundled; no card. | access: bundled | verified: docs | quota: not published",
+    "notes": "Bolt.new offers 1M free tokens/month with a 300K tokens/day daily cap for full-stack web generation. Account login required, no credit card required. Credits reset on the first of each month. | access: bundled | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1584,7 +1584,7 @@
     "status": "active",
     "source_url": "https://docs.lovable.dev/introduction/credits-and-usage",
     "base_url": "",
-    "notes": "Free plan: 5 build credits/day (max 30/mo) plus 20 cloud and 4 AI credits/mo. Frontier models bundled (Fable 5.1); no card. | access: bundled | verified: docs | quota: not published",
+    "notes": "Lovable offers 5 daily build credits (up to 30/month) plus 20 cloud and 4 AI edit credits/month. Account login required, no credit card required. Inference runs bundled inside the Lovable web builder. | access: bundled | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1601,7 +1601,7 @@
     "status": "active",
     "source_url": "https://v0.app/docs/pricing",
     "base_url": "",
-    "notes": "Free plan: $5/mo credits plus 7 messages/day. Frontier models bundled; no card. | access: bundled | verified: docs | quota: not published",
+    "notes": "v0 offers $5/month in free credits plus 7 messages/day for UI component generation. Account login required, no credit card required. Credits reset monthly with no rollover. | access: bundled | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1618,7 +1618,7 @@
     "status": "active",
     "source_url": "https://www.kaggle.com/docs/efficient-gpu-usage",
     "base_url": "",
-    "notes": "Free ~30 GPU-h/week (resets weekly), P100 or 2xT4, 12h sessions. Open-weight models you load yourself; phone verification may apply. | access: login | verified: docs | quota: not published",
+    "notes": "Kaggle offers 30 GPU-hours/week (NVIDIA P100 or 2xT4) in 12-hour maximum execution sessions. Phone verification required for GPU access; no credit card required. GPU quota resets weekly. | access: login | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1635,7 +1635,7 @@
     "status": "active",
     "source_url": "https://huggingface.co/docs/hub/spaces-overview",
     "base_url": "",
-    "notes": "Static Spaces free for everyone; free personal accounts host up to 2 ZeroGPU Gradio Spaces. Any HF model you load; no card. Persistent or upgraded Spaces require a Pro subscription. | access: login | verified: docs | quota: not published",
+    "notes": "Hugging Face Spaces offers free hosting for up to 2 ZeroGPU Gradio spaces with dynamic GPU allocation. Free account required, no credit card required. Persistent storage and dedicated hardware require a Pro tier. | access: login | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1652,7 +1652,7 @@
     "status": "active",
     "source_url": "https://cursor.com/pricing",
     "base_url": "",
-    "notes": "Hobby plan: limited Agent requests and Tab completions; quota unpublished by the vendor. Own + limited frontier models bundled; no card. | access: bundled | verified: docs | quota: not published",
+    "notes": "Cursor Hobby offers 2,000 free completion edits and limited agent requests. Account login required, no credit card required. Quota is metered per user account with frontier models auto-selected. | access: bundled | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1669,7 +1669,7 @@
     "status": "active",
     "source_url": "https://devin.ai/pricing",
     "base_url": "",
-    "notes": "Free plan: light quota, unpublished. SWE-1.7/SWE-2 plus open models bundled; no card. | access: bundled | verified: docs | quota: not published",
+    "notes": "Devin Free offers a limited daily quota of agentic software engineering runs. Account login required, no credit card required. Runs bundled inside the Devin interface on SWE-2 and open models. | access: bundled | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1686,7 +1686,7 @@
     "status": "active",
     "source_url": "https://docs.windsurf.com/windsurf/accounts/usage",
     "base_url": "",
-    "notes": "Free plan: light quota plus unlimited Tab/inline edits; numeric limits unpublished. Frontier models via Auto; no card. | access: bundled | verified: docs | quota: not published",
+    "notes": "Windsurf offers unlimited inline code edits/Tab completions plus a limited starter quota of Cascade agent prompts. Account login required, no credit card required. Advanced frontier routing requires a paid plan. | access: bundled | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1703,7 +1703,7 @@
     "status": "active",
     "source_url": "https://docs.qoder.com/account/pricing",
     "base_url": "",
-    "notes": "Free plan: limited completions/NES and basic models, plus BYOK; quota unpublished. No card. | access: bundled | verified: docs | quota: not published",
+    "notes": "Qoder offers free basic code autocompletions and limited Next-Edit-Suggestion (NES) runs. Account login required, no credit card required. Unlimited usage requires bringing your own API keys. | access: bundled | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1720,7 +1720,7 @@
     "status": "active",
     "source_url": "https://antigravity.google/pricing",
     "base_url": "",
-    "notes": "Individual plan: unlimited Tab and command requests with unpublished basic weekly rate limits. Google login; no card. | access: login | verified: docs | quota: not published",
+    "notes": "Antigravity CLI offers free weekly quotas for terminal and editor agent tasks. Google account login required, no credit card required. Quotas reset weekly; rate limits apply during high-load periods. | access: login | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1737,7 +1737,7 @@
     "status": "active",
     "source_url": "https://research.google.com/colaboratory/faq.html",
     "base_url": "",
-    "notes": "Free GPU/TPU with 12h max sessions; Colab does not publish these limits. Google login; no card. | access: login | verified: docs | quota: not published",
+    "notes": "Google Colab offers free access to shared T4 GPUs and TPUs with 12-hour maximum runtime sessions. Google account required, no credit card required. Compute resources are dynamically allocated and idle sessions disconnect. | access: login | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1754,7 +1754,7 @@
     "status": "active",
     "source_url": "https://www.figma.com/pricing/",
     "base_url": "",
-    "notes": "Starter plan: 150 AI credits/day, up to 500/mo. Figma AI, Make, and agent bundled; no card. | access: bundled | verified: docs | quota: not published",
+    "notes": "Figma Starter offers 150 free AI generation credits/day (up to 500/month). Figma account required, no credit card required. Inference runs bundled inside Figma design files for layer generation and text editing. | access: bundled | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1771,7 +1771,7 @@
     "status": "active",
     "source_url": "https://www.canva.com/en/pricing/",
     "base_url": "",
-    "notes": "Free plan: up to 20 Standard AI uses or 20 Premium per month (resets monthly); Magic Media text-to-image is 50 lifetime. No card. | access: bundled | verified: docs | quota: not published",
+    "notes": "Canva Free offers 20 free AI design uses/month and 50 lifetime Magic Media text-to-image generations. Canva account required, no credit card required. Monthly generation allowance resets on the first of each month. | access: bundled | verified: docs | quota: not published",
     "checked_at": "2026-10-30",
     "data_source": "freeinference"
   },
@@ -1788,7 +1788,7 @@
     "status": "active",
     "source_url": "https://www.framer.com/pricing",
     "base_url": "",
-    "notes": "Free plan: 500 AI credits to try (one-off), free Framer domain, non-commercial. No card. | access: bundled | verified: docs | quota: not published",
+    "notes": "Framer Free offers 500 one-time AI page generation credits plus a free Framer subdomain. Account login required, no credit card required. Projects are limited to non-commercial personal use. | access: bundled | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1805,7 +1805,7 @@
     "status": "active",
     "source_url": "https://docs.replit.com/help/pricing-and-plans",
     "base_url": "",
-    "notes": "Starter: daily Agent allowance plus limited monthly cloud credits and 1 published app; numbers unpublished. Frontier models bundled; no card. | access: bundled | verified: docs | quota: not published",
+    "notes": "Replit Starter offers a limited daily Replit Agent allowance plus free hosting for 1 published app. Replit account required, no credit card required. Container runs sleep after periods of inactivity. | access: bundled | verified: docs | quota: not published",
     "checked_at": "2026-10-29",
     "data_source": "freeinference"
   },
@@ -1822,7 +1822,7 @@
     "status": "active",
     "source_url": "https://kilo.ai/gateway",
     "base_url": "https://api.kilo.ai/v1",
-    "notes": "Universal gateway, $0 forever for default free models. Anonymous keyless at 200 req/hour per IP; :free-tagged models. OpenAI-compatible. No credit card. | access: api_key | verified: live-probe",
+    "notes": "Kilo Gateway offers 7 free models with 64K–256K context, translating to 200 requests/hour per IP address. No credit card required. Model availability reflects upstream provider quotas. | access: api_key | verified: live-probe",
     "checked_at": "2026-11-05",
     "data_source": "freeinference"
   },
@@ -1839,7 +1839,7 @@
     "status": "active",
     "source_url": "https://portal.nousresearch.com/api-docs",
     "base_url": "https://inference-api.nousresearch.com/v1",
-    "notes": "Nous Research Hermes models, $0 monthly plan. Free 50 RPM / 500k TPM. OpenAI-compatible. No card on free plan. | access: api_key | verified: live-probe",
+    "notes": "Nous Portal offers 5 free Hermes and open-weight models, translating to 50 requests/minute and 500,000 tokens/minute. Free account registration required, no credit card required. Preview models may be adjusted during experimental rounds. | access: api_key | verified: live-probe",
     "checked_at": "2026-11-05",
     "data_source": "freeinference"
   },
@@ -1856,7 +1856,7 @@
     "status": "active",
     "source_url": "https://www.requesty.ai/pricing",
     "base_url": "https://router.requesty.ai/v1",
-    "notes": "Gateway, $0 free models at 200 req/day. Routing, caching, EU residency. No credit card required. | access: api_key | verified: live-probe",
+    "notes": "Requesty offers 3 free models with 128K context, translating to 200 requests/day per account. Email registration required, no credit card required. Quota resets daily at 00:00 UTC. | access: api_key | verified: live-probe",
     "checked_at": "2026-11-05",
     "data_source": "freeinference"
   },
@@ -1873,7 +1873,7 @@
     "status": "active",
     "source_url": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/",
     "base_url": "https://endpoints.ai.cloud.ovh.net/v1",
-    "notes": "EU-sovereign. Anonymous keyless 2 req/min per IP per model. Authed 400 req/min. No usage cap apart from rate. No card for anonymous. | access: api_key | verified: live-probe | quota: not published",
+    "notes": "OVHcloud offers 10 free open-source models, translating to 2 requests/minute per IP keyless (or 400 requests/minute with a registered account). No credit card required for anonymous keyless access. Quota is enforced per client IP. | access: api_key | verified: live-probe | quota: not published",
     "checked_at": "2026-11-05",
     "data_source": "freeinference"
   },
@@ -1890,7 +1890,7 @@
     "status": "active",
     "source_url": "https://typesafe.ai/",
     "base_url": "https://api.typesafe.ai/v1",
-    "notes": "$5 free signup credits (~120M input tokens on Jev). OpenAI-compatible endpoint. Ideal for Jev code generation, fast structured outputs, and type safety. | access: api_key | verified: dashboard",
+    "notes": "TypeSafe AI offers $5 free signup credit on Jev 1.13 with 256K context, translating to ~120M input tokens. Account registration required, no credit card required. Credits remain active until depleted. | access: api_key | verified: dashboard",
     "checked_at": "2026-11-05",
     "data_source": "freeinference"
   },
@@ -1907,7 +1907,7 @@
     "status": "active",
     "source_url": "https://www.braintrust.dev/pricing",
     "base_url": "https://api.braintrust.dev/v1/proxy",
-    "notes": "Starter plan ($0/mo, no card required) includes $10/month recurring model credits covering 13 built-in models (GPT-6 series, GPT-5.6 series, DeepSeek V4/V4.1, GLM-5.2/5.3, Kimi K3, and Jev) in playgrounds, evaluations, prompts, and the Braintrust SDK. | access: api_key | verified: docs | quota: not published",
+    "notes": "Braintrust offers $10/month recurring model credit on Starter across 13 built-in models (including GPT-6 series, DeepSeek V4.1, GLM-5.3, and Jev). Work email required, no credit card required. Model credit resets monthly with no rollover. | access: api_key | verified: docs | quota: not published",
     "checked_at": "2026-11-05",
     "data_source": "freeinference"
   }
