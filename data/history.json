@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "eb6248e547b4cf62",
+    "type": "new_free_model",
+    "model_id": "iceman-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-11-06T23:32:28.129188+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "297d4b5fe3460a04",
     "type": "new_model",
     "model_id": "azure/gpt-4o-mini",
