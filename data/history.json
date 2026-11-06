@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "e0aca9dcb6975115",
+    "type": "new_model",
+    "model_id": "prism-flash",
+    "provider": "Charm Hyper",
+    "detected_at": "2026-11-06T14:32:39.380020+00:00",
+    "details": "$0.33 in / $1.31 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "64ead44672f3ce98",
+    "type": "new_model",
+    "model_id": "inference.net/kimi-k3.1-pro",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-06T14:32:39.380020+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "966b59d75c058ec3",
     "type": "new_model",
     "model_id": "scx-ai-gp/deepseek-v4.1-flash-1017",
