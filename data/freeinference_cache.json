@@ -1,6 +1,6 @@
 {
-  "etag": "W/\"b1fa6812900bd85d1cbd3f043d99e9cd\"",
-  "fetched_at": "2026-11-06T07:04:20.522535+00:00",
+  "etag": "W/\"4d59a1aad63aab4a1277850979cac2c7\"",
+  "fetched_at": "2026-11-06T08:32:37.995576+00:00",
   "payload": {
     "title": "Free Inference",
     "tagline": "Free AI & LLM inference you can build with: an API key, a CLI login, or inference bundled inside a coding tool or builder. Speech-to-text, voice synthesis, code, vision, and reasoning. The test is whether you can ship an artifact you keep — code, an app, an audio file, a site, a design, an agent, a skill. Chat-only free tiers are excluded on purpose.",
@@ -1273,6 +1273,41 @@
         "channel": "web"
       },
       {
+        "name": "Devin (Free)",
+        "url": "https://devin.ai/pricing",
+        "free_type": "Rate-limited free",
+        "notes": "Devin offers a Free plan with a light quota to code with agents, free use of SWE-2, unlimited inline edits, and unlimited Tab completions. Account login required, no credit card required. Runs bundled inside the Devin interface on SWE-2 and limited models.",
+        "timeout": "Not published",
+        "verified": "2026-11-06",
+        "models": [
+          {
+            "name": "SWE-2 (Free)",
+            "cost": "$0",
+            "context": "Not published",
+            "rpm": "Light quota",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-06"
+          },
+          {
+            "name": "Limited models (auto-selected)",
+            "cost": "$0",
+            "context": "Not published",
+            "rpm": "Light quota",
+            "tpm": "Not published",
+            "rpd": "Not published",
+            "tpd": "Not published",
+            "verified": "2026-11-06"
+          }
+        ],
+        "verified_method": "docs",
+        "docs_url": "https://devin.ai/pricing",
+        "access_method": "bundled",
+        "artifact": "code",
+        "channel": "web"
+      },
+      {
         "name": "Qoder",
         "url": "https://docs.qoder.com/account/pricing",
         "free_type": "Rate-limited free",
@@ -2174,6 +2209,6 @@
         "artifact": "agent/app"
       }
     ],
-    "data_version": "0fde00f2851b"
+    "data_version": "9749fc1d4a13"
   }
 }
