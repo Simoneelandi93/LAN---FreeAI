@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "297d4b5fe3460a04",
+    "type": "new_model",
+    "model_id": "azure/gpt-4o-mini",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-06T20:32:43.818948+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ccd9c32a1d6f5a19",
+    "type": "new_free_model",
+    "model_id": "humansand/ampersand-v0.1",
+    "provider": "Vercel AI Gateway",
+    "detected_at": "2026-11-06T20:32:43.818948+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "55630bf075be0726",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017-ultrafast",
+    "provider": "Vercel AI Gateway",
+    "detected_at": "2026-11-06T20:32:43.818948+00:00",
+    "details": "$2.4 in / $9.6 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "e0aca9dcb6975115",
     "type": "new_model",
     "model_id": "prism-flash",
