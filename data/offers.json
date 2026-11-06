@@ -1516,8 +1516,8 @@
     "status": "active",
     "source_url": "https://github.com/features/copilot",
     "base_url": "",
-    "notes": "GitHub Copilot Free offers 2,000 code completions/month and 50 chat messages/month. GitHub account required, no credit card required. Models are auto-selected by GitHub and run bundled inside the editor. | access: login | verified: docs | quota: not published",
-    "checked_at": "2026-10-29",
+    "notes": "GitHub provides Copilot Free with limited features for individual developers to try AI-powered coding assistance. The system delivers restricted agent access and limited AI credit allowances alongside Copilot Chat on GitHub.com and mobile. The implementation uses automated web data extraction, HTML table parsing, and policy analysis scripts via bash. Users receive free access subject to specific AI model availability constraints and organization or enterprise policy governance. | access: login | verified: docs | quota: not published",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1541,7 +1541,7 @@
     "id": "trae-bytedance",
     "provider": "Trae (ByteDance)",
     "title": "Trae (ByteDance)",
-    "offer_type": "permanent_quota",
+    "offer_type": "welcome_credits",
     "models_included": [],
     "requires_card": false,
     "quota_requests_day": null,
@@ -1550,8 +1550,8 @@
     "status": "active",
     "source_url": "https://www.trae.ai/pricing",
     "base_url": "",
-    "notes": "Trae offers 5,000 free code completions/month plus standard-queue access to Claude 3.5 Sonnet and GPT-4o. Account login required, no credit card required. Inference runs bundled inside the Trae IDE. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-10-29",
+    "notes": "Trae offers free inference. The free allowance includes 5,000 monthly autocompletions and a one-time $3 usage allowance. Usage is renewed monthly, and the credits are valid for 90 days. The free tier requires no credit card. | access: bundled | verified: docs | quota: not published",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1567,8 +1567,8 @@
     "status": "active",
     "source_url": "https://support.bolt.new/account-and-subscription/tokens",
     "base_url": "",
-    "notes": "Bolt.new offers 1M free tokens/month with a 300K tokens/day daily cap for full-stack web generation. Account login required, no credit card required. Credits reset on the first of each month. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-10-29",
+    "notes": "Bolt offers 1,000,000 tokens per month with a 300,000 daily token cap, translating to bundled frontier model inference for full-stack web and code generation via the Standard agent alongside hosting for up to 333k requests. No credit card required to sign up. Daily tokens reset every 24 hours without rollover, monthly quotas reset on the 1st of each calendar month, and free plan tokens do not roll over. | access: bundled | verified: docs | quota: not published",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1584,8 +1584,8 @@
     "status": "active",
     "source_url": "https://docs.lovable.dev/introduction/credits-and-usage",
     "base_url": "",
-    "notes": "Lovable offers 5 daily build credits (up to 30/month) plus 20 cloud and 4 AI edit credits/month. Account login required, no credit card required. Inference runs bundled inside the Lovable web builder. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-10-29",
+    "notes": "1. The Grant: Lovable provides a rate-limited free tier for users building and iterating on applications. 2. The Output: Users get access to bundled frontier models including Fable 5.1 without direct financial cost. 3. The Process: Usage is governed by credits and rate limits determined by the platform's current policy. 4. The Condition: Availability and rate limits are subject to change as outlined in the official documentation. | access: bundled | verified: docs | quota: not published",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1601,8 +1601,8 @@
     "status": "active",
     "source_url": "https://v0.app/docs/pricing",
     "base_url": "",
-    "notes": "v0 offers $5/month in free credits plus 7 messages/day for UI component generation. Account login required, no credit card required. Credits reset monthly with no rollover. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-10-29",
+    "notes": "v0 offers a free plan granting 7 messages per day with bundled frontier models, plus a one-time $5 credit bonus for new accounts. Translates to 7 full-stack code and UI generations daily (~210 requests per month). No credit card required to sign up and build. Quotas reset daily at 00:00 UTC with no rollover, and custom model selection is restricted to paid plans. | access: bundled | verified: docs | quota: not published",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1618,8 +1618,8 @@
     "status": "active",
     "source_url": "https://www.kaggle.com/docs/efficient-gpu-usage",
     "base_url": "",
-    "notes": "Kaggle offers 30 GPU-hours/week (NVIDIA P100 or 2xT4) in 12-hour maximum execution sessions. Phone verification required for GPU access; no credit card required. GPU quota resets weekly. | access: login | verified: docs | quota: not published",
-    "checked_at": "2026-10-29",
+    "notes": "Kaggle offers 30 hours of free GPU accelerator quota (NVIDIA T4 x2 / P100) and 20 hours of TPU v3-8 compute per week, translating to running self-hosted open-weight model inference and fine-tuning across sessions lasting up to 12 hours. Phone verification is required to unlock accelerators and internet access; no credit card required. Compute quota resets weekly, and interactive sessions terminate after 20 to 60 minutes of idle time. | access: login | verified: docs | quota: not published",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1652,8 +1652,8 @@
     "status": "active",
     "source_url": "https://cursor.com/pricing",
     "base_url": "",
-    "notes": "Cursor Hobby offers 2,000 free completion edits and limited agent requests. Account login required, no credit card required. Quota is metered per user account with frontier models auto-selected. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-10-29",
+    "notes": "[The Grant] Cursor provides access to bundled internal models like Composer 2 and Grok variants on the Hobby/Free tier. [The Output] Users receive rate-limited access to these bundled models without direct monetary charges. [The Process] The system evaluates user plan tiers and applies automatic rate limits to free tier requests. [The Condition] This access remains active as long as usage stays within the specified free tier rate limits and legacy or current hobby plan parameters. | access: bundled | verified: docs | quota: not published",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1669,8 +1669,8 @@
     "status": "active",
     "source_url": "https://docs.windsurf.com/windsurf/accounts/usage",
     "base_url": "",
-    "notes": "Windsurf offers unlimited inline code edits/Tab completions plus a limited starter quota of Cascade agent prompts. Account login required, no credit card required. Advanced frontier routing requires a paid plan. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-10-29",
+    "notes": "Windsurf provides a free tier. Users receive a set amount of usage and standard features at no cost. The free tier operates on a rate-limited basis. Usage allowances reset periodically under standard usage conditions. | access: bundled | verified: docs | quota: not published",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1703,8 +1703,8 @@
     "status": "active",
     "source_url": "https://antigravity.google/pricing",
     "base_url": "",
-    "notes": "Antigravity CLI offers free weekly quotas for terminal and editor agent tasks. Google account login required, no credit card required. Quotas reset weekly; rate limits apply during high-load periods. | access: login | verified: docs | quota: not published",
-    "checked_at": "2026-10-29",
+    "notes": "The free tier provides access to select base models for general inference. The output consists of standard text, code, and basic multimodal completions. The process requires standard user authentication via the Antigravity CLI without requiring payment instrument setup. The condition is subject to dynamic rate limits and potential feature restrictions across modalities. | access: login | verified: docs | quota: not published",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1720,8 +1720,8 @@
     "status": "active",
     "source_url": "https://research.google.com/colaboratory/faq.html",
     "base_url": "",
-    "notes": "Google Colab offers free access to shared T4 GPUs and TPUs with 12-hour maximum runtime sessions. Google account required, no credit card required. Compute resources are dynamically allocated and idle sessions disconnect. | access: login | verified: docs | quota: not published",
-    "checked_at": "2026-10-29",
+    "notes": "Google Colab offers free access to hosted Jupyter notebook compute resources including shared GPUs/TPUs and integrated Gemini AI coding features, translating to interactive execution sessions of up to 12 hours with standard system memory. Google account login required (age 18+ for AI features), no credit card required. Resources and rate limits fluctuate dynamically, idle runtimes disconnect, and non-interactive background execution is disallowed. | access: login | verified: docs | quota: not published",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1748,14 +1748,14 @@
     "offer_type": "permanent_quota",
     "models_included": [],
     "requires_card": false,
-    "quota_requests_day": null,
+    "quota_requests_day": 20,
     "quota_tokens_minute": null,
     "quota_requests_minute": null,
     "status": "active",
     "source_url": "https://www.canva.com/en/pricing/",
     "base_url": "",
-    "notes": "Canva Free offers 20 free AI design uses/month and 50 lifetime Magic Media text-to-image generations. Canva account required, no credit card required. Monthly generation allowance resets on the first of each month. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-10-30",
+    "notes": "Free users are granted an allowance of 20 uses of standard or premium AI tools. The system outputs access to bundled models like Canva AI and Magic Media. The process enforces monthly limits on tools such as Magic Write, consuming a shared allowance. The condition strictly restricts free users from accessing ultra tools like Canva AI 2.0. | access: bundled | verified: docs",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1771,8 +1771,8 @@
     "status": "active",
     "source_url": "https://www.framer.com/pricing",
     "base_url": "",
-    "notes": "Framer Free offers 500 one-time AI page generation credits plus a free Framer subdomain. Account login required, no credit card required. Projects are limited to non-commercial personal use. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-10-29",
+    "notes": "Framer offers 500 one-time AI trial credits on its Free plan for workspaces without active subscriptions to power Framer Agents, translating to approximately 1 to 3 page generation or design sessions. No credit card is required to sign up and use the free plan. Credits are a one-time trial allotment that does not reset monthly, and agent features pause once the credits are exhausted unless upgraded to a paid plan. | access: bundled | verified: docs | quota: not published",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1861,23 +1861,6 @@
     "data_source": "freeinference"
   },
   {
-    "id": "typesafe-ai",
-    "provider": "TypeSafe AI",
-    "title": "TypeSafe AI",
-    "offer_type": "welcome_credits",
-    "models_included": [],
-    "requires_card": false,
-    "quota_requests_day": null,
-    "quota_tokens_minute": null,
-    "quota_requests_minute": 60,
-    "status": "active",
-    "source_url": "https://typesafe.ai/",
-    "base_url": "https://api.typesafe.ai/v1",
-    "notes": "TypeSafe AI offers $5 free signup credit on Jev 1.13 with 256K context, translating to ~120M input tokens. Account registration required, no credit card required. Credits remain active until depleted. | access: api_key | verified: dashboard",
-    "checked_at": "2026-11-05",
-    "data_source": "freeinference"
-  },
-  {
     "id": "braintrust",
     "provider": "Braintrust",
     "title": "Braintrust",
@@ -1903,11 +1886,28 @@
     "requires_card": false,
     "quota_requests_day": null,
     "quota_tokens_minute": null,
-    "quota_requests_minute": 60,
+    "quota_requests_minute": null,
     "status": "active",
     "source_url": "https://dots.ai",
     "base_url": "https://api.dots.ai/v1",
-    "notes": "Dots Studio offers free trial API credits and inference testing on Dots-3 Note and open-weight models. No credit card required. Trial credits are intended for evaluation and prototype development. | access: api_key | verified: docs",
+    "notes": "- The Grant: Users receive a trial credit system accessible via an API key.\n- The Output: A single available model named \"dots-3-note-preview\" is provided in the catalog.\n- The Process: Investigation of JavaScript bundles, API parameters, and documentation revealed context limits and model naming structures.\n- The Condition: Total input and output token sum cannot exceed the 524,288 token context window limit. | access: api_key | verified: docs | quota: not published",
+    "checked_at": "2026-11-06",
+    "data_source": "freeinference"
+  },
+  {
+    "id": "liquid-ai",
+    "provider": "Liquid AI",
+    "title": "Liquid AI",
+    "offer_type": "welcome_credits",
+    "models_included": [],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://console.liquid.ai",
+    "base_url": "https://console.liquid.ai",
+    "notes": "1. Liquid AI offers free promotional API credits to new developers upon console signup. 2. The output provides access to evaluate their models via the developer console and API. 3. The process requires creating an account on console.liquid.ai to claim the promotional allocation. 4. The condition is subject to promotional limits and potential expiration once the initial credit balance is exhausted. | access: api_key | verified: docs | quota: not published",
     "checked_at": "2026-11-06",
     "data_source": "freeinference"
   }
