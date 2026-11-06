@@ -1823,7 +1823,7 @@
     "source_url": "https://kilo.ai/gateway",
     "base_url": "https://api.kilo.ai/v1",
     "notes": "Kilo Gateway offers 7 free models with 64K–256K context, translating to 200 requests/hour per IP address. No credit card required. Model availability reflects upstream provider quotas. | access: api_key | verified: live-probe",
-    "checked_at": "2026-11-05",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1840,7 +1840,7 @@
     "source_url": "https://portal.nousresearch.com/api-docs",
     "base_url": "https://inference-api.nousresearch.com/v1",
     "notes": "Nous Portal offers 5 free Hermes and open-weight models, translating to 50 requests/minute and 500,000 tokens/minute. Free account registration required, no credit card required. Preview models may be adjusted during experimental rounds. | access: api_key | verified: live-probe",
-    "checked_at": "2026-11-05",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1857,7 +1857,7 @@
     "source_url": "https://www.requesty.ai/pricing",
     "base_url": "https://router.requesty.ai/v1",
     "notes": "Requesty offers 3 free models with 128K context, translating to 200 requests/day per account. Email registration required, no credit card required. Quota resets daily at 00:00 UTC. | access: api_key | verified: live-probe",
-    "checked_at": "2026-11-05",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
@@ -1874,7 +1874,7 @@
     "source_url": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/",
     "base_url": "https://endpoints.ai.cloud.ovh.net/v1",
     "notes": "OVHcloud offers 10 free open-source models, translating to 2 requests/minute per IP keyless (or 400 requests/minute with a registered account). No credit card required for anonymous keyless access. Quota is enforced per client IP. | access: api_key | verified: live-probe | quota: not published",
-    "checked_at": "2026-11-05",
+    "checked_at": "2026-11-06",
     "data_source": "freeinference"
   },
   {
