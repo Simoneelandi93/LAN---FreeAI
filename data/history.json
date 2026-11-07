@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "c76548094536af48",
+    "type": "new_free_model",
+    "model_id": "inkling-2-small-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-11-07T01:33:47.636241+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "9af44a27766161f8",
     "type": "new_free_model",
     "model_id": "liquid/lfm-3-1.7b:free",
