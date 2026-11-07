@@ -48816,13 +48816,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/vercel/",
     "litellm": {
-      "litellm_key": "gpt-realtime-2.1",
-      "litellm_provider": "openai",
-      "model_name": "gpt-realtime-2.1",
-      "max_input_tokens": 128000,
-      "max_output_tokens": 32000,
-      "input_cost_per_token": 4e-06,
-      "output_cost_per_token": 2.4e-05,
+      "litellm_key": "azure/us/gpt-realtime-2.1",
+      "litellm_provider": "azure",
+      "model_name": "us/gpt-realtime-2.1",
+      "max_input_tokens": 32000,
+      "max_output_tokens": 4096,
+      "input_cost_per_token": 4.4e-06,
+      "output_cost_per_token": 2.64e-05,
       "supports_reasoning": true,
       "supports_vision": null,
       "supports_function_calling": true,
@@ -48830,7 +48830,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": null,
       "mode": "realtime",
-      "source": "https://developers.openai.com/api/docs/pricing",
+      "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
       "supported_endpoints": [
         "/v1/realtime"
       ]
@@ -49424,13 +49424,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/vercel/",
     "litellm": {
-      "litellm_key": "gpt-realtime-1.5",
-      "litellm_provider": "openai",
-      "model_name": "gpt-realtime-1.5",
+      "litellm_key": "azure/us/gpt-realtime-1.5",
+      "litellm_provider": "azure",
+      "model_name": "us/gpt-realtime-1.5",
       "max_input_tokens": 32000,
       "max_output_tokens": 4096,
-      "input_cost_per_token": 4e-06,
-      "output_cost_per_token": 1.6e-05,
+      "input_cost_per_token": 4.4e-06,
+      "output_cost_per_token": 1.76e-05,
       "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": true,
@@ -49438,7 +49438,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": null,
       "mode": "realtime",
-      "source": "https://developers.openai.com/api/docs/pricing",
+      "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
       "supported_endpoints": [
         "/v1/realtime"
       ]
@@ -73320,13 +73320,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/openai/",
     "litellm": {
-      "litellm_key": "gpt-realtime-2.1",
-      "litellm_provider": "openai",
-      "model_name": "gpt-realtime-2.1",
-      "max_input_tokens": 128000,
-      "max_output_tokens": 32000,
-      "input_cost_per_token": 4e-06,
-      "output_cost_per_token": 2.4e-05,
+      "litellm_key": "azure/us/gpt-realtime-2.1",
+      "litellm_provider": "azure",
+      "model_name": "us/gpt-realtime-2.1",
+      "max_input_tokens": 32000,
+      "max_output_tokens": 4096,
+      "input_cost_per_token": 4.4e-06,
+      "output_cost_per_token": 2.64e-05,
       "supports_reasoning": true,
       "supports_vision": null,
       "supports_function_calling": true,
@@ -73334,7 +73334,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": null,
       "mode": "realtime",
-      "source": "https://developers.openai.com/api/docs/pricing",
+      "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
       "supported_endpoints": [
         "/v1/realtime"
       ]
