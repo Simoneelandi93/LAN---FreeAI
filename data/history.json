@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "966a9370d917c698",
+    "type": "new_model",
+    "model_id": "morph-kimik31",
+    "provider": "Morph",
+    "detected_at": "2026-11-07T22:32:35.194865+00:00",
+    "details": "$2.5 in / $14 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e259a3936901a9f8",
+    "type": "new_model",
+    "model_id": "zai-org/glm-5.3-flashX",
+    "provider": "Novita AI",
+    "detected_at": "2026-11-07T22:32:35.194865+00:00",
+    "details": "$0.37 in / $1.25 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ad7a2d071604327f",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/models/kimi-k3p1-pro",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-07T22:32:35.194865+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f428e9be53881e7e",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-07T22:32:35.194865+00:00",
+    "details": "$2.4 in / $9.6 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "2a4eed4db0a65176",
     "type": "new_model",
     "model_id": "xtools-at/deepseek-v4-pro-qwen3.5-9b-uncensored-heretic",
