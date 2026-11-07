@@ -4608,7 +4608,25 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway/"
+    "source_url": "https://models.dev/providers/llmgateway/",
+    "litellm": {
+      "litellm_key": "moonshot/kimi-k3.1-pro-highspeed",
+      "litellm_provider": "moonshot",
+      "model_name": "kimi-k3.1-pro-highspeed",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input_cost_per_token": 4e-06,
+      "output_cost_per_token": 2e-05,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": null,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "llmgateway/gpt-5.6-terra",
@@ -14860,7 +14878,25 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/moonshotai/"
+    "source_url": "https://models.dev/providers/moonshotai/",
+    "litellm": {
+      "litellm_key": "moonshot/kimi-k3.1-pro-highspeed",
+      "litellm_provider": "moonshot",
+      "model_name": "kimi-k3.1-pro-highspeed",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input_cost_per_token": 4e-06,
+      "output_cost_per_token": 2e-05,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": null,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "moonshotai/kimi-k3.1-pro",
@@ -44063,7 +44099,25 @@
     "input_price_per_m": 3.8874,
     "output_price_per_m": 20.3342,
     "is_free": false,
-    "source_url": "https://models.dev/providers/moonshotai-cn/"
+    "source_url": "https://models.dev/providers/moonshotai-cn/",
+    "litellm": {
+      "litellm_key": "moonshot/kimi-k3.1-pro-highspeed",
+      "litellm_provider": "moonshot",
+      "model_name": "kimi-k3.1-pro-highspeed",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input_cost_per_token": 4e-06,
+      "output_cost_per_token": 2e-05,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": null,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "moonshotai-cn/kimi-k3.1-pro",
@@ -65247,7 +65301,25 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway-providers/"
+    "source_url": "https://models.dev/providers/llmgateway-providers/",
+    "litellm": {
+      "litellm_key": "moonshot/kimi-k3.1-pro-highspeed",
+      "litellm_provider": "moonshot",
+      "model_name": "kimi-k3.1-pro-highspeed",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input_cost_per_token": 4e-06,
+      "output_cost_per_token": 2e-05,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": null,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "llmgateway-providers/moonshot/kimi-k3.1-pro",
@@ -79627,7 +79699,25 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway-providers/"
+    "source_url": "https://models.dev/providers/llmgateway-providers/",
+    "litellm": {
+      "litellm_key": "moonshot/kimi-k3.1-pro-highspeed",
+      "litellm_provider": "moonshot",
+      "model_name": "kimi-k3.1-pro-highspeed",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input_cost_per_token": 4e-06,
+      "output_cost_per_token": 2e-05,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": null,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "llmgateway-providers/runpod/kimi-k3.1-pro",
@@ -137790,7 +137880,25 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/novita-ai/"
+    "source_url": "https://models.dev/providers/novita-ai/",
+    "litellm": {
+      "litellm_key": "moonshot/kimi-k3.1-pro-highspeed",
+      "litellm_provider": "moonshot",
+      "model_name": "kimi-k3.1-pro-highspeed",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input_cost_per_token": 4e-06,
+      "output_cost_per_token": 2e-05,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": null,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "novita-ai/moonshotai/kimi-k3.1-pro",
@@ -169826,7 +169934,25 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "litellm": {
+      "litellm_key": "moonshot/kimi-k3.1-pro-highspeed",
+      "litellm_provider": "moonshot",
+      "model_name": "kimi-k3.1-pro-highspeed",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input_cost_per_token": 4e-06,
+      "output_cost_per_token": 2e-05,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": null,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "vercel/moonshotai/kimi-k3.1-pro",
@@ -215485,7 +215611,25 @@
     "input_price_per_m": 5,
     "output_price_per_m": 25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/venice/"
+    "source_url": "https://models.dev/providers/venice/",
+    "litellm": {
+      "litellm_key": "moonshot/kimi-k3.1-pro-highspeed",
+      "litellm_provider": "moonshot",
+      "model_name": "kimi-k3.1-pro-highspeed",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input_cost_per_token": 4e-06,
+      "output_cost_per_token": 2e-05,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": null,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "venice/deepseek-v4-pro-0813",
@@ -308996,7 +309140,25 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "moonshot/kimi-k3.1-pro-highspeed",
+      "litellm_provider": "moonshot",
+      "model_name": "kimi-k3.1-pro-highspeed",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input_cost_per_token": 4e-06,
+      "output_cost_per_token": 2e-05,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": null,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "nano-gpt/moonshotai/kimi-k2-instruct-0711",
@@ -411861,6 +412023,24 @@
     "output_price_per_m": 20,
     "is_free": false,
     "source_url": "https://models.dev/providers/requesty/",
+    "litellm": {
+      "litellm_key": "moonshot/kimi-k3.1-pro-highspeed",
+      "litellm_provider": "moonshot",
+      "model_name": "kimi-k3.1-pro-highspeed",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input_cost_per_token": 4e-06,
+      "output_cost_per_token": 2e-05,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": null,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "requesty",
       "provider": "Requesty",
