@@ -1635,8 +1635,8 @@
     "status": "active",
     "source_url": "https://huggingface.co/docs/hub/spaces-overview",
     "base_url": "",
-    "notes": "Hugging Face Spaces offers free hosting for up to 2 ZeroGPU Gradio spaces with dynamic GPU allocation. Free account required, no credit card required. Persistent storage and dedicated hardware require a Pro tier. | access: login | verified: docs | quota: not published",
-    "checked_at": "2026-10-29",
+    "notes": "Hugging Face Spaces provides 5 minutes of daily ZeroGPU compute on dynamic NVIDIA RTX Pro 6000 Blackwell GPUs (48 GB to 96 GB VRAM) along with free hosting for up to 2 Gradio Spaces. This allows users to deploy and run inference on any compatible Hugging Face model across text, vision, audio, and multimodal tasks with execution limits of 60 to 120 seconds per function call. Access requires creating and logging into a free Hugging Face account with a verified email address, with no credit card required. The 5-minute GPU quota resets 24 hours after the first GPU usage, spaces auto-sleep when inactive, and hosting personal ZeroGPU demos requires an account older than 30 days in good standing. | access: login | verified: docs | quota: not published",
+    "checked_at": "2026-11-07",
     "data_source": "freeinference"
   },
   {
@@ -1652,8 +1652,8 @@
     "status": "active",
     "source_url": "https://cursor.com/pricing",
     "base_url": "",
-    "notes": "[The Grant] Cursor provides access to bundled internal models like Composer 2 and Grok variants on the Hobby/Free tier. [The Output] Users receive rate-limited access to these bundled models without direct monetary charges. [The Process] The system evaluates user plan tiers and applies automatic rate limits to free tier requests. [The Condition] This access remains active as long as usage stays within the specified free tier rate limits and legacy or current hobby plan parameters. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-11-06",
+    "notes": "1. Cursor grants users access to a complimentary Hobby tier for basic AI coding features. 2. The output provides limited agent requests and limited chat requests under rate-limited conditions. 3. The process involves checking the Cursor pricing and models documentation to cross-reference available free offerings. 4. This access remains conditioned upon staying within the specified rate limits of the free tier. | access: bundled | verified: docs | quota: not published",
+    "checked_at": "2026-11-07",
     "data_source": "freeinference"
   },
   {
@@ -1926,6 +1926,23 @@
     "base_url": "https://console.liquid.ai",
     "notes": "1. Liquid AI offers free promotional API credits to new developers upon console signup. 2. The output provides access to evaluate their models via the developer console and API. 3. The process requires creating an account on console.liquid.ai to claim the promotional allocation. 4. The condition is subject to promotional limits and potential expiration once the initial credit balance is exhausted. | access: api_key | verified: docs | quota: not published",
     "checked_at": "2026-11-06",
+    "data_source": "freeinference"
+  },
+  {
+    "id": "speka",
+    "provider": "Speka",
+    "title": "Speka",
+    "offer_type": "Permanent $0",
+    "models_included": [],
+    "requires_card": false,
+    "quota_requests_day": null,
+    "quota_tokens_minute": null,
+    "quota_requests_minute": null,
+    "status": "active",
+    "source_url": "https://speka.me",
+    "base_url": "https://speka.me/v1",
+    "notes": "[The Grant] Speka provides a recurring $1.00 monthly model usage allowance on its Free plan ($0/mo) that refreshes every month. [The Output] Developers can generate completions, embeddings, and images across all open catalog models with 1 API key and a rate limit of 10 requests per minute (RPM). [The Process] Users sign up with email and password via speka.me/signup without requiring a credit card or upfront payment, and instantly create an API key in the dashboard. [The Condition] Requests are billed against the $1 monthly credit at standard per-token model rates; once the monthly allowance is exhausted, requests return HTTP 402 until the next monthly reset or paid upgrade. | access: api_key | verified: docs | quota: not published",
+    "checked_at": "2026-11-07",
     "data_source": "freeinference"
   }
 ]
