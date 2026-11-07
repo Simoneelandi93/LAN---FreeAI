@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "2a4eed4db0a65176",
+    "type": "new_model",
+    "model_id": "xtools-at/deepseek-v4-pro-qwen3.5-9b-uncensored-heretic",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-07T10:32:16.810858+00:00",
+    "details": "$0.28 in / $0.28 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "4c2f3128a3968b26",
     "type": "new_model",
     "model_id": "inclusionai/ling-3.0-tiny:thinking",
