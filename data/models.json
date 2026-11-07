@@ -11488,6 +11488,24 @@
     "output_price_per_m": 0.5,
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
+    "litellm": {
+      "litellm_key": "databricks/claude-haiku-latest",
+      "litellm_provider": "databricks",
+      "model_name": "claude-haiku-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "llm_stats_id": "claude-haiku-5-5"
   },
   {
@@ -11776,6 +11794,24 @@
     "output_price_per_m": 20,
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
+    "litellm": {
+      "litellm_key": "bedrock_mantle/claude-opus-latest",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "claude-opus-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "llm_stats_id": "claude-opus-5-5"
   },
   {
@@ -11809,6 +11845,24 @@
     "output_price_per_m": 50,
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
+    "litellm": {
+      "litellm_key": "vertex_ai/claude-fable-latest",
+      "litellm_provider": "vertex_ai",
+      "model_name": "claude-fable-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "llm_stats_id": "claude-fable-5-1"
   },
   {
@@ -12199,6 +12253,24 @@
     "output_price_per_m": 10,
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
+    "litellm": {
+      "litellm_key": "databricks/claude-sonnet-latest",
+      "litellm_provider": "databricks",
+      "model_name": "claude-sonnet-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "llm_stats_id": "claude-sonnet-5-5"
   },
   {
@@ -15354,6 +15426,24 @@
     "output_price_per_m": 6,
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
+    "litellm": {
+      "litellm_key": "bedrock_mantle/grok-latest",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "grok-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "llm_stats_id": "grok-4.7"
   },
   {
@@ -19076,6 +19166,24 @@
     "output_price_per_m": 1.2,
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
+    "litellm": {
+      "litellm_key": "gpt-mini-latest",
+      "litellm_provider": "",
+      "model_name": "gpt-mini-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "llm_stats_id": "gpt-5.6-luna"
   },
   {
@@ -158083,7 +158191,25 @@
     "input_price_per_m": 3,
     "output_price_per_m": 15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/fireworks-ai/"
+    "source_url": "https://models.dev/providers/fireworks-ai/",
+    "litellm": {
+      "litellm_key": "baseten/kimi-latest",
+      "litellm_provider": "baseten",
+      "model_name": "kimi-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "fireworks-ai/accounts/fireworks/routers/glm-5p3-fast",
@@ -158163,7 +158289,25 @@
     "input_price_per_m": 0.3,
     "output_price_per_m": 1.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/fireworks-ai/"
+    "source_url": "https://models.dev/providers/fireworks-ai/",
+    "litellm": {
+      "litellm_key": "baseten/deepseek-flash-latest",
+      "litellm_provider": "baseten",
+      "model_name": "deepseek-flash-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "fireworks-ai/accounts/fireworks/routers/glm-flash-latest",
@@ -158195,6 +158339,24 @@
     "output_price_per_m": 0.5,
     "is_free": false,
     "source_url": "https://models.dev/providers/fireworks-ai/",
+    "litellm": {
+      "litellm_key": "baseten/glm-flash-latest",
+      "litellm_provider": "baseten",
+      "model_name": "glm-flash-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "llm_stats_id": "glm-5.3-flash"
   },
   {
@@ -158306,7 +158468,25 @@
     "input_price_per_m": 0.3,
     "output_price_per_m": 1.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/fireworks-ai/"
+    "source_url": "https://models.dev/providers/fireworks-ai/",
+    "litellm": {
+      "litellm_key": "minimax/minimax-latest",
+      "litellm_provider": "minimax",
+      "model_name": "minimax-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "fireworks-ai/accounts/fireworks/routers/qwen-max-latest",
@@ -158338,6 +158518,24 @@
     "output_price_per_m": 6,
     "is_free": false,
     "source_url": "https://models.dev/providers/fireworks-ai/",
+    "litellm": {
+      "litellm_key": "dashscope/qwen-max-latest",
+      "litellm_provider": "dashscope",
+      "model_name": "qwen-max-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "llm_stats_id": "qwen3.8-max"
   },
   {
@@ -158417,7 +158615,25 @@
     "input_price_per_m": 1.4,
     "output_price_per_m": 4.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/fireworks-ai/"
+    "source_url": "https://models.dev/providers/fireworks-ai/",
+    "litellm": {
+      "litellm_key": "bedrock/glm-latest",
+      "litellm_provider": "bedrock",
+      "model_name": "glm-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "fireworks-ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot",
@@ -196779,7 +196995,25 @@
     "input_price_per_m": 0.15,
     "output_price_per_m": 0.15,
     "is_free": false,
-    "source_url": "https://models.dev/providers/togetherai/"
+    "source_url": "https://models.dev/providers/togetherai/",
+    "litellm": {
+      "litellm_key": "together_ai/essentialai/rnj-1-instruct",
+      "litellm_provider": "together_ai",
+      "model_name": "essentialai/rnj-1-instruct",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": 1.5e-07,
+      "output_cost_per_token": 1.5e-07,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "chat",
+      "source": "https://www.together.ai/models/rnj-1-instruct",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "togetherai/reflection/Beam-1.0-501B-A23B",
@@ -197134,7 +197368,25 @@
     "input_price_per_m": 1.791,
     "output_price_per_m": 8.9436,
     "is_free": false,
-    "source_url": "https://models.dev/providers/privatemode-ai/"
+    "source_url": "https://models.dev/providers/privatemode-ai/",
+    "litellm": {
+      "litellm_key": "baseten/kimi-latest",
+      "litellm_provider": "baseten",
+      "model_name": "kimi-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "privatemode-ai/voxtral-mini-3b",
@@ -197244,7 +197496,25 @@
     "input_price_per_m": 0.2311,
     "output_price_per_m": 0.7511,
     "is_free": false,
-    "source_url": "https://models.dev/providers/privatemode-ai/"
+    "source_url": "https://models.dev/providers/privatemode-ai/",
+    "litellm": {
+      "litellm_key": "baseten/glm-flash-latest",
+      "litellm_provider": "baseten",
+      "model_name": "glm-flash-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "privatemode-ai/glm-5.3",
@@ -197471,7 +197741,25 @@
     "input_price_per_m": 1.791,
     "output_price_per_m": 6.6326,
     "is_free": false,
-    "source_url": "https://models.dev/providers/privatemode-ai/"
+    "source_url": "https://models.dev/providers/privatemode-ai/",
+    "litellm": {
+      "litellm_key": "bedrock/glm-latest",
+      "litellm_provider": "bedrock",
+      "model_name": "glm-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "privatemode-ai/gpt-oss-120b",
@@ -220501,7 +220789,25 @@
     "input_price_per_m": 0.1824,
     "output_price_per_m": 10.5478,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "baseten/kimi-latest",
+      "litellm_provider": "baseten",
+      "model_name": "kimi-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/xiaomi/mimo-v2.5-pro",
@@ -223218,7 +223524,25 @@
     "input_price_per_m": 1,
     "output_price_per_m": 5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "databricks/gpt-terra-latest",
+      "litellm_provider": "databricks",
+      "model_name": "gpt-terra-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/~openai/gpt-luna-latest",
@@ -223250,7 +223574,25 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "databricks/gpt-luna-latest",
+      "litellm_provider": "databricks",
+      "model_name": "gpt-luna-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/~openai/gpt-sol-latest",
@@ -223282,7 +223624,25 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "databricks/gpt-sol-latest",
+      "litellm_provider": "databricks",
+      "model_name": "gpt-sol-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/~openai/gpt-astra-latest",
@@ -223314,7 +223674,25 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "databricks/gpt-astra-latest",
+      "litellm_provider": "databricks",
+      "model_name": "gpt-astra-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/~openai/gpt-mini-latest",
@@ -223346,7 +223724,25 @@
     "input_price_per_m": 0.75,
     "output_price_per_m": 4.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "gpt-mini-latest",
+      "litellm_provider": "",
+      "model_name": "gpt-mini-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/bytedance-seed/seed-2.0-code",
@@ -226786,7 +227182,25 @@
     "input_price_per_m": 0.006,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "baseten/deepseek-flash-latest",
+      "litellm_provider": "baseten",
+      "model_name": "deepseek-flash-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/~deepseek/deepseek-v4-flash-latest",
@@ -226846,7 +227260,25 @@
     "input_price_per_m": 0.0999,
     "output_price_per_m": 8,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "baseten/deepseek-pro-latest",
+      "litellm_provider": "baseten",
+      "model_name": "deepseek-pro-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/recursive/flint-v1.0:free",
@@ -233634,7 +234066,25 @@
     "input_price_per_m": 0.0285,
     "output_price_per_m": 0.0923,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "baseten/glm-flash-latest",
+      "litellm_provider": "baseten",
+      "model_name": "glm-flash-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/~z-ai/glm-latest",
@@ -233664,7 +234114,25 @@
     "input_price_per_m": 0.0699,
     "output_price_per_m": 1.4,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "bedrock/glm-latest",
+      "litellm_provider": "bedrock",
+      "model_name": "glm-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/microsoft/phi-4",
@@ -233794,7 +234262,25 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "databricks/claude-haiku-latest",
+      "litellm_provider": "databricks",
+      "model_name": "claude-haiku-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/~anthropic/claude-opus-latest",
@@ -233826,7 +234312,25 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "bedrock_mantle/claude-opus-latest",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "claude-opus-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/~anthropic/claude-fable-latest",
@@ -233858,7 +234362,25 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "vertex_ai/claude-fable-latest",
+      "litellm_provider": "vertex_ai",
+      "model_name": "claude-fable-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/~anthropic/claude-sonnet-latest",
@@ -233890,7 +234412,25 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "databricks/claude-sonnet-latest",
+      "litellm_provider": "databricks",
+      "model_name": "claude-sonnet-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/sao10k/l3.1-euryale-70b",
@@ -236282,7 +236822,25 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "bedrock_mantle/grok-latest",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "grok-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/moondream/moondream3.1-9b-a2b",
@@ -312015,6 +312573,24 @@
     "output_price_per_m": 10.5478,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "baseten/kimi-latest",
+      "litellm_provider": "baseten",
+      "model_name": "kimi-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -315571,6 +316147,24 @@
     "output_price_per_m": 5,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "databricks/gpt-terra-latest",
+      "litellm_provider": "databricks",
+      "model_name": "gpt-terra-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -315619,6 +316213,24 @@
     "output_price_per_m": 0.5,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "databricks/gpt-luna-latest",
+      "litellm_provider": "databricks",
+      "model_name": "gpt-luna-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -315667,6 +316279,24 @@
     "output_price_per_m": 10,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "databricks/gpt-sol-latest",
+      "litellm_provider": "databricks",
+      "model_name": "gpt-sol-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -315715,6 +316345,24 @@
     "output_price_per_m": 50,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "databricks/gpt-astra-latest",
+      "litellm_provider": "databricks",
+      "model_name": "gpt-astra-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -315763,6 +316411,24 @@
     "output_price_per_m": 4.5,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "gpt-mini-latest",
+      "litellm_provider": "",
+      "model_name": "gpt-mini-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -320330,6 +320996,24 @@
     "output_price_per_m": 0.5,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "baseten/deepseek-flash-latest",
+      "litellm_provider": "baseten",
+      "model_name": "deepseek-flash-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -320422,6 +321106,24 @@
     "output_price_per_m": 8,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "baseten/deepseek-pro-latest",
+      "litellm_provider": "baseten",
+      "model_name": "deepseek-pro-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -329561,6 +330263,24 @@
     "output_price_per_m": 0.0923,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "baseten/glm-flash-latest",
+      "litellm_provider": "baseten",
+      "model_name": "glm-flash-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -329607,6 +330327,24 @@
     "output_price_per_m": 1.4,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "bedrock/glm-latest",
+      "litellm_provider": "bedrock",
+      "model_name": "glm-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -329852,6 +330590,24 @@
     "output_price_per_m": 0.5,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "databricks/claude-haiku-latest",
+      "litellm_provider": "databricks",
+      "model_name": "claude-haiku-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -329900,6 +330656,24 @@
     "output_price_per_m": 20,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "bedrock_mantle/claude-opus-latest",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "claude-opus-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -329948,6 +330722,24 @@
     "output_price_per_m": 50,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "vertex_ai/claude-fable-latest",
+      "litellm_provider": "vertex_ai",
+      "model_name": "claude-fable-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -329996,6 +330788,24 @@
     "output_price_per_m": 10,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "databricks/claude-sonnet-latest",
+      "litellm_provider": "databricks",
+      "model_name": "claude-sonnet-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -333220,6 +334030,24 @@
     "output_price_per_m": 6,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "litellm": {
+      "litellm_key": "bedrock_mantle/grok-latest",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "grok-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    },
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -339799,7 +340627,25 @@
     "input_price_per_m": null,
     "output_price_per_m": null,
     "is_free": false,
-    "source_url": "https://models.dev/providers/the-grid-ai/"
+    "source_url": "https://models.dev/providers/the-grid-ai/",
+    "litellm": {
+      "litellm_key": "baseten/kimi-latest",
+      "litellm_provider": "baseten",
+      "model_name": "kimi-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "the-grid-ai/bytedance-pro-latest",
@@ -339890,7 +340736,25 @@
     "input_price_per_m": null,
     "output_price_per_m": null,
     "is_free": false,
-    "source_url": "https://models.dev/providers/the-grid-ai/"
+    "source_url": "https://models.dev/providers/the-grid-ai/",
+    "litellm": {
+      "litellm_key": "bedrock_mantle/claude-opus-latest",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "claude-opus-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "the-grid-ai/text-max",
@@ -340012,7 +340876,25 @@
     "input_price_per_m": null,
     "output_price_per_m": null,
     "is_free": false,
-    "source_url": "https://models.dev/providers/the-grid-ai/"
+    "source_url": "https://models.dev/providers/the-grid-ai/",
+    "litellm": {
+      "litellm_key": "minimax/minimax-latest",
+      "litellm_provider": "minimax",
+      "model_name": "minimax-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "the-grid-ai/code-max",
@@ -340074,7 +340956,25 @@
     "input_price_per_m": null,
     "output_price_per_m": null,
     "is_free": false,
-    "source_url": "https://models.dev/providers/the-grid-ai/"
+    "source_url": "https://models.dev/providers/the-grid-ai/",
+    "litellm": {
+      "litellm_key": "databricks/gpt-sol-latest",
+      "litellm_provider": "databricks",
+      "model_name": "gpt-sol-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "the-grid-ai/text-prime",
@@ -340217,7 +341117,25 @@
     "input_price_per_m": null,
     "output_price_per_m": null,
     "is_free": false,
-    "source_url": "https://models.dev/providers/the-grid-ai/"
+    "source_url": "https://models.dev/providers/the-grid-ai/",
+    "litellm": {
+      "litellm_key": "bedrock/glm-latest",
+      "litellm_provider": "bedrock",
+      "model_name": "glm-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "the-grid-ai/deepseek-pro-latest",
@@ -340247,7 +341165,25 @@
     "input_price_per_m": null,
     "output_price_per_m": null,
     "is_free": false,
-    "source_url": "https://models.dev/providers/the-grid-ai/"
+    "source_url": "https://models.dev/providers/the-grid-ai/",
+    "litellm": {
+      "litellm_key": "baseten/deepseek-pro-latest",
+      "litellm_provider": "baseten",
+      "model_name": "deepseek-pro-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "the-grid-ai/agent-standard",
@@ -355891,7 +356827,25 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "databricks/claude-haiku-latest",
+      "litellm_provider": "databricks",
+      "model_name": "claude-haiku-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "nano-gpt/anthropic/claude-opus-4.6:thinking:max",
@@ -356039,7 +356993,25 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "bedrock_mantle/claude-opus-latest",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "claude-opus-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "nano-gpt/anthropic/claude-fable-latest",
@@ -356071,7 +357043,25 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "vertex_ai/claude-fable-latest",
+      "litellm_provider": "vertex_ai",
+      "model_name": "claude-fable-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "nano-gpt/anthropic/claude-opus-4.7:thinking",
@@ -357093,7 +358083,25 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "databricks/claude-sonnet-latest",
+      "litellm_provider": "databricks",
+      "model_name": "claude-sonnet-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "nano-gpt/anthropic/claude-haiku-5.5",
@@ -358351,7 +359359,25 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "baseten/kimi-latest",
+      "litellm_provider": "baseten",
+      "model_name": "kimi-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "nano-gpt/moonshotai/kimi-k3",
@@ -361489,7 +362515,25 @@
     "input_price_per_m": 1,
     "output_price_per_m": 5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "databricks/gpt-terra-latest",
+      "litellm_provider": "databricks",
+      "model_name": "gpt-terra-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "nano-gpt/openai/gpt-6.1-terra-pro",
@@ -361637,7 +362681,25 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "databricks/gpt-luna-latest",
+      "litellm_provider": "databricks",
+      "model_name": "gpt-luna-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "nano-gpt/openai/gpt-4o-2024-11-20",
@@ -362742,7 +363804,25 @@
     "input_price_per_m": 2,
     "output_price_per_m": 10,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "databricks/gpt-sol-latest",
+      "litellm_provider": "databricks",
+      "model_name": "gpt-sol-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "nano-gpt/openai/o1",
@@ -363340,7 +364420,25 @@
     "input_price_per_m": 10,
     "output_price_per_m": 50,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "databricks/gpt-astra-latest",
+      "litellm_provider": "databricks",
+      "model_name": "gpt-astra-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "nano-gpt/openai/gpt-4o",
@@ -366911,7 +368009,25 @@
     "input_price_per_m": 0.6,
     "output_price_per_m": 1.1,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "bedrock/glm-latest",
+      "litellm_provider": "bedrock",
+      "model_name": "glm-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "nano-gpt/z-ai/glm-4.5v",
@@ -367634,7 +368750,25 @@
     "input_price_per_m": 2,
     "output_price_per_m": 6,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "bedrock_mantle/grok-latest",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "grok-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "nano-gpt/x-ai/grok-4.3",
@@ -374558,7 +375692,25 @@
     "input_price_per_m": 0.23,
     "output_price_per_m": 0.96,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "minimax/minimax-latest",
+      "litellm_provider": "minimax",
+      "model_name": "minimax-latest",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "",
+      "source": "",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "nano-gpt/minimax/minimax-m3.1-flash",
