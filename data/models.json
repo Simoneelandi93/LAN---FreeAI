@@ -206169,6 +206169,22 @@
         "/v1/images/edits",
         "/v1/batch"
       ]
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -206219,7 +206235,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "grok-4.6"
+    "llm_stats_id": "grok-4.6",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/minimax-m2.7",
@@ -206268,7 +206300,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "minimax-m2.7"
+    "llm_stats_id": "minimax-m2.7",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/deepseek-v4-flash-0731",
@@ -206317,7 +206365,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "deepseek-v4-flash-0731"
+    "llm_stats_id": "deepseek-v4-flash-0731",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5.6-luna",
@@ -206367,7 +206431,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-5.6-luna"
+    "llm_stats_id": "gpt-5.6-luna",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/glm-5v-turbo",
@@ -206419,7 +206499,23 @@
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
     },
-    "llm_stats_id": "glm-5v-turbo"
+    "llm_stats_id": "glm-5v-turbo",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/deepseek-v4-flash-0731-fast",
@@ -206450,7 +206546,23 @@
     "output_price_per_m": 1.4,
     "is_free": false,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "deepseek-v4-flash-0731"
+    "llm_stats_id": "deepseek-v4-flash-0731",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-opus-4-6",
@@ -206501,7 +206613,23 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing#claude-platform-on-aws-pricing",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-opus-4-6"
+    "llm_stats_id": "claude-opus-4-6",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5.1-codex-mini",
@@ -206553,7 +206681,23 @@
         "/v1/responses"
       ]
     },
-    "llm_stats_id": "gpt-5.1-codex-mini"
+    "llm_stats_id": "gpt-5.1-codex-mini",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/xiaomi-mimo-v2.5-free",
@@ -206586,7 +206730,23 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/coding-minimax-m2.7",
@@ -206616,7 +206776,23 @@
     "input_price_per_m": 0.2,
     "output_price_per_m": 0.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/kimi-k2.7-code-highspeed",
@@ -206666,6 +206842,22 @@
       "mode": "chat",
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -206715,7 +206907,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "deepseek-v4-pro-0813"
+    "llm_stats_id": "deepseek-v4-pro-0813",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5.1-codex",
@@ -206767,7 +206975,23 @@
         "/v1/responses"
       ]
     },
-    "llm_stats_id": "gpt-5.1-codex"
+    "llm_stats_id": "gpt-5.1-codex",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/muse-spark-1.1",
@@ -206820,7 +207044,23 @@
       "source": "https://empiriolabs.ai/models/muse-spark-1-1",
       "supported_endpoints": []
     },
-    "llm_stats_id": "muse-spark-1.1"
+    "llm_stats_id": "muse-spark-1.1",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/coding-glm-5.1-free",
@@ -206850,7 +207090,23 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5.6-sol",
@@ -206900,7 +207156,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-5.6-sol"
+    "llm_stats_id": "gpt-5.6-sol",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-sonnet-4-5",
@@ -206951,7 +207223,23 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing#claude-platform-on-aws-pricing",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-sonnet-4-5-20250929"
+    "llm_stats_id": "claude-sonnet-4-5-20250929",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.7-flash",
@@ -207001,6 +207289,22 @@
       "mode": "chat",
       "source": "https://empiriolabs.ai/models/qwen3-7-flash",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -207032,7 +207336,23 @@
     "output_price_per_m": 3.38,
     "is_free": false,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "glm-5.1"
+    "llm_stats_id": "glm-5.1",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5.5-pro",
@@ -207083,7 +207403,23 @@
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-5.5-pro"
+    "llm_stats_id": "gpt-5.5-pro",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/xiaomi-mimo-v2.5",
@@ -207116,7 +207452,23 @@
     "input_price_per_m": 0.44,
     "output_price_per_m": 2.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.5-flash",
@@ -207166,6 +207518,22 @@
       "mode": "chat",
       "source": "https://empiriolabs.ai/models/qwen3-5-flash",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -207196,7 +207564,23 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-opus-4-5-think",
@@ -207229,7 +207613,23 @@
     "output_price_per_m": 25,
     "is_free": false,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "claude-opus-4-5-20251101"
+    "llm_stats_id": "claude-opus-4-5-20251101",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.8-max-preview",
@@ -207262,7 +207662,23 @@
     "output_price_per_m": 1.014,
     "is_free": false,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "qwen3.8-max"
+    "llm_stats_id": "qwen3.8-max",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gemini-3-pro-image",
@@ -207317,6 +207733,22 @@
         "/v1/images/edits",
         "/v1/batch"
       ]
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -207368,7 +207800,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "kimi-k2.7-code"
+    "llm_stats_id": "kimi-k2.7-code",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-fable-5",
@@ -207419,7 +207867,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-fable-5"
+    "llm_stats_id": "claude-fable-5",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/coding-glm-5.3-free",
@@ -207450,7 +207914,23 @@
     "output_price_per_m": 0,
     "is_free": true,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "glm-5.3"
+    "llm_stats_id": "glm-5.3",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.5-122b-a10b",
@@ -207501,7 +207981,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "qwen3.5-122b-a10b"
+    "llm_stats_id": "qwen3.5-122b-a10b",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.8-omni-flash",
@@ -207553,7 +208049,23 @@
       "source": "https://empiriolabs.ai/models/qwen3-8-omni-flash",
       "supported_endpoints": []
     },
-    "llm_stats_id": "qwen3.8-omni-flash"
+    "llm_stats_id": "qwen3.8-omni-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/grok-build-0.1",
@@ -207602,6 +208114,22 @@
       "mode": "chat",
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -207632,7 +208160,23 @@
     "input_price_per_m": 0.2,
     "output_price_per_m": 0.2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5.4",
@@ -207683,7 +208227,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-5.4"
+    "llm_stats_id": "gpt-5.4",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/deepseek-v4.1-flash",
@@ -207733,7 +208293,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "deepseek-v4.1-flash"
+    "llm_stats_id": "deepseek-v4.1-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/grok-4.7",
@@ -207784,7 +208360,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "grok-4.7"
+    "llm_stats_id": "grok-4.7",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/coding-glm-5.2-free",
@@ -207815,7 +208407,23 @@
     "output_price_per_m": 0,
     "is_free": true,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "glm-5.2"
+    "llm_stats_id": "glm-5.2",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-image-2.5-flare",
@@ -207867,6 +208475,22 @@
         "/v1/images/generations",
         "/v1/images/edits"
       ]
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -207920,6 +208544,22 @@
         "/v1/images/generations",
         "/v1/images/edits"
       ]
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -207969,7 +208609,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "mimo-v2.5-pro"
+    "llm_stats_id": "mimo-v2.5-pro",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.8-max-free",
@@ -208003,7 +208659,23 @@
     "output_price_per_m": 0,
     "is_free": true,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "qwen3.8-max"
+    "llm_stats_id": "qwen3.8-max",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gemini-2.5-flash",
@@ -208056,7 +208728,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gemini-2.5-flash"
+    "llm_stats_id": "gemini-2.5-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/nemotron-3-ultra-550b-a55b-free",
@@ -208087,7 +208775,23 @@
     "output_price_per_m": 0,
     "is_free": true,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "nemotron-3-ultra-550b-a55b"
+    "llm_stats_id": "nemotron-3-ultra-550b-a55b",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/o4-mini",
@@ -208138,7 +208842,23 @@
       "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
       "supported_endpoints": []
     },
-    "llm_stats_id": "o4-mini"
+    "llm_stats_id": "o4-mini",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.5-plus",
@@ -208188,6 +208908,22 @@
       "mode": "chat",
       "source": "https://empiriolabs.ai/models/qwen3-5-plus",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -208238,6 +208974,22 @@
       "mode": "chat",
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -208271,7 +209023,23 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/xiaomi-mimo-v2.5-pro-free",
@@ -208301,7 +209069,23 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-opus-4-6-think",
@@ -208334,7 +209118,23 @@
     "output_price_per_m": 25,
     "is_free": false,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "claude-opus-4-6"
+    "llm_stats_id": "claude-opus-4-6",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5",
@@ -208384,7 +209184,23 @@
       "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-5-2025-08-07"
+    "llm_stats_id": "gpt-5-2025-08-07",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/glm-5.3-flash",
@@ -208435,7 +209251,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "glm-5.3-flash"
+    "llm_stats_id": "glm-5.3-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/alicloud-deepseek-v4-flash",
@@ -208465,7 +209297,23 @@
     "input_price_per_m": 0.14,
     "output_price_per_m": 0.28,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/coding-glm-5.3-flash-free",
@@ -208499,7 +209347,23 @@
     "output_price_per_m": 0,
     "is_free": true,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "glm-5.3-flash"
+    "llm_stats_id": "glm-5.3-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/glm-5.2",
@@ -208548,7 +209412,23 @@
       "source": "https://empiriolabs.ai/models/glm-5-2",
       "supported_endpoints": []
     },
-    "llm_stats_id": "glm-5.2"
+    "llm_stats_id": "glm-5.2",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/ling-3.0-flash-free",
@@ -208579,7 +209459,23 @@
     "output_price_per_m": 0,
     "is_free": true,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "ling-3.0-flash"
+    "llm_stats_id": "ling-3.0-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/mimo-v2.6-pro-ultraspeed",
@@ -208630,6 +209526,22 @@
       "mode": "chat",
       "source": "https://empiriolabs.ai/models/mimo-v2-6-pro-ultraspeed",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -208681,7 +209593,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-6-astra"
+    "llm_stats_id": "gpt-6-astra",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/kimi-k2.5",
@@ -208732,7 +209660,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "kimi-k2.5"
+    "llm_stats_id": "kimi-k2.5",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/o3",
@@ -208783,7 +209727,23 @@
       "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
       "supported_endpoints": []
     },
-    "llm_stats_id": "o3-2025-04-16"
+    "llm_stats_id": "o3-2025-04-16",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/hy3",
@@ -208832,7 +209792,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "hy3"
+    "llm_stats_id": "hy3",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/minimax-m3",
@@ -208883,7 +209859,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "minimax-m3"
+    "llm_stats_id": "minimax-m3",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gemini-3.6-flash",
@@ -208936,7 +209928,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gemini-3.6-flash"
+    "llm_stats_id": "gemini-3.6-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5.3-codex",
@@ -208987,7 +209995,23 @@
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-5.3-codex"
+    "llm_stats_id": "gpt-5.3-codex",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5.4-mini",
@@ -209037,7 +210061,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-5.4-mini"
+    "llm_stats_id": "gpt-5.4-mini",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.6-flash",
@@ -209087,6 +210127,22 @@
       "mode": "chat",
       "source": "https://empiriolabs.ai/models/qwen3-6-flash",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -209119,7 +210175,23 @@
     "output_price_per_m": 0,
     "is_free": true,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "nemotron-content-safety-3.5"
+    "llm_stats_id": "nemotron-content-safety-3.5",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/deep-deepseek-v4-pro",
@@ -209149,7 +210221,23 @@
     "input_price_per_m": 0.478,
     "output_price_per_m": 0.956,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5.1",
@@ -209204,7 +210292,23 @@
         "/v1/responses"
       ]
     },
-    "llm_stats_id": "gpt-5.1-2025-11-13"
+    "llm_stats_id": "gpt-5.1-2025-11-13",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5.2-codex",
@@ -209255,7 +210359,23 @@
       "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-5.2-codex"
+    "llm_stats_id": "gpt-5.2-codex",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/doubao-seed-2-0-code-preview",
@@ -209306,6 +210426,22 @@
       "mode": "chat",
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -209357,7 +210493,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "qwen3.5-27b"
+    "llm_stats_id": "qwen3.5-27b",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gemini-2.5-flash-image",
@@ -209412,6 +210564,22 @@
         "/v1/images/edits",
         "/v1/batch"
       ]
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -209462,7 +210630,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-5.4-nano"
+    "llm_stats_id": "gpt-5.4-nano",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-sonnet-4-6-think",
@@ -209495,7 +210679,23 @@
     "output_price_per_m": 15,
     "is_free": false,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "claude-sonnet-4-6"
+    "llm_stats_id": "claude-sonnet-4-6",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3-max",
@@ -209544,7 +210744,23 @@
       "source": "https://deepinfra.com/pricing",
       "supported_endpoints": []
     },
-    "llm_stats_id": "qwen3-max"
+    "llm_stats_id": "qwen3-max",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/nemotron-3-super-120b-a12b-free",
@@ -209575,7 +210791,23 @@
     "output_price_per_m": 0,
     "is_free": true,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "nemotron-3-super-120b-a12b"
+    "llm_stats_id": "nemotron-3-super-120b-a12b",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gemini-3.1-pro-preview-customtools",
@@ -209627,6 +210859,22 @@
       "mode": "chat",
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -209660,7 +210908,23 @@
     "output_price_per_m": 25,
     "is_free": false,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "claude-opus-4-7"
+    "llm_stats_id": "claude-opus-4-7",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/coding-glm-5.1",
@@ -209690,7 +210954,23 @@
     "input_price_per_m": 0.06,
     "output_price_per_m": 0.22,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-opus-5-5",
@@ -209741,7 +211021,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-opus-5-5"
+    "llm_stats_id": "claude-opus-5-5",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/deep-deepseek-v4-flash",
@@ -209771,7 +211067,23 @@
     "input_price_per_m": 0.154,
     "output_price_per_m": 0.308,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.6-max-preview",
@@ -209819,6 +211131,22 @@
       "mode": "chat",
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -209870,7 +211198,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "step-3.7-flash"
+    "llm_stats_id": "step-3.7-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gemini-4-argon",
@@ -209923,7 +211267,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gemini-4-argon"
+    "llm_stats_id": "gemini-4-argon",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-image-2",
@@ -209975,6 +211335,22 @@
         "/v1/images/generations",
         "/v1/images/edits"
       ]
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -210027,7 +211403,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "mimo-v2.5"
+    "llm_stats_id": "mimo-v2.5",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/kimi-k3",
@@ -210078,7 +211470,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "kimi-k3"
+    "llm_stats_id": "kimi-k3",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/hy4-preview",
@@ -210127,7 +211535,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "hy4-preview"
+    "llm_stats_id": "hy4-preview",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/kimi-k2.6",
@@ -210178,7 +211602,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "kimi-k2.6"
+    "llm_stats_id": "kimi-k2.6",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/glm-4.6v",
@@ -210229,6 +211669,22 @@
       "mode": "chat",
       "source": "",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -210282,7 +211738,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gemini-3.7-flash"
+    "llm_stats_id": "gemini-3.7-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/longcat-2.0",
@@ -210332,6 +211804,22 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -210383,6 +211871,22 @@
       "mode": "chat",
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -210413,7 +211917,23 @@
     "input_price_per_m": 1.1,
     "output_price_per_m": 3.3,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/mimo-v2.6-flash",
@@ -210465,7 +211985,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "mimo-v2.6-flash"
+    "llm_stats_id": "mimo-v2.6-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-opus-4-8-think",
@@ -210516,7 +212052,23 @@
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-opus-4-8"
+    "llm_stats_id": "claude-opus-4-8",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.6-35b-a3b",
@@ -210567,7 +212119,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "qwen3.6-35b-a3b"
+    "llm_stats_id": "qwen3.6-35b-a3b",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-sonnet-4-6",
@@ -210618,7 +212186,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-sonnet-4-6"
+    "llm_stats_id": "claude-sonnet-4-6",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-haiku-5-5",
@@ -210669,7 +212253,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-haiku-5-5"
+    "llm_stats_id": "claude-haiku-5-5",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gemini-3.5-flash",
@@ -210721,7 +212321,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gemini-3.5-flash"
+    "llm_stats_id": "gemini-3.5-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5.5",
@@ -210772,7 +212388,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-5.5"
+    "llm_stats_id": "gpt-5.5",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.8-max",
@@ -210823,7 +212455,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "qwen3.8-max"
+    "llm_stats_id": "qwen3.8-max",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3-vl-plus",
@@ -210873,6 +212521,22 @@
       "mode": "chat",
       "source": "https://www.alibabacloud.com/help/en/model-studio/models",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -210922,7 +212586,23 @@
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
     },
-    "llm_stats_id": "qwen3.8-2.4t-a95b"
+    "llm_stats_id": "qwen3.8-2.4t-a95b",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.6-plus",
@@ -210973,7 +212653,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "qwen3.6-plus"
+    "llm_stats_id": "qwen3.6-plus",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-opus-4-5",
@@ -211024,7 +212720,23 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing#claude-platform-on-aws-pricing",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-opus-4-5-20251101"
+    "llm_stats_id": "claude-opus-4-5-20251101",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/coding-xiaomi-mimo-v2.5-pro",
@@ -211072,6 +212784,22 @@
       "mode": "chat",
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -211125,7 +212853,23 @@
       "source": "https://empiriolabs.ai/models/muse-spark-1-2",
       "supported_endpoints": []
     },
-    "llm_stats_id": "muse-spark-1.2"
+    "llm_stats_id": "muse-spark-1.2",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gemini-3.5-flash-lite",
@@ -211178,7 +212922,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gemini-3.5-flash-lite"
+    "llm_stats_id": "gemini-3.5-flash-lite",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-opus-5",
@@ -211229,7 +212989,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-opus-5"
+    "llm_stats_id": "claude-opus-5",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gemini-2.5-pro",
@@ -211282,7 +213058,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gemini-2.5-pro"
+    "llm_stats_id": "gemini-2.5-pro",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.7-plus",
@@ -211333,7 +213125,23 @@
       "source": "https://empiriolabs.ai/models/qwen3-7-plus",
       "supported_endpoints": []
     },
-    "llm_stats_id": "qwen3.7-plus"
+    "llm_stats_id": "qwen3.7-plus",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-sonnet-5",
@@ -211384,7 +213192,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-sonnet-5"
+    "llm_stats_id": "claude-sonnet-5",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-image-2.5-sunburst",
@@ -211436,6 +213260,22 @@
         "/v1/images/generations",
         "/v1/images/edits"
       ]
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -211489,7 +213329,23 @@
       "source": "https://docs.perplexity.ai/docs/agent-api/models",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gemini-3.1-flash-lite-preview"
+    "llm_stats_id": "gemini-3.1-flash-lite-preview",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/hy3-preview",
@@ -211538,7 +213394,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "hy3"
+    "llm_stats_id": "hy3",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-fable-5-1",
@@ -211589,7 +213461,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-fable-5-1"
+    "llm_stats_id": "claude-fable-5-1",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.5-397b-a17b",
@@ -211640,7 +213528,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "qwen3.5-397b-a17b"
+    "llm_stats_id": "qwen3.5-397b-a17b",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-6-sol",
@@ -211691,7 +213595,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-6-sol"
+    "llm_stats_id": "gpt-6-sol",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-opus-4-8",
@@ -211742,7 +213662,23 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing#claude-platform-on-aws-pricing",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-opus-4-8"
+    "llm_stats_id": "claude-opus-4-8",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/grok-4.3",
@@ -211792,7 +213728,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "grok-4.3"
+    "llm_stats_id": "grok-4.3",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.5-35b-a3b",
@@ -211843,7 +213795,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "qwen3.5-35b-a3b"
+    "llm_stats_id": "qwen3.5-35b-a3b",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gemini-3-flash-preview",
@@ -211896,7 +213864,23 @@
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gemini-3-flash-preview"
+    "llm_stats_id": "gemini-3-flash-preview",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/mimo-v2.6-pro",
@@ -211948,7 +213932,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "mimo-v2.6-pro"
+    "llm_stats_id": "mimo-v2.6-pro",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/glm-4.5v",
@@ -212000,7 +214000,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "glm-4.5v"
+    "llm_stats_id": "glm-4.5v",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/glm-4.6",
@@ -212049,7 +214065,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "glm-4.6"
+    "llm_stats_id": "glm-4.6",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/doubao-seed-2-0-mini-260428",
@@ -212083,7 +214115,23 @@
     "input_price_per_m": 0.030136,
     "output_price_per_m": 0.30136,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-6-luna",
@@ -212134,7 +214182,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-6-luna"
+    "llm_stats_id": "gpt-6-luna",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/grok-4.5",
@@ -212184,7 +214248,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "grok-4.5"
+    "llm_stats_id": "grok-4.5",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/glm-5.3",
@@ -212233,7 +214313,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "glm-5.3"
+    "llm_stats_id": "glm-5.3",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5.6-terra",
@@ -212283,7 +214379,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-5.6-terra"
+    "llm_stats_id": "gpt-5.6-terra",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gemini-3.1-pro-preview",
@@ -212336,7 +214448,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gemini-3.1-pro-preview"
+    "llm_stats_id": "gemini-3.1-pro-preview",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/deepseek-v4-flash-vision-exp",
@@ -212386,7 +214514,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "deepseek-v4-flash-vision-exp"
+    "llm_stats_id": "deepseek-v4-flash-vision-exp",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/nemotron-3.5-lightning-free",
@@ -212417,7 +214561,23 @@
     "output_price_per_m": 0,
     "is_free": true,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "nemotron-3.5-lightning-30b-a3b"
+    "llm_stats_id": "nemotron-3.5-lightning-30b-a3b",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/glm-4.7",
@@ -212466,7 +214626,23 @@
       "source": "https://api.together.ai/v1/models",
       "supported_endpoints": []
     },
-    "llm_stats_id": "glm-4.7"
+    "llm_stats_id": "glm-4.7",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/muse-spark-1.3",
@@ -212519,7 +214695,23 @@
       "source": "https://empiriolabs.ai/models/muse-spark-1-3",
       "supported_endpoints": []
     },
-    "llm_stats_id": "muse-spark-1.3"
+    "llm_stats_id": "muse-spark-1.3",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-haiku-4-5",
@@ -212570,7 +214762,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-haiku-4-5-20251001"
+    "llm_stats_id": "claude-haiku-4-5-20251001",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/zai-glm-5.1",
@@ -212601,7 +214809,23 @@
     "output_price_per_m": 3.38,
     "is_free": false,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "glm-5.1"
+    "llm_stats_id": "glm-5.1",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/glm-4.7-flash-free",
@@ -212632,7 +214856,23 @@
     "output_price_per_m": 0,
     "is_free": true,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "glm-4.7-flash"
+    "llm_stats_id": "glm-4.7-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.8-flash",
@@ -212683,7 +214923,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "qwen3.8-flash"
+    "llm_stats_id": "qwen3.8-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-sonnet-5-5",
@@ -212734,7 +214990,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-sonnet-5-5"
+    "llm_stats_id": "claude-sonnet-5-5",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-6.1-sol",
@@ -212785,7 +215057,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-6.1-sol"
+    "llm_stats_id": "gpt-6.1-sol",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-sonnet-4-5-think",
@@ -212818,7 +215106,23 @@
     "output_price_per_m": 16.5,
     "is_free": false,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "claude-sonnet-4-5-20250929"
+    "llm_stats_id": "claude-sonnet-4-5-20250929",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/claude-opus-4-7",
@@ -212869,7 +215173,23 @@
       "source": "",
       "supported_endpoints": []
     },
-    "llm_stats_id": "claude-opus-4-7"
+    "llm_stats_id": "claude-opus-4-7",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/coding-xiaomi-mimo-v2.5",
@@ -212920,6 +215240,22 @@
       "mode": "chat",
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -212973,7 +215309,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gemini-3.8-flash"
+    "llm_stats_id": "gemini-3.8-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/alicloud-deepseek-v4-pro",
@@ -213003,7 +215355,23 @@
     "input_price_per_m": 1.69,
     "output_price_per_m": 3.38,
     "is_free": false,
-    "source_url": "https://models.dev/providers/aihubmix/"
+    "source_url": "https://models.dev/providers/aihubmix/",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gpt-5.2",
@@ -213054,7 +215422,23 @@
       "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
       "supported_endpoints": []
     },
-    "llm_stats_id": "gpt-5.2-2025-12-11"
+    "llm_stats_id": "gpt-5.2-2025-12-11",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/gemini-3.1-flash-image",
@@ -213111,6 +215495,22 @@
         "/v1/images/edits",
         "/v1/batch"
       ]
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -213163,6 +215563,22 @@
       "mode": "chat",
       "source": "https://aihubmix.com/api/v1/models",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -213220,7 +215636,23 @@
         "/v1/batch"
       ]
     },
-    "llm_stats_id": "gemini-2.5-flash-lite"
+    "llm_stats_id": "gemini-2.5-flash-lite",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.7-max",
@@ -213269,7 +215701,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "qwen3.7-max"
+    "llm_stats_id": "qwen3.7-max",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "aihubmix/qwen3.8-flash-free",
@@ -213302,7 +215750,23 @@
     "output_price_per_m": 0,
     "is_free": true,
     "source_url": "https://models.dev/providers/aihubmix/",
-    "llm_stats_id": "qwen3.8-flash"
+    "llm_stats_id": "qwen3.8-flash",
+    "offer": {
+      "id": "aihubmix",
+      "provider": "AIHubMix",
+      "title": "AIHubMix",
+      "offer_type": "Promo free",
+      "requires_card": false,
+      "quota_requests_day": 1000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://aihubmix.com",
+      "base_url": "https://api.aihubmix.com/v1",
+      "notes": "The Grant: AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max.\nThe Output: OpenAI-compatible completion endpoints with long context support up to 1M tokens.\nThe Process: Sign up for an AIHubMix account to retrieve free tier API credentials.\nThe Condition: Rate-limited free promotional usage subject to provider token availability. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "ainetcafe/Kimi-K3",
@@ -282180,6 +284644,22 @@
       "mode": "embedding",
       "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "inferx",
+      "provider": "InferX",
+      "title": "InferX",
+      "offer_type": "Free Developer Tier",
+      "requires_card": false,
+      "quota_requests_day": 2000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://model.inferx.net/endpoints",
+      "base_url": "https://model.inferx.net/endpoints/v1",
+      "notes": "The Grant: InferX provides zero-cost inference endpoints for cutting-edge open models including Qwen 3.6, Gemma 4, and DeepSeek variants.\nThe Output: Ultra-low latency OpenAI-compatible completions with streaming and structured output support.\nThe Process: Sign in to generate an API key and query endpoint URLs directly.\nThe Condition: Rate-limited for community development and prototyping. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -282230,6 +284710,22 @@
       "mode": "chat",
       "source": "https://serverless.tensormesh.ai/v1/models/openrouter",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "inferx",
+      "provider": "InferX",
+      "title": "InferX",
+      "offer_type": "Free Developer Tier",
+      "requires_card": false,
+      "quota_requests_day": 2000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://model.inferx.net/endpoints",
+      "base_url": "https://model.inferx.net/endpoints/v1",
+      "notes": "The Grant: InferX provides zero-cost inference endpoints for cutting-edge open models including Qwen 3.6, Gemma 4, and DeepSeek variants.\nThe Output: Ultra-low latency OpenAI-compatible completions with streaming and structured output support.\nThe Process: Sign in to generate an API key and query endpoint URLs directly.\nThe Condition: Rate-limited for community development and prototyping. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -282278,6 +284774,22 @@
       "mode": "chat",
       "source": "https://api.together.ai/v1/models",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "inferx",
+      "provider": "InferX",
+      "title": "InferX",
+      "offer_type": "Free Developer Tier",
+      "requires_card": false,
+      "quota_requests_day": 2000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://model.inferx.net/endpoints",
+      "base_url": "https://model.inferx.net/endpoints/v1",
+      "notes": "The Grant: InferX provides zero-cost inference endpoints for cutting-edge open models including Qwen 3.6, Gemma 4, and DeepSeek variants.\nThe Output: Ultra-low latency OpenAI-compatible completions with streaming and structured output support.\nThe Process: Sign in to generate an API key and query endpoint URLs directly.\nThe Condition: Rate-limited for community development and prototyping. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -282308,7 +284820,23 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/inferx/"
+    "source_url": "https://models.dev/providers/inferx/",
+    "offer": {
+      "id": "inferx",
+      "provider": "InferX",
+      "title": "InferX",
+      "offer_type": "Free Developer Tier",
+      "requires_card": false,
+      "quota_requests_day": 2000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://model.inferx.net/endpoints",
+      "base_url": "https://model.inferx.net/endpoints/v1",
+      "notes": "The Grant: InferX provides zero-cost inference endpoints for cutting-edge open models including Qwen 3.6, Gemma 4, and DeepSeek variants.\nThe Output: Ultra-low latency OpenAI-compatible completions with streaming and structured output support.\nThe Process: Sign in to generate an API key and query endpoint URLs directly.\nThe Condition: Rate-limited for community development and prototyping. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "inferx/gemma-4-31B-it-fp8",
@@ -282339,7 +284867,23 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/inferx/"
+    "source_url": "https://models.dev/providers/inferx/",
+    "offer": {
+      "id": "inferx",
+      "provider": "InferX",
+      "title": "InferX",
+      "offer_type": "Free Developer Tier",
+      "requires_card": false,
+      "quota_requests_day": 2000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://model.inferx.net/endpoints",
+      "base_url": "https://model.inferx.net/endpoints/v1",
+      "notes": "The Grant: InferX provides zero-cost inference endpoints for cutting-edge open models including Qwen 3.6, Gemma 4, and DeepSeek variants.\nThe Output: Ultra-low latency OpenAI-compatible completions with streaming and structured output support.\nThe Process: Sign in to generate an API key and query endpoint URLs directly.\nThe Condition: Rate-limited for community development and prototyping. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "inferx/Ornith-1.0-35B-FP8",
@@ -282370,7 +284914,23 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/inferx/"
+    "source_url": "https://models.dev/providers/inferx/",
+    "offer": {
+      "id": "inferx",
+      "provider": "InferX",
+      "title": "InferX",
+      "offer_type": "Free Developer Tier",
+      "requires_card": false,
+      "quota_requests_day": 2000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://model.inferx.net/endpoints",
+      "base_url": "https://model.inferx.net/endpoints/v1",
+      "notes": "The Grant: InferX provides zero-cost inference endpoints for cutting-edge open models including Qwen 3.6, Gemma 4, and DeepSeek variants.\nThe Output: Ultra-low latency OpenAI-compatible completions with streaming and structured output support.\nThe Process: Sign in to generate an API key and query endpoint URLs directly.\nThe Condition: Rate-limited for community development and prototyping. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "inferx/Qwen3.6-35B-A3B-fp8-no-thinking",
@@ -282402,7 +284962,23 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/inferx/"
+    "source_url": "https://models.dev/providers/inferx/",
+    "offer": {
+      "id": "inferx",
+      "provider": "InferX",
+      "title": "InferX",
+      "offer_type": "Free Developer Tier",
+      "requires_card": false,
+      "quota_requests_day": 2000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://model.inferx.net/endpoints",
+      "base_url": "https://model.inferx.net/endpoints/v1",
+      "notes": "The Grant: InferX provides zero-cost inference endpoints for cutting-edge open models including Qwen 3.6, Gemma 4, and DeepSeek variants.\nThe Output: Ultra-low latency OpenAI-compatible completions with streaming and structured output support.\nThe Process: Sign in to generate an API key and query endpoint URLs directly.\nThe Condition: Rate-limited for community development and prototyping. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "inferx/Qwen3.6-35B-A3B-FP8",
@@ -282434,7 +285010,23 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/inferx/"
+    "source_url": "https://models.dev/providers/inferx/",
+    "offer": {
+      "id": "inferx",
+      "provider": "InferX",
+      "title": "InferX",
+      "offer_type": "Free Developer Tier",
+      "requires_card": false,
+      "quota_requests_day": 2000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://model.inferx.net/endpoints",
+      "base_url": "https://model.inferx.net/endpoints/v1",
+      "notes": "The Grant: InferX provides zero-cost inference endpoints for cutting-edge open models including Qwen 3.6, Gemma 4, and DeepSeek variants.\nThe Output: Ultra-low latency OpenAI-compatible completions with streaming and structured output support.\nThe Process: Sign in to generate an API key and query endpoint URLs directly.\nThe Condition: Rate-limited for community development and prototyping. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "inferx/Qwen3-Coder-Next-FP8-no-thinking",
@@ -282464,7 +285056,23 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/inferx/"
+    "source_url": "https://models.dev/providers/inferx/",
+    "offer": {
+      "id": "inferx",
+      "provider": "InferX",
+      "title": "InferX",
+      "offer_type": "Free Developer Tier",
+      "requires_card": false,
+      "quota_requests_day": 2000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://model.inferx.net/endpoints",
+      "base_url": "https://model.inferx.net/endpoints/v1",
+      "notes": "The Grant: InferX provides zero-cost inference endpoints for cutting-edge open models including Qwen 3.6, Gemma 4, and DeepSeek variants.\nThe Output: Ultra-low latency OpenAI-compatible completions with streaming and structured output support.\nThe Process: Sign in to generate an API key and query endpoint URLs directly.\nThe Condition: Rate-limited for community development and prototyping. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "inferx/deepseek-v4-flash",
@@ -282512,6 +285120,22 @@
       "mode": "chat",
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
+    },
+    "offer": {
+      "id": "inferx",
+      "provider": "InferX",
+      "title": "InferX",
+      "offer_type": "Free Developer Tier",
+      "requires_card": false,
+      "quota_requests_day": 2000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://model.inferx.net/endpoints",
+      "base_url": "https://model.inferx.net/endpoints/v1",
+      "notes": "The Grant: InferX provides zero-cost inference endpoints for cutting-edge open models including Qwen 3.6, Gemma 4, and DeepSeek variants.\nThe Output: Ultra-low latency OpenAI-compatible completions with streaming and structured output support.\nThe Process: Sign in to generate an API key and query endpoint URLs directly.\nThe Condition: Rate-limited for community development and prototyping. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
     }
   },
   {
@@ -282543,7 +285167,23 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/inferx/"
+    "source_url": "https://models.dev/providers/inferx/",
+    "offer": {
+      "id": "inferx",
+      "provider": "InferX",
+      "title": "InferX",
+      "offer_type": "Free Developer Tier",
+      "requires_card": false,
+      "quota_requests_day": 2000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://model.inferx.net/endpoints",
+      "base_url": "https://model.inferx.net/endpoints/v1",
+      "notes": "The Grant: InferX provides zero-cost inference endpoints for cutting-edge open models including Qwen 3.6, Gemma 4, and DeepSeek variants.\nThe Output: Ultra-low latency OpenAI-compatible completions with streaming and structured output support.\nThe Process: Sign in to generate an API key and query endpoint URLs directly.\nThe Condition: Rate-limited for community development and prototyping. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "inferx/mimo-v25",
@@ -282595,7 +285235,23 @@
       "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts",
       "supported_endpoints": []
     },
-    "llm_stats_id": "mimo-v2.5"
+    "llm_stats_id": "mimo-v2.5",
+    "offer": {
+      "id": "inferx",
+      "provider": "InferX",
+      "title": "InferX",
+      "offer_type": "Free Developer Tier",
+      "requires_card": false,
+      "quota_requests_day": 2000,
+      "quota_tokens_minute": null,
+      "quota_requests_minute": 60,
+      "status": "active",
+      "source_url": "https://model.inferx.net/endpoints",
+      "base_url": "https://model.inferx.net/endpoints/v1",
+      "notes": "The Grant: InferX provides zero-cost inference endpoints for cutting-edge open models including Qwen 3.6, Gemma 4, and DeepSeek variants.\nThe Output: Ultra-low latency OpenAI-compatible completions with streaming and structured output support.\nThe Process: Sign in to generate an API key and query endpoint URLs directly.\nThe Condition: Rate-limited for community development and prototyping. | access: api_key | verified: api",
+      "checked_at": "2026-11-08",
+      "data_source": "freeinference"
+    }
   },
   {
     "id": "the-grid-ai/text-prime",
