@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "5a84cce2daf2118a",
+    "type": "new_free_model",
+    "model_id": "frantic-ferret-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-11-08T19:03:24.441221+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "966a9370d917c698",
     "type": "new_model",
     "model_id": "morph-kimik31",
