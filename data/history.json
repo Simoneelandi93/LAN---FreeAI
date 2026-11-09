@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "86dfe6a805ede9ab",
+    "type": "new_model",
+    "model_id": "muse-ember-1.0",
+    "provider": "OpenCode",
+    "detected_at": "2026-11-09T18:06:12.520023+00:00",
+    "details": "$0.1 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "5b1bb69865ea49f9",
     "type": "new_model",
     "model_id": "canopywave/qwen3.8-flash",
