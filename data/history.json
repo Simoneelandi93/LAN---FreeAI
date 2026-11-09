@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "1d178e1f49eaa61d",
+    "type": "new_model",
+    "model_id": "TEE/kimi-k3.1-pro",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-09T08:33:50.293412+00:00",
+    "details": "$4.2 in / $21 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "5a84cce2daf2118a",
     "type": "new_free_model",
     "model_id": "frantic-ferret-free",
