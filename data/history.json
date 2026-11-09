@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "afa151ee8394fb60",
+    "type": "new_free_model",
+    "model_id": "longcat-2.5-free",
+    "provider": "OpenCode, OpenCode Go",
+    "detected_at": "2026-11-09T13:04:24.312287+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "addbe6fc7a07dea4",
     "type": "new_model",
     "model_id": "orca/orcacyber-flash-1.0:thinking",
