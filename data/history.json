@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "16e7d137e039c89d",
+    "type": "new_model",
+    "model_id": "anthropic/claude-fable-5.2",
+    "provider": "OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-11-09T19:32:29.581102+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "43a15109ce9efb2f",
+    "type": "new_model",
+    "model_id": "meta/muse-ember",
+    "provider": "Kilo Gateway, OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-11-09T19:32:29.581102+00:00",
+    "details": "$0.1 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "680710502833a622",
+    "type": "new_model",
+    "model_id": "claude-fable-5-2",
+    "provider": "Venice AI",
+    "detected_at": "2026-11-09T19:32:29.581102+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "0e9161589795e3b1",
+    "type": "new_model",
+    "model_id": "consensusprotocol/deepseek-v4.1-flash-uncensored",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-09T19:32:29.581102+00:00",
+    "details": "$0.18 in / $0.65 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "86dfe6a805ede9ab",
     "type": "new_model",
     "model_id": "muse-ember-1.0",
