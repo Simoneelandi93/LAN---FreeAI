@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "5b1bb69865ea49f9",
+    "type": "new_model",
+    "model_id": "canopywave/qwen3.8-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-09T13:32:42.681719+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "afa151ee8394fb60",
     "type": "new_free_model",
     "model_id": "longcat-2.5-free",
