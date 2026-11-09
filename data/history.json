@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "3fced19f5e7d049c",
+    "type": "new_model",
+    "model_id": "us.anthropic.claude-fable-5-2",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-11-09T20:32:36.323921+00:00",
+    "details": "$8.8 in / $44 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "df3b4dd5d9d7a700",
+    "type": "new_model",
+    "model_id": "global.anthropic.claude-fable-5-2",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-11-09T20:32:36.323921+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c2eb42efd0eb25c8",
+    "type": "new_model",
+    "model_id": "claude-fable-5-2@default",
+    "provider": "Vertex, Vertex (Anthropic)",
+    "detected_at": "2026-11-09T20:32:36.323921+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "16e7d137e039c89d",
     "type": "new_model",
     "model_id": "anthropic/claude-fable-5.2",

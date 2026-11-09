@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "210f36948806039d",
+    "type": "price_change",
+    "model_id": "deepseek-v4.1-flash-uncensored",
+    "provider": "DevPass (LLM Gateway), Venice AI",
+    "detected_at": "2026-11-09T20:32:36.323921+00:00",
+    "details": "Input: $0.33 -> $0.18; output: $1.32 -> $0.65",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "a22bc1f18739e02b",
     "type": "price_change",
     "model_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B",
