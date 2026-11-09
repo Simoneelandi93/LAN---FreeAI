@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "614ce1ab42ee2da4",
+    "type": "new_model",
+    "model_id": "us.moonshotai.kimi-k3.1",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-11-09T21:32:40.275636+00:00",
+    "details": "$4.4 in / $22 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3a0f761f55df7065",
+    "type": "new_model",
+    "model_id": "global.moonshotai.kimi-k3.1",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-11-09T21:32:40.275636+00:00",
+    "details": "$4 in / $20 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "52509b9ac8619223",
+    "type": "new_model",
+    "model_id": "Qwen/Qwen3.5-27B-TEE",
+    "provider": "Chutes",
+    "detected_at": "2026-11-09T21:32:40.275636+00:00",
+    "details": "$0.2 in / $1.75 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "4237135475f9a0d0",
     "type": "new_model",
     "model_id": "aws-bedrock/claude-fable-5-2",
