@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "14e3928ccfb6d6c4",
+    "type": "price_change",
+    "model_id": "z-ai/glm-5.2",
+    "provider": "Ambient, CrossModel, Crusoe, Eden AI, Impossibl, Kilo Gateway, LLM Gateway, Merge Gateway, Mistral, NanoGPT, Ofox, OpenRouter, OrcaRouter, Prime Inference, Standard Compute, Tempr Gateway, TensorX, TokenGo, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-11-09T17:04:32.424196+00:00",
+    "details": "Input: $0.006 -> $0.0075; output: $1.32 -> $1.32",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
     "event_id": "4ff9648c19a942a3",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4-pro-0813",
