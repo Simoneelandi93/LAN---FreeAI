@@ -23105,7 +23105,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": null,
       "mode": "realtime",
-      "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
+      "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
       "supported_endpoints": [
         "/v1/realtime"
       ]
@@ -29831,7 +29831,25 @@
     "input_price_per_m": 8,
     "output_price_per_m": 40,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "litellm": {
+      "litellm_key": "bedrock/claude_platform/claude-fable-5-2",
+      "litellm_provider": "bedrock",
+      "model_name": "claude_platform/claude-fable-5-2",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "input_cost_per_token": 8e-06,
+      "output_cost_per_token": 4e-05,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing#claude-platform-on-aws-pricing",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "vercel/anthropic/claude-opus-5.5",
@@ -83904,7 +83922,25 @@
     "input_price_per_m": 8,
     "output_price_per_m": 40,
     "is_free": false,
-    "source_url": "https://models.dev/providers/venice/"
+    "source_url": "https://models.dev/providers/venice/",
+    "litellm": {
+      "litellm_key": "bedrock/claude_platform/claude-fable-5-2",
+      "litellm_provider": "bedrock",
+      "model_name": "claude_platform/claude-fable-5-2",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "input_cost_per_token": 8e-06,
+      "output_cost_per_token": 4e-05,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing#claude-platform-on-aws-pricing",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "venice/z-ai-glm-5v-turbo",
@@ -271058,7 +271094,7 @@
       "model_name": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
       "max_input_tokens": 262144,
       "max_output_tokens": 262144,
-      "input_cost_per_token": 8.5e-08,
+      "input_cost_per_token": 7.5e-08,
       "output_cost_per_token": 4e-07,
       "supports_reasoning": true,
       "supports_vision": false,
@@ -337081,7 +337117,25 @@
     "input_price_per_m": 8,
     "output_price_per_m": 40,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "litellm": {
+      "litellm_key": "bedrock/claude_platform/claude-fable-5-2",
+      "litellm_provider": "bedrock",
+      "model_name": "claude_platform/claude-fable-5-2",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "input_cost_per_token": 8e-06,
+      "output_cost_per_token": 4e-05,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing#claude-platform-on-aws-pricing",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "openrouter/anthropic/claude-opus-5.5",
@@ -364805,7 +364859,7 @@
       "model_name": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
       "max_input_tokens": 262144,
       "max_output_tokens": 262144,
-      "input_cost_per_token": 8.5e-08,
+      "input_cost_per_token": 7.5e-08,
       "output_cost_per_token": 4e-07,
       "supports_reasoning": true,
       "supports_vision": false,
