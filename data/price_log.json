@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "46516279d88ae1f8",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-11-09T21:03:28.934060+00:00",
+    "details": "Input: $0.034 -> $0.027; output: $0.101 -> $0.08",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "a0e59359c9071f77",
+    "type": "price_change",
+    "model_id": "ricursiveai/ripple-65b-preview",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-09T21:03:28.934060+00:00",
+    "details": "Input: $0.2 -> $0.1; output: $0.6 -> $0.3",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "607001404955c431",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-09T21:03:28.934060+00:00",
+    "details": "Input: $0.1643 -> $0.1824; output: $9.3388 -> $9.3388",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "25a66dff506cb4dd",
+    "type": "price_change",
+    "model_id": "~anthropic/claude-fable-latest",
+    "provider": "Eden AI, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-09T21:03:28.934060+00:00",
+    "details": "Input: $10 -> $8; output: $50 -> $40",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "ee6eb1bef9dd526c",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-09T21:03:28.934060+00:00",
+    "details": "Input: $0.037 -> $0.027; output: $0.11 -> $0.08",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "210f36948806039d",
     "type": "price_change",
     "model_id": "deepseek-v4.1-flash-uncensored",

@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "4237135475f9a0d0",
+    "type": "new_model",
+    "model_id": "aws-bedrock/claude-fable-5-2",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-09T21:03:28.934060+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "3fced19f5e7d049c",
     "type": "new_model",
     "model_id": "us.anthropic.claude-fable-5-2",
