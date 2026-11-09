@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "addbe6fc7a07dea4",
+    "type": "new_model",
+    "model_id": "orca/orcacyber-flash-1.0:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-09T09:32:53.084506+00:00",
+    "details": "$0.8 in / $1.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "4e5c1a25a6346bae",
+    "type": "new_model",
+    "model_id": "orca/orcacyber-mimo-flash",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-09T09:32:53.084506+00:00",
+    "details": "$0.8 in / $1.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "70bc99a0f1b23aa4",
+    "type": "new_model",
+    "model_id": "orca/orcacyber-glm-5.3-flash",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-09T09:32:53.084506+00:00",
+    "details": "$0.8 in / $1.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3b26d8efb363e3d9",
+    "type": "new_model",
+    "model_id": "orca/orcacyber-flash-1.0",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-09T09:32:53.084506+00:00",
+    "details": "$0.8 in / $1.6 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "1d178e1f49eaa61d",
     "type": "new_model",
     "model_id": "TEE/kimi-k3.1-pro",
