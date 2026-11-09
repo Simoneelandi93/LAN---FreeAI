@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "489bac736e345ca9",
+    "type": "new_model",
+    "model_id": "anthropic/claude-fable-5.2-fast",
+    "provider": "Vercel AI Gateway",
+    "detected_at": "2026-11-09T22:32:29.622225+00:00",
+    "details": "$16 in / $80 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c2b09f5a22e798f7",
+    "type": "new_free_model",
+    "model_id": "thinkingmachines/inkling-2-small:free",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-09T22:32:29.622225+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "614ce1ab42ee2da4",
     "type": "new_model",
     "model_id": "us.moonshotai.kimi-k3.1",
