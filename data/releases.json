@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T18:04:11.783475+00:00",
+  "generated_at": "2026-11-10T18:33:06.434611+00:00",
   "source": "https://www.aidatahub.io/models/latest",
   "releases": {
     "claudefable52": {
@@ -184,14 +184,14 @@
     },
     "gptlive1": {
       "id": "openai:gptlive1:release",
-      "name": "GPT-Live 1",
+      "name": "GPT-Live-1",
       "provider": "OpenAI",
       "model_id": "gpt-live-1",
       "released_at": "2026-09-10",
       "availability": "see-source",
       "source_url": "https://developers.openai.com/api/docs/changelog",
       "source_id": "openai",
-      "summary": "OpenAI announced GPT-Live 1 in an official release source. Check the source for access and rollout details.",
+      "summary": "OpenAI announced GPT-Live-1 in an official release source. Check the source for access and rollout details.",
       "first_seen_at": "2026-09-22T18:24:39.550Z"
     },
     "northsmalltranslate": {

@@ -1,6 +1,6 @@
 {
-  "etag": "W/\"9bbf1cb5316dc97774848c79c51be83d\"",
-  "fetched_at": "2026-11-10T18:04:11.778666+00:00",
+  "etag": "W/\"653aa422a2fbb2871610f916d772a8a7\"",
+  "fetched_at": "2026-11-10T18:33:06.430763+00:00",
   "events": [
     {
       "id": "openrouter:google/gemini-4-carbon:listing",
@@ -1906,20 +1906,20 @@
       "id": "openai:gptlive1:release",
       "modelKey": "openai:gptlive1",
       "modelId": "gpt-live-1",
-      "name": "GPT-Live 1",
+      "name": "GPT-Live-1",
       "provider": "OpenAI",
       "type": "release",
       "releasedAt": "2026-09-10",
       "listedAt": null,
       "availability": "see-source",
-      "summary": "OpenAI announced GPT-Live 1 in an official release source. Check the source for access and rollout details.",
+      "summary": "OpenAI announced GPT-Live-1 in an official release source. Check the source for access and rollout details.",
       "sourceId": "openai",
       "sourceUrl": "https://developers.openai.com/api/docs/changelog",
-      "evidence": "GPT-Live 1 is now generally available in the API.",
+      "evidence": "GPT-Live-1 is now generally available in the API.",
       "firstSeenAt": "2026-09-22T18:24:39.550Z",
       "publishedAt": "2026-09-22T18:24:39.550Z",
-      "updatedAt": "2026-09-22T18:24:39.550Z",
-      "revision": 1,
+      "updatedAt": "2026-11-10T18:24:00.942Z",
+      "revision": 2,
       "baseline": true
     },
     {
