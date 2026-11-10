@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "d70b4c8c64601b98",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-11-10T01:33:55.145503+00:00",
+    "details": "Input: $0.034 -> $0.029; output: $0.1 -> $0.086",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "c268d4d8fb0993cb",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-10T01:33:55.145503+00:00",
+    "details": "Input: $0.034 -> $0.029; output: $0.102 -> $0.086",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "b4370d84e7a5daa6",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
