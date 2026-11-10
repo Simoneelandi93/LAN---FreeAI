@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "7d7e427ba0b83f95",
+    "type": "new_model",
+    "model_id": "google-vertex/gemini-4-carbon",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-10T19:32:22.285138+00:00",
+    "details": "$4 in / $20 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "70b55e56057e2df3",
+    "type": "new_model",
+    "model_id": "google-ai-studio/gemini-4-carbon",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-10T19:32:22.285138+00:00",
+    "details": "$4 in / $20 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ac122b729932ec4d",
+    "type": "new_model",
+    "model_id": "baidu/ernie-5.5-flash-preview",
+    "provider": "OpenRouter",
+    "detected_at": "2026-11-10T19:32:22.285138+00:00",
+    "details": "$0.28 in / $1.13 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "bad0305cb12a74f3",
     "type": "new_model",
     "model_id": "vertex/gemini-4-carbon",
