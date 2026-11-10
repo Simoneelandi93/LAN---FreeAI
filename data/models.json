@@ -90942,7 +90942,29 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/meta/"
+    "source_url": "https://models.dev/providers/meta/",
+    "litellm": {
+      "litellm_key": "meta/muse-ember-1.0",
+      "litellm_provider": "meta",
+      "model_name": "muse-ember-1.0",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 524288,
+      "input_cost_per_token": 1e-07,
+      "output_cost_per_token": 5e-07,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ]
+    }
   },
   {
     "id": "meta/muse-wonder-1.0",
@@ -173818,7 +173840,29 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway-providers/"
+    "source_url": "https://models.dev/providers/llmgateway-providers/",
+    "litellm": {
+      "litellm_key": "meta/muse-ember-1.0",
+      "litellm_provider": "meta",
+      "model_name": "muse-ember-1.0",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 524288,
+      "input_cost_per_token": 1e-07,
+      "output_cost_per_token": 5e-07,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ]
+    }
   },
   {
     "id": "llmgateway-providers/meta/muse-wonder-1.0",
@@ -244751,7 +244795,29 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway/"
+    "source_url": "https://models.dev/providers/llmgateway/",
+    "litellm": {
+      "litellm_key": "meta/muse-ember-1.0",
+      "litellm_provider": "meta",
+      "model_name": "muse-ember-1.0",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 524288,
+      "input_cost_per_token": 1e-07,
+      "output_cost_per_token": 5e-07,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ]
+    }
   },
   {
     "id": "llmgateway/gpt-5.5-pro",
@@ -422290,7 +422356,29 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "litellm": {
+      "litellm_key": "meta/muse-ember-1.0",
+      "litellm_provider": "meta",
+      "model_name": "muse-ember-1.0",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 524288,
+      "input_cost_per_token": 1e-07,
+      "output_cost_per_token": 5e-07,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ]
+    }
   },
   {
     "id": "opencode/gpt-5.5-pro",
