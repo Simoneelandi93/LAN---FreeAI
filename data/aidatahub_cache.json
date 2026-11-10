@@ -1,13 +1,13 @@
 {
-  "etag": "W/\"65a54d74109da5c0eb77dcddb9278714\"",
-  "fetched_at": "2026-11-10T19:32:22.242975+00:00",
+  "etag": "W/\"a2461663d3e7e60a73d7032a148973fd\"",
+  "fetched_at": "2026-11-10T20:03:58.412593+00:00",
   "events": [
     {
       "id": "openrouter:baidu/ernie-5.5-flash-preview:listing",
       "modelKey": "baidu:ernie55flashpreview",
       "modelId": "ernie-5.5-flash-preview",
       "name": "ERNIE-5.5-Flash-Preview",
-      "provider": "Baidu Qianfan",
+      "provider": "Baidu",
       "type": "listing",
       "releasedAt": null,
       "listedAt": "2026-11-10",
@@ -19,6 +19,26 @@
       "firstSeenAt": "2026-11-10T19:24:00.857Z",
       "publishedAt": "2026-11-10T19:24:00.857Z",
       "updatedAt": "2026-11-10T19:24:00.857Z",
+      "revision": 1,
+      "baseline": false
+    },
+    {
+      "id": "openrouter:baidu/ernie-light-dt-1.0-intl:listing",
+      "modelKey": "baidu:ernielightdt10intl",
+      "modelId": "ernie-light-dt-1.0-intl",
+      "name": "ERNIE-Light-DT-1.0",
+      "provider": "Baidu",
+      "type": "listing",
+      "releasedAt": null,
+      "listedAt": "2026-11-10",
+      "availability": "openrouter",
+      "summary": "Listed on OpenRouter. This catalog listing does not establish the original release date.",
+      "sourceId": "openrouter",
+      "sourceUrl": "https://openrouter.ai/baidu/ernie-light-dt-1.0-intl",
+      "evidence": "OpenRouter model ID: baidu/ernie-light-dt-1.0-intl",
+      "firstSeenAt": "2026-11-10T19:39:01.068Z",
+      "publishedAt": "2026-11-10T19:39:01.068Z",
+      "updatedAt": "2026-11-10T19:39:01.068Z",
       "revision": 1,
       "baseline": false
     },
