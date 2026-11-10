@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "24d8dfd023c2e398",
+    "type": "new_model",
+    "model_id": "gemini-4-carbon",
+    "provider": "OpenCode",
+    "detected_at": "2026-11-10T17:03:50.031243+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "0c1f5f1ada428c39",
     "type": "new_model",
     "model_id": "google/gemini-4-carbon",
