@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "c960377524e5dcc3",
+    "type": "new_model",
+    "model_id": "nex-agi/nex-n2.6",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-10T04:32:34.738760+00:00",
+    "details": "$0.12 in / $0.4 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "e817e3bc210c72b0",
     "type": "new_model",
     "model_id": "runware/kimi-k3.1-pro",
