@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "0c1f5f1ada428c39",
+    "type": "new_model",
+    "model_id": "google/gemini-4-carbon",
+    "provider": "OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-11-10T16:32:56.872824+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "d01dc4bfcd35fbd2",
     "type": "new_model",
     "model_id": "baidu/deepseek-v4-flash-0731",
