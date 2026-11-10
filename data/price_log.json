@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "bb7453eaf4fe5f0e",
+    "type": "price_change",
+    "model_id": "z-ai/glm-5.2",
+    "provider": "Ambient, CrossModel, Crusoe, Eden AI, Impossibl, Kilo Gateway, LLM Gateway, Merge Gateway, Mistral, NanoGPT, Ofox, OpenRouter, OrcaRouter, Prime Inference, Standard Compute, Tempr Gateway, TensorX, TokenGo, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-11-10T10:32:35.502952+00:00",
+    "details": "Input: $0.006 -> $0.01; output: $1.32 -> $1.32",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "373e2774d3268e0f",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-10T10:32:35.502952+00:00",
+    "details": "Input: $0.03 -> $0.042; output: $0.089 -> $0.125",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "b0b68f82716e8569",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-11-10T10:32:35.502952+00:00",
+    "details": "Input: $0.03 -> $0.038; output: $0.089 -> $0.1",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "4130d009359ea247",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-10T10:32:35.502952+00:00",
+    "details": "Input: $0.152 -> $0.152; output: $10 -> $9.3388",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "936bcb0acd160aed",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
