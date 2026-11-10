@@ -1,5 +1,77 @@
 [
   {
+    "event_id": "446bf2f3549ee846",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-10T08:32:31.597014+00:00",
+    "details": "Input: $0.1824 -> $0.152; output: $9.3388 -> $10",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "e521a630b4eb31b9",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-11-10T08:32:31.597014+00:00",
+    "details": "Input: $0.019 -> $0.029; output: $0.057 -> $0.087",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "e40783dc51efe50f",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash",
+    "provider": "AI/ML API, Arcee, CommandCode, CrossModel, IteraCompute, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, Prime Inference, Standard Compute, TensorX, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-11-10T08:32:31.597014+00:00",
+    "details": "Input: $0.022 -> $0.006; output: $0.3 -> $0.3",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "4ec8a0c31a34e6c0",
+    "type": "price_change",
+    "model_id": "z-ai/GLM-4.6-turbo",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-10T08:32:31.597014+00:00",
+    "details": "Input: $1 -> $0.55; output: $3 -> $2.2",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "26a56520278221cc",
+    "type": "price_change",
+    "model_id": "z-ai/glm-4.6-original",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-10T08:32:31.597014+00:00",
+    "details": "Input: $0.5 -> $0.55; output: $2 -> $2.2",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "d80f47f254c8c97c",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-10T08:32:31.597014+00:00",
+    "details": "Input: $0.019 -> $0.029; output: $0.057 -> $0.087",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "92bcebebde42a319",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
