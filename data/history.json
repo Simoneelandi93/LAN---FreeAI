@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "5b3768e161bfea98",
+    "type": "new_model",
+    "model_id": "openai/gpt-5.2-chat",
+    "provider": "OpenRouter",
+    "detected_at": "2026-11-10T00:43:33.167425+00:00",
+    "details": "$1.75 in / $14 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "489bac736e345ca9",
     "type": "new_model",
     "model_id": "anthropic/claude-fable-5.2-fast",

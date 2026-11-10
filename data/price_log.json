@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "91f3689481838ce9",
+    "type": "price_change",
+    "model_id": "qwen/qwen3-14b",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter, SiliconFlow, SiliconFlow (China)",
+    "detected_at": "2026-11-10T00:43:33.167425+00:00",
+    "details": "Input: $0.07 -> $0.07; output: $0.24 -> $0.22",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "47eb6b00c316271b",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-10T00:43:33.167425+00:00",
+    "details": "Input: $0.026 -> $0.034; output: $0.079 -> $0.102",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "45677905196cb06a",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
