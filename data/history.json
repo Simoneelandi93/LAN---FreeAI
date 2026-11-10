@@ -1,5 +1,77 @@
 [
   {
+    "event_id": "d01dc4bfcd35fbd2",
+    "type": "new_model",
+    "model_id": "baidu/deepseek-v4-flash-0731",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-10T15:32:30.915106+00:00",
+    "details": "$0.44 in / $1.32 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d442cd691d2d3e76",
+    "type": "new_model",
+    "model_id": "tencent/deepseek-v4-flash-0731",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-10T15:32:30.915106+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e23014a2e04c405d",
+    "type": "new_model",
+    "model_id": "deepinfra/deepseek-v4-flash-0731",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-10T15:32:30.915106+00:00",
+    "details": "$0.08 in / $0.18 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "25b1d182e1a4501b",
+    "type": "new_model",
+    "model_id": "inference.net/deepseek-v4-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-10T15:32:30.915106+00:00",
+    "details": "$0.23 in / $0.62 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "32108c2edd79eac9",
+    "type": "new_model",
+    "model_id": "bytedance/deepseek-v4-flash-0731",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-10T15:32:30.915106+00:00",
+    "details": "$0.44 in / $1.32 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "2f4440e8617bb0d1",
+    "type": "new_model",
+    "model_id": "alibaba/deepseek-v4-flash-0731",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-10T15:32:30.915106+00:00",
+    "details": "$0.2 in / $0.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d17cc7422d803544",
+    "type": "new_model",
+    "model_id": "cloudflare/deepseek-v4-flash-0731",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-10T15:32:30.915106+00:00",
+    "details": "$0.44 in / $1.32 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "004e9763cc8bceb5",
+    "type": "new_model",
+    "model_id": "novita/deepseek-v4-flash-0731",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-10T15:32:30.915106+00:00",
+    "details": "$0.14 in / $0.28 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "7d52519a77d68d7a",
     "type": "new_model",
     "model_id": "meta/muse-ember-1.0",
