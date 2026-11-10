@@ -2889,9 +2889,9 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/kenari/",
     "litellm": {
-      "litellm_key": "xai/grok-imagine-image",
-      "litellm_provider": "xai",
-      "model_name": "grok-imagine-image",
+      "litellm_key": "fal_ai/xai/grok-imagine-image",
+      "litellm_provider": "fal_ai",
+      "model_name": "xai/grok-imagine-image",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
       "input_cost_per_token": null,
@@ -2903,7 +2903,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://docs.x.ai/docs/models",
+      "source": "https://fal.ai/models/xai/grok-imagine-image",
       "supported_endpoints": [
         "/v1/images/generations"
       ]
@@ -16686,9 +16686,9 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/trustedrouter/",
     "litellm": {
-      "litellm_key": "stability/fast",
-      "litellm_provider": "stability",
-      "model_name": "fast",
+      "litellm_key": "fal_ai/lightricks/ltx-2.5/text-to-video/fast",
+      "litellm_provider": "fal_ai",
+      "model_name": "lightricks/ltx-2.5/text-to-video/fast",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
       "input_cost_per_token": null,
@@ -16699,10 +16699,10 @@
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
-      "mode": "image_edit",
-      "source": "",
+      "mode": "video_generation",
+      "source": "https://fal.ai/models/lightricks/ltx-2.5/text-to-video/fast",
       "supported_endpoints": [
-        "/v1/images/edits"
+        "/v1/videos"
       ]
     }
   },
@@ -19453,10 +19453,10 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/vercel/",
     "litellm": {
-      "litellm_key": "azure_ai/FLUX.2-flex",
-      "litellm_provider": "azure_ai",
-      "model_name": "FLUX.2-flex",
-      "max_input_tokens": 32000,
+      "litellm_key": "fal_ai/fal-ai/flux-2-flex",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/flux-2-flex",
+      "max_input_tokens": 0,
       "max_output_tokens": 0,
       "input_cost_per_token": null,
       "output_cost_per_token": null,
@@ -19467,10 +19467,9 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/black-forest-labs/",
+      "source": "https://fal.ai/models/fal-ai/flux-2-flex",
       "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
+        "/v1/images/generations"
       ]
     }
   },
@@ -21289,9 +21288,9 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/vercel/",
     "litellm": {
-      "litellm_key": "xai/grok-imagine-image",
-      "litellm_provider": "xai",
-      "model_name": "grok-imagine-image",
+      "litellm_key": "fal_ai/xai/grok-imagine-image",
+      "litellm_provider": "fal_ai",
+      "model_name": "xai/grok-imagine-image",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
       "input_cost_per_token": null,
@@ -21303,7 +21302,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://docs.x.ai/docs/models",
+      "source": "https://fal.ai/models/xai/grok-imagine-image",
       "supported_endpoints": [
         "/v1/images/generations"
       ]
@@ -26482,22 +26481,25 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/vercel/",
     "litellm": {
-      "litellm_key": "vercel_ai_gateway/openai/o1",
-      "litellm_provider": "vercel_ai_gateway",
-      "model_name": "openai/o1",
-      "max_input_tokens": 200000,
-      "max_output_tokens": 100000,
-      "input_cost_per_token": 1.5e-05,
-      "output_cost_per_token": 6e-05,
+      "litellm_key": "fal_ai/fal-ai/kling-image/o1",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/kling-image/o1",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
       "supports_reasoning": null,
       "supports_vision": true,
-      "supports_function_calling": true,
+      "supports_function_calling": null,
       "supports_prompt_caching": null,
-      "supports_tool_choice": true,
-      "supports_response_schema": true,
-      "mode": "chat",
-      "source": "",
-      "supported_endpoints": []
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/kling-image/o1",
+      "supported_endpoints": [
+        "/v1/images/edits",
+        "/v1/images/generations"
+      ]
     },
     "llm_stats_id": "o1-2024-12-17"
   },
@@ -47098,22 +47100,25 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/azure-cognitive-services/",
     "litellm": {
-      "litellm_key": "vercel_ai_gateway/openai/o1",
-      "litellm_provider": "vercel_ai_gateway",
-      "model_name": "openai/o1",
-      "max_input_tokens": 200000,
-      "max_output_tokens": 100000,
-      "input_cost_per_token": 1.5e-05,
-      "output_cost_per_token": 6e-05,
+      "litellm_key": "fal_ai/fal-ai/kling-image/o1",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/kling-image/o1",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
       "supports_reasoning": null,
       "supports_vision": true,
-      "supports_function_calling": true,
+      "supports_function_calling": null,
       "supports_prompt_caching": null,
-      "supports_tool_choice": true,
-      "supports_response_schema": true,
-      "mode": "chat",
-      "source": "",
-      "supported_endpoints": []
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/kling-image/o1",
+      "supported_endpoints": [
+        "/v1/images/edits",
+        "/v1/images/generations"
+      ]
     },
     "llm_stats_id": "o1-2024-12-17"
   },
@@ -56244,26 +56249,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/nano-gpt/",
     "litellm": {
-      "litellm_key": "vertex_ai/gemini-3-pro-image-preview",
-      "litellm_provider": "vertex_ai",
-      "model_name": "gemini-3-pro-image-preview",
-      "max_input_tokens": 65536,
-      "max_output_tokens": 32768,
-      "input_cost_per_token": 2e-06,
-      "output_cost_per_token": 1.2e-05,
-      "supports_reasoning": false,
+      "litellm_key": "fal_ai/fal-ai/gemini-3-pro-image-preview",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/gemini-3-pro-image-preview",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "source": "https://fal.ai/models/fal-ai/gemini-3-pro-image-preview",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/images/generations",
-        "/v1/images/edits",
-        "/v1/batch"
+        "/v1/images/generations"
       ]
     }
   },
@@ -62988,22 +62990,25 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/nano-gpt/",
     "litellm": {
-      "litellm_key": "vercel_ai_gateway/openai/o1",
-      "litellm_provider": "vercel_ai_gateway",
-      "model_name": "openai/o1",
-      "max_input_tokens": 200000,
-      "max_output_tokens": 100000,
-      "input_cost_per_token": 1.5e-05,
-      "output_cost_per_token": 6e-05,
+      "litellm_key": "fal_ai/fal-ai/kling-image/o1",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/kling-image/o1",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
       "supports_reasoning": null,
       "supports_vision": true,
-      "supports_function_calling": true,
+      "supports_function_calling": null,
       "supports_prompt_caching": null,
-      "supports_tool_choice": true,
-      "supports_response_schema": true,
-      "mode": "chat",
-      "source": "",
-      "supported_endpoints": []
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/kling-image/o1",
+      "supported_endpoints": [
+        "/v1/images/edits",
+        "/v1/images/generations"
+      ]
     },
     "llm_stats_id": "o1-2024-12-17"
   },
@@ -83281,7 +83286,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "",
+      "source": "https://fal.ai/models/fal-ai/nano-banana",
       "supported_endpoints": [
         "/v1/images/generations"
       ]
@@ -85753,22 +85758,25 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/poe/",
     "litellm": {
-      "litellm_key": "vercel_ai_gateway/openai/o1",
-      "litellm_provider": "vercel_ai_gateway",
-      "model_name": "openai/o1",
-      "max_input_tokens": 200000,
-      "max_output_tokens": 100000,
-      "input_cost_per_token": 1.5e-05,
-      "output_cost_per_token": 6e-05,
+      "litellm_key": "fal_ai/fal-ai/kling-image/o1",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/kling-image/o1",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
       "supports_reasoning": null,
       "supports_vision": true,
-      "supports_function_calling": true,
+      "supports_function_calling": null,
       "supports_prompt_caching": null,
-      "supports_tool_choice": true,
-      "supports_response_schema": true,
-      "mode": "chat",
-      "source": "",
-      "supported_endpoints": []
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/kling-image/o1",
+      "supported_endpoints": [
+        "/v1/images/edits",
+        "/v1/images/generations"
+      ]
     },
     "llm_stats_id": "o1-2024-12-17"
   },
@@ -109419,26 +109427,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/fastrouter/",
     "litellm": {
-      "litellm_key": "vertex_ai/gemini-3.1-flash-image-preview",
-      "litellm_provider": "vertex_ai",
-      "model_name": "gemini-3.1-flash-image-preview",
-      "max_input_tokens": 65536,
-      "max_output_tokens": 32768,
-      "input_cost_per_token": 5e-07,
-      "output_cost_per_token": 3e-06,
-      "supports_reasoning": false,
+      "litellm_key": "fal_ai/fal-ai/gemini-3.1-flash-image-preview",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/gemini-3.1-flash-image-preview",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "source": "https://fal.ai/models/fal-ai/gemini-3.1-flash-image-preview",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/images/generations",
-        "/v1/images/edits",
-        "/v1/batch"
+        "/v1/images/generations"
       ]
     }
   },
@@ -109657,26 +109662,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/fastrouter/",
     "litellm": {
-      "litellm_key": "vertex_ai/gemini-3-pro-image-preview",
-      "litellm_provider": "vertex_ai",
-      "model_name": "gemini-3-pro-image-preview",
-      "max_input_tokens": 65536,
-      "max_output_tokens": 32768,
-      "input_cost_per_token": 2e-06,
-      "output_cost_per_token": 1.2e-05,
-      "supports_reasoning": false,
+      "litellm_key": "fal_ai/fal-ai/gemini-3-pro-image-preview",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/gemini-3-pro-image-preview",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "source": "https://fal.ai/models/fal-ai/gemini-3-pro-image-preview",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/images/generations",
-        "/v1/images/edits",
-        "/v1/batch"
+        "/v1/images/generations"
       ]
     }
   },
@@ -145294,22 +145296,25 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/openai/",
     "litellm": {
-      "litellm_key": "vercel_ai_gateway/openai/o1",
-      "litellm_provider": "vercel_ai_gateway",
-      "model_name": "openai/o1",
-      "max_input_tokens": 200000,
-      "max_output_tokens": 100000,
-      "input_cost_per_token": 1.5e-05,
-      "output_cost_per_token": 6e-05,
+      "litellm_key": "fal_ai/fal-ai/kling-image/o1",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/kling-image/o1",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
       "supports_reasoning": null,
       "supports_vision": true,
-      "supports_function_calling": true,
+      "supports_function_calling": null,
       "supports_prompt_caching": null,
-      "supports_tool_choice": true,
-      "supports_response_schema": true,
-      "mode": "chat",
-      "source": "",
-      "supported_endpoints": []
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/kling-image/o1",
+      "supported_endpoints": [
+        "/v1/images/edits",
+        "/v1/images/generations"
+      ]
     },
     "llm_stats_id": "o1-2024-12-17"
   },
@@ -198422,26 +198427,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/openrouter/",
     "litellm": {
-      "litellm_key": "vertex_ai/gemini-3.1-flash-image-preview",
-      "litellm_provider": "vertex_ai",
-      "model_name": "gemini-3.1-flash-image-preview",
-      "max_input_tokens": 65536,
-      "max_output_tokens": 32768,
-      "input_cost_per_token": 5e-07,
-      "output_cost_per_token": 3e-06,
-      "supports_reasoning": false,
+      "litellm_key": "fal_ai/fal-ai/gemini-3.1-flash-image-preview",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/gemini-3.1-flash-image-preview",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "source": "https://fal.ai/models/fal-ai/gemini-3.1-flash-image-preview",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/images/generations",
-        "/v1/images/edits",
-        "/v1/batch"
+        "/v1/images/generations"
       ]
     }
   },
@@ -199202,26 +199204,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/openrouter/",
     "litellm": {
-      "litellm_key": "vertex_ai/gemini-3-pro-image-preview",
-      "litellm_provider": "vertex_ai",
-      "model_name": "gemini-3-pro-image-preview",
-      "max_input_tokens": 65536,
-      "max_output_tokens": 32768,
-      "input_cost_per_token": 2e-06,
-      "output_cost_per_token": 1.2e-05,
-      "supports_reasoning": false,
+      "litellm_key": "fal_ai/fal-ai/gemini-3-pro-image-preview",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/gemini-3-pro-image-preview",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "source": "https://fal.ai/models/fal-ai/gemini-3-pro-image-preview",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/images/generations",
-        "/v1/images/edits",
-        "/v1/batch"
+        "/v1/images/generations"
       ]
     }
   },
@@ -219097,22 +219096,25 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/merge-gateway/",
     "litellm": {
-      "litellm_key": "vercel_ai_gateway/openai/o1",
-      "litellm_provider": "vercel_ai_gateway",
-      "model_name": "openai/o1",
-      "max_input_tokens": 200000,
-      "max_output_tokens": 100000,
-      "input_cost_per_token": 1.5e-05,
-      "output_cost_per_token": 6e-05,
+      "litellm_key": "fal_ai/fal-ai/kling-image/o1",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/kling-image/o1",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
       "supports_reasoning": null,
       "supports_vision": true,
-      "supports_function_calling": true,
+      "supports_function_calling": null,
       "supports_prompt_caching": null,
-      "supports_tool_choice": true,
-      "supports_response_schema": true,
-      "mode": "chat",
-      "source": "",
-      "supported_endpoints": []
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/kling-image/o1",
+      "supported_endpoints": [
+        "/v1/images/edits",
+        "/v1/images/generations"
+      ]
     },
     "llm_stats_id": "o1-2024-12-17"
   },
@@ -257771,9 +257773,9 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/xai/",
     "litellm": {
-      "litellm_key": "xai/grok-imagine-image",
-      "litellm_provider": "xai",
-      "model_name": "grok-imagine-image",
+      "litellm_key": "fal_ai/xai/grok-imagine-image",
+      "litellm_provider": "fal_ai",
+      "model_name": "xai/grok-imagine-image",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
       "input_cost_per_token": null,
@@ -257785,7 +257787,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://docs.x.ai/docs/models",
+      "source": "https://fal.ai/models/xai/grok-imagine-image",
       "supported_endpoints": [
         "/v1/images/generations"
       ]
@@ -262251,22 +262253,25 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/impossibl/",
     "litellm": {
-      "litellm_key": "vercel_ai_gateway/openai/o1",
-      "litellm_provider": "vercel_ai_gateway",
-      "model_name": "openai/o1",
-      "max_input_tokens": 200000,
-      "max_output_tokens": 100000,
-      "input_cost_per_token": 1.5e-05,
-      "output_cost_per_token": 6e-05,
+      "litellm_key": "fal_ai/fal-ai/kling-image/o1",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/kling-image/o1",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
       "supports_reasoning": null,
       "supports_vision": true,
-      "supports_function_calling": true,
+      "supports_function_calling": null,
       "supports_prompt_caching": null,
-      "supports_tool_choice": true,
-      "supports_response_schema": true,
-      "mode": "chat",
-      "source": "",
-      "supported_endpoints": []
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/kling-image/o1",
+      "supported_endpoints": [
+        "/v1/images/edits",
+        "/v1/images/generations"
+      ]
     },
     "llm_stats_id": "o1-2024-12-17"
   },
@@ -269693,7 +269698,27 @@
     "input_price_per_m": null,
     "output_price_per_m": null,
     "is_free": false,
-    "source_url": "https://models.dev/providers/zenmux/"
+    "source_url": "https://models.dev/providers/zenmux/",
+    "litellm": {
+      "litellm_key": "fal_ai/fal-ai/glm-image",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/glm-image",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/glm-image",
+      "supported_endpoints": [
+        "/v1/images/generations"
+      ]
+    }
   },
   {
     "id": "zenmux/z-ai/glm-5.3",
@@ -288228,9 +288253,9 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/digitalocean/",
     "litellm": {
-      "litellm_key": "fal_ai/fal-ai/flux/schnell",
+      "litellm_key": "fal_ai/fal-ai/flux-1/schnell",
       "litellm_provider": "fal_ai",
-      "model_name": "fal-ai/flux/schnell",
+      "model_name": "fal-ai/flux-1/schnell",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
       "input_cost_per_token": null,
@@ -288242,7 +288267,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "",
+      "source": "https://fal.ai/models/fal-ai/flux-1/schnell",
       "supported_endpoints": [
         "/v1/images/generations"
       ]
@@ -296580,26 +296605,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
     "litellm": {
-      "litellm_key": "vertex_ai/gemini-3.1-flash-image-preview",
-      "litellm_provider": "vertex_ai",
-      "model_name": "gemini-3.1-flash-image-preview",
-      "max_input_tokens": 65536,
-      "max_output_tokens": 32768,
-      "input_cost_per_token": 5e-07,
-      "output_cost_per_token": 3e-06,
-      "supports_reasoning": false,
+      "litellm_key": "fal_ai/fal-ai/gemini-3.1-flash-image-preview",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/gemini-3.1-flash-image-preview",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "source": "https://fal.ai/models/fal-ai/gemini-3.1-flash-image-preview",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/images/generations",
-        "/v1/images/edits",
-        "/v1/batch"
+        "/v1/images/generations"
       ]
     },
     "offer": {
@@ -297604,26 +297626,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
     "litellm": {
-      "litellm_key": "vertex_ai/gemini-3-pro-image-preview",
-      "litellm_provider": "vertex_ai",
-      "model_name": "gemini-3-pro-image-preview",
-      "max_input_tokens": 65536,
-      "max_output_tokens": 32768,
-      "input_cost_per_token": 2e-06,
-      "output_cost_per_token": 1.2e-05,
-      "supports_reasoning": false,
+      "litellm_key": "fal_ai/fal-ai/gemini-3-pro-image-preview",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/gemini-3-pro-image-preview",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "source": "https://fal.ai/models/fal-ai/gemini-3-pro-image-preview",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/images/generations",
-        "/v1/images/edits",
-        "/v1/batch"
+        "/v1/images/generations"
       ]
     },
     "offer": {
@@ -352382,22 +352401,25 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/azure/",
     "litellm": {
-      "litellm_key": "vercel_ai_gateway/openai/o1",
-      "litellm_provider": "vercel_ai_gateway",
-      "model_name": "openai/o1",
-      "max_input_tokens": 200000,
-      "max_output_tokens": 100000,
-      "input_cost_per_token": 1.5e-05,
-      "output_cost_per_token": 6e-05,
+      "litellm_key": "fal_ai/fal-ai/kling-image/o1",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/kling-image/o1",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
       "supports_reasoning": null,
       "supports_vision": true,
-      "supports_function_calling": true,
+      "supports_function_calling": null,
       "supports_prompt_caching": null,
-      "supports_tool_choice": true,
-      "supports_response_schema": true,
-      "mode": "chat",
-      "source": "",
-      "supported_endpoints": []
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/kling-image/o1",
+      "supported_endpoints": [
+        "/v1/images/edits",
+        "/v1/images/generations"
+      ]
     },
     "llm_stats_id": "o1-2024-12-17"
   },
@@ -357910,26 +357932,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/abacus/",
     "litellm": {
-      "litellm_key": "vertex_ai/gemini-3.1-flash-image-preview",
-      "litellm_provider": "vertex_ai",
-      "model_name": "gemini-3.1-flash-image-preview",
-      "max_input_tokens": 65536,
-      "max_output_tokens": 32768,
-      "input_cost_per_token": 5e-07,
-      "output_cost_per_token": 3e-06,
-      "supports_reasoning": false,
+      "litellm_key": "fal_ai/fal-ai/gemini-3.1-flash-image-preview",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/gemini-3.1-flash-image-preview",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "source": "https://fal.ai/models/fal-ai/gemini-3.1-flash-image-preview",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/images/generations",
-        "/v1/images/edits",
-        "/v1/batch"
+        "/v1/images/generations"
       ]
     }
   },
@@ -360060,26 +360079,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/abacus/",
     "litellm": {
-      "litellm_key": "vertex_ai/gemini-3-pro-image-preview",
-      "litellm_provider": "vertex_ai",
-      "model_name": "gemini-3-pro-image-preview",
-      "max_input_tokens": 65536,
-      "max_output_tokens": 32768,
-      "input_cost_per_token": 2e-06,
-      "output_cost_per_token": 1.2e-05,
-      "supports_reasoning": false,
+      "litellm_key": "fal_ai/fal-ai/gemini-3-pro-image-preview",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/gemini-3-pro-image-preview",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "source": "https://fal.ai/models/fal-ai/gemini-3-pro-image-preview",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/images/generations",
-        "/v1/images/edits",
-        "/v1/batch"
+        "/v1/images/generations"
       ]
     }
   },
@@ -375326,7 +375342,27 @@
     "input_price_per_m": 0.5,
     "output_price_per_m": 2,
     "is_free": false,
-    "source_url": "https://models.dev/providers/regolo-ai/"
+    "source_url": "https://models.dev/providers/regolo-ai/",
+    "litellm": {
+      "litellm_key": "fal_ai/fal-ai/qwen-image",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/qwen-image",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/qwen-image",
+      "supported_endpoints": [
+        "/v1/images/generations"
+      ]
+    }
   },
   {
     "id": "regolo-ai/brick-v1-beta",
@@ -381534,26 +381570,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/302ai/",
     "litellm": {
-      "litellm_key": "vertex_ai/gemini-3.1-flash-image-preview",
-      "litellm_provider": "vertex_ai",
-      "model_name": "gemini-3.1-flash-image-preview",
-      "max_input_tokens": 65536,
-      "max_output_tokens": 32768,
-      "input_cost_per_token": 5e-07,
-      "output_cost_per_token": 3e-06,
-      "supports_reasoning": false,
+      "litellm_key": "fal_ai/fal-ai/gemini-3.1-flash-image-preview",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/gemini-3.1-flash-image-preview",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "source": "https://fal.ai/models/fal-ai/gemini-3.1-flash-image-preview",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/images/generations",
-        "/v1/images/edits",
-        "/v1/batch"
+        "/v1/images/generations"
       ]
     }
   },
@@ -384812,26 +384845,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/302ai/",
     "litellm": {
-      "litellm_key": "vertex_ai/gemini-3-pro-image-preview",
-      "litellm_provider": "vertex_ai",
-      "model_name": "gemini-3-pro-image-preview",
-      "max_input_tokens": 65536,
-      "max_output_tokens": 32768,
-      "input_cost_per_token": 2e-06,
-      "output_cost_per_token": 1.2e-05,
-      "supports_reasoning": false,
+      "litellm_key": "fal_ai/fal-ai/gemini-3-pro-image-preview",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/gemini-3-pro-image-preview",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "source": "https://fal.ai/models/fal-ai/gemini-3-pro-image-preview",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/images/generations",
-        "/v1/images/edits",
-        "/v1/batch"
+        "/v1/images/generations"
       ]
     }
   },
@@ -392293,22 +392323,25 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/helicone/",
     "litellm": {
-      "litellm_key": "vercel_ai_gateway/openai/o1",
-      "litellm_provider": "vercel_ai_gateway",
-      "model_name": "openai/o1",
-      "max_input_tokens": 200000,
-      "max_output_tokens": 100000,
-      "input_cost_per_token": 1.5e-05,
-      "output_cost_per_token": 6e-05,
+      "litellm_key": "fal_ai/fal-ai/kling-image/o1",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/kling-image/o1",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
       "supports_reasoning": null,
       "supports_vision": true,
-      "supports_function_calling": true,
+      "supports_function_calling": null,
       "supports_prompt_caching": null,
-      "supports_tool_choice": true,
-      "supports_response_schema": true,
-      "mode": "chat",
-      "source": "",
-      "supported_endpoints": []
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/kling-image/o1",
+      "supported_endpoints": [
+        "/v1/images/edits",
+        "/v1/images/generations"
+      ]
     },
     "llm_stats_id": "o1-2024-12-17"
   },
@@ -403757,26 +403790,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
     "litellm": {
-      "litellm_key": "vertex_ai/gemini-3.1-flash-image-preview",
-      "litellm_provider": "vertex_ai",
-      "model_name": "gemini-3.1-flash-image-preview",
-      "max_input_tokens": 65536,
-      "max_output_tokens": 32768,
-      "input_cost_per_token": 5e-07,
-      "output_cost_per_token": 3e-06,
-      "supports_reasoning": false,
+      "litellm_key": "fal_ai/fal-ai/gemini-3.1-flash-image-preview",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/gemini-3.1-flash-image-preview",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "source": "https://fal.ai/models/fal-ai/gemini-3.1-flash-image-preview",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/images/generations",
-        "/v1/images/edits",
-        "/v1/batch"
+        "/v1/images/generations"
       ]
     }
   },
@@ -404355,26 +404385,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
     "litellm": {
-      "litellm_key": "vertex_ai/gemini-3-pro-image-preview",
-      "litellm_provider": "vertex_ai",
-      "model_name": "gemini-3-pro-image-preview",
-      "max_input_tokens": 65536,
-      "max_output_tokens": 32768,
-      "input_cost_per_token": 2e-06,
-      "output_cost_per_token": 1.2e-05,
-      "supports_reasoning": false,
+      "litellm_key": "fal_ai/fal-ai/gemini-3-pro-image-preview",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/gemini-3-pro-image-preview",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "source": "https://fal.ai/models/fal-ai/gemini-3-pro-image-preview",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/images/generations",
-        "/v1/images/edits",
-        "/v1/batch"
+        "/v1/images/generations"
       ]
     }
   },
@@ -430633,6 +430660,26 @@
     "output_price_per_m": 0,
     "is_free": true,
     "source_url": "https://models.dev/providers/nvidia/",
+    "litellm": {
+      "litellm_key": "fal_ai/fal-ai/qwen-image",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/qwen-image",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/qwen-image",
+      "supported_endpoints": [
+        "/v1/images/generations"
+      ]
+    },
     "offer": {
       "id": "nvidia-nim",
       "provider": "NVIDIA NIM",
