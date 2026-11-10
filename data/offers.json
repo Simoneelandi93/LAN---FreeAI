@@ -16,7 +16,7 @@
     "status": "active",
     "source_url": "https://aistudio.google.com/",
     "notes": "",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "gemini-2.5-flash",
@@ -57,7 +57,7 @@
     "status": "active",
     "source_url": "https://console.groq.com/",
     "notes": "llama-3.3-70b-versatile and llama-3.1-8b-instant moved to Enterprise (Contact Sales). Limits enforced per organization.",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "qwen/qwen3.8-27b",
@@ -100,7 +100,7 @@
     "status": "active",
     "source_url": "https://build.nvidia.com/",
     "notes": "",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "deepseek",
@@ -118,7 +118,7 @@
     "status": "active",
     "source_url": "https://platform.deepseek.com/",
     "notes": "",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "maritaca-ai",
@@ -137,7 +137,7 @@
     "status": "active",
     "source_url": "https://plataforma.maritaca.ai/",
     "notes": "R$ 20 one-time onboarding credit. No perpetual free API tier.",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "sabia-4",
@@ -171,7 +171,7 @@
     "status": "active",
     "source_url": "https://dash.cloudflare.com/",
     "notes": "",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "free_daily_allocation": "10,000 Neurons/day"
   },
   {
@@ -191,7 +191,7 @@
     "status": "active",
     "source_url": "https://huggingface.co/settings/tokens",
     "notes": "",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "sambanova",
@@ -209,7 +209,7 @@
     "status": "active",
     "source_url": "https://cloud.sambanova.ai/",
     "notes": "Transitioned to Developer Tier requiring payment method registration (credit card); 20M tokens/day developer cap",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "nomic-ai",
@@ -226,7 +226,7 @@
     "status": "active",
     "source_url": "https://www.nomic.ai/",
     "notes": "",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "mixedbread-ai",
@@ -243,7 +243,7 @@
     "status": "active",
     "source_url": "https://www.mixedbread.ai/",
     "notes": "",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "inception-labs",
@@ -261,7 +261,7 @@
     "status": "active",
     "source_url": "https://platform.inceptionlabs.ai/",
     "notes": "100,000,000 free tokens (one-time onboarding grant per account, non-recurring)",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "reka-ai",
@@ -280,7 +280,7 @@
     "status": "active",
     "source_url": "https://platform.reka.ai/",
     "notes": "$10/month + 3h video analysis",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "reka-flash",
@@ -315,7 +315,7 @@
     "status": "active",
     "source_url": "https://bytez.com/",
     "notes": "$1.00 every 4 weeks",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "morph-labs",
@@ -332,7 +332,7 @@
     "status": "active",
     "source_url": "https://morphllm.com/",
     "notes": "250,000 credits/month",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "internlm",
@@ -350,7 +350,7 @@
     "status": "active",
     "source_url": "https://internlm.intern-ai.org.cn/",
     "notes": "1M in / 3M out tokens/month",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "sarvam-ai",
@@ -368,7 +368,7 @@
     "status": "active",
     "source_url": "https://docs.sarvam.ai/",
     "notes": "₹1,000 INR non-expiring",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "sea-lion",
@@ -385,7 +385,7 @@
     "status": "active",
     "source_url": "https://sea-lion.ai/",
     "notes": "",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "fireworks-ai",
@@ -405,7 +405,7 @@
     "status": "active",
     "source_url": "https://fireworks.ai/",
     "notes": "$1.00 USD free credits without card",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "accounts/fireworks/models/llama-v3p3-70b-instruct",
@@ -445,7 +445,7 @@
     "status": "active",
     "source_url": "https://baseten.co/",
     "notes": "$30 USD free compute credits on workspace initialization (requires credit card)",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "meta-llama/Llama-3.3-70B-Instruct",
@@ -474,7 +474,7 @@
     "status": "active",
     "source_url": "https://replicate.com/",
     "notes": "Developer trial runs for language and diffusion models",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "xai-grok",
@@ -492,7 +492,7 @@
     "status": "active",
     "source_url": "https://console.x.ai/",
     "notes": "$25 USD/month developer grant",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "grok-2-1212",
@@ -523,7 +523,7 @@
     "status": "active",
     "source_url": "https://console.deepgram.com/",
     "notes": "$200 USD in free perpetual credits (~775 hours of Nova-2)",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "nova-2",
@@ -556,7 +556,7 @@
     "status": "active",
     "source_url": "https://assemblyai.com/",
     "notes": "$50 USD free credits (~100h to 330h audio)",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "best",
@@ -588,7 +588,7 @@
     "status": "active",
     "source_url": "https://elevenlabs.io/",
     "notes": "10,000 characters per month free forever without credit card",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "eleven_multilingual_v2",
@@ -616,7 +616,7 @@
     "status": "active",
     "source_url": "https://play.cartesia.ai/",
     "notes": "Sonic API Free Tier with sub-150ms real-time voice latency",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "sonic-english",
@@ -644,7 +644,7 @@
     "status": "active",
     "source_url": "https://lemonfox.ai/",
     "notes": "1-month free trial with 10M compute credits, followed by $5/month budget tier (50M credits)",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "whisper-1",
@@ -673,7 +673,7 @@
     "status": "active",
     "source_url": "https://dash.voyageai.com/",
     "notes": "200M tokens trial + 50M tokens permanent free",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "voyage-3",
@@ -709,7 +709,7 @@
     "status": "active",
     "source_url": "https://cloud.jina.ai/",
     "notes": "10M free tokens on signup + Reader API (r.jina.ai) 100% free forever",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "jina-embeddings-v3",
@@ -741,7 +741,7 @@
     "status": "active",
     "source_url": "https://app.tavily.com/",
     "notes": "1,000 search API credits per month free forever",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "tavily-search-basic",
@@ -768,7 +768,7 @@
     "status": "active",
     "source_url": "https://dashboard.exa.ai/",
     "notes": "Recurring $10 USD/month grant (resets 1st of each month, ~1,400 searches) + $10 USD onboarding bonus",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "exa-search-neural",
@@ -791,7 +791,7 @@
     "status": "active",
     "source_url": "https://cloud.qdrant.io/",
     "notes": "1 Free Forever Cloud Cluster (1GB RAM / 0.5 vCPU / ~1M vectors)",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "stepfun",
@@ -810,7 +810,7 @@
     "status": "active",
     "source_url": "https://platform.stepfun.ai/",
     "notes": "¥50 RMB (~$7.00 USD) welcome credits on registration",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "step-1-128k",
@@ -846,7 +846,7 @@
     "status": "active",
     "source_url": "https://platform.lingyiwanwu.com/",
     "notes": "¥36 RMB (~$5.10 USD) welcome trial credits",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "yi-lightning",
@@ -882,7 +882,7 @@
     "status": "active",
     "source_url": "https://modelscope.cn/",
     "notes": "Permanent 100% free daily serverless inference on open models",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "Qwen/Qwen2.5-72B-Instruct",
@@ -917,7 +917,7 @@
     "status": "active",
     "source_url": "https://www.runpod.io/",
     "notes": "Micro-budget gateway ($5 USD) with true scale-to-zero per-second billing",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "centml",
@@ -934,7 +934,7 @@
     "status": "active",
     "source_url": "https://centml.ai/",
     "notes": "Developer trial credits for compiled model execution",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "meta-llama/Llama-3.3-70B-Instruct",
@@ -960,7 +960,7 @@
     "status": "active",
     "source_url": "https://openrouter.ai/",
     "notes": "24 active :free models with up to 262k context",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "openrouter/free",
@@ -995,7 +995,7 @@
     "status": "active",
     "source_url": "https://console.mistral.ai/",
     "notes": "La Plateforme Free Tier: 60 RPM / 4M tokens/month",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "mistral-small-latest",
@@ -1024,7 +1024,7 @@
     "status": "active",
     "source_url": "https://platform.moonshot.cn/",
     "notes": "¥15 RMB welcome credits on registration",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "anthropic",
@@ -1042,7 +1042,7 @@
     "status": "active",
     "source_url": "https://console.anthropic.com/",
     "notes": "$5 USD initial developer trial credits",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "openai",
@@ -1060,7 +1060,7 @@
     "status": "active",
     "source_url": "https://platform.openai.com/",
     "notes": "$5 USD developer trial credits on new accounts",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "cerebras",
@@ -1077,7 +1077,7 @@
     "status": "active",
     "source_url": "https://cloud.cerebras.ai/",
     "notes": "Audited: Free Tier definitively closed (HTTP 402 Payment Required)",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "deepinfra",
@@ -1094,7 +1094,7 @@
     "status": "active",
     "source_url": "https://deepinfra.com/",
     "notes": "$1.80 USD trial credits on signup without credit card",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "zhipu-ai",
@@ -1113,7 +1113,7 @@
     "status": "active",
     "source_url": "https://open.bigmodel.cn/",
     "notes": "GLM-4-Flash 100% free forever + 25M tokens welcome grant",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "baidu-qianfan",
@@ -1132,7 +1132,7 @@
     "status": "active",
     "source_url": "https://qianfan.cloud.baidu.com/",
     "notes": "ERNIE-Speed & ERNIE-Lite 100% free forever (300 RPM / 300k TPM)",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "ERNIE-Speed-8K",
@@ -1169,7 +1169,7 @@
     "status": "active",
     "source_url": "https://dashscope.console.aliyun.com/",
     "notes": "1M to 2M free tokens per Qwen model (90-180 days validity)",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "tencent-hunyuan",
@@ -1187,7 +1187,7 @@
     "status": "active",
     "source_url": "https://cloud.tencent.com/product/hunyuan",
     "notes": "1-year free tier package for Hunyuan-Lite + 1,000 3D credits",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "bytedance-volcano",
@@ -1204,7 +1204,7 @@
     "status": "active",
     "source_url": "https://www.volcengine.com/",
     "notes": "Audited: Professional API is strictly paid in RMB (no developer free tier)",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "minimax",
@@ -1222,7 +1222,7 @@
     "status": "active",
     "source_url": "https://api.minimax.chat/",
     "notes": "¥15 RMB free trial credits on signup",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "speech-01",
@@ -1246,7 +1246,7 @@
     "status": "active",
     "source_url": "https://hyperbolic.xyz/",
     "notes": "60 RPM permanent Basic Free Tier without credit card",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "meta-llama/Meta-Llama-3.1-405B",
@@ -1274,7 +1274,7 @@
     "status": "active",
     "source_url": "https://cloud.siliconflow.cn/",
     "notes": "Global traffic accelerated via GTM domain api.siliconflow.cn. Permanent free tier for lightweight open models; FLUX.2 serverless pay-per-image.",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "Qwen/Qwen2.5-7B-Instruct",
@@ -1304,7 +1304,7 @@
     "status": "active",
     "source_url": "https://pollinations.ai/",
     "notes": "100% free forever for text, image, audio, and vision without account",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "openai",
@@ -1333,7 +1333,7 @@
     "status": "active",
     "source_url": "https://cohere.com/",
     "notes": "Trial API Key: 1,000 calls/month, 20 RPM chat, 10 RPM rerank, 100 RPM embed",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "command-r-plus",
@@ -1364,7 +1364,7 @@
     "status": "active",
     "source_url": "https://www.awanllm.com/",
     "notes": "Free Lite Tier with unlimited tokens (20 RPM / 200 RPD)",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "Meta-Llama-3.1-8B-Instruct",
@@ -1388,7 +1388,7 @@
     "status": "active",
     "source_url": "https://console.scaleway.com/",
     "notes": "1,000,000 tokens/month + 60 mins audio transcription free in European Cloud",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "novita-ai",
@@ -1405,7 +1405,7 @@
     "status": "active",
     "source_url": "https://novita.ai/",
     "notes": "$10 to $100 in sandbox trial credits (20 IPM image / 60 RPM LLM)",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "meta-llama/llama-3.1-70b-instruct",
@@ -1428,7 +1428,7 @@
     "status": "active",
     "source_url": "https://studio.nebius.ai/",
     "notes": "AI Builder Program with $400+ in compute credits",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "meta-llama/Meta-Llama-3.1-405B-Instruct",
@@ -1451,7 +1451,7 @@
     "status": "active",
     "source_url": "https://xkiro.com/",
     "notes": "5,000,000 tokens/day free tier + $5 wallet micro-budget",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "opencode",
@@ -1469,7 +1469,7 @@
     "status": "active",
     "source_url": "https://opencode.ai/",
     "notes": "OpenCode Zen with zero markup and free native models (MiMo V2.5 / MiniMax M2.5)",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "mimo-v2.5-free",
@@ -1496,7 +1496,7 @@
     "status": "active",
     "source_url": "https://b.ai/",
     "notes": "1 USD = 1M credits with up to 90% dynamic discount during off-peak hours",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00",
+    "checked_at": "2026-11-10T08:32:29.401524+00:00",
     "per_model_rate_limits": [
       {
         "model_id": "b-ai-general",
@@ -1519,7 +1519,7 @@
     "status": "active",
     "source_url": "https://api.xiaomimimo.com/",
     "notes": "",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "fish-audio",
@@ -1537,7 +1537,7 @@
     "status": "active",
     "source_url": "https://fish.audio/",
     "notes": "Model s2.1-pro-free 100% free at $0.00 / 1M UTF-8 bytes in the API with 5 concurrency. Web app provides 8,000 monthly credits.",
-    "checked_at": "2026-11-10T08:32:29.403106+00:00"
+    "checked_at": "2026-11-10T08:32:29.401524+00:00"
   },
   {
     "id": "githubcopilot",
