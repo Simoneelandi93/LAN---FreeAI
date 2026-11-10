@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "3de1ddfb6be7c724",
+    "type": "new_model",
+    "model_id": "baidu/ernie-light-dt-1.0-intl",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-10T20:32:36.302740+00:00",
+    "details": "$1.13 in / $3.94 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "7d7e427ba0b83f95",
     "type": "new_model",
     "model_id": "google-vertex/gemini-4-carbon",
