@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "e817e3bc210c72b0",
+    "type": "new_model",
+    "model_id": "runware/kimi-k3.1-pro",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-10T02:32:36.084251+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8829caa60709d761",
+    "type": "new_model",
+    "model_id": "canopywave/deepseek-v4-flash-0731",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-10T02:32:36.084251+00:00",
+    "details": "$0.44 in / $1.32 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "5b3768e161bfea98",
     "type": "new_model",
     "model_id": "openai/gpt-5.2-chat",
