@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "bad0305cb12a74f3",
+    "type": "new_model",
+    "model_id": "vertex/gemini-4-carbon",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-10T17:32:34.876844+00:00",
+    "details": "$4 in / $20 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "22a09010b1e2152a",
+    "type": "new_model",
+    "model_id": "vertex/gemini-4-carbon@eu",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-10T17:32:34.876844+00:00",
+    "details": "$4 in / $20 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3448b7956ad9fc43",
+    "type": "new_model",
+    "model_id": "vertex/gemini-4-carbon@us",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-10T17:32:34.876844+00:00",
+    "details": "$4 in / $20 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "24d8dfd023c2e398",
     "type": "new_model",
     "model_id": "gemini-4-carbon",
