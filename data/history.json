@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "2025c5dc8c3515ac",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017-uncensored:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-11T01:33:51.249604+00:00",
+    "details": "$0.33 in / $1.32 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "db70a6dfe74d2245",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017-uncensored",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-11T01:33:51.249604+00:00",
+    "details": "$0.33 in / $1.32 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "0527f006be286b39",
     "type": "new_model",
     "model_id": "kt/midm-k-3.0-pro",
