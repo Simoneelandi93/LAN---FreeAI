@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "ff701b2907884290",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-pro:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-11T06:37:14.756417+00:00",
+    "details": "Input: $0.7 -> $0.95124; output: $1.4 -> $1.79607",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "4568b1ab78e2a486",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-11T06:37:14.756417+00:00",
+    "details": "Input: $0.01 -> $0.011; output: $0.03 -> $0.034",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "449111f252871d63",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
