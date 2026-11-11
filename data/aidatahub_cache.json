@@ -1,6 +1,6 @@
 {
-  "etag": "W/\"6678ecde74a48b2e15c12fefb8317209\"",
-  "fetched_at": "2026-11-10T23:32:36.276095+00:00",
+  "etag": "W/\"37a0672e0286ececf81c6c7e4a73c8d8\"",
+  "fetched_at": "2026-11-11T00:09:53.213121+00:00",
   "events": [
     {
       "id": "openrouter:baidu/ernie-5.5-flash-preview:listing",
@@ -183,6 +183,26 @@
       "baseline": false
     },
     {
+      "id": "openrouter:kt/midm-k-3.0-pro:listing",
+      "modelKey": "kt:midmk30pro",
+      "modelId": "midm-k-3.0-pro",
+      "name": "Mi:dm K 3.0 Pro",
+      "provider": "KT",
+      "type": "listing",
+      "releasedAt": null,
+      "listedAt": "2026-11-05",
+      "availability": "openrouter",
+      "summary": "Listed on OpenRouter. This catalog listing does not establish the original release date.",
+      "sourceId": "openrouter",
+      "sourceUrl": "https://openrouter.ai/kt/midm-k-3.0-pro",
+      "evidence": "OpenRouter model ID: kt/midm-k-3.0-pro",
+      "firstSeenAt": "2026-11-11T00:09:00.764Z",
+      "publishedAt": "2026-11-11T00:09:00.764Z",
+      "updatedAt": "2026-11-11T00:09:00.764Z",
+      "revision": 1,
+      "baseline": false
+    },
+    {
       "id": "openrouter:openrouter/auto-code:listing",
       "modelKey": "openrouter:autocode",
       "modelId": "auto-code",
@@ -359,6 +379,26 @@
       "firstSeenAt": "2026-11-03T20:24:00.833Z",
       "publishedAt": "2026-11-03T20:24:00.833Z",
       "updatedAt": "2026-11-03T20:24:00.833Z",
+      "revision": 1,
+      "baseline": false
+    },
+    {
+      "id": "openrouter:motif-technologies/motif-3:listing",
+      "modelKey": "motif-technologies:motif3",
+      "modelId": "motif-3",
+      "name": "Motif 3",
+      "provider": "Motif Technologies",
+      "type": "listing",
+      "releasedAt": null,
+      "listedAt": "2026-11-02",
+      "availability": "openrouter",
+      "summary": "Listed on OpenRouter. This catalog listing does not establish the original release date.",
+      "sourceId": "openrouter",
+      "sourceUrl": "https://openrouter.ai/motif-technologies/motif-3",
+      "evidence": "OpenRouter model ID: motif-technologies/motif-3",
+      "firstSeenAt": "2026-11-11T00:09:00.764Z",
+      "publishedAt": "2026-11-11T00:09:00.764Z",
+      "updatedAt": "2026-11-11T00:09:00.764Z",
       "revision": 1,
       "baseline": false
     },
