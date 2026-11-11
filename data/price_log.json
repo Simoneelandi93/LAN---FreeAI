@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "94761f916dfa9000",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-11-11T18:32:44.155142+00:00",
+    "details": "Input: $0.011 -> $0.012; output: $0.034 -> $0.036",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "591f3a2fe1d49e38",
+    "type": "price_change",
+    "model_id": "bytedance-seed/seed-1.6-flash",
+    "provider": "AI/ML API",
+    "detected_at": "2026-11-11T18:32:44.155142+00:00",
+    "details": "Input: $0.075 -> $0.07935; output: $0.3 -> $0.3174",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "93be98e54e42f1e2",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-11T18:32:44.155142+00:00",
+    "details": "Input: $0.011 -> $0.012; output: $0.034 -> $0.036",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "a3adba171275e69b",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-latest",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-11T18:32:44.155142+00:00",
+    "details": "Input: $0.66 -> $0.65868; output: $4.0139 -> $4.0139",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "9661429126da6c52",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-pro-0813:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-11T18:32:44.155142+00:00",
+    "details": "Input: $0.66 -> $0.65868; output: $4.0139 -> $4.0139",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "49840e192cd5a3ad",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",

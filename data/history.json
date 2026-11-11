@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "ce2ae1ec8bbef2df",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-0910-uncensored",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-11T18:32:44.155142+00:00",
+    "details": "$0.33 in / $1.32 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "7d5675d8eb2319d3",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-uncensored:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-11T18:32:44.155142+00:00",
+    "details": "$0.33 in / $1.32 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a8c3eabb6b32c98f",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-uncensored",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-11T18:32:44.155142+00:00",
+    "details": "$0.33 in / $1.32 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "34e1fd313d07765f",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-0910-uncensored:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-11T18:32:44.155142+00:00",
+    "details": "$0.33 in / $1.32 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "caa50d7909aa694a",
     "type": "new_free_model",
     "model_id": "baidu/ernie-5.5-flash-preview:free",
