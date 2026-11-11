@@ -1,6 +1,6 @@
 {
-  "etag": "W/\"58205306d6025e47865c37373fa11d7b\"",
-  "fetched_at": "2026-11-11T17:04:07.048626+00:00",
+  "etag": "W/\"bc55c3e37110aacd674822a244d66611\"",
+  "fetched_at": "2026-11-11T17:33:04.489853+00:00",
   "events": [
     {
       "id": "openrouter:baidu/ernie-5.5-flash-preview:listing",
@@ -2395,11 +2395,11 @@
       "summary": "Anthropic announced Claude Fable 5.1 in an official release source. Check the source for access and rollout details.",
       "sourceId": "anthropic",
       "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview",
-      "evidence": "We’ve launched Claude Fable 5.1 (claude-fable-5-1), the successor to Claude Fable 5 for long-running agentic coding, knowledge work, and research, alongside Claude Mythos 5.1 (claude-mythos-5-1) for Project Glasswing participants. Both models support a 1M token context window by default, 128k max output tokens, and always-on adaptive thinking, at $10 / $50 USD per MTok, the same as Claude Fable 5, with cache reads cu",
+      "evidence": "We’ve launched Claude Fable 5.1 (claude-fable-5-1), the successor to Claude Fable 5 for long-running agentic coding, knowledge work, and research. For Project Glasswing participants, we’ve also launched Claude Mythos 5.1 (claude-mythos-5-1). Both models support a 1M token context window by default, 128k max output tokens, and always-on adaptive thinking. They cost $10 / $50 USD per MTok, the same as Claude Fable 5, w",
       "firstSeenAt": "2026-09-22T18:24:39.550Z",
       "publishedAt": "2026-09-22T18:24:39.550Z",
-      "updatedAt": "2026-10-27T17:54:00.829Z",
-      "revision": 2,
+      "updatedAt": "2026-11-11T17:24:00.721Z",
+      "revision": 3,
       "baseline": true
     },
     {
