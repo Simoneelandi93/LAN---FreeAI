@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "a3fba28dea866e27",
+    "type": "price_change",
+    "model_id": "z-ai/glm-5.2",
+    "provider": "Ambient, CrossModel, Crusoe, Eden AI, Impossibl, Kilo Gateway, LLM Gateway, Merge Gateway, Mistral, NanoGPT, Ofox, OpenRouter, OrcaRouter, Prime Inference, Standard Compute, Tempr Gateway, TensorX, TokenGo, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-11-11T00:44:28.565228+00:00",
+    "details": "Input: $0.007 -> $0.007; output: $0.594 -> $1.32",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "f7df2e2c2bd9bc32",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-flash:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-11T00:44:28.565228+00:00",
+    "details": "Input: $0.14 -> $0.0826; output: $0.28 -> $0.1652",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "2e2f58783111b648",
+    "type": "price_change",
+    "model_id": "motif-technologies/motif-3",
+    "provider": "Kilo Gateway, OpenRouter, ai&",
+    "detected_at": "2026-11-11T00:44:28.565228+00:00",
+    "details": "Input: $0.5 -> $0.3; output: $2 -> $1.2",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "11a200c59f843bca",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",

@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "0527f006be286b39",
+    "type": "new_model",
+    "model_id": "kt/midm-k-3.0-pro",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-11T00:44:28.565228+00:00",
+    "details": "$0.2 in / $0.8 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "3de1ddfb6be7c724",
     "type": "new_model",
     "model_id": "baidu/ernie-light-dt-1.0-intl",
