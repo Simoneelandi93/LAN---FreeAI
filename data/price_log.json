@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "aabf26ca74882fe1",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Arcee, Kilo Gateway, LLM Gateway, Merge Gateway, Modular, NEAR AI Cloud, NanoGPT, Novita AI, Ofox, OpenRouter, Prime Inference, Vercel AI Gateway",
+    "detected_at": "2026-11-12T06:37:56.838248+00:00",
+    "details": "Input: $0.006 -> $0.04368; output: $0.5 -> $0.6",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "1c5dbc8519843c1f",
+    "type": "price_change",
+    "model_id": "moonshotai/kimi-k3.1-pro",
+    "provider": "Baseten, Deep Infra, Kilo Gateway, NEAR AI Cloud, NanoGPT, Novita AI, Ofox, OpenRouter, Prime Inference, Together AI, Vercel AI Gateway, ai&",
+    "detected_at": "2026-11-12T06:37:56.838248+00:00",
+    "details": "Input: $2 -> $0.2375; output: $10 -> $8.4085",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "2df8767b6bdca760",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.5-9b",
+    "provider": "Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, Mixlayer, NanoGPT, OpenRouter, SiliconFlow, SiliconFlow (China), TensorX, Thinking Machines, Together AI",
+    "detected_at": "2026-11-12T06:37:56.838248+00:00",
+    "details": "Input: $0.05 -> $0.04; output: $0.13 -> $0.06",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "db1fda63e3b515dd",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-12T06:37:56.838248+00:00",
+    "details": "Input: $0.006 -> $0.022; output: $0.5 -> $0.4",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
     "event_id": "a90a6f847b1b3924",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
