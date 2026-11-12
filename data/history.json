@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "ec4c58ea5a82fa64",
+    "type": "new_model",
+    "model_id": "flexai/mimo-v2.6-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T12:35:37.904734+00:00",
+    "details": "$0.14 in / $0.28 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3421209b5e10d2fe",
+    "type": "new_model",
+    "model_id": "flexai/minimax-m3.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T12:35:37.904734+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b9bdf9498016b9f6",
+    "type": "new_model",
+    "model_id": "gemini/gemini-4-carbon",
+    "provider": "CrossModel",
+    "detected_at": "2026-11-12T12:35:37.904734+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "6e40a836287eb854",
     "type": "new_model",
     "model_id": "unbiased/pareto-26.10-preview",
