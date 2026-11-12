@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "80842fa0a5f795f5",
+    "type": "price_change",
+    "model_id": "moonshotai/kimi-k3.1-pro",
+    "provider": "Baseten, Deep Infra, Kilo Gateway, NEAR AI Cloud, NanoGPT, Novita AI, Ofox, OpenRouter, Prime Inference, Together AI, Vercel AI Gateway, ai&",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "Input: $0.2375 -> $0.2375; output: $8.4085 -> $8.7856",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "0420ae561352d4b6",
+    "type": "price_change",
+    "model_id": "google/gemini-4-hydrogen",
+    "provider": "Kilo Gateway, OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "Input: $1.5 -> $0.75; output: $7.5 -> $3.75",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "9aa96f2136e8dec6",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "provider": "AI/ML API, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, SiliconFlow, Tempr Gateway, Venice AI, Vercel AI Gateway, evroc",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "Input: $0.013 -> $0.011; output: $0.04 -> $0.032",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "7168a173c03425af",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.5-9b",
+    "provider": "Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, Mixlayer, NanoGPT, OpenRouter, SiliconFlow, SiliconFlow (China), TensorX, Thinking Machines, Together AI",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "Input: $0.05 -> $0.05; output: $0.083 -> $0.13",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "ae76d876f91105f3",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4.1-flash",

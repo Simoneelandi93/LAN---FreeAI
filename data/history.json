@@ -1,5 +1,221 @@
 [
   {
+    "event_id": "c429dff4737a6022",
+    "type": "new_model",
+    "model_id": "mistralai/codestral",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.3 in / $0.9 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c4f6d21f001caa11",
+    "type": "new_model",
+    "model_id": "mistralai/ministral-3b",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.1 in / $0.1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "2f5a446ee496a5cc",
+    "type": "new_model",
+    "model_id": "mistralai/ministral-8b",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.15 in / $0.15 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "11bae607ee3c1caa",
+    "type": "new_model",
+    "model_id": "mistralai/ministral-14b",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.2 in / $0.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "31c17a8e9b9dff3f",
+    "type": "new_model",
+    "model_id": "qwen/qwen3-max-thinking",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$1.2 in / $6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3916e6034eb0e1ef",
+    "type": "new_model",
+    "model_id": "qwen/qwen3-vl-instruct",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.2 in / $0.88 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "366d0a0860dbf3e4",
+    "type": "new_model",
+    "model_id": "x-ai/grok-4.20-multi-agent-beta",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$1.25 in / $2.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "31c1765d4d444626",
+    "type": "new_model",
+    "model_id": "x-ai/grok-4.20-non-reasoning-beta",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$1.25 in / $2.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "04a0461af7683f20",
+    "type": "new_model",
+    "model_id": "x-ai/grok-4.20-reasoning-beta",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$1.25 in / $2.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "22286a183a33e113",
+    "type": "new_model",
+    "model_id": "flexai/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "cf644d48be875ab0",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9eb418854c72ae34",
+    "type": "new_model",
+    "model_id": "alibaba/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c9d78baaa07c285a",
+    "type": "new_model",
+    "model_id": "scx-ai-gp/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.135 in / $0.54 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e14797b3a7c61c84",
+    "type": "new_model",
+    "model_id": "cloudflare/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a7c7f896fcb91b90",
+    "type": "new_model",
+    "model_id": "inference.net/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ad811a6b17629393",
+    "type": "new_model",
+    "model_id": "sciforium/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "229b5d71d239f9e9",
+    "type": "new_model",
+    "model_id": "runware/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f88ca8a0a60b922e",
+    "type": "new_model",
+    "model_id": "deepinfra/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.2 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "cad827c1ae3d8211",
+    "type": "new_model",
+    "model_id": "tencent/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "bab23da073f4fd35",
+    "type": "new_model",
+    "model_id": "novita/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "cd26a8b3f2a5fc90",
+    "type": "new_model",
+    "model_id": "entrim/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.2 in / $0.8 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1d89feb218d07516",
+    "type": "new_model",
+    "model_id": "baidu/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.28 in / $1.13 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "468cecaf9dcd1003",
+    "type": "new_model",
+    "model_id": "together-ai/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "0e1c848694c289f1",
+    "type": "new_model",
+    "model_id": "reka-ai/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-12T21:03:44.140728+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "ec9b44356f86eca4",
     "type": "new_model",
     "model_id": "deepseek-v4.1-flash-latest",
