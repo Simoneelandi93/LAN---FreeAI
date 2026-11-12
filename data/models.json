@@ -30148,7 +30148,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "muse-ember-1.0"
   },
   {
     "id": "vercel/meta/muse-spark-1.1",
@@ -72702,7 +72703,8 @@
         "/v1/responses",
         "/v1/messages"
       ]
-    }
+    },
+    "llm_stats_id": "muse-ember-1.0"
   },
   {
     "id": "meta/muse-spark-1.2",
@@ -85393,7 +85395,8 @@
         "/v1/responses",
         "/v1/messages"
       ]
-    }
+    },
+    "llm_stats_id": "muse-ember-1.0"
   },
   {
     "id": "opencode/gpt-5.4-mini",
@@ -233386,7 +233389,8 @@
         "/v1/responses",
         "/v1/messages"
       ]
-    }
+    },
+    "llm_stats_id": "muse-ember-1.0"
   },
   {
     "id": "cloudflare-ai-gateway/meta/muse-spark-1.2",
@@ -248355,7 +248359,8 @@
         "/v1/responses",
         "/v1/messages"
       ]
-    }
+    },
+    "llm_stats_id": "muse-ember-1.0"
   },
   {
     "id": "llmgateway-providers/meta/muse-spark-1.2",
@@ -283986,7 +283991,8 @@
         "/v1/responses",
         "/v1/messages"
       ]
-    }
+    },
+    "llm_stats_id": "muse-ember-1.0"
   },
   {
     "id": "llmgateway/minimax-m2.1-lightning",
@@ -303721,7 +303727,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "muse-ember-1.0"
   },
   {
     "id": "openrouter/meta/muse-spark-1.1",
@@ -313047,7 +313054,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "ernie-5.5-flash-preview"
   },
   {
     "id": "openrouter/baidu/ernie-light-dt-1.0-intl",
@@ -331418,6 +331426,7 @@
     "output_price_per_m": 0.5,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "muse-ember-1.0",
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -344164,6 +344173,7 @@
     "output_price_per_m": 0,
     "is_free": true,
     "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "ernie-5.5-flash-preview",
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -413792,7 +413802,8 @@
     "input_price_per_m": 0.1,
     "output_price_per_m": 0.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "muse-ember-1.0"
   },
   {
     "id": "nano-gpt/meta/muse-spark-1.1",
