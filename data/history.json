@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "30c9cbd0ec354d9e",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4-pro-20260423:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-12T16:04:09.969393+00:00",
+    "details": "$0.95124 in / $1.79607 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "aa729e208451692e",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4-pro-20260423",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-12T16:04:09.969393+00:00",
+    "details": "$0.86979 in / $1.77565 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "ec4c58ea5a82fa64",
     "type": "new_model",
     "model_id": "flexai/mimo-v2.6-flash",
