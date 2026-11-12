@@ -126786,22 +126786,25 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
     "litellm": {
-      "litellm_key": "scaledown/extract",
-      "litellm_provider": "scaledown",
-      "model_name": "extract",
+      "litellm_key": "fal_ai/fal-ai/patina/material/extract",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/patina/material/extract",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
-      "input_cost_per_token": 5e-08,
-      "output_cost_per_token": 0.0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": false,
-      "supports_function_calling": false,
+      "supports_vision": true,
+      "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
-      "supports_response_schema": false,
-      "mode": "chat",
-      "source": "",
-      "supported_endpoints": []
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/patina/material/extract",
+      "supported_endpoints": [
+        "/v1/images/edits",
+        "/v1/images/generations"
+      ]
     },
     "offer": {
       "id": "kilo",
@@ -216302,22 +216305,25 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/openrouter/",
     "litellm": {
-      "litellm_key": "scaledown/extract",
-      "litellm_provider": "scaledown",
-      "model_name": "extract",
+      "litellm_key": "fal_ai/fal-ai/patina/material/extract",
+      "litellm_provider": "fal_ai",
+      "model_name": "fal-ai/patina/material/extract",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
-      "input_cost_per_token": 5e-08,
-      "output_cost_per_token": 0.0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": false,
-      "supports_function_calling": false,
+      "supports_vision": true,
+      "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
-      "supports_response_schema": false,
-      "mode": "chat",
-      "source": "",
-      "supported_endpoints": []
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://fal.ai/models/fal-ai/patina/material/extract",
+      "supported_endpoints": [
+        "/v1/images/edits",
+        "/v1/images/generations"
+      ]
     }
   },
   {
