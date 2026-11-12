@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "6e40a836287eb854",
+    "type": "new_model",
+    "model_id": "unbiased/pareto-26.10-preview",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-12T01:03:59.800213+00:00",
+    "details": "$0.8 in / $3.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "929b85f1653f0ac5",
+    "type": "new_model",
+    "model_id": "tsystems/gpt-oss-120b",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-12T01:03:59.800213+00:00",
+    "details": "$0.22254 in / $0.723255 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "ce2ae1ec8bbef2df",
     "type": "new_model",
     "model_id": "deepseek/deepseek-v4.1-flash-0910-uncensored",
