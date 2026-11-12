@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "8328d655289452bf",
+    "type": "price_change",
+    "model_id": "gpt-image-1.5",
+    "provider": "AIHubMix, Azure, Azure Cognitive Services, OpenAI",
+    "detected_at": "2026-11-12T22:04:03.798042+00:00",
+    "details": "Input: $5 -> $5; output: $32 -> $10",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "80842fa0a5f795f5",
     "type": "price_change",
     "model_id": "moonshotai/kimi-k3.1-pro",

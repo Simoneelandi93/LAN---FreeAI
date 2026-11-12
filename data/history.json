@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "23e901d82a20f4db",
+    "type": "model_became_free",
+    "model_id": "gemma-4-26b-a4b-it",
+    "provider": "Charm Hyper, Cortecs, DevPass (LLM Gateway), Google, Requesty, Scaleway",
+    "detected_at": "2026-11-12T22:04:03.798042+00:00",
+    "details": "Was $0.07/0.334 per 1M, now free",
+    "alerted": true
+  },
+  {
     "event_id": "c429dff4737a6022",
     "type": "new_model",
     "model_id": "mistralai/codestral",
