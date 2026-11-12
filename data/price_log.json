@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "6dee6118f2ef0ffd",
+    "type": "price_change",
+    "model_id": "kimi-k3.1-pro",
+    "provider": "302.AI, Charm Hyper, Cortecs, DevPass (LLM Gateway), DigitalOcean, EmpirioLabs AI, Moonshot AI, Moonshot AI (China), Ollama Cloud, OpenCode Go, Requesty, Tinfoil, Venice AI, engy",
+    "detected_at": "2026-11-12T00:09:24.032659+00:00",
+    "details": "Input: $1.9 -> $1.4; output: $9.5 -> $7",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "94761f916dfa9000",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
