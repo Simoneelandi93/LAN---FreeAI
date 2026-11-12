@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "ae76d876f91105f3",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash",
+    "provider": "AI/ML API, Arcee, CommandCode, CrossModel, IteraCompute, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, Prime Inference, Standard Compute, TensorX, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-11-12T18:32:36.936222+00:00",
+    "details": "Input: $0.022 -> $0.0387; output: $0.3 -> $0.3",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "f4dac9f4ea4d32c0",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v3.2",
+    "provider": "Kilo Gateway, Merge Gateway, NEAR AI Cloud, NanoGPT, Ofox, OpenRouter, TensorX, TokenGo, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-11-12T18:32:36.936222+00:00",
+    "details": "Input: $0.2088 -> $0.2174; output: $0.3096 -> $0.326",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "133645b749c5d085",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v3.2:thinking",
+    "provider": "NanoGPT, Vercel AI Gateway",
+    "detected_at": "2026-11-12T18:32:36.936222+00:00",
+    "details": "Input: $0.2088 -> $0.286; output: $0.3096 -> $0.418",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "3d086c9b79d83efe",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-12T18:32:36.936222+00:00",
+    "details": "Input: $0.014 -> $0.023; output: $0.042 -> $0.068",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "1a8c18bfbb381f60",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.5-397b-a17b:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-12T18:32:36.936222+00:00",
+    "details": "Input: $0.39 -> $0.495; output: $2.34 -> $3.3",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "f92f6bbc9cdb8b59",
     "type": "price_change",
     "model_id": "z-ai/glm-5.1",

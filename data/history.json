@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "ec9b44356f86eca4",
+    "type": "new_model",
+    "model_id": "deepseek-v4.1-flash-latest",
+    "provider": "DevPass (LLM Gateway)",
+    "detected_at": "2026-11-12T18:32:36.936222+00:00",
+    "details": "$0.135 in / $0.54 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9457f1f0f283cd07",
+    "type": "new_model",
+    "model_id": "nebius/deepseek-ai/DeepSeek-V4-Flash-0731",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-12T18:32:36.936222+00:00",
+    "details": "$0.14 in / $0.28 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d9847e11887991a3",
+    "type": "new_model",
+    "model_id": "google/gemini-4-hydrogen",
+    "provider": "OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-11-12T18:32:36.936222+00:00",
+    "details": "$1.5 in / $7.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9b655d5579ce09ac",
+    "type": "new_model",
+    "model_id": "gemini-4-hydrogen",
+    "provider": "Google, Vertex",
+    "detected_at": "2026-11-12T18:32:36.936222+00:00",
+    "details": "$1.5 in / $7.5 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "30c9cbd0ec354d9e",
     "type": "new_model",
     "model_id": "deepseek/deepseek-v4-pro-20260423:thinking",

@@ -1,7 +1,27 @@
 {
-  "etag": "W/\"3a232836a8f053604a05016303a27147\"",
-  "fetched_at": "2026-11-12T18:04:25.641426+00:00",
+  "etag": "W/\"4e3b7beb189caa366f44e9707a4626dd\"",
+  "fetched_at": "2026-11-12T18:32:36.897829+00:00",
   "events": [
+    {
+      "id": "openrouter:google/gemini-4-hydrogen:listing",
+      "modelKey": "google:gemini4hydrogen",
+      "modelId": "gemini-4-hydrogen",
+      "name": "Gemini 4 Hydrogen",
+      "provider": "Google",
+      "type": "listing",
+      "releasedAt": null,
+      "listedAt": "2026-11-12",
+      "availability": "openrouter",
+      "summary": "Listed on OpenRouter. This catalog listing does not establish the original release date.",
+      "sourceId": "openrouter",
+      "sourceUrl": "https://openrouter.ai/google/gemini-4-hydrogen",
+      "evidence": "OpenRouter model ID: google/gemini-4-hydrogen",
+      "firstSeenAt": "2026-11-12T18:09:00.873Z",
+      "publishedAt": "2026-11-12T18:09:00.873Z",
+      "updatedAt": "2026-11-12T18:09:00.873Z",
+      "revision": 1,
+      "baseline": false
+    },
     {
       "id": "openrouter:baidu/ernie-5.5-flash-preview:listing",
       "modelKey": "baidu:ernie55flashpreview",
