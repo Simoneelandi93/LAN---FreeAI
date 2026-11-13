@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "7733af4c6cae060b",
+    "type": "new_model",
+    "model_id": "@cf/thinkingmachines/inkling-2-small",
+    "provider": "Cloudflare Workers AI",
+    "detected_at": "2026-11-13T03:04:35.489822+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "5c94ca04b640f0af",
     "type": "new_model",
     "model_id": "deepseek-v4.1-flash-1017-basic",
