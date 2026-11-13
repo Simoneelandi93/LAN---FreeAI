@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "bb6c17eddada4de9",
+    "type": "price_change",
+    "model_id": "deepseek-v4-flash-ga-260731",
+    "provider": "BytePlus ModelArk, Volcengine Ark",
+    "detected_at": "2026-11-13T00:09:43.973514+00:00",
+    "details": "Input: $0.4453 -> $0.44; output: $1.3359 -> $1.32",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "f957c144a29eb6aa",
+    "type": "price_change",
+    "model_id": "deepseek-v4-pro-ga-260813",
+    "provider": "BytePlus ModelArk, Volcengine Ark",
+    "detected_at": "2026-11-13T00:09:43.973514+00:00",
+    "details": "Input: $1.3359 -> $1.32; output: $4.00771 -> $3.96",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "8328d655289452bf",
     "type": "price_change",
     "model_id": "gpt-image-1.5",

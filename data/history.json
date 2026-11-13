@@ -1,5 +1,59 @@
 [
   {
+    "event_id": "c701dd3a01776f3e",
+    "type": "new_model",
+    "model_id": "deepseek-v4-pro-260425",
+    "provider": "BytePlus ModelArk",
+    "detected_at": "2026-11-13T00:09:43.973514+00:00",
+    "details": "$1.32 in / $3.96 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3228a454200efe45",
+    "type": "new_model",
+    "model_id": "deepseek-v4-1-flash-economy-261017",
+    "provider": "BytePlus ModelArk",
+    "detected_at": "2026-11-13T00:09:43.973514+00:00",
+    "details": "$0.12 in / $0.48 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "fd3eb6ddbb6978fa",
+    "type": "new_model",
+    "model_id": "deepseek-v4-1-flash-261017",
+    "provider": "BytePlus ModelArk",
+    "detected_at": "2026-11-13T00:09:43.973514+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "607eed047df4254c",
+    "type": "new_model",
+    "model_id": "dola-seed-2-1-turbo-260628",
+    "provider": "BytePlus ModelArk",
+    "detected_at": "2026-11-13T00:09:43.973514+00:00",
+    "details": "$0.5 in / $2.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ccf10807b3d84130",
+    "type": "new_model",
+    "model_id": "deepseek-v4-flash-260425",
+    "provider": "BytePlus ModelArk",
+    "detected_at": "2026-11-13T00:09:43.973514+00:00",
+    "details": "$0.44 in / $1.32 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a90bccd1f44f2225",
+    "type": "new_model",
+    "model_id": "deepseek-v4-1-flash-260910",
+    "provider": "BytePlus ModelArk",
+    "detected_at": "2026-11-13T00:09:43.973514+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "23e901d82a20f4db",
     "type": "model_became_free",
     "model_id": "gemma-4-26b-a4b-it",
