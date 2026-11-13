@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "f097cff924756598",
+    "type": "new_model",
+    "model_id": "flexai/gpt-oss-20b@eu",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-13T18:32:40.728539+00:00",
+    "details": "$0.018 in / $0.09 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3d12c07a47100aa7",
+    "type": "new_model",
+    "model_id": "deepinfra/thinkingmachines/Inkling-2-Small",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-13T18:32:40.728539+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "bf6dd5dafc9c034c",
     "type": "new_model",
     "model_id": "alibaba/kimi-k2.7-code",
