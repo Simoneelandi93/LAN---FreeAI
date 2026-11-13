@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "161cda8b620a8653",
+    "type": "new_model",
+    "model_id": "paperinstruments/ultramarine-1-flash",
+    "provider": "Kilo Gateway, Vercel AI Gateway",
+    "detected_at": "2026-11-13T06:37:47.886714+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e05e516826990811",
+    "type": "new_model",
+    "model_id": "together_ai/thinkingmachines/Inkling-2-Small",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-13T06:37:47.886714+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "21a92c55171543f9",
+    "type": "new_model",
+    "model_id": "cloudflare/@cf/thinkingmachines/inkling-2-small",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-13T06:37:47.886714+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "5fd2842d6a3a150d",
+    "type": "new_model",
+    "model_id": "nebius/thinkingmachines/Inkling-2-Small",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-13T06:37:47.886714+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "7733af4c6cae060b",
     "type": "new_model",
     "model_id": "@cf/thinkingmachines/inkling-2-small",
