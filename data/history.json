@@ -1,5 +1,77 @@
 [
   {
+    "event_id": "5c94ca04b640f0af",
+    "type": "new_model",
+    "model_id": "deepseek-v4.1-flash-1017-basic",
+    "provider": "Charm Hyper",
+    "detected_at": "2026-11-13T01:04:10.597824+00:00",
+    "details": "$0.2 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "412438095a4bc844",
+    "type": "new_model",
+    "model_id": "thinkingmachines/inkling-2-small",
+    "provider": "Kilo Gateway, OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-11-13T01:04:10.597824+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "97f13bd65ad1f5b0",
+    "type": "new_model",
+    "model_id": "vertex/gemini-4-hydrogen@eu",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-13T01:04:10.597824+00:00",
+    "details": "$1.5 in / $7.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "db2f06551cc8135b",
+    "type": "new_model",
+    "model_id": "vertex/gemini-4-hydrogen@us",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-13T01:04:10.597824+00:00",
+    "details": "$1.5 in / $7.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "272548d4e75c2e30",
+    "type": "new_model",
+    "model_id": "vertex/gemini-4-hydrogen",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-13T01:04:10.597824+00:00",
+    "details": "$1.5 in / $7.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "7e04ec14fb53da8f",
+    "type": "new_free_model",
+    "model_id": "particle-ai/particle-1:free",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-13T01:04:10.597824+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e53d3b2af938b04a",
+    "type": "new_free_model",
+    "model_id": "apodex/apodex-1.1-mini:free",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-13T01:04:10.597824+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3ee0a6ad08668f42",
+    "type": "new_model",
+    "model_id": "pareto",
+    "provider": "Venice AI",
+    "detected_at": "2026-11-13T01:04:10.597824+00:00",
+    "details": "$1 in / $4 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "c701dd3a01776f3e",
     "type": "new_model",
     "model_id": "deepseek-v4-pro-260425",
