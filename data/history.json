@@ -1,5 +1,50 @@
 [
   {
+    "event_id": "bf6dd5dafc9c034c",
+    "type": "new_model",
+    "model_id": "alibaba/kimi-k2.7-code",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-13T12:34:16.322076+00:00",
+    "details": "$0.95 in / $4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "45b36165d04cbb95",
+    "type": "new_model",
+    "model_id": "alibaba/kimi-k3.1-pro",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-13T12:34:16.322076+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a2112fe906b22ef0",
+    "type": "new_model",
+    "model_id": "alibaba/glm-5.1",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-13T12:34:16.322076+00:00",
+    "details": "$1.4 in / $4.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3189906149bfca1d",
+    "type": "new_model",
+    "model_id": "google-vertex/gemini-4-hydrogen",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-13T12:34:16.322076+00:00",
+    "details": "$1.5 in / $7.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "17e452a96af2b666",
+    "type": "new_model",
+    "model_id": "google-ai-studio/gemini-4-hydrogen",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-13T12:34:16.322076+00:00",
+    "details": "$1.5 in / $7.5 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "161cda8b620a8653",
     "type": "new_model",
     "model_id": "paperinstruments/ultramarine-1-flash",
