@@ -185309,26 +185309,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/google/",
     "litellm": {
-      "litellm_key": "gemini/deep-research-preview-04-2026",
-      "litellm_provider": "gemini",
+      "litellm_key": "vertex_ai/deep-research-preview-04-2026",
+      "litellm_provider": "vertex_ai",
       "model_name": "deep-research-preview-04-2026",
-      "max_input_tokens": 1048576,
-      "max_output_tokens": 65536,
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
       "input_cost_per_token": 2e-06,
       "output_cost_per_token": 1.2e-05,
       "supports_reasoning": null,
-      "supports_vision": true,
-      "supports_function_calling": false,
-      "supports_prompt_caching": false,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
       "supports_tool_choice": null,
-      "supports_response_schema": false,
+      "supports_response_schema": null,
       "mode": "chat",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/completions",
-        "/v1/batch"
-      ]
+      "source": "https://cloud.google.com/model-garden/pricing",
+      "supported_endpoints": []
     }
   },
   {
@@ -292648,26 +292644,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
     "litellm": {
-      "litellm_key": "gemini/deep-research-preview-04-2026",
-      "litellm_provider": "gemini",
+      "litellm_key": "vertex_ai/deep-research-preview-04-2026",
+      "litellm_provider": "vertex_ai",
       "model_name": "deep-research-preview-04-2026",
-      "max_input_tokens": 1048576,
-      "max_output_tokens": 65536,
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
       "input_cost_per_token": 2e-06,
       "output_cost_per_token": 1.2e-05,
       "supports_reasoning": null,
-      "supports_vision": true,
-      "supports_function_calling": false,
-      "supports_prompt_caching": false,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
       "supports_tool_choice": null,
-      "supports_response_schema": false,
+      "supports_response_schema": null,
       "mode": "chat",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/completions",
-        "/v1/batch"
-      ]
+      "source": "https://cloud.google.com/model-garden/pricing",
+      "supported_endpoints": []
     }
   },
   {
