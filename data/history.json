@@ -1,5 +1,518 @@
 [
   {
+    "event_id": "1c062165d7afb76a",
+    "type": "new_model",
+    "model_id": "Ling-3.2-flash",
+    "provider": "Bailing",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "Pricing unavailable",
+    "alerted": true
+  },
+  {
+    "event_id": "9cfbb86507c89ece",
+    "type": "new_model",
+    "model_id": "Ling-3.1-flash",
+    "provider": "Bailing",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.3 in / $0.9 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b36de4a2781e7225",
+    "type": "model_became_free",
+    "model_id": "deepseek-v4-1-flash-1017",
+    "provider": "AbliteratedLLM, Alibaba Token Plan, Alibaba Token Plan (China), Charm Hyper, CheapestToken, Cortecs, DevPass (LLM Gateway), DigitalOcean, EmpirioLabs AI, GreenPT, Hopper, Huawei Cloud MAAS, Liquid Inference, Melious, Mistral, Ollama Cloud, Requesty, SCX.ai, Scaleway, Venice AI, Wafer, Wally, Watt Cloud, cheapllm.shop, engy",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "Was $0/0 per 1M, now free",
+    "alerted": true
+  },
+  {
+    "event_id": "7c0ee8ae46aa0622",
+    "type": "new_model",
+    "model_id": "minimax-m-3-0",
+    "provider": "Tencent Token Plan",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.31527479 in / $1.26109917 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "591d1d9c10c31d54",
+    "type": "new_model",
+    "model_id": "hf:Qwen/Qwen3.8-27B",
+    "provider": "Synthetic",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.45 in / $3.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "481823387190b3c9",
+    "type": "new_model",
+    "model_id": "hf:moonshotai/Kimi-K3.1-Pro",
+    "provider": "Synthetic",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ccfd8c8515c816f7",
+    "type": "new_model",
+    "model_id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+    "provider": "Doubleword",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.5 in / $2.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d2245ba0fee2035d",
+    "type": "new_model",
+    "model_id": "meta-models/Muse-Glimmer-30B",
+    "provider": "Doubleword",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.11 in / $0.32 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "cd83b59ec526a202",
+    "type": "new_model",
+    "model_id": "Qwen/Qwen3.5-35B-A3B-FP8-dottxt",
+    "provider": "Doubleword",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.35 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8c90419abcdb9729",
+    "type": "new_model",
+    "model_id": "deepseek-v4.1-flash-1017-tl5",
+    "provider": "AKI.IO",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.279125 in / $1.1165 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "35bfd8a5599e6a27",
+    "type": "new_model",
+    "model_id": "kolibri-1-tl5",
+    "provider": "AKI.IO",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.167475 in / $0.614075 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8a6cddc2fb3d1114",
+    "type": "model_became_free",
+    "model_id": "deepseek-flash",
+    "provider": "302.AI, DeepSeek, DotHoosh, RuAPI, SenseNova (China)",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "Was $0.15/0.6 per 1M, now free",
+    "alerted": true
+  },
+  {
+    "event_id": "1c6686a42c64cf30",
+    "type": "new_model",
+    "model_id": "regolo/qwen3.5-122b",
+    "provider": "Inference Cooperative",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.7 in / $3.94 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c15380093c82873a",
+    "type": "new_model",
+    "model_id": "regolo/apertus-70b",
+    "provider": "Inference Cooperative",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$1.16 in / $3.94 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "4dde7b38ca2aceb0",
+    "type": "new_model",
+    "model_id": "greenpt/glm-5.3",
+    "provider": "Inference Cooperative",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$1.1 in / $4.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "46fd09abe759acfa",
+    "type": "new_model",
+    "model_id": "greenpt/glm-5.3-flash",
+    "provider": "Inference Cooperative",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.11 in / $0.44 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "7f13417323110f6a",
+    "type": "new_model",
+    "model_id": "tinfoil/deepseek-v4-1-flash",
+    "provider": "Inference Cooperative",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.65 in / $1.45 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b2c0bb005196482f",
+    "type": "new_model",
+    "model_id": "tinfoil/gpt-oss-120b",
+    "provider": "Inference Cooperative",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "92ec0561c9de4bf9",
+    "type": "new_model",
+    "model_id": "tinfoil/glm-5.3",
+    "provider": "Inference Cooperative",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$1.8 in / $5.75 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f8814d263564aeea",
+    "type": "new_model",
+    "model_id": "ornith/ornith-1.5-122b",
+    "provider": "CommandCode",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.16 in / $0.64 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "05da64d7b3aed96a",
+    "type": "new_free_model",
+    "model_id": "stealth/glyph-cluster:free",
+    "provider": "CommandCode",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "857eae434cfd2c9b",
+    "type": "new_free_model",
+    "model_id": "poolside/laguna-s-2.1-free",
+    "provider": "CommandCode",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e4b7d03c876acb94",
+    "type": "new_model",
+    "model_id": "umans-kimi-k3.1-pro",
+    "provider": "Umans AI, Umans AI Coding Plan",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "461f61b12e669b0c",
+    "type": "new_model",
+    "model_id": "kimi-k2.7-code:web",
+    "provider": "Moneo",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.75 in / $4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c33e9056a7dfe807",
+    "type": "new_model",
+    "model_id": "deepseek-v4-flash:web",
+    "provider": "Moneo",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.15 in / $0.3 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "343046028d30cd3a",
+    "type": "new_model",
+    "model_id": "qwen3-235b:web",
+    "provider": "Moneo",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.4 in / $3 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d85a8027afd89f1f",
+    "type": "new_model",
+    "model_id": "gemma-4-31b:web",
+    "provider": "Moneo",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.15 in / $0.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "cc8ea2e746790fc0",
+    "type": "new_model",
+    "model_id": "MiniMax-M2.7:web",
+    "provider": "Moneo",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.35 in / $1.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a231adeea1379b1b",
+    "type": "new_model",
+    "model_id": "qwen/qwen3.6-35b-a3b-eu",
+    "provider": "SOKKAN Router",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.2 in / $1.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "91f1a46cdafd7171",
+    "type": "new_model",
+    "model_id": "sparrow/auto",
+    "provider": "SparrowCodes",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "Pricing unavailable",
+    "alerted": true
+  },
+  {
+    "event_id": "9be4f0026b99c542",
+    "type": "new_model",
+    "model_id": "qwen3-coder-30b-a3b",
+    "provider": "OpenCheap",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.0011 in / $0.0042 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "5e870aedf5e60512",
+    "type": "new_model",
+    "model_id": "devstral-2-123b",
+    "provider": "OpenCheap",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.006 in / $0.03 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "22b05548c354dc50",
+    "type": "new_model",
+    "model_id": "qwen3-235b-a22b-2507",
+    "provider": "OpenCheap",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.0021 in / $0.012 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ea62e4af240bcb5a",
+    "type": "new_model",
+    "model_id": "mistral-small-3.2-24b",
+    "provider": "OpenCheap",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.021 in / $0.054 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "2bc94610e1895aa7",
+    "type": "new_model",
+    "model_id": "qwen3-next-80b-a3b",
+    "provider": "OpenCheap",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.0013 in / $0.016 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "be1325e810497099",
+    "type": "new_model",
+    "model_id": "qwen3-coder-480b",
+    "provider": "Phase Router",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.312 in / $1.04 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "32d3aeca2b1f0e42",
+    "type": "new_model",
+    "model_id": "DeepSeek-V4-Flash-0423",
+    "provider": "Wafer",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.14 in / $0.28 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "7f475b4548d17309",
+    "type": "new_model",
+    "model_id": "nw-small-flex",
+    "provider": "Neuralwatt",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.2925 in / $2.08 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "4b091bb60e075e87",
+    "type": "new_model",
+    "model_id": "nw-flash-flex",
+    "provider": "Neuralwatt",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.0975 in / $0.39 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "06e115329d1dbcd8",
+    "type": "new_model",
+    "model_id": "nw-flash",
+    "provider": "Neuralwatt",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e5eabc14c8c973c6",
+    "type": "new_model",
+    "model_id": "kimi-k3.1-pro-flex",
+    "provider": "Neuralwatt",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$1.3 in / $6.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8b1f8d76649df55b",
+    "type": "new_model",
+    "model_id": "nw-large-flex",
+    "provider": "Neuralwatt",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$1.3 in / $6.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "322537808b7eae75",
+    "type": "new_model",
+    "model_id": "nw-small",
+    "provider": "Neuralwatt",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.45 in / $3.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6f46db6a6985ad01",
+    "type": "new_model",
+    "model_id": "nw-large",
+    "provider": "Neuralwatt",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3369aee366ab23bc",
+    "type": "new_model",
+    "model_id": "deepseek-v4.1-flash-speed",
+    "provider": "Neuralwatt",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "99cbf6de3cbed200",
+    "type": "new_model",
+    "model_id": "qwen3-30b-a3b-fp8",
+    "provider": "ZeroGPU",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.1 in / $0.45 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "0f2675c5991e7fe5",
+    "type": "new_model",
+    "model_id": "llama-3.1-8b-instruct-fast",
+    "provider": "ZeroGPU",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.15 in / $0.28 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6b32c5989847861a",
+    "type": "new_model",
+    "model_id": "gemini-omni-flash-preview",
+    "provider": "Google",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$1.5 in / $17.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "57953ebd03cbf951",
+    "type": "new_model",
+    "model_id": "infer/gpt-6.1-sol:low-cost",
+    "provider": "Infer by Flow7",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.24 in / $0.89 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9728edb1bc4fc5e7",
+    "type": "new_model",
+    "model_id": "infer/claude-opus-5-5:low-cost",
+    "provider": "Infer by Flow7",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$1.97 in / $9.81 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "5d584f23e56b1842",
+    "type": "new_model",
+    "model_id": "infer/claude-fable-5-1:low-cost",
+    "provider": "Infer by Flow7",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$4.91 in / $24.53 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "5c29594c84005ed8",
+    "type": "new_model",
+    "model_id": "infer/claude-sonnet-5-5:low-cost",
+    "provider": "Infer by Flow7",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.99 in / $4.91 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "5a9d4636a232330c",
+    "type": "new_model",
+    "model_id": "infer/gemini-3.8-flash:low-cost",
+    "provider": "Infer by Flow7",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.45 in / $2.21 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "376c4532fc05a276",
+    "type": "new_model",
+    "model_id": "infer/gemini-3.1-pro-preview:low-cost",
+    "provider": "Infer by Flow7",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$1.18 in / $5.3 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b81f67331a450134",
+    "type": "new_model",
+    "model_id": "infer/grok-4.7:low-cost",
+    "provider": "Infer by Flow7",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.44 in / $1.3 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "14d8586aaa62dcf6",
+    "type": "new_model",
+    "model_id": "infer/gpt-6-astra:low-cost",
+    "provider": "Infer by Flow7",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$1.18 in / $4.42 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "274f32a5c8c951b3",
+    "type": "new_model",
+    "model_id": "qwen3.5-397b",
+    "provider": "Adaption",
+    "detected_at": "2026-11-14T21:32:27.564394+00:00",
+    "details": "$0.55 in / $3.5 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "2a74c5f8ace0ac18",
     "type": "new_model",
     "model_id": "Qwen/Qwen3.5-35B-A3B-FP8",
