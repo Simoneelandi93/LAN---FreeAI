@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "2bec4eef3c7c2ff7",
+    "type": "new_model",
+    "model_id": "deepseek-v4.1-flash-1017-economy",
+    "provider": "Charm Hyper",
+    "detected_at": "2026-11-14T01:03:55.240016+00:00",
+    "details": "$0.2 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1ee6bb729b91192c",
+    "type": "new_free_model",
+    "model_id": "inclusionai/ling-3.2-flash:free",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-14T01:03:55.240016+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "f097cff924756598",
     "type": "new_model",
     "model_id": "flexai/gpt-oss-20b@eu",
