@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "7505e60ec4a04226",
+    "type": "new_model",
+    "model_id": "cline-pass/minimax-m3.1-flash",
+    "provider": "ClinePass",
+    "detected_at": "2026-11-14T22:03:41.895206+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "068a6661c3f5e4b2",
+    "type": "new_model",
+    "model_id": "cline-pass/deepseek-v4.1-flash-1017",
+    "provider": "ClinePass",
+    "detected_at": "2026-11-14T22:03:41.895206+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "00b12eeefff749f6",
+    "type": "new_model",
+    "model_id": "cline-pass/kimi-k3.1-pro",
+    "provider": "ClinePass",
+    "detected_at": "2026-11-14T22:03:41.895206+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "1c062165d7afb76a",
     "type": "new_model",
     "model_id": "Ling-3.2-flash",
