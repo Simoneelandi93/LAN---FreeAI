@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "4fb0f785986865ba",
+    "type": "new_model",
+    "model_id": "inkling-2-small",
+    "provider": "Cortecs",
+    "detected_at": "2026-11-14T18:04:01.169684+00:00",
+    "details": "$0.306 in / $1.023 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "2bec4eef3c7c2ff7",
     "type": "new_model",
     "model_id": "deepseek-v4.1-flash-1017-economy",
