@@ -1,5 +1,77 @@
 [
   {
+    "event_id": "04aa99b1ddea4a40",
+    "type": "price_change",
+    "model_id": "gemini-2.5-flash-image",
+    "provider": "302.AI, AIHubMix, Abacus, Google, Qiniu, Vertex",
+    "detected_at": "2026-11-15T23:04:13.278079+00:00",
+    "details": "Input: $0.3 -> $0.3; output: $30 -> $2.499",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "559f10ec7db6cb2d",
+    "type": "price_change",
+    "model_id": "gpt-image-2",
+    "provider": "AIHubMix, Azure, Azure Cognitive Services, Kenari, OpenAI",
+    "detected_at": "2026-11-15T23:04:13.278079+00:00",
+    "details": "Input: $5 -> $5; output: $30 -> $10",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "3ec48bc550dd4ece",
+    "type": "price_change",
+    "model_id": "openai/gpt-image-2",
+    "provider": "DigitalOcean, FastRouter, Poe, Vercel AI Gateway",
+    "detected_at": "2026-11-15T23:04:13.278079+00:00",
+    "details": "Input: $5 -> $5; output: $30 -> $0",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "a8b26dbf161d57ba",
+    "type": "price_change",
+    "model_id": "gpt-image-2.5-flare",
+    "provider": "AIHubMix, Azure, Azure Cognitive Services",
+    "detected_at": "2026-11-15T23:04:13.278079+00:00",
+    "details": "Input: $5 -> $5; output: $30 -> $10",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "358d54d7c927ddbb",
+    "type": "price_change",
+    "model_id": "gpt-image-2.5-sunburst",
+    "provider": "AIHubMix, Azure, Azure Cognitive Services",
+    "detected_at": "2026-11-15T23:04:13.278079+00:00",
+    "details": "Input: $5 -> $5; output: $30 -> $10",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "2ab4acf7f4998529",
+    "type": "price_change",
+    "model_id": "gemini-nano-banana-2.1",
+    "provider": "Vertex",
+    "detected_at": "2026-11-15T23:04:13.278079+00:00",
+    "details": "Input: $1.5 -> $1.5; output: $30 -> $7.5",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "2db3156de917c4bb",
     "type": "price_change",
     "model_id": "google/gemma-4-26b-a4b-it",
