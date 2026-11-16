@@ -1,5 +1,59 @@
 [
   {
+    "event_id": "35ad3e86fb1601fb",
+    "type": "new_model",
+    "model_id": "gemini/gemini-4-hydrogen",
+    "provider": "CrossModel",
+    "detected_at": "2026-11-16T06:54:43.222414+00:00",
+    "details": "$1.5 in / $7.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "2d8dda6047d2b338",
+    "type": "new_model",
+    "model_id": "qwen/qwen4-max:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-16T06:54:43.222414+00:00",
+    "details": "$1.5 in / $4.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c6fe8067291329b9",
+    "type": "new_model",
+    "model_id": "qwen/qwen4-max",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-16T06:54:43.222414+00:00",
+    "details": "$1.5 in / $4.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f4f7f1669817394c",
+    "type": "new_model",
+    "model_id": "lyber/deepseek-v4.1-flash-1017-abliterated",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-16T06:54:43.222414+00:00",
+    "details": "$0.29 in / $0.99 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f60545b6a62cefdd",
+    "type": "new_model",
+    "model_id": "lyber/kimi-k3.1-pro-abliterated",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-16T06:54:43.222414+00:00",
+    "details": "$4 in / $15 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6b853c626a2c73c6",
+    "type": "new_model",
+    "model_id": "alibaba/qwen4-max",
+    "provider": "Vercel AI Gateway",
+    "detected_at": "2026-11-16T06:54:43.222414+00:00",
+    "details": "$1.5 in / $4.5 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "6c0a6908b726a90c",
     "type": "new_model",
     "model_id": "qwen4-max",
