@@ -1,6 +1,6 @@
 {
-  "etag": "W/\"d0c9fda3d4631a32ac979f0b21c8cd0f\"",
-  "fetched_at": "2026-11-16T03:05:30.593090+00:00",
+  "etag": "W/\"e982873ea5ffd24c9cb0e02e5dfa24a1\"",
+  "fetched_at": "2026-11-16T03:37:16.843891+00:00",
   "payload": {
     "title": "Free Inference",
     "tagline": "Free AI & LLM inference you can build with: an API key, a CLI login, or inference bundled inside a coding tool or builder. Speech-to-text, voice synthesis, code, vision, and reasoning. The test is whether you can ship an artifact you keep — code, an app, an audio file, a site, a design, an agent, a skill. Chat-only free tiers are excluded on purpose.",
@@ -20,6 +20,32 @@
       "Notes"
     ],
     "providers": [
+      {
+        "name": "Synap by Linkrra",
+        "url": "https://synap402.com/ai/account.html",
+        "free_type": "Rate-limited free",
+        "notes": "Synap provides a no-card free tier for qwen3-coder-30b through an OpenAI-compatible API. Google or email sign-in grants 100,000 tokens and 50 requests per day, with a 10 requests/minute per-key limit. Prompts and completions are not stored or used for training. Allowances reset daily at 00:00 UTC and are limited per account and network address.",
+        "timeout": "Not published",
+        "verified": "2026-11-15",
+        "models": [
+          {
+            "name": "qwen3-coder-30b",
+            "cost": "$0",
+            "context": "98.3K",
+            "rpm": "10",
+            "tpm": "Not published",
+            "rpd": "50",
+            "tpd": "100,000",
+            "verified": "2026-11-15"
+          }
+        ],
+        "verified_method": "api",
+        "docs_url": "https://synap402.com/api/account/free-tier",
+        "access_method": "api_key",
+        "artifact": "code",
+        "base_url": "https://synap402.com/v1",
+        "channel": "web"
+      },
       {
         "name": "OpenCode Zen",
         "url": "https://opencode.ai/v2/docs/console/models/",
@@ -4426,6 +4452,6 @@
         "artifact": "agent/app"
       }
     ],
-    "data_version": "67b559d1460d"
+    "data_version": "a49c8a8e8f24"
   }
 }
