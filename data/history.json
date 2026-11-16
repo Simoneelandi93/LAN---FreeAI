@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "dcc6aae1b18464fb",
+    "type": "new_free_model",
+    "model_id": "hy4-flash-free",
+    "provider": "OpenCode, OpenCode Go",
+    "detected_at": "2026-11-16T07:09:14.544045+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "35ad3e86fb1601fb",
     "type": "new_model",
     "model_id": "gemini/gemini-4-hydrogen",
