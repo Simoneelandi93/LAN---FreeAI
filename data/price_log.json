@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "7addf2a9b88fa8cc",
+    "type": "price_change",
+    "model_id": "reflection-ai/beam-1.0-501b-a23b",
+    "provider": "Cloudflare AI Gateway",
+    "detected_at": "2026-11-16T19:32:32.840747+00:00",
+    "details": "Input: $0 -> $0.3; output: $0 -> $1",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "a588f152d7cbfb1f",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4.1-flash-1017",
