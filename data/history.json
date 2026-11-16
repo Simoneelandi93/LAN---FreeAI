@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "3744bfaba94a6013",
+    "type": "new_model",
+    "model_id": "muse-wonder-full-1-0",
+    "provider": "Kenari",
+    "detected_at": "2026-11-16T21:32:41.206428+00:00",
+    "details": "$4.8 in / $24 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "7490c4a61a7cc567",
+    "type": "new_free_model",
+    "model_id": "beam-1-0:free",
+    "provider": "Kenari",
+    "detected_at": "2026-11-16T21:32:41.206428+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9ac825d1b63c1847",
+    "type": "new_model",
+    "model_id": "hy4-flash",
+    "provider": "Kenari",
+    "detected_at": "2026-11-16T21:32:41.206428+00:00",
+    "details": "$0.07142857 in / $0.28571429 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "36f3e0b112f02b9b",
+    "type": "new_free_model",
+    "model_id": "particle-1:free",
+    "provider": "Kenari",
+    "detected_at": "2026-11-16T21:32:41.206428+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "1f8ed435b51f29db",
     "type": "new_model",
     "model_id": "kimi-k3.1-pro@eu",
