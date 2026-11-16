@@ -14357,7 +14357,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "llmgateway/gemini-3.8-flash",
@@ -15302,7 +15303,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 4.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmgateway/"
+    "source_url": "https://models.dev/providers/llmgateway/",
+    "llm_stats_id": "qwen4-max"
   },
   {
     "id": "llmgateway/claude-opus-5-5",
@@ -66417,7 +66419,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "llmgateway-providers/google-ai-studio/gemini-3.8-flash",
@@ -72387,7 +72390,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "llmgateway-providers/google-vertex/gemini-3.8-flash",
@@ -94626,6 +94630,7 @@
         "/v1/chat/completions"
       ]
     },
+    "llm_stats_id": "gemini-4-hydrogen",
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -103415,6 +103420,7 @@
     "output_price_per_m": 4.5,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "qwen4-max",
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -112915,6 +112921,7 @@
     "output_price_per_m": 0.1405,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "hy4-flash",
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -126862,7 +126869,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "google/gemini-3.8-flash",
@@ -132715,7 +132723,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "ofox/google/gemini-3.8-flash",
@@ -153730,7 +153739,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "openrouter/google/gemini-3.8-flash",
@@ -159220,7 +159230,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 4.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/openrouter/"
+    "source_url": "https://models.dev/providers/openrouter/",
+    "llm_stats_id": "qwen4-max"
   },
   {
     "id": "openrouter/qwen/qwen3.7-max",
@@ -227590,7 +227601,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "merge-gateway/google/gemini-3.8-flash",
@@ -261750,7 +261762,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "vercel/google/gemini-3.8-flash",
@@ -267975,7 +267988,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 4.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "qwen4-max"
   },
   {
     "id": "vercel/alibaba/qwen3.7-max",
@@ -274578,7 +274592,8 @@
     "input_price_per_m": 0.035,
     "output_price_per_m": 0.1405,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "hy4-flash"
   },
   {
     "id": "vercel/zai/glm-5.2",
@@ -287437,7 +287452,8 @@
     "input_price_per_m": 1.65,
     "output_price_per_m": 8.25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "edenai/vertex/gemini-nano-banana-2.1",
@@ -287843,7 +287859,8 @@
     "input_price_per_m": 1.65,
     "output_price_per_m": 8.25,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "edenai/vertex/gemini-3.1-flash-lite",
@@ -288391,7 +288408,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "edenai/vertex/gemini-3.8-flash",
@@ -291592,7 +291610,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "edenai/google/gemini-3.8-flash",
@@ -297030,7 +297049,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 4.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/edenai/"
+    "source_url": "https://models.dev/providers/edenai/",
+    "llm_stats_id": "qwen4-max"
   },
   {
     "id": "edenai/qwen/deepseek-v4-pro-0813",
@@ -309260,7 +309280,8 @@
     "input_price_per_m": 1.875,
     "output_price_per_m": 5.625,
     "is_free": false,
-    "source_url": "https://models.dev/providers/venice/"
+    "source_url": "https://models.dev/providers/venice/",
+    "llm_stats_id": "qwen4-max"
   },
   {
     "id": "venice/minimax-m3-preview",
@@ -309909,7 +309930,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "venice/google-gemma-4-26b-a4b-it",
@@ -315180,7 +315202,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": true,
-    "source_url": "https://models.dev/providers/opencode/"
+    "source_url": "https://models.dev/providers/opencode/",
+    "llm_stats_id": "hy4-flash"
   },
   {
     "id": "opencode/gemini-3-flash",
@@ -317344,7 +317367,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "opencode/gemini-3.8-flash",
@@ -342453,7 +342477,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "crossmodel/gemini/gemini-3.8-flash",
@@ -342844,7 +342869,8 @@
     "input_price_per_m": 1.6,
     "output_price_per_m": 4.8,
     "is_free": false,
-    "source_url": "https://models.dev/providers/crossmodel/"
+    "source_url": "https://models.dev/providers/crossmodel/",
+    "llm_stats_id": "qwen4-max"
   },
   {
     "id": "crossmodel/qwen/qwen3.7-max",
@@ -344081,7 +344107,8 @@
     "input_price_per_m": 0.08,
     "output_price_per_m": 0.32,
     "is_free": false,
-    "source_url": "https://models.dev/providers/crossmodel/"
+    "source_url": "https://models.dev/providers/crossmodel/",
+    "llm_stats_id": "hy4-flash"
   },
   {
     "id": "crossmodel/deepseek/deepseek-v4.1-flash",
@@ -351392,7 +351419,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "nano-gpt/google/gemini-3.8-flash",
@@ -360515,7 +360543,7 @@
     "output_price_per_m": 4.5,
     "is_free": false,
     "source_url": "https://models.dev/providers/nano-gpt/",
-    "llm_stats_id": "qwen3-max-thinking"
+    "llm_stats_id": "qwen4-max"
   },
   {
     "id": "nano-gpt/qwen/qwen3.5-omni-flash",
@@ -360599,7 +360627,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 4.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/nano-gpt/"
+    "source_url": "https://models.dev/providers/nano-gpt/",
+    "llm_stats_id": "qwen4-max"
   },
   {
     "id": "nano-gpt/qwen/qwen3.7-flash:thinking",
@@ -391697,7 +391726,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "google-vertex/gemini-3.8-flash",
@@ -410006,7 +410036,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "github-copilot/gemini-3.8-flash",
@@ -411375,7 +411406,8 @@
     "input_price_per_m": 0,
     "output_price_per_m": 0,
     "is_free": false,
-    "source_url": "https://models.dev/providers/opencode-go/"
+    "source_url": "https://models.dev/providers/opencode-go/",
+    "llm_stats_id": "hy4-flash"
   },
   {
     "id": "opencode-go/minimax-m2.7",
@@ -412167,7 +412199,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 4.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/opencode-go/"
+    "source_url": "https://models.dev/providers/opencode-go/",
+    "llm_stats_id": "qwen4-max"
   },
   {
     "id": "opencode-go/mimo-v2.5",
@@ -417132,7 +417165,8 @@
       "supported_endpoints": [
         "/v1/chat/completions"
       ]
-    }
+    },
+    "llm_stats_id": "gemini-4-hydrogen"
   },
   {
     "id": "cortecs/gemini-3.8-flash",
@@ -422233,7 +422267,8 @@
     "input_price_per_m": 1.5,
     "output_price_per_m": 4.5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/empiriolabs/"
+    "source_url": "https://models.dev/providers/empiriolabs/",
+    "llm_stats_id": "qwen4-max"
   },
   {
     "id": "empiriolabs/qwen3-7-max",
