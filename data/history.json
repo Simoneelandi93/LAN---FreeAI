@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "6f655d6bc469d273",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017-abliterated:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-16T19:03:45.494872+00:00",
+    "details": "$0.375 in / $1.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6ecc2b0223cc5487",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017-abliterated",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-16T19:03:45.494872+00:00",
+    "details": "$0.375 in / $1.5 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "4112fc63f2e14f14",
     "type": "new_model",
     "model_id": "tencent/hy4-flash",
