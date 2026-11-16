@@ -1,7 +1,27 @@
 {
-  "etag": "W/\"6b291d77aabb25737a0affa38990dcf7\"",
-  "fetched_at": "2026-11-16T02:34:19.695433+00:00",
+  "etag": "W/\"d1c1691dc53e968fbf1339a9507b92c7\"",
+  "fetched_at": "2026-11-16T03:05:31.735785+00:00",
   "events": [
+    {
+      "id": "openrouter:qwen/qwen4-max:listing",
+      "modelKey": "qwen:qwen4max",
+      "modelId": "qwen4-max",
+      "name": "Qwen4 Max",
+      "provider": "Qwen",
+      "type": "listing",
+      "releasedAt": null,
+      "listedAt": "2026-11-16",
+      "availability": "openrouter",
+      "summary": "Listed on OpenRouter. This catalog listing does not establish the original release date.",
+      "sourceId": "openrouter",
+      "sourceUrl": "https://openrouter.ai/qwen/qwen4-max",
+      "evidence": "OpenRouter model ID: qwen/qwen4-max",
+      "firstSeenAt": "2026-11-16T02:54:00.553Z",
+      "publishedAt": "2026-11-16T02:54:00.553Z",
+      "updatedAt": "2026-11-16T02:54:00.553Z",
+      "revision": 1,
+      "baseline": false
+    },
     {
       "id": "openrouter:google/gemini-4-hydrogen:listing",
       "modelKey": "google:gemini4hydrogen",
