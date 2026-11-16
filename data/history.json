@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "4112fc63f2e14f14",
+    "type": "new_model",
+    "model_id": "tencent/hy4-flash",
+    "provider": "CrossModel, Kilo Gateway, Vercel AI Gateway",
+    "detected_at": "2026-11-16T12:43:12.155446+00:00",
+    "details": "$0.035 in / $0.1405 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "44af8b60dba75f90",
+    "type": "new_model",
+    "model_id": "TEE/inkling-2-small",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-16T12:43:12.155446+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "427f7e965e699a1e",
+    "type": "new_model",
+    "model_id": "hyperresearch/ousia-1",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-16T12:43:12.155446+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "dcc6aae1b18464fb",
     "type": "new_free_model",
     "model_id": "hy4-flash-free",

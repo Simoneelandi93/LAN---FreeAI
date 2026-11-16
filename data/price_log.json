@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "283f75f31e17fc5b",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Arcee, Infersia, IteraCompute, Kilo Gateway, Kitani, Klavo AI, LLM Gateway, Merge Gateway, Modular, NEAR AI Cloud, NanoGPT, Novita AI, Ofox, OpenRouter, Phala, Prime Inference, Vercel AI Gateway",
+    "detected_at": "2026-11-16T12:43:12.155446+00:00",
+    "details": "Input: $0.04368 -> $0.036; output: $0.55 -> $0.5",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "3ba2b0bf6a154dd2",
+    "type": "price_change",
+    "model_id": "kimi-k3.1-pro-highspeed",
+    "provider": "DevPass (LLM Gateway), Moonshot AI, Moonshot AI (China), Requesty, Venice AI",
+    "detected_at": "2026-11-16T12:43:12.155446+00:00",
+    "details": "Input: $3.8874 -> $3.8; output: $20 -> $19",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "e3226d0bf98610f5",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.5-9b",
+    "provider": "Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, Mixlayer, NanoGPT, OpenRouter, SiliconFlow, SiliconFlow (China), TensorX, Thinking Machines, Together AI",
+    "detected_at": "2026-11-16T12:43:12.155446+00:00",
+    "details": "Input: $0.045 -> $0.05; output: $0.066 -> $0.13",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "05fefe257186fe9e",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-16T12:43:12.155446+00:00",
+    "details": "Input: $0.041 -> $0.064; output: $0.124 -> $0.193",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "4130c0c10e6d93eb",
     "type": "price_change",
     "model_id": "moonshotai/kimi-k3.1-pro",
