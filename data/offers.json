@@ -1552,8 +1552,8 @@
     "status": "active",
     "source_url": "https://synap402.com/ai/account.html",
     "base_url": "https://synap402.com/v1",
-    "notes": "Synap provides a no-card free tier for qwen3-coder-30b through an OpenAI-compatible API. Google or email sign-in grants 100,000 tokens and 50 requests per day, with a 10 requests/minute per-key limit. Prompts and completions are not stored or used for training. Allowances reset daily at 00:00 UTC and are limited per account and network address. | access: api_key | verified: api",
-    "checked_at": "2026-11-15",
+    "notes": "Synap provides a no-card free tier for qwen3-coder-30b through an OpenAI-compatible API. Google or email sign-in grants 100,000 tokens and 50 requests per day, with a 10 requests/minute per-key limit. Prompts and completions are not stored or used for training. Allowances reset daily at 00:00 UTC and are limited per account and network address. | access: api_key | verified: live-probe",
+    "checked_at": "2026-11-16",
     "data_source": "freeinference"
   },
   {
@@ -1994,7 +1994,7 @@
     "status": "active",
     "source_url": "https://speka.me",
     "base_url": "https://speka.me/v1",
-    "notes": "Speka provides a recurring .00 monthly credit allowance that resets on the first of each month. Developers query all open catalog models (DeepSeek, Llama 3.2) via an OpenAI-compatible endpoint with a single API key created at signup without a credit card. Usage is capped at 10 RPM and billed at standard per-token rates, returning HTTP 402 once exhausted until the next monthly refresh. | access: api_key | verified: docs | quota: not published",
+    "notes": "Speka provides a recurring $1.00 monthly credit allowance that resets on the first of each month. Developers query all open catalog models (DeepSeek, Llama 3.2) via an OpenAI-compatible endpoint with a single API key created at signup without a credit card. Usage is capped at 10 RPM and billed at standard per-token rates, returning HTTP 402 once exhausted until the next monthly refresh. | access: api_key | verified: docs | quota: not published",
     "checked_at": "2026-11-15",
     "data_source": "freeinference"
   },
