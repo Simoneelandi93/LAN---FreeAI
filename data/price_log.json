@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "f09b37030d879462",
+    "type": "price_change",
+    "model_id": "nemotron-3.5-content-safety",
+    "provider": "Vultr",
+    "detected_at": "2026-11-16T20:32:40.520735+00:00",
+    "details": "Input: $0 -> $0.05; output: $0 -> $0.15",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "53eedcb97cb331a4",
+    "type": "price_change",
+    "model_id": "deepseek-v4.1-flash-1017@eu",
+    "provider": "Requesty",
+    "detected_at": "2026-11-16T20:32:40.520735+00:00",
+    "details": "Input: $0.5 -> $0.35; output: $1.5 -> $1.32",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "c7a552884afa6f17",
+    "type": "price_change",
+    "model_id": "nemotron-3-nano-omni",
+    "provider": "DigitalOcean",
+    "detected_at": "2026-11-16T20:32:40.520735+00:00",
+    "details": "Input: $0.06 -> $0.5; output: $0.24 -> $0.9",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "a68f338d5e37f7dc",
+    "type": "price_change",
+    "model_id": "nemotron-3-super-120b-a12b",
+    "provider": "Kenari",
+    "detected_at": "2026-11-16T20:32:40.520735+00:00",
+    "details": "Input: $0 -> $0.09714286; output: $0 -> $0.48",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "7addf2a9b88fa8cc",
     "type": "price_change",
     "model_id": "reflection-ai/beam-1.0-501b-a23b",
