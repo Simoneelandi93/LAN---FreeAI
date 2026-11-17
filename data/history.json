@@ -1,5 +1,104 @@
 [
   {
+    "event_id": "e38bb9d47b483940",
+    "type": "new_model",
+    "model_id": "gemini-3-8-flash-lite-tts",
+    "provider": "Kenari",
+    "detected_at": "2026-11-17T12:34:58.336148+00:00",
+    "details": "Pricing unavailable",
+    "alerted": true
+  },
+  {
+    "event_id": "24d5434f098186e7",
+    "type": "new_model",
+    "model_id": "canopywave/glm-5.3",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T12:34:58.336148+00:00",
+    "details": "$1.4 in / $4.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f6367fcc2d59d195",
+    "type": "new_model",
+    "model_id": "canopywave/deepseek-v4.1-flash-1017",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T12:34:58.336148+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "2dc3b0d5985b193a",
+    "type": "new_model",
+    "model_id": "canopywave/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T12:34:58.336148+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ab07b602b5dafe6c",
+    "type": "new_model",
+    "model_id": "mistral/glm-5.3-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T12:34:58.336148+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a8040cedde9b099a",
+    "type": "new_model",
+    "model_id": "mistral/deepseek-v4.1-flash-1017",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T12:34:58.336148+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c648f1c585eaae16",
+    "type": "new_model",
+    "model_id": "mistral/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T12:34:58.336148+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "cfa16aea168a26a6",
+    "type": "new_model",
+    "model_id": "novita/hy4-preview",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T12:34:58.336148+00:00",
+    "details": "$0.834 in / $2.501 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b3858f7573297422",
+    "type": "new_model",
+    "model_id": "novita/ling-3.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T12:34:58.336148+00:00",
+    "details": "$0.3 in / $0.9 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "4589a701234a9fd6",
+    "type": "new_model",
+    "model_id": "alibaba/glm-5.3-prime",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T12:34:58.336148+00:00",
+    "details": "$2.8 in / $8.8 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "57c2ebb1073e1a05",
+    "type": "new_model",
+    "model_id": "glm-5.3-prime",
+    "provider": "DevPass (LLM Gateway)",
+    "detected_at": "2026-11-17T12:34:58.336148+00:00",
+    "details": "$2.8 in / $8.8 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "a02c6b05315711b8",
     "type": "new_free_model",
     "model_id": "kitani/clover-2",
