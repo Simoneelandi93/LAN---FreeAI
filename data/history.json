@@ -1,5 +1,113 @@
 [
   {
+    "event_id": "9fc373d5ea66c29c",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.2-astra-fast",
+    "provider": "Kilo Gateway, Vercel AI Gateway",
+    "detected_at": "2026-11-17T19:04:04.193112+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6bb33fdea6fa975d",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.2-sol",
+    "provider": "Eden AI, Kilo Gateway, Merge Gateway, OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-11-17T19:04:04.193112+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "700fdde5705e7eae",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.2-sol-fast",
+    "provider": "Kilo Gateway, Vercel AI Gateway",
+    "detected_at": "2026-11-17T19:04:04.193112+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "fe645f80f8e63eee",
+    "type": "new_model",
+    "model_id": "fireworks/minimax-m3.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T19:04:04.193112+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ecbab2d2c83bb216",
+    "type": "new_model",
+    "model_id": "flexai/gemma-4-26b-a4b-it",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T19:04:04.193112+00:00",
+    "details": "$0.06499 in / $0.2813 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f7163a0f00a6d7b8",
+    "type": "new_model",
+    "model_id": "vertex-anthropic/claude-haiku-5-5",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T19:04:04.193112+00:00",
+    "details": "$0.1 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "55ecc0d9aff51b93",
+    "type": "new_model",
+    "model_id": "vertex-anthropic/claude-sonnet-5-5",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T19:04:04.193112+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8b5edc021ca3a9c8",
+    "type": "new_model",
+    "model_id": "vertex-anthropic/claude-fable-5-2",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T19:04:04.193112+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "51fa96c8535143ff",
+    "type": "new_model",
+    "model_id": "vertex-anthropic/claude-fable-5-1",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T19:04:04.193112+00:00",
+    "details": "$10 in / $50 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f47e6f76567e33af",
+    "type": "new_model",
+    "model_id": "vertex-anthropic/claude-opus-5-5",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T19:04:04.193112+00:00",
+    "details": "$4 in / $20 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b2e1a0ffb4534933",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.2-astra-pro",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-17T19:04:04.193112+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9de6295d99bd4b4d",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.2-sol-pro",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-17T19:04:04.193112+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "6ae4aca812272f1a",
     "type": "new_model",
     "model_id": "gpt-6.2-astra",
