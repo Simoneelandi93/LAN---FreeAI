@@ -35881,7 +35881,8 @@
     "input_price_per_m": 16,
     "output_price_per_m": 80,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-6.2-astra"
   },
   {
     "id": "vercel/openai/gpt-5.4-mini-fast",
@@ -37014,7 +37015,8 @@
         "/v1/chat/completions",
         "/v1/responses"
       ]
-    }
+    },
+    "llm_stats_id": "gpt-6.2-astra"
   },
   {
     "id": "vercel/openai/gpt-4.1-fast",
@@ -37202,7 +37204,8 @@
         "/v1/chat/completions",
         "/v1/responses"
       ]
-    }
+    },
+    "llm_stats_id": "gpt-6.2-sol"
   },
   {
     "id": "vercel/openai/gpt-image-2.5-sunburst",
@@ -37389,7 +37392,8 @@
     "input_price_per_m": 4,
     "output_price_per_m": 20,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "llm_stats_id": "gpt-6.2-sol"
   },
   {
     "id": "vercel/openai/gpt-oss-120b",
@@ -235318,7 +235322,8 @@
         "/v1/chat/completions",
         "/v1/responses"
       ]
-    }
+    },
+    "llm_stats_id": "gpt-6.2-astra"
   },
   {
     "id": "openrouter/openai/gpt-4.1",
@@ -235523,7 +235528,8 @@
         "/v1/chat/completions",
         "/v1/responses"
       ]
-    }
+    },
+    "llm_stats_id": "gpt-6.2-sol"
   },
   {
     "id": "openrouter/openai/gpt-5",
@@ -277777,7 +277783,8 @@
         "/v1/chat/completions",
         "/v1/responses"
       ]
-    }
+    },
+    "llm_stats_id": "gpt-6.2-astra"
   },
   {
     "id": "merge-gateway/openai/gpt-4.1",
@@ -277931,7 +277938,8 @@
         "/v1/chat/completions",
         "/v1/responses"
       ]
-    }
+    },
+    "llm_stats_id": "gpt-6.2-sol"
   },
   {
     "id": "merge-gateway/openai/gpt-5",
@@ -326945,7 +326953,8 @@
         "/v1/chat/completions",
         "/v1/responses"
       ]
-    }
+    },
+    "llm_stats_id": "gpt-6.2-astra"
   },
   {
     "id": "edenai/openai/gpt-4.1",
@@ -327100,7 +327109,8 @@
         "/v1/chat/completions",
         "/v1/responses"
       ]
-    }
+    },
+    "llm_stats_id": "gpt-6.2-sol"
   },
   {
     "id": "edenai/openai/gpt-5",
@@ -342577,7 +342587,8 @@
         "/v1/chat/completions",
         "/v1/responses"
       ]
-    }
+    },
+    "llm_stats_id": "gpt-6.2-astra"
   },
   {
     "id": "openai/gpt-4.1",
@@ -342732,7 +342743,8 @@
         "/v1/chat/completions",
         "/v1/responses"
       ]
-    }
+    },
+    "llm_stats_id": "gpt-6.2-sol"
   },
   {
     "id": "openai/gpt-5",
@@ -408806,6 +408818,7 @@
     "output_price_per_m": 40,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "gpt-6.2-astra",
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -410585,6 +410598,7 @@
         "/v1/responses"
       ]
     },
+    "llm_stats_id": "gpt-6.2-astra",
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -410904,6 +410918,7 @@
         "/v1/responses"
       ]
     },
+    "llm_stats_id": "gpt-6.2-sol",
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -411019,6 +411034,7 @@
     "output_price_per_m": 10,
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
+    "llm_stats_id": "gpt-6.2-sol",
     "offer": {
       "id": "kilo",
       "provider": "Kilo Gateway",
@@ -464860,7 +464876,8 @@
         "/v1/chat/completions",
         "/v1/responses"
       ]
-    }
+    },
+    "llm_stats_id": "gpt-6.2-astra"
   },
   {
     "id": "opencode/minimax-m2.7",
@@ -465342,7 +465359,8 @@
         "/v1/chat/completions",
         "/v1/responses"
       ]
-    }
+    },
+    "llm_stats_id": "gpt-6.2-sol"
   },
   {
     "id": "opencode/gemini-3.5-flash",
