@@ -19403,22 +19403,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/llmgateway-providers/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -42460,22 +42462,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-cn/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -61827,22 +61831,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/vercel/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -80669,8 +80675,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
     "litellm": {
-      "litellm_key": "google.gemma-3-12b-it",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/google.gemma-3-12b-it",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "google.gemma-3-12b-it",
       "max_input_tokens": 128000,
       "max_output_tokens": 8000,
@@ -80684,7 +80690,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "gemma-3-12b-it"
   },
@@ -80719,8 +80727,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
     "litellm": {
-      "litellm_key": "google.gemma-3-4b-it",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/google.gemma-3-4b-it",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "google.gemma-3-4b-it",
       "max_input_tokens": 128000,
       "max_output_tokens": 8000,
@@ -80734,7 +80742,9 @@
       "supports_response_schema": null,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "gemma-3-4b-it"
   },
@@ -80769,8 +80779,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
     "litellm": {
-      "litellm_key": "google.gemma-3-27b-it",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/google.gemma-3-27b-it",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "google.gemma-3-27b-it",
       "max_input_tokens": 128000,
       "max_output_tokens": 8000,
@@ -80784,7 +80794,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "gemma-3-27b-it"
   },
@@ -80818,8 +80830,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
     "litellm": {
-      "litellm_key": "qwen.qwen3-coder-next",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/qwen.qwen3-coder-next",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "qwen.qwen3-coder-next",
       "max_input_tokens": 256000,
       "max_output_tokens": 16000,
@@ -80833,7 +80845,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     }
   },
   {
@@ -80914,8 +80928,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
     "litellm": {
-      "litellm_key": "zai.glm-4.7-flash",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/zai.glm-4.7-flash",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "zai.glm-4.7-flash",
       "max_input_tokens": 203000,
       "max_output_tokens": 128000,
@@ -80929,7 +80943,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "glm-4.7-flash"
   },
@@ -80964,8 +80980,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
     "litellm": {
-      "litellm_key": "moonshotai.kimi-k2.5",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/moonshotai.kimi-k2.5",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "moonshotai.kimi-k2.5",
       "max_input_tokens": 256000,
       "max_output_tokens": 16000,
@@ -80979,7 +80995,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "kimi-k2.5"
   },
@@ -81164,13 +81182,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
     "litellm": {
-      "litellm_key": "bedrock/eu-west-2/mistral.voxtral-small-24b-2507",
-      "litellm_provider": "bedrock",
-      "model_name": "eu-west-2/mistral.voxtral-small-24b-2507",
+      "litellm_key": "bedrock_mantle/mistral.voxtral-small-24b-2507",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "mistral.voxtral-small-24b-2507",
       "max_input_tokens": 32768,
       "max_output_tokens": 8192,
-      "input_cost_per_token": 1.6e-07,
-      "output_cost_per_token": 4.7e-07,
+      "input_cost_per_token": 1e-07,
+      "output_cost_per_token": 3e-07,
       "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
@@ -81178,8 +81196,10 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "chat",
-      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/eu-west-2/index.json",
-      "supported_endpoints": []
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     }
   },
   {
@@ -81327,13 +81347,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
     "litellm": {
-      "litellm_key": "bedrock/eu-west-2/mistral.voxtral-mini-3b-2507",
-      "litellm_provider": "bedrock",
-      "model_name": "eu-west-2/mistral.voxtral-mini-3b-2507",
+      "litellm_key": "bedrock_mantle/mistral.voxtral-mini-3b-2507",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "mistral.voxtral-mini-3b-2507",
       "max_input_tokens": 32768,
       "max_output_tokens": 8192,
-      "input_cost_per_token": 6e-08,
-      "output_cost_per_token": 6e-08,
+      "input_cost_per_token": 4e-08,
+      "output_cost_per_token": 4e-08,
       "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
@@ -81341,8 +81361,10 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "chat",
-      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/eu-west-2/index.json",
-      "supported_endpoints": []
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     }
   },
   {
@@ -89069,13 +89091,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/digitalocean/",
     "litellm": {
-      "litellm_key": "anthropic.claude-fable-5",
-      "litellm_provider": "bedrock_converse",
-      "model_name": "anthropic.claude-fable-5",
+      "litellm_key": "bedrock/mantle/anthropic.claude-fable-5",
+      "litellm_provider": "bedrock",
+      "model_name": "mantle/anthropic.claude-fable-5",
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
-      "input_cost_per_token": 1e-05,
-      "output_cost_per_token": 5e-05,
+      "input_cost_per_token": 1.1e-05,
+      "output_cost_per_token": 5.5e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
@@ -89685,13 +89707,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/digitalocean/",
     "litellm": {
-      "litellm_key": "anthropic.claude-opus-4-7",
-      "litellm_provider": "bedrock_converse",
-      "model_name": "anthropic.claude-opus-4-7",
+      "litellm_key": "bedrock/mantle/anthropic.claude-opus-4-7",
+      "litellm_provider": "bedrock",
+      "model_name": "mantle/anthropic.claude-opus-4-7",
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
-      "input_cost_per_token": 5e-06,
-      "output_cost_per_token": 2.5e-05,
+      "input_cost_per_token": 5.5e-06,
+      "output_cost_per_token": 2.75e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
@@ -90034,13 +90056,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/digitalocean/",
     "litellm": {
-      "litellm_key": "bedrock/us-gov-east-1/anthropic.claude-opus-4-8",
+      "litellm_key": "bedrock/mantle/anthropic.claude-opus-4-8",
       "litellm_provider": "bedrock",
-      "model_name": "us-gov-east-1/anthropic.claude-opus-4-8",
+      "model_name": "mantle/anthropic.claude-opus-4-8",
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
-      "input_cost_per_token": 6e-06,
-      "output_cost_per_token": 3e-05,
+      "input_cost_per_token": 5.5e-06,
+      "output_cost_per_token": 2.75e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
@@ -90048,7 +90070,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrockFoundationModels/current/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "claude-opus-4-8"
@@ -90084,13 +90106,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/digitalocean/",
     "litellm": {
-      "litellm_key": "bedrock/us-gov-east-1/anthropic.claude-opus-5",
+      "litellm_key": "bedrock/mantle/anthropic.claude-opus-5",
       "litellm_provider": "bedrock",
-      "model_name": "us-gov-east-1/anthropic.claude-opus-5",
+      "model_name": "mantle/anthropic.claude-opus-5",
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
-      "input_cost_per_token": 6e-06,
-      "output_cost_per_token": 3e-05,
+      "input_cost_per_token": 5.5e-06,
+      "output_cost_per_token": 2.75e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
@@ -90098,7 +90120,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrockFoundationModels/current/us-gov-east-1/index.json",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrockFoundationModels/current/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "claude-opus-5"
@@ -90234,13 +90256,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/digitalocean/",
     "litellm": {
-      "litellm_key": "bedrock_mantle/anthropic.claude-haiku-4-5",
-      "litellm_provider": "bedrock_mantle",
-      "model_name": "anthropic.claude-haiku-4-5",
+      "litellm_key": "bedrock/mantle/anthropic.claude-haiku-4-5",
+      "litellm_provider": "bedrock",
+      "model_name": "mantle/anthropic.claude-haiku-4-5",
       "max_input_tokens": 200000,
       "max_output_tokens": 64000,
-      "input_cost_per_token": 1e-06,
-      "output_cost_per_token": 5e-06,
+      "input_cost_per_token": 1.1e-06,
+      "output_cost_per_token": 5.5e-06,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
@@ -90248,7 +90270,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://aws.amazon.com/about-aws/whats-new/2025/10/claude-4-5-haiku-anthropic-amazon-bedrock",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrockFoundationModels/current/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "claude-haiku-4-5-20251001"
@@ -90415,13 +90437,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/digitalocean/",
     "litellm": {
-      "litellm_key": "bedrock_mantle/us-gov-west-1/anthropic.claude-opus-5-5",
-      "litellm_provider": "bedrock_mantle",
-      "model_name": "us-gov-west-1/anthropic.claude-opus-5-5",
+      "litellm_key": "bedrock/mantle/anthropic.claude-opus-5-5",
+      "litellm_provider": "bedrock",
+      "model_name": "mantle/anthropic.claude-opus-5-5",
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
-      "input_cost_per_token": 4.8e-06,
-      "output_cost_per_token": 2.4e-05,
+      "input_cost_per_token": 4.4e-06,
+      "output_cost_per_token": 2.2e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
@@ -119458,22 +119480,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/302ai/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -131680,22 +131704,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/azure-cognitive-services/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -141278,22 +141304,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/nano-gpt/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -153718,22 +153746,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/nano-gpt/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -169896,22 +169926,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/runcrate/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -184112,13 +184144,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "anthropic.claude-opus-4-7",
-      "litellm_provider": "bedrock_converse",
-      "model_name": "anthropic.claude-opus-4-7",
+      "litellm_key": "bedrock/mantle/anthropic.claude-opus-4-7",
+      "litellm_provider": "bedrock",
+      "model_name": "mantle/anthropic.claude-opus-4-7",
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
-      "input_cost_per_token": 5e-06,
-      "output_cost_per_token": 2.5e-05,
+      "input_cost_per_token": 5.5e-06,
+      "output_cost_per_token": 2.75e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
@@ -184468,13 +184500,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "bedrock/us-gov-east-1/anthropic.claude-sonnet-5",
+      "litellm_key": "bedrock/mantle/anthropic.claude-sonnet-5",
       "litellm_provider": "bedrock",
-      "model_name": "us-gov-east-1/anthropic.claude-sonnet-5",
+      "model_name": "mantle/anthropic.claude-sonnet-5",
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
-      "input_cost_per_token": 2.4e-06,
-      "output_cost_per_token": 1.2e-05,
+      "input_cost_per_token": 2.2e-06,
+      "output_cost_per_token": 1.1e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
@@ -184482,7 +184514,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrockFoundationModels/current/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "claude-sonnet-5"
@@ -185494,8 +185526,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "minimax.minimax-m2.5",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/minimax.minimax-m2.5",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "minimax.minimax-m2.5",
       "max_input_tokens": 196000,
       "max_output_tokens": 8000,
@@ -185509,7 +185541,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "minimax-m2.5"
   },
@@ -185596,8 +185630,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "google.gemma-3-12b-it",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/google.gemma-3-12b-it",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "google.gemma-3-12b-it",
       "max_input_tokens": 128000,
       "max_output_tokens": 8000,
@@ -185611,7 +185645,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "gemma-3-12b-it"
   },
@@ -186434,8 +186470,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "google.gemma-3-4b-it",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/google.gemma-3-4b-it",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "google.gemma-3-4b-it",
       "max_input_tokens": 128000,
       "max_output_tokens": 8000,
@@ -186449,7 +186485,9 @@
       "supports_response_schema": null,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "gemma-3-4b-it"
   },
@@ -187330,8 +187368,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "google.gemma-3-27b-it",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/google.gemma-3-27b-it",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "google.gemma-3-27b-it",
       "max_input_tokens": 128000,
       "max_output_tokens": 8000,
@@ -187345,7 +187383,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "gemma-3-27b-it"
   },
@@ -187465,8 +187505,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "qwen.qwen3-coder-next",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/qwen.qwen3-coder-next",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "qwen.qwen3-coder-next",
       "max_input_tokens": 256000,
       "max_output_tokens": 16000,
@@ -187480,7 +187520,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     }
   },
   {
@@ -187513,8 +187555,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "minimax.minimax-m2",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/minimax.minimax-m2",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "minimax.minimax-m2",
       "max_input_tokens": 1000000,
       "max_output_tokens": 8000,
@@ -187528,7 +187570,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "minimax-m2"
   },
@@ -188174,8 +188218,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "zai.glm-4.7-flash",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/zai.glm-4.7-flash",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "zai.glm-4.7-flash",
       "max_input_tokens": 203000,
       "max_output_tokens": 128000,
@@ -188189,7 +188233,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "glm-4.7-flash"
   },
@@ -188275,8 +188321,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "moonshotai.kimi-k2.5",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/moonshotai.kimi-k2.5",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "moonshotai.kimi-k2.5",
       "max_input_tokens": 256000,
       "max_output_tokens": 16000,
@@ -188290,7 +188336,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "kimi-k2.5"
   },
@@ -188835,8 +188883,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "mistral.magistral-small-2509",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/mistral.magistral-small-2509",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "mistral.magistral-small-2509",
       "max_input_tokens": 128000,
       "max_output_tokens": 40000,
@@ -188850,7 +188898,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     }
   },
   {
@@ -188940,13 +188990,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "bedrock/us-gov-east-1/anthropic.claude-opus-4-8",
+      "litellm_key": "bedrock/mantle/anthropic.claude-opus-4-8",
       "litellm_provider": "bedrock",
-      "model_name": "us-gov-east-1/anthropic.claude-opus-4-8",
+      "model_name": "mantle/anthropic.claude-opus-4-8",
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
-      "input_cost_per_token": 6e-06,
-      "output_cost_per_token": 3e-05,
+      "input_cost_per_token": 5.5e-06,
+      "output_cost_per_token": 2.75e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
@@ -188954,7 +189004,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrockFoundationModels/current/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "claude-opus-4-8"
@@ -189395,8 +189445,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "mistral.ministral-3-14b-instruct",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/mistral.ministral-3-14b-instruct",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "mistral.ministral-3-14b-instruct",
       "max_input_tokens": 128000,
       "max_output_tokens": 8000,
@@ -189410,7 +189460,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     }
   },
   {
@@ -189444,8 +189496,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "mistral.mistral-large-3-675b-instruct",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/mistral.mistral-large-3-675b-instruct",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "mistral.mistral-large-3-675b-instruct",
       "max_input_tokens": 256000,
       "max_output_tokens": 32000,
@@ -189459,7 +189511,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "mistral-large-3-2509"
   },
@@ -189939,8 +189993,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "mistral.devstral-2-123b",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/mistral.devstral-2-123b",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "mistral.devstral-2-123b",
       "max_input_tokens": 256000,
       "max_output_tokens": 32000,
@@ -189954,7 +190008,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     }
   },
   {
@@ -190500,13 +190556,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "bedrock_mantle/us-gov-west-1/anthropic.claude-opus-5-5",
-      "litellm_provider": "bedrock_mantle",
-      "model_name": "us-gov-west-1/anthropic.claude-opus-5-5",
+      "litellm_key": "bedrock/mantle/anthropic.claude-opus-5-5",
+      "litellm_provider": "bedrock",
+      "model_name": "mantle/anthropic.claude-opus-5-5",
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
-      "input_cost_per_token": 4.8e-06,
-      "output_cost_per_token": 2.4e-05,
+      "input_cost_per_token": 4.4e-06,
+      "output_cost_per_token": 2.2e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
@@ -191138,13 +191194,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "bedrock/eu-west-2/mistral.voxtral-small-24b-2507",
-      "litellm_provider": "bedrock",
-      "model_name": "eu-west-2/mistral.voxtral-small-24b-2507",
+      "litellm_key": "bedrock_mantle/mistral.voxtral-small-24b-2507",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "mistral.voxtral-small-24b-2507",
       "max_input_tokens": 32768,
       "max_output_tokens": 8192,
-      "input_cost_per_token": 1.6e-07,
-      "output_cost_per_token": 4.7e-07,
+      "input_cost_per_token": 1e-07,
+      "output_cost_per_token": 3e-07,
       "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
@@ -191152,8 +191208,10 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "chat",
-      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/eu-west-2/index.json",
-      "supported_endpoints": []
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     }
   },
   {
@@ -191886,8 +191944,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "zai.glm-4.7",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/zai.glm-4.7",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "zai.glm-4.7",
       "max_input_tokens": 203000,
       "max_output_tokens": 128000,
@@ -191901,7 +191959,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "glm-4.7"
   },
@@ -192547,9 +192607,9 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "bedrock/us-west-2/zai.glm-5",
-      "litellm_provider": "bedrock",
-      "model_name": "us-west-2/zai.glm-5",
+      "litellm_key": "bedrock_mantle/zai.glm-5",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "zai.glm-5",
       "max_input_tokens": 200000,
       "max_output_tokens": 128000,
       "input_cost_per_token": 1e-06,
@@ -192561,8 +192621,10 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
-      "supported_endpoints": []
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "glm-5"
   },
@@ -192648,13 +192710,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "bedrock/eu-west-2/mistral.voxtral-mini-3b-2507",
-      "litellm_provider": "bedrock",
-      "model_name": "eu-west-2/mistral.voxtral-mini-3b-2507",
+      "litellm_key": "bedrock_mantle/mistral.voxtral-mini-3b-2507",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "mistral.voxtral-mini-3b-2507",
       "max_input_tokens": 32768,
       "max_output_tokens": 8192,
-      "input_cost_per_token": 6e-08,
-      "output_cost_per_token": 6e-08,
+      "input_cost_per_token": 4e-08,
+      "output_cost_per_token": 4e-08,
       "supports_reasoning": null,
       "supports_vision": null,
       "supports_function_calling": null,
@@ -192662,8 +192724,10 @@
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "chat",
-      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/eu-west-2/index.json",
-      "supported_endpoints": []
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     }
   },
   {
@@ -192696,22 +192760,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -193100,8 +193166,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "mistral.ministral-3-3b-instruct",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/mistral.ministral-3-3b-instruct",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "mistral.ministral-3-3b-instruct",
       "max_input_tokens": 128000,
       "max_output_tokens": 8000,
@@ -193115,7 +193181,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     }
   },
   {
@@ -193453,13 +193521,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "bedrock/us-gov-east-1/anthropic.claude-opus-5",
+      "litellm_key": "bedrock/mantle/anthropic.claude-opus-5",
       "litellm_provider": "bedrock",
-      "model_name": "us-gov-east-1/anthropic.claude-opus-5",
+      "model_name": "mantle/anthropic.claude-opus-5",
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
-      "input_cost_per_token": 6e-06,
-      "output_cost_per_token": 3e-05,
+      "input_cost_per_token": 5.5e-06,
+      "output_cost_per_token": 2.75e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
@@ -193467,7 +193535,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrockFoundationModels/current/us-gov-east-1/index.json",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrockFoundationModels/current/index.json",
       "supported_endpoints": []
     },
     "llm_stats_id": "claude-opus-5"
@@ -194064,8 +194132,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "minimax.minimax-m2.1",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/minimax.minimax-m2.1",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "minimax.minimax-m2.1",
       "max_input_tokens": 196000,
       "max_output_tokens": 8000,
@@ -194079,7 +194147,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "minimax-m2.1"
   },
@@ -194363,8 +194433,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "mistral.ministral-3-8b-instruct",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/mistral.ministral-3-8b-instruct",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "mistral.ministral-3-8b-instruct",
       "max_input_tokens": 128000,
       "max_output_tokens": 8000,
@@ -194378,7 +194448,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     }
   },
   {
@@ -194413,13 +194485,13 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/amazon-bedrock/",
     "litellm": {
-      "litellm_key": "anthropic.claude-fable-5",
-      "litellm_provider": "bedrock_converse",
-      "model_name": "anthropic.claude-fable-5",
+      "litellm_key": "bedrock/mantle/anthropic.claude-fable-5",
+      "litellm_provider": "bedrock",
+      "model_name": "mantle/anthropic.claude-fable-5",
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
-      "input_cost_per_token": 1e-05,
-      "output_cost_per_token": 5e-05,
+      "input_cost_per_token": 1.1e-05,
+      "output_cost_per_token": 5.5e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
@@ -202534,22 +202606,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/vivgrid/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -214519,22 +214593,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/openrouter/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -236927,22 +237003,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/ofox/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -254664,22 +254742,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/siliconflow-cn/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -255184,22 +255264,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/siliconflow-cn/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -265036,22 +265118,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/helicone/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -285082,22 +285166,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/cortecs/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -300261,22 +300347,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/tensorx/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -305951,22 +306039,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/abacus/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -312649,22 +312739,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/llmgateway/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -340989,22 +341081,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/merge-gateway/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -365040,22 +365134,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/kilo/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2",
     "offer": {
@@ -378741,22 +378837,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/deepinfra/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -391817,22 +391915,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/huggingface/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2",
     "offer": {
@@ -395965,22 +396065,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/siliconflow/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -399679,22 +399781,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/venice/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -399791,8 +399895,8 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/venice/",
     "litellm": {
-      "litellm_key": "google.gemma-3-27b-it",
-      "litellm_provider": "bedrock_converse",
+      "litellm_key": "bedrock_mantle/google.gemma-3-27b-it",
+      "litellm_provider": "bedrock_mantle",
       "model_name": "google.gemma-3-27b-it",
       "max_input_tokens": 128000,
       "max_output_tokens": 8000,
@@ -399806,7 +399910,9 @@
       "supports_response_schema": true,
       "mode": "chat",
       "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
-      "supported_endpoints": []
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "gemma-3-27b-it"
   },
@@ -406361,22 +406467,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/meganova/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -412295,22 +412403,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -417820,22 +417930,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/phala/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -421333,22 +421445,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/alibaba-token-plan-cn/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -422663,22 +422777,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/poe/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -457965,22 +458081,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/nearai/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -460395,22 +460513,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/tokengo/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -463775,22 +463895,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/azure/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
@@ -472482,22 +472604,24 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/zenmux/",
     "litellm": {
-      "litellm_key": "deepinfra/deepseek-ai/DeepSeek-V3.2",
-      "litellm_provider": "deepinfra",
-      "model_name": "deepseek-ai/DeepSeek-V3.2",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "input_cost_per_token": 2.6e-07,
-      "output_cost_per_token": 3.8e-07,
-      "supports_reasoning": null,
+      "litellm_key": "bedrock_mantle/deepseek.v3.2",
+      "litellm_provider": "bedrock_mantle",
+      "model_name": "deepseek.v3.2",
+      "max_input_tokens": 156000,
+      "max_output_tokens": 8000,
+      "input_cost_per_token": 6.2e-07,
+      "output_cost_per_token": 1.85e-06,
+      "supports_reasoning": true,
       "supports_vision": false,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
+      "supports_prompt_caching": null,
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://deepinfra.com/pricing",
-      "supported_endpoints": []
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
+      "supported_endpoints": [
+        "/v1/chat/completions"
+      ]
     },
     "llm_stats_id": "deepseek-v3.2"
   },
