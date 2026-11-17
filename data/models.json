@@ -25766,7 +25766,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
@@ -70482,7 +70482,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
@@ -78898,7 +78898,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
@@ -117471,7 +117471,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
@@ -140335,7 +140335,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
@@ -142540,7 +142540,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
@@ -173925,7 +173925,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
@@ -230044,7 +230044,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
@@ -258999,7 +258999,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
@@ -321138,7 +321138,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
@@ -335406,7 +335406,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
@@ -372558,7 +372558,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
@@ -376911,7 +376911,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
@@ -401619,7 +401619,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max",
@@ -432401,7 +432401,7 @@
       "supports_tool_choice": null,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "supported_endpoints": []
     },
     "llm_stats_id": "qwen4-max"
