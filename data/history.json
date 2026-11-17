@@ -1,5 +1,230 @@
 [
   {
+    "event_id": "207f9336a7b0e707",
+    "type": "new_model",
+    "model_id": "together-ai/muse-spark-open",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$1.25 in / $4.25 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "39f5da21cf901799",
+    "type": "new_model",
+    "model_id": "together-ai/kimi-k3.1-pro",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3f97ce42cf4b2c8c",
+    "type": "new_model",
+    "model_id": "together-ai/beam-1.0-501b-a23b",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$0.4 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e738aa1cd461d249",
+    "type": "new_model",
+    "model_id": "fireworks/muse-spark-open",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$1.25 in / $4.25 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "77ff3ae105bf5c09",
+    "type": "new_model",
+    "model_id": "fireworks/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3c437f4ab1c79ee3",
+    "type": "new_model",
+    "model_id": "fireworks/kimi-k3.1-pro",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "13059f6f3a588d1a",
+    "type": "new_model",
+    "model_id": "fireworks/deepseek-v4.1-flash-1017",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8cfb328e2e4dee97",
+    "type": "new_model",
+    "model_id": "scx-ai-gp/kimi-k3.1-pro-highspeed",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$3.8 in / $19 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3652843bbcbaaf6d",
+    "type": "new_model",
+    "model_id": "aws-mantle/gpt-6-sol",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1c20e561f97d5ad7",
+    "type": "new_model",
+    "model_id": "aws-mantle/gpt-6.1-terra",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$1 in / $5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "5756fbfe733faab1",
+    "type": "new_model",
+    "model_id": "aws-mantle/gpt-6-luna",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$0.1 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "81d797598f2555e7",
+    "type": "new_model",
+    "model_id": "aws-mantle/gpt-6.1-sol",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "36f1a3d278ce10a5",
+    "type": "new_model",
+    "model_id": "inference.net/deepseek-v4.1-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "43952844ae2d4f14",
+    "type": "new_model",
+    "model_id": "deepinfra/glm-5.3-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "0f08524a75c23775",
+    "type": "new_model",
+    "model_id": "deepinfra/hy4-preview",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$0.834 in / $2.501 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c18b25d356cde488",
+    "type": "new_model",
+    "model_id": "deepinfra/deepseek-v4-flash-vision-exp",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$0.44 in / $1.32 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a4ae1cf23dcd07fd",
+    "type": "new_model",
+    "model_id": "gpt-image-2-6-flare",
+    "provider": "Kenari",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "Pricing unavailable",
+    "alerted": true
+  },
+  {
+    "event_id": "99df23ae6630f6a2",
+    "type": "new_model",
+    "model_id": "lyria-3-5",
+    "provider": "Kenari",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "Pricing unavailable",
+    "alerted": true
+  },
+  {
+    "event_id": "aebb76846aaa29c8",
+    "type": "new_free_model",
+    "model_id": "glm-4-6v-flash:free",
+    "provider": "Kenari",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f62d2fa21ef4c3ca",
+    "type": "new_model",
+    "model_id": "whisper-1",
+    "provider": "Kenari",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "Pricing unavailable",
+    "alerted": true
+  },
+  {
+    "event_id": "717ed3e10b537cb9",
+    "type": "new_model",
+    "model_id": "gpt-image-2-6-sunburst",
+    "provider": "Kenari",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "Pricing unavailable",
+    "alerted": true
+  },
+  {
+    "event_id": "8825d07f03c7828b",
+    "type": "new_model",
+    "model_id": "grok-imagine-image-quality",
+    "provider": "Kenari",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "Pricing unavailable",
+    "alerted": true
+  },
+  {
+    "event_id": "2bf44070e3aecd12",
+    "type": "new_free_model",
+    "model_id": "muse-glimmer-30b:free",
+    "provider": "Kenari",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ad3ce2a388773427",
+    "type": "new_free_model",
+    "model_id": "solar-mini4:free",
+    "provider": "Kenari",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ac988993c26008fe",
+    "type": "new_free_model",
+    "model_id": "recursive/flint-v1.0",
+    "provider": "Kilo Gateway, Vercel AI Gateway",
+    "detected_at": "2026-11-17T01:04:05.970996+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "3744bfaba94a6013",
     "type": "new_model",
     "model_id": "muse-wonder-full-1-0",
