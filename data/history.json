@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "6ae4aca812272f1a",
+    "type": "new_model",
+    "model_id": "gpt-6.2-astra",
+    "provider": "OpenAI",
+    "detected_at": "2026-11-17T18:32:24.785183+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f51ba1ecaa212c51",
+    "type": "new_model",
+    "model_id": "gpt-6.2-sol",
+    "provider": "OpenAI",
+    "detected_at": "2026-11-17T18:32:24.785183+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "51d9bfa736ee0b41",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.2-astra",
+    "provider": "OpenRouter",
+    "detected_at": "2026-11-17T18:32:24.785183+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "e38bb9d47b483940",
     "type": "new_model",
     "model_id": "gemini-3-8-flash-lite-tts",
