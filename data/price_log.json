@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "3e7c38cf7aab1c57",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-r1-0528",
+    "provider": "Jiekou.AI, Kilo Gateway, Merge Gateway, Novita AI, OpenRouter, TensorX",
+    "detected_at": "2026-11-18T12:34:53.158279+00:00",
+    "details": "Input: $0.5 -> $0.571; output: $2.15 -> $2.286",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "f1fc14a2a3a516cf",
+    "type": "price_change",
+    "model_id": "qwen-4-max",
+    "provider": "Charm Hyper, DevPass (LLM Gateway), EmpirioLabs AI, OpenCode Go, Venice AI",
+    "detected_at": "2026-11-18T12:34:53.158279+00:00",
+    "details": "Input: $1.5 -> $1.45; output: $4.5 -> $4.25",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "d71de783cfcb4610",
     "type": "price_change",
     "model_id": "qwen/qwen3.5-9b",

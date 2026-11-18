@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "0be57b49955de579",
+    "type": "new_model",
+    "model_id": "scx-ai-gp/qwen4-max",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-18T12:34:53.158279+00:00",
+    "details": "$1.45 in / $4.25 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "2ebb3df18b00832f",
     "type": "new_model",
     "model_id": "gemma-4-uncensored",
