@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "daf5393b69ffcc6b",
+    "type": "new_free_model",
+    "model_id": "tidepool-alpha-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-11-18T23:32:33.827202+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "93c6f8a70d903d12",
     "type": "new_model",
     "model_id": "gemini-4-neon",
