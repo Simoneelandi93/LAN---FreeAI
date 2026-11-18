@@ -31098,7 +31098,25 @@
     "input_price_per_m": 0.57,
     "output_price_per_m": 1.71,
     "is_free": false,
-    "source_url": "https://models.dev/providers/greenpt/"
+    "source_url": "https://models.dev/providers/greenpt/",
+    "litellm": {
+      "litellm_key": "sarvam/gemma4",
+      "litellm_provider": "sarvam",
+      "model_name": "gemma4",
+      "max_input_tokens": 262144,
+      "max_output_tokens": 262144,
+      "input_cost_per_token": 3.723404255e-07,
+      "output_cost_per_token": 9.574468085e-07,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://www.sarvam.ai/token-factory/pricing",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "greenpt/deepseek-v4-flash-0731",
@@ -33487,6 +33505,24 @@
     "output_price_per_m": 0,
     "is_free": false,
     "source_url": "https://models.dev/providers/nan/",
+    "litellm": {
+      "litellm_key": "sarvam/gemma4",
+      "litellm_provider": "sarvam",
+      "model_name": "gemma4",
+      "max_input_tokens": 262144,
+      "max_output_tokens": 262144,
+      "input_cost_per_token": 3.723404255e-07,
+      "output_cost_per_token": 9.574468085e-07,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://www.sarvam.ai/token-factory/pricing",
+      "supported_endpoints": []
+    },
     "llm_stats_id": "gemma-4-26b-a4b-it"
   },
   {
@@ -63900,7 +63936,25 @@
     "input_price_per_m": 2,
     "output_price_per_m": 5,
     "is_free": false,
-    "source_url": "https://models.dev/providers/llmtr/"
+    "source_url": "https://models.dev/providers/llmtr/",
+    "litellm": {
+      "litellm_key": "sarvam/gemma4",
+      "litellm_provider": "sarvam",
+      "model_name": "gemma4",
+      "max_input_tokens": 262144,
+      "max_output_tokens": 262144,
+      "input_cost_per_token": 3.723404255e-07,
+      "output_cost_per_token": 9.574468085e-07,
+      "supports_reasoning": true,
+      "supports_vision": true,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://www.sarvam.ai/token-factory/pricing",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "llmtr/qwen3-6-35b",
@@ -83012,6 +83066,24 @@
     "output_price_per_m": 0.16,
     "is_free": false,
     "source_url": "https://models.dev/providers/fastrouter/",
+    "litellm": {
+      "litellm_key": "sarvam/sarvam-105b",
+      "litellm_provider": "sarvam",
+      "model_name": "sarvam-105b",
+      "max_input_tokens": 128000,
+      "max_output_tokens": 128000,
+      "input_cost_per_token": 1.063829787e-07,
+      "output_cost_per_token": 2.659574468e-07,
+      "supports_reasoning": true,
+      "supports_vision": false,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://www.sarvam.ai/token-factory/pricing",
+      "supported_endpoints": []
+    },
     "llm_stats_id": "sarvam-105b"
   },
   {
@@ -151625,6 +151697,24 @@
     "output_price_per_m": 0.63161075,
     "is_free": false,
     "source_url": "https://models.dev/providers/sarvam/",
+    "litellm": {
+      "litellm_key": "sarvam/sarvam-105b",
+      "litellm_provider": "sarvam",
+      "model_name": "sarvam-105b",
+      "max_input_tokens": 128000,
+      "max_output_tokens": 128000,
+      "input_cost_per_token": 1.063829787e-07,
+      "output_cost_per_token": 2.659574468e-07,
+      "supports_reasoning": true,
+      "supports_vision": false,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://www.sarvam.ai/token-factory/pricing",
+      "supported_endpoints": []
+    },
     "llm_stats_id": "sarvam-105b"
   },
   {
@@ -277765,6 +277855,24 @@
     "output_price_per_m": 0.2124,
     "is_free": false,
     "source_url": "https://models.dev/providers/nano-gpt/",
+    "litellm": {
+      "litellm_key": "sarvam/sarvam-105b",
+      "litellm_provider": "sarvam",
+      "model_name": "sarvam-105b",
+      "max_input_tokens": 128000,
+      "max_output_tokens": 128000,
+      "input_cost_per_token": 1.063829787e-07,
+      "output_cost_per_token": 2.659574468e-07,
+      "supports_reasoning": true,
+      "supports_vision": false,
+      "supports_function_calling": true,
+      "supports_prompt_caching": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "mode": "chat",
+      "source": "https://www.sarvam.ai/token-factory/pricing",
+      "supported_endpoints": []
+    },
     "llm_stats_id": "sarvam-105b"
   },
   {
