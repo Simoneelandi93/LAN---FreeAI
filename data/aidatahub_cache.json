@@ -1,6 +1,6 @@
 {
-  "etag": "W/\"62a87d6e0206a9af0efd10a8631862b7\"",
-  "fetched_at": "2026-11-18T11:32:44.056463+00:00",
+  "etag": "W/\"64d0d4ffa35f0e05ff632714ff7935e6\"",
+  "fetched_at": "2026-11-18T12:05:45.521792+00:00",
   "events": [
     {
       "id": "openrouter:openai/gpt-6.2-astra-pro:listing",
