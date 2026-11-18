@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "2ebb3df18b00832f",
+    "type": "new_model",
+    "model_id": "gemma-4-uncensored",
+    "provider": "Venice AI",
+    "detected_at": "2026-11-18T06:38:44.994850+00:00",
+    "details": "$0.1625 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b427731065a59cea",
+    "type": "new_model",
+    "model_id": "azure/gpt-6.2-sol",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-18T06:38:44.994850+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c90d47c638bde5cc",
+    "type": "new_model",
+    "model_id": "azure/gpt-6.2-astra",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-18T06:38:44.994850+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "9fc373d5ea66c29c",
     "type": "new_model",
     "model_id": "openai/gpt-6.2-astra-fast",
