@@ -1,5 +1,77 @@
 [
   {
+    "event_id": "644c5aa3b0a1c97e",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.5-9b",
+    "provider": "Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, Mixlayer, NanoGPT, OpenRouter, SiliconFlow, SiliconFlow (China), TensorX, Thinking Machines, Together AI",
+    "detected_at": "2026-11-18T01:04:12.920499+00:00",
+    "details": "Input: $0.05 -> $0.04; output: $0.13 -> $0.058",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "d127730eed9a6362",
+    "type": "price_change",
+    "model_id": "~openai/gpt-astra-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-18T01:04:12.920499+00:00",
+    "details": "Input: $10 -> $8; output: $50 -> $40",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "f6e1d032110505b1",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-18T01:04:12.920499+00:00",
+    "details": "Input: $0.1824 -> $0.19; output: $7 -> $7",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "689d374ddc9edfbc",
+    "type": "price_change",
+    "model_id": "alibaba/qwen3-next-80b-a3b-instruct",
+    "provider": "AI/ML API, Vercel AI Gateway",
+    "detected_at": "2026-11-18T01:04:12.920499+00:00",
+    "details": "Input: $0.15 -> $0.09; output: $1.2 -> $1.1",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "0f5a3f8b7e70bf39",
+    "type": "price_change",
+    "model_id": "greenference/glm-5.3-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-18T01:04:12.920499+00:00",
+    "details": "Input: $0.098 -> $0.07; output: $0.343 -> $0.245",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "09bf4ca197d0248c",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-18T01:04:12.920499+00:00",
+    "details": "Input: $0.07 -> $0.064; output: $0.24 -> $0.191",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "0fab9ba9eb112781",
     "type": "price_change",
     "model_id": "claude-4-5-sonnet",
