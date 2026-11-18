@@ -1,5 +1,122 @@
 [
   {
+    "event_id": "13a03522e4f40dcd",
+    "type": "new_model",
+    "model_id": "us.openai.gpt-6.2-astra",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "$8.8 in / $44 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d4e63469dc1a40f9",
+    "type": "new_model",
+    "model_id": "us.openai.gpt-6.2-sol",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "$2.2 in / $11 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "eac2955b8679bd57",
+    "type": "new_model",
+    "model_id": "global.openai.gpt-6.2-sol",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b200938420a33af7",
+    "type": "new_model",
+    "model_id": "global.openai.gpt-6.2-astra",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6c7f80db55af1a5d",
+    "type": "new_model",
+    "model_id": "jcartu/deepseek-v4.1-flash-1017-abliterated-lossless-csf",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "$0.315 in / $1.05 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "2547d7956c1e65a3",
+    "type": "new_model",
+    "model_id": "jiunsong/supergemma4-26b-uncensored",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "$0.1625 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f67b501b3d2f29b3",
+    "type": "new_model",
+    "model_id": "lyber/deepseek-v4.1-flash-1017-abliterated",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "$0.29 in / $0.99 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "fb33ff66d811c66e",
+    "type": "new_model",
+    "model_id": "orca/orcacyber-ultra-1.0",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "$5 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c000b557f57dc214",
+    "type": "new_model",
+    "model_id": "orca/orcacyber-hy4",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "$0.8 in / $1.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "4e74f1b2216e1748",
+    "type": "new_model",
+    "model_id": "orca/orcacyber-zero-1.0",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "$3 in / $7.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "353b00388e4f451a",
+    "type": "new_model",
+    "model_id": "orca/orcacyber-glm-5.3",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "$3 in / $5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "83937a254d1eadfc",
+    "type": "new_model",
+    "model_id": "gpt-6.2-astra@eu",
+    "provider": "Requesty",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "$9.6 in / $48 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1218f1178c3768d0",
+    "type": "new_model",
+    "model_id": "gpt-6.2-sol@eu",
+    "provider": "Requesty",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "$2.4 in / $12 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "0be57b49955de579",
     "type": "new_model",
     "model_id": "scx-ai-gp/qwen4-max",

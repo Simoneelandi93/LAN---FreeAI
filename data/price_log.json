@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "afe5b67a1fb48e1d",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.5-9b",
+    "provider": "Deep Infra, Hugging Face, Kilo Gateway, Merge Gateway, Mixlayer, NanoGPT, OpenRouter, SiliconFlow, SiliconFlow (China), TensorX, Thinking Machines, Together AI",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "Input: $0.05 -> $0.07472374; output: $0.13 -> $0.13",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "7e1c96e6de4bf9e7",
+    "type": "price_change",
+    "model_id": "qwen/qwen3-next-80b-a3b-thinking",
+    "provider": "Jiekou.AI, Merge Gateway",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "Input: $0.15 -> $0.15; output: $0.65 -> $1.2",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "5323de482d84ca3e",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "Input: $0.064 -> $0.07; output: $0.191 -> $0.24",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "92364e066f5c1e00",
+    "type": "price_change",
+    "model_id": "xiaomi/mimo-v2.5-pro:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "Input: $0.435 -> $0.48; output: $0.87 -> $1.8",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "e8a265079a696046",
+    "type": "price_change",
+    "model_id": "orca/orcacyber-k3.1-pro",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-18T21:32:21.009676+00:00",
+    "details": "Input: $4 -> $2; output: $20 -> $5",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "150977492036fab7",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4.1-flash",
