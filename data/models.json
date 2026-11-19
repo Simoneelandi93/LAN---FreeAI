@@ -379794,8 +379794,8 @@
       "model_name": "accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast",
       "max_input_tokens": 1048576,
       "max_output_tokens": 393216,
-      "input_cost_per_token": 2.4e-06,
-      "output_cost_per_token": 9.6e-06,
+      "input_cost_per_token": 1.2e-06,
+      "output_cost_per_token": 4.8e-06,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
@@ -379803,7 +379803,7 @@
       "supports_tool_choice": true,
       "supports_response_schema": true,
       "mode": "chat",
-      "source": "https://docs.fireworks.ai/serverless/pricing.md",
+      "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
       "supported_endpoints": []
     }
   },
