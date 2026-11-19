@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "35dbf9bd6deec1a7",
+    "type": "new_model",
+    "model_id": "scaledown/extract-1",
+    "provider": "Vercel AI Gateway",
+    "detected_at": "2026-11-19T06:39:10.669479+00:00",
+    "details": "$0.05 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "eff5fb5567b45772",
     "type": "new_model",
     "model_id": "google-ai-studio/gemini-4-neon",
