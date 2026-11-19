@@ -1,5 +1,50 @@
 [
   {
+    "event_id": "5794fd559a490baa",
+    "type": "new_model",
+    "model_id": "google-vertex/gemini-3.6-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-19T12:35:15.485578+00:00",
+    "details": "$0.75 in / $3.75 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6a819551165d78db",
+    "type": "new_model",
+    "model_id": "gemini/gemini-4-neon",
+    "provider": "CrossModel",
+    "detected_at": "2026-11-19T12:35:15.485578+00:00",
+    "details": "$3 in / $15 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "bf48bdcee2d101d8",
+    "type": "new_free_model",
+    "model_id": "cohere/command-a-vision-07-2025",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-19T12:35:15.485578+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "296de29613a694ac",
+    "type": "new_free_model",
+    "model_id": "cohere/command-a-translate-08-2025",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-19T12:35:15.485578+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "053a5e3903bafbfc",
+    "type": "new_model",
+    "model_id": "azure/gpt-4.1-nano@us",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-19T12:35:15.485578+00:00",
+    "details": "$0.11 in / $0.44 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "35dbf9bd6deec1a7",
     "type": "new_model",
     "model_id": "scaledown/extract-1",
