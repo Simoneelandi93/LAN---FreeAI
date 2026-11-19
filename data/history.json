@@ -1,5 +1,50 @@
 [
   {
+    "event_id": "9dc388984afdc83d",
+    "type": "new_model",
+    "model_id": "google/gemini-4-neon",
+    "provider": "Eden AI, Kilo Gateway, OpenRouter, Vercel AI Gateway",
+    "detected_at": "2026-11-19T01:03:55.274130+00:00",
+    "details": "$3 in / $15 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "cb372aa63a077788",
+    "type": "new_model",
+    "model_id": "vertex/gemini-4-neon@us",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-19T01:03:55.274130+00:00",
+    "details": "$3.3 in / $16.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "2f5b817ad3ef54ab",
+    "type": "new_model",
+    "model_id": "vertex/gemini-4-neon@eu",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-19T01:03:55.274130+00:00",
+    "details": "$3.3 in / $16.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8ca7d9ec0f423e98",
+    "type": "new_model",
+    "model_id": "vertex/gemini-4-neon",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-19T01:03:55.274130+00:00",
+    "details": "$3 in / $15 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "eb74e60681521cd2",
+    "type": "new_model",
+    "model_id": "@cf/cloudflare/clairic-flash",
+    "provider": "Cloudflare Workers AI",
+    "detected_at": "2026-11-19T01:03:55.274130+00:00",
+    "details": "$0.1 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "daf5393b69ffcc6b",
     "type": "new_free_model",
     "model_id": "tidepool-alpha-free",
