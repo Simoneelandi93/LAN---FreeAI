@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "b978f897a20bb7e1",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-flash-0731",
+    "provider": "IteraCompute, Kilo Gateway, Klavo AI, Lyceum, Merge Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, OrcaRouter, Perplexity Agent, Phala, Prime Inference, Standard Compute, TensorX, Vercel AI Gateway",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "Input: $0.05 -> $0.04664; output: $0.16 -> $0.13992",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "ef63eaa94f015f58",
+    "type": "price_change",
+    "model_id": "nemotron-3.5-super-vl",
+    "provider": "CheapestToken, Cortecs, DigitalOcean",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "Input: $0.3 -> $0.204; output: $0.65 -> $0.51",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "3291146e717bf6a1",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-flash-0731:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "Input: $0.05 -> $0.04664; output: $0.16 -> $0.13992",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "45b3e2b9b753957e",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4.1-flash-1017",

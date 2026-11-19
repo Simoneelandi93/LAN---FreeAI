@@ -1,5 +1,140 @@
 [
   {
+    "event_id": "e7a0c96c1eb74dea",
+    "type": "new_model",
+    "model_id": "gemini-4-neon@us",
+    "provider": "Requesty",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$3.3 in / $16.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a1499972b10fc881",
+    "type": "new_model",
+    "model_id": "gemini-4-neon@eu",
+    "provider": "Requesty",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$3.3 in / $16.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "be80eb5e5565ce54",
+    "type": "new_model",
+    "model_id": "TEE/glm-5.1",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$0.9 in / $2.9 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e7290bc68fbd93af",
+    "type": "new_model",
+    "model_id": "TEE/deepseek-v3.2",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$1 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "88c05893d0873b1f",
+    "type": "new_model",
+    "model_id": "TEE/kimi-k2.6",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$0.39 in / $1.8 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3cd51ac774e59905",
+    "type": "new_model",
+    "model_id": "TEE/kimi-k3",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$1.85 in / $9.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e9ee67670f718723",
+    "type": "new_model",
+    "model_id": "TEE/glm-5.1-thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$0.9 in / $2.9 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6fd98e08bf265934",
+    "type": "new_model",
+    "model_id": "TEE/glm-5.2:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$1.25 in / $3.95 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "995a0735449f5c2e",
+    "type": "new_model",
+    "model_id": "TEE/qwen3.6-27b",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$0.32 in / $3.25 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "db08d847ca8d925f",
+    "type": "new_model",
+    "model_id": "TEE/glm-5.2",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$1.25 in / $3.95 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "75281699d1d58905",
+    "type": "new_model",
+    "model_id": "z-ai/glm-5.3-flash-abliterated",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$0.242 in / $0.88 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "25573bbd78ad4457",
+    "type": "new_model",
+    "model_id": "z-ai/glm-5.3-abliterated",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$0.429 in / $1.452 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "af6e654f6021e757",
+    "type": "new_model",
+    "model_id": "TheDrummer/artemis-31b-v1.2",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$0.1 in / $0.45 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "20923ef23d2e139e",
+    "type": "new_model",
+    "model_id": "TheDrummer/Artemis-v1.1",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$0.1 in / $0.45 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f215b1ca011289d8",
+    "type": "new_model",
+    "model_id": "deepseek/deepseek-v4.1-flash-abliterated",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-19T21:32:28.255413+00:00",
+    "details": "$0.297 in / $1.045 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "b15ee379a7da3c14",
     "type": "new_model",
     "model_id": "canopywave/kimi-k3.1-pro",
