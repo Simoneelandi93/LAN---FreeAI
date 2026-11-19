@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "b15ee379a7da3c14",
+    "type": "new_model",
+    "model_id": "canopywave/kimi-k3.1-pro",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-19T18:33:05.982010+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "5794fd559a490baa",
     "type": "new_model",
     "model_id": "google-vertex/gemini-3.6-flash",
