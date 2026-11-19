@@ -75920,7 +75920,7 @@
       "status": "active",
       "source_url": "https://dashscope.console.aliyun.com/",
       "notes": "1M to 2M free tokens per Qwen model (90-180 days validity)",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -76012,7 +76012,7 @@
       "status": "active",
       "source_url": "https://dashscope.console.aliyun.com/",
       "notes": "1M to 2M free tokens per Qwen model (90-180 days validity)",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -77221,7 +77221,7 @@
       "status": "active",
       "source_url": "https://dashscope.console.aliyun.com/",
       "notes": "1M to 2M free tokens per Qwen model (90-180 days validity)",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -83333,7 +83333,7 @@
       "status": "active",
       "source_url": "https://open.bigmodel.cn/",
       "notes": "GLM-4-Flash 100% free forever + 25M tokens welcome grant",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -95995,7 +95995,7 @@
       "status": "active",
       "source_url": "https://opencode.ai/",
       "notes": "OpenCode Zen with zero markup and free native models (MiMo V2.5 / MiniMax M2.5)",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "mimo-v2.5-free",
@@ -101163,7 +101163,7 @@
       "status": "active",
       "source_url": "https://opencode.ai/",
       "notes": "OpenCode Zen with zero markup and free native models (MiMo V2.5 / MiniMax M2.5)",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "mimo-v2.5-free",
@@ -105260,7 +105260,7 @@
       "status": "active",
       "source_url": "https://platform.deepseek.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -105323,7 +105323,7 @@
       "status": "active",
       "source_url": "https://platform.deepseek.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -117921,7 +117921,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -117966,7 +117966,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118011,7 +118011,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118074,7 +118074,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118137,7 +118137,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118201,7 +118201,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118265,7 +118265,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118330,7 +118330,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118395,7 +118395,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118459,7 +118459,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118503,7 +118503,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118570,7 +118570,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118632,7 +118632,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118697,7 +118697,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118742,7 +118742,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118786,7 +118786,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118830,7 +118830,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118875,7 +118875,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -118938,7 +118938,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119001,7 +119001,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119064,7 +119064,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119130,7 +119130,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119175,7 +119175,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119242,7 +119242,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119286,7 +119286,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119332,7 +119332,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119395,7 +119395,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119439,7 +119439,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119483,7 +119483,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119527,7 +119527,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119571,7 +119571,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119615,7 +119615,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119659,7 +119659,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119725,7 +119725,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119789,7 +119789,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119852,7 +119852,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119915,7 +119915,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -119979,7 +119979,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120043,7 +120043,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120088,7 +120088,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120155,7 +120155,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120220,7 +120220,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120282,7 +120282,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120345,7 +120345,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120407,7 +120407,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120470,7 +120470,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120535,7 +120535,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120597,7 +120597,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120660,7 +120660,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120722,7 +120722,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120767,7 +120767,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -120832,7 +120832,7 @@
       "status": "active",
       "source_url": "https://build.nvidia.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -125719,7 +125719,7 @@
       "status": "active",
       "source_url": "https://openrouter.ai/",
       "notes": "24 active :free models with up to 262k context",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "openrouter/free",
@@ -126777,7 +126777,7 @@
       "status": "active",
       "source_url": "https://openrouter.ai/",
       "notes": "24 active :free models with up to 262k context",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "openrouter/free",
@@ -128459,7 +128459,7 @@
       "status": "active",
       "source_url": "https://openrouter.ai/",
       "notes": "24 active :free models with up to 262k context",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "openrouter/free",
@@ -128600,7 +128600,7 @@
       "status": "active",
       "source_url": "https://openrouter.ai/",
       "notes": "24 active :free models with up to 262k context",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "openrouter/free",
@@ -129849,7 +129849,7 @@
       "status": "active",
       "source_url": "https://openrouter.ai/",
       "notes": "24 active :free models with up to 262k context",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "openrouter/free",
@@ -130048,7 +130048,7 @@
       "status": "active",
       "source_url": "https://openrouter.ai/",
       "notes": "24 active :free models with up to 262k context",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "openrouter/free",
@@ -158445,7 +158445,7 @@
       "status": "active",
       "source_url": "https://dash.cloudflare.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "free_daily_allocation": "10,000 Neurons/day"
     }
   },
@@ -158755,7 +158755,7 @@
       "status": "active",
       "source_url": "https://dash.cloudflare.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "free_daily_allocation": "10,000 Neurons/day"
     }
   },
@@ -167074,7 +167074,7 @@
       "status": "active",
       "source_url": "https://aistudio.google.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "gemini-2.5-flash",
@@ -168061,7 +168061,7 @@
       "status": "active",
       "source_url": "https://aistudio.google.com/",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "gemini-2.5-flash",
@@ -173595,7 +173595,7 @@
       "status": "active",
       "source_url": "https://endpoints.ai.cloud.ovh.net/",
       "notes": "Keyless anonymous tier at 2 RPM/IP or ~400 RPM with free developer API key generated in OVHcloud Manager without credit card. 100% GDPR compliant hosted in France with zero user data training.",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "gpt-oss-120b",
@@ -173834,7 +173834,7 @@
       "status": "active",
       "source_url": "https://endpoints.ai.cloud.ovh.net/",
       "notes": "Keyless anonymous tier at 2 RPM/IP or ~400 RPM with free developer API key generated in OVHcloud Manager without credit card. 100% GDPR compliant hosted in France with zero user data training.",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "gpt-oss-120b",
@@ -214385,7 +214385,7 @@
       "status": "active",
       "source_url": "https://cloud.sambanova.ai/",
       "notes": "Transitioned to Developer Tier requiring payment method registration (credit card); 20M tokens/day developer cap",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -214448,7 +214448,7 @@
       "status": "active",
       "source_url": "https://cloud.sambanova.ai/",
       "notes": "Transitioned to Developer Tier requiring payment method registration (credit card); 20M tokens/day developer cap",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -214513,7 +214513,7 @@
       "status": "active",
       "source_url": "https://cloud.sambanova.ai/",
       "notes": "Transitioned to Developer Tier requiring payment method registration (credit card); 20M tokens/day developer cap",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -214576,7 +214576,7 @@
       "status": "active",
       "source_url": "https://cloud.sambanova.ai/",
       "notes": "Transitioned to Developer Tier requiring payment method registration (credit card); 20M tokens/day developer cap",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -217153,7 +217153,7 @@
       "status": "active",
       "source_url": "https://console.scaleway.com/",
       "notes": "1,000,000 tokens/month + 60 mins audio transcription free in European Cloud",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -238875,7 +238875,7 @@
       "status": "active",
       "source_url": "https://console.mistral.ai/",
       "notes": "La Plateforme Free Tier: 60 RPM / 4M tokens/month",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "mistral-small-latest",
@@ -239382,7 +239382,7 @@
       "status": "active",
       "source_url": "https://console.mistral.ai/",
       "notes": "La Plateforme Free Tier: 60 RPM / 4M tokens/month",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "mistral-small-latest",
@@ -256306,7 +256306,7 @@
       "status": "active",
       "source_url": "https://platform.openai.com/",
       "notes": "$5 USD developer trial credits on new accounts",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -256422,7 +256422,7 @@
       "status": "active",
       "source_url": "https://platform.openai.com/",
       "notes": "$5 USD developer trial credits on new accounts",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -257978,7 +257978,7 @@
       "status": "active",
       "source_url": "https://console.groq.com/",
       "notes": "llama-3.3-70b-versatile and llama-3.1-8b-instant moved to Enterprise (Contact Sales). Limits enforced per organization.",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "qwen/qwen3.8-27b",
@@ -258349,7 +258349,7 @@
       "status": "active",
       "source_url": "https://console.groq.com/",
       "notes": "llama-3.3-70b-versatile and llama-3.1-8b-instant moved to Enterprise (Contact Sales). Limits enforced per organization.",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "qwen/qwen3.8-27b",
@@ -258541,7 +258541,7 @@
       "status": "active",
       "source_url": "https://console.groq.com/",
       "notes": "llama-3.3-70b-versatile and llama-3.1-8b-instant moved to Enterprise (Contact Sales). Limits enforced per organization.",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "qwen/qwen3.8-27b",
@@ -258684,7 +258684,7 @@
       "status": "active",
       "source_url": "https://console.groq.com/",
       "notes": "llama-3.3-70b-versatile and llama-3.1-8b-instant moved to Enterprise (Contact Sales). Limits enforced per organization.",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "qwen/qwen3.8-27b",
@@ -261187,7 +261187,7 @@
       "status": "active",
       "source_url": "https://cloud.siliconflow.cn/",
       "notes": "Global traffic accelerated via GTM domain api.siliconflow.cn. Permanent free tier for lightweight open models; FLUX.2 serverless pay-per-image.",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00",
+      "checked_at": "2026-11-19T16:32:20.758209+00:00",
       "per_model_rate_limits": [
         {
           "model_id": "Qwen/Qwen2.5-7B-Instruct",
@@ -287441,7 +287441,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -287505,7 +287505,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -287568,7 +287568,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -287632,7 +287632,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -287694,7 +287694,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -287758,7 +287758,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -287823,7 +287823,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -287888,7 +287888,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -287952,7 +287952,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288015,7 +288015,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288078,7 +288078,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288141,7 +288141,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288203,7 +288203,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288266,7 +288266,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288329,7 +288329,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288392,7 +288392,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288455,7 +288455,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288518,7 +288518,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288583,7 +288583,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288647,7 +288647,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288711,7 +288711,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288775,7 +288775,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288840,7 +288840,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288903,7 +288903,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -288966,7 +288966,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289028,7 +289028,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289090,7 +289090,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289155,7 +289155,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289218,7 +289218,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289282,7 +289282,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289346,7 +289346,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289410,7 +289410,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289455,7 +289455,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289519,7 +289519,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289583,7 +289583,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289629,7 +289629,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289692,7 +289692,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289755,7 +289755,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289818,7 +289818,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289881,7 +289881,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289944,7 +289944,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -289989,7 +289989,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290052,7 +290052,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290115,7 +290115,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290178,7 +290178,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290241,7 +290241,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290305,7 +290305,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290368,7 +290368,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290431,7 +290431,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290494,7 +290494,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290557,7 +290557,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290620,7 +290620,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290684,7 +290684,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290747,7 +290747,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290810,7 +290810,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290873,7 +290873,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -290937,7 +290937,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291001,7 +291001,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291065,7 +291065,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291128,7 +291128,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291191,7 +291191,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291255,7 +291255,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291317,7 +291317,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291381,7 +291381,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291444,7 +291444,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291506,7 +291506,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291568,7 +291568,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291632,7 +291632,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291696,7 +291696,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291760,7 +291760,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291824,7 +291824,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291887,7 +291887,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -291951,7 +291951,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292015,7 +292015,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292078,7 +292078,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292141,7 +292141,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292204,7 +292204,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292266,7 +292266,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292330,7 +292330,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292394,7 +292394,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292457,7 +292457,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292519,7 +292519,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292581,7 +292581,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292645,7 +292645,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292708,7 +292708,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292772,7 +292772,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292835,7 +292835,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292898,7 +292898,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -292961,7 +292961,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -293024,7 +293024,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -293088,7 +293088,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -293151,7 +293151,7 @@
       "status": "active",
       "source_url": "https://huggingface.co/settings/tokens",
       "notes": "",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -386161,7 +386161,7 @@
       "status": "active",
       "source_url": "https://dashscope.console.aliyun.com/",
       "notes": "1M to 2M free tokens per Qwen model (90-180 days validity)",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -386223,7 +386223,7 @@
       "status": "active",
       "source_url": "https://dashscope.console.aliyun.com/",
       "notes": "1M to 2M free tokens per Qwen model (90-180 days validity)",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -387788,7 +387788,7 @@
       "status": "active",
       "source_url": "https://dashscope.console.aliyun.com/",
       "notes": "1M to 2M free tokens per Qwen model (90-180 days validity)",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
@@ -388026,7 +388026,7 @@
       "status": "active",
       "source_url": "https://dashscope.console.aliyun.com/",
       "notes": "1M to 2M free tokens per Qwen model (90-180 days validity)",
-      "checked_at": "2026-11-19T16:32:20.760492+00:00"
+      "checked_at": "2026-11-19T16:32:20.758209+00:00"
     }
   },
   {
