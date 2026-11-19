@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "107a1116096f38ab",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Ambient, Arcee, Infersia, IteraCompute, Kilo Gateway, Kitani, Klavo AI, LLM Gateway, Merge Gateway, Modular, NEAR AI Cloud, NanoGPT, Novita AI, Ofox, OpenRouter, Phala, Prime Inference, Vercel AI Gateway",
+    "detected_at": "2026-11-19T00:46:14.707706+00:00",
+    "details": "Input: $0.036 -> $0.035; output: $0.294 -> $0.15",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "afe5b67a1fb48e1d",
     "type": "price_change",
     "model_id": "qwen/qwen3.5-9b",
