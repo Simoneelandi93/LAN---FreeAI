@@ -8147,25 +8147,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/openai/",
     "litellm": {
-      "litellm_key": "gpt-image-2",
-      "litellm_provider": "openai",
-      "model_name": "gpt-image-2",
+      "litellm_key": "together_ai/openai/gpt-image-2",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-2",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
-      "input_cost_per_token": 5e-06,
+      "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://developers.openai.com/api/docs/pricing",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     }
   },
   {
@@ -9133,25 +9130,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/openai/",
     "litellm": {
-      "litellm_key": "1536-x-1024/gpt-image-1.5",
-      "litellm_provider": "1536-x-1024",
-      "model_name": "gpt-image-1.5",
+      "litellm_key": "together_ai/openai/gpt-image-1.5",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-1.5",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
       "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     }
   },
   {
@@ -17731,25 +17725,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/kenari/",
     "litellm": {
-      "litellm_key": "gpt-image-2",
-      "litellm_provider": "openai",
-      "model_name": "gpt-image-2",
+      "litellm_key": "together_ai/openai/gpt-image-2",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-2",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
-      "input_cost_per_token": 5e-06,
+      "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://developers.openai.com/api/docs/pricing",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     }
   },
   {
@@ -83048,7 +83039,7 @@
       "max_output_tokens": 64000,
       "input_cost_per_token": 1.25e-06,
       "output_cost_per_token": 1e-05,
-      "supports_reasoning": null,
+      "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
       "supports_prompt_caching": null,
@@ -113692,25 +113683,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/vercel/",
     "litellm": {
-      "litellm_key": "gpt-image-2",
-      "litellm_provider": "openai",
-      "model_name": "gpt-image-2",
+      "litellm_key": "together_ai/openai/gpt-image-2",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-2",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
-      "input_cost_per_token": 5e-06,
+      "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://developers.openai.com/api/docs/pricing",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     }
   },
   {
@@ -114822,25 +114810,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/vercel/",
     "litellm": {
-      "litellm_key": "1536-x-1024/gpt-image-1.5",
-      "litellm_provider": "1536-x-1024",
-      "model_name": "gpt-image-1.5",
+      "litellm_key": "together_ai/openai/gpt-image-1.5",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-1.5",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
       "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     }
   },
   {
@@ -124058,7 +124043,25 @@
     "input_price_per_m": null,
     "output_price_per_m": null,
     "is_free": false,
-    "source_url": "https://models.dev/providers/vercel/"
+    "source_url": "https://models.dev/providers/vercel/",
+    "litellm": {
+      "litellm_key": "together_ai/ByteDance-Seed/Seedream-4.0",
+      "litellm_provider": "together_ai",
+      "model_name": "ByteDance-Seed/Seedream-4.0",
+      "max_input_tokens": 0,
+      "max_output_tokens": 0,
+      "input_cost_per_token": null,
+      "output_cost_per_token": null,
+      "supports_reasoning": null,
+      "supports_vision": null,
+      "supports_function_calling": null,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
+      "supports_response_schema": null,
+      "mode": "image_generation",
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
+    }
   },
   {
     "id": "vercel/bytedance/seedance-2.0-mini",
@@ -139125,7 +139128,7 @@
       "max_output_tokens": 64000,
       "input_cost_per_token": 1.25e-06,
       "output_cost_per_token": 1e-05,
-      "supports_reasoning": null,
+      "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
       "supports_prompt_caching": null,
@@ -140378,7 +140381,7 @@
       "max_output_tokens": 65536,
       "input_cost_per_token": 2e-06,
       "output_cost_per_token": 1.2e-05,
-      "supports_reasoning": null,
+      "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": false,
       "supports_prompt_caching": false,
@@ -238770,25 +238773,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/azure/",
     "litellm": {
-      "litellm_key": "gpt-image-2",
-      "litellm_provider": "openai",
-      "model_name": "gpt-image-2",
+      "litellm_key": "together_ai/openai/gpt-image-2",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-2",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
-      "input_cost_per_token": 5e-06,
+      "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://developers.openai.com/api/docs/pricing",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     }
   },
   {
@@ -239814,25 +239814,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/azure/",
     "litellm": {
-      "litellm_key": "1536-x-1024/gpt-image-1.5",
-      "litellm_provider": "1536-x-1024",
-      "model_name": "gpt-image-1.5",
+      "litellm_key": "together_ai/openai/gpt-image-1.5",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-1.5",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
       "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     }
   },
   {
@@ -251214,25 +251211,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/aihubmix/",
     "litellm": {
-      "litellm_key": "gpt-image-2",
-      "litellm_provider": "openai",
-      "model_name": "gpt-image-2",
+      "litellm_key": "together_ai/openai/gpt-image-2",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-2",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
-      "input_cost_per_token": 5e-06,
+      "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://developers.openai.com/api/docs/pricing",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     },
     "offer": {
       "id": "aihubmix",
@@ -253253,25 +253247,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/aihubmix/",
     "litellm": {
-      "litellm_key": "1536-x-1024/gpt-image-1.5",
-      "litellm_provider": "1536-x-1024",
-      "model_name": "gpt-image-1.5",
+      "litellm_key": "together_ai/openai/gpt-image-1.5",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-1.5",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
       "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     },
     "offer": {
       "id": "aihubmix",
@@ -258100,25 +258091,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/poe/",
     "litellm": {
-      "litellm_key": "gpt-image-2",
-      "litellm_provider": "openai",
-      "model_name": "gpt-image-2",
+      "litellm_key": "together_ai/openai/gpt-image-2",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-2",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
-      "input_cost_per_token": 5e-06,
+      "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://developers.openai.com/api/docs/pricing",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     }
   },
   {
@@ -258666,25 +258654,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/poe/",
     "litellm": {
-      "litellm_key": "1536-x-1024/gpt-image-1.5",
-      "litellm_provider": "1536-x-1024",
-      "model_name": "gpt-image-1.5",
+      "litellm_key": "together_ai/openai/gpt-image-1.5",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-1.5",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
       "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     }
   },
   {
@@ -282658,7 +282643,7 @@
       "max_output_tokens": 65536,
       "input_cost_per_token": 2e-06,
       "output_cost_per_token": 1.2e-05,
-      "supports_reasoning": null,
+      "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": false,
       "supports_prompt_caching": false,
@@ -293823,25 +293808,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/fastrouter/",
     "litellm": {
-      "litellm_key": "gpt-image-2",
-      "litellm_provider": "openai",
-      "model_name": "gpt-image-2",
+      "litellm_key": "together_ai/openai/gpt-image-2",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-2",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
-      "input_cost_per_token": 5e-06,
+      "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://developers.openai.com/api/docs/pricing",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     }
   },
   {
@@ -422589,25 +422571,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/azure-cognitive-services/",
     "litellm": {
-      "litellm_key": "gpt-image-2",
-      "litellm_provider": "openai",
-      "model_name": "gpt-image-2",
+      "litellm_key": "together_ai/openai/gpt-image-2",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-2",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
-      "input_cost_per_token": 5e-06,
+      "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "https://developers.openai.com/api/docs/pricing",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     }
   },
   {
@@ -423633,25 +423612,22 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/azure-cognitive-services/",
     "litellm": {
-      "litellm_key": "1536-x-1024/gpt-image-1.5",
-      "litellm_provider": "1536-x-1024",
-      "model_name": "gpt-image-1.5",
+      "litellm_key": "together_ai/openai/gpt-image-1.5",
+      "litellm_provider": "together_ai",
+      "model_name": "openai/gpt-image-1.5",
       "max_input_tokens": 0,
       "max_output_tokens": 0,
       "input_cost_per_token": null,
       "output_cost_per_token": null,
       "supports_reasoning": null,
-      "supports_vision": true,
+      "supports_vision": null,
       "supports_function_calling": null,
       "supports_prompt_caching": null,
       "supports_tool_choice": null,
       "supports_response_schema": null,
       "mode": "image_generation",
-      "source": "",
-      "supported_endpoints": [
-        "/v1/images/generations",
-        "/v1/images/edits"
-      ]
+      "source": "https://www.together.ai/pricing",
+      "supported_endpoints": []
     }
   },
   {
