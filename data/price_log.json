@@ -1,5 +1,77 @@
 [
   {
+    "event_id": "790e179edcb98bca",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-flash-0731",
+    "provider": "IteraCompute, Kilo Gateway, Klavo AI, Lyceum, Merge Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, OrcaRouter, Perplexity Agent, Phala, Prime Inference, Standard Compute, TensorX, Vercel AI Gateway",
+    "detected_at": "2026-11-20T18:32:48.150609+00:00",
+    "details": "Input: $0.047 -> $0.044; output: $0.16 -> $0.132",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "fd0f59c47b41ccd6",
+    "type": "price_change",
+    "model_id": "qwen/qwen3-coder",
+    "provider": "Kilo Gateway, NanoGPT, Obscurify.ai, OpenRouter",
+    "detected_at": "2026-11-20T18:32:48.150609+00:00",
+    "details": "Input: $0.14365 -> $0.3; output: $0.5525 -> $1",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "8f3a144efb381312",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-flash-0731:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-20T18:32:48.150609+00:00",
+    "details": "Input: $0.05 -> $0.044; output: $0.16 -> $0.132",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "431e4db923577603",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-20T18:32:48.150609+00:00",
+    "details": "Input: $0.047 -> $0.044; output: $0.28 -> $0.132",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
+    "event_id": "e3715056160644cf",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-20T18:32:48.150609+00:00",
+    "details": "Input: $0.2565 -> $0.0999; output: $3.96 -> $3.96",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "e87d82629dd28ac3",
+    "type": "price_change",
+    "model_id": "alibaba/qwen3.8-27b",
+    "provider": "AI/ML API, LLM Gateway, Vercel AI Gateway",
+    "detected_at": "2026-11-20T18:32:48.150609+00:00",
+    "details": "Input: $0.06 -> $0.06; output: $2.2 -> $1.96",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "eecaa0fa3d802e9a",
     "type": "price_change",
     "model_id": "z-ai/glm-5.2",

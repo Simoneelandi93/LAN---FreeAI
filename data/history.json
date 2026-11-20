@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "3e8da2dd62130ee1",
+    "type": "new_model",
+    "model_id": "kimi-k3.1-pro-prime",
+    "provider": "DevPass (LLM Gateway)",
+    "detected_at": "2026-11-20T18:32:48.150609+00:00",
+    "details": "$4 in / $20 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "75ae987ce845fb84",
+    "type": "new_model",
+    "model_id": "reka-ai/deepseek-v4.1-flash-1017",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-20T18:32:48.150609+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "dc6b69bec18b5b6c",
+    "type": "new_model",
+    "model_id": "reka-ai/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-20T18:32:48.150609+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6d3b94ba174f46b4",
+    "type": "new_model",
+    "model_id": "alibaba/kimi-k3.1-pro-prime",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-20T18:32:48.150609+00:00",
+    "details": "$4 in / $20 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "631fddeddb53c875",
     "type": "new_model",
     "model_id": "radixark/daisyrose-27b",
