@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "7114984f220937c2",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-pro-0813",
+    "provider": "AI/ML API, Arcee, IteraCompute, Kilo Gateway, Kitani, Merge Gateway, NanoGPT, Novita AI, Obscurify.ai, Ofox, OpenRouter, OrcaRouter, Standard Compute, TensorX, Vercel AI Gateway",
+    "detected_at": "2026-11-20T07:04:21.337929+00:00",
+    "details": "Input: $0.22 -> $0.6; output: $1.79 -> $1.79",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "deb0b9acec55cf67",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Ambient, Arcee, Infersia, IteraCompute, Kilo Gateway, Kitani, Klavo AI, LLM Gateway, Merge Gateway, Modular, NEAR AI Cloud, NanoGPT, Novita AI, Ofox, OpenRouter, Phala, Prime Inference, Vercel AI Gateway",
+    "detected_at": "2026-11-20T07:04:21.337929+00:00",
+    "details": "Input: $0.036 -> $0.04368; output: $0.25 -> $0.25",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "c7bd3c81376adb3a",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-20T07:04:21.337929+00:00",
+    "details": "Input: $0.06 -> $0.047; output: $0.18 -> $0.28",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "358db4283125df44",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-20T07:04:21.337929+00:00",
+    "details": "Input: $0.198 -> $0.2565; output: $3.96 -> $3.96",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
     "event_id": "4cbbf1f60fe9a8c7",
     "type": "price_change",
     "model_id": "ionos/meta-llama/Llama-3.3-70B-Instruct",
