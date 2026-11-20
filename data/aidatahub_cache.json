@@ -1,6 +1,6 @@
 {
-  "etag": "W/\"cf213fa52bf81bb3f9d125d527bb04f5\"",
-  "fetched_at": "2026-11-20T00:44:38.951021+00:00",
+  "etag": "W/\"3a179f734879967b3f1b06b2beefc7b3\"",
+  "fetched_at": "2026-11-20T01:03:51.404455+00:00",
   "events": [
     {
       "id": "openrouter:google/gemini-4-neon:listing",
@@ -1847,7 +1847,7 @@
       "modelKey": "x-ai:grok47",
       "modelId": "grok-4.7",
       "name": "Grok 4.7",
-      "provider": "SpaceXAI",
+      "provider": "SpaceXSI",
       "type": "listing",
       "releasedAt": null,
       "listedAt": "2026-09-21",
@@ -3107,7 +3107,7 @@
       "modelKey": "x-ai:grok46",
       "modelId": "grok-4.6",
       "name": "Grok 4.6",
-      "provider": "SpaceXAI",
+      "provider": "SpaceXSI",
       "type": "listing",
       "releasedAt": null,
       "listedAt": "2026-08-12",
@@ -3927,7 +3927,7 @@
       "modelKey": "x-ai:grok45",
       "modelId": "grok-4.5",
       "name": "Grok 4.5",
-      "provider": "SpaceXAI",
+      "provider": "SpaceXSI",
       "type": "listing",
       "releasedAt": null,
       "listedAt": "2026-07-08",
