@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "b69dd88bb4fcb1ad",
+    "type": "new_model",
+    "model_id": "together_ai/tencent/Hy4",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-20T06:38:33.126092+00:00",
+    "details": "$0.834 in / $2.501 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b6ac7e2cf0a77057",
+    "type": "new_model",
+    "model_id": "google/gemma4-31b-splituntied",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-20T06:38:33.126092+00:00",
+    "details": "$0.1 in / $0.3 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "da2337dfc44c2379",
+    "type": "new_model",
+    "model_id": "together-ai/hy4",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-20T06:38:33.126092+00:00",
+    "details": "$0.834 in / $2.501 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f21dd9224080cc87",
+    "type": "new_model",
+    "model_id": "mistralai/pixtral-large-2502",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-20T06:38:33.126092+00:00",
+    "details": "$2 in / $6 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "6b10526d8fa6f559",
     "type": "new_free_model",
     "model_id": "qwen4-max:free",
