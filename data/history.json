@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "631fddeddb53c875",
+    "type": "new_model",
+    "model_id": "radixark/daisyrose-27b",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-20T12:35:18.337449+00:00",
+    "details": "$0.15 in / $1.875 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "b69dd88bb4fcb1ad",
     "type": "new_model",
     "model_id": "together_ai/tencent/Hy4",
