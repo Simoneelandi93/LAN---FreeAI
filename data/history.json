@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "169c23b3e90ec1a9",
+    "type": "model_became_free",
+    "model_id": "deepseek/deepseek-v4-flash",
+    "provider": "AI/ML API, AnyAPI, CommandCode, Eden AI, HPC-AI, Impossibl, Kilo Gateway, Merge Gateway, NanoGPT, Obscurify.ai, Ofox, OpenRouter, OrcaRouter, Prime Inference, SandBase, Standard Compute, TokenGo, Tokenify, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-11-21T01:04:24.461672+00:00",
+    "details": "Was $0.0826/0.1652 per 1M, now free",
+    "alerted": true
+  },
+  {
     "event_id": "3e8da2dd62130ee1",
     "type": "new_model",
     "model_id": "kimi-k3.1-pro-prime",
