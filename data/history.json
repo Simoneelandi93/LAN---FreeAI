@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "a6f6a872c5d74f44",
+    "type": "new_model",
+    "model_id": "thinkingmachines/inkling-2-mini",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-21T06:36:44.755102+00:00",
+    "details": "$0.1 in / $0.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b8fb2fbdb422438b",
+    "type": "new_model",
+    "model_id": "aws-bedrock/pixtral-large-2502",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-21T06:36:44.755102+00:00",
+    "details": "$2 in / $6 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "169c23b3e90ec1a9",
     "type": "model_became_free",
     "model_id": "deepseek/deepseek-v4-flash",
