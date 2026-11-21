@@ -17077,25 +17077,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/kenari/",
     "litellm": {
-      "litellm_key": "meta/muse-wonder-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-wonder-1.0",
+      "litellm_key": "vertex_ai/meta/muse-wonder-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-wonder-1.0",
       "max_input_tokens": 1048576,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 0,
       "input_cost_per_token": 4e-06,
       "output_cost_per_token": 2e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-wonder"
@@ -19726,9 +19724,9 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/kenari/",
     "litellm": {
-      "litellm_key": "meta/muse-ember-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-ember-1.0",
+      "litellm_key": "vertex_ai/meta/muse-ember-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-ember-1.0",
       "max_input_tokens": 1048576,
       "max_output_tokens": 524288,
       "input_cost_per_token": 1e-07,
@@ -19736,15 +19734,13 @@
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-ember-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-ember-1.0"
@@ -29221,9 +29217,9 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/meta/",
     "litellm": {
-      "litellm_key": "meta/muse-ember-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-ember-1.0",
+      "litellm_key": "vertex_ai/meta/muse-ember-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-ember-1.0",
       "max_input_tokens": 1048576,
       "max_output_tokens": 524288,
       "input_cost_per_token": 1e-07,
@@ -29231,15 +29227,13 @@
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-ember-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-ember-1.0"
@@ -29439,25 +29433,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/meta/",
     "litellm": {
-      "litellm_key": "meta/muse-wonder-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-wonder-1.0",
+      "litellm_key": "vertex_ai/meta/muse-wonder-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-wonder-1.0",
       "max_input_tokens": 1048576,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 0,
       "input_cost_per_token": 4e-06,
       "output_cost_per_token": 2e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-wonder"
@@ -90401,9 +90393,9 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/opencode/",
     "litellm": {
-      "litellm_key": "meta/muse-ember-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-ember-1.0",
+      "litellm_key": "vertex_ai/meta/muse-ember-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-ember-1.0",
       "max_input_tokens": 1048576,
       "max_output_tokens": 524288,
       "input_cost_per_token": 1e-07,
@@ -90411,15 +90403,13 @@
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-ember-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-ember-1.0"
@@ -93147,25 +93137,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/opencode/",
     "litellm": {
-      "litellm_key": "meta/muse-wonder-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-wonder-1.0",
+      "litellm_key": "vertex_ai/meta/muse-wonder-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-wonder-1.0",
       "max_input_tokens": 1048576,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 0,
       "input_cost_per_token": 4e-06,
       "output_cost_per_token": 2e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-wonder"
@@ -131160,9 +131148,9 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/llmgateway/",
     "litellm": {
-      "litellm_key": "meta/muse-ember-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-ember-1.0",
+      "litellm_key": "vertex_ai/meta/muse-ember-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-ember-1.0",
       "max_input_tokens": 1048576,
       "max_output_tokens": 524288,
       "input_cost_per_token": 1e-07,
@@ -131170,15 +131158,13 @@
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-ember-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-ember-1.0"
@@ -135696,25 +135682,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/llmgateway/",
     "litellm": {
-      "litellm_key": "meta/muse-wonder-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-wonder-1.0",
+      "litellm_key": "vertex_ai/meta/muse-wonder-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-wonder-1.0",
       "max_input_tokens": 1048576,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 0,
       "input_cost_per_token": 4e-06,
       "output_cost_per_token": 2e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-wonder"
@@ -224913,25 +224897,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/vercel/",
     "litellm": {
-      "litellm_key": "meta/muse-wonder-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-wonder-1.0",
+      "litellm_key": "vertex_ai/meta/muse-wonder-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-wonder-1.0",
       "max_input_tokens": 1048576,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 0,
       "input_cost_per_token": 4e-06,
       "output_cost_per_token": 2e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-wonder"
@@ -255127,9 +255109,9 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/llmgateway-providers/",
     "litellm": {
-      "litellm_key": "meta/muse-ember-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-ember-1.0",
+      "litellm_key": "vertex_ai/meta/muse-ember-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-ember-1.0",
       "max_input_tokens": 1048576,
       "max_output_tokens": 524288,
       "input_cost_per_token": 1e-07,
@@ -255137,15 +255119,13 @@
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-ember-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-ember-1.0"
@@ -255237,25 +255217,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/llmgateway-providers/",
     "litellm": {
-      "litellm_key": "meta/muse-wonder-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-wonder-1.0",
+      "litellm_key": "vertex_ai/meta/muse-wonder-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-wonder-1.0",
       "max_input_tokens": 1048576,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 0,
       "input_cost_per_token": 4e-06,
       "output_cost_per_token": 2e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-wonder-1.0"
@@ -285938,25 +285916,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/edenai/",
     "litellm": {
-      "litellm_key": "meta/muse-wonder-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-wonder-1.0",
+      "litellm_key": "vertex_ai/meta/muse-wonder-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-wonder-1.0",
       "max_input_tokens": 1048576,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 0,
       "input_cost_per_token": 4e-06,
       "output_cost_per_token": 2e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-wonder-1.0"
@@ -326420,25 +326396,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/commandcode/",
     "litellm": {
-      "litellm_key": "meta/muse-wonder-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-wonder-1.0",
+      "litellm_key": "vertex_ai/meta/muse-wonder-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-wonder-1.0",
       "max_input_tokens": 1048576,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 0,
       "input_cost_per_token": 4e-06,
       "output_cost_per_token": 2e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-wonder"
@@ -404799,25 +404773,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/requesty/",
     "litellm": {
-      "litellm_key": "meta/muse-wonder-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-wonder-1.0",
+      "litellm_key": "vertex_ai/meta/muse-wonder-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-wonder-1.0",
       "max_input_tokens": 1048576,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 0,
       "input_cost_per_token": 4e-06,
       "output_cost_per_token": 2e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-wonder",
@@ -434759,9 +434731,9 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/cloudflare-ai-gateway/",
     "litellm": {
-      "litellm_key": "meta/muse-ember-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-ember-1.0",
+      "litellm_key": "vertex_ai/meta/muse-ember-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-ember-1.0",
       "max_input_tokens": 1048576,
       "max_output_tokens": 524288,
       "input_cost_per_token": 1e-07,
@@ -434769,15 +434741,13 @@
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-ember-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-ember-1.0"
@@ -434869,25 +434839,23 @@
     "is_free": false,
     "source_url": "https://models.dev/providers/cloudflare-ai-gateway/",
     "litellm": {
-      "litellm_key": "meta/muse-wonder-1.0",
-      "litellm_provider": "meta",
-      "model_name": "muse-wonder-1.0",
+      "litellm_key": "vertex_ai/meta/muse-wonder-1.0",
+      "litellm_provider": "vertex_ai",
+      "model_name": "meta/muse-wonder-1.0",
       "max_input_tokens": 1048576,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 0,
       "input_cost_per_token": 4e-06,
       "output_cost_per_token": 2e-05,
       "supports_reasoning": true,
       "supports_vision": true,
       "supports_function_calling": true,
-      "supports_prompt_caching": true,
-      "supports_tool_choice": true,
+      "supports_prompt_caching": null,
+      "supports_tool_choice": null,
       "supports_response_schema": true,
-      "mode": "chat",
-      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "mode": "responses",
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0",
       "supported_endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
+        "/v1/responses"
       ]
     },
     "llm_stats_id": "muse-wonder"
