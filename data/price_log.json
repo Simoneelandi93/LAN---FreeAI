@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "83537d8aa2acb192",
+    "type": "price_change",
+    "model_id": "~moonshotai/kimi-latest",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-21T18:32:46.597171+00:00",
+    "details": "Input: $0.1805 -> $0.1824; output: $7 -> $7",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "2fe20207eba53c48",
+    "type": "price_change",
+    "model_id": "thinkingmachines/inkling-2-mini",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-21T18:32:46.597171+00:00",
+    "details": "Input: $0.08 -> $0.075; output: $0.35 -> $0.3",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
     "event_id": "295f86abc2df939f",
     "type": "price_change",
     "model_id": "upstage/solar-pro4",
