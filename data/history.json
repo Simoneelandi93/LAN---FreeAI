@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "c0e7f68cb75462b0",
+    "type": "new_model",
+    "model_id": "longcat-2.5",
+    "provider": "OpenCode Go",
+    "detected_at": "2026-11-22T16:03:41.850158+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "c7fbedea56164c05",
     "type": "new_model",
     "model_id": "deepinfra/tencent/Hy4",
