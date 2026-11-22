@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "9fea8de06755f73a",
+    "type": "price_change",
+    "model_id": "moonshotai/kimi-k3.1-pro",
+    "provider": "Baseten, Cloudflare AI Gateway, CommandCode, Deep Infra, Doubleword, Hugging Face, Keln, Kilo Gateway, Logits, Lyceum, NEAR AI Cloud, NanoGPT, Nebius Token Factory, Novita AI, Ofox, OpenRouter, Prime Inference, Together AI, Vercel AI Gateway, Wallaby, ai&",
+    "detected_at": "2026-11-22T12:32:56.449412+00:00",
+    "details": "Input: $0.253 -> $0.2403; output: $7 -> $7",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "615f45c249656e05",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-22T12:32:56.449412+00:00",
+    "details": "Input: $0.0399 -> $0.0466; output: $0.0784 -> $0.0729",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "289f5fee4b9d7cd8",
     "type": "price_change",
     "model_id": "aws-mantle/gpt-5.6-sol",
