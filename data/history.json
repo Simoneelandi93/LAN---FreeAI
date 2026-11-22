@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "0a05ceb1d91ac85b",
+    "type": "new_model",
+    "model_id": "fireworks/qwen3.8-2.4t-a95b",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-22T01:04:16.600735+00:00",
+    "details": "$2 in / $6 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "a6f6a872c5d74f44",
     "type": "new_model",
     "model_id": "thinkingmachines/inkling-2-mini",
