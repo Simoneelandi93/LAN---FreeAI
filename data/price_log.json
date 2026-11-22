@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "a63befdc9d0575aa",
+    "type": "price_change",
+    "model_id": "z-ai/glm-5.1",
+    "provider": "AIHubMix, CrossModel, Crusoe, Eden AI, FastRouter, FrogBot, Impossibl, Kilo Gateway, LLM Gateway, Merge Gateway, NanoGPT, Ofox, OpenRouter, OrcaRouter, Phala, TensorX, TokenGo, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-11-22T18:32:36.933457+00:00",
+    "details": "Input: $0.845 -> $0.845; output: $3.036 -> $3.38",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "c83ce3bdaeb1ccaf",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-22T18:32:36.933457+00:00",
+    "details": "Input: $0.0466 -> $0.0399; output: $0.0729 -> $0.0784",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "a085720dcbd66afa",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-22T18:32:36.933457+00:00",
+    "details": "Input: $0.0999 -> $0.1188; output: $3.96 -> $3.96",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "bc45238eb69fe3d0",
+    "type": "price_change",
+    "model_id": "z-ai/glm-5.1:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-22T18:32:36.933457+00:00",
+    "details": "Input: $0.966 -> $1.33; output: $3.036 -> $4.18",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "9fea8de06755f73a",
     "type": "price_change",
     "model_id": "moonshotai/kimi-k3.1-pro",
