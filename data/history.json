@@ -1,5 +1,203 @@
 [
   {
+    "event_id": "9304fbbfd5aaa1ea",
+    "type": "new_model",
+    "model_id": "codestral",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.3 in / $0.9 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c5b4495ad738a02f",
+    "type": "new_model",
+    "model_id": "minimax-m2-1-highspeed",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.6 in / $2.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9bdd5239ceca0894",
+    "type": "new_model",
+    "model_id": "qwen3-30b",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.12 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "4465e384c9d5a4de",
+    "type": "new_model",
+    "model_id": "nova-pro",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.8 in / $3.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ec9cbae9e07d7700",
+    "type": "new_model",
+    "model_id": "mistral-small-3.2",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.1 in / $0.3 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "2b242ef5985c69b7",
+    "type": "new_model",
+    "model_id": "muse-ember",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.1 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "95a73b036df5f895",
+    "type": "new_model",
+    "model_id": "gpt-oss-safeguard-20b",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.07 in / $0.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8abfcc3b27043ccb",
+    "type": "new_model",
+    "model_id": "mistral-medium-3.1",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.4 in / $2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "730592094df62243",
+    "type": "new_model",
+    "model_id": "qwen3-coder-480b-a35b",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "26eabadcb5f8c1ac",
+    "type": "new_model",
+    "model_id": "nova-micro",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.035 in / $0.14 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "63058b564e1f89aa",
+    "type": "new_model",
+    "model_id": "ministral-3-8b",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.15 in / $0.15 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6ed716b91fd1ea7e",
+    "type": "new_model",
+    "model_id": "mistral-small-3.1",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.351 in / $0.555 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8c9e8b4723612280",
+    "type": "new_model",
+    "model_id": "qwen3-235b-a22b-instruct",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.09 in / $0.55 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d2aa18eb5505c5c7",
+    "type": "new_model",
+    "model_id": "nemotron-3-120b",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.075 in / $0.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e6ca550ea1b78cb5",
+    "type": "new_model",
+    "model_id": "qwen3-30b-a3b-instruct",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.1 in / $0.3 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "12cba63945a06b8c",
+    "type": "new_free_model",
+    "model_id": "apodex-1.1-mini",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e537b5c488973144",
+    "type": "new_model",
+    "model_id": "deepseek-v4-1-fast",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.6 in / $2.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "84da504f7eb9c5e8",
+    "type": "new_model",
+    "model_id": "nemotron-lightning-3.5-30b",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.06 in / $0.24 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8ad8f0c3cfd9609f",
+    "type": "new_model",
+    "model_id": "ministral-3-3b",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.1 in / $0.1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d4350d0bc802203e",
+    "type": "new_model",
+    "model_id": "qwen3-next-80b-a3b",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.14 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "aaf1b1ab0c7a093f",
+    "type": "new_model",
+    "model_id": "ibm-granite-micro",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.017 in / $0.112 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a5fe6e1f1a7102fd",
+    "type": "new_model",
+    "model_id": "nova-lite",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T00:49:42.353275+00:00",
+    "details": "$0.06 in / $0.24 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "c0e7f68cb75462b0",
     "type": "new_model",
     "model_id": "longcat-2.5",
