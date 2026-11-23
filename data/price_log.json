@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "3eb1ff7d35d3af44",
+    "type": "price_change",
+    "model_id": "thinkingmachines/inkling-2-mini",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-23T12:36:41.757175+00:00",
+    "details": "Input: $0.075 -> $0.0375; output: $0.3 -> $0.15",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "fe5b2be6c4372c83",
+    "type": "price_change",
+    "model_id": "~z-ai/glm-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-23T12:36:41.757175+00:00",
+    "details": "Input: $0.0399 -> $0.0399; output: $0.0784 -> $0.074",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "3d540aa6e63347fb",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-23T12:36:41.757175+00:00",
+    "details": "Input: $0.1188 -> $0.0999; output: $3.96 -> $3.96",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "b4fc38ad72d97514",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4-flash-0731",
