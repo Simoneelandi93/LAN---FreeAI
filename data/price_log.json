@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "ba8f9ac9a17deabb",
+    "type": "price_change",
+    "model_id": "openai/o3-pro-2025-06-10",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-23T15:04:01.638776+00:00",
+    "details": "Input: $22 -> $20; output: $88 -> $80",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "e6eb912a63e36430",
+    "type": "price_change",
+    "model_id": "google/gemma-4-26b-a4b-it:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-23T15:04:01.638776+00:00",
+    "details": "Input: $0.0675 -> $0.056; output: $0.225 -> $0.192",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "3eb1ff7d35d3af44",
     "type": "price_change",
     "model_id": "thinkingmachines/inkling-2-mini",
