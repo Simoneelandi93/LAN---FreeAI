@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "8f9bc7f9696ca0b8",
+    "type": "price_change",
+    "model_id": "devstral-latest",
+    "provider": "Requesty",
+    "detected_at": "2026-11-23T18:04:48.455420+00:00",
+    "details": "Input: $0.4 -> $0.44; output: $2 -> $2.2",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "b4fcf6693a27fd1a",
+    "type": "price_change",
+    "model_id": "magistral-medium-latest",
+    "provider": "Mistral",
+    "detected_at": "2026-11-23T18:04:48.455420+00:00",
+    "details": "Input: $2 -> $1.5; output: $5 -> $7.5",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "2aa6b00f1a75ffa6",
     "type": "price_change",
     "model_id": "qwen/qwen4-max",

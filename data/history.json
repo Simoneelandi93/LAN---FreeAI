@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "ad6206437209a79f",
+    "type": "new_model",
+    "model_id": "ministral-14b-latest",
+    "provider": "Mistral",
+    "detected_at": "2026-11-23T18:04:48.455420+00:00",
+    "details": "$0.2 in / $0.2 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "e5c42d899180dd1e",
     "type": "new_model",
     "model_id": "hungerg-free",
