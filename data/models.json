@@ -275035,38 +275035,6 @@
     "source_url": "https://models.dev/providers/opencode-go/"
   },
   {
-    "id": "opencode-go/hungerg-free",
-    "provider_id": "opencode-go",
-    "provider": "OpenCode Go",
-    "provider_url": "https://models.dev/providers/opencode-go/",
-    "model_id": "hungerg-free",
-    "name": "HungerG Free",
-    "description": "Stealth reasoning model, free for a limited time",
-    "family": "",
-    "release_date": "2026-11-23",
-    "last_updated": "2026-11-23",
-    "status": "",
-    "attachment": true,
-    "reasoning": true,
-    "tool_call": true,
-    "structured_output": false,
-    "temperature": false,
-    "open_weights": false,
-    "modalities_input": [
-      "text",
-      "image",
-      "video"
-    ],
-    "modalities_output": [
-      "text"
-    ],
-    "context_window": 1000000,
-    "input_price_per_m": 0,
-    "output_price_per_m": 0,
-    "is_free": false,
-    "source_url": "https://models.dev/providers/opencode-go/"
-  },
-  {
     "id": "opencode-go/step-5-preview",
     "provider_id": "opencode-go",
     "provider": "OpenCode Go",
