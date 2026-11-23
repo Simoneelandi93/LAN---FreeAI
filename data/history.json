@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "29435108f9fa8f26",
+    "type": "new_model",
+    "model_id": "ultramarine-1-flash",
+    "provider": "Concentrate",
+    "detected_at": "2026-11-23T04:34:45.775695+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "e7a5f97f62b9a33d",
     "type": "new_model",
     "model_id": "writer.palmyra-vision-7b",
