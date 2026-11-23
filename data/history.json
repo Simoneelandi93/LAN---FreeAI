@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "ab213eec4135a7cf",
+    "type": "new_model",
+    "model_id": "orca/orcacyber-inkling-2-mini",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-23T18:32:42.563009+00:00",
+    "details": "$0.2 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b6dec19c86fc5e54",
+    "type": "new_model",
+    "model_id": "orca/orcacyber-ling-3.2-flash",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-23T18:32:42.563009+00:00",
+    "details": "$0.6 in / $1.8 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "85089869873e6e5d",
+    "type": "new_model",
+    "model_id": "orca/orcacyber-hy4-flash",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-23T18:32:42.563009+00:00",
+    "details": "$0.07 in / $0.281 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c61ade4618c69fbe",
+    "type": "new_model",
+    "model_id": "orca/orcacyber-step-5-preview",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-23T18:32:42.563009+00:00",
+    "details": "$2 in / $5.4 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "ad6206437209a79f",
     "type": "new_model",
     "model_id": "ministral-14b-latest",
