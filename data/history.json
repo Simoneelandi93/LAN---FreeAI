@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "64b3a1e631b50c0d",
+    "type": "new_model",
+    "model_id": "inkling-2-mini-uncensored",
+    "provider": "Kenari",
+    "detected_at": "2026-11-23T15:32:42.411144+00:00",
+    "details": "$0.1429 in / $0.7143 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "deec759dc5b5b6ab",
     "type": "new_free_model",
     "model_id": "dots-studio/dots-3-note-preview:free",
