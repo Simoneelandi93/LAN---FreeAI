@@ -1,5 +1,77 @@
 [
   {
+    "event_id": "e7a5f97f62b9a33d",
+    "type": "new_model",
+    "model_id": "writer.palmyra-vision-7b",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-11-23T01:33:53.735910+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c05e9cd55223c317",
+    "type": "new_model",
+    "model_id": "Qwen/Qwen3.8-Max-VL-Thinking",
+    "provider": "Modal",
+    "detected_at": "2026-11-23T01:33:53.735910+00:00",
+    "details": "$2 in / $6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "157bd2f06d28d32b",
+    "type": "new_model",
+    "model_id": "primalabs-ai/DeepSeek-V4.1-Flash-1017",
+    "provider": "PrimaLabs",
+    "detected_at": "2026-11-23T01:33:53.735910+00:00",
+    "details": "$0.24 in / $0.96 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9fde35ae42bfbcf9",
+    "type": "new_model",
+    "model_id": "primalabs-ai/GLM-5.3-Flash",
+    "provider": "PrimaLabs",
+    "detected_at": "2026-11-23T01:33:53.735910+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e9e709e14f7ac7c4",
+    "type": "new_model",
+    "model_id": "primalabs-ai/MiMo-V2.6-Pro",
+    "provider": "PrimaLabs",
+    "detected_at": "2026-11-23T01:33:53.735910+00:00",
+    "details": "$4 in / $8 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "0b5d0c569aef489d",
+    "type": "new_model",
+    "model_id": "primalabs-ai/Kimi-K3.1-Pro",
+    "provider": "PrimaLabs",
+    "detected_at": "2026-11-23T01:33:53.735910+00:00",
+    "details": "$1.8 in / $9 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f363203762277140",
+    "type": "new_model",
+    "model_id": "primalabs-ai/Nemotron-3.5-Lightning-NVFP4",
+    "provider": "PrimaLabs",
+    "detected_at": "2026-11-23T01:33:53.735910+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1316b6d0ba165c76",
+    "type": "new_model",
+    "model_id": "primalabs-ai/Nemotron-3.5-Super-VL-NVFP4",
+    "provider": "PrimaLabs",
+    "detected_at": "2026-11-23T01:33:53.735910+00:00",
+    "details": "$0.25 in / $1.5 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "9304fbbfd5aaa1ea",
     "type": "new_model",
     "model_id": "codestral",
