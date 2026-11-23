@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "14d3ce319a9d4d42",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.6-35b-a3b",
+    "provider": "Ambient, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Klavo AI, Mallard AI, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, Phala, SiliconFlow, SiliconFlow (China), Thinking Machines, evroc",
+    "detected_at": "2026-11-23T01:04:07.428428+00:00",
+    "details": "Input: $0.1 -> $0.05; output: $0.8 -> $0.7",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": true
+  },
+  {
     "event_id": "376199ed1b49e7b7",
     "type": "price_change",
     "model_id": "gemma-3-12b",
