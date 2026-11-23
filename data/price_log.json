@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "2aa6b00f1a75ffa6",
+    "type": "price_change",
+    "model_id": "qwen/qwen4-max",
+    "provider": "Chutes, CrossModel, Deep Infra, Eden AI, Kilo Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, Together AI",
+    "detected_at": "2026-11-23T16:32:37.591398+00:00",
+    "details": "Input: $1.413 -> $1.05; output: $4.24 -> $3.15",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "ba8f9ac9a17deabb",
     "type": "price_change",
     "model_id": "openai/o3-pro-2025-06-10",
