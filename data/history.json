@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "deec759dc5b5b6ab",
+    "type": "new_free_model",
+    "model_id": "dots-studio/dots-3-note-preview:free",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-23T06:48:14.912290+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c4b39995a3403f37",
+    "type": "new_model",
+    "model_id": "xai/grok-4.20-multi-agent-0309",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-23T06:48:14.912290+00:00",
+    "details": "$1.25 in / $2.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1ba5c6a0520507de",
+    "type": "new_model",
+    "model_id": "amazon/writer.palmyra-vision-7b",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-23T06:48:14.912290+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8da7ca356fa7e28f",
+    "type": "new_model",
+    "model_id": "deepinfra/hy4",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-23T06:48:14.912290+00:00",
+    "details": "$0.834 in / $2.501 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "1f16e26ad22d65b3",
     "type": "new_model",
     "model_id": "glm-5.4",
