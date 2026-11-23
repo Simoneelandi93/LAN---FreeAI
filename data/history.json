@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "1f16e26ad22d65b3",
+    "type": "new_model",
+    "model_id": "glm-5.4",
+    "provider": "Z.AI Coding Plan, Zhipu AI Coding Plan",
+    "detected_at": "2026-11-23T05:04:26.169861+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "0d8f6514c3445fbc",
+    "type": "new_model",
+    "model_id": "sarvam-105b-conversations",
+    "provider": "Sarvam AI",
+    "detected_at": "2026-11-23T05:04:26.169861+00:00",
+    "details": "$0.10638298 in / $0.26595745 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "539bb8cb24e62d54",
+    "type": "new_model",
+    "model_id": "deepseekv4.1-flash-1017-interactive",
+    "provider": "Sarvam AI",
+    "detected_at": "2026-11-23T05:04:26.169861+00:00",
+    "details": "$0.26595745 in / $1.11702128 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "29435108f9fa8f26",
     "type": "new_model",
     "model_id": "ultramarine-1-flash",
