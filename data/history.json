@@ -1,5 +1,473 @@
 [
   {
+    "event_id": "a66ba86dac9c2005",
+    "type": "new_model",
+    "model_id": "CohereLabs/command-a-plus-05-2026-bf16",
+    "provider": "Hugging Face",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.3 in / $1.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8e1c0b03b2c44424",
+    "type": "new_model",
+    "model_id": "Qwen/Qwen3.8-Flash-Next-FP8",
+    "provider": "Hugging Face",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.15 in / $0.47 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e1441ea5f6f6a095",
+    "type": "new_model",
+    "model_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "provider": "Hugging Face",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.35 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1221693b08d88119",
+    "type": "new_model",
+    "model_id": "dphn/Dolphin-Mistral-24B-Venice-Edition",
+    "provider": "Hugging Face",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.2 in / $0.9 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1e4c66398b4f2e47",
+    "type": "new_model",
+    "model_id": "NousResearch/Hermes-3-Llama-3.1-70B",
+    "provider": "Hugging Face",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.7 in / $0.7 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "83ca0cac1b3d8b10",
+    "type": "new_model",
+    "model_id": "mistralai/Mistral-Large-4-1T-A52B",
+    "provider": "Hugging Face",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.7 in / $2.1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e8316671072d38e4",
+    "type": "new_model",
+    "model_id": "alpindale/WizardLM-2-8x22B",
+    "provider": "Hugging Face",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.62 in / $0.62 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f02c67e15dbb57bc",
+    "type": "new_model",
+    "model_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+    "provider": "Hugging Face",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.075 in / $0.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "2da8209d431ee480",
+    "type": "new_model",
+    "model_id": "glm-5.3-flashx-legal",
+    "provider": "Z.AI, Zhipu AI",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.29943 in / $1.04801 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "37a70ef52de16689",
+    "type": "new_model",
+    "model_id": "moonshotai/Kimi-K3.1-Pro:peft:262144",
+    "provider": "Thinking Machines",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$6 in / $25 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "cfe4dd3b4e9c9bd7",
+    "type": "new_model",
+    "model_id": "thinkingmachines/Inkling-2-Small:peft:262144",
+    "provider": "Thinking Machines",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "47ea7964c7359982",
+    "type": "new_model",
+    "model_id": "thinkingmachines/Inkling-2-Mini:peft:262144",
+    "provider": "Thinking Machines",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ce4b7d7ad5636417",
+    "type": "new_free_model",
+    "model_id": "north-small-translate-1.0",
+    "provider": "Cohere",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "4c61534eb19278e1",
+    "type": "new_model",
+    "model_id": "doubao-seed-2-1-lite-260915",
+    "provider": "Volcengine Ark",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.11977 in / $0.40423 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c6c2ec44cac86b57",
+    "type": "new_model",
+    "model_id": "doubao-seed-2-1-pro-260915",
+    "provider": "Volcengine Ark",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.8983 in / $4.49149 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c0b92781b5f1b7ef",
+    "type": "new_model",
+    "model_id": "kimi-k3-1-pro-261024",
+    "provider": "Volcengine Ark",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$1.94631 in / $10.18071 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6c02342356e44884",
+    "type": "new_model",
+    "model_id": "databricks-claude-fable-5-1",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$10 in / $50 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9eb111746046953b",
+    "type": "new_model",
+    "model_id": "databricks-grok-4-6",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$2 in / $6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "4b7651ea0627b2e0",
+    "type": "new_model",
+    "model_id": "databricks-glm-5-3-flash",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3132b91954224c6c",
+    "type": "new_model",
+    "model_id": "databricks-claude-fable-5",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$10 in / $50 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "bdbd4583be41b38f",
+    "type": "new_model",
+    "model_id": "databricks-kimi-k3",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$3 in / $15 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "15cb855f9040c2a3",
+    "type": "new_model",
+    "model_id": "databricks-gemma-3-12b",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "282f507522a411c0",
+    "type": "new_model",
+    "model_id": "databricks-claude-sonnet-5-5",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e406af842a4f2929",
+    "type": "new_model",
+    "model_id": "system.ai.gpt-6-2-sol",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1da638c6ef512258",
+    "type": "new_model",
+    "model_id": "databricks-claude-opus-5-5",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$4 in / $20 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "2387d9ccd97284b5",
+    "type": "new_model",
+    "model_id": "databricks-grok-4-7",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$2 in / $6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d2b666688a5442b9",
+    "type": "new_model",
+    "model_id": "databricks-gemini-3-7-flash",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.75 in / $3.75 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "801e25d73aef066e",
+    "type": "new_model",
+    "model_id": "databricks-kimi-k3-1-pro",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "63d56f70f32676fc",
+    "type": "new_model",
+    "model_id": "databricks-glm-5-3",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$1.4 in / $4.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a53d43c670730209",
+    "type": "new_model",
+    "model_id": "databricks-meta-llama-3-3-70b-instruct",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.5 in / $1.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "838c5849bb20be38",
+    "type": "new_model",
+    "model_id": "databricks-gpt-6-1-terra",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$1 in / $5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d725952e55795886",
+    "type": "new_model",
+    "model_id": "databricks-gpt-5-5-pro",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$30 in / $180 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "509085ac83919483",
+    "type": "new_model",
+    "model_id": "databricks-gpt-5-3-codex",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$1.75 in / $14 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "44ad9084681fa673",
+    "type": "new_model",
+    "model_id": "databricks-claude-opus-4-8",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$5 in / $25 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "91b2019b332ccad5",
+    "type": "new_model",
+    "model_id": "databricks-gpt-6-sol",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1cbd896ed48ef18a",
+    "type": "new_model",
+    "model_id": "databricks-gpt-6-1-sol",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "59578580f2a24c6a",
+    "type": "new_model",
+    "model_id": "databricks-gemini-4-argon",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$2.5 in / $12.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f65511a78955155b",
+    "type": "new_model",
+    "model_id": "databricks-gpt-6-astra",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$10 in / $50 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "0a10ad1ad9f75f08",
+    "type": "new_model",
+    "model_id": "databricks-deepseek-v4-1-flash-1017",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f58309fe64f627c2",
+    "type": "new_model",
+    "model_id": "system.ai.claude-fable-5-2",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c440d76fc53ec18f",
+    "type": "new_model",
+    "model_id": "databricks-claude-haiku-5-5",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.1 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "261e6e78f33319e1",
+    "type": "new_model",
+    "model_id": "databricks-llama-4-maverick",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.5 in / $1.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3faf81262a4b2a3d",
+    "type": "new_model",
+    "model_id": "databricks-claude-sonnet-5",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b677d1394ec4d818",
+    "type": "new_model",
+    "model_id": "databricks-gpt-6-luna",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.1 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ed899cbce5713d78",
+    "type": "new_model",
+    "model_id": "databricks-meta-llama-3-1-8b-instruct",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.15 in / $0.45 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1785bf7d4a6f09ba",
+    "type": "new_model",
+    "model_id": "databricks-gemini-3-8-flash",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.75 in / $3.75 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "5a676db264b25816",
+    "type": "new_model",
+    "model_id": "system.ai.gemini-4-hydrogen",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$1.875 in / $9.375 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "02d280383ae77937",
+    "type": "new_model",
+    "model_id": "databricks-gemini-3-5-flash-lite",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.3 in / $2.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "34d0c9b3281d5108",
+    "type": "new_model",
+    "model_id": "system.ai.gpt-6-2-astra",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6ffa14e0031ae68c",
+    "type": "new_model",
+    "model_id": "system.ai.gemini-4-carbon",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$2.5 in / $12.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "cc2e77ea2f755c49",
+    "type": "new_model",
+    "model_id": "databricks-claude-opus-5",
+    "provider": "Databricks",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$5 in / $25 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "356f823bc93d19cb",
+    "type": "new_model",
+    "model_id": "elorian-labs/glimpse-1.0",
+    "provider": "Together AI",
+    "detected_at": "2026-11-24T17:32:34.941358+00:00",
+    "details": "$0.6 in / $3 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "6c0e9fbbe3cdc2c3",
     "type": "new_model",
     "model_id": "kitani/clover-2",
