@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "f4fd234aece8e428",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-flash-0731",
+    "provider": "IteraCompute, Kilo Gateway, Klavo AI, Lyceum, Merge Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, OrcaRouter, Perplexity Agent, Phala, Prime Inference, Standard Compute, TensorX, Vercel AI Gateway",
+    "detected_at": "2026-11-24T12:36:30.337919+00:00",
+    "details": "Input: $0.044 -> $0.047; output: $0.132 -> $0.16",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "69396f2045cf6839",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash",
+    "provider": "AI/ML API, Arcee, CommandCode, CrossModel, IteraCompute, Kilo Gateway, Klavo AI, Logits, Lyceum, Merge Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, Pareto Inference, SparrowCodes, Standard Compute, TensorX, Tokenify, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-11-24T12:36:30.337919+00:00",
+    "details": "Input: $0.0387 -> $0.0387; output: $0.1992 -> $0.3",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "f52cad9b9c36040b",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-24T12:36:30.337919+00:00",
+    "details": "Input: $0.044 -> $0.047; output: $0.132 -> $0.28",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "cbb96552b0615c9b",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-flash-0731:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-24T12:36:30.337919+00:00",
+    "details": "Input: $0.044 -> $0.05; output: $0.132 -> $0.16",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "8ed0070f23259b5d",
     "type": "price_change",
     "model_id": "scaleway/llama-3.3-70b-instruct",
