@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "784dc6ca5b2c4797",
+    "type": "model_became_free",
+    "model_id": "command-a-plus-05-2026",
+    "provider": "Cohere",
+    "detected_at": "2026-11-24T20:03:47.003491+00:00",
+    "details": "Was $2.5/10 per 1M, now free",
+    "alerted": true
+  },
+  {
     "event_id": "a8eb1582dd672752",
     "type": "new_model",
     "model_id": "inkling-2-mini",
