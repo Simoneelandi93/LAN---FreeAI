@@ -1,5 +1,77 @@
 [
   {
+    "event_id": "5e5e967e72771301",
+    "type": "price_change",
+    "model_id": "universal-summarizer",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-24T19:04:30.428318+00:00",
+    "details": "Input: $30 -> $30; output: $30 -> $0",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "fdd249e140663f1d",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-flash-0731",
+    "provider": "IteraCompute, Kilo Gateway, Klavo AI, Lyceum, Merge Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, OrcaRouter, Perplexity Agent, Phala, Prime Inference, Standard Compute, TensorX, Vercel AI Gateway",
+    "detected_at": "2026-11-24T19:04:30.428318+00:00",
+    "details": "Input: $0.0456 -> $0.04532; output: $0.16 -> $0.13596",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "4c1e29abf4cfdda1",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-flash-0731:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-24T19:04:30.428318+00:00",
+    "details": "Input: $0.05 -> $0.04532; output: $0.16 -> $0.13596",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "5550984f4daae4a6",
+    "type": "price_change",
+    "model_id": "moonshotai/Kimi-K2-Instruct-0905",
+    "provider": "Hugging Face, IO.NET",
+    "detected_at": "2026-11-24T19:04:30.428318+00:00",
+    "details": "Input: $0.4 -> $0.57; output: $1.8 -> $2.3",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "00997c482d390fe4",
+    "type": "price_change",
+    "model_id": "moonshotai/Kimi-K2-Instruct",
+    "provider": "Hugging Face, Jiekou.AI, Novita AI",
+    "detected_at": "2026-11-24T19:04:30.428318+00:00",
+    "details": "Input: $0.4 -> $0.57; output: $1.8 -> $2.3",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "0770ba854c0fc35d",
+    "type": "price_change",
+    "model_id": "mistral-small-3-2-24b-instruct",
+    "provider": "Venice AI",
+    "detected_at": "2026-11-24T19:04:30.428318+00:00",
+    "details": "Input: $0.09375 -> $0.075; output: $0.25 -> $0.2",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "96597993e2fd24dc",
     "type": "price_change",
     "model_id": "greenpt/qwen3-235b-a22b-instruct-2507",

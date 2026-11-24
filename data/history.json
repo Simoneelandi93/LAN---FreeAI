@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "a8eb1582dd672752",
+    "type": "new_model",
+    "model_id": "inkling-2-mini",
+    "provider": "Venice AI",
+    "detected_at": "2026-11-24T19:04:30.428318+00:00",
+    "details": "$0.12 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "b650761bbeaa4ac2",
     "type": "new_model",
     "model_id": "google/gemini-4-neon-fast",
