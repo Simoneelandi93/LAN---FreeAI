@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "f2b7dfa8a35c85ed",
+    "type": "new_model",
+    "model_id": "thinkingmachines/inkling-2-small-fast",
+    "provider": "Prime Inference",
+    "detected_at": "2026-11-24T04:32:45.018394+00:00",
+    "details": "$0.3 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a2b19614931bce9d",
+    "type": "new_model",
+    "model_id": "vertex-openai/deepseek-v4.1-flash-1017",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-24T04:32:45.018394+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a0074fcc31e2c9d2",
+    "type": "new_model",
+    "model_id": "vertex-openai/deepseek-v4.1-flash-latest",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-24T04:32:45.018394+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ef8ee6239a16f9c0",
+    "type": "new_model",
+    "model_id": "deepinfra/hy4-flash",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-24T04:32:45.018394+00:00",
+    "details": "$0.07 in / $0.281 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "4bee7b0e6696b2f5",
     "type": "new_model",
     "model_id": "hungerg-free",
