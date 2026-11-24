@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "b650761bbeaa4ac2",
+    "type": "new_model",
+    "model_id": "google/gemini-4-neon-fast",
+    "provider": "Vercel AI Gateway",
+    "detected_at": "2026-11-24T18:32:28.471519+00:00",
+    "details": "$5.4 in / $27 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c29295a420f9064e",
+    "type": "new_model",
+    "model_id": "deepinfra/thinkingmachines/Inkling-2-Mini",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-24T18:32:28.471519+00:00",
+    "details": "$0.075 in / $0.3 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "13c862a8631ab19c",
     "type": "new_model",
     "model_id": "step-1o-turbo-vision",
