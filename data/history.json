@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "4bee7b0e6696b2f5",
+    "type": "new_model",
+    "model_id": "hungerg-free",
+    "provider": "OpenCode Go",
+    "detected_at": "2026-11-24T03:04:38.692108+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "ab213eec4135a7cf",
     "type": "new_model",
     "model_id": "orca/orcacyber-inkling-2-mini",
