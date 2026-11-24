@@ -1,5 +1,131 @@
 [
   {
+    "event_id": "13c862a8631ab19c",
+    "type": "new_model",
+    "model_id": "step-1o-turbo-vision",
+    "provider": "StepFun (China), StepFun (Global)",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$0.36 in / $1.15 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6c221af6949cff3d",
+    "type": "new_model",
+    "model_id": "stepaudio-2.5-chat",
+    "provider": "StepFun (China), StepFun (Global), StepFun Step Plan (China)",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$1.5 in / $3.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c7d4f69e60cb7ebe",
+    "type": "new_model",
+    "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+    "provider": "Deep Infra",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$0.02 in / $0.04 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a6f05e1d6806aa18",
+    "type": "new_model",
+    "model_id": "openai/gpt-oss-120b-Ultra",
+    "provider": "Deep Infra",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$0.2 in / $0.95 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "253fc7e1305c3b87",
+    "type": "new_model",
+    "model_id": "google/gemma-4-31B-it-Ultra",
+    "provider": "Deep Infra",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$0.27 in / $0.76 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8a8f576b0ae69f39",
+    "type": "new_model",
+    "model_id": "google/gemma-4-31B-it-turbo",
+    "provider": "Deep Infra",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$0.09 in / $0.34 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "66456a2e0f1e52fa",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/models/ultramarine-1-flash-us",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "828a5f65e6ddfae5",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/routers/deepseek-v4p1-flash-1017-us",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$0.45 in / $1.8 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "2d816a3dde73e4bf",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/routers/kimi-k3p1-pro-us",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$2.5 in / $12.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8d95bad8f75abee2",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/routers/glm-5p3-us",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$2.1 in / $6.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "35a21f4de672f3be",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/routers/kimi-k3-us",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$4.5 in / $22.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "eecdc4e3dc3f6f41",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/routers/deepseek-v4p1-flash-1017-flex",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8f19d3bd2de7f19e",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/routers/deepseek-v4p1-flash-us",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$0.45 in / $1.8 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "813c546fb3186c33",
+    "type": "new_model",
+    "model_id": "hy3-202608",
+    "provider": "Tencent Token Plan",
+    "detected_at": "2026-11-24T18:04:51.111966+00:00",
+    "details": "$0.149716 in / $0.598865 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "a66ba86dac9c2005",
     "type": "new_model",
     "model_id": "CohereLabs/command-a-plus-05-2026-bf16",
