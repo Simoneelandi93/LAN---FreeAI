@@ -1,5 +1,59 @@
 [
   {
+    "event_id": "3fcecbac5351b06d",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/models/qwen4-max",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-25T05:04:00.219748+00:00",
+    "details": "$1.5 in / $4.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "06bb44180fa99eeb",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/models/hy4-flash",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-25T05:04:00.219748+00:00",
+    "details": "$0.07 in / $0.281 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "72ed1489cf05534d",
+    "type": "new_model",
+    "model_id": "nemotron3-omni-30b",
+    "provider": "OVHcloud AI Endpoints",
+    "detected_at": "2026-11-25T05:04:00.219748+00:00",
+    "details": "$0.19 in / $0.57 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f3ab10fb273624f1",
+    "type": "new_model",
+    "model_id": "laguna-xs-2.1",
+    "provider": "OVHcloud AI Endpoints",
+    "detected_at": "2026-11-25T05:04:00.219748+00:00",
+    "details": "$0.06 in / $0.12 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b9266bbfebff07b3",
+    "type": "new_model",
+    "model_id": "ByteDance/Seed-1.8",
+    "provider": "Deep Infra",
+    "detected_at": "2026-11-25T05:04:00.219748+00:00",
+    "details": "$0.25 in / $2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6a7b90b9e4ab2214",
+    "type": "new_model",
+    "model_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning",
+    "provider": "Deep Infra",
+    "detected_at": "2026-11-25T05:04:00.219748+00:00",
+    "details": "$0.06 in / $0.16 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "23a0322e65fa4300",
     "type": "new_model",
     "model_id": "upstage/solar-mini-4-5",

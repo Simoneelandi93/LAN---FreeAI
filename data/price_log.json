@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "aeceb9350574027f",
+    "type": "price_change",
+    "model_id": "NVIDIA/NVIDIA-Nemotron-3-Super-120B-A12B",
+    "provider": "Crusoe, Deep Infra, stepping stone AG",
+    "detected_at": "2026-11-25T05:04:00.219748+00:00",
+    "details": "Input: $0.3 -> $0.075; output: $2.4 -> $0.4",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "c4159df22b45c86f",
     "type": "price_change",
     "model_id": "Qwen/Qwen3.8-Flash-Next",
