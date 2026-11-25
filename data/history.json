@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "71ecfd7828250dd1",
+    "type": "new_model",
+    "model_id": "gpt-6.2-astra-healthcare",
+    "provider": "OpenAI",
+    "detected_at": "2026-11-25T14:32:42.630299+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "5521cb28dccb095b",
+    "type": "new_model",
+    "model_id": "gpt-6-astra-healthcare",
+    "provider": "OpenAI",
+    "detected_at": "2026-11-25T14:32:42.630299+00:00",
+    "details": "$10 in / $50 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "0b587df2437dd690",
+    "type": "new_model",
+    "model_id": "gpt-6.2-sol-healthcare",
+    "provider": "OpenAI",
+    "detected_at": "2026-11-25T14:32:42.630299+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a88735bc71c5fec8",
+    "type": "new_model",
+    "model_id": "gpt-6.1-sol-healthcare",
+    "provider": "OpenAI",
+    "detected_at": "2026-11-25T14:32:42.630299+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "3322547520e59c15",
     "type": "new_free_model",
     "model_id": "kitani/evolve-beta",
