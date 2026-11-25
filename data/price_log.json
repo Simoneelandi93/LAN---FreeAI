@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "5bb7e0a59b9d00c0",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.6-27b",
+    "provider": "Abacus, Ambient, Deep Infra, Groq, Hugging Face, Kilo Gateway, Merge Gateway, NanoGPT, Novita AI, Ofox, OpenRouter, Phala, STACKIT, SiliconFlow, SiliconFlow (China), ai&",
+    "detected_at": "2026-11-25T13:03:51.817480+00:00",
+    "details": "Input: $0.203 -> $0.25; output: $0.76 -> $0.76",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "fdbaabcdc739cdcc",
+    "type": "price_change",
+    "model_id": "deepseek-ai/DeepSeek-V4-Flash",
+    "provider": "Abacus, Deep Infra, GMI Cloud, Hugging Face, Inference APIs, Munito AI, Munito AI (EU), Pioneer, SiliconFlow, SiliconFlow (China)",
+    "detected_at": "2026-11-25T13:03:51.817480+00:00",
+    "details": "Input: $0.07 -> $0.09; output: $0.14 -> $0.18",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "4f6b01b89655dcc3",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.6-27b:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-25T13:03:51.817480+00:00",
+    "details": "Input: $0.203 -> $0.25; output: $2.24 -> $2",
+    "direction": "mixed",
+    "in_direction": "increase",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "19502732f3b2f5b1",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4.1-flash-1017",

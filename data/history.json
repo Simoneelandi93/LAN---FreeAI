@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "3322547520e59c15",
+    "type": "new_free_model",
+    "model_id": "kitani/evolve-beta",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-25T13:03:51.817480+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8f62dcad59d30901",
+    "type": "new_model",
+    "model_id": "upstage/solar-mini-4-5:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-25T13:03:51.817480+00:00",
+    "details": "$0.01 in / $0.04 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ca2ffd1a5db05bf1",
+    "type": "new_model",
+    "model_id": "upstage/solar-pro-4-contributor:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-25T13:03:51.817480+00:00",
+    "details": "$0.09 in / $0.36 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "fe6007a9374132c4",
     "type": "new_model",
     "model_id": "ovhcloud/DeepSeek-V4.1-Flash-1017",
