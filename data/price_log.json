@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "c4159df22b45c86f",
+    "type": "price_change",
+    "model_id": "Qwen/Qwen3.8-Flash-Next",
+    "provider": "Hugging Face, TensorX",
+    "detected_at": "2026-11-25T04:32:17.591443+00:00",
+    "details": "Input: $0.2 -> $0.15; output: $0.5 -> $0.5",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
     "event_id": "45f23eae19b7eb02",
     "type": "price_change",
     "model_id": "qwen/qwen3.6-35b-a3b",
