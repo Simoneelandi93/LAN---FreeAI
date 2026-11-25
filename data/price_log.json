@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "19502732f3b2f5b1",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Ambient, Arcee, Infersia, IteraCompute, Kilo Gateway, Kitani, Klavo AI, LLM Gateway, Merge Gateway, Modular, NEAR AI Cloud, NanoGPT, Novita AI, Ofox, OpenRouter, Phala, Prime Inference, Vercel AI Gateway",
+    "detected_at": "2026-11-25T06:39:55.433714+00:00",
+    "details": "Input: $0.03 -> $0.045; output: $0.2 -> $0.25",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "1c462ea72c2ff1cc",
+    "type": "price_change",
+    "model_id": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "provider": "50X, Baseten, Chutes, CoreWeave, Deep Infra, Doubleword, Entrim, Hugging Face, Inceptron, Keln, Munito AI, NEAR AI Cloud, Nebius Token Factory, Runcrate, Together AI, TrustedTokens, ai&",
+    "detected_at": "2026-11-25T06:39:55.433714+00:00",
+    "details": "Input: $0.04 -> $0.05; output: $0.1 -> $0.24",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "c8b4422a9108a784",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-flash-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-25T06:39:55.433714+00:00",
+    "details": "Input: $0.03 -> $0.036; output: $0.2 -> $0.5",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": true
+  },
+  {
+    "event_id": "e77a8d156c382f43",
+    "type": "price_change",
+    "model_id": "mistral/mistral-medium-3@eu",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T06:39:55.433714+00:00",
+    "details": "Input: $0.484 -> $1.65; output: $2.42 -> $8.25",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "302e4c599bb269ec",
+    "type": "price_change",
+    "model_id": "mistral/mistral-medium-3",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T06:39:55.433714+00:00",
+    "details": "Input: $0.44 -> $1.5; output: $2.2 -> $7.5",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "aeceb9350574027f",
     "type": "price_change",
     "model_id": "NVIDIA/NVIDIA-Nemotron-3-Super-120B-A12B",
