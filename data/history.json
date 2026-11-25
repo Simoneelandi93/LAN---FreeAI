@@ -1,5 +1,50 @@
 [
   {
+    "event_id": "23a0322e65fa4300",
+    "type": "new_model",
+    "model_id": "upstage/solar-mini-4-5",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-25T01:04:20.986267+00:00",
+    "details": "$0.01 in / $0.04 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9e295a4346ebb64c",
+    "type": "new_model",
+    "model_id": "upstage/solar-pro-4-contributor",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-25T01:04:20.986267+00:00",
+    "details": "$0.09 in / $0.36 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "5622435c2d7a326d",
+    "type": "new_model",
+    "model_id": "xiaomi/mimo-v2.6-flash-mopd",
+    "provider": "Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-25T01:04:20.986267+00:00",
+    "details": "$0.1 in / $0.28 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f76c460a6d4afe18",
+    "type": "new_free_model",
+    "model_id": "olala-v1.0-translate",
+    "provider": "OVHcloud AI Endpoints",
+    "detected_at": "2026-11-25T01:04:20.986267+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "60ff30c8b27f8075",
+    "type": "new_model",
+    "model_id": "deepinfra/inkling-2-mini",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-25T01:04:20.986267+00:00",
+    "details": "$0.075 in / $0.3 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "b86c1849529014fa",
     "type": "new_free_model",
     "model_id": "Prism-ML/Ternary-Bonsai-27B",
