@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "35f2dd8f5256c47d",
+    "type": "price_change",
+    "model_id": "moonshotai/kimi-k3",
+    "provider": "Abacus, Arcee, Baseten, Berget.AI, Cloudflare AI Gateway, CommandCode, Deep Infra, Doubleword, Hugging Face, Impossibl, IteraCompute, Kilo Gateway, Modal, NEAR AI Cloud, NanoGPT, Nebius Token Factory, Novita AI, Ofox, OpenRouter, Perplexity Agent, Phala, Pioneer, Prime Inference, SandBase, SiliconFlow, Standard Compute, TensorX, Together AI, TokenGo, Vercel AI Gateway, Wallaby, ZenMux, ai&",
+    "detected_at": "2026-11-25T17:32:25.321481+00:00",
+    "details": "Input: $0 -> $0.192; output: $0 -> $9.6",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "b824d463ed0e5a39",
+    "type": "price_change",
+    "model_id": "mistralai/Magistral-Small-2506",
+    "provider": "IO.NET",
+    "detected_at": "2026-11-25T17:32:25.321481+00:00",
+    "details": "Input: $0 -> $0.5; output: $0 -> $1.5",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "5bb7e0a59b9d00c0",
     "type": "price_change",
     "model_id": "qwen/qwen3.6-27b",
