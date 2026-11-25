@@ -1,5 +1,59 @@
 [
   {
+    "event_id": "de14b8dde961a24d",
+    "type": "new_model",
+    "model_id": "TEE/glm-5.3-uncensored",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-25T18:32:32.390038+00:00",
+    "details": "$1.4 in / $4.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9ca759869c741522",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.2-sol-healthcare",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T18:32:32.390038+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e5fdd88f09cc221f",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.2-astra-healthcare",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T18:32:32.390038+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f8cd4483e1287cc8",
+    "type": "new_model",
+    "model_id": "openai/gpt-6.1-sol-healthcare",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T18:32:32.390038+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "4bb35d3c5b8783cb",
+    "type": "new_model",
+    "model_id": "openai/gpt-6-astra-healthcare",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T18:32:32.390038+00:00",
+    "details": "$10 in / $50 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ed8dcd7b1b82beea",
+    "type": "new_model",
+    "model_id": "tngtech/deepseek-r1t2-chimera",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-25T18:32:32.390038+00:00",
+    "details": "$1 in / $2.625 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "fe7ef59a7419d1b0",
     "type": "new_model",
     "model_id": "ca.anthropic.claude-haiku-5-5",
