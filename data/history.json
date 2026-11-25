@@ -1,5 +1,113 @@
 [
   {
+    "event_id": "fe7ef59a7419d1b0",
+    "type": "new_model",
+    "model_id": "ca.anthropic.claude-haiku-5-5",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-11-25T18:04:12.282853+00:00",
+    "details": "$0.11 in / $0.55 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "a7024658bf841a22",
+    "type": "new_model",
+    "model_id": "in.moonshotai.kimi-k3.1",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-11-25T18:04:12.282853+00:00",
+    "details": "$4.4 in / $22 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9e1460c6379dd4a3",
+    "type": "new_model",
+    "model_id": "in.moonshotai.kimi-k3",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-11-25T18:04:12.282853+00:00",
+    "details": "$3.3 in / $16.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9041ed6dbd000626",
+    "type": "new_model",
+    "model_id": "ca.anthropic.claude-sonnet-5-5",
+    "provider": "Amazon Bedrock",
+    "detected_at": "2026-11-25T18:04:12.282853+00:00",
+    "details": "$2.2 in / $11 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "baccd610addfa1d1",
+    "type": "new_model",
+    "model_id": "@cf/daily-co/phonellm-mini-alpha-2",
+    "provider": "Cloudflare Workers AI",
+    "detected_at": "2026-11-25T18:04:12.282853+00:00",
+    "details": "$0.06 in / $0.24 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "fb7ec8698d891b06",
+    "type": "new_model",
+    "model_id": "fw-kimi-k3",
+    "provider": "Azure, Azure Cognitive Services",
+    "detected_at": "2026-11-25T18:04:12.282853+00:00",
+    "details": "$3 in / $15 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "761f3d0c0d7b85ef",
+    "type": "new_model",
+    "model_id": "fw-nemotron-3-ultra-nvfp4",
+    "provider": "Azure, Azure Cognitive Services",
+    "detected_at": "2026-11-25T18:04:12.282853+00:00",
+    "details": "$0.66 in / $2.64 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "46508ce69d841a8b",
+    "type": "new_model",
+    "model_id": "fw-glm-5.3-flash",
+    "provider": "Azure, Azure Cognitive Services",
+    "detected_at": "2026-11-25T18:04:12.282853+00:00",
+    "details": "$0.188 in / $0.625 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b91bbd565fc27545",
+    "type": "new_model",
+    "model_id": "fw-glm-5.3",
+    "provider": "Azure, Azure Cognitive Services",
+    "detected_at": "2026-11-25T18:04:12.282853+00:00",
+    "details": "$1.75 in / $5.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "0f9a57651983221b",
+    "type": "new_model",
+    "model_id": "fw-kimi-k3.1-pro",
+    "provider": "Azure, Azure Cognitive Services",
+    "detected_at": "2026-11-25T18:04:12.282853+00:00",
+    "details": "$2.5 in / $12.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d6918e9ec44a0fbc",
+    "type": "new_model",
+    "model_id": "fw-nemotron-lightning-3.5-30b-a3b",
+    "provider": "Azure, Azure Cognitive Services",
+    "detected_at": "2026-11-25T18:04:12.282853+00:00",
+    "details": "$0.06 in / $0.22 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "469b768f1d99c431",
+    "type": "new_model",
+    "model_id": "fw-deepseek-v4.1-flash",
+    "provider": "Azure, Azure Cognitive Services",
+    "detected_at": "2026-11-25T18:04:12.282853+00:00",
+    "details": "$0.375 in / $1.5 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "71ecfd7828250dd1",
     "type": "new_model",
     "model_id": "gpt-6.2-astra-healthcare",
