@@ -1,5 +1,365 @@
 [
   {
+    "event_id": "c8c04564f698447b",
+    "type": "new_model",
+    "model_id": "~gpt-luna-latest",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.1 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "97e4c117541e77ec",
+    "type": "model_became_free",
+    "model_id": "command-a-vision-07-2025",
+    "provider": "Cohere, Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "Was $2.5/10 per 1M, now free",
+    "alerted": true
+  },
+  {
+    "event_id": "a1f6360fc53ae3c5",
+    "type": "new_model",
+    "model_id": "llama-guard-3-8b",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.055 in / $0.055 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "581f6d35635fa3c0",
+    "type": "new_model",
+    "model_id": "~claude-fable-latest",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8cdda4695779448c",
+    "type": "new_model",
+    "model_id": "voxtral-mini-3b-2507",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.04 in / $0.04 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "5657ec7d933ce810",
+    "type": "new_model",
+    "model_id": "~deepseek-v4-flash-latest",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.06 in / $0.18 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "dc3e52bd24e361c4",
+    "type": "new_model",
+    "model_id": "mistral-small-24b-instruct-2501",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.05 in / $0.08 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "171a250d1f85317b",
+    "type": "new_model",
+    "model_id": "mistral-small-3.1-24b-instruct",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.351 in / $0.555 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8bd2fb079e2d7a8e",
+    "type": "new_model",
+    "model_id": "llama-guard-4-12b",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.18 in / $0.18 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "93980ed322a43e8a",
+    "type": "new_model",
+    "model_id": "~gpt-mini-latest",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.75 in / $4.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c6c1f0977fdbf540",
+    "type": "new_model",
+    "model_id": "~grok-latest",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$2 in / $6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f92810469945f945",
+    "type": "new_model",
+    "model_id": "kimi-k2-instruct",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.5 in / $2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6e27413e76f8c856",
+    "type": "new_model",
+    "model_id": "qwen2.5-7b-instruct",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.04 in / $0.1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "5deb01f9b0fb63b7",
+    "type": "new_model",
+    "model_id": "~claude-haiku-latest",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.1 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "987ae97ee385aaf6",
+    "type": "new_model",
+    "model_id": "hermes-3-llama-3.1-405b",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$1 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "5b3227fd821c8343",
+    "type": "new_model",
+    "model_id": "gemma-sea-lion-v4-27b-it",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.351 in / $0.555 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "22c7d026a11ae7c4",
+    "type": "new_model",
+    "model_id": "inkling-small",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.45 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "bdd177e4bcc6da39",
+    "type": "new_model",
+    "model_id": "qwen2.5-coder-32b-instruct",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.66 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "2108fb2671a4bdcc",
+    "type": "new_model",
+    "model_id": "llama-3.2-11b-vision-instruct",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.345 in / $0.345 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "4cc422667c2f9ae3",
+    "type": "new_model",
+    "model_id": "ministral-3-14b-instruct-2512",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.32889 in / $0.43852 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "51197188f5cfd6e8",
+    "type": "new_model",
+    "model_id": "hermes-3-llama-3.1-70b",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.7 in / $0.7 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "bc9b1038138dfff8",
+    "type": "new_model",
+    "model_id": "gemini-robotics-er-2-preview",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$1 in / $5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "3b87f4a8cc5b7cd1",
+    "type": "new_model",
+    "model_id": "wizardlm-2-8x22b",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.48 in / $0.48 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "8a831caddc0eaa52",
+    "type": "new_model",
+    "model_id": "llama-3.1-nemotron-70b-instruct",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.6 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "6dd28d7ffa4456b4",
+    "type": "new_model",
+    "model_id": "devstral-medium-latest",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.4 in / $2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "ea05688ab496b06c",
+    "type": "new_model",
+    "model_id": "~gpt-astra-latest",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$10 in / $50 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "21017b33029df566",
+    "type": "new_model",
+    "model_id": "~claude-sonnet-latest",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "78d42f283da5a84b",
+    "type": "new_model",
+    "model_id": "llama-3.2-3b-instruct",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.02 in / $0.02 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "36358c6ebcf072d4",
+    "type": "model_became_free",
+    "model_id": "command-a-translate-08-2025",
+    "provider": "Cohere, Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "Was $2.5/10 per 1M, now free",
+    "alerted": true
+  },
+  {
+    "event_id": "302841ce85add9cf",
+    "type": "new_model",
+    "model_id": "gpt-3.5-turbo",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.5 in / $1.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "1e843b5a5f419c59",
+    "type": "new_model",
+    "model_id": "mistral-large-2407",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$2 in / $6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "304ff36acd361205",
+    "type": "new_model",
+    "model_id": "gpt-4",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$30 in / $60 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "9f4f597ef4a55c60",
+    "type": "new_model",
+    "model_id": "ministral-14b",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.15 in / $0.15 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "15d651a4360566e3",
+    "type": "new_model",
+    "model_id": "~deepseek-flash-latest",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.0975 in / $0.39 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "b0779d6219fcf8d5",
+    "type": "new_model",
+    "model_id": "nemotron-3-nano-30b-a3b",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.05 in / $0.2 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "f96adc3d42e75380",
+    "type": "new_model",
+    "model_id": "gpt-5-search-api",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$1.25 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "d45453eea0ecdab6",
+    "type": "new_model",
+    "model_id": "~gpt-terra-latest",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$1 in / $5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "184c186205575749",
+    "type": "new_model",
+    "model_id": "gemma-3-4b-it",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.04 in / $0.08 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "20620de3926e7bd8",
+    "type": "new_model",
+    "model_id": "mythomax-l2-13b",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.4 in / $0.4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "0412e5cc52cb514a",
+    "type": "new_model",
+    "model_id": "palmyra-vision-7b",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-25T19:04:24.605827+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "de14b8dde961a24d",
     "type": "new_model",
     "model_id": "TEE/glm-5.3-uncensored",
