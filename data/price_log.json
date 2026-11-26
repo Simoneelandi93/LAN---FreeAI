@@ -1,5 +1,17 @@
 [
   {
+    "event_id": "af296fb3dd404d6b",
+    "type": "price_change",
+    "model_id": "ambient/large",
+    "provider": "Ambient",
+    "detected_at": "2026-11-26T00:45:56.425316+00:00",
+    "details": "Input: $0.6 -> $0.045; output: $2 -> $0.25",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "d23c96d9430c641f",
     "type": "price_change",
     "model_id": "deepseek-chat",
