@@ -1,5 +1,77 @@
 [
   {
+    "event_id": "ac78c47d075e0656",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/models/inkling-2-mini",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-26T15:32:29.011175+00:00",
+    "details": "$0.15 in / $0.5 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "e38bf2adb668965e",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/routers/kimi-k3p1-pro-ultrafast",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-26T15:32:29.011175+00:00",
+    "details": "$5 in / $25 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "54f90af58ff3e687",
+    "type": "new_model",
+    "model_id": "aws-mantle/gpt-6.2-astra",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-26T15:32:29.011175+00:00",
+    "details": "$8 in / $40 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "44967d3d691b10e5",
+    "type": "new_model",
+    "model_id": "aws-mantle/gpt-5.5",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-26T15:32:29.011175+00:00",
+    "details": "$5.5 in / $33 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "088236a020e6fdc4",
+    "type": "new_model",
+    "model_id": "aws-mantle/gpt-oss-20b",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-26T15:32:29.011175+00:00",
+    "details": "$0.07 in / $0.3 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "c5e9f7a4a4deaa13",
+    "type": "new_model",
+    "model_id": "aws-mantle/gpt-oss-120b",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-26T15:32:29.011175+00:00",
+    "details": "$0.15 in / $0.6 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "0463b812c05c91a2",
+    "type": "new_model",
+    "model_id": "aws-mantle/gpt-6.2-sol",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-26T15:32:29.011175+00:00",
+    "details": "$2 in / $10 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "900084b5d678ea77",
+    "type": "new_model",
+    "model_id": "aws-mantle/gpt-5.4",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-26T15:32:29.011175+00:00",
+    "details": "$2.75 in / $16.5 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "85cb5f59c2ee2bc2",
     "type": "new_model",
     "model_id": "accounts/fireworks/routers/glm-5p3-flash-flex",
