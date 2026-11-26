@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "e0f4b3ed44669cb1",
+    "type": "new_model",
+    "model_id": "inclusionai/lingsante-3.1-air-vl",
+    "provider": "Kilo Gateway",
+    "detected_at": "2026-11-26T18:32:56.409487+00:00",
+    "details": "$0.06 in / $0.18 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "4147e456e3a09a3f",
     "type": "new_model",
     "model_id": "XiaomiMiMo/MiMo-V2.6-Pro-RL",

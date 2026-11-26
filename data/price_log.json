@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "f6d116c9c6f72561",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.6-35b-a3b",
+    "provider": "Ambient, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Klavo AI, Mallard AI, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, Phala, SiliconFlow, SiliconFlow (China), Thinking Machines, evroc",
+    "detected_at": "2026-11-26T18:32:56.409487+00:00",
+    "details": "Input: $0.05 -> $0.045; output: $0.7 -> $0.65",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "9b8c161cc7609809",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-26T18:32:56.409487+00:00",
+    "details": "Input: $0.047 -> $0.0456; output: $0.28 -> $0.28",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "b738fd2cda02fa5b",
+    "type": "price_change",
+    "model_id": "deepseek-ai/DeepSeek-V4-Pro",
+    "provider": "Abacus, Deep Infra, GMI Cloud, Hugging Face, Inference APIs, SiliconFlow, SiliconFlow (China), ai&",
+    "detected_at": "2026-11-26T18:32:56.409487+00:00",
+    "details": "Input: $0.888188 -> $0.77923; output: $1.5082 -> $1.5699",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "467f4feda14d1493",
+    "type": "price_change",
+    "model_id": "zai-org/glm-5.2",
+    "provider": "Abacus, Arcee, Baseten, Berget.AI, CommandCode, CoreWeave, Deep Infra, Friendli, HPC-AI, Hugging Face, Keln, Nebius Token Factory, Novita AI, Pioneer, SiliconFlow, SiliconFlow (China), Together AI, TrustedTokens, Venice AI, evroc",
+    "detected_at": "2026-11-26T18:32:56.409487+00:00",
+    "details": "Input: $0.62 -> $0.5625; output: $1.978 -> $1.8",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "4b316796884fecd5",
+    "type": "price_change",
+    "model_id": "ministral-3-14b-instruct-2512",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-26T18:32:56.409487+00:00",
+    "details": "Input: $0.32805 -> $0.32925; output: $0.4374 -> $0.439",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "4ecb50017926b16a",
     "type": "price_change",
     "model_id": "zai-org/GLM-5.2",
