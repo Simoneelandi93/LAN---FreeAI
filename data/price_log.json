@@ -1,5 +1,65 @@
 [
   {
+    "event_id": "4ecb50017926b16a",
+    "type": "price_change",
+    "model_id": "zai-org/GLM-5.2",
+    "provider": "Abacus, Arcee, Baseten, Berget.AI, CommandCode, CoreWeave, Deep Infra, Friendli, HPC-AI, Hugging Face, Keln, Nebius Token Factory, Novita AI, Pioneer, SiliconFlow, SiliconFlow (China), Together AI, TrustedTokens, Venice AI, evroc",
+    "detected_at": "2026-11-26T12:36:48.534643+00:00",
+    "details": "Input: $0.5625 -> $0.62; output: $1.8 -> $1.978",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "2993cc79ecf0203d",
+    "type": "price_change",
+    "model_id": "qwen/qwen-mt-plus",
+    "provider": "Novita AI",
+    "detected_at": "2026-11-26T12:36:48.534643+00:00",
+    "details": "Input: $0.25 -> $0.259; output: $0.75 -> $0.775",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "cc4091d70776f22f",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-v4-flash-latest",
+    "provider": "Arcee, Kilo Gateway, NanoGPT, OpenRouter",
+    "detected_at": "2026-11-26T12:36:48.534643+00:00",
+    "details": "Input: $0.047 -> $0.047; output: $0.18 -> $0.28",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "9ef64624211d5e37",
+    "type": "price_change",
+    "model_id": "muse-ember-1.0",
+    "provider": "DevPass (LLM Gateway), Kenari, Meta, OpenCode",
+    "detected_at": "2026-11-26T12:36:48.534643+00:00",
+    "details": "Input: $0.1 -> $0.1; output: $0.5 -> $0.4571",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "25fb4d177cf9b8fa",
+    "type": "price_change",
+    "model_id": "mistralai/mistral-medium-3",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-26T12:36:48.534643+00:00",
+    "details": "Input: $0.4232 -> $0.44; output: $2.116 -> $2.2",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "d1f76eab27c5f8f3",
     "type": "price_change",
     "model_id": "deepseek-ai/DeepSeek-V4-Pro",
