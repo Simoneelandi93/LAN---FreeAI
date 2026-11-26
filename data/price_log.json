@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "d1f76eab27c5f8f3",
+    "type": "price_change",
+    "model_id": "deepseek-ai/DeepSeek-V4-Pro",
+    "provider": "Abacus, Deep Infra, GMI Cloud, Hugging Face, Inference APIs, SiliconFlow, SiliconFlow (China), ai&",
+    "detected_at": "2026-11-26T06:40:03.870312+00:00",
+    "details": "Input: $0.888188 -> $0.888188; output: $1.5463 -> $1.5082",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "574a92737fa28a7b",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-26T06:40:03.870312+00:00",
+    "details": "Input: $0.0999 -> $0.111; output: $4.44 -> $4.44",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "0f133349e7a80529",
+    "type": "price_change",
+    "model_id": "ministral-3-14b-instruct-2512",
+    "provider": "Eden AI",
+    "detected_at": "2026-11-26T06:40:03.870312+00:00",
+    "details": "Input: $0.32889 -> $0.32805; output: $0.43852 -> $0.4374",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "7543569c63f19844",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4-flash-0731",
