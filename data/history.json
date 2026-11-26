@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "20976ed589ba1089",
+    "type": "new_free_model",
+    "model_id": "seaglass-alpha-free",
+    "provider": "OpenCode",
+    "detected_at": "2026-11-26T01:34:01.838192+00:00",
+    "details": "$0 in / $0 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "e979e14655e44a5c",
     "type": "new_model",
     "model_id": "yetalabs/kimi-k3.1-pro-abliterated",
