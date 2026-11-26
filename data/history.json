@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "85cb5f59c2ee2bc2",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/routers/glm-5p3-flash-flex",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-26T04:32:57.272498+00:00",
+    "details": "$0.075 in / $0.25 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "dd4d261d4437ae46",
+    "type": "new_model",
+    "model_id": "accounts/fireworks/routers/glm-5p3-flex",
+    "provider": "Fireworks AI",
+    "detected_at": "2026-11-26T04:32:57.272498+00:00",
+    "details": "$0.7 in / $2.2 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "20976ed589ba1089",
     "type": "new_free_model",
     "model_id": "seaglass-alpha-free",
