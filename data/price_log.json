@@ -1,5 +1,53 @@
 [
   {
+    "event_id": "74483cc4c57c8826",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-pro-0813",
+    "provider": "AI/ML API, Arcee, IteraCompute, Kilo Gateway, Kitani, Merge Gateway, NanoGPT, Novita AI, Obscurify.ai, Ofox, OpenRouter, OrcaRouter, Standard Compute, TensorX, Vercel AI Gateway",
+    "detected_at": "2026-11-27T06:40:17.196876+00:00",
+    "details": "Input: $0.25 -> $0.0999; output: $1.79 -> $1.79",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "198dbcd592b90c4f",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.6-35b-a3b",
+    "provider": "Ambient, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Klavo AI, Mallard AI, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, Phala, SiliconFlow, SiliconFlow (China), Thinking Machines, evroc",
+    "detected_at": "2026-11-27T06:40:17.196876+00:00",
+    "details": "Input: $0.05 -> $0.05; output: $0.7 -> $0.69",
+    "direction": "decrease",
+    "in_direction": "same",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "66315210fc272085",
+    "type": "price_change",
+    "model_id": "deepseek-ai/deepseek-v4-pro",
+    "provider": "Abacus, Deep Infra, GMI Cloud, Hugging Face, Inference APIs, SiliconFlow, SiliconFlow (China), ai&",
+    "detected_at": "2026-11-27T06:40:17.196876+00:00",
+    "details": "Input: $0.640586 -> $0.888188; output: $1.5039 -> $1.5082",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "3ab936fc51161df4",
+    "type": "price_change",
+    "model_id": "~deepseek/deepseek-pro-latest",
+    "provider": "Kilo Gateway, OpenRouter",
+    "detected_at": "2026-11-27T06:40:17.196876+00:00",
+    "details": "Input: $0.111 -> $0.0999; output: $4.44 -> $5",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "fe76caa968b496c9",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4-pro-0813",
