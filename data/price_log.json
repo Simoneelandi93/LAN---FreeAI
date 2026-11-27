@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "4372d91226b3de2e",
+    "type": "price_change",
+    "model_id": "gemma4-26b",
+    "provider": "AKI.IO, Concentrate",
+    "detected_at": "2026-11-27T12:36:18.644738+00:00",
+    "details": "Input: $0.11215 -> $0.1; output: $0.4 -> $0.34",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "849a29ba3b9c9271",
+    "type": "price_change",
+    "model_id": "canopywave/glm-5.3",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-27T12:36:18.644738+00:00",
+    "details": "Input: $1.4 -> $0.84; output: $4.4 -> $2.64",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "665d993548408157",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.5-122b-a10b:thinking",
+    "provider": "NanoGPT",
+    "detected_at": "2026-11-27T12:36:18.644738+00:00",
+    "details": "Input: $0.26 -> $0.4; output: $2.08 -> $3.2",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "74483cc4c57c8826",
     "type": "price_change",
     "model_id": "deepseek/deepseek-v4-pro-0813",
