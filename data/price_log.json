@@ -1,5 +1,29 @@
 [
   {
+    "event_id": "d4395d0420d10726",
+    "type": "price_change",
+    "model_id": "moonshot/kimi-k3",
+    "provider": "AI/ML API, CrossModel, LLM Gateway, Merge Gateway",
+    "detected_at": "2026-11-27T00:46:46.110446+00:00",
+    "details": "Input: $3 -> $0.6; output: $15 -> $15",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": false
+  },
+  {
+    "event_id": "59f5477105d7c8a5",
+    "type": "price_change",
+    "model_id": "zhipu/glm-5.2",
+    "provider": "AI/ML API",
+    "detected_at": "2026-11-27T00:46:46.110446+00:00",
+    "details": "Input: $1.4 -> $0.31; output: $4.4 -> $2.4",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "9b7d94bd977ca926",
     "type": "price_change",
     "model_id": "~deepseek/deepseek-v4-flash-latest",
