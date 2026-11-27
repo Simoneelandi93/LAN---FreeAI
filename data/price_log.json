@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "fe76caa968b496c9",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-pro-0813",
+    "provider": "AI/ML API, Arcee, IteraCompute, Kilo Gateway, Kitani, Merge Gateway, NanoGPT, Novita AI, Obscurify.ai, Ofox, OpenRouter, OrcaRouter, Standard Compute, TensorX, Vercel AI Gateway",
+    "detected_at": "2026-11-27T01:04:12.631838+00:00",
+    "details": "Input: $0.111 -> $0.25; output: $1.79 -> $1.79",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "c74a5f3173c4fa4e",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.6-35b-a3b",
+    "provider": "Ambient, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Klavo AI, Mallard AI, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, Phala, SiliconFlow, SiliconFlow (China), Thinking Machines, evroc",
+    "detected_at": "2026-11-27T01:04:12.631838+00:00",
+    "details": "Input: $0.045 -> $0.05; output: $0.65 -> $0.7",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "404571bda7b4d66e",
+    "type": "price_change",
+    "model_id": "deepseek-ai/DeepSeek-V4-Pro",
+    "provider": "Abacus, Deep Infra, GMI Cloud, Hugging Face, Inference APIs, SiliconFlow, SiliconFlow (China), ai&",
+    "detected_at": "2026-11-27T01:04:12.631838+00:00",
+    "details": "Input: $0.77923 -> $0.640586; output: $1.5699 -> $1.5039",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "d4395d0420d10726",
     "type": "price_change",
     "model_id": "moonshot/kimi-k3",
