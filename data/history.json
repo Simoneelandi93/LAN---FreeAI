@@ -1,5 +1,23 @@
 [
   {
+    "event_id": "8aaf1f069359b8b8",
+    "type": "new_model",
+    "model_id": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+    "provider": "Hugging Face",
+    "detected_at": "2026-11-27T04:32:41.406610+00:00",
+    "details": "$0.5 in / $1 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "10a6b4b357d4d2e0",
+    "type": "new_model",
+    "model_id": "qwen/qwen3.8-27b-fast",
+    "provider": "Prime Inference",
+    "detected_at": "2026-11-27T04:32:41.406610+00:00",
+    "details": "$0.45 in / $3.2 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "16610e73bef21a9a",
     "type": "new_model",
     "model_id": "accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
