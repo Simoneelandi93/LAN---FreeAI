@@ -1,5 +1,14 @@
 [
   {
+    "event_id": "01b73b2f6d61936e",
+    "type": "new_model",
+    "model_id": "deepseek-ai/deepseek-v4.1-flash-1017-maas",
+    "provider": "Vertex",
+    "detected_at": "2026-11-27T18:04:43.908681+00:00",
+    "details": "$0.3 in / $1.2 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "319a249f9aa2dc3b",
     "type": "new_model",
     "model_id": "mindlab/macaron-v1-tall",
