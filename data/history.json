@@ -1,5 +1,32 @@
 [
   {
+    "event_id": "a2bc7a1584b4a2df",
+    "type": "new_model",
+    "model_id": "canopywave/deepseek-v4-pro-0813",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-28T01:04:07.098683+00:00",
+    "details": "$1.32 in / $3.96 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "fa26ceaf9bd991f3",
+    "type": "new_model",
+    "model_id": "canopywave/kimi-k2.7-code",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-28T01:04:07.098683+00:00",
+    "details": "$0.95 in / $4 out per 1M",
+    "alerted": true
+  },
+  {
+    "event_id": "0660f49a98acbf65",
+    "type": "new_model",
+    "model_id": "reka-ai/glm-5.3",
+    "provider": "LLM Gateway",
+    "detected_at": "2026-11-28T01:04:07.098683+00:00",
+    "details": "$0.45 in / $1.8 out per 1M",
+    "alerted": true
+  },
+  {
     "event_id": "01b73b2f6d61936e",
     "type": "new_model",
     "model_id": "deepseek-ai/deepseek-v4.1-flash-1017-maas",

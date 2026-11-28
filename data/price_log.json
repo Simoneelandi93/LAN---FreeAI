@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "76b1c7bdef812aed",
+    "type": "price_change",
+    "model_id": "qwen/qwen3.6-35b-a3b",
+    "provider": "Ambient, CoreWeave, Deep Infra, Hugging Face, Kilo Gateway, Klavo AI, Mallard AI, Merge Gateway, NanoGPT, Novita AI, OpenRouter, OrcaRouter, Phala, SiliconFlow, SiliconFlow (China), Thinking Machines, evroc",
+    "detected_at": "2026-11-28T01:04:07.098683+00:00",
+    "details": "Input: $0.05 -> $0.05; output: $0.69 -> $0.7",
+    "direction": "increase",
+    "in_direction": "same",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "237eafa63107a2ae",
+    "type": "price_change",
+    "model_id": "deepseek-ai/deepseek-v4-pro",
+    "provider": "Abacus, Deep Infra, GMI Cloud, Hugging Face, Inference APIs, SiliconFlow, SiliconFlow (China), ai&",
+    "detected_at": "2026-11-28T01:04:07.098683+00:00",
+    "details": "Input: $0.71501 -> $0.53249; output: $1.5228 -> $1.5651",
+    "direction": "mixed",
+    "in_direction": "decrease",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
+    "event_id": "1aeb39e3085f28cf",
+    "type": "price_change",
+    "model_id": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "provider": "50X, Baseten, Chutes, CoreWeave, Deep Infra, Doubleword, Entrim, Hugging Face, Inceptron, Keln, Munito AI, NEAR AI Cloud, Nebius Token Factory, Runcrate, Together AI, TrustedTokens, ai&",
+    "detected_at": "2026-11-28T01:04:07.098683+00:00",
+    "details": "Input: $0.05 -> $0.04; output: $0.24 -> $0.1",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
     "event_id": "a07bd1e184f04011",
     "type": "price_change",
     "model_id": "qwen/qwen3.5-9b",
