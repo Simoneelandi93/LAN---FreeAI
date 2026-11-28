@@ -1,5 +1,41 @@
 [
   {
+    "event_id": "3edd17224a63957a",
+    "type": "price_change",
+    "model_id": "deepseek/deepseek-v4-pro",
+    "provider": "AI/ML API, AnyAPI, Arcee, Cloudflare AI Gateway, CommandCode, CrossModel, FastRouter, HPC-AI, Impossibl, Kilo Gateway, LLM Gateway, Merge Gateway, Novita AI, Ofox, OpenRouter, OrcaRouter, Prime Inference, SandBase, Standard Compute, Tencent Token Plan, Tencent Token Plan (International), Tencent TokenHub, TensorX, TokenGo, Tokenify, Vercel AI Gateway, ZenMux",
+    "detected_at": "2026-11-28T06:37:39.483066+00:00",
+    "details": "Input: $0.435 -> $0.30941; output: $0.87 -> $0.87",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "same",
+    "alerted": true
+  },
+  {
+    "event_id": "5bd6d2c5da4bcc40",
+    "type": "price_change",
+    "model_id": "deepseek-ai/DeepSeek-V4-Pro",
+    "provider": "Abacus, Deep Infra, GMI Cloud, Hugging Face, Inference APIs, SiliconFlow, SiliconFlow (China), ai&",
+    "detected_at": "2026-11-28T06:37:39.483066+00:00",
+    "details": "Input: $0.53249 -> $0.32969; output: $1.5651 -> $1.5086",
+    "direction": "decrease",
+    "in_direction": "decrease",
+    "out_direction": "decrease",
+    "alerted": false
+  },
+  {
+    "event_id": "a8033e248d3ee5f6",
+    "type": "price_change",
+    "model_id": "humansand/ampersand-v0.1",
+    "provider": "Kilo Gateway, Vercel AI Gateway",
+    "detected_at": "2026-11-28T06:37:39.483066+00:00",
+    "details": "Input: $0 -> $1; output: $0 -> $5.2",
+    "direction": "increase",
+    "in_direction": "increase",
+    "out_direction": "increase",
+    "alerted": false
+  },
+  {
     "event_id": "76b1c7bdef812aed",
     "type": "price_change",
     "model_id": "qwen/qwen3.6-35b-a3b",
