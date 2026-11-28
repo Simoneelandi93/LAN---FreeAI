@@ -1652,7 +1652,7 @@
     "source_url": "https://synap402.com/ai/account.html",
     "base_url": "https://synap402.com/v1",
     "notes": "Synap provides a no-card free tier for qwen3-coder-30b through an OpenAI-compatible API. Google or email sign-in grants 100,000 tokens and 50 requests per day, with a 10 requests/minute per-key limit. | access: api_key | verified: live-probe",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1669,7 +1669,7 @@
     "source_url": "https://github.com/features/copilot",
     "base_url": "",
     "notes": "GitHub provides Copilot Free with limited features for individual developers, including inline suggestions limited to 2000 completions per month and Copilot Chat on GitHub.com and mobile. | access: login | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1685,8 +1685,8 @@
     "status": "active",
     "source_url": "https://kiro.dev/pricing",
     "base_url": "",
-    "notes": "Kiro offers 50 free credits/month. Social account or AWS Builder ID required, no credit card required. Unused credits do not roll over. | access: login | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "notes": "Free tier users are limited to specific models (Auto, Claude Sonnet 4.5/4.0, DeepSeek 3.2, MiniMax M2.5/M2.1, GLM-5, Qwen3 Coder Next). | access: login | verified: docs | quota: not published",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1702,8 +1702,8 @@
     "status": "active",
     "source_url": "https://www.trae.ai/pricing",
     "base_url": "",
-    "notes": "Trae offers free inference. The free allowance includes 5,000 monthly autocompletions and a one-time $3 usage allowance. Usage is renewed monthly, and the credits are valid for 90 days. The free tier requires no credit card. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "notes": "Trae offers a $0 free plan with limited auto-mode usage, 5,000 monthly autocompletions, and 2 concurrent cloud tasks. Free users receive a one-time allowance that does not reset monthly, and no credit card is required. | access: bundled | verified: docs | quota: not published",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1720,7 +1720,7 @@
     "source_url": "https://support.bolt.new/account-and-subscription/tokens",
     "base_url": "",
     "notes": "Bolt offers 1,000,000 tokens per month with a 300,000 daily token cap, translating to bundled frontier model inference for full-stack web and code generation via the Standard agent alongside hosting for up to 333k requests. No credit card required to sign up. Daily tokens reset every 24 hours without rollover, monthly quotas reset on the 1st of each calendar month, and free plan tokens do not roll over. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1737,7 +1737,7 @@
     "source_url": "https://docs.lovable.dev/introduction/credits-and-usage",
     "base_url": "",
     "notes": "Lovable provides a rate-limited free plan for developers building full-stack web applications with daily build credits, daily chat allowances, and monthly Cloud/AI grants without upfront subscription cost. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1754,7 +1754,7 @@
     "source_url": "https://v0.app/docs/pricing",
     "base_url": "",
     "notes": "v0 offers a free plan granting 7 messages per day with bundled frontier models, plus a one-time $5 credit bonus for new accounts. No credit card required to sign up. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1771,7 +1771,7 @@
     "source_url": "https://www.kaggle.com/docs/efficient-gpu-usage",
     "base_url": "",
     "notes": "Kaggle offers free access to NVIDIA TESLA P100 and T4 GPUs with a weekly quota limit of 30 hours. Phone verification is required to unlock accelerators and internet access; no credit card required. | access: login | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1788,7 +1788,7 @@
     "source_url": "https://huggingface.co/docs/hub/spaces-overview",
     "base_url": "",
     "notes": "Hugging Face Spaces provides 5 minutes of daily ZeroGPU compute on dynamic NVIDIA RTX Pro 6000 Blackwell GPUs along with free hosting for up to 2 Gradio Spaces. | access: login | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1805,7 +1805,7 @@
     "source_url": "https://cursor.com/pricing",
     "base_url": "",
     "notes": "Cursor provides a complimentary Free tier for developers, subject to monthly request allowances and rate limits. Third-party models are unavailable on Free and Plus tiers. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1822,7 +1822,7 @@
     "source_url": "https://docs.windsurf.com/windsurf/accounts/usage",
     "base_url": "",
     "notes": "Windsurf provides a free tier operating on a quota-based system with daily and weekly usage allowances, complemented by specific promotional free periods for models such as SWE-2 Flash, SWE-2, and SWE-2.1. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1839,7 +1839,7 @@
     "source_url": "https://devin.ai/pricing",
     "base_url": "",
     "notes": "Devin offers a Free plan with a light quota to code with agents, free use of SWE-2, unlimited inline edits, and unlimited Tab completions. Account login required, no credit card required. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1856,7 +1856,7 @@
     "source_url": "https://docs.qoder.com/account/pricing",
     "base_url": "",
     "notes": "Qoder offers free basic code autocompletions and limited Next-Edit-Suggestion (NES) runs. Account login required, no credit card required. Unlimited usage requires bringing your own API keys. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1873,7 +1873,7 @@
     "source_url": "https://antigravity.google/pricing",
     "base_url": "",
     "notes": "Antigravity CLI provides free developer inference for base and multimodal foundation models. Users run text, code, and reasoning tasks through local CLI and terminal workflows. Authentication is handled directly via Google account login without requiring a payment instrument, subject to dynamic request rate limits. | access: login | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1906,8 +1906,8 @@
     "status": "active",
     "source_url": "https://www.figma.com/pricing/",
     "base_url": "",
-    "notes": "Figma Starter offers free AI generation credits and REST API/MCP access with no credit card required. Usage is capped at 150 credits/day and 500/month, resetting monthly. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "notes": "Figma Starter offers free AI generation credits capped at 150/day and 500/month with no credit card required. | access: bundled | verified: docs | quota: not published",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1924,7 +1924,7 @@
     "source_url": "https://www.canva.com/en/pricing/",
     "base_url": "",
     "notes": "Canva provides free users with a recurring monthly allowance across standard and premium AI tools directly in the design canvas. Free usage excludes Ultra AI tools and paid enterprise API service accounts. | access: bundled | verified: docs",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1940,8 +1940,8 @@
     "status": "active",
     "source_url": "https://www.framer.com/pricing",
     "base_url": "",
-    "notes": "Framer offers 500 one-time AI trial credits on its Free plan for workspaces without active subscriptions to power Framer Agents. No credit card is required to sign up. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "notes": "The 500 AI credits are now provided on a monthly basis for workspaces without active subscriptions. No credit card is required to sign up. | access: bundled | verified: docs | quota: not published",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1958,7 +1958,7 @@
     "source_url": "https://docs.replit.com/help/pricing-and-plans",
     "base_url": "",
     "notes": "Starter plan is deprecated for new signups, but existing Starter users retain limited Free Mode allowances and cloud credits. | access: bundled | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1975,7 +1975,7 @@
     "source_url": "https://kilo.ai/gateway",
     "base_url": "https://api.kilo.ai/v1",
     "notes": "Kilo Gateway offers free models with standard rate limits. No credit card required. | access: api_key | verified: live-probe",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -1992,7 +1992,7 @@
     "source_url": "https://portal.nousresearch.com/api-docs",
     "base_url": "https://inference-api.nousresearch.com/v1",
     "notes": "Nous Portal offers 3 free models with 50 requests/minute and 500,000 tokens/minute. Free account registration required, no credit card required. | access: api_key | verified: live-probe",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -2008,8 +2008,8 @@
     "status": "active",
     "source_url": "https://www.requesty.ai/pricing",
     "base_url": "https://router.requesty.ai/v1",
-    "notes": "Requesty offers free models with 200 requests/day per account. Email registration required, no credit card required. Quota resets daily at 00:00 UTC. | access: api_key | verified: live-probe",
-    "checked_at": "2026-11-27",
+    "notes": "Requesty offers free models with 200 requests/day per account. Email registration required, no credit card required. | access: api_key | verified: live-probe",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -2026,7 +2026,7 @@
     "source_url": "https://www.braintrust.dev/pricing",
     "base_url": "https://api.braintrust.dev/v1/proxy",
     "notes": "Braintrust offers $10/month recurring model credit on Starter across 13 built-in models (including GPT-6 series, DeepSeek V4.1, GLM-5.3, and Jev). Work email required, no credit card required. Model credit resets monthly with no rollover. | access: api_key | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -2042,8 +2042,8 @@
     "status": "active",
     "source_url": "https://dots.ai",
     "base_url": "https://api.dots.ai/v1",
-    "notes": "The API is currently free of charge during a trial period without requiring a payment method or credit card. Model identifier shifted from dots-3-note-preview to dots3-note-prev. | access: api_key | verified: docs",
-    "checked_at": "2026-11-27",
+    "notes": "The API is currently free of charge during a trial period without requiring a payment method or credit card. | access: api_key | verified: docs",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -2060,7 +2060,7 @@
     "source_url": "https://console.liquid.ai",
     "base_url": "https://console.liquid.ai",
     "notes": "Liquid AI provides promotional developer API credits upon registration in the Liquid developer console without upfront card requirements. | access: api_key | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -2076,8 +2076,8 @@
     "status": "active",
     "source_url": "https://speka.me",
     "base_url": "https://speka.me/v1",
-    "notes": "Speka provides a $1 lifetime usage credit upon signup. Developers query all open catalog models via an OpenAI-compatible endpoint with a single API key created without a credit card. Usage is capped at 2 RPM. | access: api_key | verified: docs | quota: not published",
-    "checked_at": "2026-11-27",
+    "notes": "Speka provides a $1 lifetime usage credit upon signup with a rate limit of 2 RPM without requiring a credit card. | access: api_key | verified: docs | quota: not published",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -2093,8 +2093,8 @@
     "status": "active",
     "source_url": "https://www.alibabacloud.com/help/en/model-studio/developer-reference/get-api-key",
     "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-    "notes": "Alibaba Cloud Model Studio (Bailian/DashScope) provides free token allotments upon account activation across its Qwen and DeepSeek model fleet. Developers access high-throughput OpenAI-compatible endpoints with up to 1M token context windows. API keys are generated in the Model Studio console after account registration, with promotional free tokens valid during designated trial windows. | access: api_key | verified: docs",
-    "checked_at": "2026-11-27",
+    "notes": "Alibaba Cloud Model Studio (Bailian/DashScope) provides free token allotments upon account activation across its Qwen and DeepSeek model fleet. Developers access high-throughput OpenAI-compatible endpoints with up to 1M token context windows. | access: api_key | verified: docs",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   },
   {
@@ -2179,7 +2179,7 @@
     "source_url": "https://aihubmix.com",
     "base_url": "https://api.aihubmix.com/v1",
     "notes": "AIHubMix provides a suite of zero-cost promotional models including GLM-4.7 Flash, Nemotron 3 Ultra, and Qwen 3.8 Max. Developers query OpenAI-compatible completion endpoints with long context support up to 1M tokens. Free API credentials are generated upon account signup without credit cards, subject to promotional token availability and rate limits. | access: api_key | verified: live-probe | quota: not published",
-    "checked_at": "2026-11-27",
+    "checked_at": "2026-11-28",
     "data_source": "freeinference"
   }
 ]
